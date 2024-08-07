@@ -15,7 +15,7 @@ website:
   
   sidebar:
     background: "#D9E3E4"
-    logo: "images/Picture1.jpg"
+    logo: "images/hanging-glider-circle.png"
     # favicon: images/favicon.ico
     pinned: true
     align: center
@@ -33,18 +33,19 @@ website:
     contents:
       - href: index.qmd
         text: Home
-      # - href: content/add-content.qmd
-      #   text: Add content
-      # - href: content/customizing.qmd
-      #   text: Customizing
-      # - href: content/rendering.qmd
-      #   text: Rendering
-      # - href: content/rmarkdown.Rmd
-      #   text: R Markdown files
-      # - href: content/code.qmd
-      #   text: Code in your files
-      # - href: content/acknowledgements.qmd
-      #   text: Acknowledgements
+      - href: content/shared-values.qmd
+        text: Shared Values
+      # - href: content/lab.qmd
+      #   text: Glider Lab
+      - section: "Glider Lab"
+        contents:
+          - content/lab.qmd
+          - content/pilot-tools.qmd
+      - section: "Data"
+        contents:
+          - content/data-management.qmd
+          - content/data-gliders.qmd
+          - content/data-acoustics.qmd
 
 format:
   html:
@@ -55,9 +56,6 @@ format:
     code-overflow: wrap
     toc: true
 
-
 filters:
   - include-files.lua
   - quarto
-
-  

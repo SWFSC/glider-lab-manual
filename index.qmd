@@ -6,6 +6,8 @@ page-layout: full
 
 The Ecosystem Science Division conducts research using gliders. 
 
+Current outline/working doc is [here](https://docs.google.com/document/d/1F1nxoBkeEcXmXGOOioQHqD6A_KIdJmDsg9P_Nfe5Y-o/edit?usp=sharing).
+
 Ideas for things to mention here on the home page:
 
 * Link to Glider Lab GitHub project and issue-tracking repo. 

@@ -1,0 +1,11 @@
+---
+title: Glider Lab
+---
+
+Items to include:
+
+* Links to notes and SOPs
+* Descriptions of field computers used in the lab, and how to do necessary things from these computers
+* Glider deployment templates/workflows/checklists
+* Glider Database (Access file/SQL Server db) - when/how it is used, how to get stuff out, etc
+* Glider Pilot Tools, and related items
