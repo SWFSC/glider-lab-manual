@@ -1,19 +1,44 @@
 [
   {
-    "objectID": "content/acknowledgements.html",
-    "href": "content/acknowledgements.html",
-    "title": "Acknowledgments",
+    "objectID": "content/shared-values.html",
+    "href": "content/shared-values.html",
+    "title": "Shared Values and Best Practices",
     "section": "",
-    "text": "This repo and GitHub Action was based on the tutorial by Openscapes quarto-website-tutorial by Julia Lowndes and Stefanie Butland."
+    "text": "Model after https://sael-swfsc.github.io/SAEL-lab-manual/content/SharedValues-BestPractices.html",
+    "crumbs": [
+      "Shared Values"
+    ]
   },
   {
     "objectID": "index.html",
     "href": "index.html",
     "title": "Glider Lab Manual",
     "section": "",
-    "text": "The Ecosystem Science Division conducts research using gliders.\nIdeas for things to mention here on the home page:\n\nLink to Glider Lab GitHub project and issue-tracking repo.\nSome type of table display of all deployments. Ideally this has links or some way of pointing to the data once it’s on ERDDAP\nPoints to Fleet Status page\nList team members and roles, to inform who to contact",
+    "text": "The Ecosystem Science Division conducts research using gliders.\nCurrent outline/working doc is here.\nIdeas for things to mention here on the home page:\n\nLink to Glider Lab GitHub project and issue-tracking repo.\nSome type of table display of all deployments. Ideally this has links or some way of pointing to the data once it’s on ERDDAP\nPoints to Fleet Status page\nList team members and roles, to inform who to contact",
     "crumbs": [
       "Home"
+    ]
+  },
+  {
+    "objectID": "content/lab.html",
+    "href": "content/lab.html",
+    "title": "Glider Lab",
+    "section": "",
+    "text": "Items to include:\n\nLinks to notes and SOPs\nDescriptions of field computers used in the lab, and how to do necessary things from these computers\nGlider deployment templates/workflows/checklists\nGlider Database (Access file/SQL Server db) - when/how it is used, how to get stuff out, etc\nGlider Pilot Tools, and related items",
+    "crumbs": [
+      "Glider Lab",
+      "Glider Lab"
+    ]
+  },
+  {
+    "objectID": "content/pilot-tools.html",
+    "href": "content/pilot-tools.html",
+    "title": "Glider Pilot Tools",
+    "section": "",
+    "text": "For stuff from Sites pages",
+    "crumbs": [
+      "Glider Lab",
+      "Glider Pilot Tools"
     ]
   }
 ]
