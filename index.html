@@ -186,11 +186,20 @@ ul.task-list li input[type="checkbox"] {
 </nav>
 <div id="quarto-sidebar-glass" class="quarto-sidebar-collapse-item" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item"></div>
 <!-- margin-sidebar -->
-    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar zindex-bottom">
-        
+    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
+        <nav id="TOC" role="doc-toc" class="toc-active">
+    <h2 id="toc-title">On this page</h2>
+   
+  <ul>
+  <li><a href="#project-management" id="toc-project-management" class="nav-link active" data-scroll-target="#project-management">Project Management</a></li>
+  <li><a href="#glider-team-and-roles" id="toc-glider-team-and-roles" class="nav-link" data-scroll-target="#glider-team-and-roles">Glider Team and Roles</a></li>
+  <li><a href="#github-repositories" id="toc-github-repositories" class="nav-link" data-scroll-target="#github-repositories">GitHub Repositories</a></li>
+  <li><a href="#deployments" id="toc-deployments" class="nav-link" data-scroll-target="#deployments">Deployments</a></li>
+  </ul>
+<div class="toc-actions"><ul><li><a href="https://github.com/SWFSC/glider-lab-manual/edit/main/index.qmd" class="toc-action"><i class="bi bi-github"></i>Edit this page</a></li><li><a href="https://github.com/SWFSC/glider-lab-manual/blob/main/index.qmd" class="toc-action"><i class="bi empty"></i>View source</a></li><li><a href="https://github.com/SWFSC/glider-lab-manual/issues/new" class="toc-action"><i class="bi empty"></i>Report an issue</a></li></ul></div></nav>
     </div>
 <!-- main -->
-<main class="content column-page-right" id="quarto-document-content">
+<main class="content column-body" id="quarto-document-content">
 
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
@@ -200,7 +209,7 @@ ul.task-list li input[type="checkbox"] {
 
 
 
-<div class="quarto-title-meta column-page-right">
+<div class="quarto-title-meta column-body">
 
     
   
@@ -212,17 +221,102 @@ ul.task-list li input[type="checkbox"] {
 </header>
 
 
-<p>The Ecosystem Science Division conducts research using gliders.</p>
-<p>Current outline/working doc is <a href="https://docs.google.com/document/d/1F1nxoBkeEcXmXGOOioQHqD6A_KIdJmDsg9P_Nfe5Y-o/edit?usp=sharing">here</a>.</p>
-<p>Ideas for things to mention here on the home page:</p>
-<ul>
-<li>Link to Glider Lab GitHub project and issue-tracking repo.</li>
-<li>Some type of table display of all deployments. Ideally this has links or some way of pointing to the data once it’s on ERDDAP</li>
-<li>Points to Fleet Status page</li>
-<li>List team members and roles, to inform who to contact</li>
-</ul>
+<p>The Ecosystem Science Division does some pretty cool stuff using gliders. This website is an in-development manual for all ESD glider activites. Current outline/working doc is <a href="https://docs.google.com/document/d/1F1nxoBkeEcXmXGOOioQHqD6A_KIdJmDsg9P_Nfe5Y-o/edit?usp=sharing">here</a>.</p>
+<section id="project-management" class="level2">
+<h2 class="anchored" data-anchor-id="project-management">Project Management</h2>
+<p>For most current Fleet Status information, see <a href="https://docs.google.com/spreadsheets/d/1tB3QNKYx8qOYYS9QZotekBAx0y-_n2d-EZPjFFdYNuU/edit?usp=sharing">this Sheet</a></p>
+<p>The ESD glider team is working to use GitHub Issues and Projects for project management. There efforts are heavily inspired and influenced by the Openscapes approach as described <a href="https://openscapes.github.io/series/core-lessons/github/github-issues.html">here</a>.</p>
+<p>To view the ESD glider team project, see <a href="https://github.com/orgs/us-amlr/projects/1">here</a>. This project pulls from issues from several repositories, but in particular <a href="https://github.com/us-amlr/glider_test_proj">this repo</a>. For more details see TODO (section under development in glider lab qmd file).</p>
+</section>
+<section id="glider-team-and-roles" class="level2">
+<h2 class="anchored" data-anchor-id="glider-team-and-roles">Glider Team and Roles</h2>
+<p><a href="mailto:christian.reiss@noaa.gov">Christian Reiss</a> - Program PI<br>
+<a href="mailto:anthony.cossio@noaa.gov">Anthony Cossio</a> - Lab Manager<br>
+<a href="mailto:jen.walsh@noaa.gov">Jen Walsh</a> - Glider Pilot<br>
+<a href="mailto:jason.c.clark@noaa.gov">JC Clark</a> - Glider Pilot<br>
+<a href="mailto:iunona.harris@noaa.gov">Iunona (June) Harris</a> - Glider Pilot<br>
+<a href="mailto:caleb.flaim@noaa.gov">Caleb Flaim</a><br>
+<a href="mailto:jacob.partida@noaa.gov">Jacob Partida</a><br>
+<a href="mailto:hailey.schmidt@noaa.gov">Hailey Schmidt</a><br>
+<a href="mailto:sam.woodman@noaa.gov">Sam Woodman</a> - Data Manager<br>
+<a href="mailto:heidi.taylor@noaa.gov">Heidi Taylor</a> - Boss Lady</p>
+</section>
+<section id="github-repositories" class="level2">
+<h2 class="anchored" data-anchor-id="github-repositories">GitHub Repositories</h2>
+<p>GitHub repos developed by the ESD glider team:</p>
+<table class="caption-top table">
+<thead>
+<tr class="header">
+<th>repo link</th>
+<th>description</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td><a href="https://github.com/us-amlr/glider_test_proj">name todo</a></td>
+<td>Repo for tracking ESD glider lab issues/tasks</td>
+</tr>
+<tr class="even">
+<td><a href="https://github.com/us-amlr/Standard-glider-files">Standard-glider-files</a></td>
+<td>ESD glider cache files, as well as standard files that are put on all gliders before deployment</td>
+</tr>
+<tr class="odd">
+<td><a href="https://github.com/SWFSC/esd-glider-utils">esd-glider-utils</a></td>
+<td>Utility functions for processing ESD glider data</td>
+</tr>
+<tr class="even">
+<td><a href="https://github.com/us-amlr/echoview_glider_template">echoview_glider_template</a></td>
+<td>Echoview glider templates that are used for acoustic data analysis</td>
+</tr>
+<tr class="odd">
+<td><a href="https://github.com/us-amlr/glider_processing_code">glider_processing_code</a></td>
+<td>Compilation of code that is used to work with glider acoustic data</td>
+</tr>
+<tr class="even">
+<td><a href="https://github.com/SWFSC/glider-lab-manual">glider-lab-manual</a></td>
+<td>ESD glider lab website</td>
+</tr>
+</tbody>
+</table>
+<p><br> External repos:</p>
+<table class="caption-top table">
+<thead>
+<tr class="header">
+<th>repo link</th>
+<th>description</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td><a href="https://github.com/smerckel/dbdreader">dbdreader</a></td>
+<td>Extract data from slocum binary files</td>
+</tr>
+<tr class="even">
+<td><a href="https://github.com/c-proof/pyglider">pyglider</a></td>
+<td>Convert datafiles from slocum and seaexplorer into netcdf</td>
+</tr>
+<tr class="odd">
+<td><a href="https://github.com/socib/glider_toolbox">SOCIB glider toolbox</a></td>
+<td>Process slocum, seaglider and seaxplorer data in Matlab (unsupported)</td>
+</tr>
+<tr class="even">
+<td><a href="https://github.com/GliderToolsCommunity/GliderTools">GliderTools</a></td>
+<td>Quality control and plot generic glider data</td>
+</tr>
+<tr class="odd">
+<td><a href="https://github.com/ioos/ioos_qc">IOOS qc</a></td>
+<td>Apply IOOS QARTOD and other qc routines</td>
+</tr>
+</tbody>
+</table>
+</section>
+<section id="deployments" class="level2">
+<h2 class="anchored" data-anchor-id="deployments">Deployments</h2>
+<p>The below table lists all ESD (and formerly AERD) glider deployments. For accessing glider data, see <a href="./content/data-management.html">Data Management</a></p>
+<p>Table todo, a la <a href="https://docs.google.com/spreadsheets/d/1tSIi44OTEUQXPJwwiy1emhdIyRs9Vt8iT5IlJBMrPLA/edit?usp=sharing">this sheet</a></p>
 
 
+</section>
 
 </main> <!-- /main -->
 <script id="quarto-html-after-body" type="application/javascript">
@@ -789,7 +883,7 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
   }
 });
 </script>
-<nav class="page-navigation column-page-right">
+<nav class="page-navigation column-body">
   <div class="nav-page nav-page-previous">
   </div>
   <div class="nav-page nav-page-next">
@@ -806,7 +900,7 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
 </div>   
     <div class="nav-footer-center">
       &nbsp;
-    <div class="toc-actions"><ul><li><a href="https://github.com/SWFSC/glider-lab-manual/edit/main/index.qmd" class="toc-action"><i class="bi bi-github"></i>Edit this page</a></li><li><a href="https://github.com/SWFSC/glider-lab-manual/blob/main/index.qmd" class="toc-action"><i class="bi empty"></i>View source</a></li><li><a href="https://github.com/SWFSC/glider-lab-manual/issues/new" class="toc-action"><i class="bi empty"></i>Report an issue</a></li></ul></div></div>
+    <div class="toc-actions d-sm-block d-md-none"><ul><li><a href="https://github.com/SWFSC/glider-lab-manual/edit/main/index.qmd" class="toc-action"><i class="bi bi-github"></i>Edit this page</a></li><li><a href="https://github.com/SWFSC/glider-lab-manual/blob/main/index.qmd" class="toc-action"><i class="bi empty"></i>View source</a></li><li><a href="https://github.com/SWFSC/glider-lab-manual/issues/new" class="toc-action"><i class="bi empty"></i>Report an issue</a></li></ul></div></div>
     <div class="nav-footer-right">
 <p>This page is built with <a href="https://quarto.org/">Quarto</a>.</p>
 </div>
