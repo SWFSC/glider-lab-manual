@@ -1,5 +1,7 @@
 project: 
   type: website
+  preview:
+    browser: true
 
 website: 
   page-navigation: true

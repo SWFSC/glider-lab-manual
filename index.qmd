@@ -4,13 +4,55 @@ subtitle: "Ecosystem Science Division, NMFS/SWFSC"
 page-layout: full
 ---
 
-The Ecosystem Science Division conducts research using gliders. 
+The Ecosystem Science Division does some pretty cool stuff using gliders. This website is an in-development manual for all ESD glider activites. Current outline/working doc is [here](https://docs.google.com/document/d/1F1nxoBkeEcXmXGOOioQHqD6A_KIdJmDsg9P_Nfe5Y-o/edit?usp=sharing).
 
-Current outline/working doc is [here](https://docs.google.com/document/d/1F1nxoBkeEcXmXGOOioQHqD6A_KIdJmDsg9P_Nfe5Y-o/edit?usp=sharing).
+## Project Management
 
-Ideas for things to mention here on the home page:
+For most current Fleet Status information, see [this Sheet](https://docs.google.com/spreadsheets/d/1tB3QNKYx8qOYYS9QZotekBAx0y-_n2d-EZPjFFdYNuU/edit?usp=sharing)
 
-* Link to Glider Lab GitHub project and issue-tracking repo. 
-* Some type of table display of all deployments. Ideally this has links or some way of pointing to the data once it's on ERDDAP
-* Points to Fleet Status page
-* List team members and roles, to inform who to contact 
+The ESD glider team is working to use GitHub Issues and Projects for project management. There efforts are heavily inspired and influenced by the Openscapes approach as described [here](https://openscapes.github.io/series/core-lessons/github/github-issues.html). 
+
+To view the ESD glider team project, see [here](https://github.com/orgs/us-amlr/projects/1). This project pulls from issues from several repositories, but in particular [this repo](https://github.com/us-amlr/glider_test_proj). For more details see TODO (section under development in glider lab qmd file). 
+
+## Glider Team and Roles
+
+[Christian Reiss](mailto:christian.reiss@noaa.gov) - Program PI \
+[Anthony Cossio](mailto:anthony.cossio@noaa.gov) - Lab Manager \
+[Jen Walsh](mailto:jen.walsh@noaa.gov) - Glider Pilot \
+[JC Clark](mailto:jason.c.clark@noaa.gov) - Glider Pilot \
+[Iunona (June) Harris](mailto:iunona.harris@noaa.gov) - Glider Pilot \
+[Caleb Flaim](mailto:caleb.flaim@noaa.gov) \
+[Jacob Partida](mailto:jacob.partida@noaa.gov) \
+[Hailey Schmidt](mailto:hailey.schmidt@noaa.gov) \
+[Sam Woodman](mailto:sam.woodman@noaa.gov) - Data Manager \
+[Heidi Taylor](mailto:heidi.taylor@noaa.gov) - Boss Lady
+
+## GitHub Repositories
+
+GitHub repos developed by the ESD glider team:
+
+repo link | description
+--- | ---
+[name todo](https://github.com/us-amlr/glider_test_proj) | Repo for tracking ESD glider lab issues/tasks
+[Standard-glider-files](https://github.com/us-amlr/Standard-glider-files) | ESD glider cache files, as well as standard files that are put on all gliders before deployment
+[esd-glider-utils](https://github.com/SWFSC/esd-glider-utils) | Utility functions for processing ESD glider data
+[echoview_glider_template](https://github.com/us-amlr/echoview_glider_template) | Echoview glider templates that are used for acoustic data analysis 
+[glider_processing_code](https://github.com/us-amlr/glider_processing_code) | Compilation of code that is used to work with glider acoustic data 
+[glider-lab-manual](https://github.com/SWFSC/glider-lab-manual) | ESD glider lab website
+
+<br />
+External repos:
+
+repo link | description
+--- | ---
+[dbdreader](https://github.com/smerckel/dbdreader) | Extract data from slocum binary files
+[pyglider](https://github.com/c-proof/pyglider) | Convert datafiles from slocum and seaexplorer into netcdf
+[SOCIB glider toolbox](https://github.com/socib/glider_toolbox) | Process slocum, seaglider and seaxplorer data in Matlab (unsupported)
+[GliderTools](https://github.com/GliderToolsCommunity/GliderTools) | Quality control and plot generic glider data 
+[IOOS qc](https://github.com/ioos/ioos_qc) | Apply IOOS QARTOD and other qc routines 
+
+## Deployments
+
+The below table lists all ESD (and formerly AERD) glider deployments. For accessing glider data, see [Data Management](content/data-management.qmd)
+
+Table todo, a la [this sheet](https://docs.google.com/spreadsheets/d/1tSIi44OTEUQXPJwwiy1emhdIyRs9Vt8iT5IlJBMrPLA/edit?usp=sharing)
