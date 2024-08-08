@@ -1,12 +1,45 @@
 [
   {
-    "objectID": "content/shared-values.html",
-    "href": "content/shared-values.html",
-    "title": "Shared Values and Best Practices",
+    "objectID": "content/imagery.html",
+    "href": "content/imagery.html",
+    "title": "Imagery",
     "section": "",
-    "text": "Model after https://sael-swfsc.github.io/SAEL-lab-manual/content/SharedValues-BestPractices.html",
+    "text": "Here be imagery",
     "crumbs": [
-      "Shared Values"
+      "Imagery"
+    ]
+  },
+  {
+    "objectID": "content/dataproc-acoustics.html",
+    "href": "content/dataproc-acoustics.html",
+    "title": "Acoustic Data Processing",
+    "section": "",
+    "text": "Here be acoustic data processing",
+    "crumbs": [
+      "Data Processing",
+      "Acoustics"
+    ]
+  },
+  {
+    "objectID": "content/dataproc-gliders.html",
+    "href": "content/dataproc-gliders.html",
+    "title": "Glider Data Processing",
+    "section": "",
+    "text": "Here be glider data processing",
+    "crumbs": [
+      "Data Processing",
+      "Gliders"
+    ]
+  },
+  {
+    "objectID": "content/lab.html",
+    "href": "content/lab.html",
+    "title": "Glider Lab",
+    "section": "",
+    "text": "Items to include:\n\nLinks to notes and SOPs\nDescriptions of field computers used in the lab, and how to do necessary things from these computers\nGlider deployment templates/workflows/checklists\nGlider Database (Access file/SQL Server db) - when/how it is used, how to get stuff out, etc\nGlider Pilot Tools, and related items",
+    "crumbs": [
+      "Glider Lab",
+      "Glider Lab"
     ]
   },
   {
@@ -20,14 +53,13 @@
     ]
   },
   {
-    "objectID": "content/lab.html",
-    "href": "content/lab.html",
-    "title": "Glider Lab",
+    "objectID": "content/shared-values.html",
+    "href": "content/shared-values.html",
+    "title": "Shared Values and Best Practices",
     "section": "",
-    "text": "Items to include:\n\nLinks to notes and SOPs\nDescriptions of field computers used in the lab, and how to do necessary things from these computers\nGlider deployment templates/workflows/checklists\nGlider Database (Access file/SQL Server db) - when/how it is used, how to get stuff out, etc\nGlider Pilot Tools, and related items",
+    "text": "Model after https://sael-swfsc.github.io/SAEL-lab-manual/content/SharedValues-BestPractices.html",
     "crumbs": [
-      "Glider Lab",
-      "Glider Lab"
+      "Shared Values"
     ]
   },
   {
