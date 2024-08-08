@@ -41,11 +41,14 @@ website:
         contents:
           - content/lab.qmd
           - content/pilot-tools.qmd
-      - section: "Data"
+      - content/data-management.qmd
+      - section: "Data Processing"
         contents:
-          - content/data-management.qmd
-          - content/data-gliders.qmd
-          - content/data-acoustics.qmd
+          - href: content/dataproc-gliders.qmd
+            text: Gliders
+          - href: content/dataproc-acoustics.qmd
+            text: Acoustics
+      - content/imagery.qmd
 
 format:
   html:
