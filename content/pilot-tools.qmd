@@ -1,5 +1,5 @@
 ---
 title: Glider Pilot Tools
 ---
-
+[Slocum Fleet Mission Control](https://sfmc.webbresearch.com/sfmc/login)
 For stuff from Sites pages
