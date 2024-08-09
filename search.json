@@ -108,7 +108,7 @@
     "href": "content/data-management.html",
     "title": "Data Management",
     "section": "",
-    "text": "Gliders both collect and require a lot of data and other files, making data management a complex endeavor. Most users should access processed glider data as described here (TODO). This page describes where and how all data from a glider deployment are stored.\nSee this document for the full ESD (previously AERD/AMLR) glider data plan. Note that the contents of this doc will be transferred over to this page as time permits.\nBecause gliders can collect &gt;1 TB of data in a single deployment, all ESD glider deployment data are stored in Google Cloud Storage buckets in the ESD Google Cloud Project.",
+    "text": "Gliders both collect and require a lot of data and other files, making data management a complex endeavor. Most users should access processed glider data as described here (TODO). This page describes where and how all data and files from a glider deployment are stored.\nSee this document for the full ESD (previously AERD/AMLR) glider data plan. Note that the contents of this doc will be transferred over to this page as time permits.\nBecause gliders can collect &gt;1 TB of data in a single deployment, all ESD glider deployment data are stored in Google Cloud Storage buckets in the ESD Google Cloud Project.\nTODO: point to Shiny app or some other tool for users to use to get to GCS bucket URL for a particular piece of data.",
     "crumbs": [
       "Data Management"
     ]
