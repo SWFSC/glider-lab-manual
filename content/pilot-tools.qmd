@@ -15,11 +15,11 @@ title: Glider Pilot Tools
 
 [OceanGNS](https://www.oceangns.com/login) A program that can track multiple gliders as well as has different layers. The layers can be depth average currents, sea ice, chlorophyll, etc.
 
-![Battery Capacities](battery_capacities.png)
+![Battery Capacities](images/battery_capacities.png)
 
-![File Transfer Syntax](Glider_File_Transfer_Syntax.jpg)
+![File Transfer Syntax](images/Glider_File_Transfer_Syntax.jpg)
 
-![Differences between persistor and STM](persistor_v_stm.png)
+![Differences between persistor and STM](images/persistor_v_stm.png)
 
 ## Google Drive 
 
