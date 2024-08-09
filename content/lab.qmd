@@ -9,3 +9,19 @@ Items to include:
 * Glider deployment templates/workflows/checklists
 * Glider Database (Access file/SQL Server db) - when/how it is used, how to get stuff out, etc
 * Glider Pilot Tools, and related items
+
+# Standard Operating Procedures
+
+[Glider Checkout Procedure](https://docs.google.com/document/d/1FdrB_BeSkKoy3XOzIwfmd_sm7aAwoaeT9AQfz0bkh8A/edit) The steps needed to prepare a glider for deployment.
+
+[How to calibrate the AZFP](https://docs.google.com/document/d/10sJRgIOPb4awRG6GcpJIfy7RDksZSbjWxIXCW1Xk1Qw/edit)
+
+## Online Calculators
+
+[Sea Water Density](https://fermi.jhuapl.edu/denscalc.html) from Datahost
+
+### Calculators for Acoustics
+
+[Absorption](http://resource.npl.co.uk/acoustics/techguides/seaabsorption/)
+
+[Standard Sphere Target Strength](https://www.fisheries.noaa.gov/data-tools/standard-sphere-target-strength-calculator)
