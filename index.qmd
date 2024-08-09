@@ -51,6 +51,7 @@ repo link | description
 [GliderTools](https://github.com/GliderToolsCommunity/GliderTools) | Quality control and plot generic glider data 
 [IOOS qc](https://github.com/ioos/ioos_qc) | Apply IOOS QARTOD and other qc routines 
 
+
 ## Deployments
 
 The below table lists all ESD (and formerly AERD) glider deployments. For accessing glider data, see [Data Management](content/data-management.qmd)
