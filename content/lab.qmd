@@ -14,14 +14,26 @@ Items to include:
 
 [Glider Checkout Procedure](https://docs.google.com/document/d/1FdrB_BeSkKoy3XOzIwfmd_sm7aAwoaeT9AQfz0bkh8A/edit) The steps needed to prepare a glider for deployment.
 
+[How to upgrade the glider operating system](https://docs.google.com/document/d/1fospbDFkPfeCtmj6wJtINlZGb13-bkNIAn2fKB5Ek1s/edit)
+
 [How to calibrate the AZFP](https://docs.google.com/document/d/10sJRgIOPb4awRG6GcpJIfy7RDksZSbjWxIXCW1Xk1Qw/edit)
+
+[How to calibrate the compass on the glider](https://docs.google.com/document/d/1Ny_K8jxSWA71vFyzvtJ7bK2i5aDPo2gu/edit?usp=sharing&ouid=102683297276185841842&rtpof=true&sd=true)
+
+[How to calibrate the shadowgraph](https://docs.google.com/document/d/1M9s7rSlgdBHxFnBTdKWelLfpMghZU3p8K5TImlIJ8FI/edit)
+
+How to talk to the camera
+
+How to set up the Nortek mini
+
+[Steps for deploying a glider](https://docs.google.com/document/d/1bxen4GvXxmZZoXP24-Mn_2fjzKx7fJx0l_CkeGul-oI/edit)
 
 ## Online Calculators
 
-[Sea Water Density](https://fermi.jhuapl.edu/denscalc.html) from Datahost
+[Sea Water Density](https://fermi.jhuapl.edu/denscalc.html) - Calculate sea water density and sound speed. 
 
 ### Calculators for Acoustics
 
-[Absorption](http://resource.npl.co.uk/acoustics/techguides/seaabsorption/)
+[Sound Absorption](http://resource.npl.co.uk/acoustics/techguides/seaabsorption/) - Calculate Absorption using the Francois and Garrison, 1982 method. 
 
-[Standard Sphere Target Strength](https://www.fisheries.noaa.gov/data-tools/standard-sphere-target-strength-calculator)
+[Standard Sphere Target Strength](https://www.fisheries.noaa.gov/data-tools/standard-sphere-target-strength-calculator) - Standard sphere target strength calculator created by Advanced Survey Technologies, SWFSC.

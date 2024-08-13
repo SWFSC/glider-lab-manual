@@ -3,17 +3,17 @@ title: Glider Pilot Tools
 ---
 
 ## Links
-[Slocum Fleet Mission Control](https://sfmc.webbresearch.com/sfmc/login) SFMC from Teledyne. Where to pilot the gliders using Iridium.
+[Slocum Fleet Mission Control](https://sfmc.webbresearch.com/sfmc/login) - SFMC from Teledyne. Where to pilot the gliders using Iridium.
 
-[Argos](https://argos-system.clsamerica.com/argos-cwi2/login.html) Check where the gliders are if they miss a call in.
+[Argos](https://argos-system.clsamerica.com/argos-cwi2/login.html) - Check where the gliders are if they miss a call in.
 
-[Datahost](https://datahost.webbresearch.com/) A good resource. It has the firmware builds for the gliders, Masterdata for the different firmware, TWR glider sheets, such as, Ballast, Functional Checkout, etc. Most forms are in Resources.
+[Datahost](https://datahost.webbresearch.com/) - The TWR forum. It has the firmware builds for the gliders, Masterdata for the different firmware, TWR glider sheets, such as, Ballast, Functional Checkout, etc. Most forms are in Resources.
 
-[Masterdata](https://gliderfs2.coas.oregonstate.edu/gliderweb/masterdata/)
+[Masterdata](https://gliderfs2.coas.oregonstate.edu/gliderweb/masterdata/) - A list of masterdata for all the various operating systems of Slocum gliders.
 
-[Teledyne Customer Portal](https://tmv-taptone.my.site.com/slocum/s/) Where to check the status of service on gliders and glider parts.
+[Teledyne Customer Portal](https://tmv-taptone.my.site.com/slocum/s/) - Where to check the status of service on gliders and glider parts at TWR.
 
-[OceanGNS](https://www.oceangns.com/login) A program that can track multiple gliders as well as has different layers. The layers can be depth average currents, sea ice, chlorophyll, etc.
+[OceanGNS](https://www.oceangns.com/login) - A program that can track multiple gliders as well as has different layers. The layers can be depth average currents, sea ice, chlorophyll, etc.
 
 ![Battery Capacities](images/battery_capacities.png)
 
@@ -21,19 +21,21 @@ title: Glider Pilot Tools
 
 ![Differences between persistor and STM](images/persistor_v_stm.png)
 
+[Settings for ZOC](https://docs.google.com/document/d/1fospbDFkPfeCtmj6wJtINlZGb13-bkNIAn2fKB5Ek1s/edit)
+
 ## Google Drive 
 
 ### Gliders
 
-[Fleet Status](https://docs.google.com/spreadsheets/d/1tB3QNKYx8qOYYS9QZotekBAx0y-_n2d-EZPjFFdYNuU/edit?gid=0#gid=0) A place to see the simplified status of gliders. Also to keep track of RMAs and generalized deployments.
+[Fleet Status](https://docs.google.com/spreadsheets/d/1tB3QNKYx8qOYYS9QZotekBAx0y-_n2d-EZPjFFdYNuU/edit?gid=0#gid=0) - A place to see the simplified status of gliders. Also to keep track of RMAs and generalized deployments.
 
-[Sensor Settings and Sampling](https://docs.google.com/spreadsheets/d/1SNjvXY9RhGC8St3bXdfQx6tWN10sF8evctD0B_RcTKk/edit?gid=0#gid=0) Where mission planners input the settings for sensors and how they should sample.
+[Sensor Settings and Sampling](https://docs.google.com/spreadsheets/d/1SNjvXY9RhGC8St3bXdfQx6tWN10sF8evctD0B_RcTKk/edit?gid=0#gid=0) - Where mission planners input the settings for sensors and how they should sample.
 
-[Ballast sheet from Rutgers](https://docs.google.com/spreadsheets/d/1BrgEZyT4qzZ22Rkcxc7ZHFRZ-m1zfW3o/edit?rtpof=true&sd=true&gid=2132005041#gid=2132005041)
+[Ballast sheet from Rutgers](https://docs.google.com/spreadsheets/d/1BrgEZyT4qzZ22Rkcxc7ZHFRZ-m1zfW3o/edit?rtpof=true&sd=true&gid=2132005041#gid=2132005041) - 
 
-[TWR Ballast sheet](https://datahost.webbresearch.com/download/file.php?id=91) You have to log into Datahost to access this.
+[TWR Ballast sheet](https://datahost.webbresearch.com/download/file.php?id=91) - You have to log into Datahost to access this.
 
-[Functional Checkout Procedure](https://datahost.webbresearch.com/download/file.php?id=256) You have to log into Datahost to access this.
+[Functional Checkout Procedure](https://datahost.webbresearch.com/download/file.php?id=256) - You have to log into Datahost to access this.
 
 ### Acoustics
 
