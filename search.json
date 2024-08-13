@@ -47,7 +47,7 @@
     "href": "content/lab.html#online-calculators",
     "title": "Glider Lab",
     "section": "Online Calculators",
-    "text": "Online Calculators\nSea Water Density from Datahost\n\nCalculators for Acoustics\nAbsorption\nStandard Sphere Target Strength",
+    "text": "Online Calculators\nSea Water Density - Calculate sea water density and sound speed.\n\nCalculators for Acoustics\nSound Absorption - Calculate Absorption using the Francois and Garrison, 1982 method.\nStandard Sphere Target Strength - Standard sphere target strength calculator created by Advanced Survey Technologies, SWFSC.",
     "crumbs": [
       "Glider Lab",
       "Glider Lab"
@@ -78,7 +78,7 @@
     "href": "index.html#glider-team-and-roles",
     "title": "Glider Lab Manual",
     "section": "Glider Team and Roles",
-    "text": "Glider Team and Roles\nChristian Reiss - Program PI\nAnthony Cossio - Lab Manager\nJen Walsh - Glider Pilot\nJC Clark - Glider Pilot\nIunona (June) Harris - Glider Pilot\nCaleb Flaim\nJacob Partida\nHailey Schmidt\nSam Woodman - Data Manager\nHeidi Taylor - Boss Lady",
+    "text": "Glider Team and Roles\nChristian Reiss - Program PI\nAnthony Cossio - Lab Manager\nJen Walsh - Glider Pilot\nJC Clark - Glider Pilot\nIunona (June) Harris - Glider Pilot\nCaleb Flaim - Glider Pilot\nJacob Partida - Glider Pilot\nHailey Schmidt - Glider Pilot\nSam Woodman - Data Manager\nHeidi Taylor - Boss Lady",
     "crumbs": [
       "Home"
     ]
@@ -128,7 +128,7 @@
     "href": "content/pilot-tools.html",
     "title": "Glider Pilot Tools",
     "section": "",
-    "text": "Slocum Fleet Mission Control SFMC from Teledyne. Where to pilot the gliders using Iridium.\nArgos Check where the gliders are if they miss a call in.\nDatahost A good resource. It has the firmware builds for the gliders, Masterdata for the different firmware, TWR glider sheets, such as, Ballast, Functional Checkout, etc. Most forms are in Resources.\nMasterdata\nTeledyne Customer Portal Where to check the status of service on gliders and glider parts.\nOceanGNS A program that can track multiple gliders as well as has different layers. The layers can be depth average currents, sea ice, chlorophyll, etc.\n\n\n\nBattery Capacities\n\n\n\n\n\nFile Transfer Syntax\n\n\n\n\n\nDifferences between persistor and STM",
+    "text": "Slocum Fleet Mission Control - SFMC from Teledyne. Where to pilot the gliders using Iridium.\nArgos - Check where the gliders are if they miss a call in.\nDatahost - The TWR forum. It has the firmware builds for the gliders, Masterdata for the different firmware, TWR glider sheets, such as, Ballast, Functional Checkout, etc. Most forms are in Resources.\nMasterdata - A list of masterdata for all the various operating systems of Slocum gliders.\nTeledyne Customer Portal - Where to check the status of service on gliders and glider parts at TWR.\nOceanGNS - A program that can track multiple gliders as well as has different layers. The layers can be depth average currents, sea ice, chlorophyll, etc.\n\n\n\nBattery Capacities\n\n\n\n\n\nFile Transfer Syntax\n\n\n\n\n\nDifferences between persistor and STM\n\n\nSettings for ZOC",
     "crumbs": [
       "Glider Lab",
       "Glider Pilot Tools"
@@ -139,7 +139,7 @@
     "href": "content/pilot-tools.html#links",
     "title": "Glider Pilot Tools",
     "section": "",
-    "text": "Slocum Fleet Mission Control SFMC from Teledyne. Where to pilot the gliders using Iridium.\nArgos Check where the gliders are if they miss a call in.\nDatahost A good resource. It has the firmware builds for the gliders, Masterdata for the different firmware, TWR glider sheets, such as, Ballast, Functional Checkout, etc. Most forms are in Resources.\nMasterdata\nTeledyne Customer Portal Where to check the status of service on gliders and glider parts.\nOceanGNS A program that can track multiple gliders as well as has different layers. The layers can be depth average currents, sea ice, chlorophyll, etc.\n\n\n\nBattery Capacities\n\n\n\n\n\nFile Transfer Syntax\n\n\n\n\n\nDifferences between persistor and STM",
+    "text": "Slocum Fleet Mission Control - SFMC from Teledyne. Where to pilot the gliders using Iridium.\nArgos - Check where the gliders are if they miss a call in.\nDatahost - The TWR forum. It has the firmware builds for the gliders, Masterdata for the different firmware, TWR glider sheets, such as, Ballast, Functional Checkout, etc. Most forms are in Resources.\nMasterdata - A list of masterdata for all the various operating systems of Slocum gliders.\nTeledyne Customer Portal - Where to check the status of service on gliders and glider parts at TWR.\nOceanGNS - A program that can track multiple gliders as well as has different layers. The layers can be depth average currents, sea ice, chlorophyll, etc.\n\n\n\nBattery Capacities\n\n\n\n\n\nFile Transfer Syntax\n\n\n\n\n\nDifferences between persistor and STM\n\n\nSettings for ZOC",
     "crumbs": [
       "Glider Lab",
       "Glider Pilot Tools"
@@ -150,7 +150,7 @@
     "href": "content/pilot-tools.html#google-drive",
     "title": "Glider Pilot Tools",
     "section": "Google Drive",
-    "text": "Google Drive\n\nGliders\nFleet Status A place to see the simplified status of gliders. Also to keep track of RMAs and generalized deployments.\nSensor Settings and Sampling Where mission planners input the settings for sensors and how they should sample.\nBallast sheet from Rutgers\nTWR Ballast sheet You have to log into Datahost to access this.\nFunctional Checkout Procedure You have to log into Datahost to access this.\n\n\nAcoustics",
+    "text": "Google Drive\n\nGliders\nFleet Status - A place to see the simplified status of gliders. Also to keep track of RMAs and generalized deployments.\nSensor Settings and Sampling - Where mission planners input the settings for sensors and how they should sample.\nBallast sheet from Rutgers -\nTWR Ballast sheet - You have to log into Datahost to access this.\nFunctional Checkout Procedure - You have to log into Datahost to access this.\n\n\nAcoustics",
     "crumbs": [
       "Glider Lab",
       "Glider Pilot Tools"
