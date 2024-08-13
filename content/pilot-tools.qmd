@@ -40,3 +40,14 @@ title: Glider Pilot Tools
 ### Acoustics
 
 
+
+## Useful websites
+
+[Underwater Glider User Group](https://underwatergliders.org/)
+
+[Everyone's Gliding Observatories](https://www.ego-network.org/dokuwiki/doku.php)
+
+[Ocean Gliders](https://www.oceangliders.org/)
+
+[IOOS Underwater Gliders](https://ioos.noaa.gov/project/underwater-gliders/)
+
