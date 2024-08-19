@@ -47,7 +47,7 @@
     "href": "content/lab.html#standard-operating-procedures",
     "title": "Glider Lab",
     "section": "Standard Operating Procedures",
-    "text": "Standard Operating Procedures\nGlider Checkout Procedure The steps needed to prepare a glider for deployment.\nHow to upgrade the glider operating system\nHow to calibrate the AZFP\nHow to calibrate the compass on the glider\nHow to calibrate the shadowgraph\nHow to talk to the camera\nHow to set up the Nortek mini\nSteps for deploying a glider",
+    "text": "Standard Operating Procedures\nGlider Checkout Procedure The steps needed to prepare a glider for deployment.\nHow to upgrade the glider operating system\nHow to calibrate the AZFP\nHow to calibrate the compass on the glider\nHow to calibrate the shadowgraph\nHow to talk to the camera\nHow to set up the Nortek mini\nHow to pilot a glider\nSteps for deploying a glider",
     "crumbs": [
       "Glider Lab",
       "Glider Lab"
@@ -69,7 +69,29 @@
     "href": "content/lab.html#manuals",
     "title": "Glider Lab",
     "section": "Manuals",
-    "text": "Manuals\nSlocum\nBasic Glider Training slides 2024\nSlocum Fleet Mission Control 2019\nSlocum G3 Glider Operators Manual 2019\nSlocum G3 Maintenance Manual 2019\nSlocum G3S New Processor Guide 2021 Draft B\nCameras\nShadowgraph r3\nGlidercam r2.1\nNortek\nIntegrators guide 2024\nSignature 100 Operations Manual 2022\nPrinciples of Operations Signature 100 2022\nMIDAS software User Guide 2019\nAZFP\nAZFPLink Software 2019\nAZFP Glider Operators Manual 2020\nAZFP Operators Manual 2019\nECOPuck\nECOPuck User Manual 2017\nAAnderaa Oxygen Optode\nOxygen Optode Manual 2017\n[",
+    "text": "Manuals\nSlocum\nBasic Glider Training slides 2024\nSlocum Fleet Mission Control 2019\nSlocum G3 Glider Operators Manual 2019\nSlocum G3 Maintenance Manual 2019\nSlocum G3S New Processor Guide 2021 Draft B\nCameras\nShadowgraph r3\nGlidercam r2.1\nNortek\nIntegrators guide 2024\nSignature 100 Operations Manual 2022\nPrinciples of Operations Signature 100 2022\nMIDAS software User Guide 2019\nAZFP\nAZFPLink Software 2019\nAZFP Glider Operators Manual 2020\nAZFP Operators Manual 2019\nECOPuck\nECOPuck User Manual 2017\nAAnderaa Oxygen Optode\nOxygen Optode Manual 2017",
+    "crumbs": [
+      "Glider Lab",
+      "Glider Lab"
+    ]
+  },
+  {
+    "objectID": "content/lab.html#software-and-settings-settings",
+    "href": "content/lab.html#software-and-settings-settings",
+    "title": "Glider Lab",
+    "section": "Software and settings settings",
+    "text": "Software and settings settings\nZOC ZOC settings\nTera Term Tera Term settings\nAZFP\nMIDAS\nWinSCP\nNotepad++",
+    "crumbs": [
+      "Glider Lab",
+      "Glider Lab"
+    ]
+  },
+  {
+    "objectID": "content/lab.html#glider-and-mooring-database",
+    "href": "content/lab.html#glider-and-mooring-database",
+    "title": "Glider Lab",
+    "section": "Glider and Mooring Database",
+    "text": "Glider and Mooring Database\nYou can find the Glider and Mooring Database on the network drive. This is also possible via VPN. It is used to track glider builds, days and inflections sensors have been use, calibration sheets, etc.",
     "crumbs": [
       "Glider Lab",
       "Glider Lab"
@@ -110,7 +132,7 @@
     "href": "index.html#github-repositories",
     "title": "Glider Lab Manual",
     "section": "GitHub Repositories",
-    "text": "GitHub Repositories\nGitHub repos developed by the ESD glider team:\n\n\n\nrepo link\ndescription\n\n\n\n\nname todo\nRepo for tracking ESD glider lab issues/tasks\n\n\nStandard-glider-files\nESD glider cache files, as well as standard files that are put on all gliders before deployment\n\n\nesd-glider-utils\nUtility functions for processing ESD glider data\n\n\nechoview_glider_template\nEchoview glider templates that are used for acoustic data analysis\n\n\nglider_processing_code\nCompilation of code that is used to work with glider acoustic data\n\n\nglider-lab-manual\nESD glider lab website\n\n\n\n External repos:\n\n\n\nrepo link\ndescription\n\n\n\n\ndbdreader\nExtract data from slocum binary files\n\n\npyglider\nConvert datafiles from slocum and seaexplorer into netcdf\n\n\nSOCIB glider toolbox\nProcess slocum, seaglider and seaxplorer data in Matlab (unsupported)\n\n\nGliderTools\nQuality control and plot generic glider data\n\n\nIOOS qc\nApply IOOS QARTOD and other qc routines",
+    "text": "GitHub Repositories\nGitHub repos developed by the ESD glider team:\n\n\n\nrepo link\ndescription\n\n\n\n\nglider-lab\nRepo for tracking ESD glider lab issues/tasks\n\n\nstandard-glider-files\nESD glider cache files, as well as standard files that are put on all gliders before deployment\n\n\nesd-glider-utils\nUtility functions for processing ESD glider data\n\n\nechoview_glider_template\nEchoview glider templates that are used for acoustic data analysis\n\n\nglider_processing_code\nCompilation of code that is used to work with glider acoustic data\n\n\nglider-lab-manual\nESD glider lab website\n\n\n\n External repos:\n\n\n\nrepo link\ndescription\n\n\n\n\ndbdreader\nExtract data from slocum binary files\n\n\npyglider\nConvert datafiles from slocum and seaexplorer into netcdf\n\n\nSOCIB glider toolbox\nProcess slocum, seaglider and seaxplorer data in Matlab (unsupported)\n\n\nGliderTools\nQuality control and plot generic glider data\n\n\nIOOS qc\nApply IOOS QARTOD and other qc routines",
     "crumbs": [
       "Home"
     ]
@@ -150,7 +172,7 @@
     "href": "content/pilot-tools.html",
     "title": "Glider Pilot Tools",
     "section": "",
-    "text": "Slocum Fleet Mission Control - SFMC from Teledyne. Where to pilot the gliders using Iridium.\nArgos - Check where the gliders are if they miss a call in.\nDatahost - The TWR forum. It has the firmware builds for the gliders, Masterdata for the different firmware, TWR glider sheets, such as, Ballast, Functional Checkout, etc. Most forms are in Resources.\nMasterdata - A list of masterdata for all the various operating systems of Slocum gliders.\nTeledyne Customer Portal - Where to check the status of service on gliders and glider parts at TWR.\nOceanGNS - A program that can track multiple gliders as well as has different layers. The layers can be depth average currents, sea ice, chlorophyll, etc.\n\n\n\nBattery Capacities\n\n\n\n\n\nFile Transfer Syntax\n\n\n\n\n\nDifferences between persistor and STM\n\n\nSettings for ZOC",
+    "text": "Slocum Fleet Mission Control - SFMC from Teledyne. Where to pilot the gliders using Iridium.\nArgos - Check where the gliders are if they miss a call in.\nDatahost - The TWR forum. It has the firmware builds for the gliders, Masterdata for the different firmware, TWR glider sheets, such as, Ballast, Functional Checkout, etc. Most forms are in Resources.\nMasterdata - A list of masterdata for all the various operating systems of Slocum gliders.\nTeledyne Customer Portal - Where to check the status of service on gliders and glider parts at TWR.\nOceanGNS - A program that can track multiple gliders as well as has different layers. The layers can be depth average currents, sea ice, chlorophyll, etc.\n\n\n\nBattery Capacities\n\n\n\n\n\nFile Transfer Syntax\n\n\n\n\n\nDifferences between persistor and STM",
     "crumbs": [
       "Glider Lab",
       "Glider Pilot Tools"
@@ -161,7 +183,7 @@
     "href": "content/pilot-tools.html#links",
     "title": "Glider Pilot Tools",
     "section": "",
-    "text": "Slocum Fleet Mission Control - SFMC from Teledyne. Where to pilot the gliders using Iridium.\nArgos - Check where the gliders are if they miss a call in.\nDatahost - The TWR forum. It has the firmware builds for the gliders, Masterdata for the different firmware, TWR glider sheets, such as, Ballast, Functional Checkout, etc. Most forms are in Resources.\nMasterdata - A list of masterdata for all the various operating systems of Slocum gliders.\nTeledyne Customer Portal - Where to check the status of service on gliders and glider parts at TWR.\nOceanGNS - A program that can track multiple gliders as well as has different layers. The layers can be depth average currents, sea ice, chlorophyll, etc.\n\n\n\nBattery Capacities\n\n\n\n\n\nFile Transfer Syntax\n\n\n\n\n\nDifferences between persistor and STM\n\n\nSettings for ZOC",
+    "text": "Slocum Fleet Mission Control - SFMC from Teledyne. Where to pilot the gliders using Iridium.\nArgos - Check where the gliders are if they miss a call in.\nDatahost - The TWR forum. It has the firmware builds for the gliders, Masterdata for the different firmware, TWR glider sheets, such as, Ballast, Functional Checkout, etc. Most forms are in Resources.\nMasterdata - A list of masterdata for all the various operating systems of Slocum gliders.\nTeledyne Customer Portal - Where to check the status of service on gliders and glider parts at TWR.\nOceanGNS - A program that can track multiple gliders as well as has different layers. The layers can be depth average currents, sea ice, chlorophyll, etc.\n\n\n\nBattery Capacities\n\n\n\n\n\nFile Transfer Syntax\n\n\n\n\n\nDifferences between persistor and STM",
     "crumbs": [
       "Glider Lab",
       "Glider Pilot Tools"
@@ -172,7 +194,7 @@
     "href": "content/pilot-tools.html#google-drive",
     "title": "Glider Pilot Tools",
     "section": "Google Drive",
-    "text": "Google Drive\n\nGliders\nFleet Status - A place to see the simplified status of gliders. Also to keep track of RMAs and generalized deployments.\nSensor Settings and Sampling Sheet - Where mission planners input the settings for sensors and how they should sample.\nBallast sheet from Rutgers -\nTWR Ballast sheet - You have to log into Datahost to access this.\nFunctional Checkout Procedure - You have to log into Datahost to access this.\n\n\nAcoustics",
+    "text": "Google Drive\n\nGliders\nAMLR Gliders Folder - Where most things are stored on Google Drive with regards to gliders.\nFleet Status - A place to see the simplified status of gliders. Also to keep track of RMAs and generalized deployments.\nSensor Settings and Sampling Sheet - Where mission planners input the settings for sensors and how they should sample.\nBallast sheet from Rutgers -\nTWR Ballast sheet - You have to log into Datahost to access this.\nFunctional Checkout Procedure - You have to log into Datahost to access this.\n\n\nAcoustics",
     "crumbs": [
       "Glider Lab",
       "Glider Pilot Tools"
