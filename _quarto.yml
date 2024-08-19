@@ -9,7 +9,7 @@ website:
   site-url: "https://swfsc.github.io/glider-lab-manual/" 
   repo-url: "https://github.com/SWFSC/glider-lab-manual/"
   repo-actions: [edit, source, issue]
-  favicon: images/favicon.ico
+  # favicon: images/favicon.ico
   
   page-footer:
     right: "This page is built with [Quarto](https://quarto.org/)."
@@ -17,7 +17,7 @@ website:
   
   sidebar:
     background: "#D9E3E4"
-    logo: "images/hanging-glider-circle.png"
+    logo: "content/images/hanging-glider-circle.png"
     # favicon: images/favicon.ico
     pinned: true
     align: center
