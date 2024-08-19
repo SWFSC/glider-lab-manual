@@ -12,7 +12,7 @@ For most current Fleet Status information, see [this Sheet](https://docs.google.
 
 The ESD glider team is working to use GitHub Issues and Projects for project management. There efforts are heavily inspired and influenced by the Openscapes approach as described [here](https://openscapes.github.io/series/core-lessons/github/github-issues.html). 
 
-To view the ESD glider team project, see [here](https://github.com/orgs/us-amlr/projects/1). This project pulls from issues from several repositories, but in particular [this repo](https://github.com/us-amlr/glider_test_proj). For more details see TODO (section under development in glider lab qmd file). 
+To view the ESD glider team project, see [here](https://github.com/orgs/us-amlr/projects/1). This project pulls from issues from several repositories, but in particular [this repo](https://github.com/us-amlr/glider-lab). For more details see TODO (section under development in glider lab qmd file). 
 
 ## Glider Team and Roles
 
@@ -33,8 +33,8 @@ GitHub repos developed by the ESD glider team:
 
 repo link | description
 --- | ---
-[name todo](https://github.com/us-amlr/glider_test_proj) | Repo for tracking ESD glider lab issues/tasks
-[Standard-glider-files](https://github.com/us-amlr/Standard-glider-files) | ESD glider cache files, as well as standard files that are put on all gliders before deployment
+[glider-lab](https://github.com/us-amlr/glider-lab) | Repo for tracking ESD glider lab issues/tasks
+[standard-glider-files](https://github.com/us-amlr/standard-glider-files) | ESD glider cache files, as well as standard files that are put on all gliders before deployment
 [esd-glider-utils](https://github.com/SWFSC/esd-glider-utils) | Utility functions for processing ESD glider data
 [echoview_glider_template](https://github.com/us-amlr/echoview_glider_template) | Echoview glider templates that are used for acoustic data analysis 
 [glider_processing_code](https://github.com/us-amlr/glider_processing_code) | Compilation of code that is used to work with glider acoustic data 

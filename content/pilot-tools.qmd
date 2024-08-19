@@ -21,11 +21,13 @@ title: Glider Pilot Tools
 
 ![Differences between persistor and STM](images/persistor_v_stm.png)
 
-[Settings for ZOC](https://docs.google.com/document/d/1fospbDFkPfeCtmj6wJtINlZGb13-bkNIAn2fKB5Ek1s/edit)
+
 
 ## Google Drive 
 
 ### Gliders
+
+[AMLR Gliders Folder](https://drive.google.com/drive/u/0/folders/1wv2wGgWco_3heUR7JPVMc3KLGFCzkcBT) - Where most things are stored on Google Drive with regards to gliders.
 
 [Fleet Status](https://docs.google.com/spreadsheets/d/1tB3QNKYx8qOYYS9QZotekBAx0y-_n2d-EZPjFFdYNuU/edit?gid=0#gid=0) - A place to see the simplified status of gliders. Also to keep track of RMAs and generalized deployments.
 
