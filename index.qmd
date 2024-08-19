@@ -21,9 +21,9 @@ To view the ESD glider team project, see [here](https://github.com/orgs/us-amlr/
 [Jen Walsh](mailto:jen.walsh@noaa.gov) - Glider Pilot \
 [JC Clark](mailto:jason.c.clark@noaa.gov) - Glider Pilot \
 [Iunona (June) Harris](mailto:iunona.harris@noaa.gov) - Glider Pilot \
-[Caleb Flaim](mailto:caleb.flaim@noaa.gov) \
-[Jacob Partida](mailto:jacob.partida@noaa.gov) \
-[Hailey Schmidt](mailto:hailey.schmidt@noaa.gov) \
+[Caleb Flaim](mailto:caleb.flaim@noaa.gov)  - Glider Pilot \
+[Jacob Partida](mailto:jacob.partida@noaa.gov) - Glider Pilot \
+[Hailey Schmidt](mailto:hailey.schmidt@noaa.gov) - Glider Pilot \
 [Sam Woodman](mailto:sam.woodman@noaa.gov) - Data Manager \
 [Heidi Taylor](mailto:heidi.taylor@noaa.gov) - Boss Lady
 
