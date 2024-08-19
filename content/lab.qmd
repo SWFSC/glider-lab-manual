@@ -10,7 +10,7 @@ Items to include:
 * Glider Database (Access file/SQL Server db) - when/how it is used, how to get stuff out, etc
 * Glider Pilot Tools, and related items
 
-# Standard Operating Procedures
+## Standard Operating Procedures
 
 [Glider Checkout Procedure](https://docs.google.com/document/d/1FdrB_BeSkKoy3XOzIwfmd_sm7aAwoaeT9AQfz0bkh8A/edit) The steps needed to prepare a glider for deployment.
 
