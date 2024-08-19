@@ -54,6 +54,17 @@
     ]
   },
   {
+    "objectID": "content/lab.html#manuals",
+    "href": "content/lab.html#manuals",
+    "title": "Glider Lab",
+    "section": "Manuals",
+    "text": "Manuals\nSlocum\nBasic Glider Training slides 2024\nSlocum Fleet Mission Control 2019\nSlocum G3 Glider Operators Manual 2019\nSlocum G3 Maintenance Manual 2019\nSlocum G3S New Processor Guide 2021 Draft B\nCameras\nShadowgraph r3\nGlidercam r2.1\nNortek\nIntegrators guide 2024\nSignature 100 Operations Manual 2022\nPrinciples of Operations Signature 100 2022\nMIDAS software User Guide 2019\nAZFP\nAZFPLink Software 2019\nAZFP Glider Operators Manual 2020\nAZFP Operators Manual 2019\nECOPuck\nECOPuck User Manual 2017\nAAnderaa Oxygen Optode\nOxygen Optode Manual 2017\n[",
+    "crumbs": [
+      "Glider Lab",
+      "Glider Lab"
+    ]
+  },
+  {
     "objectID": "index.html",
     "href": "index.html",
     "title": "Glider Lab Manual",
@@ -150,7 +161,7 @@
     "href": "content/pilot-tools.html#google-drive",
     "title": "Glider Pilot Tools",
     "section": "Google Drive",
-    "text": "Google Drive\n\nGliders\nFleet Status - A place to see the simplified status of gliders. Also to keep track of RMAs and generalized deployments.\nSensor Settings and Sampling - Where mission planners input the settings for sensors and how they should sample.\nBallast sheet from Rutgers -\nTWR Ballast sheet - You have to log into Datahost to access this.\nFunctional Checkout Procedure - You have to log into Datahost to access this.\n\n\nAcoustics",
+    "text": "Google Drive\n\nGliders\nFleet Status - A place to see the simplified status of gliders. Also to keep track of RMAs and generalized deployments.\nSensor Settings and Sampling Sheet - Where mission planners input the settings for sensors and how they should sample.\nBallast sheet from Rutgers -\nTWR Ballast sheet - You have to log into Datahost to access this.\nFunctional Checkout Procedure - You have to log into Datahost to access this.\n\n\nAcoustics",
     "crumbs": [
       "Glider Lab",
       "Glider Pilot Tools"
@@ -161,7 +172,7 @@
     "href": "content/pilot-tools.html#useful-websites",
     "title": "Glider Pilot Tools",
     "section": "Useful websites",
-    "text": "Useful websites\nUnderwater Glider User Group\nEveryone’s Gliding Observatories\nOcean Gliders\nIOOS Underwater Gliders",
+    "text": "Useful websites\nDefault SFMC Group Call In - Check here to see if the glider is calling into the default group instead of our SFMC.\nUnderwater Glider User Group\nEveryone’s Gliding Observatories\nOcean Gliders\nIOOS Underwater Gliders",
     "crumbs": [
       "Glider Lab",
       "Glider Pilot Tools"
