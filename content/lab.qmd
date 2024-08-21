@@ -97,15 +97,10 @@ How to pilot a glider
 Software | Settings
 --- | ---
 [ZOC](https://www.emtec.com/zoc/index.html) | [ZOC settings](https://docs.google.com/document/d/1fospbDFkPfeCtmj6wJtINlZGb13-bkNIAn2fKB5Ek1s/edit)
-
 [Tera Term](https://teratermproject.github.io/index-en.html) | Tera Term settings
-
 [AZFP](https://drive.google.com/file/d/16eSSKX3DGkA6UUvign7KnQwzPqhUJHil/view?usp=drive_link) | Settings
-
 [MIDAS](https://drive.google.com/file/d/1lGYgthRRTBOQShaTqlrB233jWfp_uRZV/view?usp=drive_link) | Settings
-
 [WinSCP](https://winscp.net/eng/index.php) | Settings
-
 [Notepad++](https://notepad-plus-plus.org/) | Settings
 
 
