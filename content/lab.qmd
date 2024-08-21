@@ -95,7 +95,7 @@ How to pilot a glider
 ## Software and settings settings
 
 Software | Settings
-
+--- | ---
 [ZOC](https://www.emtec.com/zoc/index.html) | [ZOC settings](https://docs.google.com/document/d/1fospbDFkPfeCtmj6wJtINlZGb13-bkNIAn2fKB5Ek1s/edit)
 
 [Tera Term](https://teratermproject.github.io/index-en.html) | Tera Term settings
