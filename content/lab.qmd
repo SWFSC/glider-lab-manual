@@ -43,7 +43,7 @@ How to pilot a glider
 
 ## Manuals
 
-**Slocum**
+### **Slocum**
 
 [Basic Glider Training slides 2024](https://drive.google.com/file/d/1jtQjBSt6WTD3WeDP7SOpTET62pN-i91T/view?usp=drive_link)
 
@@ -55,14 +55,14 @@ How to pilot a glider
 
 [Slocum G3S New Processor Guide 2021 Draft B](https://drive.google.com/file/d/1nfxGecTRVpzeVXK3owIZv7FprvylL2W_/view)
 
-**Cameras**
+### **Cameras**
 
 [Shadowgraph r3](https://drive.google.com/drive/folders/1IuCxyGj6QkQQfFLNixJol_-bu2eX0Jcx)
 
 [Glidercam r2.1](https://drive.google.com/file/d/1TwuEmq_5PADnZ080sjW02Yltb2_E-VOd/view)
 
 
-**Nortek**
+### **Nortek**
 
 [Integrators guide 2024](https://drive.google.com/file/d/1alDzxEH2y8qRiVK84he_lmzSYe_p5PEo/view?usp=drive_link)
 
@@ -73,7 +73,7 @@ How to pilot a glider
 [MIDAS software User Guide 2019](https://drive.google.com/file/d/1rMces9zavoaGUGz_UseJERyQcwnMqI0Q/view?usp=drive_link)
 
 
-**AZFP**
+### **AZFP**
 
 [AZFPLink Software 2019](https://drive.google.com/file/d/1lapjSo5PowFz3hg0titXKRKw43TzE6PQ/view?usp=drive_link)
 
@@ -82,29 +82,31 @@ How to pilot a glider
 [AZFP Operators Manual 2019](https://drive.google.com/file/d/1PCRZJ798CCKfaZSdjb_OOFqtmLCqSmiJ/view?usp=drive_link)
 
 
-**ECOPuck**
+### **ECOPuck**
 
 [ECOPuck User Manual 2017](https://drive.google.com/file/d/1-qq2GU-LoJZYq1lxHMppllWFkgy4y70d/view?usp=drive_link)
 
 
-**AAnderaa Oxygen Optode**
+### **AAnderaa Oxygen Optode**
 
 [Oxygen Optode Manual 2017](https://drive.google.com/file/d/1-etHx8dsXKcp6XoSZG9PtV2HXbDQHTbv/view?usp=drive_link)
 
 
 ## Software and settings settings
 
-[ZOC](https://www.emtec.com/zoc/index.html) [ZOC settings](https://docs.google.com/document/d/1fospbDFkPfeCtmj6wJtINlZGb13-bkNIAn2fKB5Ek1s/edit)
+Software | Settings
 
-[Tera Term](https://teratermproject.github.io/index-en.html) Tera Term settings
+[ZOC](https://www.emtec.com/zoc/index.html) | [ZOC settings](https://docs.google.com/document/d/1fospbDFkPfeCtmj6wJtINlZGb13-bkNIAn2fKB5Ek1s/edit)
 
-[AZFP](https://drive.google.com/file/d/16eSSKX3DGkA6UUvign7KnQwzPqhUJHil/view?usp=drive_link) 
+[Tera Term](https://teratermproject.github.io/index-en.html) | Tera Term settings
 
-[MIDAS](https://drive.google.com/file/d/1lGYgthRRTBOQShaTqlrB233jWfp_uRZV/view?usp=drive_link)
+[AZFP](https://drive.google.com/file/d/16eSSKX3DGkA6UUvign7KnQwzPqhUJHil/view?usp=drive_link) | Settings
 
-[WinSCP](https://winscp.net/eng/index.php)
+[MIDAS](https://drive.google.com/file/d/1lGYgthRRTBOQShaTqlrB233jWfp_uRZV/view?usp=drive_link) | Settings
 
-[Notepad++](https://notepad-plus-plus.org/)
+[WinSCP](https://winscp.net/eng/index.php) | Settings
+
+[Notepad++](https://notepad-plus-plus.org/) | Settings
 
 
 ## Glider and Mooring Database
