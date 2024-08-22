@@ -3,13 +3,16 @@ title: Glider Pilot Tools
 ---
 
 ## Links
+
 [Slocum Fleet Mission Control](https://sfmc.webbresearch.com/sfmc/login) - SFMC from Teledyne. Where to pilot the gliders using Iridium.
 
 [Argos](https://argos-system.clsamerica.com/argos-cwi2/login.html) - Check where the gliders are if they miss a call in.
 
 [Datahost](https://datahost.webbresearch.com/) - The TWR forum. It has the firmware builds for the gliders, Masterdata for the different firmware, TWR glider sheets, such as, Ballast, Functional Checkout, etc. Most forms are in Resources.
 
-[Masterdata](https://gliderfs2.coas.oregonstate.edu/gliderweb/masterdata/) - A list of masterdata for all the various operating systems of Slocum gliders.
+[Masterdata](https://gliderfs2.coas.oregonstate.edu/gliderweb/masterdata/) - A list of masterdata for all the various operating systems of Slocum gliders. 
+
+[Masterdata 8.6](masterdata_8_6.txt)  [Masterdata 11.0](masterdata_11_0.txt)\
 
 [Teledyne Customer Portal](https://tmv-taptone.my.site.com/slocum/s/) - Where to check the status of service on gliders and glider parts at TWR.
 
@@ -21,9 +24,7 @@ title: Glider Pilot Tools
 
 ![Differences between persistor and STM](images/persistor_v_stm.png)
 
-
-
-## Google Drive 
+## Google Drive
 
 ### Gliders
 
@@ -33,7 +34,7 @@ title: Glider Pilot Tools
 
 [Sensor Settings and Sampling Sheet](https://docs.google.com/spreadsheets/d/1SNjvXY9RhGC8St3bXdfQx6tWN10sF8evctD0B_RcTKk/edit?gid=0#gid=0) - Where mission planners input the settings for sensors and how they should sample.
 
-[Ballast sheet from Rutgers](https://docs.google.com/spreadsheets/d/1BrgEZyT4qzZ22Rkcxc7ZHFRZ-m1zfW3o/edit?rtpof=true&sd=true&gid=2132005041#gid=2132005041) - 
+[Ballast sheet from Rutgers](https://docs.google.com/spreadsheets/d/1BrgEZyT4qzZ22Rkcxc7ZHFRZ-m1zfW3o/edit?rtpof=true&sd=true&gid=2132005041#gid=2132005041) -
 
 [TWR Ballast sheet](https://datahost.webbresearch.com/download/file.php?id=91) - You have to log into Datahost to access this.
 
@@ -41,11 +42,9 @@ title: Glider Pilot Tools
 
 ### Acoustics
 
-
-
 ## Useful websites
 
-[Default SFMC Group Call In](https://sfmc.webbresearch.com/sfmc/iridium-calls) - Check here to see if the glider is calling into the default group instead of our SFMC. 
+[Default SFMC Group Call In](https://sfmc.webbresearch.com/sfmc/iridium-calls) - Check here to see if the glider is calling into the default group instead of our SFMC.
 
 [Underwater Glider User Group](https://underwatergliders.org/)
 
@@ -54,4 +53,3 @@ title: Glider Pilot Tools
 [Ocean Gliders](https://www.oceangliders.org/)
 
 [IOOS Underwater Gliders](https://ioos.noaa.gov/project/underwater-gliders/)
-
