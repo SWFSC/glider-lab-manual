@@ -4,7 +4,7 @@
     "href": "content/imagery.html",
     "title": "Imagery",
     "section": "",
-    "text": "Here be imagery",
+    "text": "Here be imagery\n\n\n\n Back to top",
     "crumbs": [
       "Imagery"
     ]
@@ -14,7 +14,7 @@
     "href": "content/dataproc-acoustics.html",
     "title": "Acoustic Data Processing",
     "section": "",
-    "text": "Here be acoustic data processing",
+    "text": "Here be acoustic data processing\n\n\n\n Back to top",
     "crumbs": [
       "Data Processing",
       "Acoustics"
@@ -25,7 +25,7 @@
     "href": "content/dataproc-gliders.html",
     "title": "Glider Data Processing",
     "section": "",
-    "text": "Here be glider data processing",
+    "text": "Here be glider data processing\n\n\n\n Back to top",
     "crumbs": [
       "Data Processing",
       "Gliders"
@@ -102,17 +102,17 @@
     "href": "index.html",
     "title": "Glider Lab Manual",
     "section": "",
-    "text": "The Ecosystem Science Division (ESD) does some pretty cool stuff using gliders. This website is an in-development manual for all ESD glider activites. Current outline/working doc is here.",
+    "text": "The Ecosystem Science Division (ESD) at the Southwest Fisheries Science Center does some pretty cool stuff using gliders. This website is an in-development manual for all ESD glider activites. The current website outline/working doc is here.",
     "crumbs": [
       "Home"
     ]
   },
   {
-    "objectID": "index.html#glider-team-and-roles",
-    "href": "index.html#glider-team-and-roles",
+    "objectID": "index.html#glider-team-members",
+    "href": "index.html#glider-team-members",
     "title": "Glider Lab Manual",
-    "section": "Glider Team and Roles",
-    "text": "Glider Team and Roles\nChristian Reiss - Glider Team PI, Offshore Wind Program Lead\nAnthony Cossio - Lab Manager\nJen Walsh - Glider Pilot\nJC Clark - Glider Pilot\nIunona (June) Harris - Glider Pilot\nCaleb Flaim - Glider Pilot\nJacob Partida - Glider Pilot\nHailey Schmidt - Glider Pilot\nSam Woodman - Data Manager\nHeidi Taylor - ESD Deputy Director, SOS Program Lead George Watters - ESD Director",
+    "section": "Glider Team Members",
+    "text": "Glider Team Members\nChristian Reiss - Glider Team PI, Offshore Wind Program Lead\nAnthony Cossio - Lab Manager\nJen Walsh - Glider Pilot\nJC Clark - Glider Pilot\nIunona (June) Harris - Glider Pilot\nCaleb Flaim - Glider Pilot\nJacob Partida - Glider Pilot\nHailey Schmidt - Glider Pilot\nSam Woodman - Data Manager\nHeidi Taylor - ESD Deputy Director, SOS Program Lead\nGeorge Watters - ESD Director",
     "crumbs": [
       "Home"
     ]
@@ -132,7 +132,7 @@
     "href": "index.html#github-repositories",
     "title": "Glider Lab Manual",
     "section": "GitHub Repositories",
-    "text": "GitHub Repositories\nGitHub repos developed by the ESD glider team:\n\n\n\nrepo link\ndescription\n\n\n\n\nglider-lab\nRepo for tracking ESD glider lab issues/tasks\n\n\nstandard-glider-files\nESD glider cache files, as well as standard files that are put on all gliders before deployment\n\n\nglider-utils\nUtility functions for processing ESD glider data\n\n\nechoview_glider_template\nEchoview glider templates that are used for acoustic data analysis\n\n\nglider_processing_code\nCompilation of code that is used to work with glider acoustic data\n\n\nglider-lab-manual\nESD glider lab website\n\n\n\n External repos:\n\n\n\nrepo link\ndescription\n\n\n\n\ndbdreader\nExtract data from slocum binary files\n\n\npyglider\nConvert datafiles from slocum and seaexplorer into netcdf\n\n\nSOCIB glider toolbox\nProcess slocum, seaglider and seaxplorer data in Matlab (unsupported)\n\n\nGliderTools\nQuality control and plot generic glider data\n\n\nIOOS qc\nApply IOOS QARTOD and other qc routines\n\n\nglider tools list\nOceanGliders community repository to list tools for processing glider data. Includes many of the tools listed here.",
+    "text": "GitHub Repositories\nGitHub repos developed by the ESD glider team:\n\n\n\nrepo link\ndescription\n\n\n\n\nglider-lab\nRepo for tracking ESD glider lab issues/tasks\n\n\nstandard-glider-files\nESD glider cache files, as well as standard files that are put on all gliders before deployment\n\n\nglider-utils\nUtility functions for processing ESD glider data\n\n\nechoview_glider_template\nEchoview glider templates that are used for acoustic data analysis\n\n\nglider_processing_code\nCompilation of code that is used to work with glider acoustic data\n\n\nglider-lab-manual\nESD glider lab website\n\n\n\n Most relevant external repos:\n\n\n\nrepo link\ndescription\n\n\n\n\ndbdreader\nExtract data from slocum binary files\n\n\npyglider\nConvert datafiles from slocum and seaexplorer into netcdf\n\n\nSOCIB glider toolbox\nProcess slocum, seaglider and seaxplorer data in Matlab (unsupported)\n\n\nGliderTools\nQuality control and plot generic glider data\n\n\nIOOS qc\nApply IOOS QARTOD and other qc routines\n\n\nglider tools list\nOceanGliders community repository to list tools for processing glider data. Includes many of the tools listed here.",
     "crumbs": [
       "Home"
     ]
@@ -152,7 +152,7 @@
     "href": "content/data-management.html",
     "title": "Data Management",
     "section": "",
-    "text": "Gliders both collect and require a lot of data and other files, making data management a complex endeavor. Most users should access processed glider data as described here (TODO). This page describes where and how all data and files from a glider deployment are stored.\nSee this document for the full ESD (previously AERD/AMLR) glider data plan. Note that the contents of this doc will be transferred over to this page as time permits.\nBecause gliders can collect &gt;1 TB of data in a single deployment, all ESD glider deployment data are stored in Google Cloud Storage buckets in the ESD Google Cloud Project.\nTODO: point to Shiny app or some other tool for users to use to get to GCS bucket URL for a particular piece of data.",
+    "text": "Gliders both collect and require a lot of data and other files, making data management a complex endeavor. Most users should access processed glider data as described here (TODO). This page describes where and how all data and files from a glider deployment are stored.\nSee this document for the full ESD (previously AERD/AMLR) glider data plan. Note that the contents of this doc will be transferred over to this page as time permits.\nBecause gliders can collect &gt;1 TB of data in a single deployment, all ESD glider deployment data are stored in Google Cloud Storage buckets in the ESD Google Cloud Project.\nTODO: point to Shiny app or some other tool for users to use to get to GCS bucket URL for a particular piece of data.\n\n\n\n Back to top",
     "crumbs": [
       "Data Management"
     ]
@@ -162,7 +162,7 @@
     "href": "content/shared-values.html",
     "title": "Shared Values and Best Practices",
     "section": "",
-    "text": "Model after https://sael-swfsc.github.io/SAEL-lab-manual/content/SharedValues-BestPractices.html",
+    "text": "Model after https://sael-swfsc.github.io/SAEL-lab-manual/content/SharedValues-BestPractices.html\n\n\n\n Back to top",
     "crumbs": [
       "Shared Values"
     ]
