@@ -4,16 +4,18 @@ project:
     browser: true
 
 website: 
-  page-navigation: true
   title: "ESD Glider Lab" 
   site-url: "https://swfsc.github.io/glider-lab-manual/" 
   repo-url: "https://github.com/SWFSC/glider-lab-manual/"
   repo-actions: [edit, source, issue]
   # favicon: images/favicon.ico
+  page-navigation: false
+  back-to-top-navigation: true
+  bread-crumbs: true
   
   page-footer:
     right: "This page is built with [Quarto](https://quarto.org/)."
-    left: "&copy; CC-1.0"
+    left: "&copy; [CC0-1.0](https://github.com/SWFSC/glider-lab-manual/blob/main/LICENSE)"
   
   sidebar:
     background: "#D9E3E4"
@@ -64,3 +66,4 @@ format:
 filters:
   - include-files.lua
   - quarto
+

@@ -4,9 +4,9 @@ subtitle: "Ecosystem Science Division, NMFS/SWFSC"
 page-layout: full
 ---
 
-The Ecosystem Science Division (ESD) does some pretty cool stuff using gliders. This website is an in-development manual for all ESD glider activites. Current outline/working doc is [here](https://docs.google.com/document/d/1F1nxoBkeEcXmXGOOioQHqD6A_KIdJmDsg9P_Nfe5Y-o/edit?usp=sharing).
+The Ecosystem Science Division (ESD) at the [Southwest Fisheries Science Center](https://www.fisheries.noaa.gov/about/southwest-fisheries-science-center) does some pretty cool stuff using gliders. This website is an in-development manual for all ESD glider activites. The current website outline/working doc is [here](https://docs.google.com/document/d/1F1nxoBkeEcXmXGOOioQHqD6A_KIdJmDsg9P_Nfe5Y-o/edit?usp=sharing).
 
-## Glider Team and Roles
+## Glider Team Members
 
 [Christian Reiss](mailto:christian.reiss@noaa.gov) - Glider Team PI, Offshore Wind Program Lead \
 [Anthony Cossio](mailto:anthony.cossio@noaa.gov) - Lab Manager \
@@ -17,7 +17,7 @@ The Ecosystem Science Division (ESD) does some pretty cool stuff using gliders. 
 [Jacob Partida](mailto:jacob.partida@noaa.gov) - Glider Pilot \
 [Hailey Schmidt](mailto:hailey.schmidt@noaa.gov) - Glider Pilot \
 [Sam Woodman](mailto:sam.woodman@noaa.gov) - Data Manager \
-[Heidi Taylor](mailto:heidi.taylor@noaa.gov) - ESD Deputy Director, SOS Program Lead
+[Heidi Taylor](mailto:heidi.taylor@noaa.gov) - ESD Deputy Director, SOS Program Lead \
 [George Watters](mailto:george.watters@noaa.gov) - ESD Director
 
 ## Project Management
@@ -43,7 +43,7 @@ repo link | description
 [glider-lab-manual](https://github.com/SWFSC/glider-lab-manual) | ESD glider lab website
 
 <br />
-External repos:
+Most relevant external repos:
 
 repo link | description
 --- | ---
