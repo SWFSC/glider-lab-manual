@@ -6,7 +6,7 @@ page-layout: full
 
 The Ecosystem Science Division (ESD) at the [Southwest Fisheries Science Center](https://www.fisheries.noaa.gov/about/southwest-fisheries-science-center) does some pretty cool stuff using gliders. This website is an in-development manual for all ESD glider activites. The current website outline/working doc is [here](https://docs.google.com/document/d/1F1nxoBkeEcXmXGOOioQHqD6A_KIdJmDsg9P_Nfe5Y-o/edit?usp=sharing).
 
-## Glider Team Members
+## Team Members
 
 [Christian Reiss](mailto:christian.reiss@noaa.gov) - Glider Team PI, Offshore Wind Program Lead \
 [Anthony Cossio](mailto:anthony.cossio@noaa.gov) - Lab Manager \
