@@ -4,19 +4,11 @@ subtitle: "Ecosystem Science Division, NMFS/SWFSC"
 page-layout: full
 ---
 
-The Ecosystem Science Division does some pretty cool stuff using gliders. This website is an in-development manual for all ESD glider activites. Current outline/working doc is [here](https://docs.google.com/document/d/1F1nxoBkeEcXmXGOOioQHqD6A_KIdJmDsg9P_Nfe5Y-o/edit?usp=sharing).
-
-## Project Management
-
-For most current Fleet Status information, see [this Sheet](https://docs.google.com/spreadsheets/d/1tB3QNKYx8qOYYS9QZotekBAx0y-_n2d-EZPjFFdYNuU/edit?usp=sharing)
-
-The ESD glider team is working to use GitHub Issues and Projects for project management. There efforts are heavily inspired and influenced by the Openscapes approach as described [here](https://openscapes.github.io/series/core-lessons/github/github-issues.html). 
-
-To view the ESD glider team project, see [here](https://github.com/orgs/us-amlr/projects/1). This project pulls from issues from several repositories, but in particular [this repo](https://github.com/us-amlr/glider-lab). For more details see TODO (section under development in glider lab qmd file). 
+The Ecosystem Science Division (ESD) does some pretty cool stuff using gliders. This website is an in-development manual for all ESD glider activites. Current outline/working doc is [here](https://docs.google.com/document/d/1F1nxoBkeEcXmXGOOioQHqD6A_KIdJmDsg9P_Nfe5Y-o/edit?usp=sharing).
 
 ## Glider Team and Roles
 
-[Christian Reiss](mailto:christian.reiss@noaa.gov) - Program PI \
+[Christian Reiss](mailto:christian.reiss@noaa.gov) - Glider Team PI, Offshore Wind Program Lead \
 [Anthony Cossio](mailto:anthony.cossio@noaa.gov) - Lab Manager \
 [Jen Walsh](mailto:jen.walsh@noaa.gov) - Glider Pilot \
 [JC Clark](mailto:jason.c.clark@noaa.gov) - Glider Pilot \
@@ -25,7 +17,17 @@ To view the ESD glider team project, see [here](https://github.com/orgs/us-amlr/
 [Jacob Partida](mailto:jacob.partida@noaa.gov) - Glider Pilot \
 [Hailey Schmidt](mailto:hailey.schmidt@noaa.gov) - Glider Pilot \
 [Sam Woodman](mailto:sam.woodman@noaa.gov) - Data Manager \
-[Heidi Taylor](mailto:heidi.taylor@noaa.gov) - Boss Lady
+[Heidi Taylor](mailto:heidi.taylor@noaa.gov) - ESD Deputy Director, SOS Program Lead
+[George Watters](mailto:george.watters@noaa.gov) - ESD Director
+
+## Project Management
+
+For most current Fleet Status information, see [this Sheet](https://docs.google.com/spreadsheets/d/1tB3QNKYx8qOYYS9QZotekBAx0y-_n2d-EZPjFFdYNuU/edit?usp=sharing)
+
+The ESD glider team is using GitHub Issues and Projects for project management. There efforts are heavily inspired and influenced by the Openscapes [GitHub for project management](https://openscapes.github.io/series/core-lessons/github/github-issues.html)
+approach. 
+
+To view the ESD glider team project, see [here](https://github.com/orgs/us-amlr/projects/1). This project pulls from issues from several repositories, but in particular [this repo](https://github.com/us-amlr/glider-lab). For more details see TODO (section under development in glider lab qmd file). 
 
 ## GitHub Repositories
 
@@ -35,7 +37,7 @@ repo link | description
 --- | ---
 [glider-lab](https://github.com/us-amlr/glider-lab) | Repo for tracking ESD glider lab issues/tasks
 [standard-glider-files](https://github.com/us-amlr/standard-glider-files) | ESD glider cache files, as well as standard files that are put on all gliders before deployment
-[esd-glider-utils](https://github.com/SWFSC/esd-glider-utils) | Utility functions for processing ESD glider data
+[glider-utils](https://github.com/SWFSC/glider-utils) | Utility functions for processing ESD glider data
 [echoview_glider_template](https://github.com/us-amlr/echoview_glider_template) | Echoview glider templates that are used for acoustic data analysis 
 [glider_processing_code](https://github.com/us-amlr/glider_processing_code) | Compilation of code that is used to work with glider acoustic data 
 [glider-lab-manual](https://github.com/SWFSC/glider-lab-manual) | ESD glider lab website
@@ -50,6 +52,7 @@ repo link | description
 [SOCIB glider toolbox](https://github.com/socib/glider_toolbox) | Process slocum, seaglider and seaxplorer data in Matlab (unsupported)
 [GliderTools](https://github.com/GliderToolsCommunity/GliderTools) | Quality control and plot generic glider data 
 [IOOS qc](https://github.com/ioos/ioos_qc) | Apply IOOS QARTOD and other qc routines 
+[glider tools list](https://github.com/OceanGlidersCommunity/glider-tools-list) | [OceanGliders community](https://github.com/OceanGlidersCommunity) repository to list tools for processing glider data. Includes many of the tools listed here.
 
 
 ## Deployments
