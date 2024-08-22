@@ -102,17 +102,7 @@
     "href": "index.html",
     "title": "Glider Lab Manual",
     "section": "",
-    "text": "The Ecosystem Science Division does some pretty cool stuff using gliders. This website is an in-development manual for all ESD glider activites. Current outline/working doc is here.",
-    "crumbs": [
-      "Home"
-    ]
-  },
-  {
-    "objectID": "index.html#project-management",
-    "href": "index.html#project-management",
-    "title": "Glider Lab Manual",
-    "section": "Project Management",
-    "text": "Project Management\nFor most current Fleet Status information, see this Sheet\nThe ESD glider team is working to use GitHub Issues and Projects for project management. There efforts are heavily inspired and influenced by the Openscapes approach as described here.\nTo view the ESD glider team project, see here. This project pulls from issues from several repositories, but in particular this repo. For more details see TODO (section under development in glider lab qmd file).",
+    "text": "The Ecosystem Science Division (ESD) does some pretty cool stuff using gliders. This website is an in-development manual for all ESD glider activites. Current outline/working doc is here.",
     "crumbs": [
       "Home"
     ]
@@ -122,7 +112,17 @@
     "href": "index.html#glider-team-and-roles",
     "title": "Glider Lab Manual",
     "section": "Glider Team and Roles",
-    "text": "Glider Team and Roles\nChristian Reiss - Program PI\nAnthony Cossio - Lab Manager\nJen Walsh - Glider Pilot\nJC Clark - Glider Pilot\nIunona (June) Harris - Glider Pilot\nCaleb Flaim - Glider Pilot\nJacob Partida - Glider Pilot\nHailey Schmidt - Glider Pilot\nSam Woodman - Data Manager\nHeidi Taylor - Boss Lady",
+    "text": "Glider Team and Roles\nChristian Reiss - Glider Team PI, Offshore Wind Program Lead\nAnthony Cossio - Lab Manager\nJen Walsh - Glider Pilot\nJC Clark - Glider Pilot\nIunona (June) Harris - Glider Pilot\nCaleb Flaim - Glider Pilot\nJacob Partida - Glider Pilot\nHailey Schmidt - Glider Pilot\nSam Woodman - Data Manager\nHeidi Taylor - ESD Deputy Director, SOS Program Lead George Watters - ESD Director",
+    "crumbs": [
+      "Home"
+    ]
+  },
+  {
+    "objectID": "index.html#project-management",
+    "href": "index.html#project-management",
+    "title": "Glider Lab Manual",
+    "section": "Project Management",
+    "text": "Project Management\nFor most current Fleet Status information, see this Sheet\nThe ESD glider team is using GitHub Issues and Projects for project management. There efforts are heavily inspired and influenced by the Openscapes GitHub for project management approach.\nTo view the ESD glider team project, see here. This project pulls from issues from several repositories, but in particular this repo. For more details see TODO (section under development in glider lab qmd file).",
     "crumbs": [
       "Home"
     ]
@@ -132,7 +132,7 @@
     "href": "index.html#github-repositories",
     "title": "Glider Lab Manual",
     "section": "GitHub Repositories",
-    "text": "GitHub Repositories\nGitHub repos developed by the ESD glider team:\n\n\n\nrepo link\ndescription\n\n\n\n\nglider-lab\nRepo for tracking ESD glider lab issues/tasks\n\n\nstandard-glider-files\nESD glider cache files, as well as standard files that are put on all gliders before deployment\n\n\nesd-glider-utils\nUtility functions for processing ESD glider data\n\n\nechoview_glider_template\nEchoview glider templates that are used for acoustic data analysis\n\n\nglider_processing_code\nCompilation of code that is used to work with glider acoustic data\n\n\nglider-lab-manual\nESD glider lab website\n\n\n\n External repos:\n\n\n\nrepo link\ndescription\n\n\n\n\ndbdreader\nExtract data from slocum binary files\n\n\npyglider\nConvert datafiles from slocum and seaexplorer into netcdf\n\n\nSOCIB glider toolbox\nProcess slocum, seaglider and seaxplorer data in Matlab (unsupported)\n\n\nGliderTools\nQuality control and plot generic glider data\n\n\nIOOS qc\nApply IOOS QARTOD and other qc routines",
+    "text": "GitHub Repositories\nGitHub repos developed by the ESD glider team:\n\n\n\nrepo link\ndescription\n\n\n\n\nglider-lab\nRepo for tracking ESD glider lab issues/tasks\n\n\nstandard-glider-files\nESD glider cache files, as well as standard files that are put on all gliders before deployment\n\n\nglider-utils\nUtility functions for processing ESD glider data\n\n\nechoview_glider_template\nEchoview glider templates that are used for acoustic data analysis\n\n\nglider_processing_code\nCompilation of code that is used to work with glider acoustic data\n\n\nglider-lab-manual\nESD glider lab website\n\n\n\n External repos:\n\n\n\nrepo link\ndescription\n\n\n\n\ndbdreader\nExtract data from slocum binary files\n\n\npyglider\nConvert datafiles from slocum and seaexplorer into netcdf\n\n\nSOCIB glider toolbox\nProcess slocum, seaglider and seaxplorer data in Matlab (unsupported)\n\n\nGliderTools\nQuality control and plot generic glider data\n\n\nIOOS qc\nApply IOOS QARTOD and other qc routines\n\n\nglider tools list\nOceanGliders community repository to list tools for processing glider data. Includes many of the tools listed here.",
     "crumbs": [
       "Home"
     ]
