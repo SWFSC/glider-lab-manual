@@ -135,7 +135,7 @@
     "href": "index.html",
     "title": "Glider Lab Manual",
     "section": "",
-    "text": "The Ecosystem Science Division (ESD) at the Southwest Fisheries Science Center does some pretty cool stuff using gliders. This website is an in-development manual for all ESD glider activities. The current website outline/working doc is here.\nFunding for the glider lab comes from base funding of the ESD (SOS, AMLR, and WIND), with additional funding from the NOAA IRA strategic initiatives; UXS-OC (REFOCUS etc.).",
+    "text": "The Ecosystem Science Division (ESD) at the Southwest Fisheries Science Center does some pretty cool stuff using gliders. This website is an in-development manual for all ESD glider activities. The current website outline/working doc is here.\nFunding for the glider lab comes from base funding of the ESD Programs: Scientific Opoerations and Support (SOS), United States Antarctic Marine Living Resources (U.S. AMLR), and Offshore Wind. Additional funding also comes from the NOAA Inflation Reduction Act (IRA) strategic initiatives; UXS-OC (REFOCUS etc.).",
     "crumbs": [
       "Home"
     ]
@@ -145,7 +145,7 @@
     "href": "index.html#team-members",
     "title": "Glider Lab Manual",
     "section": "Team Members",
-    "text": "Team Members\n\n\n\nName\nJob Title\n\n\n\n\nChristian Reiss\nGlider Team PI, Offshore Wind Program Lead\n\n\nAnthony Cossio\nLab Manager, Operations Research Analyst\n\n\nJen Walsh\nFisheries Research Biologist\n\n\nJC Clark\nNOAA Corps\n\n\nCaleb Flaim\nElectronics Technician\n\n\nJacob Partida\nPhysical Science Technician\n\n\nHailey Schmidt\nGlider Pilot\n\n\nSam Woodman\nData Manager\n\n\nHeidi Taylor\nESD Deputy Director, SOS Program Lead\n\n\nGeorge Watters\nESD Director",
+    "text": "Team Members\n\n\n\nName\nJob Title\nGlider Team Role\n\n\n\n\nChristian Reiss\nProgram Lead, Offshore Wind\nPrinciple Investigator\n\n\nAnthony Cossio\nOperations Research Analyst\nLab Manager, Pilot\n\n\nJen Walsh\nFisheries Research Biologist\nPilot\n\n\nJC Clark\nNOAA Corps\nPilot\n\n\nCaleb Flaim\nElectronics Technician\nPilot\n\n\nJacob Partida\nPhysical Science Technician\nPilot\n\n\nHailey Schmidt\nPathways Intern\nPilot\n\n\nSam Woodman\nBiologist\nData Manager\n\n\nHeidi Taylor\nProgram Lead, SOS; Deputy Director, ESD\n\n\n\nGeorge Watters\nDirector, ESD",
     "crumbs": [
       "Home"
     ]
@@ -205,7 +205,7 @@
     "href": "content/pilot-tools.html",
     "title": "Glider Pilot Tools",
     "section": "",
-    "text": "Slocum Fleet Mission Control - SFMC from Teledyne. Where to pilot the gliders using Iridium.\nArgos - Check where the gliders are if they miss a call in.\nDatahost - The TWR forum. It has the firmware builds for the gliders, Masterdata for the different firmware, TWR glider sheets, such as, Ballast, Functional Checkout, etc. Most forms are in Resources.\nMasterdata - A list of masterdata for all the various operating systems of Slocum gliders. \nMasterdata 8.6  Masterdata 11.0\n\nTeledyne Customer Portal - Where to check the status of service on gliders and glider parts at TWR.\nOceanGNS - A program that can track multiple gliders as well as has different layers. The layers can be depth average currents, sea ice, chlorophyll, etc.\n\n\n\nBattery Capacities\n\n\n\n\n\nFile Transfer Syntax\n\n\n\n\n\nDifferences between persistor and STM",
+    "text": "Slocum Fleet Mission Control - SFMC from Teledyne. Where to pilot the gliders using Iridium.\nArgos - Check where the gliders are if they miss a call in.\nDatahost - The TWR forum. It has the firmware builds for the gliders, Masterdata for the different firmware, TWR glider sheets, such as, Ballast, Functional Checkout, etc. Most forms are in Resources.\nMasterdata - A list of masterdata for all the various operating systems of Slocum gliders. \nMasterdata 8.6  Masterdata 11.0\nTeledyne Customer Portal - Where to check the status of service on gliders and glider parts at TWR.\nOceanGNS - A program that can track multiple gliders as well as has different layers. The layers can be depth average currents, sea ice, chlorophyll, etc.\n\n\n\nBattery Capacities\n\n\n\n\n\nFile Transfer Syntax\n\n\n\n\n\nDifferences between persistor and STM",
     "crumbs": [
       "Glider Lab",
       "Glider Pilot Tools"
@@ -216,7 +216,7 @@
     "href": "content/pilot-tools.html#links",
     "title": "Glider Pilot Tools",
     "section": "",
-    "text": "Slocum Fleet Mission Control - SFMC from Teledyne. Where to pilot the gliders using Iridium.\nArgos - Check where the gliders are if they miss a call in.\nDatahost - The TWR forum. It has the firmware builds for the gliders, Masterdata for the different firmware, TWR glider sheets, such as, Ballast, Functional Checkout, etc. Most forms are in Resources.\nMasterdata - A list of masterdata for all the various operating systems of Slocum gliders. \nMasterdata 8.6  Masterdata 11.0\n\nTeledyne Customer Portal - Where to check the status of service on gliders and glider parts at TWR.\nOceanGNS - A program that can track multiple gliders as well as has different layers. The layers can be depth average currents, sea ice, chlorophyll, etc.\n\n\n\nBattery Capacities\n\n\n\n\n\nFile Transfer Syntax\n\n\n\n\n\nDifferences between persistor and STM",
+    "text": "Slocum Fleet Mission Control - SFMC from Teledyne. Where to pilot the gliders using Iridium.\nArgos - Check where the gliders are if they miss a call in.\nDatahost - The TWR forum. It has the firmware builds for the gliders, Masterdata for the different firmware, TWR glider sheets, such as, Ballast, Functional Checkout, etc. Most forms are in Resources.\nMasterdata - A list of masterdata for all the various operating systems of Slocum gliders. \nMasterdata 8.6  Masterdata 11.0\nTeledyne Customer Portal - Where to check the status of service on gliders and glider parts at TWR.\nOceanGNS - A program that can track multiple gliders as well as has different layers. The layers can be depth average currents, sea ice, chlorophyll, etc.\n\n\n\nBattery Capacities\n\n\n\n\n\nFile Transfer Syntax\n\n\n\n\n\nDifferences between persistor and STM",
     "crumbs": [
       "Glider Lab",
       "Glider Pilot Tools"
