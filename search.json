@@ -135,7 +135,7 @@
     "href": "index.html",
     "title": "Glider Lab Manual",
     "section": "",
-    "text": "The Ecosystem Science Division (ESD) at the Southwest Fisheries Science Center does some pretty cool stuff using gliders. This website is an in-development manual for all ESD glider activites. The current website outline/working doc is here.",
+    "text": "The Ecosystem Science Division (ESD) at the Southwest Fisheries Science Center does some pretty cool stuff using gliders. This website is an in-development manual for all ESD glider activities. The current website outline/working doc is here.\nFunding for the glider lab comes from base funding of the ESD (SOS, AMLR, and WIND), with additional funding from the NOAA IRA strategic initiatives; UXS-OC (REFOCUS etc.).",
     "crumbs": [
       "Home"
     ]
@@ -145,7 +145,7 @@
     "href": "index.html#team-members",
     "title": "Glider Lab Manual",
     "section": "Team Members",
-    "text": "Team Members\nChristian Reiss - Glider Team PI, Offshore Wind Program Lead\nAnthony Cossio - Lab Manager\nJen Walsh - Glider Pilot\nJC Clark - Glider Pilot\nCaleb Flaim - Glider Pilot\nJacob Partida - Glider Pilot\nHailey Schmidt - Glider Pilot\nSam Woodman - Data Manager\nHeidi Taylor - ESD Deputy Director, SOS Program Lead\nGeorge Watters - ESD Director",
+    "text": "Team Members\n\n\n\nName\nJob Title\n\n\n\n\nChristian Reiss\nGlider Team PI, Offshore Wind Program Lead\n\n\nAnthony Cossio\nLab Manager, Operations Research Analyst\n\n\nJen Walsh\nFisheries Research Biologist\n\n\nJC Clark\nNOAA Corps\n\n\nCaleb Flaim\nElectronics Technician\n\n\nJacob Partida\nPhysical Science Technician\n\n\nHailey Schmidt\nGlider Pilot\n\n\nSam Woodman\nData Manager\n\n\nHeidi Taylor\nESD Deputy Director, SOS Program Lead\n\n\nGeorge Watters\nESD Director",
     "crumbs": [
       "Home"
     ]
@@ -227,7 +227,7 @@
     "href": "content/pilot-tools.html#google-drive",
     "title": "Glider Pilot Tools",
     "section": "Google Drive",
-    "text": "Google Drive\n\nGliders\nAMLR Gliders Folder - Where most things are stored on Google Drive with regards to gliders.\nFleet Status - A place to see the simplified status of gliders. Also to keep track of RMAs and generalized deployments.\nSensor Settings and Sampling Sheet - Where mission planners input the settings for sensors and how they should sample.\nBallast sheet from Rutgers -\nTWR Ballast sheet - You have to log into Datahost to access this.\nFunctional Checkout Procedure - You have to log into Datahost to access this.\n\n\nAcoustics",
+    "text": "Google Drive\n\nGliders\nAMLR Gliders Folder - Where most things are stored on Google Drive with regards to gliders.\nFleet Status - A place to see the simplified status of gliders. Also to keep track of RMAs and generalized deployments.\nSensor Settings and Sampling Sheet - Where mission planners input the settings for sensors and how they should sample.\nBallast sheet from Rutgers -\nTWR Ballast sheet - You have to log into Datahost to access this.\nFunctional Checkout Procedure - You have to log into Datahost to access this.\nEmergency boat options\n\n\nAcoustics",
     "crumbs": [
       "Glider Lab",
       "Glider Pilot Tools"
@@ -238,7 +238,7 @@
     "href": "content/pilot-tools.html#useful-websites",
     "title": "Glider Pilot Tools",
     "section": "Useful websites",
-    "text": "Useful websites\nDefault SFMC Group Call In - Check here to see if the glider is calling into the default group instead of our SFMC.\nUnderwater Glider User Group\nEveryone’s Gliding Observatories\nOcean Gliders\nIOOS Underwater Gliders",
+    "text": "Useful websites\nSIO Del Mar Buoy\nSCCOOS shore stations\nDefault SFMC Group Call In - Check here to see if the glider is calling into the default group instead of our SFMC.\nUnderwater Glider User Group\nEveryone’s Gliding Observatories\nOcean Gliders\nIOOS Underwater Gliders",
     "crumbs": [
       "Glider Lab",
       "Glider Pilot Tools"
