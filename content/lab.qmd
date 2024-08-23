@@ -4,11 +4,13 @@ title: Glider Lab
 
 Items to include:
 
-* Links to notes and SOPs
-* Descriptions of field computers used in the lab, and how to do necessary things from these computers
-* Glider deployment templates/workflows/checklists
-* Glider Database (Access file/SQL Server db) - when/how it is used, how to get stuff out, etc
-* Glider Pilot Tools, and related items
+-   Links to notes and SOPs
+-   Descriptions of field computers used in the lab, and how to do necessary things from these computers
+-   Glider deployment templates/workflows/checklists
+-   Glider Database (Access file/SQL Server db) - when/how it is used, how to get stuff out, etc
+-   Glider Pilot Tools, and related items
+
+[Gliders and Mooring Google Calendar](https://calendar.google.com/calendar/embed?src=noaa.gov_v9l4l68ihu9n2svmno3tk1qvec%40group.calendar.google.com&ctz=America%2FLos_Angeles)
 
 ## Standard Operating Procedures
 
@@ -32,14 +34,13 @@ How to pilot a glider
 
 ## Online Calculators
 
-[Sea Water Density](https://fermi.jhuapl.edu/denscalc.html) - Calculate sea water density and sound speed. 
+[Sea Water Density](https://fermi.jhuapl.edu/denscalc.html) - Calculate sea water density and sound speed.
 
 ### Calculators for Acoustics
 
-[Sound Absorption](http://resource.npl.co.uk/acoustics/techguides/seaabsorption/) - Calculate Absorption using the Francois and Garrison, 1982 method. 
+[Sound Absorption](http://resource.npl.co.uk/acoustics/techguides/seaabsorption/) - Calculate Absorption using the Francois and Garrison, 1982 method.
 
 [Standard Sphere Target Strength](https://www.fisheries.noaa.gov/data-tools/standard-sphere-target-strength-calculator) - Standard sphere target strength calculator created by Advanced Survey Technologies, SWFSC.
-
 
 ## Manuals
 
@@ -61,7 +62,6 @@ How to pilot a glider
 
 [Glidercam r2.1](https://drive.google.com/file/d/1TwuEmq_5PADnZ080sjW02Yltb2_E-VOd/view)
 
-
 ### **Nortek**
 
 [Integrators guide 2024](https://drive.google.com/file/d/1alDzxEH2y8qRiVK84he_lmzSYe_p5PEo/view?usp=drive_link)
@@ -72,7 +72,6 @@ How to pilot a glider
 
 [MIDAS software User Guide 2019](https://drive.google.com/file/d/1rMces9zavoaGUGz_UseJERyQcwnMqI0Q/view?usp=drive_link)
 
-
 ### **AZFP**
 
 [AZFPLink Software 2019](https://drive.google.com/file/d/1lapjSo5PowFz3hg0titXKRKw43TzE6PQ/view?usp=drive_link)
@@ -81,29 +80,25 @@ How to pilot a glider
 
 [AZFP Operators Manual 2019](https://drive.google.com/file/d/1PCRZJ798CCKfaZSdjb_OOFqtmLCqSmiJ/view?usp=drive_link)
 
-
 ### **ECOPuck**
 
 [ECOPuck User Manual 2017](https://drive.google.com/file/d/1-qq2GU-LoJZYq1lxHMppllWFkgy4y70d/view?usp=drive_link)
-
 
 ### **AAnderaa Oxygen Optode**
 
 [Oxygen Optode Manual 2017](https://drive.google.com/file/d/1-etHx8dsXKcp6XoSZG9PtV2HXbDQHTbv/view?usp=drive_link)
 
-
 ## Software and settings settings
 
-Software | Settings
---- | ---
-[ZOC](https://www.emtec.com/zoc/index.html) | [ZOC settings](https://docs.google.com/document/d/1fospbDFkPfeCtmj6wJtINlZGb13-bkNIAn2fKB5Ek1s/edit)
-[Tera Term](https://teratermproject.github.io/index-en.html) | Tera Term settings
-[AZFP](https://drive.google.com/file/d/16eSSKX3DGkA6UUvign7KnQwzPqhUJHil/view?usp=drive_link) | Settings
-[MIDAS](https://drive.google.com/file/d/1lGYgthRRTBOQShaTqlrB233jWfp_uRZV/view?usp=drive_link) | Settings
-[WinSCP](https://winscp.net/eng/index.php) | Settings
-[Notepad++](https://notepad-plus-plus.org/) | Settings
-
+| Software                                                                                       | Settings                                                                                             |
+|------------------------------------|------------------------------------|
+| [ZOC](https://www.emtec.com/zoc/index.html)                                                    | [ZOC settings](https://docs.google.com/document/d/1fospbDFkPfeCtmj6wJtINlZGb13-bkNIAn2fKB5Ek1s/edit) |
+| [Tera Term](https://teratermproject.github.io/index-en.html)                                   | Tera Term settings                                                                                   |
+| [AZFP](https://drive.google.com/file/d/16eSSKX3DGkA6UUvign7KnQwzPqhUJHil/view?usp=drive_link)  | Settings                                                                                             |
+| [MIDAS](https://drive.google.com/file/d/1lGYgthRRTBOQShaTqlrB233jWfp_uRZV/view?usp=drive_link) | Settings                                                                                             |
+| [WinSCP](https://winscp.net/eng/index.php)                                                     | Settings                                                                                             |
+| [Notepad++](https://notepad-plus-plus.org/)                                                    | Settings                                                                                             |
 
 ## Glider and Mooring Database
 
-You can find the [Glider and Mooring Database](\\swc-storage4-s\AMLR_Datasets\Glider Database) on the network drive. This is also possible via VPN. It is used to track glider builds, days and inflections sensors have been use, calibration sheets, etc.
+You can find the [Glider and Mooring Database](\swc-storage4-s\AMLR_Datasets\Glider%20Database) on the network drive. This is also possible via VPN. It is used to track glider builds, days and inflections sensors have been use, calibration sheets, etc.
