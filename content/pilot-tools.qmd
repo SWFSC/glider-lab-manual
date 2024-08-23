@@ -40,9 +40,15 @@ title: Glider Pilot Tools
 
 [Functional Checkout Procedure](https://datahost.webbresearch.com/download/file.php?id=256) - You have to log into Datahost to access this.
 
+[Emergency boat options](https://docs.google.com/spreadsheets/d/1fZagNnYgBD-0E_5ivPwIWZFyzMgGDQ8hEPG-jktn2TQ/edit?gid=0#gid=0)
+
 ### Acoustics
 
 ## Useful websites
+
+[SIO Del Mar Buoy](https://mooring.ucsd.edu/delmar1/delmar1_20/)
+
+[SCCOOS shore stations](https://sccoos.org/autoss/)
 
 [Default SFMC Group Call In](https://sfmc.webbresearch.com/sfmc/iridium-calls) - Check here to see if the glider is calling into the default group instead of our SFMC.
 
