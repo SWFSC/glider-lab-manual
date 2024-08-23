@@ -184,8 +184,21 @@ ul.task-list li input[type="checkbox"] {
 </nav>
 <div id="quarto-sidebar-glass" class="quarto-sidebar-collapse-item" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item"></div>
 <!-- margin-sidebar -->
-    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar zindex-bottom">
-        
+    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
+        <nav id="TOC" role="doc-toc" class="toc-active">
+    <h2 id="toc-title">On this page</h2>
+   
+  <ul>
+  <li><a href="#background" id="toc-background" class="nav-link active" data-scroll-target="#background">Background</a></li>
+  <li><a href="#base-processing" id="toc-base-processing" class="nav-link" data-scroll-target="#base-processing">Base Processing</a>
+  <ul class="collapse">
+  <li><a href="#level-1---timeseries" id="toc-level-1---timeseries" class="nav-link" data-scroll-target="#level-1---timeseries">Level 1 - Timeseries</a></li>
+  <li><a href="#level-2---gridded" id="toc-level-2---gridded" class="nav-link" data-scroll-target="#level-2---gridded">Level 2 - Gridded</a></li>
+  <li><a href="#ioos-ngdac" id="toc-ioos-ngdac" class="nav-link" data-scroll-target="#ioos-ngdac">IOOS NGDAC</a></li>
+  </ul></li>
+  <li><a href="#future-steps" id="toc-future-steps" class="nav-link" data-scroll-target="#future-steps">Future steps</a></li>
+  </ul>
+<div class="toc-actions"><ul><li><a href="https://github.com/SWFSC/glider-lab-manual/edit/main/content/dataproc-gliders.qmd" class="toc-action"><i class="bi bi-github"></i>Edit this page</a></li><li><a href="https://github.com/SWFSC/glider-lab-manual/blob/main/content/dataproc-gliders.qmd" class="toc-action"><i class="bi empty"></i>View source</a></li><li><a href="https://github.com/SWFSC/glider-lab-manual/issues/new" class="toc-action"><i class="bi empty"></i>Report an issue</a></li></ul></div></nav>
     </div>
 <!-- main -->
 <main class="content" id="quarto-document-content">
@@ -209,9 +222,65 @@ ul.task-list li input[type="checkbox"] {
 </header>
 
 
-<p>Here be glider data processing</p>
+<section id="background" class="level2">
+<h2 class="anchored" data-anchor-id="background">Background</h2>
+<p>Historically, the ESD glider team has processed glider data using the Matlab toolbox <a href="https://github.com/socib/glider_toolbox">SOCIB</a>. However, this toolbox is not actively maintained, and the majority of ESD processing efforts have moved to Google Cloud (GCP). Thus, current efforts both leveraging existing and developing new Python code, with an Open Science approach, to process ESD glider data in GCP. This code/these scripts live in the [glider-utils]https://github.com/SWFSC/glider-utils repo.</p>
+<p>This section describes these efforts, as well as planned areas of future development. For acoustic or image processing workflows, see here (todo) and here (todo), respectively.</p>
+<p>Todo: create and add flow chart, a la <a href="https://github.com/SAEL-SWFSC/SAEL-lab-manual/blob/main/content/images/FOSSA.JPG">here</a></p>
+</section>
+<section id="base-processing" class="level2">
+<h2 class="anchored" data-anchor-id="base-processing">Base Processing</h2>
+<p>The base glider data processing is primarily done using <a href="https://github.com/c-proof/pyglider">PyGlider</a>, hereafter simply ‘pyglider’. pyglider takes in binary data files from Teledyne/Webb Slocum gliders, and creates CF-compliant NetCDF files. These NetCDF files will be both used internally in further workflows, and sent to the <a href="https://ioos.github.io/glider-dac/index.html">NGDAC</a>.</p>
+<section id="level-1---timeseries" class="level3">
+<h3 class="anchored" data-anchor-id="level-1---timeseries">Level 1 - Timeseries</h3>
+<p>Workflow:</p>
+<ol type="1">
+<li>Binary and cache files from the glider are properly archived in GCS bucket (see here - todo).</li>
+<li>Create deployment YAML file. Currently by hand, in the future ideally thorugh code pulling from the Glider&amp;Mooring database</li>
+<li>Run pyglider and create output NetCDF files using the script <a href="https://github.com/SWFSC/glider-utils/blob/main/scripts/binary_to_nc.py">binary_to_nc.py</a></li>
+<li>…</li>
+</ol>
+<section id="output-netcdf-file" class="level4">
+<h4 class="anchored" data-anchor-id="output-netcdf-file">Output NetCDF File</h4>
+<p>Todo: Notes about the structure of and variables in the output NetCDF file</p>
+</section>
+<section id="processing-notes" class="level4">
+<h4 class="anchored" data-anchor-id="processing-notes">Processing Notes</h4>
+<p>This section describes the default pyglider behavior when processing binary glider files using the function pyglider.slocum.binary_to_timeseries. This function uses <a href="https://github.com/smerckel/dbdreader">dbdreader</a> to read slocum glider data from binary files. More discussion can be found <a href="https://github.com/c-proof/pyglider/issues/106">here</a> around why and how pyglider switched to using dbdreader.</p>
+<p>As constructed, binary_to_timeseries uses dbdreader’s <a href="https://dbdreader.readthedocs.io/en/latest/multiple_files.html#dbdreader.MultiDBD.get_sync">get_sync</a> to extract values for all of the specified sensors. Thus, the user specifies a particular sensor to server as the ‘time_base’, and then all other desired variables (across science and engineering: pressure, temperature, oxygen, roll, etc.) are interpolated onto the same time base (i.e., the timestamps where this ‘time_base’ variable has a valid (not missing/nan) value). This makes life difficult if different sensors have different sampling strategies, and does not allow users to extract non-interpolated data. Adding a ‘union’ behavior option is currently under discussion in <a href="https://github.com/c-proof/pyglider/issues/170">this issue</a> and this <a href="https://github.com/c-proof/pyglider/pull/171">pull request</a>. For now, <a href="https://github.com/SWFSC/glider-utils/blob/main/scripts/binary_to_nc.py">binary_to_nc.py</a> generates several datasets, and merges them together to have all variables/relevant timestamps in one file.</p>
+<p>Data alterations, or additional features of note:</p>
+<ul>
+<li>dbdreader:
+<ul>
+<li>dbdreader throws an error if a sensor is turned off and thus not present in some sbd/tbd or dbd/ebd files. For example, if the oxygen sensor is turned off halfway through a deployment, although this would apply to any sensor that is turned off. However, it looks like this behavior may be <a href="https://github.com/smerckel/dbdreader/issues/26">fixed soon</a>.</li>
+<li>dbdreader by default skips the first line of each binary file. The reasoning is that “this line contains either nonsense values, or values that were read a long time ago. This behavior can be changed.” See <a href="https://github.com/smerckel/dbdreader/issues/18">here</a> for more discussion.</li>
+<li>dbdreader only identifies sensors as ‘engineering’ or ‘science’. Thus, when extracting e.g.&nbsp;data for the sensor ‘sci_oxy4_oxygen’, dbdreader uses the ‘sci_m_present_time’ as the timestamp, rather than ‘sci_oxy4_present_time’.</li>
+</ul></li>
+<li>pyglider:
+<ul>
+<li>Latitude and longitude values are set to nan if their absolute value is greater than 90 and 180, respectively.</li>
+<li>Any values of zero from science sensors are converted to nan.</li>
+<li>No other data alterations are made (e.g., CTD data is all read and left as-is).</li>
+</ul></li>
+</ul>
+</section>
+</section>
+<section id="level-2---gridded" class="level3">
+<h3 class="anchored" data-anchor-id="level-2---gridded">Level 2 - Gridded</h3>
+<p>pyglider has a function ncprocess.make_gridfiles for making gridded data. This function takes the above timeseries file as input.</p>
+</section>
+<section id="ioos-ngdac" class="level3">
+<h3 class="anchored" data-anchor-id="ioos-ngdac">IOOS NGDAC</h3>
+<p>pyglider has a function ncprocess.extract_timeseries_profiles for creating profile files for submission to the NGDAC. This function takes the above timeseries file as input.</p>
+</section>
+</section>
+<section id="future-steps" class="level2">
+<h2 class="anchored" data-anchor-id="future-steps">Future steps</h2>
+<p>qc/data cleaning -&gt; cleaned netcdf files - Implement <a href="https://ioos.noaa.gov/project/qartod/">IOOS QARTOD</a> tests, eg using <a href="https://github.com/ioos/ioos_qc">ioos_qc</a> to add qc flags - other qc/data cleaning? For instance, sanity check ts plots. Likely will involve by-hand inspection for each deployment, including removing bad data if discovered</p>
+<p><a href="https://github.com/GliderToolsCommunity/GliderTools">GliderTools</a>: additional processing functionality - <a href="https://doi.org/10.3389/fmars.2019.00738">manuscript</a> - optics, pq: quenching correction method described by Thomalla et al.&nbsp;(2018) - additional qc tools? - calculate cool physics things (mixed layer depth, …) - several plotting routines</p>
 
 
+</section>
 
 <a onclick="window.scrollTo(0, 0); return false;" role="button" id="quarto-back-to-top"><i class="bi bi-arrow-up"></i> Back to top</a></main> <!-- /main -->
 <script id="quarto-html-after-body" type="application/javascript">
@@ -786,7 +855,7 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
 </div>   
     <div class="nav-footer-center">
       &nbsp;
-    <div class="toc-actions"><ul><li><a href="https://github.com/SWFSC/glider-lab-manual/edit/main/content/dataproc-gliders.qmd" class="toc-action"><i class="bi bi-github"></i>Edit this page</a></li><li><a href="https://github.com/SWFSC/glider-lab-manual/blob/main/content/dataproc-gliders.qmd" class="toc-action"><i class="bi empty"></i>View source</a></li><li><a href="https://github.com/SWFSC/glider-lab-manual/issues/new" class="toc-action"><i class="bi empty"></i>Report an issue</a></li></ul></div></div>
+    <div class="toc-actions d-sm-block d-md-none"><ul><li><a href="https://github.com/SWFSC/glider-lab-manual/edit/main/content/dataproc-gliders.qmd" class="toc-action"><i class="bi bi-github"></i>Edit this page</a></li><li><a href="https://github.com/SWFSC/glider-lab-manual/blob/main/content/dataproc-gliders.qmd" class="toc-action"><i class="bi empty"></i>View source</a></li><li><a href="https://github.com/SWFSC/glider-lab-manual/issues/new" class="toc-action"><i class="bi empty"></i>Report an issue</a></li></ul></div></div>
     <div class="nav-footer-right">
 <p>This page is built with <a href="https://quarto.org/">Quarto</a>.</p>
 </div>

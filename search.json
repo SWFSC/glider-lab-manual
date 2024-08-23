@@ -25,7 +25,40 @@
     "href": "content/dataproc-gliders.html",
     "title": "Glider Data Processing",
     "section": "",
-    "text": "Here be glider data processing\n\n\n\n Back to top",
+    "text": "Historically, the ESD glider team has processed glider data using the Matlab toolbox SOCIB. However, this toolbox is not actively maintained, and the majority of ESD processing efforts have moved to Google Cloud (GCP). Thus, current efforts both leveraging existing and developing new Python code, with an Open Science approach, to process ESD glider data in GCP. This code/these scripts live in the [glider-utils]https://github.com/SWFSC/glider-utils repo.\nThis section describes these efforts, as well as planned areas of future development. For acoustic or image processing workflows, see here (todo) and here (todo), respectively.\nTodo: create and add flow chart, a la here",
+    "crumbs": [
+      "Data Processing",
+      "Gliders"
+    ]
+  },
+  {
+    "objectID": "content/dataproc-gliders.html#background",
+    "href": "content/dataproc-gliders.html#background",
+    "title": "Glider Data Processing",
+    "section": "",
+    "text": "Historically, the ESD glider team has processed glider data using the Matlab toolbox SOCIB. However, this toolbox is not actively maintained, and the majority of ESD processing efforts have moved to Google Cloud (GCP). Thus, current efforts both leveraging existing and developing new Python code, with an Open Science approach, to process ESD glider data in GCP. This code/these scripts live in the [glider-utils]https://github.com/SWFSC/glider-utils repo.\nThis section describes these efforts, as well as planned areas of future development. For acoustic or image processing workflows, see here (todo) and here (todo), respectively.\nTodo: create and add flow chart, a la here",
+    "crumbs": [
+      "Data Processing",
+      "Gliders"
+    ]
+  },
+  {
+    "objectID": "content/dataproc-gliders.html#base-processing",
+    "href": "content/dataproc-gliders.html#base-processing",
+    "title": "Glider Data Processing",
+    "section": "Base Processing",
+    "text": "Base Processing\nThe base glider data processing is primarily done using PyGlider, hereafter simply ‘pyglider’. pyglider takes in binary data files from Teledyne/Webb Slocum gliders, and creates CF-compliant NetCDF files. These NetCDF files will be both used internally in further workflows, and sent to the NGDAC.\n\nLevel 1 - Timeseries\nWorkflow:\n\nBinary and cache files from the glider are properly archived in GCS bucket (see here - todo).\nCreate deployment YAML file. Currently by hand, in the future ideally thorugh code pulling from the Glider&Mooring database\nRun pyglider and create output NetCDF files using the script binary_to_nc.py\n…\n\n\nOutput NetCDF File\nTodo: Notes about the structure of and variables in the output NetCDF file\n\n\nProcessing Notes\nThis section describes the default pyglider behavior when processing binary glider files using the function pyglider.slocum.binary_to_timeseries. This function uses dbdreader to read slocum glider data from binary files. More discussion can be found here around why and how pyglider switched to using dbdreader.\nAs constructed, binary_to_timeseries uses dbdreader’s get_sync to extract values for all of the specified sensors. Thus, the user specifies a particular sensor to server as the ‘time_base’, and then all other desired variables (across science and engineering: pressure, temperature, oxygen, roll, etc.) are interpolated onto the same time base (i.e., the timestamps where this ‘time_base’ variable has a valid (not missing/nan) value). This makes life difficult if different sensors have different sampling strategies, and does not allow users to extract non-interpolated data. Adding a ‘union’ behavior option is currently under discussion in this issue and this pull request. For now, binary_to_nc.py generates several datasets, and merges them together to have all variables/relevant timestamps in one file.\nData alterations, or additional features of note:\n\ndbdreader:\n\ndbdreader throws an error if a sensor is turned off and thus not present in some sbd/tbd or dbd/ebd files. For example, if the oxygen sensor is turned off halfway through a deployment, although this would apply to any sensor that is turned off. However, it looks like this behavior may be fixed soon.\ndbdreader by default skips the first line of each binary file. The reasoning is that “this line contains either nonsense values, or values that were read a long time ago. This behavior can be changed.” See here for more discussion.\ndbdreader only identifies sensors as ‘engineering’ or ‘science’. Thus, when extracting e.g. data for the sensor ‘sci_oxy4_oxygen’, dbdreader uses the ‘sci_m_present_time’ as the timestamp, rather than ‘sci_oxy4_present_time’.\n\npyglider:\n\nLatitude and longitude values are set to nan if their absolute value is greater than 90 and 180, respectively.\nAny values of zero from science sensors are converted to nan.\nNo other data alterations are made (e.g., CTD data is all read and left as-is).\n\n\n\n\n\nLevel 2 - Gridded\npyglider has a function ncprocess.make_gridfiles for making gridded data. This function takes the above timeseries file as input.\n\n\nIOOS NGDAC\npyglider has a function ncprocess.extract_timeseries_profiles for creating profile files for submission to the NGDAC. This function takes the above timeseries file as input.",
+    "crumbs": [
+      "Data Processing",
+      "Gliders"
+    ]
+  },
+  {
+    "objectID": "content/dataproc-gliders.html#future-steps",
+    "href": "content/dataproc-gliders.html#future-steps",
+    "title": "Glider Data Processing",
+    "section": "Future steps",
+    "text": "Future steps\nqc/data cleaning -&gt; cleaned netcdf files - Implement IOOS QARTOD tests, eg using ioos_qc to add qc flags - other qc/data cleaning? For instance, sanity check ts plots. Likely will involve by-hand inspection for each deployment, including removing bad data if discovered\nGliderTools: additional processing functionality - manuscript - optics, pq: quenching correction method described by Thomalla et al. (2018) - additional qc tools? - calculate cool physics things (mixed layer depth, …) - several plotting routines",
     "crumbs": [
       "Data Processing",
       "Gliders"
