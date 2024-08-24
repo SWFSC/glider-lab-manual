@@ -39,8 +39,6 @@ website:
         text: Home
       - href: content/shared-values.qmd
         text: Shared Values
-      # - href: content/lab.qmd
-      #   text: Glider Lab
       - section: "Glider Lab"
         contents:
           - content/lab.qmd
@@ -62,6 +60,7 @@ format:
     code-copy: true
     code-overflow: wrap
     toc: true
+    toc-depth: 4
 
 filters:
   - include-files.lua
