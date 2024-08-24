@@ -8,7 +8,7 @@ Historically, the ESD glider team has processed glider data using the Matlab too
 
 Current efforts both leveraging existing toolboxes (e.g., [PyGlider](https://github.com/c-proof/pyglider), [GliderTools](https://github.com/GliderToolsCommunity/GliderTools), [dbdreader](https://github.com/smerckel/dbdreader)) and developing new Python code and wrapper scripts that live in [glider-utils](https://github.com/SWFSC/glider-utils). All of these efforts are geared towards processing ESD glider data in ESD's Google Cloud project, using an [Open Science approach](https://openscapes.org/) .
 
-This section describes these current efforts, and outlines planned areas of future development. For acoustic or image processing workflows, see here (todo) and here (todo), respectively.
+This page describes these current efforts, and outlines planned areas of future development. For acoustic or image processing workflows, see the [acoustics](dataproc-acoustics.qmd) and and [imagery](imagery.qmd) pages, respectively.
 
 Todo: create and add flow chart, a la [here](https://github.com/SAEL-SWFSC/SAEL-lab-manual/blob/main/content/images/FOSSA.JPG)
 
