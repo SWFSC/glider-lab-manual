@@ -22,8 +22,8 @@ Workflow:
 
 1. Binary and cache files from the glider are properly archived in GCS bucket (see here - link todo)
 2. Create deployment YAML file ([example](https://github.com/c-proof/pyglider-example-data/blob/main/example-slocum/deploymentRealtime.yml)). Currently this is done by hand; ideally in the future this is done by code pulling from the Glider&Mooring database
-3. Run pyglider and create output NetCDF files using the script [binary_to_nc.py](https://github.com/SWFSC/glider-utils/blob/main/scripts/binary_to_nc.py), run via [binary_to_nc.sh](https://github.com/SWFSC/glider-utils/blob/main/scripts/binary_to_nc.sh) on a GCP VM.
-3. Access processed NetCDF files via GCP.
+3. Run pyglider and create output NetCDF files using the script [binary_to_nc.py](https://github.com/SWFSC/glider-utils/blob/main/scripts/binary_to_nc.py), run via [binary_to_nc.sh](https://github.com/SWFSC/glider-utils/blob/main/scripts/binary_to_nc.sh) on a GCP VM
+3. Access processed NetCDF files via GCP for additional internal workflows
 
 #### Output NetCDF File
 
