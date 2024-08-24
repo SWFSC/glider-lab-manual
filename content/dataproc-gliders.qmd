@@ -4,9 +4,11 @@ title: Glider Data Processing
 
 ## Background
 
-Historically, the ESD glider team has processed glider data using the Matlab toolbox [SOCIB](https://github.com/socib/glider_toolbox). However, this toolbox is not actively maintained, and the majority of ESD processing efforts have moved to Google Cloud (GCP). Thus, current efforts both leveraging existing and developing new Python code, with an Open Science approach, to process ESD glider data in GCP. This code/these scripts live in the [glider-utils]https://github.com/SWFSC/glider-utils repo. 
+Historically, the ESD glider team has processed glider data using the Matlab toolbox [SOCIB](https://github.com/socib/glider_toolbox). However, this toolbox is not actively maintained, and the majority of ESD processing efforts have moved to Google Cloud (GCP) where Matlab is rather difficult to run. Subsequent efforts involved developing [amlr-gliders](https://github.com/us-amlr/amlr-gliders), which contained a Python toolbox and scripts that were ~medium wrappers around [gdm](https://github.com/kerfoot/gdm). These efforts never caught full traction.
 
-This section describes these efforts, as well as planned areas of future development. For acoustic or image processing workflows, see here (todo) and here (todo), respectively.
+Current efforts both leveraging existing toolboxes (e.g., [PyGlider](https://github.com/c-proof/pyglider), [GliderTools](https://github.com/GliderToolsCommunity/GliderTools), [dbdreader](https://github.com/smerckel/dbdreader)) and developing new Python code and wrapper scripts that live in [glider-utils](https://github.com/SWFSC/glider-utils). All of these efforts are geared towards processing ESD glider data in ESD's Google Cloud project, using an [Open Science approach](https://openscapes.org/) .
+
+This section describes these current efforts, and outlines planned areas of future development. For acoustic or image processing workflows, see here (todo) and here (todo), respectively.
 
 Todo: create and add flow chart, a la [here](https://github.com/SAEL-SWFSC/SAEL-lab-manual/blob/main/content/images/FOSSA.JPG)
 
@@ -18,20 +20,22 @@ The base glider data processing is primarily done using [PyGlider](https://githu
 
 Workflow:
 
-1. Binary and cache files from the glider are properly archived in GCS bucket (see here - todo). 
-2. Create deployment YAML file. Currently by hand, in the future ideally thorugh code pulling from the Glider&Mooring database
-3. Run pyglider and create output NetCDF files using the script [binary_to_nc.py](https://github.com/SWFSC/glider-utils/blob/main/scripts/binary_to_nc.py)
-3. ...
+1. Binary and cache files from the glider are properly archived in GCS bucket (see here - link todo)
+2. Create deployment YAML file ([example](https://github.com/c-proof/pyglider-example-data/blob/main/example-slocum/deploymentRealtime.yml)). Currently this is done by hand; ideally in the future this is done by code pulling from the Glider&Mooring database
+3. Run pyglider and create output NetCDF files using the script [binary_to_nc.py](https://github.com/SWFSC/glider-utils/blob/main/scripts/binary_to_nc.py), run via [binary_to_nc.sh](https://github.com/SWFSC/glider-utils/blob/main/scripts/binary_to_nc.sh) on a GCP VM.
+3. Access processed NetCDF files via GCP.
 
 #### Output NetCDF File
 
-Todo: Notes about the structure of and variables in the output NetCDF file
+Todo: Notes about the structure of and variables in the output NetCDF file. This will depend on CR answers to processing questions (link to issue todo). 
 
 #### Processing Notes
 
-This section describes the default pyglider behavior when processing binary glider files using the function pyglider.slocum.binary_to_timeseries. This function uses [dbdreader](https://github.com/smerckel/dbdreader) to read slocum glider data from binary files. More discussion can be found [here](https://github.com/c-proof/pyglider/issues/106) around why and how pyglider switched to using dbdreader. 
+This section describes the default pyglider/dbdreader behavior when processing binary glider files. This may be useful reference for folks using pyglider/dbdreader for any purpose.
 
-As constructed, binary_to_timeseries uses dbdreader's [get_sync](https://dbdreader.readthedocs.io/en/latest/multiple_files.html#dbdreader.MultiDBD.get_sync) to extract values for all of the specified sensors. Thus, the user specifies a particular sensor to server as the ‘time_base’, and then all other desired variables (across science and engineering: pressure, temperature, oxygen, roll, etc.) are interpolated onto the same time base (i.e., the timestamps where this ‘time_base’ variable has a valid (not missing/nan) value). This makes life difficult if different sensors have different sampling strategies, and does not allow users to extract non-interpolated data. Adding a 'union' behavior option is currently under discussion in [this issue](https://github.com/c-proof/pyglider/issues/170) and this [pull request](https://github.com/c-proof/pyglider/pull/171). For now, [binary_to_nc.py](https://github.com/SWFSC/glider-utils/blob/main/scripts/binary_to_nc.py) generates several datasets, and merges them together to have all variables/relevant timestamps in one file.
+The pyglider.slocum.binary_to_timeseries function uses [dbdreader](https://github.com/smerckel/dbdreader) to read slocum glider data from binary files. More discussion can be found [here](https://github.com/c-proof/pyglider/issues/106) around why pyglider switched to using dbdreader, and how pyglider processing worked before. 
+
+As constructed, binary_to_timeseries uses dbdreader's [get_sync](https://dbdreader.readthedocs.io/en/latest/multiple_files.html#dbdreader.MultiDBD.get_sync) to extract values for all of the specified sensors. Thus, the user specifies a particular sensor to server as the ‘time_base’, and then all other desired variables (across science and engineering: pressure, temperature, oxygen, roll, etc.) are interpolated onto the same time base (i.e., the timestamps where this ‘time_base’ variable has a valid (not missing/nan) value). This makes life difficult if different sensors have different sampling strategies, and does not allow users to extract non-interpolated data. Adding a 'union' behavior option is currently under discussion in [this issue](https://github.com/c-proof/pyglider/issues/170) and this [pull request](https://github.com/c-proof/pyglider/pull/171). For now, [binary_to_nc.py](https://github.com/SWFSC/glider-utils/blob/main/scripts/binary_to_nc.py) generates several datasets, and merges them together soa s to have all variables/relevant timestamps in one file.
 
 Data alterations, or additional features of note:
 
@@ -52,15 +56,30 @@ pyglider has a function ncprocess.make_gridfiles for making gridded data. This f
 
 pyglider has a function ncprocess.extract_timeseries_profiles for creating profile files for submission to the NGDAC. This function takes the above timeseries file as input.
 
-## Future steps
+## Future Steps
 
-qc/data cleaning -> cleaned netcdf files
+qc/data cleaning -> cleaned netcdf files with qc flags
+
 - Implement [IOOS QARTOD](https://ioos.noaa.gov/project/qartod/) tests, eg using [ioos_qc](https://github.com/ioos/ioos_qc) to add qc flags
 - other qc/data cleaning? For instance, sanity check ts plots. Likely will involve by-hand inspection for each deployment, including removing bad data if discovered
 
 [GliderTools](https://github.com/GliderToolsCommunity/GliderTools): additional processing functionality
-- [manuscript](https://doi.org/10.3389/fmars.2019.00738)
+
+- [manuscript](https://doi.org/10.3389/fmars.2019.00738) describing the GliderTools toolbox
 - optics, pq: quenching correction method described by Thomalla et al. (2018)
 - additional qc tools?
 - calculate cool physics things (mixed layer depth, ...)
-- several plotting routines
+- leverage gridded plotting routines
+
+## GitHub Repos
+
+See the [home page](../index.qmd#github-repositories) for ESD-developed repos. External GitHub repos that are particularly relevant/useful:
+
+| repo link                          | description                        |
+|------------------------------------|------------------------------------|
+| [dbdreader](https://github.com/smerckel/dbdreader)                              | Extract data from slocum binary files |
+| [pyglider](https://github.com/c-proof/pyglider)                                 | Convert datafiles from slocum and seaexplorer into netcdf |
+| [GliderTools](https://github.com/GliderToolsCommunity/GliderTools)              | Quality control and plot generic glider data |
+| [IOOS qc](https://github.com/ioos/ioos_qc)                                      | Apply IOOS QARTOD and other qc routines  |
+| [SOCIB](https://github.com/socib/glider_toolbox)                                | Process slocum, seaglider and seaxplorer data in Matlab (not actively maintained) |
+| [glider tools list](https://github.com/OceanGlidersCommunity/glider-tools-list) | [OceanGliders community](https://github.com/OceanGlidersCommunity) repository to list tools for processing glider data. Includes many of the tools listed above. |

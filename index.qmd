@@ -31,9 +31,9 @@ The ESD glider team is using GitHub Issues and Projects for project management. 
 
 To view the ESD glider team project, see [here](https://github.com/orgs/us-amlr/projects/1). This project pulls from issues from several repositories, but in particular [this repo](https://github.com/us-amlr/glider-lab). For more details see TODO (section under development in glider lab qmd file).
 
-## GitHub Repositories
+### GitHub Repositories
 
-GitHub repos developed by the ESD glider team:
+GitHub repos developed by the ESD glider team, and whose issues are tracked in the above-linked Project:
 
 | repo link                                                                       | description                                                                                     |
 |------------------------------------|------------------------------------|
@@ -42,21 +42,10 @@ GitHub repos developed by the ESD glider team:
 | [glider-utils](https://github.com/SWFSC/glider-utils)                           | Utility functions for processing ESD glider data                                                |
 | [echoview_glider_template](https://github.com/us-amlr/echoview_glider_template) | Echoview glider templates that are used for acoustic data analysis                              |
 | [glider_processing_code](https://github.com/us-amlr/glider_processing_code)     | Compilation of code that is used to work with glider acoustic data                              |
-| [glider-lab-manual](https://github.com/SWFSC/glider-lab-manual)                 | ESD glider lab website                                                                          |
-
-<br /> Most relevant external repos:
-
-| repo link                                                                       | description                                                                                                                                                     |
-|------------------------------------|------------------------------------|
-| [dbdreader](https://github.com/smerckel/dbdreader)                              | Extract data from slocum binary files                                                                                                                           |
-| [pyglider](https://github.com/c-proof/pyglider)                                 | Convert datafiles from slocum and seaexplorer into netcdf                                                                                                       |
-| [SOCIB glider toolbox](https://github.com/socib/glider_toolbox)                 | Process slocum, seaglider and seaxplorer data in Matlab (unsupported)                                                                                           |
-| [GliderTools](https://github.com/GliderToolsCommunity/GliderTools)              | Quality control and plot generic glider data                                                                                                                    |
-| [IOOS qc](https://github.com/ioos/ioos_qc)                                      | Apply IOOS QARTOD and other qc routines                                                                                                                         |
-| [glider tools list](https://github.com/OceanGlidersCommunity/glider-tools-list) | [OceanGliders community](https://github.com/OceanGlidersCommunity) repository to list tools for processing glider data. Includes many of the tools listed here. |
+| [glider-lab-manual](https://github.com/SWFSC/glider-lab-manual)                 | ESD glider lab website 
 
 ## Deployments
 
-The below table lists all ESD (and formerly AERD) glider deployments. For accessing glider data, see [Data Management](content/data-management.qmd)
+The below table lists all ESD (and formerly AERD) glider deployments. 
 
-Table todo, a la [this sheet](https://docs.google.com/spreadsheets/d/1tSIi44OTEUQXPJwwiy1emhdIyRs9Vt8iT5IlJBMrPLA/edit?usp=sharing)
+Todo: embed/include table directly here. For now, see [this sheet](https://docs.google.com/spreadsheets/d/1tSIi44OTEUQXPJwwiy1emhdIyRs9Vt8iT5IlJBMrPLA/edit?usp=sharing) (last updated Aug 2024).
