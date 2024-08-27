@@ -199,8 +199,9 @@ ul.task-list li input[type="checkbox"] {
   </ul></li>
   <li><a href="#level-2---gridded" id="toc-level-2---gridded" class="nav-link" data-scroll-target="#level-2---gridded">Level 2 - Gridded</a></li>
   <li><a href="#ioos-ngdac" id="toc-ioos-ngdac" class="nav-link" data-scroll-target="#ioos-ngdac">IOOS NGDAC</a></li>
+  <li><a href="#other-files" id="toc-other-files" class="nav-link" data-scroll-target="#other-files">Other Files</a></li>
   </ul></li>
-  <li><a href="#real-time-data" id="toc-real-time-data" class="nav-link" data-scroll-target="#real-time-data">Real-time data</a></li>
+  <li><a href="#real-time-data" id="toc-real-time-data" class="nav-link" data-scroll-target="#real-time-data">Real-Time Data</a></li>
   <li><a href="#future-steps" id="toc-future-steps" class="nav-link" data-scroll-target="#future-steps">Future Steps</a></li>
   <li><a href="#github-repos" id="toc-github-repos" class="nav-link" data-scroll-target="#github-repos">GitHub Repos</a></li>
   </ul>
@@ -284,10 +285,14 @@ ul.task-list li input[type="checkbox"] {
 <p>pyglider has a function ncprocess.extract_timeseries_profiles for creating profile files for submission to the NGDAC. This function takes the above timeseries file as input.</p>
 <p>More docs forthcoming.</p>
 </section>
+<section id="other-files" class="level3">
+<h3 class="anchored" data-anchor-id="other-files">Other Files</h3>
+<p>ESD’s base processing also creates several other files necessary for processing or using data from other sensors on the glider. If the glider is carrying a shadowgraph or glidercam camera system, then a CSV file is created that links each image with the relevant glider measurements at that time (depth, temperature, oxygen concentration, etc.). If the glider is carrying an acoustic instrument, specific files are needed to process these data using Echoview. These files are created during the base processing step as well.</p>
+</section>
 </section>
 <section id="real-time-data" class="level2">
-<h2 class="anchored" data-anchor-id="real-time-data">Real-time data</h2>
-<p>tbd. Vision:</p>
+<h2 class="anchored" data-anchor-id="real-time-data">Real-Time Data</h2>
+<p>tbd. Vision is to have GCP infrastructure in place to:</p>
 <ul>
 <li>Periodically rsync real-time data (sbd/tbd files) from the SFMC to a GCP VM</li>
 <li>Run the base processing steps on these data</li>
