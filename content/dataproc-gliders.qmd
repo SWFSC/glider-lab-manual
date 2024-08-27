@@ -62,9 +62,13 @@ pyglider has a function ncprocess.extract_timeseries_profiles for creating profi
 
 More docs forthcoming.
 
-## Real-time data
+### Other Files
 
-tbd. Vision:
+ESD's base processing also creates several other files necessary for processing or using data from other sensors on the glider. If the glider is carrying a shadowgraph or glidercam camera system, then a CSV file is created that links each image with the relevant glider measurements at that time (depth, temperature, oxygen concentration, etc.). If the glider is carrying an acoustic instrument, specific files are needed to process these data using Echoview. These files are created during the base processing step as well.
+
+## Real-Time Data
+
+tbd. Vision is to have GCP infrastructure in place to:
 
 - Periodically rsync real-time data (sbd/tbd files) from the SFMC to a GCP VM
 - Run the base processing steps on these data
