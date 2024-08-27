@@ -4,14 +4,14 @@ subtitle: "Ecosystem Science Division, NMFS/SWFSC"
 page-layout: full
 ---
 
-The Ecosystem Science Division (ESD) at the [Southwest Fisheries Science Center](https://www.fisheries.noaa.gov/about/southwest-fisheries-science-center) does some pretty cool stuff using gliders. This website is an in-development manual for all ESD glider activities. The current website outline/working doc is [here](https://docs.google.com/document/d/1F1nxoBkeEcXmXGOOioQHqD6A_KIdJmDsg9P_Nfe5Y-o/edit?usp=sharing). 
+The Ecosystem Science Division (ESD) at the [Southwest Fisheries Science Center](https://www.fisheries.noaa.gov/about/southwest-fisheries-science-center) does some pretty cool stuff using gliders, in both the California Current Ecosystem and the Antarctic Peninsula regions. This website is an in-development manual for all ESD glider activities. Please contact a member of the glider team with any questions.
 
 Funding for the glider lab comes from base funding of the ESD Programs: Scientific Opoerations and Support (SOS), United States Antarctic Marine Living Resources (U.S. AMLR), and Offshore Wind. Additional funding also comes from the NOAA Inflation Reduction Act (IRA) strategic initiatives; UXS-OC (REFOCUS etc.).
 
 ## Team Members
 
-| Name                                               | Job Title                                  | Glider Team Role
-|------------------------------------|------------------------------------|------------------------------------|
+| Name | Job Title | Glider Team Role |
+|------|-----------|------------------|
 | [Christian Reiss](mailto:christian.reiss@noaa.gov) | Program Lead, Offshore Wind  | Principle Investigator |
 | [Anthony Cossio](mailto:anthony.cossio@noaa.gov)   | Operations Research Analyst  | Lab Manager, Pilot |
 | [Jen Walsh](mailto:jen.walsh@noaa.gov)             | Fisheries Research Biologist | Pilot |
@@ -33,10 +33,10 @@ To view the ESD glider team project, see [here](https://github.com/orgs/us-amlr/
 
 ### GitHub Repositories
 
-GitHub repos developed by the ESD glider team, and whose issues are tracked in the above-linked Project:
+GitHub repos developed by the ESD glider team. Issues for these repos are tracked in the above-linked Project.
 
-| repo link                                                                       | description                                                                                     |
-|------------------------------------|------------------------------------|
+| repo link | description |
+|-----------|-------------|
 | [glider-lab](https://github.com/us-amlr/glider-lab)                             | Repo for tracking ESD glider lab issues/tasks                                                   |
 | [standard-glider-files](https://github.com/us-amlr/standard-glider-files)       | ESD glider cache files, as well as standard files that are put on all gliders before deployment |
 | [glider-utils](https://github.com/SWFSC/glider-utils)                           | Utility functions for processing ESD glider data                                                |

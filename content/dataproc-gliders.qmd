@@ -4,9 +4,11 @@ title: Glider Data Processing
 
 ## Background
 
-Historically, the ESD glider team has processed glider data using the Matlab toolbox [SOCIB](https://github.com/socib/glider_toolbox). However, this toolbox is not actively maintained, and the majority of ESD processing efforts have moved to Google Cloud (GCP) where Matlab is rather difficult to run. Subsequent efforts involved developing [amlr-gliders](https://github.com/us-amlr/amlr-gliders), which contained a Python toolbox and scripts that were ~medium wrappers around [gdm](https://github.com/kerfoot/gdm). These efforts never caught full traction.
+There are many steps and flavors to glider data processing, from the base processing (binary glider to NetCDF files for Slocum gliders) to QA/QC to developing products from additional glider sensors. 
 
-Current efforts both leveraging existing toolboxes (e.g., [PyGlider](https://github.com/c-proof/pyglider), [GliderTools](https://github.com/GliderToolsCommunity/GliderTools), [dbdreader](https://github.com/smerckel/dbdreader)) and developing new Python code and wrapper scripts that live in [glider-utils](https://github.com/SWFSC/glider-utils). All of these efforts are geared towards processing ESD glider data in ESD's Google Cloud project, using an [Open Science approach](https://openscapes.org/) .
+Historically, the ESD glider team has processed glider data using the Matlab toolbox [SOCIB](https://github.com/socib/glider_toolbox). However, this toolbox is not actively maintained, and the majority of ESD processing efforts have moved to Google Cloud (GCP). Subsequent efforts involved developing [amlr-gliders](https://github.com/us-amlr/amlr-gliders), which contained a Python toolbox and scripts that were ~medium wrappers around [gdm](https://github.com/kerfoot/gdm). These efforts never caught full traction.
+
+Current efforts both leveraging existing toolboxes ([PyGlider](https://github.com/c-proof/pyglider), [GliderTools](https://github.com/GliderToolsCommunity/GliderTools), [dbdreader](https://github.com/smerckel/dbdreader)) and developing new Python code and wrapper scripts that live in [glider-utils](https://github.com/SWFSC/glider-utils). All of these efforts are geared towards processing ESD glider data in ESD's Google Cloud project, using an [Open Science approach](https://openscapes.org/) .
 
 This page describes these current efforts, and outlines planned areas of future development. For acoustic or image processing workflows, see the [acoustics](dataproc-acoustics.qmd) and and [imagery](imagery.qmd) pages, respectively.
 
@@ -52,20 +54,35 @@ Data alterations, or additional features of note:
 
 pyglider has a function ncprocess.make_gridfiles for making gridded data. This function takes the above timeseries file as input.
 
+More docs forthcoming.
+
 ### IOOS NGDAC
 
 pyglider has a function ncprocess.extract_timeseries_profiles for creating profile files for submission to the NGDAC. This function takes the above timeseries file as input.
 
+More docs forthcoming.
+
+## Real-time data
+
+tbd. Vision:
+
+- Periodically rsync real-time data (sbd/tbd files) from the SFMC to a GCP VM
+- Run the base processing steps on these data
+- Automatically send the processed files to the NGDAC
+
 ## Future Steps
 
-qc/data cleaning -> cleaned netcdf files with qc flags
+qc + data cleaning -> cleaned netcdf files with qc flags. Potential resources:
 
 - Implement [IOOS QARTOD](https://ioos.noaa.gov/project/qartod/) tests, eg using [ioos_qc](https://github.com/ioos/ioos_qc) to add qc flags
+- https://github.com/OceanGlidersCommunity/Realtime-QC
+    - https://github.com/castelao/CoTeDe
 - other qc/data cleaning? For instance, sanity check ts plots. Likely will involve by-hand inspection for each deployment, including removing bad data if discovered
 
 [GliderTools](https://github.com/GliderToolsCommunity/GliderTools): additional processing functionality
 
 - [manuscript](https://doi.org/10.3389/fmars.2019.00738) describing the GliderTools toolbox
+- GliderTools contains tools for processing Seaglider basestation files. However, the rest of the tools simply require that the data be in an xarray dataset.
 - optics, pq: quenching correction method described by Thomalla et al. (2018)
 - additional qc tools?
 - calculate cool physics things (mixed layer depth, ...)
@@ -81,5 +98,5 @@ See the [home page](../index.qmd#github-repositories) for ESD-developed repos. E
 | [pyglider](https://github.com/c-proof/pyglider)                                 | Convert datafiles from slocum and seaexplorer into netcdf |
 | [GliderTools](https://github.com/GliderToolsCommunity/GliderTools)              | Quality control and plot generic glider data |
 | [IOOS qc](https://github.com/ioos/ioos_qc)                                      | Apply IOOS QARTOD and other qc routines  |
-| [SOCIB](https://github.com/socib/glider_toolbox)                                | Process slocum, seaglider and seaxplorer data in Matlab (not actively maintained) |
+| [SOCIB](https://github.com/socib/glider_toolbox)                                | Process glider data in Matlab (not actively maintained) |
 | [glider tools list](https://github.com/OceanGlidersCommunity/glider-tools-list) | [OceanGliders community](https://github.com/OceanGlidersCommunity) repository to list tools for processing glider data. Includes many of the tools listed above. |
