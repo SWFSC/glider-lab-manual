@@ -10,80 +10,68 @@
     ]
   },
   {
-    "objectID": "content/dataproc-acoustics.html",
-    "href": "content/dataproc-acoustics.html",
-    "title": "Acoustic Data Processing",
+    "objectID": "content/pilot-tools.html",
+    "href": "content/pilot-tools.html",
+    "title": "Glider Pilot Tools",
     "section": "",
-    "text": "Here be acoustic data processing\n\n\n\n Back to top",
+    "text": "Slocum Fleet Mission Control - SFMC from Teledyne. Where to pilot the gliders using Iridium.\nArgos - Check where the gliders are if they miss a call in.\nDatahost - The TWR forum. It has the firmware builds for the gliders, Masterdata for the different firmware, TWR glider sheets, such as, Ballast, Functional Checkout, etc. Most forms are in Resources.\nMasterdata - A list of masterdata for all the various operating systems of Slocum gliders. \nMasterdata 8.6  Masterdata 11.0\nTeledyne Customer Portal - Where to check the status of service on gliders and glider parts at TWR.\nOceanGNS - A program that can track multiple gliders as well as has different layers. The layers can be depth average currents, sea ice, chlorophyll, etc.\n\n\n\nBattery Capacities\n\n\n\n\n\nFile Transfer Syntax\n\n\n\n\n\nDifferences between persistor and STM",
     "crumbs": [
-      "Data Processing",
-      "Acoustics"
+      "Glider Lab",
+      "Glider Pilot Tools"
     ]
   },
   {
-    "objectID": "content/dataproc-gliders.html",
-    "href": "content/dataproc-gliders.html",
-    "title": "Glider Data Processing",
+    "objectID": "content/pilot-tools.html#links",
+    "href": "content/pilot-tools.html#links",
+    "title": "Glider Pilot Tools",
     "section": "",
-    "text": "There are many steps and flavors to glider data processing, from the base processing (binary glider to NetCDF files for Slocum gliders) to QA/QC to developing products from additional glider sensors.\nHistorically, the ESD glider team has processed glider data using the Matlab toolbox SOCIB. However, this toolbox is not actively maintained, and the majority of ESD processing efforts have moved to Google Cloud (GCP). Subsequent efforts involved developing amlr-gliders, which contained a Python toolbox and scripts that were ~medium wrappers around gdm. These efforts never caught full traction.\nCurrent efforts both leveraging existing toolboxes (PyGlider, GliderTools, dbdreader) and developing new Python code and wrapper scripts that live in glider-utils. All of these efforts are geared towards processing ESD glider data in ESD’s Google Cloud project, using an Open Science approach .\nThis page describes these current efforts, and outlines planned areas of future development. For acoustic or image processing workflows, see the acoustics and and imagery pages, respectively.\nTodo: create and add flow chart, a la here",
+    "text": "Slocum Fleet Mission Control - SFMC from Teledyne. Where to pilot the gliders using Iridium.\nArgos - Check where the gliders are if they miss a call in.\nDatahost - The TWR forum. It has the firmware builds for the gliders, Masterdata for the different firmware, TWR glider sheets, such as, Ballast, Functional Checkout, etc. Most forms are in Resources.\nMasterdata - A list of masterdata for all the various operating systems of Slocum gliders. \nMasterdata 8.6  Masterdata 11.0\nTeledyne Customer Portal - Where to check the status of service on gliders and glider parts at TWR.\nOceanGNS - A program that can track multiple gliders as well as has different layers. The layers can be depth average currents, sea ice, chlorophyll, etc.\n\n\n\nBattery Capacities\n\n\n\n\n\nFile Transfer Syntax\n\n\n\n\n\nDifferences between persistor and STM",
     "crumbs": [
-      "Data Processing",
-      "Gliders"
+      "Glider Lab",
+      "Glider Pilot Tools"
     ]
   },
   {
-    "objectID": "content/dataproc-gliders.html#background",
-    "href": "content/dataproc-gliders.html#background",
-    "title": "Glider Data Processing",
+    "objectID": "content/pilot-tools.html#google-drive",
+    "href": "content/pilot-tools.html#google-drive",
+    "title": "Glider Pilot Tools",
+    "section": "Google Drive",
+    "text": "Google Drive\n\nGliders\nAMLR Gliders Folder - Where most things are stored on Google Drive with regards to gliders.\nFleet Status - A place to see the simplified status of gliders. Also to keep track of RMAs and generalized deployments.\nSensor Settings and Sampling Sheet - Where mission planners input the settings for sensors and how they should sample.\nBallast sheet from Rutgers -\nTWR Ballast sheet - You have to log into Datahost to access this.\nFunctional Checkout Procedure - You have to log into Datahost to access this.\nEmergency boat options\n\n\nAcoustics",
+    "crumbs": [
+      "Glider Lab",
+      "Glider Pilot Tools"
+    ]
+  },
+  {
+    "objectID": "content/pilot-tools.html#useful-websites",
+    "href": "content/pilot-tools.html#useful-websites",
+    "title": "Glider Pilot Tools",
+    "section": "Useful websites",
+    "text": "Useful websites\nSIO Del Mar Buoy\nSCCOOS shore stations\nDefault SFMC Group Call In - Check here to see if the glider is calling into the default group instead of our SFMC.\nUnderwater Glider User Group\nEveryone’s Gliding Observatories\nOcean Gliders\nIOOS Underwater Gliders",
+    "crumbs": [
+      "Glider Lab",
+      "Glider Pilot Tools"
+    ]
+  },
+  {
+    "objectID": "content/shared-values.html",
+    "href": "content/shared-values.html",
+    "title": "Shared Values and Best Practices",
     "section": "",
-    "text": "There are many steps and flavors to glider data processing, from the base processing (binary glider to NetCDF files for Slocum gliders) to QA/QC to developing products from additional glider sensors.\nHistorically, the ESD glider team has processed glider data using the Matlab toolbox SOCIB. However, this toolbox is not actively maintained, and the majority of ESD processing efforts have moved to Google Cloud (GCP). Subsequent efforts involved developing amlr-gliders, which contained a Python toolbox and scripts that were ~medium wrappers around gdm. These efforts never caught full traction.\nCurrent efforts both leveraging existing toolboxes (PyGlider, GliderTools, dbdreader) and developing new Python code and wrapper scripts that live in glider-utils. All of these efforts are geared towards processing ESD glider data in ESD’s Google Cloud project, using an Open Science approach .\nThis page describes these current efforts, and outlines planned areas of future development. For acoustic or image processing workflows, see the acoustics and and imagery pages, respectively.\nTodo: create and add flow chart, a la here",
+    "text": "Model after https://sael-swfsc.github.io/SAEL-lab-manual/content/SharedValues-BestPractices.html\n\n\n\n Back to top",
     "crumbs": [
-      "Data Processing",
-      "Gliders"
+      "Shared Values"
     ]
   },
   {
-    "objectID": "content/dataproc-gliders.html#base-processing",
-    "href": "content/dataproc-gliders.html#base-processing",
-    "title": "Glider Data Processing",
-    "section": "Base Processing",
-    "text": "Base Processing\nThe base glider data processing is primarily done using PyGlider, hereafter simply ‘pyglider’. pyglider takes in binary data files from Teledyne/Webb Slocum gliders, and creates CF-compliant NetCDF files. These NetCDF files will be both used internally in further workflows, and sent to the NGDAC.\n\nLevel 1 - Timeseries\nWorkflow:\n\nBinary and cache files from the glider are properly archived in GCS bucket (see here - link todo)\nCreate deployment YAML file (example). Currently this is done by hand; ideally in the future this is done by code pulling from the Glider&Mooring database\nRun pyglider and create output NetCDF files using the script binary_to_nc.py, run via binary_to_nc.sh on a GCP VM\nAccess processed NetCDF files via GCP for additional internal workflows\n\n\nOutput NetCDF File\nTodo: Notes about the structure of and variables in the output NetCDF file. This will depend on CR answers to processing questions (link to issue todo).\n\n\nProcessing Notes\nThis section describes the default pyglider/dbdreader behavior when processing binary glider files. This may be useful reference for folks using pyglider/dbdreader for any purpose.\nThe pyglider.slocum.binary_to_timeseries function uses dbdreader to read slocum glider data from binary files. More discussion can be found here around why pyglider switched to using dbdreader, and how pyglider processing worked before.\nAs constructed, binary_to_timeseries uses dbdreader’s get_sync to extract values for all of the specified sensors. Thus, the user specifies a particular sensor to server as the ‘time_base’, and then all other desired variables (across science and engineering: pressure, temperature, oxygen, roll, etc.) are interpolated onto the same time base (i.e., the timestamps where this ‘time_base’ variable has a valid (not missing/nan) value). This makes life difficult if different sensors have different sampling strategies, and does not allow users to extract non-interpolated data. Adding a ‘union’ behavior option is currently under discussion in this issue and this pull request. For now, binary_to_nc.py generates several datasets, and merges them together soa s to have all variables/relevant timestamps in one file.\nData alterations, or additional features of note:\n\ndbdreader:\n\ndbdreader throws an error if a sensor is turned off and thus not present in some sbd/tbd or dbd/ebd files. For example, if the oxygen sensor is turned off halfway through a deployment, although this would apply to any sensor that is turned off. However, it looks like this behavior may be fixed soon.\ndbdreader by default skips the first line of each binary file. The reasoning is that “this line contains either nonsense values, or values that were read a long time ago. This behavior can be changed.” See here for more discussion.\ndbdreader only identifies sensors as ‘engineering’ or ‘science’. Thus, when extracting e.g. data for the sensor ‘sci_oxy4_oxygen’, dbdreader uses the ‘sci_m_present_time’ as the timestamp, rather than ‘sci_oxy4_present_time’.\n\npyglider:\n\nLatitude and longitude values are set to nan if their absolute value is greater than 90 and 180, respectively.\nAny values of zero from science sensors are converted to nan.\nNo other data alterations are made (e.g., CTD data is all read and left as-is).\n\n\n\n\n\nLevel 2 - Gridded\npyglider has a function ncprocess.make_gridfiles for making gridded data. This function takes the above timeseries file as input.\nMore docs forthcoming.\n\n\nIOOS NGDAC\npyglider has a function ncprocess.extract_timeseries_profiles for creating profile files for submission to the NGDAC. This function takes the above timeseries file as input.\nMore docs forthcoming.\n\n\nOther Files\nESD’s base processing also creates several other files necessary for processing or using data from other sensors on the glider. If the glider is carrying a shadowgraph or glidercam camera system, then a CSV file is created that links each image with the relevant glider measurements at that time (depth, temperature, oxygen concentration, etc.). If the glider is carrying an acoustic instrument, specific files are needed to process these data using Echoview. These files are created during the base processing step as well.",
+    "objectID": "content/reports.html",
+    "href": "content/reports.html",
+    "title": "Deployment Reports",
+    "section": "",
+    "text": "Here be deployment reports.\n\n\n\n Back to top",
     "crumbs": [
-      "Data Processing",
-      "Gliders"
-    ]
-  },
-  {
-    "objectID": "content/dataproc-gliders.html#real-time-data",
-    "href": "content/dataproc-gliders.html#real-time-data",
-    "title": "Glider Data Processing",
-    "section": "Real-Time Data",
-    "text": "Real-Time Data\ntbd. Vision is to have GCP infrastructure in place to:\n\nPeriodically rsync real-time data (sbd/tbd files) from the SFMC to a GCP VM\nRun the base processing steps on these data\nAutomatically send the processed files to the NGDAC",
-    "crumbs": [
-      "Data Processing",
-      "Gliders"
-    ]
-  },
-  {
-    "objectID": "content/dataproc-gliders.html#future-steps",
-    "href": "content/dataproc-gliders.html#future-steps",
-    "title": "Glider Data Processing",
-    "section": "Future Steps",
-    "text": "Future Steps\nqc + data cleaning -&gt; cleaned netcdf files with qc flags. Potential resources:\n\nImplement IOOS QARTOD tests, eg using ioos_qc to add qc flags\nhttps://github.com/OceanGlidersCommunity/Realtime-QC\n\nhttps://github.com/castelao/CoTeDe\n\nother qc/data cleaning? For instance, sanity check ts plots. Likely will involve by-hand inspection for each deployment, including removing bad data if discovered\n\nGliderTools: additional processing functionality\n\nmanuscript describing the GliderTools toolbox\nGliderTools contains tools for processing Seaglider basestation files. However, the rest of the tools simply require that the data be in an xarray dataset.\noptics, pq: quenching correction method described by Thomalla et al. (2018)\nadditional qc tools?\ncalculate cool physics things (mixed layer depth, …)\nleverage gridded plotting routines",
-    "crumbs": [
-      "Data Processing",
-      "Gliders"
-    ]
-  },
-  {
-    "objectID": "content/dataproc-gliders.html#github-repos",
-    "href": "content/dataproc-gliders.html#github-repos",
-    "title": "Glider Data Processing",
-    "section": "GitHub Repos",
-    "text": "GitHub Repos\nSee the home page for ESD-developed repos. External GitHub repos that are particularly relevant/useful:\n\n\n\nrepo link\ndescription\n\n\n\n\ndbdreader\nExtract data from slocum binary files\n\n\npyglider\nConvert datafiles from slocum and seaexplorer into netcdf\n\n\nGliderTools\nQuality control and plot generic glider data\n\n\nIOOS qc\nApply IOOS QARTOD and other qc routines\n\n\nSOCIB\nProcess glider data in Matlab (not actively maintained)\n\n\nglider tools list\nOceanGliders community repository to list tools for processing glider data. Includes many of the tools listed above.",
-    "crumbs": [
-      "Data Processing",
-      "Gliders"
+      "Deployments",
+      "Deployment Reports"
     ]
   },
   {
@@ -157,7 +145,7 @@
     "href": "index.html",
     "title": "Glider Lab Manual",
     "section": "",
-    "text": "The Ecosystem Science Division (ESD) at the Southwest Fisheries Science Center does some pretty cool stuff using gliders, in both the California Current Ecosystem and the Antarctic Peninsula regions. This website is an in-development manual for all ESD glider activities. Please contact a member of the glider team with any questions.\nFunding for the glider lab comes from base funding of the ESD Programs: Scientific Opoerations and Support (SOS), United States Antarctic Marine Living Resources (U.S. AMLR), and Offshore Wind. Additional funding also comes from the NOAA Inflation Reduction Act (IRA) strategic initiatives; UXS-OC (REFOCUS etc.).",
+    "text": "The Ecosystem Science Division (ESD) at the Southwest Fisheries Science Center does some pretty cool stuff using gliders, in both the California Current Ecosystem and the Antarctic Peninsula regions. This website is an in-development manual for all ESD glider activities. Please contact a member of the glider team with any questions.\nFunding for the glider lab comes from base funding of the ESD Programs: Scientific Opoerations and Support (SOS), United States Antarctic Marine Living Resources (U.S. AMLR), and Offshore Wind. Additional funding also comes from the NOAA Inflation Reduction Act (IRA) strategic initiatives; UXS-OC (REFOCUS etc.).\nFor information about past deployments by the ESD glider lab, see this page",
     "crumbs": [
       "Home"
     ]
@@ -183,16 +171,6 @@
     ]
   },
   {
-    "objectID": "index.html#deployments",
-    "href": "index.html#deployments",
-    "title": "Glider Lab Manual",
-    "section": "Deployments",
-    "text": "Deployments\nThe below table lists all ESD (and formerly AERD) glider deployments.\nTodo: embed/include table directly here. For now, see this sheet (last updated Aug 2024).",
-    "crumbs": [
-      "Home"
-    ]
-  },
-  {
     "objectID": "content/data-management.html",
     "href": "content/data-management.html",
     "title": "Data Management",
@@ -203,57 +181,102 @@
     ]
   },
   {
-    "objectID": "content/shared-values.html",
-    "href": "content/shared-values.html",
-    "title": "Shared Values and Best Practices",
+    "objectID": "content/dataproc-gliders.html",
+    "href": "content/dataproc-gliders.html",
+    "title": "Glider Data Processing",
     "section": "",
-    "text": "Model after https://sael-swfsc.github.io/SAEL-lab-manual/content/SharedValues-BestPractices.html\n\n\n\n Back to top",
+    "text": "There are many steps and flavors to glider data processing, from the base processing (binary glider to NetCDF files for Slocum gliders) to QA/QC to developing products from additional glider sensors.\nHistorically, the ESD glider team has processed glider data using the Matlab toolbox SOCIB. However, this toolbox is not actively maintained, and the majority of ESD processing efforts have moved to Google Cloud (GCP). Subsequent efforts involved developing amlr-gliders, which contained a Python toolbox and scripts that were ~medium wrappers around gdm. These efforts never caught full traction.\nCurrent efforts both leveraging existing toolboxes (PyGlider, GliderTools, dbdreader) and developing new Python code and wrapper scripts that live in glider-utils. All of these efforts are geared towards processing ESD glider data in ESD’s Google Cloud project, using an Open Science approach .\nThis page describes these current efforts, and outlines planned areas of future development. For acoustic or image processing workflows, see the acoustics and and imagery pages, respectively.\nTodo: create and add flow chart, a la here",
     "crumbs": [
-      "Shared Values"
+      "Data Processing",
+      "Gliders"
     ]
   },
   {
-    "objectID": "content/pilot-tools.html",
-    "href": "content/pilot-tools.html",
-    "title": "Glider Pilot Tools",
+    "objectID": "content/dataproc-gliders.html#background",
+    "href": "content/dataproc-gliders.html#background",
+    "title": "Glider Data Processing",
     "section": "",
-    "text": "Slocum Fleet Mission Control - SFMC from Teledyne. Where to pilot the gliders using Iridium.\nArgos - Check where the gliders are if they miss a call in.\nDatahost - The TWR forum. It has the firmware builds for the gliders, Masterdata for the different firmware, TWR glider sheets, such as, Ballast, Functional Checkout, etc. Most forms are in Resources.\nMasterdata - A list of masterdata for all the various operating systems of Slocum gliders. \nMasterdata 8.6  Masterdata 11.0\nTeledyne Customer Portal - Where to check the status of service on gliders and glider parts at TWR.\nOceanGNS - A program that can track multiple gliders as well as has different layers. The layers can be depth average currents, sea ice, chlorophyll, etc.\n\n\n\nBattery Capacities\n\n\n\n\n\nFile Transfer Syntax\n\n\n\n\n\nDifferences between persistor and STM",
+    "text": "There are many steps and flavors to glider data processing, from the base processing (binary glider to NetCDF files for Slocum gliders) to QA/QC to developing products from additional glider sensors.\nHistorically, the ESD glider team has processed glider data using the Matlab toolbox SOCIB. However, this toolbox is not actively maintained, and the majority of ESD processing efforts have moved to Google Cloud (GCP). Subsequent efforts involved developing amlr-gliders, which contained a Python toolbox and scripts that were ~medium wrappers around gdm. These efforts never caught full traction.\nCurrent efforts both leveraging existing toolboxes (PyGlider, GliderTools, dbdreader) and developing new Python code and wrapper scripts that live in glider-utils. All of these efforts are geared towards processing ESD glider data in ESD’s Google Cloud project, using an Open Science approach .\nThis page describes these current efforts, and outlines planned areas of future development. For acoustic or image processing workflows, see the acoustics and and imagery pages, respectively.\nTodo: create and add flow chart, a la here",
     "crumbs": [
-      "Glider Lab",
-      "Glider Pilot Tools"
+      "Data Processing",
+      "Gliders"
     ]
   },
   {
-    "objectID": "content/pilot-tools.html#links",
-    "href": "content/pilot-tools.html#links",
-    "title": "Glider Pilot Tools",
+    "objectID": "content/dataproc-gliders.html#base-processing",
+    "href": "content/dataproc-gliders.html#base-processing",
+    "title": "Glider Data Processing",
+    "section": "Base Processing",
+    "text": "Base Processing\nThe base glider data processing is primarily done using PyGlider, hereafter simply ‘pyglider’. pyglider takes in binary data files from Teledyne/Webb Slocum gliders, and creates CF-compliant NetCDF files. These NetCDF files will be both used internally in further workflows, and sent to the NGDAC.\n\nLevel 1 - Timeseries\nWorkflow:\n\nBinary and cache files from the glider are properly archived in GCS bucket (see here - link todo)\nCreate deployment YAML file (example). Currently this is done by hand; ideally in the future this is done by code pulling from the Glider&Mooring database\nRun pyglider and create output NetCDF files using the script binary_to_nc.py, run via binary_to_nc.sh on a GCP VM\nAccess processed NetCDF files via GCP for additional internal workflows\n\n\nOutput NetCDF File\nTodo: Notes about the structure of and variables in the output NetCDF file. This will depend on CR answers to processing questions (link to issue todo).\n\n\nProcessing Notes\nThis section describes the default pyglider/dbdreader behavior when processing binary glider files. This may be useful reference for folks using pyglider/dbdreader for any purpose.\nThe pyglider.slocum.binary_to_timeseries function uses dbdreader to read slocum glider data from binary files. More discussion can be found here around why pyglider switched to using dbdreader, and how pyglider processing worked before.\nAs constructed, binary_to_timeseries uses dbdreader’s get_sync to extract values for all of the specified sensors. Thus, the user specifies a particular sensor to server as the ‘time_base’, and then all other desired variables (across science and engineering: pressure, temperature, oxygen, roll, etc.) are interpolated onto the same time base (i.e., the timestamps where this ‘time_base’ variable has a valid (not missing/nan) value). This makes life difficult if different sensors have different sampling strategies, and does not allow users to extract non-interpolated data. Adding a ‘union’ behavior option is currently under discussion in this issue and this pull request. For now, binary_to_nc.py generates several datasets, and merges them together soa s to have all variables/relevant timestamps in one file.\nData alterations, or additional features of note:\n\ndbdreader:\n\ndbdreader throws an error if a sensor is turned off and thus not present in some sbd/tbd or dbd/ebd files. For example, if the oxygen sensor is turned off halfway through a deployment, although this would apply to any sensor that is turned off. However, it looks like this behavior may be fixed soon.\ndbdreader by default skips the first line of each binary file. The reasoning is that “this line contains either nonsense values, or values that were read a long time ago. This behavior can be changed.” See here for more discussion.\ndbdreader only identifies sensors as ‘engineering’ or ‘science’. Thus, when extracting e.g. data for the sensor ‘sci_oxy4_oxygen’, dbdreader uses the ‘sci_m_present_time’ as the timestamp, rather than ‘sci_oxy4_present_time’.\n\npyglider:\n\nLatitude and longitude values are set to nan if their absolute value is greater than 90 and 180, respectively.\nAny values of zero from science sensors are converted to nan.\nNo other data alterations are made (e.g., CTD data is all read and left as-is).\n\n\n\n\n\nLevel 2 - Gridded\npyglider has a function ncprocess.make_gridfiles for making gridded data. This function takes the above timeseries file as input.\nMore docs forthcoming.\n\n\nIOOS NGDAC\npyglider has a function ncprocess.extract_timeseries_profiles for creating profile files for submission to the NGDAC. This function takes the above timeseries file as input.\nMore docs forthcoming.\n\n\nOther Files\nESD’s base processing also creates several other files necessary for processing or using data from other sensors on the glider. If the glider is carrying a shadowgraph or glidercam camera system, then a CSV file is created that links each image with the relevant glider measurements at that time (depth, temperature, oxygen concentration, etc.). If the glider is carrying an acoustic instrument, specific files are needed to process these data using Echoview. These files are created during the base processing step as well.",
+    "crumbs": [
+      "Data Processing",
+      "Gliders"
+    ]
+  },
+  {
+    "objectID": "content/dataproc-gliders.html#real-time-data",
+    "href": "content/dataproc-gliders.html#real-time-data",
+    "title": "Glider Data Processing",
+    "section": "Real-Time Data",
+    "text": "Real-Time Data\ntbd. Vision is to have GCP infrastructure in place to:\n\nPeriodically rsync real-time data (sbd/tbd files) from the SFMC to a GCP VM\nRun the base processing steps on these data\nAutomatically send the processed files to the NGDAC",
+    "crumbs": [
+      "Data Processing",
+      "Gliders"
+    ]
+  },
+  {
+    "objectID": "content/dataproc-gliders.html#future-steps",
+    "href": "content/dataproc-gliders.html#future-steps",
+    "title": "Glider Data Processing",
+    "section": "Future Steps",
+    "text": "Future Steps\nqc + data cleaning -&gt; cleaned netcdf files with qc flags. Potential resources:\n\nImplement IOOS QARTOD tests, eg using ioos_qc to add qc flags\nhttps://github.com/OceanGlidersCommunity/Realtime-QC\n\nhttps://github.com/castelao/CoTeDe\n\nother qc/data cleaning? For instance, sanity check ts plots. Likely will involve by-hand inspection for each deployment, including removing bad data if discovered\n\nGliderTools: additional processing functionality\n\nmanuscript describing the GliderTools toolbox\nGliderTools contains tools for processing Seaglider basestation files. However, the rest of the tools simply require that the data be in an xarray dataset.\noptics, pq: quenching correction method described by Thomalla et al. (2018)\nadditional qc tools?\ncalculate cool physics things (mixed layer depth, …)\nleverage gridded plotting routines",
+    "crumbs": [
+      "Data Processing",
+      "Gliders"
+    ]
+  },
+  {
+    "objectID": "content/dataproc-gliders.html#github-repos",
+    "href": "content/dataproc-gliders.html#github-repos",
+    "title": "Glider Data Processing",
+    "section": "GitHub Repos",
+    "text": "GitHub Repos\nSee the home page for ESD-developed repos. External GitHub repos that are particularly relevant/useful:\n\n\n\nrepo link\ndescription\n\n\n\n\ndbdreader\nExtract data from slocum binary files\n\n\npyglider\nConvert datafiles from slocum and seaexplorer into netcdf\n\n\nGliderTools\nQuality control and plot generic glider data\n\n\nIOOS qc\nApply IOOS QARTOD and other qc routines\n\n\nSOCIB\nProcess glider data in Matlab (not actively maintained)\n\n\nglider tools list\nOceanGliders community repository to list tools for processing glider data. Includes many of the tools listed above.",
+    "crumbs": [
+      "Data Processing",
+      "Gliders"
+    ]
+  },
+  {
+    "objectID": "content/dataproc-acoustics.html",
+    "href": "content/dataproc-acoustics.html",
+    "title": "Acoustic Data Processing",
     "section": "",
-    "text": "Slocum Fleet Mission Control - SFMC from Teledyne. Where to pilot the gliders using Iridium.\nArgos - Check where the gliders are if they miss a call in.\nDatahost - The TWR forum. It has the firmware builds for the gliders, Masterdata for the different firmware, TWR glider sheets, such as, Ballast, Functional Checkout, etc. Most forms are in Resources.\nMasterdata - A list of masterdata for all the various operating systems of Slocum gliders. \nMasterdata 8.6  Masterdata 11.0\nTeledyne Customer Portal - Where to check the status of service on gliders and glider parts at TWR.\nOceanGNS - A program that can track multiple gliders as well as has different layers. The layers can be depth average currents, sea ice, chlorophyll, etc.\n\n\n\nBattery Capacities\n\n\n\n\n\nFile Transfer Syntax\n\n\n\n\n\nDifferences between persistor and STM",
+    "text": "Here be acoustic data processing\n\n\n\n Back to top",
     "crumbs": [
-      "Glider Lab",
-      "Glider Pilot Tools"
+      "Data Processing",
+      "Acoustics"
     ]
   },
   {
-    "objectID": "content/pilot-tools.html#google-drive",
-    "href": "content/pilot-tools.html#google-drive",
-    "title": "Glider Pilot Tools",
-    "section": "Google Drive",
-    "text": "Google Drive\n\nGliders\nAMLR Gliders Folder - Where most things are stored on Google Drive with regards to gliders.\nFleet Status - A place to see the simplified status of gliders. Also to keep track of RMAs and generalized deployments.\nSensor Settings and Sampling Sheet - Where mission planners input the settings for sensors and how they should sample.\nBallast sheet from Rutgers -\nTWR Ballast sheet - You have to log into Datahost to access this.\nFunctional Checkout Procedure - You have to log into Datahost to access this.\nEmergency boat options\n\n\nAcoustics",
+    "objectID": "content/past-deployments.html",
+    "href": "content/past-deployments.html",
+    "title": "Past Deployments",
+    "section": "",
+    "text": "The below table lists all ESD (and formerly AERD) glider deployments.\nTodo: embed/include table directly here. For now, see this sheet (last updated Aug 2024).",
     "crumbs": [
-      "Glider Lab",
-      "Glider Pilot Tools"
+      "Deployments",
+      "Past Deployments"
     ]
   },
   {
-    "objectID": "content/pilot-tools.html#useful-websites",
-    "href": "content/pilot-tools.html#useful-websites",
-    "title": "Glider Pilot Tools",
-    "section": "Useful websites",
-    "text": "Useful websites\nSIO Del Mar Buoy\nSCCOOS shore stations\nDefault SFMC Group Call In - Check here to see if the glider is calling into the default group instead of our SFMC.\nUnderwater Glider User Group\nEveryone’s Gliding Observatories\nOcean Gliders\nIOOS Underwater Gliders",
+    "objectID": "content/past-deployments.html#deployments",
+    "href": "content/past-deployments.html#deployments",
+    "title": "Past Deployments",
+    "section": "",
+    "text": "The below table lists all ESD (and formerly AERD) glider deployments.\nTodo: embed/include table directly here. For now, see this sheet (last updated Aug 2024).",
     "crumbs": [
-      "Glider Lab",
-      "Glider Pilot Tools"
+      "Deployments",
+      "Past Deployments"
     ]
   }
 ]
