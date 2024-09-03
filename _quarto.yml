@@ -43,6 +43,10 @@ website:
         contents:
           - content/lab.qmd
           - content/pilot-tools.qmd
+      - section: "Deployments"
+        contents:
+          - content/past-deployments.qmd  
+          - content/reports.qmd
       - content/data-management.qmd
       - section: "Data Processing"
         contents:

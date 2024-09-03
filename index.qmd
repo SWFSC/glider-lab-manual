@@ -8,6 +8,8 @@ The Ecosystem Science Division (ESD) at the [Southwest Fisheries Science Center]
 
 Funding for the glider lab comes from base funding of the ESD Programs: Scientific Opoerations and Support (SOS), United States Antarctic Marine Living Resources (U.S. AMLR), and Offshore Wind. Additional funding also comes from the NOAA Inflation Reduction Act (IRA) strategic initiatives; UXS-OC (REFOCUS etc.).
 
+For information about past deployments by the ESD glider lab, see [this page](content/past-deployments.qmd)
+
 ## Team Members
 
 | Name | Job Title | Glider Team Role |
@@ -43,9 +45,3 @@ GitHub repos developed by the ESD glider team. Issues for these repos are tracke
 | [echoview_glider_template](https://github.com/us-amlr/echoview_glider_template) | Echoview glider templates that are used for acoustic data analysis                              |
 | [glider_processing_code](https://github.com/us-amlr/glider_processing_code)     | Compilation of code that is used to work with glider acoustic data                              |
 | [glider-lab-manual](https://github.com/SWFSC/glider-lab-manual)                 | ESD glider lab website 
-
-## Deployments
-
-The below table lists all ESD (and formerly AERD) glider deployments. 
-
-Todo: embed/include table directly here. For now, see [this sheet](https://docs.google.com/spreadsheets/d/1tSIi44OTEUQXPJwwiy1emhdIyRs9Vt8iT5IlJBMrPLA/edit?usp=sharing) (last updated Aug 2024).
