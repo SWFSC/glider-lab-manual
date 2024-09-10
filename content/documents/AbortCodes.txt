@@ -1,0 +1,96 @@
+Abort codes found in Masterdata
+
+// Values <= 0 represent running or completed mission status, not aborts
+
+MS_NONE = -3,
+
+MS_COMPLETED_ABNORMALLY = -2, 
+
+MS_COMPLETED_NORMALLY = -1, 
+
+MS_IN_PROGRESS = 0,
+
+
+// Actual aborts start here.
+
+MS_ABORT_STACK_IS_IDLE = 1,		// Missing control for buoyancy, pitch, or heading  
+
+MS_ABORT_HEADING_IS_IDLE = 2,		// No one at the helm
+
+MS_ABORT_PITCH_IS_IDLE = 3,		// Missing pitch control
+
+MS_ABORT_BPUMP_IS_IDLE = 4,		// Missing (shallow) buoyancy pump control
+
+MS_ABORT_THRENG_IS_IDLE= 5,		// Missing thermal engine control
+
+MS_ABORT_BEH_ERROR = 6,			// behavior entered error state, usually bad b_args
+
+MS_ABORT_OVERDEPTH = 7,			// went too deep - depth > abend:overdepth
+
+MS_ABORT_OVERTIME = 8,			// went too long - time > abend:overtime
+
+MS_ABORT_UNDERVOLTS = 9,		// batteries getting low - voltage < abend:undervolts
+
+MS_ABORT_SAMEDEPTH_FOR = 10,		// not moving vertically for > abend:samedepth_for
+
+MS_ABORT_USER_INTERRUPT = 11,		// hit control-C
+
+MS_ABORT_NOINPUT = 12,			// some required device not producing data
+
+MS_ABORT_INFLECTION = 13,		// inflection took too long
+
+MS_ABORT_NO_TICKLE = 14,		// watchdog not serviced, abort before we blow the weight
+
+MS_ABORT_ENG_PRESSURE = 15,		// Thermal engine pressure too low
+
+MS_ABORT_DEVICE_ERROR = 16,		// a required device produced too many / severe errors
+
+MS_ABORT_DEV_NOT_INSTALLED = 17,	// a required device is not there
+
+MS_ABORT_WPT_TOOFAR = 18,		// distance to waypoint > abend:max_wpt_distance 
+
+MS_ABORT_UNREASONABLE_SETTINGS = 19,	// global sensors are inconsistent
+
+MS_ABORT_LMC_NOT_FIXED = 20,		// internal navigation error
+
+MS_ABORT_NO_HEAP = 21,			// out of memory
+
+MS_ABORT_LOG_DATA_ERROR = 22,		// error logging data
+
+MS_ABORT_THERMAL_NOT_ENABLED = 23,	// thermal mission without thermal engine
+
+MS_ABORT_LEAK = 24,			// keeping the ocean out is Job One...
+
+MS_ABORT_VACUUM = 25,			// vacuum < abend:vacuum_min or > abend:vacuum_max
+
+MS_ABORT_NO_HEADING_MEASUREMENT = 26,	// compass is busted
+
+MS_ABORT_STALLED = 27,			// not moving horizontally for > abend:stalled_for 
+
+MS_ABORT_DE_PUMP_IS_IDLE = 28,		// Missing (shallow) pump control
+
+MS_ABORT_DE_PUMP_NOT_ENABLED = 29,	// deep mission without deep engine
+
+MS_ABORT_CPU_LOADED = 30,		// computer too busy  
+
+MS_ABORT_NO_ABEND_BEHAVIOR = 31,	// no abend behavior in mission
+
+MS_ABORT_LOW_REL_CHARGE = 32,		// batteries getting low on energy
+
+MS_ABORT_WEIGHT_DROPPED = 33,		// weight has been dropped, not going to fly
+
+MS_ABORT_INITIALIZATION_ERROR = 34,	// empty mission or bad mission sensors
+
+MS_ABORT_CRITICAL_ABORT_ACTIVE = 35,	// critical abort has occurred, not going to fly
+
+MS_ABORT_INVALID_GPS = 36,		// too many segments in a row without a valid gps fix
+
+MS_ABORT_NO_COMMS_TICKLE = 37,		// no comms for this long
+
+MS_ABORT_EMERGENCY_BATTERY_ACTIVE = 38,	// emergency battery is active
+
+MS_ABORT_SURFACE_BLOCKED=39,		// expecting ice near surface and can't reach the surface
+
+MS_ABORT_NO_TICKLE_ICE = 40, //  expecting ice near surface and watchdog not serviced
+
+MS_COMPLETED_NORMALLY_UNDER_ICE = 41 // expecting ice near surface, mission completed normally, but no comms/GPS at surface

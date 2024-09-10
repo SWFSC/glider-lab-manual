@@ -1,69 +1,5 @@
 [
   {
-    "objectID": "content/imagery.html",
-    "href": "content/imagery.html",
-    "title": "Imagery",
-    "section": "",
-    "text": "Here be imagery\n\n\n\n Back to top",
-    "crumbs": [
-      "Imagery"
-    ]
-  },
-  {
-    "objectID": "content/pilot-tools.html",
-    "href": "content/pilot-tools.html",
-    "title": "Glider Pilot Tools",
-    "section": "",
-    "text": "Slocum Fleet Mission Control - SFMC from Teledyne. Where to pilot the gliders using Iridium.\nArgos - Check where the gliders are if they miss a call in.\nDatahost - The TWR forum. It has the firmware builds for the gliders, Masterdata for the different firmware, TWR glider sheets, such as, Ballast, Functional Checkout, etc. Most forms are in Resources.\nMasterdata - A list of masterdata for all the various operating systems of Slocum gliders. \nMasterdata 8.6  Masterdata 11.0\nTeledyne Customer Portal - Where to check the status of service on gliders and glider parts at TWR.\nOceanGNS - A program that can track multiple gliders as well as has different layers. The layers can be depth average currents, sea ice, chlorophyll, etc.\n\n\n\nBattery Capacities\n\n\n\n\n\nFile Transfer Syntax\n\n\n\n\n\nDifferences between persistor and STM",
-    "crumbs": [
-      "Glider Lab",
-      "Glider Pilot Tools"
-    ]
-  },
-  {
-    "objectID": "content/pilot-tools.html#links",
-    "href": "content/pilot-tools.html#links",
-    "title": "Glider Pilot Tools",
-    "section": "",
-    "text": "Slocum Fleet Mission Control - SFMC from Teledyne. Where to pilot the gliders using Iridium.\nArgos - Check where the gliders are if they miss a call in.\nDatahost - The TWR forum. It has the firmware builds for the gliders, Masterdata for the different firmware, TWR glider sheets, such as, Ballast, Functional Checkout, etc. Most forms are in Resources.\nMasterdata - A list of masterdata for all the various operating systems of Slocum gliders. \nMasterdata 8.6  Masterdata 11.0\nTeledyne Customer Portal - Where to check the status of service on gliders and glider parts at TWR.\nOceanGNS - A program that can track multiple gliders as well as has different layers. The layers can be depth average currents, sea ice, chlorophyll, etc.\n\n\n\nBattery Capacities\n\n\n\n\n\nFile Transfer Syntax\n\n\n\n\n\nDifferences between persistor and STM",
-    "crumbs": [
-      "Glider Lab",
-      "Glider Pilot Tools"
-    ]
-  },
-  {
-    "objectID": "content/pilot-tools.html#google-drive",
-    "href": "content/pilot-tools.html#google-drive",
-    "title": "Glider Pilot Tools",
-    "section": "Google Drive",
-    "text": "Google Drive\n\nGliders\nAMLR Gliders Folder - Where most things are stored on Google Drive with regards to gliders.\nFleet Status - A place to see the simplified status of gliders. Also to keep track of RMAs and generalized deployments.\nSensor Settings and Sampling Sheet - Where mission planners input the settings for sensors and how they should sample.\nBallast sheet from Rutgers -\nTWR Ballast sheet - You have to log into Datahost to access this.\nFunctional Checkout Procedure - You have to log into Datahost to access this.\nEmergency boat options\n\n\nAcoustics",
-    "crumbs": [
-      "Glider Lab",
-      "Glider Pilot Tools"
-    ]
-  },
-  {
-    "objectID": "content/pilot-tools.html#useful-websites",
-    "href": "content/pilot-tools.html#useful-websites",
-    "title": "Glider Pilot Tools",
-    "section": "Useful websites",
-    "text": "Useful websites\nSIO Del Mar Buoy\nSCCOOS shore stations\nDefault SFMC Group Call In - Check here to see if the glider is calling into the default group instead of our SFMC.\nUnderwater Glider User Group\nEveryone’s Gliding Observatories\nOcean Gliders\nIOOS Underwater Gliders",
-    "crumbs": [
-      "Glider Lab",
-      "Glider Pilot Tools"
-    ]
-  },
-  {
-    "objectID": "content/shared-values.html",
-    "href": "content/shared-values.html",
-    "title": "Shared Values and Best Practices",
-    "section": "",
-    "text": "Model after https://sael-swfsc.github.io/SAEL-lab-manual/content/SharedValues-BestPractices.html\n\n\n\n Back to top",
-    "crumbs": [
-      "Shared Values"
-    ]
-  },
-  {
     "objectID": "content/reports.html",
     "href": "content/reports.html",
     "title": "Deployment Reports",
@@ -72,112 +8,6 @@
     "crumbs": [
       "Deployments",
       "Deployment Reports"
-    ]
-  },
-  {
-    "objectID": "content/lab.html",
-    "href": "content/lab.html",
-    "title": "Glider Lab",
-    "section": "",
-    "text": "Items to include:\nGliders and Mooring Google Calendar",
-    "crumbs": [
-      "Glider Lab",
-      "Glider Lab"
-    ]
-  },
-  {
-    "objectID": "content/lab.html#standard-operating-procedures",
-    "href": "content/lab.html#standard-operating-procedures",
-    "title": "Glider Lab",
-    "section": "Standard Operating Procedures",
-    "text": "Standard Operating Procedures\nGlider Checkout Procedure The steps needed to prepare a glider for deployment.\nHow to upgrade the glider operating system\nHow to calibrate the AZFP\nHow to calibrate the compass on the glider\nHow to calibrate the shadowgraph\nHow to talk to the camera\nHow to set up the Nortek mini\nHow to pilot a glider\nSteps for deploying a glider",
-    "crumbs": [
-      "Glider Lab",
-      "Glider Lab"
-    ]
-  },
-  {
-    "objectID": "content/lab.html#online-calculators",
-    "href": "content/lab.html#online-calculators",
-    "title": "Glider Lab",
-    "section": "Online Calculators",
-    "text": "Online Calculators\nSea Water Density - Calculate sea water density and sound speed.\n\nCalculators for Acoustics\nSound Absorption - Calculate Absorption using the Francois and Garrison, 1982 method.\nStandard Sphere Target Strength - Standard sphere target strength calculator created by Advanced Survey Technologies, SWFSC.",
-    "crumbs": [
-      "Glider Lab",
-      "Glider Lab"
-    ]
-  },
-  {
-    "objectID": "content/lab.html#manuals",
-    "href": "content/lab.html#manuals",
-    "title": "Glider Lab",
-    "section": "Manuals",
-    "text": "Manuals\n\nSlocum\nBasic Glider Training slides 2024\nSlocum Fleet Mission Control 2019\nSlocum G3 Glider Operators Manual 2019\nSlocum G3 Maintenance Manual 2019\nSlocum G3S New Processor Guide 2021 Draft B\n\n\nCameras\nShadowgraph r3\nGlidercam r2.1\n\n\nNortek\nIntegrators guide 2024\nSignature 100 Operations Manual 2022\nPrinciples of Operations Signature 100 2022\nMIDAS software User Guide 2019\n\n\nAZFP\nAZFPLink Software 2019\nAZFP Glider Operators Manual 2020\nAZFP Operators Manual 2019\n\n\nECOPuck\nECOPuck User Manual 2017\n\n\nAAnderaa Oxygen Optode\nOxygen Optode Manual 2017",
-    "crumbs": [
-      "Glider Lab",
-      "Glider Lab"
-    ]
-  },
-  {
-    "objectID": "content/lab.html#software-and-settings-settings",
-    "href": "content/lab.html#software-and-settings-settings",
-    "title": "Glider Lab",
-    "section": "Software and settings settings",
-    "text": "Software and settings settings\n\n\n\nSoftware\nSettings\n\n\n\n\nZOC\nZOC settings\n\n\nTera Term\nTera Term settings\n\n\nAZFP\nSettings\n\n\nMIDAS\nSettings\n\n\nWinSCP\nSettings\n\n\nNotepad++\nSettings",
-    "crumbs": [
-      "Glider Lab",
-      "Glider Lab"
-    ]
-  },
-  {
-    "objectID": "content/lab.html#glider-and-mooring-database",
-    "href": "content/lab.html#glider-and-mooring-database",
-    "title": "Glider Lab",
-    "section": "Glider and Mooring Database",
-    "text": "Glider and Mooring Database\nYou can find the Glider and Mooring Database on the network drive. This is also possible via VPN. It is used to track glider builds, days and inflections sensors have been use, calibration sheets, etc.",
-    "crumbs": [
-      "Glider Lab",
-      "Glider Lab"
-    ]
-  },
-  {
-    "objectID": "index.html",
-    "href": "index.html",
-    "title": "Glider Lab Manual",
-    "section": "",
-    "text": "The Ecosystem Science Division (ESD) at the Southwest Fisheries Science Center does some pretty cool stuff using gliders, in both the California Current Ecosystem and the Antarctic Peninsula regions. This website is an in-development manual for all ESD glider activities. Please contact a member of the glider team with any questions.\nFunding for the glider lab comes from base funding of the ESD Programs: Scientific Opoerations and Support (SOS), United States Antarctic Marine Living Resources (U.S. AMLR), and Offshore Wind. Additional funding also comes from the NOAA Inflation Reduction Act (IRA) strategic initiatives; UXS-OC (REFOCUS etc.).\nFor information about past deployments by the ESD glider lab, see this page",
-    "crumbs": [
-      "Home"
-    ]
-  },
-  {
-    "objectID": "index.html#team-members",
-    "href": "index.html#team-members",
-    "title": "Glider Lab Manual",
-    "section": "Team Members",
-    "text": "Team Members\n\n\n\nName\nJob Title\nGlider Team Role\n\n\n\n\nChristian Reiss\nProgram Lead, Offshore Wind\nPrinciple Investigator\n\n\nAnthony Cossio\nOperations Research Analyst\nLab Manager, Pilot\n\n\nJen Walsh\nFisheries Research Biologist\nPilot\n\n\nJC Clark\nNOAA Corps\nPilot\n\n\nCaleb Flaim\nElectronics Technician\nPilot\n\n\nJacob Partida\nPhysical Science Technician\nPilot\n\n\nHailey Schmidt\nPathways Intern\nPilot\n\n\nSam Woodman\nBiologist\nData Manager\n\n\nHeidi Taylor\nProgram Lead, SOS; Deputy Director, ESD\n\n\n\nGeorge Watters\nDirector, ESD",
-    "crumbs": [
-      "Home"
-    ]
-  },
-  {
-    "objectID": "index.html#project-management",
-    "href": "index.html#project-management",
-    "title": "Glider Lab Manual",
-    "section": "Project Management",
-    "text": "Project Management\nFor most current Fleet Status information, see this Sheet\nThe ESD glider team is using GitHub Issues and Projects for project management. There efforts are heavily inspired and influenced by the Openscapes GitHub for project management approach.\nTo view the ESD glider team project, see here. This project pulls from issues from several repositories, but in particular this repo. For more details see TODO (section under development in glider lab qmd file).\n\nGitHub Repositories\nGitHub repos developed by the ESD glider team. Issues for these repos are tracked in the above-linked Project.\n\n\n\nrepo link\ndescription\n\n\n\n\nglider-lab\nRepo for tracking ESD glider lab issues/tasks\n\n\nstandard-glider-files\nESD glider cache files, as well as standard files that are put on all gliders before deployment\n\n\nglider-utils\nUtility functions for processing ESD glider data\n\n\nechoview_glider_template\nEchoview glider templates that are used for acoustic data analysis\n\n\nglider_processing_code\nCompilation of code that is used to work with glider acoustic data\n\n\nglider-lab-manual\nESD glider lab website",
-    "crumbs": [
-      "Home"
-    ]
-  },
-  {
-    "objectID": "content/data-management.html",
-    "href": "content/data-management.html",
-    "title": "Data Management",
-    "section": "",
-    "text": "Gliders both collect and require a lot of data and other files, making data management a complex endeavor. Most users should access processed glider data as described here (TODO). This page describes where and how all data and files from a glider deployment are stored.\nSee this document for the full ESD (previously AERD/AMLR) glider data plan. Note that the contents of this doc will be transferred over to this page as time permits.\nBecause gliders can collect &gt;1 TB of data in a single deployment, all ESD glider deployment data are stored in Google Cloud Storage buckets in the ESD Google Cloud Project.\nTODO: point to Shiny app or some other tool for users to use to get to GCS bucket URL for a particular piece of data.\n\n\n\n Back to top",
-    "crumbs": [
-      "Data Management"
     ]
   },
   {
@@ -247,6 +77,60 @@
     ]
   },
   {
+    "objectID": "content/imagery.html",
+    "href": "content/imagery.html",
+    "title": "Imagery",
+    "section": "",
+    "text": "Here be imagery\n\n\n\n Back to top",
+    "crumbs": [
+      "Imagery"
+    ]
+  },
+  {
+    "objectID": "content/pilot-tools.html",
+    "href": "content/pilot-tools.html",
+    "title": "Glider Pilot Tools",
+    "section": "",
+    "text": "Slocum Fleet Mission Control - SFMC from Teledyne. Where to pilot the gliders using Iridium.\nArgos - Check where the gliders are if they miss a call in.\nDatahost - The TWR forum. It has the firmware builds for the gliders, Masterdata for the different firmware, TWR glider sheets, such as, Ballast, Functional Checkout, etc. Most forms are in Resources.\nMasterdata - A list of masterdata for all the various operating systems of Slocum gliders. \nMasterdata 8.6  Masterdata 11.0 Masterdata 11.01\nTeledyne Customer Portal - Where to check the status of service on gliders and glider parts at TWR.\nOceanGNS - A program that can track multiple gliders as well as has different layers. The layers can be depth average currents, sea ice, chlorophyll, etc.\n\n\n\nBattery Capacities\n\n\n\n\n\nFile Transfer Syntax\n\n\n\n\n\nDifferences between persistor and STM gliders\n\n\nAutoballast States\nAbort codes",
+    "crumbs": [
+      "Glider Lab",
+      "Glider Pilot Tools"
+    ]
+  },
+  {
+    "objectID": "content/pilot-tools.html#links",
+    "href": "content/pilot-tools.html#links",
+    "title": "Glider Pilot Tools",
+    "section": "",
+    "text": "Slocum Fleet Mission Control - SFMC from Teledyne. Where to pilot the gliders using Iridium.\nArgos - Check where the gliders are if they miss a call in.\nDatahost - The TWR forum. It has the firmware builds for the gliders, Masterdata for the different firmware, TWR glider sheets, such as, Ballast, Functional Checkout, etc. Most forms are in Resources.\nMasterdata - A list of masterdata for all the various operating systems of Slocum gliders. \nMasterdata 8.6  Masterdata 11.0 Masterdata 11.01\nTeledyne Customer Portal - Where to check the status of service on gliders and glider parts at TWR.\nOceanGNS - A program that can track multiple gliders as well as has different layers. The layers can be depth average currents, sea ice, chlorophyll, etc.\n\n\n\nBattery Capacities\n\n\n\n\n\nFile Transfer Syntax\n\n\n\n\n\nDifferences between persistor and STM gliders\n\n\nAutoballast States\nAbort codes",
+    "crumbs": [
+      "Glider Lab",
+      "Glider Pilot Tools"
+    ]
+  },
+  {
+    "objectID": "content/pilot-tools.html#google-drive",
+    "href": "content/pilot-tools.html#google-drive",
+    "title": "Glider Pilot Tools",
+    "section": "Google Drive",
+    "text": "Google Drive\n\nGliders\nAMLR Gliders Folder - Where most things are stored on Google Drive with regards to gliders.\nFleet Status - A place to see the simplified status of gliders. Also to keep track of RMAs and generalized deployments.\nSensor Settings and Sampling Sheet - Where mission planners input the settings for sensors and how they should sample.\nBallast sheet from Rutgers -\nTWR Ballast sheet - You have to log into Datahost to access this.\nFunctional Checkout Procedure - You have to log into Datahost to access this.\nEmergency boat options\n\n\nAcoustics",
+    "crumbs": [
+      "Glider Lab",
+      "Glider Pilot Tools"
+    ]
+  },
+  {
+    "objectID": "content/pilot-tools.html#useful-websites",
+    "href": "content/pilot-tools.html#useful-websites",
+    "title": "Glider Pilot Tools",
+    "section": "Useful websites",
+    "text": "Useful websites\nSIO Del Mar Buoy\nSCCOOS shore stations\nDefault SFMC Group Call In - Check here to see if the glider is calling into the default group instead of our SFMC.\nUnderwater Glider User Group\nEveryone’s Gliding Observatories\nOcean Gliders\nIOOS Underwater Gliders",
+    "crumbs": [
+      "Glider Lab",
+      "Glider Pilot Tools"
+    ]
+  },
+  {
     "objectID": "content/dataproc-acoustics.html",
     "href": "content/dataproc-acoustics.html",
     "title": "Acoustic Data Processing",
@@ -255,6 +139,46 @@
     "crumbs": [
       "Data Processing",
       "Acoustics"
+    ]
+  },
+  {
+    "objectID": "index.html",
+    "href": "index.html",
+    "title": "Glider Lab Manual",
+    "section": "",
+    "text": "The Ecosystem Science Division (ESD) at the Southwest Fisheries Science Center does some pretty cool stuff using gliders, in both the California Current Ecosystem and the Antarctic Peninsula regions. This website is an in-development manual for all ESD glider activities. Please contact a member of the glider team with any questions.\nFunding for the glider lab comes from base funding of the ESD Programs: Scientific Opoerations and Support (SOS), United States Antarctic Marine Living Resources (U.S. AMLR), and Offshore Wind. Additional funding also comes from the NOAA Inflation Reduction Act (IRA) strategic initiatives; UXS-OC (REFOCUS etc.).\nFor information about past deployments by the ESD glider lab, see this page",
+    "crumbs": [
+      "Home"
+    ]
+  },
+  {
+    "objectID": "index.html#team-members",
+    "href": "index.html#team-members",
+    "title": "Glider Lab Manual",
+    "section": "Team Members",
+    "text": "Team Members\n\n\n\nName\nJob Title\nGlider Team Role\n\n\n\n\nChristian Reiss\nProgram Lead, Offshore Wind\nPrinciple Investigator\n\n\nAnthony Cossio\nOperations Research Analyst\nLab Manager, Pilot\n\n\nJen Walsh\nFisheries Research Biologist\nPilot\n\n\nJC Clark\nNOAA Corps\nPilot\n\n\nCaleb Flaim\nElectronics Technician\nPilot\n\n\nJacob Partida\nPhysical Science Technician\nPilot\n\n\nHailey Schmidt\nPathways Intern\nPilot\n\n\nSam Woodman\nBiologist\nData Manager\n\n\nHeidi Taylor\nProgram Lead, SOS; Deputy Director, ESD\n\n\n\nGeorge Watters\nDirector, ESD",
+    "crumbs": [
+      "Home"
+    ]
+  },
+  {
+    "objectID": "index.html#project-management",
+    "href": "index.html#project-management",
+    "title": "Glider Lab Manual",
+    "section": "Project Management",
+    "text": "Project Management\nFor most current Fleet Status information, see this Sheet\nThe ESD glider team is using GitHub Issues and Projects for project management. There efforts are heavily inspired and influenced by the Openscapes GitHub for project management approach.\nTo view the ESD glider team project, see here. This project pulls from issues from several repositories, but in particular this repo. For more details see TODO (section under development in glider lab qmd file).\n\nGitHub Repositories\nGitHub repos developed by the ESD glider team. Issues for these repos are tracked in the above-linked Project.\n\n\n\nrepo link\ndescription\n\n\n\n\nglider-lab\nRepo for tracking ESD glider lab issues/tasks\n\n\nstandard-glider-files\nESD glider cache files, as well as standard files that are put on all gliders before deployment\n\n\nglider-utils\nUtility functions for processing ESD glider data\n\n\nechoview_glider_template\nEchoview glider templates that are used for acoustic data analysis\n\n\nglider_processing_code\nCompilation of code that is used to work with glider acoustic data\n\n\nglider-lab-manual\nESD glider lab website",
+    "crumbs": [
+      "Home"
+    ]
+  },
+  {
+    "objectID": "content/shared-values.html",
+    "href": "content/shared-values.html",
+    "title": "Shared Values and Best Practices",
+    "section": "",
+    "text": "Model after https://sael-swfsc.github.io/SAEL-lab-manual/content/SharedValues-BestPractices.html\n\n\n\n Back to top",
+    "crumbs": [
+      "Shared Values"
     ]
   },
   {
@@ -277,6 +201,82 @@
     "crumbs": [
       "Deployments",
       "Past Deployments"
+    ]
+  },
+  {
+    "objectID": "content/lab.html",
+    "href": "content/lab.html",
+    "title": "Glider Lab",
+    "section": "",
+    "text": "Items to include:\nGliders and Mooring Google Calendar",
+    "crumbs": [
+      "Glider Lab",
+      "Glider Lab"
+    ]
+  },
+  {
+    "objectID": "content/lab.html#standard-operating-procedures",
+    "href": "content/lab.html#standard-operating-procedures",
+    "title": "Glider Lab",
+    "section": "Standard Operating Procedures",
+    "text": "Standard Operating Procedures\nGlider Checkout Procedure The steps needed to prepare a glider for deployment.\nHow to upgrade the glider operating system\nHow to calibrate the AZFP\nHow to calibrate the compass on the glider\nHow to calibrate the shadowgraph\nHow to talk to the camera\nHow to set up the Nortek mini\nHow to pilot a glider\nSteps for deploying a glider\nTony’s SFMC Data Visualizations",
+    "crumbs": [
+      "Glider Lab",
+      "Glider Lab"
+    ]
+  },
+  {
+    "objectID": "content/lab.html#online-calculators",
+    "href": "content/lab.html#online-calculators",
+    "title": "Glider Lab",
+    "section": "Online Calculators",
+    "text": "Online Calculators\nSea Water Density - Calculate sea water density and sound speed.\n\nCalculators for Acoustics\nSound Absorption - Calculate Absorption using the Francois and Garrison, 1982 method.\nStandard Sphere Target Strength - Standard sphere target strength calculator created by Advanced Survey Technologies, SWFSC.",
+    "crumbs": [
+      "Glider Lab",
+      "Glider Lab"
+    ]
+  },
+  {
+    "objectID": "content/lab.html#manuals",
+    "href": "content/lab.html#manuals",
+    "title": "Glider Lab",
+    "section": "Manuals",
+    "text": "Manuals\n\nSlocum\nBasic Glider Training slides 2024\nSlocum Fleet Mission Control 2019\nSlocum G3 Glider Operators Manual 2019\nSlocum G3 Maintenance Manual 2019\nSlocum G3S New Processor Guide 2021 Draft B\n\n\nCameras\nShadowgraph r3\nGlidercam r2.1\n\n\nNortek\nIntegrators guide 2024\nSignature 100 Operations Manual 2022\nPrinciples of Operations Signature 100 2022\nMIDAS software User Guide 2019\n\n\nAZFP\nAZFPLink Software 2019\nAZFP Glider Operators Manual 2020\nAZFP Operators Manual 2019\n\n\nECOPuck\nECOPuck User Manual 2017\n\n\nAAnderaa Oxygen Optode\nOxygen Optode Manual 2017",
+    "crumbs": [
+      "Glider Lab",
+      "Glider Lab"
+    ]
+  },
+  {
+    "objectID": "content/lab.html#software-and-settings-settings",
+    "href": "content/lab.html#software-and-settings-settings",
+    "title": "Glider Lab",
+    "section": "Software and settings settings",
+    "text": "Software and settings settings\n\n\n\nSoftware\nSettings\nUse\n\n\n\n\nZOC\nZOC settings\nTalking with the glider over Freewave\n\n\nTera Term\nTera Term settings\nTalking with the camera\n\n\nAZFP\nSettings\nCalibrating and settings for AZFP\n\n\nMIDAS\nSettings\nSetting up Nortek\n\n\nWinSCP\nSettings\nFTP client for the camera\n\n\nNotepad++\nSettings\nChanging and reading glider files",
+    "crumbs": [
+      "Glider Lab",
+      "Glider Lab"
+    ]
+  },
+  {
+    "objectID": "content/lab.html#glider-and-mooring-database",
+    "href": "content/lab.html#glider-and-mooring-database",
+    "title": "Glider Lab",
+    "section": "Glider and Mooring Database",
+    "text": "Glider and Mooring Database\nYou can find the Glider and Mooring Database on the network drive. This is also possible via VPN. It is used to track glider builds, days and inflections sensors have been use, calibration sheets, etc.",
+    "crumbs": [
+      "Glider Lab",
+      "Glider Lab"
+    ]
+  },
+  {
+    "objectID": "content/data-management.html",
+    "href": "content/data-management.html",
+    "title": "Data Management",
+    "section": "",
+    "text": "Gliders both collect and require a lot of data and other files, making data management a complex endeavor. Most users should access processed glider data as described here (TODO). This page describes where and how all data and files from a glider deployment are stored.\nSee this document for the full ESD (previously AERD/AMLR) glider data plan. Note that the contents of this doc will be transferred over to this page as time permits.\nBecause gliders can collect &gt;1 TB of data in a single deployment, all ESD glider deployment data are stored in Google Cloud Storage buckets in the ESD Google Cloud Project.\nTODO: point to Shiny app or some other tool for users to use to get to GCS bucket URL for a particular piece of data.\n\n\n\n Back to top",
+    "crumbs": [
+      "Data Management"
     ]
   }
 ]

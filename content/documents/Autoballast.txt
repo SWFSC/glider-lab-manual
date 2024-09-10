@@ -1,0 +1,13 @@
+Autoballast states
+
+0 = uninitialized
+
+1 = initialized, still converging
+
+2 = converged successfully
+
+3 = converged unsuccessfully: abs (c_dive_bpump_ or c_climb_bpump > X_BALLAST_PUMPED_MAX/X_DE_OIL_VOL_MAX
+
+4 = converged unsuccessfully: c_climb_bpump - c_dived_bpump < c_autoballast_volume (D_bpump_value)
+
+5 = converged unsuccessfully: may be a bit more complicated. Consider examining .mlg
