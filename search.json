@@ -4,7 +4,40 @@
     "href": "content/reports.html",
     "title": "Deployment Reports",
     "section": "",
-    "text": "Here be deployment reports.\n\n\n\n Back to top",
+    "text": "Deployment\nSensors\n\n\n\n\njohn-20240312\nCTD, Optode, Nortek,Shadowgraph\n\n\nringo-20240312\nCTD, Optode,Shadowgraph\n\n\ngeorge-20240530\nCTD, Optode, Shadowgraph\n\n\n\n\n\n\n\n\n\nDeployment\nSensors\n\n\n\n\ngeorge-20240907\nCTD, Optode,Ecopuck, Shadowgraph\n\n\n\n\n\n\n\n\n\nDeployment\nSensors\n\n\n\n\nglider-202410XX\nCTD, Optode, Ecopuck, Nortek",
+    "crumbs": [
+      "Deployments",
+      "Deployment Reports"
+    ]
+  },
+  {
+    "objectID": "content/reports.html#san-diego",
+    "href": "content/reports.html#san-diego",
+    "title": "Deployment Reports",
+    "section": "",
+    "text": "Deployment\nSensors\n\n\n\n\njohn-20240312\nCTD, Optode, Nortek,Shadowgraph\n\n\nringo-20240312\nCTD, Optode,Shadowgraph\n\n\ngeorge-20240530\nCTD, Optode, Shadowgraph",
+    "crumbs": [
+      "Deployments",
+      "Deployment Reports"
+    ]
+  },
+  {
+    "objectID": "content/reports.html#santa-barbara",
+    "href": "content/reports.html#santa-barbara",
+    "title": "Deployment Reports",
+    "section": "",
+    "text": "Deployment\nSensors\n\n\n\n\ngeorge-20240907\nCTD, Optode,Ecopuck, Shadowgraph",
+    "crumbs": [
+      "Deployments",
+      "Deployment Reports"
+    ]
+  },
+  {
+    "objectID": "content/reports.html#humboldt",
+    "href": "content/reports.html#humboldt",
+    "title": "Deployment Reports",
+    "section": "",
+    "text": "Deployment\nSensors\n\n\n\n\nglider-202410XX\nCTD, Optode, Ecopuck, Nortek",
     "crumbs": [
       "Deployments",
       "Deployment Reports"
@@ -156,7 +189,7 @@
     "href": "index.html#team-members",
     "title": "Glider Lab Manual",
     "section": "Team Members",
-    "text": "Team Members\n\n\n\nName\nJob Title\nGlider Team Role\n\n\n\n\nChristian Reiss\nProgram Lead, Offshore Wind\nPrinciple Investigator\n\n\nAnthony Cossio\nOperations Research Analyst\nLab Manager, Pilot\n\n\nJen Walsh\nFisheries Research Biologist\nPilot\n\n\nJC Clark\nNOAA Corps\nPilot\n\n\nCaleb Flaim\nElectronics Technician\nPilot\n\n\nJacob Partida\nPhysical Science Technician\nPilot\n\n\nHailey Schmidt\nPathways Intern\nPilot\n\n\nSam Woodman\nBiologist\nData Manager\n\n\nHeidi Taylor\nProgram Lead, SOS; Deputy Director, ESD\n\n\n\nGeorge Watters\nDirector, ESD",
+    "text": "Team Members\n\n\n\nName\nJob Title\nGlider Team Role\n\n\n\n\nChristian Reiss\nProgram Lead, Offshore Wind\nPrinciple Investigator\n\n\nAnthony Cossio\nOperations Research Analyst\nLab Manager, Pilot, Tech\n\n\nJen Walsh\nFisheries Research Biologist\nPilot, Tech\n\n\nJC Clark\nNOAA Corps\nPilot\n\n\nCaleb Flaim\nElectronics Technician\nPilot, Tech\n\n\nJacob Partida\nPhysical Science Technician\nPilot, Tech\n\n\nHailey Schmidt\nPathways Intern\nPilot, Tech\n\n\nSam Woodman\nBiologist\nData Manager\n\n\nHeidi Taylor\nProgram Lead, SOS; Deputy Director, ESD\n\n\n\nGeorge Watters\nDirector, ESD",
     "crumbs": [
       "Home"
     ]
