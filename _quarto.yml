@@ -1,7 +1,9 @@
 project: 
   type: website
   preview:
+    port: 5165
     browser: true
+
 
 website: 
   title: "ESD Glider Lab" 
