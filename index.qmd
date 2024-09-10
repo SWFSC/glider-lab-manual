@@ -15,12 +15,12 @@ For information about past deployments by the ESD glider lab, see [this page](co
 | Name | Job Title | Glider Team Role |
 |------|-----------|------------------|
 | [Christian Reiss](mailto:christian.reiss@noaa.gov) | Program Lead, Offshore Wind  | Principle Investigator |
-| [Anthony Cossio](mailto:anthony.cossio@noaa.gov)   | Operations Research Analyst  | Lab Manager, Pilot |
-| [Jen Walsh](mailto:jen.walsh@noaa.gov)             | Fisheries Research Biologist | Pilot |
+| [Anthony Cossio](mailto:anthony.cossio@noaa.gov)   | Operations Research Analyst  | Lab Manager, Pilot, Tech |
+| [Jen Walsh](mailto:jen.walsh@noaa.gov)             | Fisheries Research Biologist | Pilot, Tech |
 | [JC Clark](mailto:jason.c.clark@noaa.gov)          | NOAA Corps                   | Pilot |
-| [Caleb Flaim](mailto:caleb.flaim@noaa.gov)         | Electronics Technician       | Pilot |
-| [Jacob Partida](mailto:jacob.partida@noaa.gov)     | Physical Science Technician  | Pilot |
-| [Hailey Schmidt](mailto:hailey.schmidt@noaa.gov)   | Pathways Intern              | Pilot |
+| [Caleb Flaim](mailto:caleb.flaim@noaa.gov)         | Electronics Technician       | Pilot, Tech |
+| [Jacob Partida](mailto:jacob.partida@noaa.gov)     | Physical Science Technician  | Pilot, Tech |
+| [Hailey Schmidt](mailto:hailey.schmidt@noaa.gov)   | Pathways Intern              | Pilot, Tech |
 | [Sam Woodman](mailto:sam.woodman@noaa.gov)         | Biologist                    | Data Manager |
 | [Heidi Taylor](mailto:heidi.taylor@noaa.gov)       | Program Lead, SOS; Deputy Director, ESD | |
 | [George Watters](mailto:george.watters@noaa.gov)   | Director, ESD | |
