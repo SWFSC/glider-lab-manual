@@ -2,4 +2,36 @@
 title: Imagery
 ---
 
-Here be imagery
+ESD gliders may be equipped with either a 'glidercam' or a shadowgraph camera ([see details here](https://www.fisheries.noaa.gov/science-blog/fear-unknown-and-how-unknown-becomes-known-you-know)). This page describes the management and processing of these images once they come off of the glider.
+
+## Raw Imagery
+
+Once the gliders are recovered, the images are copied from the memory cards and uploaded to GCP as described [here](https://docs.google.com/document/d/1dW5ZdkOpTz59xy4xs8ypVOvGLWBYZMdlbwGJty4PTV0/edit?pli=1). Specifically, raw images are uploaded to the bucket [amlr-gliders-imagery-raw-dev](https://console.cloud.google.com/storage/browser/amlr-gliders-imagery-raw-dev), along with associated config files from the deployment. Image metadata files generated during the [glider data processing](dataproc-gliders.qmd#other-files) are also written to the deployment folder within this bucket. Project/year/deployment folder structures mirror that of the glider data stored in [amlr-gliders-deployments-dev](https://console.cloud.google.com/storage/browser/amlr-gliders-deployments-dev).
+
+## Viewing Images
+
+There are several ways to view raw or processed images. If you click down to an image itself, Google Cloud provides an image preview at the bottom of the 'object' page. However, you cannot view more than one image at a time. It is a goal of the ESD to build a cloud-native image viewer application to easily view multiple images at a time, but this is not a current project.
+
+All raw imagery have been mirrored in [VIAME-Web-AMLR](https://docs.google.com/document/d/1DkHcd-qOifNqWKxoRQpj2Gyjx2tSGKbEZNl9pf-gBjQ/edit?usp=sharing). Thus, if you are familiar with VAIME-Web and accessing ESD's deployment, then you can view imagery using the VIAME-Web annotator.
+
+Finally, you may also use the [gcloud CLI](https://cloud.google.com/sdk/gcloud/reference/storage) to download images to your computer, and then view them locally using your preferred program.
+
+## Shadowgraph Image Processing
+
+Todo: diagram of processing steps
+
+Gliders deployed with shadowgraph cameras can easily collect more than 200,000 images during a single deployment. Therefore, it is impractical to have humans review and annotate all these images by hand, and these images must be processed using AI/ML methods.
+
+Currently, ESD development of these methods is (mostly) on hold. This section describes the current status of these methods, as well as anticipated future directions.
+
+There are three main steps to processing shadowgraph images; where and how these steps happen for ESD are further described below. 
+
+1. **Preprocessing**: flatfielding, masking, other processing as needed.
+2. **Segmentation**: Create regions of interest (ROIs; i.e. blobs or chips), using the preprocessed image.
+3. **Classification**: Use a trained ML model to classify the ROIs. Have a trained biologist review and/or correct these predictions
+
+### Preprocessing
+
+### Segmentation
+
+### Classification
