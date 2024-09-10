@@ -32,6 +32,8 @@ How to pilot a glider
 
 [Steps for deploying a glider](https://docs.google.com/document/d/1bxen4GvXxmZZoXP24-Mn_2fjzKx7fJx0l_CkeGul-oI/edit)
 
+[Tony's SFMC Data Visualizations](https://docs.google.com/document/d/1GgaZyglCF5wDOZruK5Ewc5HsKpwMg3jxkPrCb9s_g4k/edit?usp=sharing)
+
 ## Online Calculators
 
 [Sea Water Density](https://fermi.jhuapl.edu/denscalc.html) - Calculate sea water density and sound speed.
@@ -90,15 +92,16 @@ How to pilot a glider
 
 ## Software and settings settings
 
-| Software                                                                                       | Settings                                                                                             |
-|------------------------------------|------------------------------------|
-| [ZOC](https://www.emtec.com/zoc/index.html)                                                    | [ZOC settings](https://docs.google.com/document/d/1fospbDFkPfeCtmj6wJtINlZGb13-bkNIAn2fKB5Ek1s/edit) |
-| [Tera Term](https://teratermproject.github.io/index-en.html)                                   | Tera Term settings                                                                                   |
-| [AZFP](https://drive.google.com/file/d/16eSSKX3DGkA6UUvign7KnQwzPqhUJHil/view?usp=drive_link)  | Settings                                                                                             |
-| [MIDAS](https://drive.google.com/file/d/1lGYgthRRTBOQShaTqlrB233jWfp_uRZV/view?usp=drive_link) | Settings                                                                                             |
-| [WinSCP](https://winscp.net/eng/index.php)                                                     | Settings                                                                                             |
-| [Notepad++](https://notepad-plus-plus.org/)                                                    | Settings                                                                                             |
+| Software                                                                                       | Settings |  Use                                                                                            |
+|------------------------------|------------------------------|------------------------------|
+| [ZOC](https://www.emtec.com/zoc/index.html)                                                    | [ZOC settings](https://docs.google.com/document/d/1fospbDFkPfeCtmj6wJtINlZGb13-bkNIAn2fKB5Ek1s/edit) | Talking with the glider over Freewave |
+| [Tera Term](https://teratermproject.github.io/index-en.html)                                   | Tera Term settings | Talking with the camera |                                                                                  |
+| [AZFP](https://drive.google.com/file/d/16eSSKX3DGkA6UUvign7KnQwzPqhUJHil/view?usp=drive_link)  | Settings |  Calibrating and settings for AZFP|                                                                                          |
+| [MIDAS](https://drive.google.com/file/d/1lGYgthRRTBOQShaTqlrB233jWfp_uRZV/view?usp=drive_link) | Settings | Setting up Nortek |                                                                                            |
+| [WinSCP](https://winscp.net/eng/index.php)                                                     | Settings | FTP client for the camera |                                                                                            |
+| [Notepad++](https://notepad-plus-plus.org/)                                                    | Settings  | Changing and reading glider files                                                                                           |
 
 ## Glider and Mooring Database
 
 You can find the [Glider and Mooring Database](\swc-storage4-s\AMLR_Datasets\Glider%20Database) on the network drive. This is also possible via VPN. It is used to track glider builds, days and inflections sensors have been use, calibration sheets, etc.
+
