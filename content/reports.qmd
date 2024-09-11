@@ -2,4 +2,23 @@
 title: Deployment Reports
 ---
 
-Here be deployment reports.
+
+# 2024
+
+## San Diego
+
+| Deployment | Sensors |
+|------------------------------|------------------------------|
+| [john-20240312](https://docs.google.com/document/d/1szQ7tV5stz8fyuNzF05jM1zxUQmkAwQxzZcmHGlDgwg/edit?usp=sharing) | CTD, Optode, Nortek,Shadowgraph |
+| [ringo-20240312](https://docs.google.com/document/d/12iSPkBChPjtPFbFQxX2hCopga3hvBr91qH1kJW_w5sw/edit?usp=sharing) | CTD, Optode,Shadowgraph |
+| [george-20240530](https://docs.google.com/document/d/1MDVbBDjK2UvHjLFQ35nzniC-R7YycM6SZr0ymEFvapw/edit?usp=sharing) | CTD, Optode, Shadowgraph |
+
+## Santa Barbara
+| Deployment | Sensors |
+|------------------------------|------------------------------|
+|george-20240907 | CTD, Optode,Ecopuck, Shadowgraph |
+
+## Humboldt
+| Deployment | Sensors |
+|------------------------------|------------------------------|
+| glider-202410XX |CTD, Optode, Ecopuck, Nortek |
