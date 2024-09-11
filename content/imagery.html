@@ -207,8 +207,21 @@ ul.task-list li input[type="checkbox"] {
 </nav>
 <div id="quarto-sidebar-glass" class="quarto-sidebar-collapse-item" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item"></div>
 <!-- margin-sidebar -->
-    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar zindex-bottom">
-        
+    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
+        <nav id="TOC" role="doc-toc" class="toc-active">
+    <h2 id="toc-title">On this page</h2>
+   
+  <ul>
+  <li><a href="#raw-imagery" id="toc-raw-imagery" class="nav-link active" data-scroll-target="#raw-imagery">Raw Imagery</a></li>
+  <li><a href="#viewing-images" id="toc-viewing-images" class="nav-link" data-scroll-target="#viewing-images">Viewing Images</a></li>
+  <li><a href="#shadowgraph-image-processing" id="toc-shadowgraph-image-processing" class="nav-link" data-scroll-target="#shadowgraph-image-processing">Shadowgraph Image Processing</a>
+  <ul>
+  <li><a href="#preprocessing-and-segmentation" id="toc-preprocessing-and-segmentation" class="nav-link" data-scroll-target="#preprocessing-and-segmentation">Preprocessing and Segmentation</a></li>
+  <li><a href="#classification" id="toc-classification" class="nav-link" data-scroll-target="#classification">Classification</a></li>
+  <li><a href="#future-directions" id="toc-future-directions" class="nav-link" data-scroll-target="#future-directions">Future Directions</a></li>
+  </ul></li>
+  </ul>
+<div class="toc-actions"><ul><li><a href="https://github.com/SWFSC/glider-lab-manual/edit/main/content/imagery.qmd" class="toc-action"><i class="bi bi-github"></i>Edit this page</a></li><li><a href="https://github.com/SWFSC/glider-lab-manual/blob/main/content/imagery.qmd" class="toc-action"><i class="bi empty"></i>View source</a></li><li><a href="https://github.com/SWFSC/glider-lab-manual/issues/new" class="toc-action"><i class="bi empty"></i>Report an issue</a></li></ul></div></nav>
     </div>
 <!-- main -->
 <main class="content" id="quarto-document-content">
@@ -232,9 +245,69 @@ ul.task-list li input[type="checkbox"] {
 </header>
 
 
-<p>Here be imagery</p>
+<p>ESD gliders may be equipped with either a ‘glidercam’ or a shadowgraph camera (<a href="https://www.fisheries.noaa.gov/science-blog/fear-unknown-and-how-unknown-becomes-known-you-know">see details here</a>). This page describes the management and processing of these images once they come off of the glider.</p>
+<section id="raw-imagery" class="level2">
+<h2 class="anchored" data-anchor-id="raw-imagery">Raw Imagery</h2>
+<p>Once the gliders are recovered, the images are copied from the memory cards and uploaded to GCP as described <a href="https://docs.google.com/document/d/1dW5ZdkOpTz59xy4xs8ypVOvGLWBYZMdlbwGJty4PTV0/edit?pli=1">here</a>. Specifically, raw images are uploaded to the bucket <a href="https://console.cloud.google.com/storage/browser/amlr-gliders-imagery-raw-dev">amlr-gliders-imagery-raw-dev</a>, along with associated config files from the deployment. Image metadata files generated during the <a href="../content/dataproc-gliders.html#other-files">glider data processing</a> are also written to the deployment folder within this bucket. Project/year/deployment folder structures mirror that of the glider data stored in <a href="https://console.cloud.google.com/storage/browser/amlr-gliders-deployments-dev">amlr-gliders-deployments-dev</a>.</p>
+</section>
+<section id="viewing-images" class="level2">
+<h2 class="anchored" data-anchor-id="viewing-images">Viewing Images</h2>
+<p>There are several ways to view raw or processed images. If you click down to an image itself, Google Cloud provides an image preview at the bottom of the ‘object’ page. However, you cannot view more than one image at a time. It is a goal of the ESD to build a cloud-native image viewer application to easily view multiple images at a time, but this is not a current project.</p>
+<p>All raw imagery have been mirrored in <a href="https://docs.google.com/document/d/1DkHcd-qOifNqWKxoRQpj2Gyjx2tSGKbEZNl9pf-gBjQ/edit?usp=sharing">VIAME-Web-AMLR</a>. Thus, if you are familiar with VAIME-Web and accessing ESD’s deployment, then you can view imagery using the VIAME-Web annotator.</p>
+<p>Finally, you may also use the <a href="https://cloud.google.com/sdk/gcloud/reference/storage">gcloud CLI</a> to download images to your computer, and then view them locally using your preferred program.</p>
+</section>
+<section id="shadowgraph-image-processing" class="level2">
+<h2 class="anchored" data-anchor-id="shadowgraph-image-processing">Shadowgraph Image Processing</h2>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="images/shadowgraph-image-processing-1.jpg" class="img-fluid figure-img" style="width:80.0%"></p>
+<figcaption>Shadowgraph image processing workflow, v1</figcaption>
+</figure>
+</div>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="images/shadowgraph-image-processing-2.jpg" class="img-fluid figure-img" style="width:80.0%"></p>
+<figcaption>Shadowgraph image processing workflow, v2</figcaption>
+</figure>
+</div>
+<p>Gliders deployed with shadowgraph cameras can easily collect more than 200,000 images during a single deployment. Therefore, it is impractical to have humans review and annotate all these images by hand, and these images must be processed using AI/ML methods.</p>
+<p>Currently, ESD development of these methods is (mostly) on hold. This section describes the current status of these methods, as well as anticipated future directions.</p>
+<p>There are three main steps to processing shadowgraph images; where and how these steps happen for ESD are further described below.</p>
+<ol type="1">
+<li><strong>Preprocessing</strong>: flat-fielding, masking, other processing as needed.</li>
+<li><strong>Segmentation</strong>: Create regions of interest (ROIs; i.e.&nbsp;blobs or chips), using the preprocessed image.</li>
+<li><strong>Classification</strong>: Use a trained ML model to classify the ROIs. Have a trained biologist review and/or correct these predictions</li>
+</ol>
+<section id="preprocessing-and-segmentation" class="level3">
+<h3 class="anchored" data-anchor-id="preprocessing-and-segmentation">Preprocessing and Segmentation</h3>
+<p>All preprocessing and segmentation steps are performed by code in the <a href="https://github.com/us-amlr/amlr-shadowgraph">amlr-shadowgraph repo</a>, developed by Randy Cutter based on work done by Ohman/Ellen for the <a href="https://doi.org/10.1002/lom3.10301">Zooglider</a>. Currently, all processing must be done through a single notebook: <a href="https://github.com/us-amlr/amlr-shadowgraph/blob/main/segmentation/sg-flatfield-segm-loop.ipynb">sg-flatfield-segm-loop.ipynb</a>. There are active efforts to move this functionality from the Notebook to a Python module for easier use and development.</p>
+<p>For instructions on how to run this code, or for more information about the algoroithms used, see the <a href="https://github.com/us-amlr/amlr-shadowgraph/blob/main/README.md">repo readme</a>.</p>
+<p>All currently processed imagery can be found in <a href="https://console.cloud.google.com/storage/browser/amlr-gliders-imagery-proc-dev">amlr-gliders-imagery-proc-dev</a>, which like the raw imagery is mirrored to and thus viewable using ESD’s deployment of VIAME-Web. The amlr-shadowgraph code currently writes output to the <a href="https://console.cloud.google.com/storage/browser/amlr-imagery-proc-dev/gliders">amlr-imagery-proc-dev</a> bucket; current efforts include generalizing this code to write directly to the amlr-gliders-imagery-proc-dev bucket. This output includes the following folders:</p>
+<ul>
+<li><strong>regions</strong>: Region of interest (ROI) blobs, created using Ohman/Ellen methods. This folder contains Dir#### folders, matching the raw data.</li>
+<li><strong>regions-tmser</strong>: Region of interest (ROI) blobs, created using an adapted version of Oregon State’s <a href="https://github.com/paradom/Threshold-MSER">Threshold MSER In Situ Plankton Segmentation</a>. Most deployments do not have this output, as this method has not been tuned to ESD imagery.</li>
+<li><strong>jpgorig-regions</strong>: jpg of the original (i.e., raw) image, with ROI boundaries from the Ohman/Ellen segmentation methods outlined in red.</li>
+<li><strong>images-imgff</strong>: Flat-fielded images, used in the segmentation</li>
+<li><strong>images-ffPCG</strong>: Flat-fielded images, which also have had pixel gamma correction factors applied.</li>
+</ul>
+</section>
+<section id="classification" class="level3">
+<h3 class="anchored" data-anchor-id="classification">Classification</h3>
+<p>Describe ISIIS image library</p>
+<p>Describe models that Randy has trained</p>
+<p>Describe running these models on ESD ROIs</p>
+<p>Describe validation work, that Jen is doing</p>
+</section>
+<section id="future-directions" class="level3">
+<h3 class="anchored" data-anchor-id="future-directions">Future Directions</h3>
+<ul>
+<li>Generalize and adapt pieces of current code/pipelines?</li>
+<li>Optics SI/OSU efforts, eg <a href="https://github.com/sullichrosu/Njobvu-AI">https://github.com/sullichrosu/Njobvu-AI</a> and/or <a href="https://github.com/paradom/Threshold-MSER">https://github.com/paradom/Threshold-MSER</a></li>
+</ul>
 
 
+</section>
+</section>
 
 <a onclick="window.scrollTo(0, 0); return false;" role="button" id="quarto-back-to-top"><i class="bi bi-arrow-up"></i> Back to top</a></main> <!-- /main -->
 <script id="quarto-html-after-body" type="application/javascript">
@@ -809,7 +882,7 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
 </div>   
     <div class="nav-footer-center">
       &nbsp;
-    <div class="toc-actions"><ul><li><a href="https://github.com/SWFSC/glider-lab-manual/edit/main/content/imagery.qmd" class="toc-action"><i class="bi bi-github"></i>Edit this page</a></li><li><a href="https://github.com/SWFSC/glider-lab-manual/blob/main/content/imagery.qmd" class="toc-action"><i class="bi empty"></i>View source</a></li><li><a href="https://github.com/SWFSC/glider-lab-manual/issues/new" class="toc-action"><i class="bi empty"></i>Report an issue</a></li></ul></div></div>
+    <div class="toc-actions d-sm-block d-md-none"><ul><li><a href="https://github.com/SWFSC/glider-lab-manual/edit/main/content/imagery.qmd" class="toc-action"><i class="bi bi-github"></i>Edit this page</a></li><li><a href="https://github.com/SWFSC/glider-lab-manual/blob/main/content/imagery.qmd" class="toc-action"><i class="bi empty"></i>View source</a></li><li><a href="https://github.com/SWFSC/glider-lab-manual/issues/new" class="toc-action"><i class="bi empty"></i>Report an issue</a></li></ul></div></div>
     <div class="nav-footer-right">
 <p>This page is built with <a href="https://quarto.org/">Quarto</a>.</p>
 </div>
