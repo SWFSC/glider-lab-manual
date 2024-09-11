@@ -18,7 +18,9 @@ Finally, you may also use the [gcloud CLI](https://cloud.google.com/sdk/gcloud/r
 
 ## Shadowgraph Image Processing
 
-Todo: diagram of processing steps
+![Shadowgraph image processing workflow, v1](images/shadowgraph-image-processing-1.jpg){width=80%}
+
+![Shadowgraph image processing workflow, v2](images/shadowgraph-image-processing-2.jpg){width=80%}
 
 Gliders deployed with shadowgraph cameras can easily collect more than 200,000 images during a single deployment. Therefore, it is impractical to have humans review and annotate all these images by hand, and these images must be processed using AI/ML methods.
 
@@ -26,12 +28,35 @@ Currently, ESD development of these methods is (mostly) on hold. This section de
 
 There are three main steps to processing shadowgraph images; where and how these steps happen for ESD are further described below. 
 
-1. **Preprocessing**: flatfielding, masking, other processing as needed.
+1. **Preprocessing**: flat-fielding, masking, other processing as needed.
 2. **Segmentation**: Create regions of interest (ROIs; i.e. blobs or chips), using the preprocessed image.
 3. **Classification**: Use a trained ML model to classify the ROIs. Have a trained biologist review and/or correct these predictions
 
-### Preprocessing
+### Preprocessing and Segmentation
 
-### Segmentation
+All preprocessing and segmentation steps are performed by code in the [amlr-shadowgraph repo](https://github.com/us-amlr/amlr-shadowgraph), developed by Randy Cutter based on work done by Ohman/Ellen for the [Zooglider](https://doi.org/10.1002/lom3.10301). Currently, all processing must be done through a single notebook: [sg-flatfield-segm-loop.ipynb](https://github.com/us-amlr/amlr-shadowgraph/blob/main/segmentation/sg-flatfield-segm-loop.ipynb). There are active efforts to move this functionality from the Notebook to a Python module for easier use and development.
+
+For instructions on how to run this code, or for more information about the algoroithms used, see the [repo readme](https://github.com/us-amlr/amlr-shadowgraph/blob/main/README.md).
+
+All currently processed imagery can be found in [amlr-gliders-imagery-proc-dev](https://console.cloud.google.com/storage/browser/amlr-gliders-imagery-proc-dev), which like the raw imagery is mirrored to and thus viewable using ESD's deployment of VIAME-Web. The amlr-shadowgraph code currently writes output to the [amlr-imagery-proc-dev](https://console.cloud.google.com/storage/browser/amlr-imagery-proc-dev/gliders) bucket; current efforts include generalizing this code to write directly to the amlr-gliders-imagery-proc-dev bucket. This output includes the following folders:
+
+- **regions**: Region of interest (ROI) blobs, created using Ohman/Ellen methods. This folder contains Dir#### folders, matching the raw data.
+- **regions-tmser**: Region of interest (ROI) blobs, created using an adapted version of Oregon State's [Threshold MSER In Situ Plankton Segmentation](https://github.com/paradom/Threshold-MSER). Most deployments do not have this output, as this method has not been tuned to ESD imagery.
+- **jpgorig-regions**: jpg of the original (i.e., raw) image, with ROI boundaries from the Ohman/Ellen segmentation methods outlined in red.
+- **images-imgff**: Flat-fielded images, used in the segmentation
+- **images-ffPCG**: Flat-fielded images, which also have had pixel gamma correction factors applied. 
 
 ### Classification
+
+Describe ISIIS image library
+
+Describe models that Randy has trained
+
+Describe running these models on ESD ROIs
+
+Describe validation work, that Jen is doing
+
+### Future Directions
+
+- Generalize and adapt pieces of current code/pipelines?
+- Optics SI/OSU efforts, eg [https://github.com/sullichrosu/Njobvu-AI](https://github.com/sullichrosu/Njobvu-AI) and/or [https://github.com/paradom/Threshold-MSER](https://github.com/paradom/Threshold-MSER)
