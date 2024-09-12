@@ -28,6 +28,8 @@ title: Glider Pilot Tools
 
 [Abort codes](documents/AbortCodes.txt)
 
+[Aborts and Errors we've gone through](https://docs.google.com/document/d/1k_1ZmGDh3oLuhqQkKLR6mKK2Y17tg8vHiEYWfJPGT5o/edit?usp=sharing)
+
 ## Google Drive
 
 ### Gliders

@@ -24,13 +24,15 @@ Items to include:
 
 [How to calibrate the shadowgraph](https://docs.google.com/document/d/1M9s7rSlgdBHxFnBTdKWelLfpMghZU3p8K5TImlIJ8FI/edit)
 
-How to talk to the camera
+How to talk to the camera(shadowgraph or glidercam)
 
-How to set up the Nortek mini
+How to set up the Nortek miniechosounder
 
 How to pilot a glider
 
 [Steps for deploying a glider](https://docs.google.com/document/d/1bxen4GvXxmZZoXP24-Mn_2fjzKx7fJx0l_CkeGul-oI/edit)
+
+[How Jen deploys a glider](https://docs.google.com/document/d/1nHKAF2F_UOV8gzQ825N7KCo8QvZ-3XBhDxQDVqCU6Po/edit?usp=sharing)
 
 [Tony's SFMC Data Visualizations](https://docs.google.com/document/d/1GgaZyglCF5wDOZruK5Ewc5HsKpwMg3jxkPrCb9s_g4k/edit?usp=sharing)
 
@@ -48,7 +50,6 @@ How to pilot a glider
 
 ### **Slocum**
 
-[Basic Glider Training slides 2024](https://drive.google.com/file/d/1jtQjBSt6WTD3WeDP7SOpTET62pN-i91T/view?usp=drive_link)
 
 [Slocum Fleet Mission Control 2019](https://drive.google.com/file/d/15n3mQmRP0_HTuUXbMi6hEEYOIGd81sb5/view?usp=drive_link)
 
@@ -100,6 +101,16 @@ How to pilot a glider
 | [MIDAS](https://drive.google.com/file/d/1lGYgthRRTBOQShaTqlrB233jWfp_uRZV/view?usp=drive_link) | Settings | Setting up Nortek |                                                                                            |
 | [WinSCP](https://winscp.net/eng/index.php)                                                     | Settings | FTP client for the camera |                                                                                            |
 | [Notepad++](https://notepad-plus-plus.org/)                                                    | Settings  | Changing and reading glider files                                                                                           |
+
+## Training Documents
+
+[Slocum Basic Training Slides May 2024](https://drive.google.com/file/d/15O-BuBtiOovHT-yFzKEvVNwmOnNgvnjW/view?usp=drive_link)
+
+[Slocum Basic Training Slides May 2024 Materials](https://drive.google.com/drive/folders/1TFtmFJRK5apAygQBu0I0FzWULkcj0Wuq?usp=drive_link)
+
+[Slocum Advanced Training 2019 Materials](https://drive.google.com/drive/folders/1J3KsCSu_GY0ig4K4oV3MvDlINFPDyqim?usp=drive_link)
+
+[Rutgers Glider Camp 2023](https://drive.google.com/drive/folders/1cx8iuoX5duVvjwIw6RTQChlb1mFERctT?usp=drive_link)
 
 ## Glider and Mooring Database
 
