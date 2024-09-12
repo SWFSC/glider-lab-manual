@@ -29,12 +29,12 @@ Currently, ESD development of these methods is (mostly) on hold. This section de
 There are three main steps to processing shadowgraph images; where and how these steps happen for ESD are further described below. 
 
 1. **Preprocessing**: flat-fielding, masking, other processing as needed.
-2. **Segmentation**: Create regions of interest (ROIs; i.e. blobs or chips), using the preprocessed image.
+2. **Segmentation**: Detect objects, and create regions of interest (ROIs; i.e. blobs or chips). This is done using the preprocessed image.
 3. **Classification**: Use a trained ML model to classify the ROIs. Have a trained biologist review and/or correct these predictions
 
 ### Preprocessing and Segmentation
 
-All preprocessing and segmentation steps are performed by code in the [amlr-shadowgraph repo](https://github.com/us-amlr/amlr-shadowgraph), developed by Randy Cutter based on work done by Ohman/Ellen for the [Zooglider](https://doi.org/10.1002/lom3.10301). Currently, all processing must be done through a single notebook: [sg-flatfield-segm-loop.ipynb](https://github.com/us-amlr/amlr-shadowgraph/blob/main/segmentation/sg-flatfield-segm-loop.ipynb). There are active efforts to move this functionality from the Notebook to a Python module for easier use and development.
+All preprocessing and object detection/segmentation steps are performed by code in the [amlr-shadowgraph repo](https://github.com/us-amlr/amlr-shadowgraph), developed by Randy Cutter based on work done by Ohman/Ellen for the [Zooglider](https://doi.org/10.1002/lom3.10301). Currently, all processing must be done through a single notebook: [sg-flatfield-segm-loop.ipynb](https://github.com/us-amlr/amlr-shadowgraph/blob/main/segmentation/sg-flatfield-segm-loop.ipynb). There are active efforts to move this functionality from the Notebook to a Python module for easier use and development.
 
 For instructions on how to run this code, or for more information about the algoroithms used, see the [repo readme](https://github.com/us-amlr/amlr-shadowgraph/blob/main/README.md).
 
