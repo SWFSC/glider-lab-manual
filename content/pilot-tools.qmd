@@ -46,7 +46,11 @@ title: Glider Pilot Tools
 
 [Functional Checkout Procedure](https://datahost.webbresearch.com/download/file.php?id=256) - You have to log into Datahost to access this.
 
-[Emergency boat options](https://docs.google.com/spreadsheets/d/1fZagNnYgBD-0E_5ivPwIWZFyzMgGDQ8hEPG-jktn2TQ/edit?gid=0#gid=0)
+[Freewave and Argos numbers](https://docs.google.com/spreadsheets/d/1xg13O3t28g-FXFVjZVICaNePxAGZ7DCoEwMBe_Dx-Dg/edit?usp=sharing) - Freewave and Argos numbers for each Slocum glider.
+
+[ECOpuck coefficients](https://docs.google.com/document/d/1xlwI2gTfQxBQ-oT7_mLfF2JC7VG-7TMslyJ9Wc5Cryc/edit?usp=sharing) - Coefficients for the ECOpuck needed to be put in autoexec.mi
+
+[Emergency boat options](https://docs.google.com/spreadsheets/d/1fZagNnYgBD-0E_5ivPwIWZFyzMgGDQ8hEPG-jktn2TQ/edit?gid=0#gid=0) - Boats that we can use for emergency recoveries in San Diego and Santa Barbara.
 
 ### Acoustics
 
