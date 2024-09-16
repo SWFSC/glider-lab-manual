@@ -30,6 +30,8 @@ How to set up the Nortek miniechosounder
 
 How to pilot a glider
 
+How to use the high speed data cable
+
 [Steps for deploying a glider](https://docs.google.com/document/d/1bxen4GvXxmZZoXP24-Mn_2fjzKx7fJx0l_CkeGul-oI/edit)
 
 [How Jen deploys a glider](https://docs.google.com/document/d/1nHKAF2F_UOV8gzQ825N7KCo8QvZ-3XBhDxQDVqCU6Po/edit?usp=sharing)
@@ -95,7 +97,7 @@ How to pilot a glider
 
 | Software                                                                                       | Settings |  Use                                                                                            |
 |------------------------------|------------------------------|------------------------------|
-| [ZOC](https://www.emtec.com/zoc/index.html)                                                    | [ZOC settings](https://docs.google.com/document/d/1fospbDFkPfeCtmj6wJtINlZGb13-bkNIAn2fKB5Ek1s/edit) | Talking with the glider over Freewave |
+| [ZOC](https://www.emtec.com/zoc/index.html)                                                    | [ZOC settings](https://docs.google.com/document/d/1lDMAtfzKKY7XLKwakii6P_g1HGAFZYtKUMWhLEW4DUU/edit?usp=sharing) | Talking with the glider over Freewave |
 | [Tera Term](https://teratermproject.github.io/index-en.html)                                   | Tera Term settings | Talking with the camera |                                                                                  |
 | [AZFP](https://drive.google.com/file/d/16eSSKX3DGkA6UUvign7KnQwzPqhUJHil/view?usp=drive_link)  | Settings |  Calibrating and settings for AZFP|                                                                                          |
 | [MIDAS](https://drive.google.com/file/d/1lGYgthRRTBOQShaTqlrB233jWfp_uRZV/view?usp=drive_link) | Settings | Setting up Nortek |                                                                                            |
