@@ -176,7 +176,7 @@
     "href": "content/pilot-tools.html#google-drive",
     "title": "Glider Pilot Tools",
     "section": "Google Drive",
-    "text": "Google Drive\n\nGliders\nAMLR Gliders Folder - Where most things are stored on Google Drive with regards to gliders.\nFleet Status - A place to see the simplified status of gliders. Also to keep track of RMAs and generalized deployments.\nSensor Settings and Sampling Sheet - Where mission planners input the settings for sensors and how they should sample.\nBallast sheet from Rutgers -\nTWR Ballast sheet - You have to log into Datahost to access this.\nFunctional Checkout Procedure - You have to log into Datahost to access this.\nEmergency boat options\n\n\nAcoustics",
+    "text": "Google Drive\n\nGliders\nAMLR Gliders Folder - Where most things are stored on Google Drive with regards to gliders.\nFleet Status - A place to see the simplified status of gliders. Also to keep track of RMAs and generalized deployments.\nSensor Settings and Sampling Sheet - Where mission planners input the settings for sensors and how they should sample.\nBallast sheet from Rutgers -\nTWR Ballast sheet - You have to log into Datahost to access this.\nFunctional Checkout Procedure - You have to log into Datahost to access this.\nFreewave and Argos numbers - Freewave and Argos numbers for each Slocum glider.\nECOpuck coefficients - Coefficients for the ECOpuck needed to be put in autoexec.mi\nEmergency boat options - Boats that we can use for emergency recoveries in San Diego and Santa Barbara.\n\n\nAcoustics",
     "crumbs": [
       "Glider Lab",
       "Glider Pilot Tools"
