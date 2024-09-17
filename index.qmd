@@ -3,6 +3,7 @@ title: "Glider Lab Manual"
 subtitle: "Ecosystem Science Division, NMFS/SWFSC"
 page-layout: full
 ---
+![](content/images/ESD_meatball.png){style="float:right;" fig-alt="Ecosystem Science Division logo. Artwork by Jen Walsh." width="401"}
 
 The Ecosystem Science Division (ESD) at the [Southwest Fisheries Science Center](https://www.fisheries.noaa.gov/about/southwest-fisheries-science-center) does some pretty cool stuff using gliders, in both the California Current Ecosystem and the Antarctic Peninsula regions. This website is an in-development manual for all ESD glider activities. Please contact a member of the glider team with any questions.
 
