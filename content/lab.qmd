@@ -26,11 +26,11 @@ Items to include:
 
 How to talk to the camera (shadowgraph or glidercam)
 
-How to set up the Nortek mini-echosounder
+How to set up the Nortek compact echosounder
 
 How to pilot a glider
 
-How to use the high speed data cable
+[How to use the high speed data cable](https://docs.google.com/document/d/10WD0RvmtD3B5yXnNhMeQiUxuK524cDntec29c57cEyI/edit?usp=sharing)
 
 [Steps for deploying a glider](https://docs.google.com/document/d/1bxen4GvXxmZZoXP24-Mn_2fjzKx7fJx0l_CkeGul-oI/edit)
 
@@ -67,7 +67,7 @@ How to use the high speed data cable
 
 [Glidercam r2.1](https://drive.google.com/file/d/1TwuEmq_5PADnZ080sjW02Yltb2_E-VOd/view)
 
-### **Nortek**
+### **Nortek compact echosounder**
 
 [Integrators guide 2024](https://drive.google.com/file/d/1alDzxEH2y8qRiVK84he_lmzSYe_p5PEo/view?usp=drive_link)
 
@@ -77,7 +77,7 @@ How to use the high speed data cable
 
 [MIDAS software User Guide 2019](https://drive.google.com/file/d/1rMces9zavoaGUGz_UseJERyQcwnMqI0Q/view?usp=drive_link)
 
-### **AZFP**
+### **AZFP Acoustic Zooplankton Fish Profiler**
 
 [AZFPLink Software 2019](https://drive.google.com/file/d/1lapjSo5PowFz3hg0titXKRKw43TzE6PQ/view?usp=drive_link)
 
@@ -114,6 +114,14 @@ How to use the high speed data cable
 [Slocum Advanced Training 2019 Materials](https://drive.google.com/drive/folders/1J3KsCSu_GY0ig4K4oV3MvDlINFPDyqim?usp=drive_link)
 
 [Rutgers Glider Camp 2023](https://drive.google.com/drive/folders/1cx8iuoX5duVvjwIw6RTQChlb1mFERctT?usp=drive_link)
+
+## Contracts
+
+[Outer Limits 2024-28](https://drive.google.com/file/d/10IzLqGHu_7d6_8tS502Z2ny15joWZ_Sh/view?usp=drive_link) Charter boat out of Mission Bay BPA [site](https://www.outerlimit.net/)
+
+[Pacific Venture 2024-28](https://drive.google.com/file/d/1RBtK_C4E4CEsA-l35DK0bf7-PqMbhuud/view?usp=drive_link) Charter boat out of Oceanside BPA [site](https://www.pacific-venture.com/)
+
+[Teledyne Webb Research 2024-28](https://drive.google.com/file/d/1_8WzrrVxbi9TgE-HvbDqZZI5n8mLUHuH/view?usp=drive_link) IDIQ for Slocum gliders and parts [site](https://www.teledynemarine.com/brands/webb-research/)
 
 ## Glider and Mooring Database
 
