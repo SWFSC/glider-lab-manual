@@ -9,3 +9,7 @@ See [this document](https://docs.google.com/document/d/1dW5ZdkOpTz59xy4xs8ypVOvG
 Because gliders can collect >1 TB of data in a single deployment, all ESD glider deployment data are stored in Google Cloud Storage buckets in the ESD Google Cloud Project. 
 
 TODO: point to Shiny app or some other tool for users to use to get to GCS bucket URL for a particular piece of data.
+
+[Glider GCP bucket](https://console.cloud.google.com/storage/browser/amlr-gliders-deployments-dev;tab=objects?prefix=&forceOnObjectsSortingFiltering=false) Google Cloud Platform (GCP) for glider data.
+
+[Glider imagery GCP bucket](https://console.cloud.google.com/storage/browser/amlr-gliders-imagery-raw-dev;tab=objects?forceOnBucketsSortingFiltering=true&project=ggn-nmfs-usamlr-dev-7b99&prefix=&forceOnObjectsSortingFiltering=false) GCP for glider imagery.
