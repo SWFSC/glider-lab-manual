@@ -4,7 +4,7 @@
     "href": "content/reports.html",
     "title": "Deployment Reports",
     "section": "",
-    "text": "Deployment\nSensors\n\n\n\n\njohn-20240312\nCTD, Optode, Nortek,Shadowgraph\n\n\nringo-20240312\nCTD, Optode,Shadowgraph\n\n\ngeorge-20240530\nCTD, Optode, Shadowgraph\n\n\n\n\n\n\n\n\n\nDeployment\nSensors\n\n\n\n\ngeorge-20240907\nCTD, Optode,Ecopuck, Shadowgraph\n\n\n\n\n\n\n\n\n\nDeployment\nSensors\n\n\n\n\nglider-202410XX\nCTD, Optode, Ecopuck, Nortek",
+    "text": "Deployment\nSensors\n\n\n\n\njohn-20240312\nCTD, Optode, Nortek,Shadowgraph\n\n\nringo-20240312\nCTD, Optode, Wide Shadowgraph\n\n\ngeorge-20240530\nCTD, Optode, Narrow Shadowgraph\n\n\n\n\n\n\n\n\n\nDeployment\nSensors\n\n\n\n\ngeorge-20240907\nCTD, Optode,Ecopuck, Narrow Shadowgraph\n\n\n\n\n\n\n\n\n\nDeployment\nSensors\n\n\n\n\nglider-202410XX\nCTD, Optode, Ecopuck, Nortek",
     "crumbs": [
       "Deployments",
       "Deployment Reports"
@@ -15,7 +15,7 @@
     "href": "content/reports.html#san-diego",
     "title": "Deployment Reports",
     "section": "",
-    "text": "Deployment\nSensors\n\n\n\n\njohn-20240312\nCTD, Optode, Nortek,Shadowgraph\n\n\nringo-20240312\nCTD, Optode,Shadowgraph\n\n\ngeorge-20240530\nCTD, Optode, Shadowgraph",
+    "text": "Deployment\nSensors\n\n\n\n\njohn-20240312\nCTD, Optode, Nortek,Shadowgraph\n\n\nringo-20240312\nCTD, Optode, Wide Shadowgraph\n\n\ngeorge-20240530\nCTD, Optode, Narrow Shadowgraph",
     "crumbs": [
       "Deployments",
       "Deployment Reports"
@@ -26,7 +26,7 @@
     "href": "content/reports.html#santa-barbara",
     "title": "Deployment Reports",
     "section": "",
-    "text": "Deployment\nSensors\n\n\n\n\ngeorge-20240907\nCTD, Optode,Ecopuck, Shadowgraph",
+    "text": "Deployment\nSensors\n\n\n\n\ngeorge-20240907\nCTD, Optode,Ecopuck, Narrow Shadowgraph",
     "crumbs": [
       "Deployments",
       "Deployment Reports"
@@ -282,7 +282,7 @@
     "href": "content/lab.html#standard-operating-procedures",
     "title": "Glider Lab",
     "section": "Standard Operating Procedures",
-    "text": "Standard Operating Procedures\nGlider Checkout Procedure The steps needed to prepare a glider for deployment.\nHow to upgrade the glider operating system\nHow to calibrate the AZFP\nHow to calibrate the compass on the glider\nHow to calibrate the shadowgraph\nHow to talk to the camera(shadowgraph or glidercam)\nHow to set up the Nortek miniechosounder\nHow to pilot a glider\nHow to use the high speed data cable\nSteps for deploying a glider\nHow Jen deploys a glider\nTony’s SFMC Data Visualizations",
+    "text": "Standard Operating Procedures\nGlider Checkout Procedure The steps needed to prepare a glider for deployment.\nHow to upgrade the glider operating system\nHow to calibrate the AZFP\nHow to calibrate the compass on the glider\nHow to calibrate the shadowgraph\nHow to talk to the camera (shadowgraph or glidercam)\nHow to set up the Nortek mini-echosounder\nHow to pilot a glider\nHow to use the high speed data cable\nSteps for deploying a glider\nHow Jen deploys a glider\nTony’s SFMC Data Visualizations",
     "crumbs": [
       "Glider Lab",
       "Glider Lab"
@@ -311,11 +311,11 @@
     ]
   },
   {
-    "objectID": "content/lab.html#software-and-settings-settings",
-    "href": "content/lab.html#software-and-settings-settings",
+    "objectID": "content/lab.html#software-and-settings",
+    "href": "content/lab.html#software-and-settings",
     "title": "Glider Lab",
-    "section": "Software and settings settings",
-    "text": "Software and settings settings\n\n\n\nSoftware\nSettings\nUse\n\n\n\n\nZOC\nZOC settings\nTalking with the glider over Freewave\n\n\nTera Term\nTera Term settings\nTalking with the camera\n\n\nAZFP\nSettings\nCalibrating and settings for AZFP\n\n\nMIDAS\nSettings\nSetting up Nortek\n\n\nWinSCP\nSettings\nFTP client for the camera\n\n\nNotepad++\nSettings\nChanging and reading glider files",
+    "section": "Software and settings",
+    "text": "Software and settings\n\n\n\nSoftware\nSettings\nUse\n\n\n\n\nZOC\nSettings\nTalking with the glider over Freewave\n\n\nTera Term\nSettings\nTalking with the camera\n\n\nAZFP\nSettings\nCalibrating and settings for AZFP\n\n\nMIDAS\nSettings\nSetting up Nortek\n\n\nWinSCP\nSettings\nFTP client for the camera\n\n\nNotepad++\nSettings\nChanging and reading glider files\n\n\nOceanContour\nSettings\nFor viewing ADCP data",
     "crumbs": [
       "Glider Lab",
       "Glider Lab"
