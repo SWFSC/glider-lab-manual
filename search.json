@@ -282,7 +282,7 @@
     "href": "content/lab.html#standard-operating-procedures",
     "title": "Glider Lab",
     "section": "Standard Operating Procedures",
-    "text": "Standard Operating Procedures\nGlider Checkout Procedure The steps needed to prepare a glider for deployment.\nHow to upgrade the glider operating system\nHow to calibrate the AZFP\nHow to calibrate the compass on the glider\nHow to calibrate the shadowgraph\nHow to talk to the camera (shadowgraph or glidercam)\nHow to set up the Nortek mini-echosounder\nHow to pilot a glider\nHow to use the high speed data cable\nSteps for deploying a glider\nHow Jen deploys a glider\nTony’s SFMC Data Visualizations",
+    "text": "Standard Operating Procedures\nGlider Checkout Procedure The steps needed to prepare a glider for deployment.\nHow to upgrade the glider operating system\nHow to calibrate the AZFP\nHow to calibrate the compass on the glider\nHow to calibrate the shadowgraph\nHow to talk to the camera (shadowgraph or glidercam)\nHow to set up the Nortek compact echosounder\nHow to pilot a glider\nHow to use the high speed data cable\nSteps for deploying a glider\nHow Jen deploys a glider\nTony’s SFMC Data Visualizations",
     "crumbs": [
       "Glider Lab",
       "Glider Lab"
@@ -304,7 +304,7 @@
     "href": "content/lab.html#manuals",
     "title": "Glider Lab",
     "section": "Manuals",
-    "text": "Manuals\n\nSlocum\nSlocum Fleet Mission Control 2019\nSlocum G3 Glider Operators Manual 2019\nSlocum G3 Maintenance Manual 2019\nSlocum G3S New Processor Guide 2021 Draft B\n\n\nCameras\nShadowgraph r3\nGlidercam r2.1\n\n\nNortek\nIntegrators guide 2024\nSignature 100 Operations Manual 2022\nPrinciples of Operations Signature 100 2022\nMIDAS software User Guide 2019\n\n\nAZFP\nAZFPLink Software 2019\nAZFP Glider Operators Manual 2020\nAZFP Operators Manual 2019\n\n\nECOPuck\nECOPuck User Manual 2017\n\n\nAAnderaa Oxygen Optode\nOxygen Optode Manual 2017",
+    "text": "Manuals\n\nSlocum\nSlocum Fleet Mission Control 2019\nSlocum G3 Glider Operators Manual 2019\nSlocum G3 Maintenance Manual 2019\nSlocum G3S New Processor Guide 2021 Draft B\n\n\nCameras\nShadowgraph r3\nGlidercam r2.1\n\n\nNortek compact echosounder\nIntegrators guide 2024\nSignature 100 Operations Manual 2022\nPrinciples of Operations Signature 100 2022\nMIDAS software User Guide 2019\n\n\nAZFP Acoustic Zooplankton Fish Profiler\nAZFPLink Software 2019\nAZFP Glider Operators Manual 2020\nAZFP Operators Manual 2019\n\n\nECOPuck\nECOPuck User Manual 2017\n\n\nAAnderaa Oxygen Optode\nOxygen Optode Manual 2017",
     "crumbs": [
       "Glider Lab",
       "Glider Lab"
@@ -327,6 +327,17 @@
     "title": "Glider Lab",
     "section": "Training Documents",
     "text": "Training Documents\nSlocum Basic Training Slides May 2024\nSlocum Basic Training Slides May 2024 Materials\nSlocum Advanced Training 2019 Materials\nRutgers Glider Camp 2023",
+    "crumbs": [
+      "Glider Lab",
+      "Glider Lab"
+    ]
+  },
+  {
+    "objectID": "content/lab.html#contracts",
+    "href": "content/lab.html#contracts",
+    "title": "Glider Lab",
+    "section": "Contracts",
+    "text": "Contracts\nOuter Limits 2024-28 Charter boat out of Mission Bay BPA site\nPacific Venture 2024-28 Charter boat out of Oceanside BPA site\nTeledyne Webb Research 2024-28 IDIQ for Slocum gliders and parts site",
     "crumbs": [
       "Glider Lab",
       "Glider Lab"
