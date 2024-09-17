@@ -24,9 +24,9 @@ Items to include:
 
 [How to calibrate the shadowgraph](https://docs.google.com/document/d/1M9s7rSlgdBHxFnBTdKWelLfpMghZU3p8K5TImlIJ8FI/edit)
 
-How to talk to the camera(shadowgraph or glidercam)
+How to talk to the camera (shadowgraph or glidercam)
 
-How to set up the Nortek miniechosounder
+How to set up the Nortek mini-echosounder
 
 How to pilot a glider
 
@@ -93,16 +93,17 @@ How to use the high speed data cable
 
 [Oxygen Optode Manual 2017](https://drive.google.com/file/d/1-etHx8dsXKcp6XoSZG9PtV2HXbDQHTbv/view?usp=drive_link)
 
-## Software and settings settings
+## Software and settings
 
 | Software                                                                                       | Settings |  Use                                                                                            |
 |------------------------------|------------------------------|------------------------------|
-| [ZOC](https://www.emtec.com/zoc/index.html)                                                    | [ZOC settings](https://docs.google.com/document/d/1lDMAtfzKKY7XLKwakii6P_g1HGAFZYtKUMWhLEW4DUU/edit?usp=sharing) | Talking with the glider over Freewave |
-| [Tera Term](https://teratermproject.github.io/index-en.html)                                   | Tera Term settings | Talking with the camera |                                                                                  |
+| [ZOC](https://www.emtec.com/zoc/index.html)                                                    | [Settings](https://docs.google.com/document/d/1lDMAtfzKKY7XLKwakii6P_g1HGAFZYtKUMWhLEW4DUU/edit?usp=sharing) | Talking with the glider over Freewave |
+| [Tera Term](https://teratermproject.github.io/index-en.html)                                   | Settings | Talking with the camera |                                                                                  |
 | [AZFP](https://drive.google.com/file/d/16eSSKX3DGkA6UUvign7KnQwzPqhUJHil/view?usp=drive_link)  | Settings |  Calibrating and settings for AZFP|                                                                                          |
 | [MIDAS](https://drive.google.com/file/d/1lGYgthRRTBOQShaTqlrB233jWfp_uRZV/view?usp=drive_link) | Settings | Setting up Nortek |                                                                                            |
 | [WinSCP](https://winscp.net/eng/index.php)                                                     | Settings | FTP client for the camera |                                                                                            |
-| [Notepad++](https://notepad-plus-plus.org/)                                                    | Settings  | Changing and reading glider files                                                                                           |
+| [Notepad++](https://notepad-plus-plus.org/)                                                    | Settings  | Changing and reading glider files |  
+| [OceanContour](https://oceanillumination.com/)												 | Settings  | For viewing ADCP data |                                                                                       |
 
 ## Training Documents
 
