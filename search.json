@@ -1,49 +1,5 @@
 [
   {
-    "objectID": "content/reports.html",
-    "href": "content/reports.html",
-    "title": "Deployment Reports",
-    "section": "",
-    "text": "Deployment\nSensors\n\n\n\n\njohn-20240312\nCTD, Optode, Nortek,Shadowgraph\n\n\nringo-20240312\nCTD, Optode, Wide Shadowgraph\n\n\ngeorge-20240530\nCTD, Optode, Narrow Shadowgraph\n\n\n\n\n\n\n\n\n\nDeployment\nSensors\n\n\n\n\ngeorge-20240907\nCTD, Optode,Ecopuck, Narrow Shadowgraph\n\n\n\n\n\n\n\n\n\nDeployment\nSensors\n\n\n\n\nglider-202410XX\nCTD, Optode, Ecopuck, Nortek",
-    "crumbs": [
-      "Deployments",
-      "Deployment Reports"
-    ]
-  },
-  {
-    "objectID": "content/reports.html#san-diego",
-    "href": "content/reports.html#san-diego",
-    "title": "Deployment Reports",
-    "section": "",
-    "text": "Deployment\nSensors\n\n\n\n\njohn-20240312\nCTD, Optode, Nortek,Shadowgraph\n\n\nringo-20240312\nCTD, Optode, Wide Shadowgraph\n\n\ngeorge-20240530\nCTD, Optode, Narrow Shadowgraph",
-    "crumbs": [
-      "Deployments",
-      "Deployment Reports"
-    ]
-  },
-  {
-    "objectID": "content/reports.html#santa-barbara",
-    "href": "content/reports.html#santa-barbara",
-    "title": "Deployment Reports",
-    "section": "",
-    "text": "Deployment\nSensors\n\n\n\n\ngeorge-20240907\nCTD, Optode,Ecopuck, Narrow Shadowgraph",
-    "crumbs": [
-      "Deployments",
-      "Deployment Reports"
-    ]
-  },
-  {
-    "objectID": "content/reports.html#humboldt",
-    "href": "content/reports.html#humboldt",
-    "title": "Deployment Reports",
-    "section": "",
-    "text": "Deployment\nSensors\n\n\n\n\nglider-202410XX\nCTD, Optode, Ecopuck, Nortek",
-    "crumbs": [
-      "Deployments",
-      "Deployment Reports"
-    ]
-  },
-  {
     "objectID": "content/dataproc-gliders.html",
     "href": "content/dataproc-gliders.html",
     "title": "Glider Data Processing",
@@ -110,160 +66,13 @@
     ]
   },
   {
-    "objectID": "content/imagery.html",
-    "href": "content/imagery.html",
-    "title": "Imagery",
+    "objectID": "content/best-practices.html",
+    "href": "content/best-practices.html",
+    "title": "Best Practices",
     "section": "",
-    "text": "ESD gliders may be equipped with either a ‘glidercam’ or a shadowgraph camera (see details here). This page describes the management and processing of these images once they come off of the glider.",
+    "text": "ESD Glider Lab best practices - in development\n\n\n\n Back to top",
     "crumbs": [
-      "Imagery"
-    ]
-  },
-  {
-    "objectID": "content/imagery.html#raw-imagery",
-    "href": "content/imagery.html#raw-imagery",
-    "title": "Imagery",
-    "section": "Raw Imagery",
-    "text": "Raw Imagery\nOnce the gliders are recovered, the images are copied from the memory cards and uploaded to GCP as described here. Specifically, raw images are uploaded to the bucket amlr-gliders-imagery-raw-dev, along with associated config files from the deployment. Image metadata files generated during the glider data processing are also written to the deployment folder within this bucket. Project/year/deployment folder structures mirror that of the glider data stored in amlr-gliders-deployments-dev.",
-    "crumbs": [
-      "Imagery"
-    ]
-  },
-  {
-    "objectID": "content/imagery.html#viewing-images",
-    "href": "content/imagery.html#viewing-images",
-    "title": "Imagery",
-    "section": "Viewing Images",
-    "text": "Viewing Images\nThere are several ways to view raw or processed images. If you click down to an image itself, Google Cloud provides an image preview at the bottom of the ‘object’ page. However, you cannot view more than one image at a time. It is a goal of the ESD to build a cloud-native image viewer application to easily view multiple images at a time, but this is not a current project.\nAll raw imagery have been mirrored in VIAME-Web-AMLR. Thus, if you are familiar with VAIME-Web and accessing ESD’s deployment, then you can view imagery using the VIAME-Web annotator.\nFinally, you may also use the gcloud CLI to download images to your computer, and then view them locally using your preferred program.",
-    "crumbs": [
-      "Imagery"
-    ]
-  },
-  {
-    "objectID": "content/imagery.html#shadowgraph-image-processing",
-    "href": "content/imagery.html#shadowgraph-image-processing",
-    "title": "Imagery",
-    "section": "Shadowgraph Image Processing",
-    "text": "Shadowgraph Image Processing\n\n\n\nShadowgraph image processing workflow, v1\n\n\n\n\n\nShadowgraph image processing workflow, v2\n\n\nGliders deployed with shadowgraph cameras can easily collect more than 200,000 images during a single deployment. Therefore, it is impractical to have humans review and annotate all these images by hand, and these images must be processed using AI/ML methods.\nCurrently, ESD development of these methods is (mostly) on hold. This section describes the current status of these methods, as well as anticipated future directions.\nThere are three main steps to processing shadowgraph images; where and how these steps happen for ESD are further described below.\n\nPreprocessing: flat-fielding, masking, other processing as needed.\nSegmentation: Detect objects, and create regions of interest (ROIs; i.e. blobs or chips). This is done using the preprocessed image.\nClassification: Use a trained ML model to classify the ROIs. Have a trained biologist review and/or correct these predictions\n\n\nPreprocessing and Segmentation\nAll preprocessing and object detection/segmentation steps are performed by code in the amlr-shadowgraph repo, developed by Randy Cutter based on work done by Ohman/Ellen for the Zooglider. Currently, all processing must be done through a single notebook: sg-flatfield-segm-loop.ipynb. There are active efforts to move this functionality from the Notebook to a Python module for easier use and development.\nFor instructions on how to run this code, or for more information about the algoroithms used, see the repo readme.\nAll currently processed imagery can be found in amlr-gliders-imagery-proc-dev, which like the raw imagery is mirrored to and thus viewable using ESD’s deployment of VIAME-Web. The amlr-shadowgraph code currently writes output to the amlr-imagery-proc-dev bucket; current efforts include generalizing this code to write directly to the amlr-gliders-imagery-proc-dev bucket. This output includes the following folders:\n\nregions: Region of interest (ROI) blobs, created using Ohman/Ellen methods. This folder contains Dir#### folders, matching the raw data.\nregions-tmser: Region of interest (ROI) blobs, created using an adapted version of Oregon State’s Threshold MSER In Situ Plankton Segmentation. Most deployments do not have this output, as this method has not been tuned to ESD imagery.\njpgorig-regions: jpg of the original (i.e., raw) image, with ROI boundaries from the Ohman/Ellen segmentation methods outlined in red.\nimages-imgff: Flat-fielded images, used in the segmentation\nimages-ffPCG: Flat-fielded images, which also have had pixel gamma correction factors applied.\n\n\n\nClassification\nDescribe ISIIS image library\nDescribe models that Randy has trained\nDescribe running these models on ESD ROIs\nDescribe validation work, that Jen is doing\n\n\nFuture Directions\n\nGeneralize and adapt pieces of current code/pipelines?\nOptics SI/OSU efforts, eg https://github.com/sullichrosu/Njobvu-AI and/or https://github.com/paradom/Threshold-MSER",
-    "crumbs": [
-      "Imagery"
-    ]
-  },
-  {
-    "objectID": "content/pilot-tools.html",
-    "href": "content/pilot-tools.html",
-    "title": "Glider Pilot Tools",
-    "section": "",
-    "text": "Slocum Fleet Mission Control - SFMC from Teledyne. Where to pilot the gliders using Iridium.\nArgos - Check where the gliders are if they miss a call in.\nDatahost - The TWR forum. It has the firmware builds for the gliders, Masterdata for the different firmware, TWR glider sheets, such as, Ballast, Functional Checkout, etc. Most forms are in Resources.\nMasterdata - A list of masterdata for all the various operating systems of Slocum gliders. \nMasterdata 8.6  Masterdata 11.0 Masterdata 11.01\nTeledyne Customer Portal - Where to check the status of service on gliders and glider parts at TWR.\nOceanGNS - A program that can track multiple gliders as well as has different layers. The layers can be depth average currents, sea ice, chlorophyll, etc.\n\n\n\nBattery Capacities\n\n\n\n\n\nFile Transfer Syntax\n\n\n\n\n\nDifferences between persistor and STM gliders\n\n\nAutoballast States\nAbort codes\nAborts and Errors we’ve gone through",
-    "crumbs": [
-      "Glider Lab",
-      "Glider Pilot Tools"
-    ]
-  },
-  {
-    "objectID": "content/pilot-tools.html#links",
-    "href": "content/pilot-tools.html#links",
-    "title": "Glider Pilot Tools",
-    "section": "",
-    "text": "Slocum Fleet Mission Control - SFMC from Teledyne. Where to pilot the gliders using Iridium.\nArgos - Check where the gliders are if they miss a call in.\nDatahost - The TWR forum. It has the firmware builds for the gliders, Masterdata for the different firmware, TWR glider sheets, such as, Ballast, Functional Checkout, etc. Most forms are in Resources.\nMasterdata - A list of masterdata for all the various operating systems of Slocum gliders. \nMasterdata 8.6  Masterdata 11.0 Masterdata 11.01\nTeledyne Customer Portal - Where to check the status of service on gliders and glider parts at TWR.\nOceanGNS - A program that can track multiple gliders as well as has different layers. The layers can be depth average currents, sea ice, chlorophyll, etc.\n\n\n\nBattery Capacities\n\n\n\n\n\nFile Transfer Syntax\n\n\n\n\n\nDifferences between persistor and STM gliders\n\n\nAutoballast States\nAbort codes\nAborts and Errors we’ve gone through",
-    "crumbs": [
-      "Glider Lab",
-      "Glider Pilot Tools"
-    ]
-  },
-  {
-    "objectID": "content/pilot-tools.html#google-drive",
-    "href": "content/pilot-tools.html#google-drive",
-    "title": "Glider Pilot Tools",
-    "section": "Google Drive",
-    "text": "Google Drive\n\nGliders\nAMLR Gliders Folder - Where most things are stored on Google Drive with regards to gliders.\nFleet Status - A place to see the simplified status of gliders. Also to keep track of RMAs and generalized deployments.\nSensor Settings and Sampling Sheet - Where mission planners input the settings for sensors and how they should sample.\nBallast sheet from Rutgers -\nTWR Ballast sheet - You have to log into Datahost to access this.\nFunctional Checkout Procedure - You have to log into Datahost to access this.\nFreewave and Argos numbers - Freewave and Argos numbers for each Slocum glider.\nECOpuck coefficients - Coefficients for the ECOpuck needed to be put in autoexec.mi\nEmergency boat options - Boats that we can use for emergency recoveries in San Diego and Santa Barbara.\n\n\nAcoustics",
-    "crumbs": [
-      "Glider Lab",
-      "Glider Pilot Tools"
-    ]
-  },
-  {
-    "objectID": "content/pilot-tools.html#useful-websites",
-    "href": "content/pilot-tools.html#useful-websites",
-    "title": "Glider Pilot Tools",
-    "section": "Useful websites",
-    "text": "Useful websites\nSIO Del Mar Buoy\nSCCOOS shore stations\nDefault SFMC Group Call In - Check here to see if the glider is calling into the default group instead of our SFMC.\nUnderwater Glider User Group\nEveryone’s Gliding Observatories\nOcean Gliders\nIOOS Underwater Gliders",
-    "crumbs": [
-      "Glider Lab",
-      "Glider Pilot Tools"
-    ]
-  },
-  {
-    "objectID": "content/dataproc-acoustics.html",
-    "href": "content/dataproc-acoustics.html",
-    "title": "Acoustic Data Processing",
-    "section": "",
-    "text": "Here be acoustic data processing\n\n\n\n Back to top",
-    "crumbs": [
-      "Data Processing",
-      "Acoustics"
-    ]
-  },
-  {
-    "objectID": "index.html",
-    "href": "index.html",
-    "title": "Glider Lab Manual",
-    "section": "",
-    "text": "The Ecosystem Science Division (ESD) at the Southwest Fisheries Science Center does some pretty cool stuff using gliders, in both the California Current Ecosystem and the Antarctic Peninsula regions. This website is an in-development manual for all ESD glider activities. Please contact a member of the glider team with any questions.\nFunding for the glider lab comes from base funding of the ESD Programs: Scientific Opoerations and Support (SOS), United States Antarctic Marine Living Resources (U.S. AMLR), and Offshore Wind. Additional funding also comes from the NOAA Inflation Reduction Act (IRA) strategic initiatives; UXS-OC (REFOCUS etc.).\nFor information about past deployments by the ESD glider lab, see this page",
-    "crumbs": [
-      "Home"
-    ]
-  },
-  {
-    "objectID": "index.html#team-members",
-    "href": "index.html#team-members",
-    "title": "Glider Lab Manual",
-    "section": "Team Members",
-    "text": "Team Members\n\n\n\nName\nJob Title\nGlider Team Role\n\n\n\n\nChristian Reiss\nProgram Lead, Offshore Wind\nPrinciple Investigator\n\n\nAnthony Cossio\nOperations Research Analyst\nLab Manager, Pilot, Tech\n\n\nJen Walsh\nFisheries Research Biologist\nPilot, Tech\n\n\nJC Clark\nNOAA Corps\nPilot\n\n\nCaleb Flaim\nElectronics Technician\nPilot, Tech\n\n\nJacob Partida\nPhysical Science Technician\nPilot, Tech\n\n\nHailey Schmidt\nPathways Intern\nPilot, Tech\n\n\nSam Woodman\nBiologist\nData Manager\n\n\nHeidi Taylor\nProgram Lead, SOS; Deputy Director, ESD\n\n\n\nGeorge Watters\nDirector, ESD",
-    "crumbs": [
-      "Home"
-    ]
-  },
-  {
-    "objectID": "index.html#project-management",
-    "href": "index.html#project-management",
-    "title": "Glider Lab Manual",
-    "section": "Project Management",
-    "text": "Project Management\nFor most current Fleet Status information, see this Sheet\nThe ESD glider team is using GitHub Issues and Projects for project management. There efforts are heavily inspired and influenced by the Openscapes GitHub for project management approach.\nTo view the ESD glider team project, see here. This project pulls from issues from several repositories, but in particular this repo. For more details see TODO (section under development in glider lab qmd file).\n\nGitHub Repositories\nGitHub repos developed by the ESD glider team. Issues for these repos are tracked in the above-linked Project.\n\n\n\nrepo link\ndescription\n\n\n\n\nglider-lab\nRepo for tracking ESD glider lab issues/tasks\n\n\nstandard-glider-files\nESD glider cache files, as well as standard files that are put on all gliders before deployment\n\n\nglider-utils\nUtility functions for processing ESD glider data\n\n\nechoview_glider_template\nEchoview glider templates that are used for acoustic data analysis\n\n\nglider_processing_code\nCompilation of code that is used to work with glider acoustic data\n\n\nglider-lab-manual\nESD glider lab website",
-    "crumbs": [
-      "Home"
-    ]
-  },
-  {
-    "objectID": "content/shared-values.html",
-    "href": "content/shared-values.html",
-    "title": "Shared Values and Best Practices",
-    "section": "",
-    "text": "Model after https://sael-swfsc.github.io/SAEL-lab-manual/content/SharedValues-BestPractices.html\n\n\n\n Back to top",
-    "crumbs": [
-      "Shared Values"
-    ]
-  },
-  {
-    "objectID": "content/past-deployments.html",
-    "href": "content/past-deployments.html",
-    "title": "Past Deployments",
-    "section": "",
-    "text": "The below table lists all ESD (and formerly AERD) glider deployments.\nTodo: embed/include table directly here. For now, see this sheet (last updated Aug 2024).",
-    "crumbs": [
-      "Deployments",
-      "Past Deployments"
-    ]
-  },
-  {
-    "objectID": "content/past-deployments.html#deployments",
-    "href": "content/past-deployments.html#deployments",
-    "title": "Past Deployments",
-    "section": "",
-    "text": "The below table lists all ESD (and formerly AERD) glider deployments.\nTodo: embed/include table directly here. For now, see this sheet (last updated Aug 2024).",
-    "crumbs": [
-      "Deployments",
-      "Past Deployments"
+      "Best Practices"
     ]
   },
   {
@@ -362,6 +171,197 @@
     "text": "Gliders both collect and require a lot of data and other files, making data management a complex endeavor. Most users should access processed glider data as described here (TODO). This page describes where and how all data and files from a glider deployment are stored.\nSee this document for the full ESD (previously AERD/AMLR) glider data plan. Note that the contents of this doc will be transferred over to this page as time permits.\nBecause gliders can collect &gt;1 TB of data in a single deployment, all ESD glider deployment data are stored in Google Cloud Storage buckets in the ESD Google Cloud Project.\nTODO: point to Shiny app or some other tool for users to use to get to GCS bucket URL for a particular piece of data.\nGlider GCP bucket Google Cloud Platform (GCP) for glider data.\nGlider imagery GCP bucket GCP for glider imagery.\n\n\n\n Back to top",
     "crumbs": [
       "Data Management"
+    ]
+  },
+  {
+    "objectID": "content/dataproc-acoustics.html",
+    "href": "content/dataproc-acoustics.html",
+    "title": "Acoustic Data Processing",
+    "section": "",
+    "text": "Here be acoustic data processing\n\n\n\n Back to top",
+    "crumbs": [
+      "Data Processing",
+      "Acoustics"
+    ]
+  },
+  {
+    "objectID": "index.html",
+    "href": "index.html",
+    "title": "Glider Lab Manual",
+    "section": "",
+    "text": "The Ecosystem Science Division (ESD) at the Southwest Fisheries Science Center does some pretty cool stuff using gliders, in both the California Current Ecosystem and the Antarctic Peninsula regions. This website is an in-development manual for all ESD glider activities. Please contact a member of the glider team with any questions.\nFunding for the glider lab comes from base funding of the ESD Programs: Scientific Opoerations and Support (SOS), United States Antarctic Marine Living Resources (U.S. AMLR), and Offshore Wind. Additional funding also comes from the NOAA Inflation Reduction Act (IRA) strategic initiatives; UXS-OC (REFOCUS etc.).\nFor information about past deployments by the ESD glider lab, see this page",
+    "crumbs": [
+      "Home"
+    ]
+  },
+  {
+    "objectID": "index.html#team-members",
+    "href": "index.html#team-members",
+    "title": "Glider Lab Manual",
+    "section": "Team Members",
+    "text": "Team Members\n\n\n\nName\nJob Title\nGlider Team Role\n\n\n\n\nChristian Reiss\nProgram Lead, Offshore Wind\nPrinciple Investigator\n\n\nAnthony Cossio\nOperations Research Analyst\nLab Manager, Pilot, Tech\n\n\nJen Walsh\nFisheries Research Biologist\nPilot, Tech\n\n\nJC Clark\nNOAA Corps\nPilot\n\n\nCaleb Flaim\nElectronics Technician\nPilot, Tech\n\n\nJacob Partida\nPhysical Science Technician\nPilot, Tech\n\n\nHailey Schmidt\nPathways Intern\nPilot, Tech\n\n\nSam Woodman\nBiologist\nData Manager\n\n\nHeidi Taylor\nProgram Lead, SOS; Deputy Director, ESD\n\n\n\nGeorge Watters\nDirector, ESD",
+    "crumbs": [
+      "Home"
+    ]
+  },
+  {
+    "objectID": "index.html#project-management",
+    "href": "index.html#project-management",
+    "title": "Glider Lab Manual",
+    "section": "Project Management",
+    "text": "Project Management\nFor most current Fleet Status information, see this Sheet\nThe ESD glider team is using GitHub Issues and Projects for project management. There efforts are heavily inspired and influenced by the Openscapes GitHub for project management approach.\nThe ESD glider team project pulls from issues from several repositories, but in particular this repo. For more details see the best practices page.\n\nGitHub Repositories\nGitHub repos developed by the ESD glider team. Issues for these repos are tracked in the above-linked Project.\n\n\n\nrepo link\ndescription\n\n\n\n\nglider-lab\nRepo for tracking ESD glider lab issues/tasks\n\n\nstandard-glider-files\nESD glider cache files, as well as standard files that are put on all gliders before deployment\n\n\nglider-utils\nUtility functions for processing ESD glider data\n\n\nechoview_glider_template\nEchoview glider templates that are used for acoustic data analysis\n\n\nglider_processing_code\nCompilation of code that is used to work with glider acoustic data\n\n\nglider-lab-manual\nESD glider lab website\n\n\nslocumRtDataVisTool\nCreates plots and generates useful statistics from slocum binary files",
+    "crumbs": [
+      "Home"
+    ]
+  },
+  {
+    "objectID": "content/past-deployments.html",
+    "href": "content/past-deployments.html",
+    "title": "Past Deployments",
+    "section": "",
+    "text": "The below table lists all ESD (and formerly AERD) glider deployments.\nTodo: embed/include table directly here. For now, see this sheet (last updated Aug 2024).",
+    "crumbs": [
+      "Deployments",
+      "Past Deployments"
+    ]
+  },
+  {
+    "objectID": "content/past-deployments.html#deployments",
+    "href": "content/past-deployments.html#deployments",
+    "title": "Past Deployments",
+    "section": "",
+    "text": "The below table lists all ESD (and formerly AERD) glider deployments.\nTodo: embed/include table directly here. For now, see this sheet (last updated Aug 2024).",
+    "crumbs": [
+      "Deployments",
+      "Past Deployments"
+    ]
+  },
+  {
+    "objectID": "content/imagery.html",
+    "href": "content/imagery.html",
+    "title": "Imagery",
+    "section": "",
+    "text": "ESD gliders may be equipped with either a ‘glidercam’ or a shadowgraph camera (see details here). This page describes the management and processing of these images once they come off of the glider.",
+    "crumbs": [
+      "Imagery"
+    ]
+  },
+  {
+    "objectID": "content/imagery.html#raw-imagery",
+    "href": "content/imagery.html#raw-imagery",
+    "title": "Imagery",
+    "section": "Raw Imagery",
+    "text": "Raw Imagery\nOnce the gliders are recovered, the images are copied from the memory cards and uploaded to GCP as described here. Specifically, raw images are uploaded to the bucket amlr-gliders-imagery-raw-dev, along with associated config files from the deployment. Image metadata files generated during the glider data processing are also written to the deployment folder within this bucket. Project/year/deployment folder structures mirror that of the glider data stored in amlr-gliders-deployments-dev.",
+    "crumbs": [
+      "Imagery"
+    ]
+  },
+  {
+    "objectID": "content/imagery.html#viewing-images",
+    "href": "content/imagery.html#viewing-images",
+    "title": "Imagery",
+    "section": "Viewing Images",
+    "text": "Viewing Images\nThere are several ways to view raw or processed images. If you click down to an image itself, Google Cloud provides an image preview at the bottom of the ‘object’ page. However, you cannot view more than one image at a time. It is a goal of the ESD to build a cloud-native image viewer application to easily view multiple images at a time, but this is not a current project.\nAll raw imagery have been mirrored in VIAME-Web-AMLR. Thus, if you are familiar with VAIME-Web and accessing ESD’s deployment, then you can view imagery using the VIAME-Web annotator.\nFinally, you may also use the gcloud CLI to download images to your computer, and then view them locally using your preferred program.",
+    "crumbs": [
+      "Imagery"
+    ]
+  },
+  {
+    "objectID": "content/imagery.html#shadowgraph-image-processing",
+    "href": "content/imagery.html#shadowgraph-image-processing",
+    "title": "Imagery",
+    "section": "Shadowgraph Image Processing",
+    "text": "Shadowgraph Image Processing\n\n\n\nShadowgraph image processing workflow, v1\n\n\n\n\n\nShadowgraph image processing workflow, v2\n\n\nGliders deployed with shadowgraph cameras can easily collect more than 200,000 images during a single deployment. Therefore, it is impractical to have humans review and annotate all these images by hand, and these images must be processed using AI/ML methods.\nCurrently, ESD development of these methods is (mostly) on hold. This section describes the current status of these methods, as well as anticipated future directions.\nThere are three main steps to processing shadowgraph images; where and how these steps happen for ESD are further described below.\n\nPreprocessing: flat-fielding, masking, other processing as needed.\nSegmentation: Detect objects, and create regions of interest (ROIs; i.e. blobs or chips). This is done using the preprocessed image.\nClassification: Use a trained ML model to classify the ROIs. Have a trained biologist review and/or correct these predictions\n\n\nPreprocessing and Segmentation\nAll preprocessing and object detection/segmentation steps are performed by code in the amlr-shadowgraph repo, developed by Randy Cutter based on work done by Ohman/Ellen for the Zooglider. Currently, all processing must be done through a single notebook: sg-flatfield-segm-loop.ipynb. There are active efforts to move this functionality from the Notebook to a Python module for easier use and development.\nFor instructions on how to run this code, or for more information about the algoroithms used, see the repo readme.\nAll currently processed imagery can be found in amlr-gliders-imagery-proc-dev, which like the raw imagery is mirrored to and thus viewable using ESD’s deployment of VIAME-Web. The amlr-shadowgraph code currently writes output to the amlr-imagery-proc-dev bucket; current efforts include generalizing this code to write directly to the amlr-gliders-imagery-proc-dev bucket. This output includes the following folders:\n\nregions: Region of interest (ROI) blobs, created using Ohman/Ellen methods. This folder contains Dir#### folders, matching the raw data.\nregions-tmser: Region of interest (ROI) blobs, created using an adapted version of Oregon State’s Threshold MSER In Situ Plankton Segmentation. Most deployments do not have this output, as this method has not been tuned to ESD imagery.\njpgorig-regions: jpg of the original (i.e., raw) image, with ROI boundaries from the Ohman/Ellen segmentation methods outlined in red.\nimages-imgff: Flat-fielded images, used in the segmentation\nimages-ffPCG: Flat-fielded images, which also have had pixel gamma correction factors applied.\n\n\n\nClassification\nDescribe ISIIS image library\nDescribe models that Randy has trained\nDescribe running these models on ESD ROIs\nDescribe validation work, that Jen is doing\n\n\nFuture Directions\n\nGeneralize and adapt pieces of current code/pipelines?\nOptics SI/OSU efforts, eg https://github.com/sullichrosu/Njobvu-AI and/or https://github.com/paradom/Threshold-MSER",
+    "crumbs": [
+      "Imagery"
+    ]
+  },
+  {
+    "objectID": "content/pilot-tools.html",
+    "href": "content/pilot-tools.html",
+    "title": "Glider Pilot Tools",
+    "section": "",
+    "text": "Slocum Fleet Mission Control - SFMC from Teledyne. Where to pilot the gliders using Iridium.\nArgos - Check where the gliders are if they miss a call in.\nDatahost - The TWR forum. It has the firmware builds for the gliders, Masterdata for the different firmware, TWR glider sheets, such as, Ballast, Functional Checkout, etc. Most forms are in Resources.\nMasterdata - A list of masterdata for all the various operating systems of Slocum gliders. \nMasterdata 8.6  Masterdata 11.0 Masterdata 11.01\nTeledyne Customer Portal - Where to check the status of service on gliders and glider parts at TWR.\nOceanGNS - A program that can track multiple gliders as well as has different layers. The layers can be depth average currents, sea ice, chlorophyll, etc.\n\n\n\nBattery Capacities\n\n\n\n\n\nFile Transfer Syntax\n\n\n\n\n\nDifferences between persistor and STM gliders\n\n\nAutoballast States\nAbort codes\nAborts and Errors we’ve gone through",
+    "crumbs": [
+      "Glider Lab",
+      "Glider Pilot Tools"
+    ]
+  },
+  {
+    "objectID": "content/pilot-tools.html#links",
+    "href": "content/pilot-tools.html#links",
+    "title": "Glider Pilot Tools",
+    "section": "",
+    "text": "Slocum Fleet Mission Control - SFMC from Teledyne. Where to pilot the gliders using Iridium.\nArgos - Check where the gliders are if they miss a call in.\nDatahost - The TWR forum. It has the firmware builds for the gliders, Masterdata for the different firmware, TWR glider sheets, such as, Ballast, Functional Checkout, etc. Most forms are in Resources.\nMasterdata - A list of masterdata for all the various operating systems of Slocum gliders. \nMasterdata 8.6  Masterdata 11.0 Masterdata 11.01\nTeledyne Customer Portal - Where to check the status of service on gliders and glider parts at TWR.\nOceanGNS - A program that can track multiple gliders as well as has different layers. The layers can be depth average currents, sea ice, chlorophyll, etc.\n\n\n\nBattery Capacities\n\n\n\n\n\nFile Transfer Syntax\n\n\n\n\n\nDifferences between persistor and STM gliders\n\n\nAutoballast States\nAbort codes\nAborts and Errors we’ve gone through",
+    "crumbs": [
+      "Glider Lab",
+      "Glider Pilot Tools"
+    ]
+  },
+  {
+    "objectID": "content/pilot-tools.html#google-drive",
+    "href": "content/pilot-tools.html#google-drive",
+    "title": "Glider Pilot Tools",
+    "section": "Google Drive",
+    "text": "Google Drive\n\nGliders\nAMLR Gliders Folder - Where most things are stored on Google Drive with regards to gliders.\nFleet Status - A place to see the simplified status of gliders. Also to keep track of RMAs and generalized deployments.\nSensor Settings and Sampling Sheet - Where mission planners input the settings for sensors and how they should sample.\nBallast sheet from Rutgers -\nTWR Ballast sheet - You have to log into Datahost to access this.\nFunctional Checkout Procedure - You have to log into Datahost to access this.\nFreewave and Argos numbers - Freewave and Argos numbers for each Slocum glider.\nECOpuck coefficients - Coefficients for the ECOpuck needed to be put in autoexec.mi\nEmergency boat options - Boats that we can use for emergency recoveries in San Diego and Santa Barbara.\n\n\nAcoustics",
+    "crumbs": [
+      "Glider Lab",
+      "Glider Pilot Tools"
+    ]
+  },
+  {
+    "objectID": "content/pilot-tools.html#useful-websites",
+    "href": "content/pilot-tools.html#useful-websites",
+    "title": "Glider Pilot Tools",
+    "section": "Useful websites",
+    "text": "Useful websites\nSIO Del Mar Buoy\nSCCOOS shore stations\nDefault SFMC Group Call In - Check here to see if the glider is calling into the default group instead of our SFMC.\nUnderwater Glider User Group\nEveryone’s Gliding Observatories\nOcean Gliders\nIOOS Underwater Gliders",
+    "crumbs": [
+      "Glider Lab",
+      "Glider Pilot Tools"
+    ]
+  },
+  {
+    "objectID": "content/reports.html",
+    "href": "content/reports.html",
+    "title": "Deployment Reports",
+    "section": "",
+    "text": "Deployment\nSensors\n\n\n\n\njohn-20240312\nCTD, Optode, Nortek,Shadowgraph\n\n\nringo-20240312\nCTD, Optode, Wide Shadowgraph\n\n\ngeorge-20240530\nCTD, Optode, Narrow Shadowgraph\n\n\n\n\n\n\n\n\n\nDeployment\nSensors\n\n\n\n\ngeorge-20240907\nCTD, Optode,Ecopuck, Narrow Shadowgraph\n\n\n\n\n\n\n\n\n\nDeployment\nSensors\n\n\n\n\nglider-202410XX\nCTD, Optode, Ecopuck, Nortek",
+    "crumbs": [
+      "Deployments",
+      "Deployment Reports"
+    ]
+  },
+  {
+    "objectID": "content/reports.html#san-diego",
+    "href": "content/reports.html#san-diego",
+    "title": "Deployment Reports",
+    "section": "",
+    "text": "Deployment\nSensors\n\n\n\n\njohn-20240312\nCTD, Optode, Nortek,Shadowgraph\n\n\nringo-20240312\nCTD, Optode, Wide Shadowgraph\n\n\ngeorge-20240530\nCTD, Optode, Narrow Shadowgraph",
+    "crumbs": [
+      "Deployments",
+      "Deployment Reports"
+    ]
+  },
+  {
+    "objectID": "content/reports.html#santa-barbara",
+    "href": "content/reports.html#santa-barbara",
+    "title": "Deployment Reports",
+    "section": "",
+    "text": "Deployment\nSensors\n\n\n\n\ngeorge-20240907\nCTD, Optode,Ecopuck, Narrow Shadowgraph",
+    "crumbs": [
+      "Deployments",
+      "Deployment Reports"
+    ]
+  },
+  {
+    "objectID": "content/reports.html#humboldt",
+    "href": "content/reports.html#humboldt",
+    "title": "Deployment Reports",
+    "section": "",
+    "text": "Deployment\nSensors\n\n\n\n\nglider-202410XX\nCTD, Optode, Ecopuck, Nortek",
+    "crumbs": [
+      "Deployments",
+      "Deployment Reports"
     ]
   }
 ]
