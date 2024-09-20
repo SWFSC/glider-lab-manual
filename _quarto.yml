@@ -39,8 +39,7 @@ website:
     contents:
       - href: index.qmd
         text: Home
-      - href: content/shared-values.qmd
-        text: Shared Values
+      - content/best-practices.qmd
       - section: "Glider Lab"
         contents:
           - content/lab.qmd

@@ -32,7 +32,7 @@ For most current Fleet Status information, see [this Sheet](https://docs.google.
 
 The ESD glider team is using GitHub Issues and Projects for project management. There efforts are heavily inspired and influenced by the Openscapes [GitHub for project management](https://openscapes.github.io/series/core-lessons/github/github-issues.html) approach.
 
-To view the ESD glider team project, see [here](https://github.com/orgs/us-amlr/projects/1). This project pulls from issues from several repositories, but in particular [this repo](https://github.com/us-amlr/glider-lab). For more details see TODO (section under development in glider lab qmd file).
+The [ESD glider team project](https://github.com/orgs/us-amlr/projects/1) pulls from issues from several repositories, but in particular [this repo](https://github.com/us-amlr/glider-lab). For more details see the [best practices](content/best-practices.qmd) page.
 
 ### GitHub Repositories
 
@@ -46,3 +46,4 @@ GitHub repos developed by the ESD glider team. Issues for these repos are tracke
 | [echoview_glider_template](https://github.com/us-amlr/echoview_glider_template) | Echoview glider templates that are used for acoustic data analysis                              |
 | [glider_processing_code](https://github.com/us-amlr/glider_processing_code)     | Compilation of code that is used to work with glider acoustic data                              |
 | [glider-lab-manual](https://github.com/SWFSC/glider-lab-manual)                 | ESD glider lab website 
+| [slocumRtDataVisTool](https://github.com/flaimC/slocumRtDataVisTool)                 | Creates plots and generates useful statistics from slocum binary files

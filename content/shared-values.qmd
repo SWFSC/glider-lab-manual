@@ -1,5 +1,0 @@
----
-title: Shared Values and Best Practices
----
-
-Model after https://sael-swfsc.github.io/SAEL-lab-manual/content/SharedValues-BestPractices.html
