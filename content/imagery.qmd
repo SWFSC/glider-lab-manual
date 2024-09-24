@@ -2,7 +2,7 @@
 title: Imagery
 ---
 
-ESD gliders may be equipped with either a 'glidercam' or a shadowgraph camera ([see details here](https://www.fisheries.noaa.gov/science-blog/fear-unknown-and-how-unknown-becomes-known-you-know)). This page describes the management and processing of these images once they come off of the glider.
+ESD gliders may be equipped with either a 'glidercam' or a 'shadowgraph' [camera](https://www.fisheries.noaa.gov/science-blog/fear-unknown-and-how-unknown-becomes-known-you-know). This page describes the management and processing of these images once they come off of the glider.
 
 ## Raw Imagery
 
@@ -10,53 +10,78 @@ Once the gliders are recovered, the images are copied from the memory cards and 
 
 ## Viewing Images
 
-There are several ways to view raw or processed images. If you click down to an image itself, Google Cloud provides an image preview at the bottom of the 'object' page. However, you cannot view more than one image at a time. It is a goal of the ESD to build a cloud-native image viewer application to easily view multiple images at a time, but this is not a current project.
+There are several ways to view raw or processed images:
 
-All raw imagery have been mirrored in [VIAME-Web-AMLR](https://docs.google.com/document/d/1DkHcd-qOifNqWKxoRQpj2Gyjx2tSGKbEZNl9pf-gBjQ/edit?usp=sharing). Thus, if you are familiar with VAIME-Web and accessing ESD's deployment, then you can view imagery using the VIAME-Web annotator.
+1.  If you click down to an image itself, Google Cloud provides an image preview at the bottom of the 'object' page. However, you cannot view more than one image at a time. It is a goal of the ESD to build a cloud-native image viewer application to easily view multiple images at a time, but this is not a current project.
 
-Finally, you may also use the [gcloud CLI](https://cloud.google.com/sdk/gcloud/reference/storage) to download images to your computer, and then view them locally using your preferred program.
+2. All raw imagery have been mirrored in [VIAME-Web-AMLR](https://docs.google.com/document/d/1DkHcd-qOifNqWKxoRQpj2Gyjx2tSGKbEZNl9pf-gBjQ/edit?usp=sharing). Thus, if you are familiar with VAIME-Web and accessing ESD's deployment, then you can view imagery using the VIAME-Web annotator.
+
+3. You may also use the [gcloud CLI](https://cloud.google.com/sdk/gcloud/reference/storage) to download images to your computer, and then view them locally using your preferred program.
 
 ## Shadowgraph Image Processing
 
-![Shadowgraph image processing workflow, v1](images/shadowgraph-image-processing-1.jpg){width=80%}
-
-![Shadowgraph image processing workflow, v2](images/shadowgraph-image-processing-2.jpg){width=80%}
-
-Gliders deployed with shadowgraph cameras can easily collect more than 200,000 images during a single deployment. Therefore, it is impractical to have humans review and annotate all these images by hand, and these images must be processed using AI/ML methods.
-
-Currently, ESD development of these methods is (mostly) on hold. This section describes the current status of these methods, as well as anticipated future directions.
+Gliders deployed with shadowgraph cameras can easily collect more than 200,000 images during a single deployment. Therefore, it is impractical to have humans review and annotate all these images by hand, and thus operationally these images must be processed using AI/ML methods. This section describes the current status of these methods, as well as anticipated future directions.
 
 There are three main steps to processing shadowgraph images; where and how these steps happen for ESD are further described below. 
 
 1. **Preprocessing**: flat-fielding, masking, other processing as needed.
-2. **Segmentation**: Detect objects, and create regions of interest (ROIs; i.e. blobs or chips). This is done using the preprocessed image.
-3. **Classification**: Use a trained ML model to classify the ROIs. Have a trained biologist review and/or correct these predictions
+2. **Segmentation**: Detect objects, and create regions of interest (ROIs; i.e., blobs or chips). This is done using the preprocessed image.
+3. **Classification**: Use a trained ML model to classify the ROIs. Have a trained biologist review and/or correct these predictions.
+
+Note: the below images both show this same workflow, and thus are simply different ways of framing said workflow.
+
+::: {.panel-tabset}
+
+## Workflow v1
+
+![Shadowgraph image processing workflow, v1](images/shadowgraph-image-processing-1.jpg)
+Shadowgraph image processing workflow, v1
+
+## Workflow v2
+
+![Shadowgraph image processing workflow, v2](images/shadowgraph-image-processing-2.jpg) 
+Shadowgraph image processing workflow, v2
+
+:::
+<!-- https://docs.google.com/presentation/d/146TYKk_JGd-9ORrBDMe7uc5pssvGpIoNWCSZLD3YNFo/edit?usp=sharing 
+![Shadowgraph image processing workflow, v1](images/shadowgraph-image-processing-1.jpg){width=80%}-->
 
 ### Preprocessing and Segmentation
 
-All preprocessing and object detection/segmentation steps are performed by code in the [amlr-shadowgraph repo](https://github.com/us-amlr/amlr-shadowgraph), developed by Randy Cutter based on work done by Ohman/Ellen for the [Zooglider](https://doi.org/10.1002/lom3.10301). Currently, all processing must be done through a single notebook: [sg-flatfield-segm-loop.ipynb](https://github.com/us-amlr/amlr-shadowgraph/blob/main/segmentation/sg-flatfield-segm-loop.ipynb). There are active efforts to move this functionality from the Notebook to a Python module for easier use and development.
+All preprocessing and object detection/segmentation steps are currently performed by code in the [amlr-shadowgraph repo](https://github.com/us-amlr/amlr-shadowgraph). This codebase was originally developed as a Jupyter notebook by Randy Cutter based on work done by Ohman/Ellen for processing Zooglider images, e.g. [here](https://doi.org/10.1002/lom3.10301) and [here](https://www.proquest.com/dissertations-theses/improving-biological-object-classification/docview/2161240941/se-2?accountid=28257). It has since been refactored into the Python toolbox [sg](https://github.com/us-amlr/amlr-shadowgraph/tree/main/sgimageproc). For details on the algoroithms used and instructions on how to run this code, see the README on the repo homepage.
 
-For instructions on how to run this code, or for more information about the algoroithms used, see the [repo readme](https://github.com/us-amlr/amlr-shadowgraph/blob/main/README.md).
+All currently processed imagery can be found in [amlr-gliders-imagery-proc-dev](https://console.cloud.google.com/storage/browser/amlr-gliders-imagery-proc-dev). Like the raw imagery bucket, the amlr-gliders-imagery-proc-dev bucket mirrors the directory structure of the amlr-gliders-deployments-dev bucket. These processed imagery are also viewable as described [above](#viewing-images).
 
-All currently processed imagery can be found in [amlr-gliders-imagery-proc-dev](https://console.cloud.google.com/storage/browser/amlr-gliders-imagery-proc-dev), which like the raw imagery is mirrored to and thus viewable using ESD's deployment of VIAME-Web. The amlr-shadowgraph code currently writes output to the [amlr-imagery-proc-dev](https://console.cloud.google.com/storage/browser/amlr-imagery-proc-dev/gliders) bucket; current efforts include generalizing this code to write directly to the amlr-gliders-imagery-proc-dev bucket. This output includes the following folders:
+The processing output includes the following folders:
 
 - **regions**: Region of interest (ROI) blobs, created using Ohman/Ellen methods. This folder contains Dir#### folders, matching the raw data.
-- **regions-tmser**: Region of interest (ROI) blobs, created using an adapted version of Oregon State's [Threshold MSER In Situ Plankton Segmentation](https://github.com/paradom/Threshold-MSER). Most deployments do not have this output, as this method has not been tuned to ESD imagery.
+- **regions-tmser**: Region of interest (ROI) blobs, created using an adapted version of Oregon State's [Threshold MSER In Situ Plankton Segmentation](https://github.com/paradom/Threshold-MSER). Most deployments do not have this output, as this method has not been tuned to work well with ESD shadowgraph imagery.
 - **jpgorig-regions**: jpg of the original (i.e., raw) image, with ROI boundaries from the Ohman/Ellen segmentation methods outlined in red.
 - **images-imgff**: Flat-fielded images, used in the segmentation
 - **images-ffPCG**: Flat-fielded images, which also have had pixel gamma correction factors applied. 
 
 ### Classification
 
-Describe ISIIS image library
+After creating ROIs through the preprocessing and segmentation steps described above, those ROIs need to be labeled/classified, and these labels/classifications need to be validated by a trained observer.
 
-Describe models that Randy has trained
+#### Model Training
 
-Describe running these models on ESD ROIs
+To train an ML model to classify the ROIs as different classes, e.g. plankton species requires an image library of already-classified images that can be used as ground-truth data for the model. ESD is currently using the  In Situ Ichthyoplankton Imaging System (ISIIS) image library, courtesy of researchers at Oregon State University, for training full frame classifier models. This library consists of 174 classes of objects, and can be found [here](https://console.cloud.google.com/storage/browser/esd-image-library-dev/isiis-library).
 
-Describe validation work, that Jen is doing
+In early 2024, Randy used the ISIIS image library to train two models using VIAME-Web-AMLR (VWA): isiis-train02-clas-svm-lab81, and isiis-train02-clas-res01-lab81. Both of these models have 81 classes, and are available in VWA. Per Randy, the resnet (isiis-train02-clas-res01-lab81) theoretically should be better, but has so far been outperformed by the SVM. This is probably because of not enough training data relative to the number of input classes. Randy also was experimenting with training a yolo v7 model, but this model was not really tested. Thus, currently the resnet is the best model that we have for running on segmented ROIs.
+
+#### Generating and Validating Predictions
+
+**NOTE: these steps of running a model on ROIs and validating subsequent predictions are currently on hold.** Specifically, ESD is currently pushing down two paths in parallel: 1) evaluating and improving current preprocessing and segmentation efforts, and 2) performing manual annotations on raw imagery, and extracting user-annotated ROIs to build an ESD image library.
+
+For information on how to run these models on a folder of ROIs, see [here](https://docs.google.com/document/d/1xQnXVTCI7r5Yi39wrVuK0NaJS3yf4NE2_vfBbxlD9Bc/edit?usp=sharing). For information about how to validate model predictions, see [here](https://docs.google.com/document/d/1-FqtAjUGWBAd0wkqsXvY3q8Ks0zuT-_0EIW-N9rKebY/edit?usp=sharing). 
 
 ### Future Directions
 
-- Generalize and adapt pieces of current code/pipelines?
-- Optics SI/OSU efforts, eg [https://github.com/sullichrosu/Njobvu-AI](https://github.com/sullichrosu/Njobvu-AI) and/or [https://github.com/paradom/Threshold-MSER](https://github.com/paradom/Threshold-MSER)
+- ESD [Image processing resources](https://docs.google.com/document/d/1nNpBzIa1ky8E8HIw-UFL8SGkuTt9OtcyW5IfbSqywK0/edit?usp=sharing)
+
+- Tune and adapt current code/pipelines (in progress). This work is currently being done by ESD staff.
+
+- Work to tune and evaluate alternative segmentation algorithms, e.g. [https://github.com/paradom/Threshold-MSER](https://github.com/paradom/Threshold-MSER)
+
+- Tie in with Optics SI efforts, e.g. [https://github.com/sullichrosu/Njobvu-AI](https://github.com/sullichrosu/Njobvu-AI)
