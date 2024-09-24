@@ -40,11 +40,11 @@ title: Glider Pilot Tools
 
 [Sensor Settings and Sampling Sheet](https://docs.google.com/spreadsheets/d/1SNjvXY9RhGC8St3bXdfQx6tWN10sF8evctD0B_RcTKk/edit?gid=0#gid=0) - Where mission planners input the settings for sensors and how they should sample.
 
-[Ballast sheet from Rutgers](https://docs.google.com/spreadsheets/d/1BrgEZyT4qzZ22Rkcxc7ZHFRZ-m1zfW3o/edit?rtpof=true&sd=true&gid=2132005041#gid=2132005041) -
+[Ballast sheet from Rutgers](documents/Glider-Ballasting-Template.xls) - 
 
-[TWR Ballast sheet](https://datahost.webbresearch.com/download/file.php?id=91) - You have to log into Datahost to access this.
+[TWR Ballast sheet](documents/4095-GBPSH.xlsx) - From the datahost
 
-[Functional Checkout Procedure](https://datahost.webbresearch.com/download/file.php?id=256) - You have to log into Datahost to access this.
+[Functional Checkout Procedure](documents/4095-FCP Functional Checkout Procedure.xlsx) - From the datahost 
 
 [Freewave and Argos numbers](https://docs.google.com/spreadsheets/d/1xg13O3t28g-FXFVjZVICaNePxAGZ7DCoEwMBe_Dx-Dg/edit?usp=sharing) - Freewave and Argos numbers for each Slocum glider.
 
@@ -52,7 +52,7 @@ title: Glider Pilot Tools
 
 [Emergency boat options](https://docs.google.com/spreadsheets/d/1fZagNnYgBD-0E_5ivPwIWZFyzMgGDQ8hEPG-jktn2TQ/edit?gid=0#gid=0) - Boats that we can use for emergency recoveries in San Diego and Santa Barbara.
 
-### Acoustics
+
 
 ## Useful websites
 
