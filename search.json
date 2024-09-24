@@ -70,7 +70,17 @@
     "href": "content/best-practices.html",
     "title": "Best Practices",
     "section": "",
-    "text": "ESD Glider Lab best practices - in development\n\n\n\n Back to top",
+    "text": "Note\n\n\n\nThis is a living document which shall always be considered a “draft,” as incoming and veteran members of the lab may want to contribute ideas or revisions. This is a place to begin, a place to return to, a place to ground ongoing conversations. Modeled after https://sael-swfsc.github.io/SAEL-lab-manual/content/SharedValues-BestPractices.html",
+    "crumbs": [
+      "Best Practices"
+    ]
+  },
+  {
+    "objectID": "content/best-practices.html#esd-glider-lab-best-practices",
+    "href": "content/best-practices.html#esd-glider-lab-best-practices",
+    "title": "Best Practices",
+    "section": "ESD Glider Lab Best Practices",
+    "text": "ESD Glider Lab Best Practices\n\nCommunication\n\nWe hold lab meetings regularly in which all members are expected to attend if their schedule allows. During these meetings all members are expected to contribute by sharing progress reports, discussing challenges, and celebrating successes.\nWe use Google Meet for informal discussions between lab members and project teams.\nWe use Github projects to keep track of tasks and projects. All lab members are expected to check & respond to email, chats, and Github Projects regularly.\nWe will use Slack to communicate during off hours.\n\n\n\nSafety\n\nLab members are expected to follow all safety protocols. If they are not sure of the protocol, then they should request this information.\nLab members should never feel obligated to perform a task that they do not feel is safe.\nLab members are encouraged to speak up if they feel they need training to perform a specific task safely.\nIf lab members have a safety concern, they should bring it up with their supervisor or the other lab members.\nIf a lab member feels their safety concerns are not being taken seriously, they can consult the SWFSC Safety Officer Ravi Shiwmangal (ravi.shiwmangal@noaa.gov).",
     "crumbs": [
       "Best Practices"
     ]
@@ -189,7 +199,7 @@
     "href": "index.html",
     "title": "Glider Lab Manual",
     "section": "",
-    "text": "The Ecosystem Science Division (ESD) at the Southwest Fisheries Science Center does some pretty cool stuff using gliders, in both the California Current Ecosystem and the Antarctic Peninsula regions. This website is an in-development manual for all ESD glider activities. Please contact a member of the glider team with any questions.\nFunding for the glider lab comes from base funding of the ESD Programs: Scientific Opoerations and Support (SOS), United States Antarctic Marine Living Resources (U.S. AMLR), and Offshore Wind. Additional funding also comes from the NOAA Inflation Reduction Act (IRA) strategic initiatives; UXS-OC (REFOCUS etc.).\nFor information about past deployments by the ESD glider lab, see this page",
+    "text": "The Ecosystem Science Division (ESD) at the Southwest Fisheries Science Center does some pretty cool stuff using gliders, in both the California Current Ecosystem and the Antarctic Peninsula regions. This website is an in-development manual for all ESD glider activities. Please contact a member of the glider team with any questions.\nFunding for the glider lab comes from base funding of the ESD Programs: Scientific Operations and Support (SOS), United States Antarctic Marine Living Resources (U.S. AMLR), and Offshore Wind. Additional funding also comes from the NOAA Inflation Reduction Act (IRA) strategic initiatives; UXS-OC (REFOCUS etc.).\nFor information about past deployments by the ESD glider lab, see this page",
     "crumbs": [
       "Home"
     ]
