@@ -28,7 +28,7 @@ How to talk to the camera (shadowgraph or glidercam)
 
 How to set up the Nortek compact echosounder
 
-How to pilot a glider
+How ESD pilots a glider
 
 [How to use the high speed data cable](https://docs.google.com/document/d/10WD0RvmtD3B5yXnNhMeQiUxuK524cDntec29c57cEyI/edit?usp=sharing)
 
@@ -63,7 +63,7 @@ How to pilot a glider
 
 ### **Cameras**
 
-[Shadowgraph r3](https://drive.google.com/drive/folders/1IuCxyGj6QkQQfFLNixJol_-bu2eX0Jcx)
+[Shadowgraph r3](https://drive.google.com/file/d/1Ns-b0VmK9DmwB6rKtL0uP9s6vl4i2PLE/view?usp=sharing)
 
 [Glidercam r2.1](https://drive.google.com/file/d/1TwuEmq_5PADnZ080sjW02Yltb2_E-VOd/view)
 
@@ -105,6 +105,11 @@ How to pilot a glider
 | [Notepad++](https://notepad-plus-plus.org/)                                                    | Settings  | Changing and reading glider files |  
 | [OceanContour](https://oceanillumination.com/)												 | Settings  | For viewing ADCP data |                                                                                       |
 
+## Parts List
+Where we buy specific parts
+
+[O-rings](documents/O-rings.md)
+
 ## Training Documents
 
 [Slocum Basic Training Slides May 2024](https://drive.google.com/file/d/15O-BuBtiOovHT-yFzKEvVNwmOnNgvnjW/view?usp=drive_link)
@@ -125,5 +130,5 @@ How to pilot a glider
 
 ## Glider and Mooring Database
 
-You can find the [Glider and Mooring Database](\swc-storage4-s\AMLR_Datasets\Glider%20Database) on the network drive. This is also possible via VPN. It is used to track glider builds, days and inflections sensors have been use, calibration sheets, etc.
+You can find the [Glider and Mooring Database](\swc-storage4-s\AMLR_Datasets\Glider%20Database) on the network drive. This is also possible via VPN. It is used to track glider builds, days and inflections sensors have been in use, calibration sheets, etc.
 

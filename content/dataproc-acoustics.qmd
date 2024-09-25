@@ -2,4 +2,15 @@
 title: Acoustic Data Processing
 ---
 
-Here be acoustic data processing
+## Background
+
+Active acoustics has been a long used survey tool for estimating the abundance and distribution of fish, zooplankton, and seabed habitat. Typically, acoustic surveys have been conducted on ships but with new technologies, they have been used on autonomous vehicles as well. ESD has used two different active acoustic single beam echosounders on their Slocum gliders: [Acoustic Zooplanton and Fish Profiler (AZFP)](https://aslenv.com/azfp.html#:~:text=Introducing%20the%20Acoustic%20Zooplankton%20Fish%20Profiler%20(AZFP)) and [Nortek compact echosounders](https://www.nortekgroup.com/).  
+
+The AZFP configuration that ESD has used has been either two or three discrete frequencies (38,67.5 and 125 kHz). The Nortek compact is a wideband sounder that ranges from 70 to 120 kHz.   
+
+## Processing
+
+Both echosounders are bottom looking so the processing is very similar. Currently, data from the glider deployment will need to be processed first. See [Glider Data processing](dataproc-gliders.qmd) on how ESD processes glider data. The data needed from the glider are date, time, GPS, depth, pitch, and roll. 
+
+Acoustic processing, currently takes place using [Echoview software](https://echoview.com/). The processing steps for both types of echosounders are documented in the [echoview_glider_template](https://github.com/us-amlr/echoview_glider_template) as well as the Echoview templates. 
+The templates were developed for analysis of Antarctic krill (*Euphusia superba*) but the general cleaning and output can be used for other zooplankton in any region of the world. 

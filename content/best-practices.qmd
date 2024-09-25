@@ -2,4 +2,38 @@
 title: Best Practices
 ---
 
-ESD Glider Lab best practices - in development
+::: callout-note
+## Note
+
+This is a living document which shall always be considered a "draft," as incoming and veteran members of the lab may want to contribute ideas or revisions. This is a place to begin, a place to return to, a place to ground ongoing conversations. Modeled after https://sael-swfsc.github.io/SAEL-lab-manual/content/SharedValues-BestPractices.html
+:::
+
+
+## **ESD Glider Lab Best Practices**
+
+### **Communication**
+
+1.  We hold lab meetings regularly in which all members are expected to attend if their schedule allows. During these meetings all members are expected to contribute by sharing progress reports, discussing challenges, and celebrating successes.
+
+2.  We use Google Meet for informal discussions between lab members and project teams. 
+
+3.  We use Github projects to keep track of tasks and projects. All lab members are expected to check & respond to email, chats, and Github Projects regularly.
+
+4. We will use Slack to communicate during off hours.  
+
+### **Safety**
+
+1.  Lab members are expected to follow all safety protocols. If they are not sure of the protocol, then they should request this information.
+
+2.  Lab members should never feel obligated to perform a task that they do not feel is safe.
+
+3.  Lab members are encouraged to speak up if they feel they need training to perform a specific task safely.
+
+4.  If lab members have a safety concern, they should bring it up with their supervisor or the other lab members.
+
+5.  If a lab member feels their safety concerns are not being taken seriously, they can consult the SWFSC Safety Officer Ravi Shiwmangal ([ravi.shiwmangal@noaa.gov](mailto:ravi.shiwmangal@noaa.gov)).
+
+
+
+\
+
