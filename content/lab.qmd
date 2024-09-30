@@ -28,7 +28,7 @@ How to talk to the camera (shadowgraph or glidercam)
 
 How to set up the Nortek compact echosounder
 
-How ESD pilots a glider
+[How ESD pilots a glider](https://docs.google.com/document/d/1nPnl30IcK-sAbd-i1x3YUq--M43Z5XNxo1Eev1fYsJM/edit?usp=sharing)
 
 [How to use the high speed data cable](https://docs.google.com/document/d/10WD0RvmtD3B5yXnNhMeQiUxuK524cDntec29c57cEyI/edit?usp=sharing)
 

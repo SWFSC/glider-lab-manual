@@ -56,9 +56,11 @@ title: Glider Pilot Tools
 
 ## Useful websites
 
-[SIO Del Mar Buoy](https://mooring.ucsd.edu/delmar1/delmar1_20/)
+[Antarctic Sea Ice Imagery](https://www.polarview.aq/antarctic)
 
-[SCCOOS shore stations](https://sccoos.org/autoss/)
+[SIO Del Mar Buoy](https://mooring.ucsd.edu/delmar1/delmar1_20/) - Water properties used for off of San Diego
+
+[SCCOOS shore stations](https://sccoos.org/autoss/) 
 
 [Default SFMC Group Call In](https://sfmc.webbresearch.com/sfmc/iridium-calls) - Check here to see if the glider is calling into the default group instead of our SFMC.
 
