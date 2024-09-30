@@ -1,5 +1,7 @@
 # ESD glider lab manual
 
+[![GitHub last commit](https://img.shields.io/github/last-commit/SWFSC/glider-lab-manual)](https://github.com/SWFSC/glider-lab-manual/commits/main)
+
 Website and manual for the SWFSC Ecosystem Science Division (ESD) glider lab. The purpose of this website is to document and make visible various aspects of the ESD glider lab, such as glider maintenance SOPs, data processing workflows, and where to find different data types.
 
 This website is created using Quarto and GitHub Actions, and was created using [this template](https://github.com/nmfs-opensci/NOAA-quarto-simple). It was heavily inspired by the [SAEL lab manual](https://sael-swfsc.github.io/SAEL-lab-manual/) and other [Openscapes](https://nmfs-openscapes.github.io/about-openscapes.html) efforts.
