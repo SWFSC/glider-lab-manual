@@ -3,6 +3,7 @@ title: "Glider Lab Manual"
 subtitle: "Ecosystem Science Division, NMFS/SWFSC"
 page-layout: full
 ---
+[![](https://img.shields.io/github/last-commit/SWFSC/glider-lab-manual)](https://github.com/SWFSC/glider-lab-manual/commits/main)
 ![](content/images/ESD_meatball.png){style="float:right;" fig-alt="Ecosystem Science Division logo. Artwork by Jen Walsh." width="401"}
 
 The Ecosystem Science Division (ESD) at the [Southwest Fisheries Science Center](https://www.fisheries.noaa.gov/about/southwest-fisheries-science-center) does some pretty cool stuff using gliders, in both the California Current Ecosystem and the Antarctic Peninsula regions. This website is an in-development manual for all ESD glider activities. Please contact a member of the glider team with any questions.
@@ -32,7 +33,7 @@ For most current Fleet Status information, see [this Sheet](https://docs.google.
 
 The ESD glider team is using GitHub Issues and Projects for project management. There efforts are heavily inspired and influenced by the Openscapes [GitHub for project management](https://openscapes.github.io/series/core-lessons/github/github-issues.html) approach.
 
-The [ESD glider team project](https://github.com/orgs/us-amlr/projects/1) pulls from issues from several repositories, but in particular [this repo](https://github.com/us-amlr/glider-lab). For more details see the [best practices](content/best-practices.qmd) page.
+The [ESD glider team project](https://github.com/orgs/SWFSC/projects/5/views/1) pulls from issues from several repositories, but in particular [this repo](https://github.com/SWFSC/glider-lab). For more details see the [best practices](content/best-practices.qmd) page.
 
 ### GitHub Repositories
 
@@ -40,10 +41,10 @@ GitHub repos developed by the ESD glider team. Issues for these repos are tracke
 
 | repo link | description |
 |-----------|-------------|
-| [glider-lab](https://github.com/us-amlr/glider-lab)                             | Repo for tracking ESD glider lab issues/tasks                                                   |
-| [standard-glider-files](https://github.com/us-amlr/standard-glider-files)       | ESD glider cache files, as well as standard files that are put on all gliders before deployment |
+| [glider-lab](https://github.com/SWFSC/glider-lab)                             | Repo for tracking ESD glider lab issues/tasks                                                   |
+| [standard-glider-files](https://github.com/SWFSC/standard-glider-files)       | ESD glider cache files, as well as standard files that are put on all gliders before deployment |
 | [glider-utils](https://github.com/SWFSC/glider-utils)                           | Utility functions for processing ESD glider data                                                |
-| [echoview_glider_template](https://github.com/us-amlr/echoview_glider_template) | Echoview glider templates that are used for acoustic data analysis                              |
-| [glider_processing_code](https://github.com/us-amlr/glider_processing_code)     | Compilation of code that is used to work with glider acoustic data                              |
+| [echoview_glider_template](https://github.com/SWFSC/echoview_glider_template) | Echoview glider templates that are used for acoustic data analysis                              |
+| [glider_processing_code](https://github.com/SWFSC/glider_processing_code)     | Compilation of code that is used to work with glider acoustic data                              |
 | [glider-lab-manual](https://github.com/SWFSC/glider-lab-manual)                 | ESD glider lab website 
 | [slocumRtDataVisTool](https://github.com/flaimC/slocumRtDataVisTool)                 | Creates plots and generates useful statistics from slocum binary files

@@ -2,13 +2,6 @@
 title: Glider Lab
 ---
 
-Items to include:
-
--   Links to notes and SOPs
--   Descriptions of field computers used in the lab, and how to do necessary things from these computers
--   Glider deployment templates/workflows/checklists
--   Glider Database (Access file/SQL Server db) - when/how it is used, how to get stuff out, etc
--   Glider Pilot Tools, and related items
 
 [Gliders and Mooring Google Calendar](https://calendar.google.com/calendar/embed?src=noaa.gov_v9l4l68ihu9n2svmno3tk1qvec%40group.calendar.google.com&ctz=America%2FLos_Angeles)
 
@@ -95,6 +88,8 @@ How to set up the Nortek compact echosounder
 
 ## Software and settings
 
+Add info on setting up a glider field laptop so they are all set up the same way.
+
 | Software                                                                                       | Settings |  Use                                                                                            |
 |------------------------------|------------------------------|------------------------------|
 | [ZOC](https://www.emtec.com/zoc/index.html)                                                    | [Settings](https://docs.google.com/document/d/1lDMAtfzKKY7XLKwakii6P_g1HGAFZYtKUMWhLEW4DUU/edit?usp=sharing) | Talking with the glider over Freewave |
@@ -130,5 +125,5 @@ Where we buy specific parts
 
 ## Glider and Mooring Database
 
-You can find the [Glider and Mooring Database](\swc-storage4-s\AMLR_Datasets\Glider%20Database) on the network drive. This is also possible via VPN. It is used to track glider builds, days and inflections sensors have been in use, calibration sheets, etc.
+You can find the Glider and Mooring Database on the network drive under AMLR_Datasets. The database is a SQL server database with an Access front end. This is also possible via VPN. It is used to track glider builds, days and inflections sensors have been in use, calibration sheets, etc. We are working on scripts to get some standard data out as well as populate yml files for archiving deployment data. 
 
