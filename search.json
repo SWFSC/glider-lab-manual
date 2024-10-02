@@ -109,7 +109,7 @@
     "href": "content/pilot-tools.html#useful-websites",
     "title": "Glider Pilot Tools",
     "section": "Useful websites",
-    "text": "Useful websites\nAntarctic Sea Ice Imagery\nSIO Del Mar Buoy - Water properties used for off of San Diego\nSCCOOS shore stations\nDefault SFMC Group Call In - Check here to see if the glider is calling into the default group instead of our SFMC.\nUnderwater Glider User Group\nEveryone’s Gliding Observatories\nOcean Gliders\nIOOS Underwater Gliders",
+    "text": "Useful websites\nAntarctic Sea Ice Imagery\nSIO Del Mar Buoy - Water properties used for deployments off of San Diego.\nSCCOOS shore stations\nDefault SFMC Group Call In - Check here to see if the glider is calling into the default group instead of our SFMC.\nUnderwater Glider User Group\nEveryone’s Gliding Observatories\nOcean Gliders\nIOOS Underwater Gliders",
     "crumbs": [
       "Glider Lab",
       "Glider Pilot Tools"
@@ -255,7 +255,7 @@
     "href": "content/lab.html",
     "title": "Glider Lab",
     "section": "",
-    "text": "Items to include:\nGliders and Mooring Google Calendar",
+    "text": "Gliders and Mooring Google Calendar",
     "crumbs": [
       "Glider Lab",
       "Glider Lab"
@@ -299,7 +299,7 @@
     "href": "content/lab.html#software-and-settings",
     "title": "Glider Lab",
     "section": "Software and settings",
-    "text": "Software and settings\n\n\n\nSoftware\nSettings\nUse\n\n\n\n\nZOC\nSettings\nTalking with the glider over Freewave\n\n\nTera Term\nSettings\nTalking with the camera\n\n\nAZFP\nSettings\nCalibrating and settings for AZFP\n\n\nMIDAS\nSettings\nSetting up Nortek\n\n\nWinSCP\nSettings\nFTP client for the camera\n\n\nNotepad++\nSettings\nChanging and reading glider files\n\n\nOceanContour\nSettings\nFor viewing ADCP data",
+    "text": "Software and settings\nAdd info on setting up a glider field laptop so they are all set up the same way.\n\n\n\nSoftware\nSettings\nUse\n\n\n\n\nZOC\nSettings\nTalking with the glider over Freewave\n\n\nTera Term\nSettings\nTalking with the camera\n\n\nAZFP\nSettings\nCalibrating and settings for AZFP\n\n\nMIDAS\nSettings\nSetting up Nortek\n\n\nWinSCP\nSettings\nFTP client for the camera\n\n\nNotepad++\nSettings\nChanging and reading glider files\n\n\nOceanContour\nSettings\nFor viewing ADCP data",
     "crumbs": [
       "Glider Lab",
       "Glider Lab"
@@ -343,7 +343,7 @@
     "href": "content/lab.html#glider-and-mooring-database",
     "title": "Glider Lab",
     "section": "Glider and Mooring Database",
-    "text": "Glider and Mooring Database\nYou can find the Glider and Mooring Database on the network drive. This is also possible via VPN. It is used to track glider builds, days and inflections sensors have been in use, calibration sheets, etc.",
+    "text": "Glider and Mooring Database\nYou can find the Glider and Mooring Database on the network drive under AMLR_Datasets. The database is a SQL server database with an Access front end. This is also possible via VPN. It is used to track glider builds, days and inflections sensors have been in use, calibration sheets, etc. We are working on scripts to get some standard data out as well as populate yml files for archiving deployment data.",
     "crumbs": [
       "Glider Lab",
       "Glider Lab"
