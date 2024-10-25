@@ -34,6 +34,8 @@ title: Glider Pilot Tools
 
 ### Gliders
 
+[Phone tree and websites](https://docs.google.com/document/d/1gWkfouiqkkxVl20Bk_j-B3CzlxbmOaSHe2BChqrlh20/edit?usp=sharing)
+
 [AMLR Gliders Folder](https://drive.google.com/drive/u/0/folders/1wv2wGgWco_3heUR7JPVMc3KLGFCzkcBT) - Where most things are stored on Google Drive with regards to gliders.
 
 [Fleet Status](https://docs.google.com/spreadsheets/d/1tB3QNKYx8qOYYS9QZotekBAx0y-_n2d-EZPjFFdYNuU/edit?gid=0#gid=0) - A place to see the simplified status of gliders. Also to keep track of RMAs and generalized deployments.

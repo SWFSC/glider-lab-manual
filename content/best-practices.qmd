@@ -19,7 +19,7 @@ This is a living document which shall always be considered a "draft," as incomin
 
 3.  We use Github projects to keep track of tasks and projects. All lab members are expected to check & respond to email, chats, and Github Projects regularly.
 
-4. We will use Slack to communicate during off hours.  
+4. We will use [Slack](https://app.slack.com/client/T07SYR3N292/C07SWABTB0S) to communicate during off hours.  
 
 ### **Safety**
 
