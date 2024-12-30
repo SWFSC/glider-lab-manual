@@ -31,6 +31,10 @@ How to set up the Nortek compact echosounder
 
 [Tony's SFMC Data Visualizations](https://docs.google.com/document/d/1GgaZyglCF5wDOZruK5Ewc5HsKpwMg3jxkPrCb9s_g4k/edit?usp=sharing)
 
+[Notes on Nortek mini-echosounder](https://docs.google.com/document/d/11ih0V16ZixwDb9c7f-6vLbt-bbhiwrVagAG_7VGKJaU/edit?usp=sharing)
+
+[Aborts and Errors](https://docs.google.com/document/d/1k_1ZmGDh3oLuhqQkKLR6mKK2Y17tg8vHiEYWfJPGT5o/edit?usp=sharing) Errors and Aborts we've seen and how to deal with them.
+
 ## Online Calculators
 
 [Sea Water Density](https://fermi.jhuapl.edu/denscalc.html) - Calculate sea water density and sound speed.
