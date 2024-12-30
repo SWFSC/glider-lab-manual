@@ -1,5 +1,175 @@
 [
   {
+    "objectID": "content/past-deployments.html",
+    "href": "content/past-deployments.html",
+    "title": "Past Deployments",
+    "section": "",
+    "text": "The below table lists all ESD (and formerly AERD) glider deployments.\nTodo: embed/include table directly here. For now, see this sheet (last updated Aug 2024).",
+    "crumbs": [
+      "Deployments",
+      "Past Deployments"
+    ]
+  },
+  {
+    "objectID": "content/past-deployments.html#deployments",
+    "href": "content/past-deployments.html#deployments",
+    "title": "Past Deployments",
+    "section": "",
+    "text": "The below table lists all ESD (and formerly AERD) glider deployments.\nTodo: embed/include table directly here. For now, see this sheet (last updated Aug 2024).",
+    "crumbs": [
+      "Deployments",
+      "Past Deployments"
+    ]
+  },
+  {
+    "objectID": "content/reports.html",
+    "href": "content/reports.html",
+    "title": "Deployment Reports",
+    "section": "",
+    "text": "Deployment\nSensors\n\n\n\n\njohn-20240312\nCTD, Optode, Nortek,Shadowgraph\n\n\nringo-20240312\nCTD, Optode, Wide Shadowgraph\n\n\ngeorge-20240530\nCTD, Optode, Narrow Shadowgraph\n\n\n\n\n\n\n\n\n\nDeployment\nSensors\n\n\n\n\ngeorge-20240907\nCTD, Optode,Ecopuck, Narrow Shadowgraph\n\n\n\n\n\n\n\n\n\nDeployment\nSensors\n\n\n\n\nglider-202410XX\nCTD, Optode, Ecopuck, Nortek",
+    "crumbs": [
+      "Deployments",
+      "Deployment Reports"
+    ]
+  },
+  {
+    "objectID": "content/reports.html#san-diego",
+    "href": "content/reports.html#san-diego",
+    "title": "Deployment Reports",
+    "section": "",
+    "text": "Deployment\nSensors\n\n\n\n\njohn-20240312\nCTD, Optode, Nortek,Shadowgraph\n\n\nringo-20240312\nCTD, Optode, Wide Shadowgraph\n\n\ngeorge-20240530\nCTD, Optode, Narrow Shadowgraph",
+    "crumbs": [
+      "Deployments",
+      "Deployment Reports"
+    ]
+  },
+  {
+    "objectID": "content/reports.html#santa-barbara",
+    "href": "content/reports.html#santa-barbara",
+    "title": "Deployment Reports",
+    "section": "",
+    "text": "Deployment\nSensors\n\n\n\n\ngeorge-20240907\nCTD, Optode,Ecopuck, Narrow Shadowgraph",
+    "crumbs": [
+      "Deployments",
+      "Deployment Reports"
+    ]
+  },
+  {
+    "objectID": "content/reports.html#humboldt",
+    "href": "content/reports.html#humboldt",
+    "title": "Deployment Reports",
+    "section": "",
+    "text": "Deployment\nSensors\n\n\n\n\nglider-202410XX\nCTD, Optode, Ecopuck, Nortek",
+    "crumbs": [
+      "Deployments",
+      "Deployment Reports"
+    ]
+  },
+  {
+    "objectID": "content/documents/O-rings.html",
+    "href": "content/documents/O-rings.html",
+    "title": "O-rings for gliders, associated sensors and for Moorings",
+    "section": "",
+    "text": "O-ring: 07.500-07.750-.139OB-SPEC\nVendor: Packing & Seals, Inc\nPart number: OR0-264NF65\nPrice: $11.90 August 15, 2024\nLube: Parker O-lube\nTWR: Part# 304697, BUNA O-RING, 2-264, 65D BUNA AS3578\n\n\n\nO-ring:\nVendor:\nPart number:\nPrice:\nLube: Parker O-lube\n\n\n\nO-ring: 94mm x 3mm Nitrile N70 round\nVendor: Packing & Seals, Inc\nPart number: ORM-09400-300EA70\nPrice: $3 July 18, 2024\nLube: Molykote 111\n\n\n\nO-ring: 2-037 BUNA-N 70A\nVendor: McMaster-Carr\nPart number: 9452K125\nPrice:\nLube: Molykote 111\n\n\n\nO-ring: 2-037 BUNA-N 70A\nVendor: McMaster-Carr\nPart number: 9452K125\nPrice:\nLube: Molykote 111\n\n\n\nO-ring:\nVendor:\nPart number:\nPrice:\nLube:\n\n\n\n\n\n\nO-ring:\nVendor:\nPart number:\nPrice:\nLube:\n\n\n\nO-ring:\nVendor: Edgetech\nPart number:\nPrice:\nLube:\n\n\n\n\nO-ring:\nVendor: Seabird\nPart number:\nPrice:\nLube:\n\n\nO-ring: 568-020 70A Duro Buna\nVendor: Packing & Seals, Inc\nPart number: OR0-020EA70\nPrice: $0.65 July 18, 2024\nLube: Molykote 111\n\n\n\nO-ring:\nVendor:\nPart number:\nPrice:\nLube:"
+  },
+  {
+    "objectID": "content/documents/O-rings.html#slocum-gliders",
+    "href": "content/documents/O-rings.html#slocum-gliders",
+    "title": "O-rings for gliders, associated sensors and for Moorings",
+    "section": "",
+    "text": "O-ring: 07.500-07.750-.139OB-SPEC\nVendor: Packing & Seals, Inc\nPart number: OR0-264NF65\nPrice: $11.90 August 15, 2024\nLube: Parker O-lube\nTWR: Part# 304697, BUNA O-RING, 2-264, 65D BUNA AS3578\n\n\n\nO-ring:\nVendor:\nPart number:\nPrice:\nLube: Parker O-lube\n\n\n\nO-ring: 94mm x 3mm Nitrile N70 round\nVendor: Packing & Seals, Inc\nPart number: ORM-09400-300EA70\nPrice: $3 July 18, 2024\nLube: Molykote 111\n\n\n\nO-ring: 2-037 BUNA-N 70A\nVendor: McMaster-Carr\nPart number: 9452K125\nPrice:\nLube: Molykote 111\n\n\n\nO-ring: 2-037 BUNA-N 70A\nVendor: McMaster-Carr\nPart number: 9452K125\nPrice:\nLube: Molykote 111\n\n\n\nO-ring:\nVendor:\nPart number:\nPrice:\nLube:"
+  },
+  {
+    "objectID": "content/documents/O-rings.html#moorings",
+    "href": "content/documents/O-rings.html#moorings",
+    "title": "O-rings for gliders, associated sensors and for Moorings",
+    "section": "",
+    "text": "O-ring:\nVendor:\nPart number:\nPrice:\nLube:\n\n\n\nO-ring:\nVendor: Edgetech\nPart number:\nPrice:\nLube:"
+  },
+  {
+    "objectID": "content/documents/O-rings.html#seabird-37-smp-ctd",
+    "href": "content/documents/O-rings.html#seabird-37-smp-ctd",
+    "title": "O-rings for gliders, associated sensors and for Moorings",
+    "section": "",
+    "text": "O-ring:\nVendor: Seabird\nPart number:\nPrice:\nLube:\n\n\nO-ring: 568-020 70A Duro Buna\nVendor: Packing & Seals, Inc\nPart number: OR0-020EA70\nPrice: $0.65 July 18, 2024\nLube: Molykote 111\n\n\n\nO-ring:\nVendor:\nPart number:\nPrice:\nLube:"
+  },
+  {
+    "objectID": "content/dataproc-gliders.html",
+    "href": "content/dataproc-gliders.html",
+    "title": "Glider Data Processing",
+    "section": "",
+    "text": "There are many steps and flavors to glider data processing, from the base processing (binary glider to NetCDF files for Slocum gliders) to QA/QC to developing products from additional glider sensors.\nHistorically, the ESD glider team has processed glider data using the Matlab toolbox SOCIB. However, this toolbox is not actively maintained, and the majority of ESD processing efforts have moved to Google Cloud (GCP). Subsequent efforts involved developing amlr-gliders, which contained a Python toolbox and scripts that were ~medium wrappers around gdm. These efforts never caught full traction.\nCurrent efforts both leveraging existing toolboxes (PyGlider, GliderTools, dbdreader) and developing new Python code and wrapper scripts that live in glider-utils. All of these efforts are geared towards processing ESD glider data in ESD’s Google Cloud project, using an Open Science approach .\nThis page describes these current efforts, and outlines planned areas of future development. For acoustic or image processing workflows, see the acoustics and and imagery pages, respectively.\nTodo: create and add flow chart, a la here",
+    "crumbs": [
+      "Data Processing",
+      "Gliders"
+    ]
+  },
+  {
+    "objectID": "content/dataproc-gliders.html#background",
+    "href": "content/dataproc-gliders.html#background",
+    "title": "Glider Data Processing",
+    "section": "",
+    "text": "There are many steps and flavors to glider data processing, from the base processing (binary glider to NetCDF files for Slocum gliders) to QA/QC to developing products from additional glider sensors.\nHistorically, the ESD glider team has processed glider data using the Matlab toolbox SOCIB. However, this toolbox is not actively maintained, and the majority of ESD processing efforts have moved to Google Cloud (GCP). Subsequent efforts involved developing amlr-gliders, which contained a Python toolbox and scripts that were ~medium wrappers around gdm. These efforts never caught full traction.\nCurrent efforts both leveraging existing toolboxes (PyGlider, GliderTools, dbdreader) and developing new Python code and wrapper scripts that live in glider-utils. All of these efforts are geared towards processing ESD glider data in ESD’s Google Cloud project, using an Open Science approach .\nThis page describes these current efforts, and outlines planned areas of future development. For acoustic or image processing workflows, see the acoustics and and imagery pages, respectively.\nTodo: create and add flow chart, a la here",
+    "crumbs": [
+      "Data Processing",
+      "Gliders"
+    ]
+  },
+  {
+    "objectID": "content/dataproc-gliders.html#base-processing",
+    "href": "content/dataproc-gliders.html#base-processing",
+    "title": "Glider Data Processing",
+    "section": "Base Processing",
+    "text": "Base Processing\nThe base glider data processing is primarily done using PyGlider, hereafter simply ‘pyglider’. pyglider takes in binary data files from Teledyne/Webb Slocum gliders, and creates CF-compliant NetCDF files. These NetCDF files will be both used internally in further workflows, and sent to the NGDAC.\n\nLevel 1 - Timeseries\nWorkflow:\n\nBinary and cache files from the glider are properly archived in GCS bucket (see here - link todo)\nCreate deployment YAML file (example). Currently this is done by hand; ideally in the future this is done by code pulling from the Glider&Mooring database\nRun pyglider and create output NetCDF files using the script binary_to_nc.py, run via binary_to_nc.sh on a GCP VM\nAccess processed NetCDF files via GCP for additional internal workflows\n\n\nOutput NetCDF File\nTodo: Notes about the structure of and variables in the output NetCDF file. This will depend on CR answers to processing questions (link to issue todo).\n\n\nProcessing Notes\nThis section describes the default pyglider/dbdreader behavior when processing binary glider files. This may be useful reference for folks using pyglider/dbdreader for any purpose.\nThe pyglider.slocum.binary_to_timeseries function uses dbdreader to read slocum glider data from binary files. More discussion can be found here around why pyglider switched to using dbdreader, and how pyglider processing worked before.\nAs constructed, binary_to_timeseries uses dbdreader’s get_sync to extract values for all of the specified sensors. Thus, the user specifies a particular sensor to server as the ‘time_base’, and then all other desired variables (across science and engineering: pressure, temperature, oxygen, roll, etc.) are interpolated onto the same time base (i.e., the timestamps where this ‘time_base’ variable has a valid (not missing/nan) value). This makes life difficult if different sensors have different sampling strategies, and does not allow users to extract non-interpolated data. Adding a ‘union’ behavior option is currently under discussion in this issue and this pull request. For now, binary_to_nc.py generates several datasets, and merges them together soa s to have all variables/relevant timestamps in one file.\nData alterations, or additional features of note:\n\ndbdreader:\n\ndbdreader throws an error if a sensor is turned off and thus not present in some sbd/tbd or dbd/ebd files. For example, if the oxygen sensor is turned off halfway through a deployment, although this would apply to any sensor that is turned off. However, it looks like this behavior may be fixed soon.\ndbdreader by default skips the first line of each binary file. The reasoning is that “this line contains either nonsense values, or values that were read a long time ago. This behavior can be changed.” See here for more discussion.\ndbdreader only identifies sensors as ‘engineering’ or ‘science’. Thus, when extracting e.g. data for the sensor ‘sci_oxy4_oxygen’, dbdreader uses the ‘sci_m_present_time’ as the timestamp, rather than ‘sci_oxy4_present_time’.\n\npyglider:\n\nLatitude and longitude values are set to nan if their absolute value is greater than 90 and 180, respectively.\nAny values of zero from science sensors are converted to nan.\nNo other data alterations are made (e.g., CTD data is all read and left as-is).\n\n\n\n\n\nLevel 2 - Gridded\npyglider has a function ncprocess.make_gridfiles for making gridded data. This function takes the above timeseries file as input.\nMore docs forthcoming.\n\n\nIOOS NGDAC\npyglider has a function ncprocess.extract_timeseries_profiles for creating profile files for submission to the NGDAC. This function takes the above timeseries file as input.\nMore docs forthcoming.\n\n\nOther Files\nESD’s base processing also creates several other files necessary for processing or using data from other sensors on the glider. If the glider is carrying a shadowgraph or glidercam camera system, then a CSV file is created that links each image with the relevant glider measurements at that time (depth, temperature, oxygen concentration, etc.). If the glider is carrying an acoustic instrument, specific files are needed to process these data using Echoview. These files are created during the base processing step as well.",
+    "crumbs": [
+      "Data Processing",
+      "Gliders"
+    ]
+  },
+  {
+    "objectID": "content/dataproc-gliders.html#real-time-data",
+    "href": "content/dataproc-gliders.html#real-time-data",
+    "title": "Glider Data Processing",
+    "section": "Real-Time Data",
+    "text": "Real-Time Data\ntbd. Vision is to have GCP infrastructure in place to:\n\nPeriodically rsync real-time data (sbd/tbd files) from the SFMC to a GCP VM\nRun the base processing steps on these data\nAutomatically send the processed files to the NGDAC",
+    "crumbs": [
+      "Data Processing",
+      "Gliders"
+    ]
+  },
+  {
+    "objectID": "content/dataproc-gliders.html#future-steps",
+    "href": "content/dataproc-gliders.html#future-steps",
+    "title": "Glider Data Processing",
+    "section": "Future Steps",
+    "text": "Future Steps\nqc + data cleaning -&gt; cleaned netcdf files with qc flags. Potential resources:\n\nImplement IOOS QARTOD tests, eg using ioos_qc to add qc flags\nhttps://github.com/OceanGlidersCommunity/Realtime-QC\n\nhttps://github.com/castelao/CoTeDe\n\nother qc/data cleaning? For instance, sanity check ts plots. Likely will involve by-hand inspection for each deployment, including removing bad data if discovered\n\nGliderTools: additional processing functionality\n\nmanuscript describing the GliderTools toolbox\nGliderTools contains tools for processing Seaglider basestation files. However, the rest of the tools simply require that the data be in an xarray dataset.\noptics, pq: quenching correction method described by Thomalla et al. (2018)\nadditional qc tools?\ncalculate cool physics things (mixed layer depth, …)\nleverage gridded plotting routines",
+    "crumbs": [
+      "Data Processing",
+      "Gliders"
+    ]
+  },
+  {
+    "objectID": "content/dataproc-gliders.html#github-repos",
+    "href": "content/dataproc-gliders.html#github-repos",
+    "title": "Glider Data Processing",
+    "section": "GitHub Repos",
+    "text": "GitHub Repos\nSee the home page for ESD-developed repos. External GitHub repos that are particularly relevant/useful:\n\n\n\nrepo link\ndescription\n\n\n\n\ndbdreader\nExtract data from slocum binary files\n\n\npyglider\nConvert datafiles from slocum and seaexplorer into netcdf\n\n\nGliderTools\nQuality control and plot generic glider data\n\n\nIOOS qc\nApply IOOS QARTOD and other qc routines\n\n\nSOCIB\nProcess glider data in Matlab (not actively maintained)\n\n\nglider tools list\nOceanGliders community repository to list tools for processing glider data. Includes many of the tools listed above.",
+    "crumbs": [
+      "Data Processing",
+      "Gliders"
+    ]
+  },
+  {
+    "objectID": "content/data-management.html",
+    "href": "content/data-management.html",
+    "title": "Data Management",
+    "section": "",
+    "text": "Gliders both collect and require a lot of data and other files, making data management a complex endeavor. Most users should access processed glider data as described here (TODO). This page describes where and how all data and files from a glider deployment are stored.\nSee this document for the full ESD (previously AERD/AMLR) glider data plan. Note that the contents of this doc will be transferred over to this page as time permits.\nBecause gliders can collect &gt;1 TB of data in a single deployment, all ESD glider deployment data are stored in Google Cloud Storage buckets in the ESD Google Cloud Project.\nTODO: point to Shiny app or some other tool for users to use to get to GCS bucket URL for a particular piece of data.\nGlider GCP bucket Google Cloud Platform (GCP) for glider data.\nGlider imagery GCP bucket GCP for glider imagery.\n\n\n\n Back to top",
+    "crumbs": [
+      "Data Management"
+    ]
+  },
+  {
     "objectID": "index.html",
     "href": "index.html",
     "title": "Glider Lab Manual",
@@ -27,6 +197,99 @@
     "text": "Project Management\nFor most current Fleet Status information, see this Sheet\nThe ESD glider team is using GitHub Issues and Projects for project management. There efforts are heavily inspired and influenced by the Openscapes GitHub for project management approach.\nThe ESD glider team project pulls from issues from several repositories, but in particular this repo. For more details see the best practices page.\n\nGitHub Repositories\nGitHub repos developed by the ESD glider team. Issues for these repos are tracked in the above-linked Project.\n\n\n\nrepo link\ndescription\n\n\n\n\nglider-lab-manual\nESD Glider lab website; docs used to generate this site\n\n\nglider-lab\nRepo For tracking ESD glider lab issues/tasks\n\n\nstandard-glider-files\nESD Glider cache files, as well as standard files that are put on all gliders before deployment\n\n\nglider-utils\nUtility functions for processing ESD glider data\n\n\nechoview_glider_template\nEchoview glider templates that are used for acoustic data analysis\n\n\nglider_processing_code\nCompilation of code that is used to work with glider acoustic data\n\n\nslocumRtDataVisTool\nCreates plots and generates useful statistics from slocum binary files",
     "crumbs": [
       "Home"
+    ]
+  },
+  {
+    "objectID": "content/imagery.html",
+    "href": "content/imagery.html",
+    "title": "Imagery",
+    "section": "",
+    "text": "ESD gliders may be equipped with either a ‘glidercam’ or a ‘shadowgraph’ camera. This page describes the management and processing of these images once they come off of the glider.",
+    "crumbs": [
+      "Imagery"
+    ]
+  },
+  {
+    "objectID": "content/imagery.html#raw-imagery",
+    "href": "content/imagery.html#raw-imagery",
+    "title": "Imagery",
+    "section": "Raw Imagery",
+    "text": "Raw Imagery\nOnce the gliders are recovered, the images are copied from the memory cards and uploaded to GCP as described here. Specifically, raw images are uploaded to the bucket amlr-gliders-imagery-raw-dev, along with associated config files from the deployment. Image metadata files generated during the glider data processing are also written to the deployment folder within this bucket. Project/year/deployment folder structures mirror that of the glider data stored in amlr-gliders-deployments-dev.",
+    "crumbs": [
+      "Imagery"
+    ]
+  },
+  {
+    "objectID": "content/imagery.html#viewing-images",
+    "href": "content/imagery.html#viewing-images",
+    "title": "Imagery",
+    "section": "Viewing Images",
+    "text": "Viewing Images\nThere are several ways to view raw or processed images:\n\nIf you click down to an image itself, Google Cloud provides an image preview at the bottom of the ‘object’ page. However, you cannot view more than one image at a time. It is a goal of the ESD to build a cloud-native image viewer application to easily view multiple images at a time, but this is not a current project.\nAll raw imagery have been mirrored in VIAME-Web-AMLR. Thus, if you are familiar with VAIME-Web and accessing ESD’s deployment, then you can view imagery using the VIAME-Web annotator.\nYou may also use the gcloud CLI to download images to your computer, and then view them locally using your preferred program.",
+    "crumbs": [
+      "Imagery"
+    ]
+  },
+  {
+    "objectID": "content/imagery.html#shadowgraph-image-processing",
+    "href": "content/imagery.html#shadowgraph-image-processing",
+    "title": "Imagery",
+    "section": "Shadowgraph Image Processing",
+    "text": "Shadowgraph Image Processing\nGliders deployed with shadowgraph cameras can easily collect more than 200,000 images during a single deployment. Therefore, it is impractical to have humans review and annotate all these images by hand, and thus operationally these images must be processed using AI/ML methods. This section describes the current status of these methods, as well as anticipated future directions.\nThere are three main steps to processing shadowgraph images; where and how these steps happen for ESD are further described below.\n\nPreprocessing: flat-fielding, masking, other processing as needed.\nSegmentation: Detect objects, and create regions of interest (ROIs; i.e., blobs or chips). This is done using the preprocessed image.\nClassification: Use a trained ML model to classify the ROIs. Have a trained biologist review and/or correct these predictions.\n\nNote: the below images both show this same workflow, and thus are simply different ways of framing said workflow.\n\nWorkflow v1Workflow v2\n\n\n Shadowgraph image processing workflow, v1\n\n\n Shadowgraph image processing workflow, v2\n\n\n\n\n\nPreprocessing and Segmentation\nAll preprocessing and object detection/segmentation steps are currently performed by code in the shaip repo (shadowgraph image processing). This codebase was originally developed as a Jupyter notebook by Randy Cutter based on work done by Ohman/Ellen for processing Zooglider images, e.g. here and here. It has since been refactored into the Python toolbox sg. For details on the algoroithms used and instructions on how to run this code, see the README on the repo homepage.\nAll currently processed imagery can be found in amlr-gliders-imagery-proc-dev. Like the raw imagery bucket, the amlr-gliders-imagery-proc-dev bucket mirrors the directory structure of the amlr-gliders-deployments-dev bucket. These processed imagery are also viewable as described above.\nThe processing output includes the following folders:\n\nregions: Region of interest (ROI) blobs, created using Ohman/Ellen methods. This folder contains Dir#### folders, matching the raw data.\nregions-tmser: Region of interest (ROI) blobs, created using an adapted version of Oregon State’s Threshold MSER In Situ Plankton Segmentation. Most deployments do not have this output, as this method has not been tuned to work well with ESD shadowgraph imagery.\njpgorig-regions: jpg of the original (i.e., raw) image, with ROI boundaries from the Ohman/Ellen segmentation methods outlined in red.\nimages-imgff: Flat-fielded images, used in the segmentation\nimages-ffPCG: Flat-fielded images, which also have had pixel gamma correction factors applied.\n\n\n\nClassification\nAfter creating ROIs through the preprocessing and segmentation steps described above, those ROIs need to be labeled/classified, and these labels/classifications need to be validated by a trained observer.\n\nModel Training\nTo train an ML model to classify the ROIs as different classes, e.g. plankton species requires an image library of already-classified images that can be used as ground-truth data for the model. ESD is currently using the In Situ Ichthyoplankton Imaging System (ISIIS) image library, courtesy of researchers at Oregon State University, for training full frame classifier models. This library consists of 174 classes of objects, and can be found here.\nIn early 2024, Randy used the ISIIS image library to train two models using VIAME-Web-AMLR (VWA): isiis-train02-clas-svm-lab81, and isiis-train02-clas-res01-lab81. Both of these models have 81 classes, and are available in VWA. Per Randy, the resnet (isiis-train02-clas-res01-lab81) theoretically should be better, but has so far been outperformed by the SVM. This is probably because of not enough training data relative to the number of input classes. Randy also was experimenting with training a yolo v7 model, but this model was not really tested. Thus, currently the resnet is the best model that we have for running on segmented ROIs.\n\n\nGenerating and Validating Predictions\nNOTE: these steps of running a model on ROIs and validating subsequent predictions are currently on hold. Specifically, ESD is currently pushing down two paths in parallel: 1) evaluating and improving current preprocessing and segmentation efforts, and 2) performing manual annotations on raw imagery, and extracting user-annotated ROIs to build an ESD image library.\nFor information on how to run these models on a folder of ROIs, see here. For information about how to validate model predictions, see here.\n\n\n\nFuture Directions\n\nESD Image processing resources\nTune and adapt current code/pipelines (in progress). This work is currently being done by ESD staff.\nWork to tune and evaluate alternative segmentation algorithms, e.g. https://github.com/paradom/Threshold-MSER\nTie in with Optics SI efforts, e.g. https://github.com/sullichrosu/Njobvu-AI",
+    "crumbs": [
+      "Imagery"
+    ]
+  },
+  {
+    "objectID": "content/best-practices.html",
+    "href": "content/best-practices.html",
+    "title": "Best Practices",
+    "section": "",
+    "text": "Note\n\n\n\nThis is a living document which shall always be considered a “draft,” as incoming and veteran members of the lab may want to contribute ideas or revisions. This is a place to begin, a place to return to, a place to ground ongoing conversations. Modeled after https://sael-swfsc.github.io/SAEL-lab-manual/content/SharedValues-BestPractices.html",
+    "crumbs": [
+      "Best Practices"
+    ]
+  },
+  {
+    "objectID": "content/best-practices.html#esd-glider-lab-best-practices",
+    "href": "content/best-practices.html#esd-glider-lab-best-practices",
+    "title": "Best Practices",
+    "section": "ESD Glider Lab Best Practices",
+    "text": "ESD Glider Lab Best Practices\n\nCommunication\n\nWe hold lab meetings regularly in which all members are expected to attend if their schedule allows. During these meetings all members are expected to contribute by sharing progress reports, discussing challenges, and celebrating successes.\nWe use Google Meet for informal discussions between lab members and project teams.\nWe use Github projects to keep track of tasks and projects. All lab members are expected to check & respond to email, chats, and Github Projects regularly.\nWe will use Slack to communicate during off hours.\n\n\n\nSafety\n\nLab members are expected to follow all safety protocols. If they are not sure of the protocol, then they should request this information.\nLab members should never feel obligated to perform a task that they do not feel is safe.\nLab members are encouraged to speak up if they feel they need training to perform a specific task safely.\nIf lab members have a safety concern, they should bring it up with their supervisor or the other lab members.\nIf a lab member feels their safety concerns are not being taken seriously, they can consult the SWFSC Safety Officer Ravi Shiwmangal (ravi.shiwmangal@noaa.gov).",
+    "crumbs": [
+      "Best Practices"
+    ]
+  },
+  {
+    "objectID": "content/dataproc-acoustics.html",
+    "href": "content/dataproc-acoustics.html",
+    "title": "Acoustic Data Processing",
+    "section": "",
+    "text": "Active acoustics has been a long used survey tool for estimating the abundance and distribution of fish, zooplankton, and seabed habitat. Typically, acoustic surveys have been conducted on ships but with new technologies, they have been used on autonomous vehicles as well. ESD has used two different active acoustic single beam echosounders on their Slocum gliders: Acoustic Zooplanton and Fish Profiler (AZFP) and Nortek compact echosounders.\nThe AZFP configuration that ESD has used has been either two or three discrete frequencies (38,67.5 and 125 kHz). The Nortek compact is a wideband sounder that ranges from 70 to 120 kHz.",
+    "crumbs": [
+      "Data Processing",
+      "Acoustics"
+    ]
+  },
+  {
+    "objectID": "content/dataproc-acoustics.html#background",
+    "href": "content/dataproc-acoustics.html#background",
+    "title": "Acoustic Data Processing",
+    "section": "",
+    "text": "Active acoustics has been a long used survey tool for estimating the abundance and distribution of fish, zooplankton, and seabed habitat. Typically, acoustic surveys have been conducted on ships but with new technologies, they have been used on autonomous vehicles as well. ESD has used two different active acoustic single beam echosounders on their Slocum gliders: Acoustic Zooplanton and Fish Profiler (AZFP) and Nortek compact echosounders.\nThe AZFP configuration that ESD has used has been either two or three discrete frequencies (38,67.5 and 125 kHz). The Nortek compact is a wideband sounder that ranges from 70 to 120 kHz.",
+    "crumbs": [
+      "Data Processing",
+      "Acoustics"
+    ]
+  },
+  {
+    "objectID": "content/dataproc-acoustics.html#processing",
+    "href": "content/dataproc-acoustics.html#processing",
+    "title": "Acoustic Data Processing",
+    "section": "Processing",
+    "text": "Processing\nBoth echosounders are bottom looking so the processing is very similar. Currently, data from the glider deployment will need to be processed first. See Glider Data processing on how ESD processes glider data. The data needed from the glider are date, time, GPS, depth, pitch, and roll.\nAcoustic processing, currently takes place using Echoview software. The processing steps for both types of echosounders are documented in the echoview_glider_template as well as the Echoview templates. The templates were developed for analysis of Antarctic krill (Euphusia superba) but the general cleaning and output can be used for other zooplankton in any region of the world.",
+    "crumbs": [
+      "Data Processing",
+      "Acoustics"
     ]
   },
   {
@@ -74,16 +337,6 @@
     ]
   },
   {
-    "objectID": "content/data-management.html",
-    "href": "content/data-management.html",
-    "title": "Data Management",
-    "section": "",
-    "text": "Gliders both collect and require a lot of data and other files, making data management a complex endeavor. Most users should access processed glider data as described here (TODO). This page describes where and how all data and files from a glider deployment are stored.\nSee this document for the full ESD (previously AERD/AMLR) glider data plan. Note that the contents of this doc will be transferred over to this page as time permits.\nBecause gliders can collect &gt;1 TB of data in a single deployment, all ESD glider deployment data are stored in Google Cloud Storage buckets in the ESD Google Cloud Project.\nTODO: point to Shiny app or some other tool for users to use to get to GCS bucket URL for a particular piece of data.\nGlider GCP bucket Google Cloud Platform (GCP) for glider data.\nGlider imagery GCP bucket GCP for glider imagery.\n\n\n\n Back to top",
-    "crumbs": [
-      "Data Management"
-    ]
-  },
-  {
     "objectID": "content/lab.html",
     "href": "content/lab.html",
     "title": "Glider Lab",
@@ -99,7 +352,7 @@
     "href": "content/lab.html#standard-operating-procedures",
     "title": "Glider Lab",
     "section": "Standard Operating Procedures",
-    "text": "Standard Operating Procedures\nGlider Checkout Procedure The steps needed to prepare a glider for deployment.\nHow to upgrade the glider operating system\nHow to calibrate the AZFP\nHow to calibrate the compass on the glider\nHow to calibrate the shadowgraph\nHow to talk to the camera (shadowgraph or glidercam)\nHow to set up the Nortek compact echosounder\nHow ESD pilots a glider\nHow to use the high speed data cable\nSteps for deploying a glider\nHow Jen deploys a glider\nTony’s SFMC Data Visualizations",
+    "text": "Standard Operating Procedures\nGlider Checkout Procedure The steps needed to prepare a glider for deployment.\nHow to upgrade the glider operating system\nHow to calibrate the AZFP\nHow to calibrate the compass on the glider\nHow to calibrate the shadowgraph\nHow to talk to the camera (shadowgraph or glidercam)\nHow to set up the Nortek compact echosounder\nHow ESD pilots a glider\nHow to use the high speed data cable\nSteps for deploying a glider\nHow Jen deploys a glider\nTony’s SFMC Data Visualizations\nNotes on Nortek mini-echosounder\nAborts and Errors Errors and Aborts we’ve seen and how to deal with them.",
     "crumbs": [
       "Glider Lab",
       "Glider Lab"
@@ -180,259 +433,6 @@
     "crumbs": [
       "Glider Lab",
       "Glider Lab"
-    ]
-  },
-  {
-    "objectID": "content/documents/O-rings.html",
-    "href": "content/documents/O-rings.html",
-    "title": "O-rings for gliders, associated sensors and for Moorings",
-    "section": "",
-    "text": "O-ring: 07.500-07.750-.139OB-SPEC\nVendor: Packing & Seals, Inc\nPart number: OR0-264NF65\nPrice: $11.90 August 15, 2024\nLube: Parker O-lube\nTWR: Part# 304697, BUNA O-RING, 2-264, 65D BUNA AS3578\n\n\n\nO-ring:\nVendor:\nPart number:\nPrice:\nLube: Parker O-lube\n\n\n\nO-ring: 94mm x 3mm Nitrile N70 round\nVendor: Packing & Seals, Inc\nPart number: ORM-09400-300EA70\nPrice: $3 July 18, 2024\nLube: Molykote 111\n\n\n\nO-ring: 2-037 BUNA-N 70A\nVendor: McMaster-Carr\nPart number: 9452K125\nPrice:\nLube: Molykote 111\n\n\n\nO-ring: 2-037 BUNA-N 70A\nVendor: McMaster-Carr\nPart number: 9452K125\nPrice:\nLube: Molykote 111\n\n\n\nO-ring:\nVendor:\nPart number:\nPrice:\nLube:\n\n\n\n\n\n\nO-ring:\nVendor:\nPart number:\nPrice:\nLube:\n\n\n\nO-ring:\nVendor: Edgetech\nPart number:\nPrice:\nLube:\n\n\n\n\nO-ring:\nVendor: Seabird\nPart number:\nPrice:\nLube:\n\n\nO-ring: 568-020 70A Duro Buna\nVendor: Packing & Seals, Inc\nPart number: OR0-020EA70\nPrice: $0.65 July 18, 2024\nLube: Molykote 111\n\n\n\nO-ring:\nVendor:\nPart number:\nPrice:\nLube:"
-  },
-  {
-    "objectID": "content/documents/O-rings.html#slocum-gliders",
-    "href": "content/documents/O-rings.html#slocum-gliders",
-    "title": "O-rings for gliders, associated sensors and for Moorings",
-    "section": "",
-    "text": "O-ring: 07.500-07.750-.139OB-SPEC\nVendor: Packing & Seals, Inc\nPart number: OR0-264NF65\nPrice: $11.90 August 15, 2024\nLube: Parker O-lube\nTWR: Part# 304697, BUNA O-RING, 2-264, 65D BUNA AS3578\n\n\n\nO-ring:\nVendor:\nPart number:\nPrice:\nLube: Parker O-lube\n\n\n\nO-ring: 94mm x 3mm Nitrile N70 round\nVendor: Packing & Seals, Inc\nPart number: ORM-09400-300EA70\nPrice: $3 July 18, 2024\nLube: Molykote 111\n\n\n\nO-ring: 2-037 BUNA-N 70A\nVendor: McMaster-Carr\nPart number: 9452K125\nPrice:\nLube: Molykote 111\n\n\n\nO-ring: 2-037 BUNA-N 70A\nVendor: McMaster-Carr\nPart number: 9452K125\nPrice:\nLube: Molykote 111\n\n\n\nO-ring:\nVendor:\nPart number:\nPrice:\nLube:"
-  },
-  {
-    "objectID": "content/documents/O-rings.html#moorings",
-    "href": "content/documents/O-rings.html#moorings",
-    "title": "O-rings for gliders, associated sensors and for Moorings",
-    "section": "",
-    "text": "O-ring:\nVendor:\nPart number:\nPrice:\nLube:\n\n\n\nO-ring:\nVendor: Edgetech\nPart number:\nPrice:\nLube:"
-  },
-  {
-    "objectID": "content/documents/O-rings.html#seabird-37-smp-ctd",
-    "href": "content/documents/O-rings.html#seabird-37-smp-ctd",
-    "title": "O-rings for gliders, associated sensors and for Moorings",
-    "section": "",
-    "text": "O-ring:\nVendor: Seabird\nPart number:\nPrice:\nLube:\n\n\nO-ring: 568-020 70A Duro Buna\nVendor: Packing & Seals, Inc\nPart number: OR0-020EA70\nPrice: $0.65 July 18, 2024\nLube: Molykote 111\n\n\n\nO-ring:\nVendor:\nPart number:\nPrice:\nLube:"
-  },
-  {
-    "objectID": "content/imagery.html",
-    "href": "content/imagery.html",
-    "title": "Imagery",
-    "section": "",
-    "text": "ESD gliders may be equipped with either a ‘glidercam’ or a ‘shadowgraph’ camera. This page describes the management and processing of these images once they come off of the glider.",
-    "crumbs": [
-      "Imagery"
-    ]
-  },
-  {
-    "objectID": "content/imagery.html#raw-imagery",
-    "href": "content/imagery.html#raw-imagery",
-    "title": "Imagery",
-    "section": "Raw Imagery",
-    "text": "Raw Imagery\nOnce the gliders are recovered, the images are copied from the memory cards and uploaded to GCP as described here. Specifically, raw images are uploaded to the bucket amlr-gliders-imagery-raw-dev, along with associated config files from the deployment. Image metadata files generated during the glider data processing are also written to the deployment folder within this bucket. Project/year/deployment folder structures mirror that of the glider data stored in amlr-gliders-deployments-dev.",
-    "crumbs": [
-      "Imagery"
-    ]
-  },
-  {
-    "objectID": "content/imagery.html#viewing-images",
-    "href": "content/imagery.html#viewing-images",
-    "title": "Imagery",
-    "section": "Viewing Images",
-    "text": "Viewing Images\nThere are several ways to view raw or processed images:\n\nIf you click down to an image itself, Google Cloud provides an image preview at the bottom of the ‘object’ page. However, you cannot view more than one image at a time. It is a goal of the ESD to build a cloud-native image viewer application to easily view multiple images at a time, but this is not a current project.\nAll raw imagery have been mirrored in VIAME-Web-AMLR. Thus, if you are familiar with VAIME-Web and accessing ESD’s deployment, then you can view imagery using the VIAME-Web annotator.\nYou may also use the gcloud CLI to download images to your computer, and then view them locally using your preferred program.",
-    "crumbs": [
-      "Imagery"
-    ]
-  },
-  {
-    "objectID": "content/imagery.html#shadowgraph-image-processing",
-    "href": "content/imagery.html#shadowgraph-image-processing",
-    "title": "Imagery",
-    "section": "Shadowgraph Image Processing",
-    "text": "Shadowgraph Image Processing\nGliders deployed with shadowgraph cameras can easily collect more than 200,000 images during a single deployment. Therefore, it is impractical to have humans review and annotate all these images by hand, and thus operationally these images must be processed using AI/ML methods. This section describes the current status of these methods, as well as anticipated future directions.\nThere are three main steps to processing shadowgraph images; where and how these steps happen for ESD are further described below.\n\nPreprocessing: flat-fielding, masking, other processing as needed.\nSegmentation: Detect objects, and create regions of interest (ROIs; i.e., blobs or chips). This is done using the preprocessed image.\nClassification: Use a trained ML model to classify the ROIs. Have a trained biologist review and/or correct these predictions.\n\nNote: the below images both show this same workflow, and thus are simply different ways of framing said workflow.\n\nWorkflow v1Workflow v2\n\n\n Shadowgraph image processing workflow, v1\n\n\n Shadowgraph image processing workflow, v2\n\n\n\n\n\nPreprocessing and Segmentation\nAll preprocessing and object detection/segmentation steps are currently performed by code in the shaip repo (shadowgraph image processing). This codebase was originally developed as a Jupyter notebook by Randy Cutter based on work done by Ohman/Ellen for processing Zooglider images, e.g. here and here. It has since been refactored into the Python toolbox sg. For details on the algoroithms used and instructions on how to run this code, see the README on the repo homepage.\nAll currently processed imagery can be found in amlr-gliders-imagery-proc-dev. Like the raw imagery bucket, the amlr-gliders-imagery-proc-dev bucket mirrors the directory structure of the amlr-gliders-deployments-dev bucket. These processed imagery are also viewable as described above.\nThe processing output includes the following folders:\n\nregions: Region of interest (ROI) blobs, created using Ohman/Ellen methods. This folder contains Dir#### folders, matching the raw data.\nregions-tmser: Region of interest (ROI) blobs, created using an adapted version of Oregon State’s Threshold MSER In Situ Plankton Segmentation. Most deployments do not have this output, as this method has not been tuned to work well with ESD shadowgraph imagery.\njpgorig-regions: jpg of the original (i.e., raw) image, with ROI boundaries from the Ohman/Ellen segmentation methods outlined in red.\nimages-imgff: Flat-fielded images, used in the segmentation\nimages-ffPCG: Flat-fielded images, which also have had pixel gamma correction factors applied.\n\n\n\nClassification\nAfter creating ROIs through the preprocessing and segmentation steps described above, those ROIs need to be labeled/classified, and these labels/classifications need to be validated by a trained observer.\n\nModel Training\nTo train an ML model to classify the ROIs as different classes, e.g. plankton species requires an image library of already-classified images that can be used as ground-truth data for the model. ESD is currently using the In Situ Ichthyoplankton Imaging System (ISIIS) image library, courtesy of researchers at Oregon State University, for training full frame classifier models. This library consists of 174 classes of objects, and can be found here.\nIn early 2024, Randy used the ISIIS image library to train two models using VIAME-Web-AMLR (VWA): isiis-train02-clas-svm-lab81, and isiis-train02-clas-res01-lab81. Both of these models have 81 classes, and are available in VWA. Per Randy, the resnet (isiis-train02-clas-res01-lab81) theoretically should be better, but has so far been outperformed by the SVM. This is probably because of not enough training data relative to the number of input classes. Randy also was experimenting with training a yolo v7 model, but this model was not really tested. Thus, currently the resnet is the best model that we have for running on segmented ROIs.\n\n\nGenerating and Validating Predictions\nNOTE: these steps of running a model on ROIs and validating subsequent predictions are currently on hold. Specifically, ESD is currently pushing down two paths in parallel: 1) evaluating and improving current preprocessing and segmentation efforts, and 2) performing manual annotations on raw imagery, and extracting user-annotated ROIs to build an ESD image library.\nFor information on how to run these models on a folder of ROIs, see here. For information about how to validate model predictions, see here.\n\n\n\nFuture Directions\n\nESD Image processing resources\nTune and adapt current code/pipelines (in progress). This work is currently being done by ESD staff.\nWork to tune and evaluate alternative segmentation algorithms, e.g. https://github.com/paradom/Threshold-MSER\nTie in with Optics SI efforts, e.g. https://github.com/sullichrosu/Njobvu-AI",
-    "crumbs": [
-      "Imagery"
-    ]
-  },
-  {
-    "objectID": "content/past-deployments.html",
-    "href": "content/past-deployments.html",
-    "title": "Past Deployments",
-    "section": "",
-    "text": "The below table lists all ESD (and formerly AERD) glider deployments.\nTodo: embed/include table directly here. For now, see this sheet (last updated Aug 2024).",
-    "crumbs": [
-      "Deployments",
-      "Past Deployments"
-    ]
-  },
-  {
-    "objectID": "content/past-deployments.html#deployments",
-    "href": "content/past-deployments.html#deployments",
-    "title": "Past Deployments",
-    "section": "",
-    "text": "The below table lists all ESD (and formerly AERD) glider deployments.\nTodo: embed/include table directly here. For now, see this sheet (last updated Aug 2024).",
-    "crumbs": [
-      "Deployments",
-      "Past Deployments"
-    ]
-  },
-  {
-    "objectID": "content/dataproc-acoustics.html",
-    "href": "content/dataproc-acoustics.html",
-    "title": "Acoustic Data Processing",
-    "section": "",
-    "text": "Active acoustics has been a long used survey tool for estimating the abundance and distribution of fish, zooplankton, and seabed habitat. Typically, acoustic surveys have been conducted on ships but with new technologies, they have been used on autonomous vehicles as well. ESD has used two different active acoustic single beam echosounders on their Slocum gliders: Acoustic Zooplanton and Fish Profiler (AZFP) and Nortek compact echosounders.\nThe AZFP configuration that ESD has used has been either two or three discrete frequencies (38,67.5 and 125 kHz). The Nortek compact is a wideband sounder that ranges from 70 to 120 kHz.",
-    "crumbs": [
-      "Data Processing",
-      "Acoustics"
-    ]
-  },
-  {
-    "objectID": "content/dataproc-acoustics.html#background",
-    "href": "content/dataproc-acoustics.html#background",
-    "title": "Acoustic Data Processing",
-    "section": "",
-    "text": "Active acoustics has been a long used survey tool for estimating the abundance and distribution of fish, zooplankton, and seabed habitat. Typically, acoustic surveys have been conducted on ships but with new technologies, they have been used on autonomous vehicles as well. ESD has used two different active acoustic single beam echosounders on their Slocum gliders: Acoustic Zooplanton and Fish Profiler (AZFP) and Nortek compact echosounders.\nThe AZFP configuration that ESD has used has been either two or three discrete frequencies (38,67.5 and 125 kHz). The Nortek compact is a wideband sounder that ranges from 70 to 120 kHz.",
-    "crumbs": [
-      "Data Processing",
-      "Acoustics"
-    ]
-  },
-  {
-    "objectID": "content/dataproc-acoustics.html#processing",
-    "href": "content/dataproc-acoustics.html#processing",
-    "title": "Acoustic Data Processing",
-    "section": "Processing",
-    "text": "Processing\nBoth echosounders are bottom looking so the processing is very similar. Currently, data from the glider deployment will need to be processed first. See Glider Data processing on how ESD processes glider data. The data needed from the glider are date, time, GPS, depth, pitch, and roll.\nAcoustic processing, currently takes place using Echoview software. The processing steps for both types of echosounders are documented in the echoview_glider_template as well as the Echoview templates. The templates were developed for analysis of Antarctic krill (Euphusia superba) but the general cleaning and output can be used for other zooplankton in any region of the world.",
-    "crumbs": [
-      "Data Processing",
-      "Acoustics"
-    ]
-  },
-  {
-    "objectID": "content/best-practices.html",
-    "href": "content/best-practices.html",
-    "title": "Best Practices",
-    "section": "",
-    "text": "Note\n\n\n\nThis is a living document which shall always be considered a “draft,” as incoming and veteran members of the lab may want to contribute ideas or revisions. This is a place to begin, a place to return to, a place to ground ongoing conversations. Modeled after https://sael-swfsc.github.io/SAEL-lab-manual/content/SharedValues-BestPractices.html",
-    "crumbs": [
-      "Best Practices"
-    ]
-  },
-  {
-    "objectID": "content/best-practices.html#esd-glider-lab-best-practices",
-    "href": "content/best-practices.html#esd-glider-lab-best-practices",
-    "title": "Best Practices",
-    "section": "ESD Glider Lab Best Practices",
-    "text": "ESD Glider Lab Best Practices\n\nCommunication\n\nWe hold lab meetings regularly in which all members are expected to attend if their schedule allows. During these meetings all members are expected to contribute by sharing progress reports, discussing challenges, and celebrating successes.\nWe use Google Meet for informal discussions between lab members and project teams.\nWe use Github projects to keep track of tasks and projects. All lab members are expected to check & respond to email, chats, and Github Projects regularly.\nWe will use Slack to communicate during off hours.\n\n\n\nSafety\n\nLab members are expected to follow all safety protocols. If they are not sure of the protocol, then they should request this information.\nLab members should never feel obligated to perform a task that they do not feel is safe.\nLab members are encouraged to speak up if they feel they need training to perform a specific task safely.\nIf lab members have a safety concern, they should bring it up with their supervisor or the other lab members.\nIf a lab member feels their safety concerns are not being taken seriously, they can consult the SWFSC Safety Officer Ravi Shiwmangal (ravi.shiwmangal@noaa.gov).",
-    "crumbs": [
-      "Best Practices"
-    ]
-  },
-  {
-    "objectID": "content/dataproc-gliders.html",
-    "href": "content/dataproc-gliders.html",
-    "title": "Glider Data Processing",
-    "section": "",
-    "text": "There are many steps and flavors to glider data processing, from the base processing (binary glider to NetCDF files for Slocum gliders) to QA/QC to developing products from additional glider sensors.\nHistorically, the ESD glider team has processed glider data using the Matlab toolbox SOCIB. However, this toolbox is not actively maintained, and the majority of ESD processing efforts have moved to Google Cloud (GCP). Subsequent efforts involved developing amlr-gliders, which contained a Python toolbox and scripts that were ~medium wrappers around gdm. These efforts never caught full traction.\nCurrent efforts both leveraging existing toolboxes (PyGlider, GliderTools, dbdreader) and developing new Python code and wrapper scripts that live in glider-utils. All of these efforts are geared towards processing ESD glider data in ESD’s Google Cloud project, using an Open Science approach .\nThis page describes these current efforts, and outlines planned areas of future development. For acoustic or image processing workflows, see the acoustics and and imagery pages, respectively.\nTodo: create and add flow chart, a la here",
-    "crumbs": [
-      "Data Processing",
-      "Gliders"
-    ]
-  },
-  {
-    "objectID": "content/dataproc-gliders.html#background",
-    "href": "content/dataproc-gliders.html#background",
-    "title": "Glider Data Processing",
-    "section": "",
-    "text": "There are many steps and flavors to glider data processing, from the base processing (binary glider to NetCDF files for Slocum gliders) to QA/QC to developing products from additional glider sensors.\nHistorically, the ESD glider team has processed glider data using the Matlab toolbox SOCIB. However, this toolbox is not actively maintained, and the majority of ESD processing efforts have moved to Google Cloud (GCP). Subsequent efforts involved developing amlr-gliders, which contained a Python toolbox and scripts that were ~medium wrappers around gdm. These efforts never caught full traction.\nCurrent efforts both leveraging existing toolboxes (PyGlider, GliderTools, dbdreader) and developing new Python code and wrapper scripts that live in glider-utils. All of these efforts are geared towards processing ESD glider data in ESD’s Google Cloud project, using an Open Science approach .\nThis page describes these current efforts, and outlines planned areas of future development. For acoustic or image processing workflows, see the acoustics and and imagery pages, respectively.\nTodo: create and add flow chart, a la here",
-    "crumbs": [
-      "Data Processing",
-      "Gliders"
-    ]
-  },
-  {
-    "objectID": "content/dataproc-gliders.html#base-processing",
-    "href": "content/dataproc-gliders.html#base-processing",
-    "title": "Glider Data Processing",
-    "section": "Base Processing",
-    "text": "Base Processing\nThe base glider data processing is primarily done using PyGlider, hereafter simply ‘pyglider’. pyglider takes in binary data files from Teledyne/Webb Slocum gliders, and creates CF-compliant NetCDF files. These NetCDF files will be both used internally in further workflows, and sent to the NGDAC.\n\nLevel 1 - Timeseries\nWorkflow:\n\nBinary and cache files from the glider are properly archived in GCS bucket (see here - link todo)\nCreate deployment YAML file (example). Currently this is done by hand; ideally in the future this is done by code pulling from the Glider&Mooring database\nRun pyglider and create output NetCDF files using the script binary_to_nc.py, run via binary_to_nc.sh on a GCP VM\nAccess processed NetCDF files via GCP for additional internal workflows\n\n\nOutput NetCDF File\nTodo: Notes about the structure of and variables in the output NetCDF file. This will depend on CR answers to processing questions (link to issue todo).\n\n\nProcessing Notes\nThis section describes the default pyglider/dbdreader behavior when processing binary glider files. This may be useful reference for folks using pyglider/dbdreader for any purpose.\nThe pyglider.slocum.binary_to_timeseries function uses dbdreader to read slocum glider data from binary files. More discussion can be found here around why pyglider switched to using dbdreader, and how pyglider processing worked before.\nAs constructed, binary_to_timeseries uses dbdreader’s get_sync to extract values for all of the specified sensors. Thus, the user specifies a particular sensor to server as the ‘time_base’, and then all other desired variables (across science and engineering: pressure, temperature, oxygen, roll, etc.) are interpolated onto the same time base (i.e., the timestamps where this ‘time_base’ variable has a valid (not missing/nan) value). This makes life difficult if different sensors have different sampling strategies, and does not allow users to extract non-interpolated data. Adding a ‘union’ behavior option is currently under discussion in this issue and this pull request. For now, binary_to_nc.py generates several datasets, and merges them together soa s to have all variables/relevant timestamps in one file.\nData alterations, or additional features of note:\n\ndbdreader:\n\ndbdreader throws an error if a sensor is turned off and thus not present in some sbd/tbd or dbd/ebd files. For example, if the oxygen sensor is turned off halfway through a deployment, although this would apply to any sensor that is turned off. However, it looks like this behavior may be fixed soon.\ndbdreader by default skips the first line of each binary file. The reasoning is that “this line contains either nonsense values, or values that were read a long time ago. This behavior can be changed.” See here for more discussion.\ndbdreader only identifies sensors as ‘engineering’ or ‘science’. Thus, when extracting e.g. data for the sensor ‘sci_oxy4_oxygen’, dbdreader uses the ‘sci_m_present_time’ as the timestamp, rather than ‘sci_oxy4_present_time’.\n\npyglider:\n\nLatitude and longitude values are set to nan if their absolute value is greater than 90 and 180, respectively.\nAny values of zero from science sensors are converted to nan.\nNo other data alterations are made (e.g., CTD data is all read and left as-is).\n\n\n\n\n\nLevel 2 - Gridded\npyglider has a function ncprocess.make_gridfiles for making gridded data. This function takes the above timeseries file as input.\nMore docs forthcoming.\n\n\nIOOS NGDAC\npyglider has a function ncprocess.extract_timeseries_profiles for creating profile files for submission to the NGDAC. This function takes the above timeseries file as input.\nMore docs forthcoming.\n\n\nOther Files\nESD’s base processing also creates several other files necessary for processing or using data from other sensors on the glider. If the glider is carrying a shadowgraph or glidercam camera system, then a CSV file is created that links each image with the relevant glider measurements at that time (depth, temperature, oxygen concentration, etc.). If the glider is carrying an acoustic instrument, specific files are needed to process these data using Echoview. These files are created during the base processing step as well.",
-    "crumbs": [
-      "Data Processing",
-      "Gliders"
-    ]
-  },
-  {
-    "objectID": "content/dataproc-gliders.html#real-time-data",
-    "href": "content/dataproc-gliders.html#real-time-data",
-    "title": "Glider Data Processing",
-    "section": "Real-Time Data",
-    "text": "Real-Time Data\ntbd. Vision is to have GCP infrastructure in place to:\n\nPeriodically rsync real-time data (sbd/tbd files) from the SFMC to a GCP VM\nRun the base processing steps on these data\nAutomatically send the processed files to the NGDAC",
-    "crumbs": [
-      "Data Processing",
-      "Gliders"
-    ]
-  },
-  {
-    "objectID": "content/dataproc-gliders.html#future-steps",
-    "href": "content/dataproc-gliders.html#future-steps",
-    "title": "Glider Data Processing",
-    "section": "Future Steps",
-    "text": "Future Steps\nqc + data cleaning -&gt; cleaned netcdf files with qc flags. Potential resources:\n\nImplement IOOS QARTOD tests, eg using ioos_qc to add qc flags\nhttps://github.com/OceanGlidersCommunity/Realtime-QC\n\nhttps://github.com/castelao/CoTeDe\n\nother qc/data cleaning? For instance, sanity check ts plots. Likely will involve by-hand inspection for each deployment, including removing bad data if discovered\n\nGliderTools: additional processing functionality\n\nmanuscript describing the GliderTools toolbox\nGliderTools contains tools for processing Seaglider basestation files. However, the rest of the tools simply require that the data be in an xarray dataset.\noptics, pq: quenching correction method described by Thomalla et al. (2018)\nadditional qc tools?\ncalculate cool physics things (mixed layer depth, …)\nleverage gridded plotting routines",
-    "crumbs": [
-      "Data Processing",
-      "Gliders"
-    ]
-  },
-  {
-    "objectID": "content/dataproc-gliders.html#github-repos",
-    "href": "content/dataproc-gliders.html#github-repos",
-    "title": "Glider Data Processing",
-    "section": "GitHub Repos",
-    "text": "GitHub Repos\nSee the home page for ESD-developed repos. External GitHub repos that are particularly relevant/useful:\n\n\n\nrepo link\ndescription\n\n\n\n\ndbdreader\nExtract data from slocum binary files\n\n\npyglider\nConvert datafiles from slocum and seaexplorer into netcdf\n\n\nGliderTools\nQuality control and plot generic glider data\n\n\nIOOS qc\nApply IOOS QARTOD and other qc routines\n\n\nSOCIB\nProcess glider data in Matlab (not actively maintained)\n\n\nglider tools list\nOceanGliders community repository to list tools for processing glider data. Includes many of the tools listed above.",
-    "crumbs": [
-      "Data Processing",
-      "Gliders"
-    ]
-  },
-  {
-    "objectID": "content/reports.html",
-    "href": "content/reports.html",
-    "title": "Deployment Reports",
-    "section": "",
-    "text": "Deployment\nSensors\n\n\n\n\njohn-20240312\nCTD, Optode, Nortek,Shadowgraph\n\n\nringo-20240312\nCTD, Optode, Wide Shadowgraph\n\n\ngeorge-20240530\nCTD, Optode, Narrow Shadowgraph\n\n\n\n\n\n\n\n\n\nDeployment\nSensors\n\n\n\n\ngeorge-20240907\nCTD, Optode,Ecopuck, Narrow Shadowgraph\n\n\n\n\n\n\n\n\n\nDeployment\nSensors\n\n\n\n\nglider-202410XX\nCTD, Optode, Ecopuck, Nortek",
-    "crumbs": [
-      "Deployments",
-      "Deployment Reports"
-    ]
-  },
-  {
-    "objectID": "content/reports.html#san-diego",
-    "href": "content/reports.html#san-diego",
-    "title": "Deployment Reports",
-    "section": "",
-    "text": "Deployment\nSensors\n\n\n\n\njohn-20240312\nCTD, Optode, Nortek,Shadowgraph\n\n\nringo-20240312\nCTD, Optode, Wide Shadowgraph\n\n\ngeorge-20240530\nCTD, Optode, Narrow Shadowgraph",
-    "crumbs": [
-      "Deployments",
-      "Deployment Reports"
-    ]
-  },
-  {
-    "objectID": "content/reports.html#santa-barbara",
-    "href": "content/reports.html#santa-barbara",
-    "title": "Deployment Reports",
-    "section": "",
-    "text": "Deployment\nSensors\n\n\n\n\ngeorge-20240907\nCTD, Optode,Ecopuck, Narrow Shadowgraph",
-    "crumbs": [
-      "Deployments",
-      "Deployment Reports"
-    ]
-  },
-  {
-    "objectID": "content/reports.html#humboldt",
-    "href": "content/reports.html#humboldt",
-    "title": "Deployment Reports",
-    "section": "",
-    "text": "Deployment\nSensors\n\n\n\n\nglider-202410XX\nCTD, Optode, Ecopuck, Nortek",
-    "crumbs": [
-      "Deployments",
-      "Deployment Reports"
     ]
   }
 ]
