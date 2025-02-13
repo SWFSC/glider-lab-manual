@@ -33,6 +33,8 @@ How to set up the Nortek compact echosounder
 
 [Notes on Nortek mini-echosounder](https://docs.google.com/document/d/11ih0V16ZixwDb9c7f-6vLbt-bbhiwrVagAG_7VGKJaU/edit?usp=sharing){target="_blank"}
 
+[How to work on a glider while it is open](https://docs.google.com/document/d/1a_N0zhSXgMQSYMxEsWwzVrb4hMajXvOHCJinXlJvthc/edit?usp=sharing){target="_blank"}
+
 
 ## Online Calculators
 
