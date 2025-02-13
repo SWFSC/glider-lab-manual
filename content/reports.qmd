@@ -9,16 +9,23 @@ title: Deployment Reports
 
 | Deployment | Sensors |
 |------------------------------|------------------------------|
-| [john-20240312](https://docs.google.com/document/d/1szQ7tV5stz8fyuNzF05jM1zxUQmkAwQxzZcmHGlDgwg/edit?usp=sharing) | CTD, Optode, Nortek,Shadowgraph |
-| [ringo-20240312](https://docs.google.com/document/d/12iSPkBChPjtPFbFQxX2hCopga3hvBr91qH1kJW_w5sw/edit?usp=sharing) | CTD, Optode, Wide Shadowgraph |
-| [george-20240530](https://docs.google.com/document/d/1MDVbBDjK2UvHjLFQ35nzniC-R7YycM6SZr0ymEFvapw/edit?usp=sharing) | CTD, Optode, Narrow Shadowgraph |
+| [john-20240312](https://docs.google.com/document/d/1szQ7tV5stz8fyuNzF05jM1zxUQmkAwQxzZcmHGlDgwg/edit?usp=sharing){target="_blank"} | CTD, Optode, Nortek,Shadowgraph |
+| [ringo-20240312](https://docs.google.com/document/d/12iSPkBChPjtPFbFQxX2hCopga3hvBr91qH1kJW_w5sw/edit?usp=sharing){target="_blank"} | CTD, Optode, Wide Shadowgraph |
+| [george-20240530](https://docs.google.com/document/d/1MDVbBDjK2UvHjLFQ35nzniC-R7YycM6SZr0ymEFvapw/edit?usp=sharing){target="_blank"} | CTD, Optode, Narrow Shadowgraph |
 
 ## Santa Barbara
 | Deployment | Sensors |
 |------------------------------|------------------------------|
-|[george-20240907](https://docs.google.com/document/d/12hNl6ZtEIISh4vlJcOJgK1RHsloGIa98WKf5xpjIq0U/edit?usp=sharing) | CTD, Optode,Ecopuck, Narrow Shadowgraph |
+|[george-20240907](https://docs.google.com/document/d/12hNl6ZtEIISh4vlJcOJgK1RHsloGIa98WKf5xpjIq0U/edit?usp=sharing){target="_blank"} | CTD, Optode,Ecopuck, Narrow Shadowgraph |
 
 ## Humboldt
 | Deployment | Sensors |
 |------------------------------|------------------------------|
-| glider-202410XX |CTD, Optode, Ecopuck, Nortek |
+| calanus-20241019 |CTD, Optode, Ecopuck, Nortek |
+
+## Antarctica
+| Deployment | Sensors |
+|------------------------------|------------------------------|
+| [AMLR01-20241120](https://docs.google.com/document/d/128D2a0Ud2Kda5JwIYVhN9An4CFT6KxdGoqS1RsHKtQ0/edit?usp=sharing){target="_blank"} |CTD, Optode, Ecopuck, AZFP |
+| [AMLR08-20241120](https://docs.google.com/document/d/1Bk2CQeC6dT7OtOInGbB85aCiE3qmz_S4JvjbNHziKyQ/edit?usp=sharing){target="_blank"} |CTD, Optode, Ecopuck, Nortek |
+
