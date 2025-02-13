@@ -1,0 +1,262 @@
+---
+title: "Slocum Glider Pilot Reference"
+format: html
+editor: visual
+---
+
+### Useful Commands and Variables
+
+::: {#commands .callout-warning collapse="true" icon="false"}
+## Commands
+
+|  |  |
+|------------------------------------|------------------------------------|
+| `help` or `help [command]` | Print description of command. |
+| `lab_mode [on|off]` | Activate lab mode. |
+| `wiggle [on|off]` | Move all mechanical components. |
+| `get [var]` | Print variable once (usually `m_...`). |
+| `put [var]` | Set variable (usually `c_...`). |
+| `report ++ [m_var]` | Continuously print readings. |
+| `report clearall` | Stop continuously printing readings. |
+| `list` | List all variables. |
+| `list [var]` | Show variable and related variables. |
+| `dir` (preferred) or `ls` | Print contents of present directory. |
+| `consci` | Switch to science processor. `quit` to exit. |
+| `whoru` | Print glider name. |
+| `where` | Surface dialog and various values. |
+| `why?` | Print reason for most recent mission abort. |
+| `get m_why_started` | Troubleshoot when glider resets itself. |
+| `use` | Print list of devices and their operational stats. |
+| `use -|+ [device]` , `use none|all` | Bring devices in and out of service. |
+| `zero_ocean_pressure` | Set sea level. |
+| `exit` | Shut down safely and correctly. |
+| `exit reset` | Reboot glider. |
+:::
+
+::: {#variables .callout-note collapse="true" icon="false"}
+## Variables
+
+|  |  |
+|------------------------------------|------------------------------------|
+| `c_de_oil_vol` , `m_de_oil_vol` | Set or get oil pump volume. |
+| `c_air_pump` | Fill or drain air bladder. |
+| `m_vacuum` | Get internal vacuum reading. |
+| `c_battpos`, `m_battpos` | Set or get pitch battery position. |
+| `m_coulumb_amphr_total` | Needs to be reset when batteries are replaced. |
+:::
+
+::: {#types .callout-note collapse="true" icon="false"}
+## Variable Types
+
+|        |                                   |
+|--------|-----------------------------------|
+| `m_`   | measured                          |
+| `c_`   | commanded                         |
+| `u_`   | user-defined (before run time)    |
+| `f_`   | factory set                       |
+| `x_`   | computed at run time (DO NOT SET) |
+| `s_`   | simulated state variables         |
+| `sci_` | science sensor                    |
+
+: \*more information and description about variables in `masterdata.dat`
+:::
+
+### File Types and Transfers
+
+::: {#datafiles .callout-note collapse="true" icon="false"}
+## Glider Data Files
+
+|                             |            |             |                |
+|-----------------------------|------------|-------------|----------------|
+|                             | **Flight** | **Science** | **Compressed** |
+| **all data** *(recovered)*  | `.DBD`     | `.EBD`      | `.DCD / .ECD`  |
+| **decimated** *(telemetry)* | `.SBD`     | `.TBD`      | `.SCD / .TCD`  |
+| **medium** *(diagnostic)*   | `.MBD`     | `.NBD`      | `.MCD / NCD`   |
+| **log files**               | `.MLG`     | `.NLG`      | `.MCG / .NCG`  |
+
+| `.dbd` file naming convention:         |
+|----------------------------------------|
+| `mission#` + `segment#`                |
+| ex. `0111` + `0055` -\> `01110055.dbd` |
+
+| Full file naming convention:                                  |
+|---------------------------------------------------------------|
+| `glider_name`-`year`-`yearday`-`mission#_that_day`-`segment#` |
+| ex. `calanus-2024-195-1-16`                                   |
+:::
+
+::: {#filetransfers .callout-warning collapse="true" icon="false"}
+## File Transfer Commands
+
+| Files from glider (glider sends) |   |
+|-------------------------|-----------------------------------------------|
+| `zs  [path/to/file]` | send files from present processor |
+| `szs [path/to/file]` | send files from sci processor (if on flight) |
+| `send [log_filenames]` | send logs and move files to `/sentlogs/` |
+| `s [log_filesnames]` | same as `send` but during mission |
+
+| Files to glider (glider receives) |   |
+|-------------------------|-----------------------------------------------|
+| `zr` | send using terminal program over FreeWave |
+| `dockzr [filename]` or `dockzr *.*` | send using SFMC "to-glider" folder |
+| `szr` | send files to science processor over FreeWave |
+| `dockszr [filename]` or `dockszr *.*` | send using SFMC "to-science" folder |
+:::
+
+::: {#gliderfiles .callout-note collapse="true" icon="false"}
+## Glider Mission Files
+
+|  |  |
+|--------------------------|----------------------------------------------|
+| `[mission].mi` | Main mission file. |
+| `goto_l10.ma` | Way-point plan. |
+| `sample01.ma` | Sampling scheme, one file per sensor. |
+| `surfac10.ma` | Surfacing condition (multiple). |
+| `yo20.ma` | Dive behavior. |
+| `autoexec.mi` | Glider identity file (don't send over Irdium) |
+| `proglets.dat` | Science identity file (on science processor!) |
+| `sbdlist.dat`, `tbdlist.dat` | Configures telemetry files `.sbd` and `.tbd` |
+:::
+
+### Mission Commands
+
+::: {#missioninit .callout-note collapse="true" icon="false"}
+## Initializing Missions
+
+|  |  |
+|--------------------------------------|----------------------------------|
+| `loadmission [mission_name].mi` | sets glider variables from mission file |
+| `run [mission_name].mi` | begin running mission |
+| `type [path/to/missionfile]` | prints contents of mission file |
+| `sequence [mission_0].mi [mission_1].mi ...` | runs listed missions consecutively |
+| `sequence [mission_name].mi(N)` | runs mission `N` times consecutively |
+:::
+
+::: {#missioncommands .callout-warning collapse="true" icon="false"}
+## In-mission Commands
+
+|  |  |
+|----|----|
+| `^R` (`ctrl-R`) | Resume mission (dive) immediately. |
+| `^C` | End mission, prompt `GliderDOS` . |
+| `^E` | Extend surface time by 5-minutes. |
+| `^W` | Get device warning reports, like `use` |
+| `^F` | Re-read files. |
+| `s [...]` | Send log files. |
+| `![GliderDOS command]` , ex. `!dockzr *.*` | Send command. |
+| `^T` | `consci` to science computer, prompt `SciDOS` |
+:::
+
+### Common Procedures
+
+::: {#startup .callout-tip collapse="true" icon="false"}
+## Catching Glider at start-up in the lab over FreeWave
+
+Quit sequence and prompt `GliderDOS`
+
+`> ctrl-C`
+
+Hang up Iridium for 30 minutes
+
+`> callback 30`
+
+Enter lab mode:
+
+`> lab_mode on`
+:::
+
+::: {#deflate .callout-tip collapse="true" icon="false"}
+## Deflate air bladder to remove tail cowling
+
+Ballast command, also resets oil pump and pitch battery
+
+`> ballast`
+
+Or, air bladder only
+
+`> put c_air_pump 0`
+
+Or, if testing sensors on battery power in the lab over FreeWave
+
+`> loadmission lowpow.mi`
+
+Afterwards, check internal vacuum (*target 7.0-7.5 inHg*)
+
+`> get m_vacuum`
+
+or
+
+`report ++ m_vacuum`
+
+> Note: clear output from `ballast` and `report ++` using `report clearall`
+:::
+
+::: {#shutdown .callout-tip collapse="true" icon="false"}
+## Power down glider safely
+
+Pull in ballast pump oil
+
+`> put c_de_oil_vol -420`
+
+and deflate air bladder
+
+`> put c_air_pump 0`
+
+Wait until these actions are complete, use
+
+`> report ++ m_de_oil_vol m_vacuum`
+
+Power down glider
+
+`> exit`
+
+and wait for confirmation before pulling green shorting plug.
+
+:::
+
+::: {#simuation .callout-tip collapse="true" icon="false"}
+## Simulating with a glider
+ 
+***Initiate simulation mode***
+
+Check whether the glider is currently in a simulation
+
+`> simul?`
+
+Create a simulation file in config directory
+
+`> capture config/simul.sim`
+
+`on_bench ^C`
+
+Verify that the file exists and contents are correct
+
+`> type config/simul.sim`
+
+Reset the glider
+
+`> exit reset`
+
+And check to make sure the glider is now in simulation
+
+`> simul?`
+
+***
+
+***Deactivate simulation mode***
+
+Remove the simulation file
+
+`> del config/simul.sim`
+
+Verify that the file is now gone
+
+`> dir config`
+
+Reset the glider and make sure it is not in simulation mode
+
+`> exit reset`
+
+`> simul?`
+
+:::

@@ -6,6 +6,8 @@ NOAA’s Southwest Fisheries Science Center began deploying Teledyne Webb Resear
 
 ## Links
 
+[Pilot Cheatsheet](documents/pilot_cheatsheet.qmd){target="_blank"} - Common commands for piloting and testing
+
 [Slocum Fleet Mission Control](https://sfmc.webbresearch.com/sfmc/login){target="_blank"} - SFMC from Teledyne. Where to pilot the gliders using Iridium.
 
 [Argos](https://argos-system.clsamerica.com/argos-cwi2/login.html){target="_blank"} - Check where the gliders are if they miss a call in.
