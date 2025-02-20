@@ -96,6 +96,7 @@ How to set up the Nortek compact echosounder
 
 ### **WISPR Passive Acoustic Monitoring**
 [WISPR 3 Connector specs](https://drive.google.com/file/d/1M1QwE0vXA-y7uf1oIzViYw-lQGpNZ-jw/view?usp=sharing){target="_blank"}
+
 [WISPR 3 Github](https://github.com/embeddedocean/wispr3){target="_blank"}
 
 ## Software and settings
