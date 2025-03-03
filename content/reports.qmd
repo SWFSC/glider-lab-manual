@@ -1,7 +1,13 @@
 ---
 title: Deployment Reports
 ---
+# 2025
 
+## San Diego
+
+| Deployment | Sensors |
+|------------------------------|------------------------------|
+| [unit_1024-20250224](https://docs.google.com/document/d/1LQ9ch1gEuHtHEUbC7dymbtm9UlZu6IaePKbmLpKTlyU/edit?usp=sharing){target="_blank"} | CTD, Ecopuck, BSIPAR, WISPR
 
 # 2024
 
