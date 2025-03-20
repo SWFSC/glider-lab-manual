@@ -64,27 +64,30 @@ The ESD started using the Hefring OceanScout gliders in 2025. They are a smaller
 
 ## Information
 
-[Hefring cloud](https://noaafisheries.hefring.cloud/)- The NOAA cloud interface for controlling Oceanscouts.
+[Hefring cloud](https://noaafisheries.hefring.cloud/){target="_blank"}- The NOAA cloud interface for controlling Oceanscouts.
+
+[How to view OceanScout data](https://docs.google.com/document/d/1zVzIeTeJ6fW4Ow5faFSh8xxW-BWR4hRm/edit){target="_blank"}
+
+[Upgrade the Altimeter](https://docs.google.com/document/d/12vyN1u6O4R_JSQA0PjtyxB7tk5wXG2Ok/edit){target="_blank"}
+
+[CLI help](documents/OS_help_1.1.2.txt){target="_blank"}
 
 ### User Manual
 
-[Getting Started](documents/Getting started.pdf)
+[Getting Started](documents/Getting started.pdf){target="_blank"}
 
-[Cloud](documents/Cloud.pdf)
+[Cloud](documents/Cloud.pdf){target="_blank"}
 
-[Hardware](documents/Hardware.pdf)
+[Hardware](documents/Hardware.pdf){target="_blank"}
 
-[Firmware](documents/Firmware.pdf)
+[Firmware](documents/Firmware.pdf){target="_blank"}
 
-[Safety Guidelines](documents/Safety guidelines.pdf)
+[Safety Guidelines](documents/Safety guidelines.pdf){target="_blank"}
 
-[Frequently Asked Questions](documents/Frequently Asked Questions.pdf)
+[Frequently Asked Questions](documents/Frequently Asked Questions.pdf){target="_blank"}
 
-[Troubleshooting](documents/Troubleshooting.pdf)
+[Troubleshooting](documents/Troubleshooting.pdf){target="_blank"}
 
-[How to view OceanScout data](https://docs.google.com/document/d/1zVzIeTeJ6fW4Ow5faFSh8xxW-BWR4hRm/edit)
-
-[Upgrade the Altimeter](https://docs.google.com/document/d/12vyN1u6O4R_JSQA0PjtyxB7tk5wXG2Ok/edit)
 
 
 ## Useful websites
