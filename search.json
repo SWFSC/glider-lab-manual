@@ -44,7 +44,7 @@
     "href": "content/pilot-tools.html#information",
     "title": "Glider Pilot Tools",
     "section": "Information",
-    "text": "Information\nHefring cloud- The NOAA cloud interface for controlling Oceanscouts.\n\nUser Manual\nGetting Started\nCloud\nHardware\nFirmware\nSafety Guidelines\nFrequently Asked Questions\nTroubleshooting\nHow to view OceanScout data\nUpgrade the Altimeter",
+    "text": "Information\nHefring cloud- The NOAA cloud interface for controlling Oceanscouts.\nHow to view OceanScout data\nUpgrade the Altimeter\nCLI help\n\nUser Manual\nGetting Started\nCloud\nHardware\nFirmware\nSafety Guidelines\nFrequently Asked Questions\nTroubleshooting",
     "crumbs": [
       "Glider Lab",
       "Glider Pilot Tools"

@@ -1,0 +1,819 @@
+
+Círdan, Master of the Grey Havens Ocean Scout CLI (Level 20) Firmware 1.1.2
+=> help
+comm.info :
+ Retrieve remote communications information
+  No parameters
+
+comm.power :
+ Turn on or off the remote communications device
+  Parameters
+        on : Power on (1) or off (0)
+
+comm.setLogLevel :
+ Set the internal debug log level for remote communications
+  Parameters
+        level : Log level
+
+comm.setModeInternet :
+ Set the remote communications device to Internet (direct)
+  Parameters
+        server : Address of server (IP or DNS name)
+        password : Key password
+
+comm.setModeIridium :
+ Set the remote communications device to the Iridium modem
+  No parameters
+
+comm.status :
+ Print the status of the remote communications device
+  No parameters
+
+exit :
+ Exit program
+  No parameters
+
+general.getIdle :
+ Parameters controlling the idle (non-mission) loop behaviour. Access Level: 20
+  No parameters
+
+general.getManifest :
+ Description of all hardware contained within the glider.  The name can be set by the user. Access Level: 20
+  No parameters
+
+general.getTestDive :
+ Parameters controlling test dives. Access Level: 20
+  No parameters
+
+general.setIdle :
+ Parameters controlling the idle (non-mission) loop behaviour. Access Level: 20
+  Parameters
+        gps_timeout : Time to wait for a GPS fix to take place  Units: s. Range 30 - 300
+        shore_comms_timeout : Time to wait during an Iridium lock / shore message check.  Units: s. Range 60 - 600
+        telemetry_interval : GPS telemetry interval. Less than 60 seconds disables the telemetry interval.  Units: s. Range: 0 - 86400
+        depth_interval : Depth interval (checks for glider descending in water without starting a mission).  Less than 60 seconds disables the check.  Units: s. Range: 0 - 36000
+        check_message_interval : Interval at which to check for shore messages (when enabled).  Less than 60 seconds disables the check.  Units: s. Range: 0 - 36000
+
+general.setTestDive :
+ Parameters controlling test dives. Access Level: 20
+  Parameters
+        yo_count : Number of yos to complete before surfacing.  Range: 1 - 16
+        pitch : Pitch angle for dive.  Units: degrees.  Range: 15 - 45
+        pitch_control : Active control of pitch.
+        vertical_rate : Vertical descent rate.  Units: m/s. Range: 0.01 - 1.
+        rate_control : Active control of vertical rate.
+        glide_buoyancy_offset : Buoyancy offset to use when vertical rate is not controlled.  Units: ml: Range: 50 - 300
+        heading : Magnetic north heading.  Units: degrees.  Range: 0 - 360.
+        quiet_time : Time period after reaching descent depth that quiet mode should be run.  Units: seconds.  Range: 0 - 1200
+        altitude : Minimum altitude above ocean floor.  0 disables the altimeter altogether.  Units: meters. Range: 0 - 200.
+        ascend_depth : Depth for the top of the yo.  Units: meters.  Range: 1 - 190
+        descend_depth : Depth for the bottom of the yo.  Units: meters. Range: 5 - 200.
+        gps_timeout : Time to wait for a GPS fix.  Units: s. Range: 30 - 300
+        shore_comms_timeout : Time to wait during an Iridium lock / shore message check.  Units: s. Range: 60 - 600
+        run_time : Time for test dive to complete before an abort occurs.  Units: s. Range: 600 - 14400
+        max_depth : Maximum depth allowed before aborting.  Units: meters: Range: 10 - 210.
+
+help :
+ Retrieve help for all commands or a single command
+  Parameters
+        cmd : Search command (none = all)
+
+mission.addRouteSegment :
+ Add a single segment and waypoint to a route. When travelling in the forward direction, the segment description is used to reach the waypoint. Access Level: 20
+  Parameters
+        route_id : Range: 1 - 16
+        segment_description_id : Range: 1 - 255
+        waypoint_id : Range: 1 - 255
+
+mission.clearAbort :
+ Clears the current abort condition. Access Level: 20
+  No parameters
+
+mission.getAbort :
+ Abort criteria.  If any one of the abort conditions is met, the glider enters ABORT mode, immediately surfacing and sending telemetry messages. The mission is halted until the abort condition is cleared (if possible). Access Level: 20
+  No parameters
+
+mission.getAllIds :
+ Retrieve a list of all element IDs that are currently defined. Access Level: 20
+  No parameters
+
+mission.getCommsTimeout :
+ Parameters controlling communications timeouts. Access Level: 20
+  No parameters
+
+mission.getPamWhisprConfig :
+ Configuration for the passive acoustic monitor. Access Level: 30
+  Parameters
+        id : The sampling description ID that this range belongs to (0 = apply immediately).
+
+mission.getRecovery :
+ Recovery mode puts the vehicle on the surface, turns on the wifi and the  strobe at configured intervals and sends regular telemetry messages. Access Level: 20
+  No parameters
+
+mission.getRoute :
+ A route is a collection of waypoints with segment descriptions describing how to reach the waypoints in between. When travelling in the forward direction, the segment description at index p is used to travel to the waypoint at index p. In the reverse direction the segment description at index p is used to reach waypoint p-1. This is the top level desciption of a glider mission. Access Level: 20
+  Parameters
+        id : Range: 1 - 16
+
+mission.getRouteExecution :
+ Start travelling along a defined route. Access Level: 20
+  Parameters
+        route_id : The route to be traversed.  Range: 1 - 16
+        segment_description_id : The segment description to use to reach the start_at waypoint.  Range: 1 - 255
+
+mission.getSegmentDescription :
+ Describes how the glider travels between two waypoints. Note that an ID of 0 is invalid (used internally in the firmware  to prevent diving). Access Level: 20
+  Parameters
+        id : Unique ID used to identify this segment description (0 = test dive segment).  Range: 0 - 255
+
+mission.getSensorSampleDescription :
+
+  Parameters
+        sampling_description_id : The ID that uniquely identifies this description. ID = 0 is no scientific sensor sampling. ID = 1 is default sampling.  Range: 1 - 32
+
+mission.getWaypoint :
+ Defines a waypoint for the mission. Access Level: 20
+  Parameters
+        id : Unique waypoint identifier.  Range: 1 - 255
+
+mission.getWaypointList :
+ Retrieve the current status for waypoints in the mission. Access Level: 20
+  No parameters
+
+mission.modifyGlideAscend :
+ Parameters controlling glider climb. Access Level: 20
+  Parameters
+        segment_description_id : The segment description ID that uses this behaviour (0 = test dive segment).  Range: 0 - 255
+        timeout : Length of time for glider to complete climb before aborting.  Units: seconds. Range: 300 - 36000.
+        guidance_interval : Sleep interval no monitoring carried out (low power operation).  Units: seconds. Range: 0 - 600.
+        nominal_depth : Depth at which glider reaches top of yo.  Units: meters.  Range: 1 - 190.
+        depth_rate : Climb rate.  Units: m/s. Range: 0.01 - 1
+        speed_control : Whether or not VBE should be automatically adjusted to maintain speed
+        pump_volume : Pump volume offset from neutral to use if speed control is disabled.  Units: ml. Range: 0 - 500.
+        pitch : Pitch angle for climb.  Units: deg. Range: 10 - 35.
+        pitch_control : Whether or not the pitch motor should be automatically adjusted to maintain pitch
+
+mission.modifyGlideDescend :
+ Parameters controlling glider descent.   Access Level: 20
+  Parameters
+        segment_description_id : The segment description ID that uses this behaviour (0 = test dive segment).  Range: 0 - 255
+        timeout : Length of time for glider to complete climb before aborting.  Units: seconds. Range: 300 - 36000.
+        guidance_interval : Low power suspend interval(no flight control).  Units: seconds. Range: 0 - 600.
+        nominal_depth : Depth at which glider reaches bottom of the yo.  Units: meters. Range: 5 - 200.
+        altitude : Minimum altitude above ocean floor.  0 disables the altimeter altogether.  Units: meters. Range: 0 - 200.
+        depth_rate : Vertical descent rate. Units: m/s. Range: 0.01 - 1.
+        speed_control : Whether or not VBE should be automatically adjusted to maintain speed.
+        pump_volume : Pump volume offset from neutral to use if speed control is disabled.  Units: ml. Range: 0 - 500.
+        pitch : Pitch angle for descent.  Units: deg. Range: 10 - 40.
+        pitch_control : Whether or not the pitch motor should be automatically adjusted to maintain pitch
+
+mission.modifyQuiet :
+ Hovers at the bottom of a yo and then disables all motors  / sytems for the configured duration to allow the passive acoustic system to collect background noise data. Access Level: 20
+  Parameters
+        segment_description_id : The segment description ID that uses this behaviour (0 = test dive segment).  Range: 0 - 255
+        timeout : Time period to reach the zero vertical speed before aborting.  Units: seconds. Range: 300 - 10000
+        cadence : Cadence in number of yos at which this behaviour should occur.  Units: yos.
+        duration : The length of time that the behaviour should run.  Units: seconds.
+
+mission.modifySensorSample :
+ Parameters to control sensor operation. This configuration can be applied to multiple sensors.   Selections allowed: [CTD PAM].   Access Level: 20
+  Parameters
+        select : Applicable sensor.  Allowed: [CTD PAM]
+        id : The sampling description ID that this configuration belongs to.  Range: 1 - 32
+        sample_always : Sensor is always sampling.
+        sample_surface : Sample when surfaced / surfacing.
+        sample_ascend : Sample when ascending.
+        sample_descend : Sample when descending.
+        sample_quiet : Sample when drifting.
+        sample_hover : Sample when in hover mode.
+        power_always : Sensor is always on.
+        power_surface : Turn sensor on when surfaced / surfacing.
+        power_ascend : Turn sensor on when ascending.
+        power_descend : Turn sensor on when descending.
+        power_quiet : Turn sensor on when drifting.
+        power_hover : Turn sensor on when in hover mode.
+        yo : The yo that the sampling should start.
+        yo_interval : Allows sampling on multiple yos.  For constant sampling, use 1. For a single yo, use 0.
+        start_time : Turn on the sensor at this time (disabled = 0).
+        end_time : Turn off the sensor at this time (leave turned on = 0).
+        telemetry_yo : Select yo that is used to transmit collected data to shore (all yos = 0).
+
+mission.modifySurface :
+ Describes how often / when the glider should surface and (possibly) send data to shore. Access Level: 20
+  Parameters
+        segment_description_id : The segment description ID that uses this behaviour (0 = test dive segment).  Range: 0 - 255
+        on_waypoint_reached : Whether or not to surface when way point reached.
+        n_yos_to_surface : Number of yos to execute before surfacing.  Range: 1 - 16
+        time_interval : Time interval for dive (0 = disable)  Units: seconds. Range: 0 - 7200
+        timeout : Timeout period to reach surface before abort.  Units: second.  Range: 600 - 7200
+        timestamp : Timestamp at which to surface (0 = disable). Expressed as ms since the epoch.  Units: milliseconds.
+        n_surfacing_data_transmit : Number of surfacings between data transmission (telemetery sent every one)  Range: 1 - 100
+        time_interval_data_transmit : Time interval between data transmission (0 = disable);  Units: seconds.  Range:
+        timestamp_data_transmit : Time at which data is to be transmitted. (0 = disable). Expressed as ms since the epoch.  Units: milliseconds.
+
+mission.modifyWaypointDrift :
+ Parameters for drifting on the surface for a given period of time. This can be used for collecting data (e.g telemetry data for surface currents) or as part of a station keeping operation. Station keeping occurs when a non-zero segment_description_id is configured.  The  distance to the waypoint is checked after every telemetry measurement and the glider will travel back towards the waypoint when outside of the waypoint  attainment radius.   If hovering is also enabled for the waypoint, it will occur before every drift telemetry interval is started. Drifting only occurs at a waypoint. Access Level: 20
+  Parameters
+        waypoint_id : Associated waypoint ID.  Range: 1 - 255
+        segment_description_id : Segment description to use for station keeping (0 = no station keeping).  Range: 0 - 255
+        telemetry_interval : Interval at which telemetry messages are to be generated.  Units: seconds. Range: 60 - 72000
+        duration : The length of time that the behaviour should run.  Units: seconds.
+
+mission.modifyWaypointHover :
+ Hovering involves descending to a defined depth and remaining there for a given period of time.   This can be used as a means for collecting data at a certain depth or for keeping off the surface while station keeping.  The hovering operation occurs before drifting when station keeping is enabled. Hovering can be disabled by setting the duration to 0 seconds. Hovering only occurs at a waypoint. Access Level: 20
+  Parameters
+        waypoint_id : Associated waypoint ID.  Range: 1 - 255
+        min_depth : The minimum depth allowed before moving the VBE.  Units: meters.  Range: 1 - 200
+        max_depth : The maximum depth allowed before moving the VBE.  Units: meters. Range: 1 - 200
+        timeout : Time period to reach the hover depth before aborting.  Units: seconds. Range: 300 - 10000
+        quiet_time : Time period after reaching hover depth that quiet mode should be initiated.  Units: seconds.  Range: 0 - 1200
+        duration : The length of time to hover.  Units: s.
+
+mission.removeRoute :
+ Remove a route. Access Level: 20
+  Parameters
+        id : Route ID to remove.  Range: 1 - 16
+
+mission.removeSegmentDescription :
+ Remove a segment description.  A segment description can not be removed if it's used within a route. Access Level: 20
+  Parameters
+        id : ID to remove.  Range: 1 - 255
+
+mission.removeWaypoint :
+ Remove a waypoint. A waypoint can not be removed if it's used within a route. Access Level: 20
+  Parameters
+        id : ID to remove.  Range: 1 - 255
+
+mission.setAbort :
+ Abort criteria.  If any one of the abort conditions is met, the glider enters ABORT mode, immediately surfacing and sending telemetry messages. The mission is halted until the abort condition is cleared (if possible). Access Level: 20
+  Parameters
+        no_comms_timeout : Length of time for no communications with shore.  Units: days. Range: 1 - 7
+        deployment_timeout : Maximum length of time that the deployment should take.  Units: days. Range: 0.1 - 200
+        telemetry_interval : Interval between telemetry messages when in abort mode.  Units: seconds. Range 120 - 7200
+        max_depth : Maximum depth that is allowed.  Units: meters. Range: 100 - 220
+        min_battery_percent : Minimum percent battery to continue mission.  Units: %. Range: 0 - 20
+        min_battery_voltage : Minimum battery voltage to continue mission.  Units: volts. Range:  20 - 45
+        min_disk_space_available : Minimum percentage of data disk space available.  Units: %.  Range:  1 - 20
+        min_disk_space : Minimum absolute amount of disk space available.  Units: MB.  Range: 10 - 20000
+        internal_pressure : Maximum internal hull pressure.  Units: kPa. Range: 50 - 120
+        leak_detect_period : Maximum length of time that a leak detect is triggered.  Units: seconds.  Range: 0.1 - 10
+        strobe_on_interval : Period of time that strobe lights should be on and blinking. Note that altering the strobe configuration is currently not supported.  Units: seconds. Range: 1 to 1000
+        strobe_off_interval : Period of time that strobe lights should be powered off.  Units: seconds. Range: 0 to 1000
+        strobe_cycle : Blink rate of strobe lights.  Units: Hertz.  Range 0.1 to 5
+
+mission.setCommsTimeout :
+ Parameters controlling communications timeouts. Access Level: 20
+  Parameters
+        gps_timeout : Maximum time to wait for GPS fix to occur.  Units: seconds. Range: 30 - 600.
+        shore_comms_timeout : Maximum time to wait for shore communications to complete.  Units: seconds. Range: 60 - 600.
+        response_delay : Time to wait for environment data response from shore after sending a dive summary.  Units: seconds. Range: 0 - 300.
+
+mission.setPamWhisprConfig :
+ Configuration for the passive acoustic monitor. Access Level: 30
+  Parameters
+        id : The sampling description ID that this range belongs to (0 = apply immediately).
+        sample_size : Sample size.  Units: bytes. Range: [ 2 3 ]
+        decimation_factor : Decimation factor used by oversampling analog to digital converter..  Allowed: [ 4 8 16 32 ]
+        preamp_gain : Pre-amp gain.  Units: dB. Allowed: [ 0 6 12 18 ]
+        spectrum_bins : Number of bins in the power spectrum.  Allowed: [ 128 256 512 1024 2048 ]
+        spectrum_duration : Length of time that the power spectrum is collected.  Units: seconds. Range: [ 30 1200 ]
+        sample_rate : Analog to digital converter sampling rate.  Units: Hz.  Range: [ 1000 200000 ]
+
+mission.setRecovery :
+ Recovery mode puts the vehicle on the surface, turns on the wifi and the  strobe at configured intervals and sends regular telemetry messages. Access Level: 20
+  Parameters
+        strobe_on_interval : Period of time that strobe lights should be on and blinking. Note that altering the strobe configuration is currently not supported.  Units: seconds. Range: 1 to 1000
+        strobe_off_interval : Period of time that strobe lights should be powered off.  Units: seconds. Range: 0 to 1000
+        strobe_cycle : Blink rate of strobe lights.  Units: Hertz.  Range 0.1 to 5
+        wifi_on : Period of time that WiFi should be powered on.  Units: seconds. Range 60 to 3600.
+        wifi_off : Period of time that WiFi should be powered off.  Units: seconds. Range 0 to 3600.
+        telemetry_interval : Interval between telemetry messages.  Units: seconds. Range 60 to 36000.
+
+mission.setRoute :
+ A route is a collection of waypoints with segment descriptions describing how to reach the waypoints in between. When travelling in the forward direction, the segment description at index p is used to travel to the waypoint at index p. In the reverse direction the segment description at index p is used to reach waypoint p-1. This is the top level desciption of a glider mission. Access Level: 20
+  Parameters
+        id : Range: 1 - 16
+
+mission.setRouteUpdate :
+ Update route parameters for a running mission. To switch to a different route, the RouteExecution message is used (not yet implemented). Access Level: 20
+  Parameters
+        direction : Traverse the route in the forward or reverse direction. Forward = 1 Reverse = 2  Allowed: [1 2]
+        goto_waypoint_route_index : Goto the waypoint at the given index in the route table
+        completion : When the waypoint has been reached, do one of the following. 1: Enter idle drift loop 2: Loop route 3: Reverse route 4: Enter recovery mode 5: Go to assembly point  Allowed: [1 2 3 4 5]
+        assembly_waypoint_id : Range: 0 - 254
+        assembly_segment_description_id : Segment description to use to travel to the assembly way point.  Range: 1 - 255
+
+mission.setSegmentDescription :
+ Describes how the glider travels between two waypoints. Note that an ID of 0 is invalid (used internally in the firmware  to prevent diving). Access Level: 20
+  Parameters
+        id : Unique ID used to identify this segment description (0 = test dive segment).  Range: 0 - 255
+        sampling_description_id : The sensor sampling description ID to be used for this segment.
+
+mission.setWaypoint :
+ Defines a waypoint for the mission. Access Level: 20
+  Parameters
+        id : Unique waypoint identifier.  Range: 1 - 255
+        latitude : Latitude position.  Units: degrees. Range: -90 - 90
+        longitude : Longitude position  Units: degrees. Range: -180 - 180
+        attainment_radius : Radius around waypoint that determines if waypoint was reached.  Units: meters. Range 50 - 5000
+        must_attain : Setting the field forces the glider to surface within the attainment radius.  Without this setting, the glider may go through the waypoint  without surfacing (bypassing it), considering it completed without turning back.
+
+mission.startRoute :
+ Start travelling along a defined route. Access Level: 20
+  Parameters
+        route_id : The route to be traversed.  Range: 1 - 16
+        segment_description_id : The segment description to use to reach the start_at waypoint.  Range: 1 - 255
+        direction : Traverse the route in the forward or reverse direction. Forward = 1 Reverse = 2  Allowed: [1 2]
+        start_at_waypoint_id : Enter the route at this waypoint.
+        completion : When the waypoint has been reached, do one of the following. 1: Enter idle drift loop 2: Loop route 3: Reverse route 4: Enter recovery mode 5: Go to assembly point  Allowed: [1 2 3 4 5]
+        data_prefix : Data / log files will be prefixed with this string for easy identification.
+        time : Start date for the route (expressed as seconds since the epoch).  0 = immediately.  Units: seconds.     Range: 0 - 8000000000
+        assembly_waypoint_id : Waypoint to use as an assembly point.  '0' means 'none'.  Range: 0 - 254
+        assembly_segment_description_id : Segment description to use to travel to the assembly way point.  Range: 1 - 255
+
+mission.stopDeployment :
+ Stop a currently running deployment. This service is used by code generation tools in the firmware. Access Level: 20
+  Parameters
+        time : Stop date for the deployment (expressed as ms since the epoch).  0 = immediately.
+
+mission.switchOperation :
+ Switch between operations in a mission. Access Level: 20
+  Parameters
+        operation : Allowed: [START ROUTE RECOVERY HALT ASSEMBLE ABORT]
+
+mpcu.abort :
+ Enter abort mode
+  No parameters
+
+mpcu.battery :
+ Reads the battery status
+  No parameters
+
+mpcu.calibratePitch :
+ Calibrate Pitch
+  No parameters
+
+mpcu.calibrateRoll :
+ Calibrate roll motor
+  No parameters
+
+mpcu.calibrateVBE :
+ Calibrate the VBE
+  No parameters
+
+mpcu.clearAbort :
+ Clears the abort
+  No parameters
+
+mpcu.clearLog :
+ Clear internal log
+  Parameters
+        priority : Log priority level
+
+mpcu.clearVMPLEDStatus :
+ Clears VMP LED status messages
+  No parameters
+
+mpcu.faults :
+ Retrieve error information from MPCU
+  No parameters
+
+mpcu.getAbortLimits :
+ Retrieve abort limits for hardware and internal pressure
+  No parameters
+
+mpcu.getAllMotors :
+ Retrieve all motor information
+  No parameters
+
+mpcu.getHealth :
+ Retrieve health data
+  Parameters
+        resetMinMax : Resets the minimum / maximum values found by the monitor
+
+mpcu.getLEDStatus :
+ Retrieve LED status information
+  No parameters
+
+mpcu.getLog :
+ Retrieve internal log
+  Parameters
+        log : Log type 1:user, 2:information, 3:warning,  4:error
+
+mpcu.getMotorPower :
+ Retrieve powered state for the motors
+  No parameters
+
+mpcu.getPitch :
+ Retrieve pitch motor information
+  No parameters
+
+mpcu.getRoll :
+ Retrieve roll motor information
+  No parameters
+
+mpcu.getStrobe :
+ Retrieves the strobe light flash cycle parameters
+  No parameters
+
+mpcu.getVBE :
+ Retrieve VBE information
+  No parameters
+
+mpcu.isAbort :
+ Gets abort status and reason
+  No parameters
+
+mpcu.moveAllMotors :
+ Move all motors to specified positions
+  Parameters
+        volume : Displacement volume (ml)
+        vbespeed : VBE speed (ml/s) (Not Yet Implemented)
+        percent : Percent travel range
+        pitchspeed : Pitch speed (percent/s) (Not Yet Implemented)
+        angle : Angle (degrees)
+        rollspeed : Roll speed (degrees/s) (Not Yet Implemented)
+
+mpcu.movePitch :
+ Move the pitch motor to a specific percentage of travel
+  Parameters
+        percent : Percent travel range
+        speed : Speed (percent/s)
+
+mpcu.moveRoll :
+ Move the roll motor to a specific angle
+  Parameters
+        angle : Angle (degrees)
+        speed : Speed (degrees/s) (Not Yet Implemented)
+
+mpcu.moveVBE :
+ Move the VBE to a specific volume
+  Parameters
+        volume : Displacement volume (ml)
+        speed : Speed (ml/s) (Not Yet Implemented)
+
+mpcu.readProduction :
+ Read production information from the MPCU
+  No parameters
+
+mpcu.setMotorPower :
+ Turn motor power on or off
+  Parameters
+        vbe : Power for the variable buoyancy engine motor
+        pitch : Power for the pitch motor
+        roll : Power for the roll motor
+
+mpcu.setStatusLEDPower :
+ Turns on / off the status LED
+  Parameters
+        power : Power on/off
+
+mpcu.surface :
+ Set motors to surfacing positions
+  No parameters
+
+mpcu.updateInfo :
+ Retrieve information on the status of the MPCU firmware update
+  No parameters
+
+mpcu.version :
+ MPCU firmware version
+  No parameters
+
+platform.clearMessageLog :
+ Clear system message log
+  No parameters
+
+platform.eraseData :
+ Erase data files from the gliders internal SD card
+  Parameters
+        match : Remove files containing this string
+
+platform.eraseLogs :
+ Erases log files from the gliders internal SD card
+  Parameters
+        match : Remove files containing this string
+
+platform.eraseMission :
+ Erases mission configuration data from the gliders internal SD card
+  No parameters
+
+platform.getLastTest :
+ Retrieve information about the last time the specified subsystem was tested
+  Parameters
+        system : Allowed: [AHRS GPS NAV CTD PAM MPCU VBE PITCH ROLL COMMS ALL ALL_NOVBE ALL_NOCOMMS ALL_SENS]
+
+platform.info :
+ Platform firmware and hardware information
+  No parameters
+
+platform.pbfLog :
+ PicBuffer logging level
+  Parameters
+        level : Logging level (0 = none)
+
+platform.pbfVersion :
+ PicBuffer firmware version information
+  No parameters
+
+platform.ping :
+ Check if a platform is responding
+  Parameters
+        platform : Target platform. Allowed: [SURFACE, UNDERWATER, IMX8, STM32, LOCAL, REMOTE]
+
+platform.plog :
+ Print system message log
+  Parameters
+        find : Print lines containing this string
+        tail : Print the tail number of lines of the log
+
+platform.powerCycle :
+ Power cycle the glider
+  No parameters
+
+platform.printMessageLog :
+ Print system message log
+  Parameters
+        find : Print lines containing this string (use '#' for a space)
+        tail : Print the tail number of lines of the log
+
+platform.reboot :
+ Reboot processor
+  Parameters
+        platform : Target platform. Allowed: [SURFACE, UNDERWATER, IMX8, STM32, LOCAL, REMOTE]
+
+platform.saveMessageLog :
+ Save system message log to a new file so that it is not overwritten
+  Parameters
+        name : Log file name
+
+platform.sleep :
+ Sleeps for a period of time (ms)
+  Parameters
+        time : Sleep time (ms)
+
+platform.test :
+ Start collecting data for the given sensor
+  Parameters
+        system : Allowed: [AHRS GPS NAV CTD PAM PRESS MPCU VBE PITCH ROLL COMMS ALL ALL_NOVBE ALL_NOCOMMS ALL_SENS]
+        length : Maximum length of report
+        forceVBE : Test VBE regardless of internal pressure
+
+platform.timestamp :
+ Prints the current real-time clock time
+  No parameters
+
+platform.upgradeStatus :
+ Upgrade status information
+  No parameters
+
+platform.verifyProduction :
+ Verify production information in both processors
+  Parameters
+        copy : Copy information from surface to underwater processor if different
+
+platform.version :
+ Platform firmware and hardware information
+  No parameters
+
+platform.wifiStations :
+ Retrieve information about stations connected to the access point
+  No parameters
+
+quit :
+ Exit program
+  No parameters
+
+sensor.ahrsCalibrate :
+ Starts AHRS calibration mode
+  Parameters
+        rate : Data rate (in Hertz)
+        max : Maximum number of data points
+        sep : Minimum data point separation
+        err : Maximum 'good calibration' error
+        update : Update the AHRS with the new calibration when complete
+
+sensor.ahrsClearCalibration :
+ Clears the AHRS calibration
+  No parameters
+
+sensor.ahrsGetCalibration :
+ Gets the AHRS calibration
+  No parameters
+
+sensor.continuePAM :
+ Continues internal data collection internally on PAM
+  No parameters
+
+sensor.getConfig :
+ Print sensor configuration
+  Parameters
+        sensor : Allowed: [AHRS GPS NAV PLAT CTD PAM PRESS]
+
+sensor.getDevice :
+ Print device information
+  Parameters
+        sensor : Sensor. Allowed: [AHRS GPS NAV PLAT CTD PAM PRESS]
+
+sensor.pausePAM :
+ Pauses internal data collection on the PAM
+  No parameters
+
+sensor.power :
+ Turn on / off power for the given sensor
+  Parameters
+        sensor : Allowed: [AHRS GPS NAV PLAT CTD PAM PRESS ALL]
+        power : Power on (1) or off (0)
+
+sensor.setConfigNav :
+ Set altimeter data collection parameters
+  Parameters
+        rate : Sample rate (Hz)
+        Number of samples : Number of samples
+        Sample interval : Time between samples (s) (0 for continuous sampling)
+
+sensor.setConfigPAM :
+ Configure the passive acoustic monitor
+  Parameters
+        dataSize : Data size (2 or 3 bytes)
+        rate : Sensor sampling rate (Hz)
+        decim : Decimation Factor
+        gain : Gain (dB)
+        psTime : Power spectrum duration (seconds)
+        psSize : Power spectrum size (bins = size/2)
+
+sensor.setDataRate :
+ Configure the sampling rate for the given sensor (Hz)
+  Parameters
+        sensor : Allowed: [AHRS GPS NAV PLAT CTD PAM PRESS]
+        rate : Sensor sampling rate (Hz)
+
+sensor.setDefaultConfig :
+ Set the default configuration for the sensor
+  Parameters
+        sensor : Allowed: [AHRS GPS NAV PLAT CTD PAM PRESS ALL]
+
+sensor.setLogLevel :
+ Set the logging level to use for a sensor
+  Parameters
+        sensor : Allowed: [AHRS GPS NAV PLAT CTD PAM PRESS ALL]
+        level : Level to use for log messages.  Range: 0 - 100.
+
+sensor.start :
+ Start collecting data for the given sensor
+  Parameters
+        sensor : Allowed: [AHRS GPS NAV PLAT CTD PAM PRESS ALL]
+
+sensor.status :
+ Get the run time status for the sensor
+  Parameters
+        sensor : Allowed: [AHRS GPS NAV PLAT CTD PAM PRESS ALL]
+        clear : Clear error
+
+sensor.stop :
+ Stop collecting data for the given sensor
+  Parameters
+        sensor : Allowed: [AHRS GPS NAV PLAT CTD PAM PRESS ALL]
+
+sensor.syncClock :
+ Synchronizes the on board clock with the GPS time
+  No parameters
+
+sensor.test :
+ Check and see if the sensor is operational and can collect data
+  Parameters
+        sensor : Allowed: [AHRS GPS NAV PLAT CTD PAM PRESS ALL]
+        count : Number of data blocks to read
+
+super.chatResponse :
+ Displays the last chat message received from shore
+  No parameters
+
+super.checkMessage :
+ Check for and process any incoming messages
+  Parameters
+        timeout : Timeout (seconds)
+
+super.clearAlert :
+ Clear any outstanding errors
+  No parameters
+
+super.getAtmospheric :
+ Gets the atmospheric pressure offset and current depth reading (pressure sensor must be running)
+  No parameters
+
+super.getDeadReckoning :
+ Retrieves dead reckoning status and data
+  No parameters
+
+super.getIdleCharacterization :
+ Retrieve parameters controlling auto-characterization behaviour while idle.
+  No parameters
+
+super.getMission :
+ Outputs the current mission. Access Level: 20
+  No parameters
+
+super.getMissionStatus :
+ Retrieves dead reckoning status and data
+  No parameters
+
+super.getStatus :
+ Retrieves supervisor operating status
+  No parameters
+
+super.getTestDive :
+ Get test dive parameters
+  No parameters
+
+super.interrupt :
+ Interrupt any currently running operation
+  No parameters
+
+super.restoreMission :
+ Restore mission configuration
+  Parameters
+        prefix : prefix to use for mission configuration file
+
+super.saveMission :
+ Save mission configuration
+  Parameters
+        prefix : prefix to use for mission configuration file
+
+super.sendChat :
+ Send a chat message to shore
+  Parameters
+        msg : Chat message to send
+        timeout : Timeout (seconds)
+
+super.sendEcho :
+ Send an echo communications check message
+  Parameters
+        mesg : Message to send
+        timeout : Timeout (seconds)
+
+super.sendManifest :
+ Send a manifest message
+  Parameters
+        timeout : Timeout (seconds)
+
+super.sendRemoteStart :
+ Send a request to shore to start the mission
+  Parameters
+        timeout : Timeout (seconds)
+
+super.sendTelemetry :
+ Send a telemetry message
+  Parameters
+        timeout : Timeout (seconds)
+
+super.setAtmospheric :
+ Sets atmospheric pressure offset (0 = use current pressure reading.  Pressure sensor must be running.)
+  Parameters
+        level : Pressure (dbar)
+
+super.setLogLevel :
+ Set the internal debug log level for supervisor
+  Parameters
+        level : Log level
+
+super.setTestDive :
+ Set parameters for a test dive
+  Parameters
+        heading : Heading (degrees)
+        descend : Descent depth (m)
+        ascend : Ascent depth (before transition to surface) (m)
+        altitude : Descent minimum height above bottom (m)
+        startFlight : Depth at which flight control starts (m)
+        startOffsetml : Offset from neutral buoyancy to use when starting a dive (ml)
+        glideOffsetml : Offset from neutral buoyancy to use during flight (ml)
+        rate : Vertical rate (m/s)
+        ratectrl : Vertical rate control enable (true or false)
+        startPitch : Pitch angle to use when starting a dive (degrees)
+        glidePitch : Pitch (degrees: down is positive)
+        pitchctrl : Pitch rate control enable (true or false)
+        yos : Number of yos before surfacing
+        quiet : Time that motors should be disabled after descend depth stabilizes (s)
+        gps : GPS timeout (0 disables GPS) (seconds)
+        comms : Shore communications timeout (0 disables shore communications) (seconds)
+        runtime : Test run time after which an abort is generated (seconds)
+        maxDepth : Maximum allowed descent depth (m)
+
+super.startTestDive :
+ Start the configured test dive
+  Parameters
+        start : Delay time before starting (seconds)
+        prefix : prefix to use for supervisor data file
+
+super.status :
+ Retrieves supervisor operating status
+  No parameters
+
+super.stop :
+ Gracefully stop any currently running operation
+  No parameters
+
+super.switchOperation :
+ Switch between operations modes when idle
+  Parameters
+        operation : Allowed: [RECOVERY HALT CHARACTERIZE]
