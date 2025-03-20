@@ -60,11 +60,31 @@ NOAA’s Southwest Fisheries Science Center began deploying Teledyne Webb Resear
 
 # [Oceanscout](https://www.hefring.com/oceanscout){target="_blank"} ![](images/HefringGlider.jpg){width="149"}
 
-The ESD has started using the Hefring Oceanscout gliders in 2025. They are a smaller glider than the Slocum G3s.These currently have a CT and a PAM sensor.
+The ESD started using the Hefring OceanScout gliders in 2025. They are a smaller glider than the Slocum G3s.These currently have a CTD and a WISPR PAM sensor.
 
 ## Information
 
 [Hefring cloud](https://noaafisheries.hefring.cloud/)- The NOAA cloud interface for controlling Oceanscouts.
+
+### User Manual
+
+[Getting Started](documents/Getting started.pdf)
+
+[Cloud](documents/Cloud.pdf)
+
+[Hardware](documents/Hardware.pdf)
+
+[Firmware](documents/Firmware.pdf)
+
+[Safety Guidelines](documents/Safety guidelines.pdf)
+
+[Frequently Asked Questions](documents/Frequently Asked Questions.pdf)
+
+[Troubleshooting](documents/Troubleshooting.pdf)
+
+[How to view OceanScout data](https://docs.google.com/document/d/1zVzIeTeJ6fW4Ow5faFSh8xxW-BWR4hRm/edit)
+
+[Upgrade the Altimeter](https://docs.google.com/document/d/12vyN1u6O4R_JSQA0PjtyxB7tk5wXG2Ok/edit)
 
 
 ## Useful websites
