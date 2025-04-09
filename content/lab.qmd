@@ -99,7 +99,7 @@ How to set up the Nortek compact echosounder
 [WISPR 3 Github](https://github.com/embeddedocean/wispr3){target="_blank"}
 
 ### **DMON**
-[DMON instructions](https://drive.google.com/file/d/1A5a8Sbl3xFKbk1XPiJIrdnkQbG_MM38m/view?usp=sharing){target="_blank"}
+[DMON instructions](https://drive.google.com/file/d/1B0qPXvF9vondThmoCeFgc_b4TiKmtLQX/view?usp=drive_link){target="_blank"}
 
 [DMON software and settings](https://drive.google.com/drive/folders/1iRRukFoOWjqd1ezeZGp7gapMBgFmJK73?usp=drive_link){target="_blank"}
 
