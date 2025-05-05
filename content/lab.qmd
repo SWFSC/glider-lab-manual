@@ -2,6 +2,7 @@
 title: Glider Lab
 ---
 
+This page contains various procedures and resources for glider lab members, including ESD standard operating procedures, manuals, training documents, and contract info. For piloting tools, see [Glider Pilot Tools](pilot-tools.qmd). 
 
 [Gliders and Mooring Google Calendar](https://calendar.google.com/calendar/embed?src=noaa.gov_v9l4l68ihu9n2svmno3tk1qvec%40group.calendar.google.com&ctz=America%2FLos_Angeles){target="_blank"}
 
@@ -21,13 +22,11 @@ How to talk to the camera (shadowgraph or glidercam)
 
 How to set up the Nortek compact echosounder
 
-[How ESD pilots a glider](https://docs.google.com/document/d/1nPnl30IcK-sAbd-i1x3YUq--M43Z5XNxo1Eev1fYsJM/edit?usp=sharing){target="_blank"}
+[How ESD pilots a glider](https://docs.google.com/document/d/1nPnl30IcK-sAbd-i1x3YUq--M43Z5XNxo1Eev1fYsJM/edit?usp=sharing){target="_blank"} (also  see [How Jen deploys a glider](https://docs.google.com/document/d/1nHKAF2F_UOV8gzQ825N7KCo8QvZ-3XBhDxQDVqCU6Po/edit?usp=sharing){target="_blank"})
 
 [How to use the high speed data cable](https://docs.google.com/document/d/10WD0RvmtD3B5yXnNhMeQiUxuK524cDntec29c57cEyI/edit?usp=sharing){target="_blank"}
 
 [Steps for deploying a glider](https://docs.google.com/document/d/1bxen4GvXxmZZoXP24-Mn_2fjzKx7fJx0l_CkeGul-oI/edit){target="_blank"}
-
-[How Jen deploys a glider](https://docs.google.com/document/d/1nHKAF2F_UOV8gzQ825N7KCo8QvZ-3XBhDxQDVqCU6Po/edit?usp=sharing){target="_blank"}
 
 [Tony's SFMC Data Visualizations](https://docs.google.com/document/d/1GgaZyglCF5wDOZruK5Ewc5HsKpwMg3jxkPrCb9s_g4k/edit?usp=sharing){target="_blank"}
 
@@ -143,5 +142,4 @@ Where we buy specific parts
 
 ## Glider and Mooring Database
 
-You can find the Glider and Mooring Database on the network drive under AMLR_Datasets. The database is a SQL server database with an Access front end. This is also possible via VPN. It is used to track glider builds, days and inflections sensors have been in use, calibration sheets, etc. We are working on scripts to get some standard data out as well as populate yml files for archiving deployment data. 
-
+You can find the Glider and Mooring Database on the network drive under AMLR_Datasets. The database is a SQL server database with an Access front end, accessible over the SWFSC network (including VPN). It is used to track several facets of gliders, including glider builds, deployments, and the number of deployment days and inflections for various sensors. We are working on scripts to get some standard data out as well as populate yml files for archiving deployment data. For more information see [Data Management](data-management.qmd). 

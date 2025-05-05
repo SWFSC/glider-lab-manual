@@ -6,34 +6,32 @@ page-layout: full
 [![](https://img.shields.io/github/last-commit/SWFSC/glider-lab-manual)](https://github.com/SWFSC/glider-lab-manual/commits/main)
 ![](content/images/ESD_meatball.png){style="float:right;" fig-alt="Ecosystem Science Division logo. Artwork by Jen Walsh." width="401"}
 
-The Ecosystem Science Division (ESD) at the [Southwest Fisheries Science Center](https://www.fisheries.noaa.gov/about/southwest-fisheries-science-center){target="_blank"} does some pretty cool science using gliders, in both the California Current Ecosystem and the Antarctic Peninsula regions. This website is an in-development manual for all ESD glider activities. Please contact a member of the glider team with any questions.
+The Ecosystem Science Division (ESD) at the [Southwest Fisheries Science Center](https://www.fisheries.noaa.gov/about/southwest-fisheries-science-center){target="_blank"} deployes gliders in both the California Current Ecosystem and the Antarctic Peninsula regions. The ESD's glider fleet is managed by the Scientific Operations and Support (SOS) Program, and supports several research objectives within the ESD. We provide expertise across multiple autonomous platforms to deliver robust data for ecosystem monitoring and fisheries management. 
 
-The ESD's glider fleet is managed by the Scientific Operations and Support (SOS) Program, and supports several research objectives within the ESD. We provide expertise across multiple autonomous platforms to deliver robust data for ecosystem monitoring and fisheries management.
-
-For information about past deployments by the ESD glider lab, see [Past Deployments](content/past-deployments.qmd)
+This website is an in-development manual for all ESD glider activities. Please contact a member of the glider team with any questions. For information about active or past ESD glider deployments, see [Past Deployments](content/past-deployments.qmd)
 
 ## Team Members
 
 | Name | Job Title | Glider Team Role |
 |------|-----------|------------------|
-| [Christian Reiss](mailto:christian.reiss@noaa.gov) | Program Lead, Offshore Wind  | Principle Investigator |
+<!-- | [Christian Reiss](mailto:christian.reiss@noaa.gov) | Program Lead, Offshore Wind  | Principle Investigator | -->
 | [Anthony Cossio](mailto:anthony.cossio@noaa.gov)   | Operations Research Analyst  | Lab Manager, Pilot, Tech |
 | [Jen Walsh](mailto:jen.walsh@noaa.gov)             | Fisheries Research Biologist | Pilot, Tech |
 | [Tegan Murray](mailto:tegan.murray@noaa.gov)          | NOAA Corps                   | Pilot, Tech |
-| [Caleb Flaim](mailto:caleb.flaim@noaa.gov)         | Electronics Technician       | Pilot, Tech |
+<!-- | [Caleb Flaim](mailto:caleb.flaim@noaa.gov)         | Electronics Technician       | Pilot, Tech |
 | [Jacob Partida](mailto:jacob.partida@noaa.gov)     | Physical Science Technician  | Pilot, Tech |
-| [Hailey Schmidt](mailto:hailey.schmidt@noaa.gov)   | Electronics Technician              | Pilot, Tech |
+| [Hailey Schmidt](mailto:hailey.schmidt@noaa.gov)   | Electronics Technician              | Pilot, Tech | -->
 | [Sam Woodman](mailto:sam.woodman@noaa.gov)         | Biologist                    | Data Manager |
-| [Heidi Taylor](mailto:heidi.taylor@noaa.gov)       | Program Lead, SOS; Deputy Director, ESD | |
-| [George Watters](mailto:george.watters@noaa.gov)   | Director, ESD | |
+| [Heidi Taylor](mailto:heidi.taylor@noaa.gov)       | Program Lead, SOS; Acting Director, ESD | |
+<!-- | [George Watters](mailto:george.watters@noaa.gov)   | Director, ESD | | -->
 
 ## Project Management
-
-For most current Fleet Status information, see [this Sheet](https://docs.google.com/spreadsheets/d/1tB3QNKYx8qOYYS9QZotekBAx0y-_n2d-EZPjFFdYNuU/edit?usp=sharing){target="_blank"}
 
 The ESD glider team is using GitHub Issues and Projects for project management. There efforts are heavily inspired and influenced by the Openscapes [GitHub for project management](https://openscapes.github.io/series/core-lessons/github/github-issues.html){target="_blank"} approach.
 
 The [ESD glider team project](https://github.com/orgs/SWFSC/projects/5/views/1){target="_blank"} pulls from issues from several repositories, but in particular [this repo](https://github.com/SWFSC/glider-lab){target="_blank"}. For more details see the [best practices](content/best-practices.qmd) page.
+
+For most current Fleet Status information, see [this Sheet](https://docs.google.com/spreadsheets/d/1tB3QNKYx8qOYYS9QZotekBAx0y-_n2d-EZPjFFdYNuU/edit?usp=sharing){target="_blank"} (NOAA internal only)
 
 ### GitHub Repositories
 
@@ -41,10 +39,10 @@ GitHub repos developed by the ESD glider team. Issues for these repos are tracke
 
 | repo link | description |
 |-----------|-------------|
-| [glider-lab-manual](https://github.com/SWFSC/glider-lab-manual){target="_blank"}                 | ESD Glider lab website; docs used to generate this site
-| [glider-lab](https://github.com/SWFSC/glider-lab){target="_blank"}                             | Repo For tracking ESD glider lab issues/tasks                                                   |
-| [standard-glider-files](https://github.com/SWFSC/standard-glider-files){target="_blank"}       | ESD Glider cache files, as well as standard files that are put on all gliders before deployment |
-| [glider-utils](https://github.com/SWFSC/glider-utils){target="_blank"}                           | Utility functions for processing ESD glider data                                                |
-| [echoview_glider_template](https://github.com/SWFSC/echoview_glider_template){target="_blank"} | Echoview glider templates that are used for acoustic data analysis                              |
-| [glider_processing_code](https://github.com/SWFSC/glider_processing_code){target="_blank"}     | Compilation of code that is used to work with glider acoustic data                              |
-| [slocumRtDataVisTool](https://github.com/flaimC/slocumRtDataVisTool){target="_blank"}                 | Creates plots and generates useful statistics from slocum binary files
+| [glider-lab-manual](https://github.com/SWFSC/glider-lab-manual){target="_blank"} | ESD Glider lab website; docs used to generate this site
+| [glider-lab](https://github.com/SWFSC/glider-lab){target="_blank"} | All things glider lab: issues/tasks, calibration docs, config files, deployment reports, ...
+| [standard-glider-files](https://github.com/SWFSC/standard-glider-files){target="_blank"} | ESD glider cache files, as well as standard files that are put on all gliders before deployment |
+| [glider-utils](https://github.com/SWFSC/glider-utils){target="_blank"} | Utility functions for processing ESD glider data |
+| [echoview_glider_template](https://github.com/SWFSC/echoview_glider_template){target="_blank"} | Echoview glider templates that are used for acoustic data analysis
+| [glider_processing_code](https://github.com/SWFSC/glider_processing_code){target="_blank"} | Compilation of code that is used to work with glider acoustic data
+| [slocumRtDataVisTool](https://github.com/flaimC/slocumRtDataVisTool){target="_blank"} | Creates plots and generates useful statistics from slocum binary files

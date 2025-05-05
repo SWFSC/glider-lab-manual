@@ -1,0 +1,61 @@
+---
+title: Deployments
+---
+
+## Projects
+
+The ESD deploys gliders under several different projects:
+
+* **FREEBYRD**: Operation FREEBYRD is a long-term program to replace ship-based surveys with autonomous vehicles to estimate Antarctic krill biomass in support of the Convention for the Conservation of Antarctic Marine Living Resources (CCAMLR).
+
+* **REFOCUS**: Deployments in support of the REFOCUS project... <TODO>
+
+* **ECOSWIM**: Operation ECOSWIM is for glider surveys in the California CCE off of Humboldt and Morro Bay, California, in the Southern California waters of the Pacific Ocean. These surveys may collect krill biomass estimates, among other scientific goals.
+
+* **SANDIEGO**: Test deployments off of San Diego. These deployments may be, for instance, to test a glider before it goes to the Antarctic, or to test new sensors and/or sensor configurations (e.g., for the Enhanced Data Acquisition Passive Acoustics Strategic Initiative or the Uncrewed Systems Strategic Initiative). 
+
+## Deployments
+
+The [below spreadsheet](https://docs.google.com/spreadsheets/d/1tSIi44OTEUQXPJwwiy1emhdIyRs9Vt8iT5IlJBMrPLA/edit?usp=sharing) lists all ESD (and formerly AERD) glider deployments, along with basic information about the deployment. Note, you must be logged in with your noaa.gov to see this sheet.
+
+<iframe src="https://docs.google.com/spreadsheets/d/e/2PACX-1vR1QEPFK9em24JT6-9p2MeW6Va6srqITFqsYpiF7x-QBAKdwYw4zeuJFOxjHr-4eeDRGzO-8Z0uE1z4/pubhtml?widget=true&amp;headers=false"style="width:700px; height:500px; border: 2px solid black;"></iframe>
+
+(In progress: rather than displaying an embedded sheet, use R code to make a pretty table)
+
+## Deployment Reports
+
+Internal ESD glider deployment reports. Developing public-facing reports are in progress.
+
+### 2025
+
+#### San Diego
+
+| Deployment | Sensors |
+|------------------------------|------------------------------|
+| [unit_1024-20250224](https://docs.google.com/document/d/1LQ9ch1gEuHtHEUbC7dymbtm9UlZu6IaePKbmLpKTlyU/edit?usp=sharing){target="_blank"} | CTD, Ecopuck, BSIPAR, WISPR
+
+### 2024
+
+#### San Diego
+
+| Deployment | Sensors |
+|------------------------------|------------------------------|
+| [john-20240312](https://docs.google.com/document/d/1szQ7tV5stz8fyuNzF05jM1zxUQmkAwQxzZcmHGlDgwg/edit?usp=sharing){target="_blank"} | CTD, Optode, Nortek,Shadowgraph |
+| [ringo-20240312](https://docs.google.com/document/d/12iSPkBChPjtPFbFQxX2hCopga3hvBr91qH1kJW_w5sw/edit?usp=sharing){target="_blank"} | CTD, Optode, Wide Shadowgraph |
+| [george-20240530](https://docs.google.com/document/d/1MDVbBDjK2UvHjLFQ35nzniC-R7YycM6SZr0ymEFvapw/edit?usp=sharing){target="_blank"} | CTD, Optode, Narrow Shadowgraph |
+
+#### Santa Barbara
+| Deployment | Sensors |
+|------------------------------|------------------------------|
+|[george-20240907](https://docs.google.com/document/d/12hNl6ZtEIISh4vlJcOJgK1RHsloGIa98WKf5xpjIq0U/edit?usp=sharing){target="_blank"} | CTD, Optode,Ecopuck, Narrow Shadowgraph |
+
+#### Humboldt
+| Deployment | Sensors |
+|------------------------------|------------------------------|
+| calanus-20241019 |CTD, Optode, Ecopuck, Nortek |
+
+#### Antarctica
+| Deployment | Sensors |
+|------------------------------|------------------------------|
+| [AMLR01-20241120](https://docs.google.com/document/d/128D2a0Ud2Kda5JwIYVhN9An4CFT6KxdGoqS1RsHKtQ0/edit?usp=sharing){target="_blank"} |CTD, Optode, Ecopuck, AZFP |
+| [AMLR08-20241120](https://docs.google.com/document/d/1Bk2CQeC6dT7OtOInGbB85aCiE3qmz_S4JvjbNHziKyQ/edit?usp=sharing){target="_blank"} |CTD, Optode, Ecopuck, Nortek |

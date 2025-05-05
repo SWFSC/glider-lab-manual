@@ -1,5 +1,5 @@
 ---
-title: Acoustic Data Processing
+title: Active Acoustics
 ---
 
 ## Background

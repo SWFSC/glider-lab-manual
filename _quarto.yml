@@ -2,8 +2,7 @@ project:
   type: website
   preview:
     port: 5165
-    # browser: true
-
+    browser: true
 
 website: 
   title: "ESD Glider Lab" 
@@ -26,9 +25,6 @@ website:
     pinned: true
     align: center
     tools: 
-      # - icon: globe
-      #   href: https://nmfs-opensci.github.io
-      #   text: "NMFS Open Science"
       - icon: github
         href: https://github.com/SWFSC/glider-lab-manual
         text: "ESD Glider Lab Manual"
@@ -44,18 +40,26 @@ website:
         contents:
           - content/lab.qmd
           - content/pilot-tools.qmd
-      - section: "Deployments"
+      - content/deployments.qmd
+      # - section: "Deployments"
+      #   contents:
+      #     - content/past-deployments.qmd  
+      #     - content/reports.qmd
+      - section: "Data"
         contents:
-          - content/past-deployments.qmd  
-          - content/reports.qmd
-      - content/data-management.qmd
-      - section: "Data Processing"
-        contents:
-          - href: content/dataproc-gliders.qmd
-            text: Gliders
-          - href: content/dataproc-acoustics.qmd
-            text: Acoustics
-      - content/imagery.qmd
+        - content/data-management.qmd
+        - content/glider-data.qmd
+        - href: content/active-acoustics.qmd
+          text: Acoustics
+        # - section: "Data Processing"
+        #   contents:
+        #     - href: content/dataproc-gliders.qmd
+        #       text: Gliders
+        #     - href: content/dataproc-acoustics.qmd
+        #       text: Acoustics
+        - content/imagery.qmd
+      - href: content/gcp.qmd
+        text: Google Cloud
 
 format:
   html:

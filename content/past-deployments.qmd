@@ -1,9 +1,0 @@
----
-title: Past Deployments
----
-
-## Deployments
-
-The below table lists all ESD (and formerly AERD) glider deployments. 
-
-Todo: embed/include table directly here. For now, see [this sheet](https://docs.google.com/spreadsheets/d/1tSIi44OTEUQXPJwwiy1emhdIyRs9Vt8iT5IlJBMrPLA/edit?usp=sharing) (last updated Aug 2024).

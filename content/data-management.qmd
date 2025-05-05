@@ -2,14 +2,35 @@
 title: Data Management
 ---
 
-Gliders both collect and require a lot of data and other files, making data management a complex endeavor. Most users should access processed glider data as described here (TODO). This page describes where and how all data and files from a glider deployment are stored.
+Glider data management is a complex endeavor. Gliders contain many moving parts, and can collect over a terabyte of data in a single deployment. This page outlines the ESD glider data management efforts, including directory strucutres and storage locations for different types of data.
 
-See [this document](https://docs.google.com/document/d/1dW5ZdkOpTz59xy4xs8ypVOvGLWBYZMdlbwGJty4PTV0/edit?usp=sharing) for the full ESD (previously AERD/AMLR) glider data plan. Note that the contents of this doc will be transferred over to this page as time permits.
+(In progress: a Shiny app or some other tool for users to use to get to GCS bucket URL for a particular piece of data)
 
-Because gliders can collect >1 TB of data in a single deployment, all ESD glider deployment data are stored in Google Cloud Storage buckets in the ESD Google Cloud Project. 
+## Quick Links
 
-TODO: point to Shiny app or some other tool for users to use to get to GCS bucket URL for a particular piece of data.
+Google Drive:
 
-[Glider GCP bucket](https://console.cloud.google.com/storage/browser/amlr-gliders-deployments-dev;tab=objects?prefix=&forceOnObjectsSortingFiltering=false) Google Cloud Platform (GCP) for glider data.
+- [AMLR Gliders](https://drive.google.com/drive/folders/1wv2wGgWco_3heUR7JPVMc3KLGFCzkcBT) 
 
-[Glider imagery GCP bucket](https://console.cloud.google.com/storage/browser/amlr-gliders-imagery-raw-dev;tab=objects?forceOnBucketsSortingFiltering=true&project=ggn-nmfs-usamlr-dev-7b99&prefix=&forceOnObjectsSortingFiltering=false) GCP for glider imagery.
+Google Cloud Storage (GCS) buckets:
+
+- [Deployments](https://console.cloud.google.com/storage/browser/amlr-gliders-deployments-dev)
+- [Acoustics](https://console.cloud.google.com/storage/browser/amlr-gliders-acoustics-dev)
+- [Raw imagery](https://console.cloud.google.com/storage/browser/amlr-gliders-imagery-raw-dev)
+- [Pre-processed imagery](https://console.cloud.google.com/storage/browser/amlr-gliders-imagery-proc-dev) (Images pre-processed by Randy's code)
+
+Glider & Mooring Database
+
+- [Database access and use](https://docs.google.com/document/d/1mKMjSfp_QYXo66buBBd0NiJ7NqUk52FV95NxSW766Vc/edit?usp=sharing) (NOAA only)
+
+## Data Management Plan
+
+This section replaces the [AMLR Glider Data Management Plan](https://docs.google.com/document/d/1dW5ZdkOpTz59xy4xs8ypVOvGLWBYZMdlbwGJty4PTV0/edit?usp=sharing) Google doc. 
+
+### Glider & Mooring Database
+
+The glider and mooring database is a SQL Server database, hosted on the internal SWFSC network. This database exists to track all of the glider/instrument (and mooring) parts and builds. Each glider deployment is represented as a build, and each build includes links to all of the different parts that were on that glider for the deployment. See [this document](https://docs.google.com/document/d/1mKMjSfp_QYXo66buBBd0NiJ7NqUk52FV95NxSW766Vc/edit?usp=sharing) for more detailed information.
+
+### GCS Buckets
+
+in progress.

@@ -1,0 +1,5 @@
+---
+title: Google Cloud Platform (GCP)
+---
+
+GCP links, pointers, etc.

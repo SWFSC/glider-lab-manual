@@ -1,24 +1,28 @@
 ---
-title: Glider Data Processing
+title: Glider Data
 ---
+
+There are many steps and flavors to glider data processing, from the base processing (binary glider to NetCDF files for Slocum gliders), to QA/QC, to developing products from additional glider sensors. This page outlines the ESD glider lab's data processing, and in particular base processing workflow and data products.
+
+Users interested in understanding and accessing data products created for each deployment should see the [Data Products](#data-products) section.
 
 ## Background
 
-There are many steps and flavors to glider data processing, from the base processing (binary glider to NetCDF files for Slocum gliders) to QA/QC to developing products from additional glider sensors. 
+Historically, the ESD glider team has processed glider data using the Matlab toolbox [SOCIB](https://github.com/socib/glider_toolbox). However, this toolbox is not actively maintained, and the majority of ESD processing efforts have moved to Google Cloud (GCP). Subsequent efforts involved developing [amlr-gliders](https://github.com/us-amlr/amlr-gliders), which contained a Python toolbox and scripts that were primarily wrappers around [gdm](https://github.com/kerfoot/gdm). These efforts never caught full traction.
 
-Historically, the ESD glider team has processed glider data using the Matlab toolbox [SOCIB](https://github.com/socib/glider_toolbox). However, this toolbox is not actively maintained, and the majority of ESD processing efforts have moved to Google Cloud (GCP). Subsequent efforts involved developing [amlr-gliders](https://github.com/us-amlr/amlr-gliders), which contained a Python toolbox and scripts that were ~medium wrappers around [gdm](https://github.com/kerfoot/gdm). These efforts never caught full traction.
-
-Current efforts both leveraging existing toolboxes ([PyGlider](https://github.com/c-proof/pyglider), [GliderTools](https://github.com/GliderToolsCommunity/GliderTools), [dbdreader](https://github.com/smerckel/dbdreader)) and developing new Python code and wrapper scripts that live in [glider-utils](https://github.com/SWFSC/glider-utils). All of these efforts are geared towards processing ESD glider data in ESD's Google Cloud project, using an [Open Science approach](https://openscapes.org/) .
+Current efforts include both leveraging existing toolboxes ([PyGlider](https://github.com/c-proof/pyglider), [GliderTools](https://github.com/GliderToolsCommunity/GliderTools), [dbdreader](https://github.com/smerckel/dbdreader)) and developing new Python code and wrapper scripts that live in [glider-utils](https://github.com/SWFSC/glider-utils). All of these efforts are geared towards processing ESD glider data in ESD's Google Cloud project, using an [Open Science approach](https://openscapes.org/) .
 
 This page describes these current efforts, and outlines planned areas of future development. For acoustic or image processing workflows, see the [acoustics](dataproc-acoustics.qmd) and and [imagery](imagery.qmd) pages, respectively.
 
-Todo: create and add flow chart, a la [here](https://github.com/SAEL-SWFSC/SAEL-lab-manual/blob/main/content/images/FOSSA.JPG)
+<!-- Todo: create and add flow chart, a la [here](https://github.com/SAEL-SWFSC/SAEL-lab-manual/blob/main/content/images/FOSSA.JPG) -->
 
 ## Base Processing
 
-The base glider data processing is primarily done using [PyGlider](https://github.com/c-proof/pyglider), hereafter simply 'pyglider'. pyglider takes in binary data files from Teledyne/Webb Slocum gliders, and creates CF-compliant NetCDF files. These NetCDF files will be both used internally in further workflows, and sent to the [NGDAC](https://ioos.github.io/glider-dac/index.html).
+The base glider data processing is primarily done using [PyGlider](https://github.com/c-proof/pyglider), hereafter simply 'pyglider'. pyglider reads in binary data files from Teledyne/Webb Slocum gliders, and creates CF-compliant NetCDF files. These NetCDF files will be both used internally in further workflows, and sent to the [NGDAC](https://ioos.github.io/glider-dac/index.html).
 
-### Level 1 - Timeseries
+### Data Products
+
+### Timeseries
 
 Workflow:
 
@@ -50,7 +54,7 @@ Data alterations, or additional features of note:
     - Any values of zero from science sensors are converted to nan. 
     - No other data alterations are made (e.g., CTD data is all read and left as-is).
 
-### Level 2 - Gridded
+### Gridded
 
 pyglider has a function ncprocess.make_gridfiles for making gridded data. This function takes the above timeseries file as input.
 
@@ -74,7 +78,7 @@ tbd. Vision is to have GCP infrastructure in place to:
 - Run the base processing steps on these data
 - Automatically send the processed files to the NGDAC
 
-## Future Steps
+## Future Directions
 
 qc + data cleaning -> cleaned netcdf files with qc flags. Potential resources:
 
