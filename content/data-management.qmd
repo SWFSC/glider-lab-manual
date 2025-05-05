@@ -56,6 +56,12 @@ All factory calibration documents are now stored in the [glider-lab repo](https:
 
 Other files assocaited with a deployment (e.g., autoexec and proglet files, or config files assocaited with certain instruments) are currently stored in the database, but will likely be moved to a more accessible location in the future.
 
+### AMLR Gliders Google Drive
+
+This section TODO. 
+
+Todo includes defining a folder structure for 'pre-deployment things' that are currently [here](https://drive.google.com/drive/folders/1qfKMxXH0hUhbmOp8aESidz-YO3IPxWM3?usp=drive_link)
+
 ###  glider-lab repository
 
 The [glider-lab](https://github.com/SWFSC/glider-lab) repository has evloved into a place to store a) reference documents that need to be accessible to folks outside NOAA and b) files used for processing in GCP. These include:
