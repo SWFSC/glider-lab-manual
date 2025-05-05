@@ -6,7 +6,7 @@ ESD gliders may be equipped with either a 'glidercam' or a 'shadowgraph' [camera
 
 ## Raw Imagery
 
-Once the gliders are recovered, the images are copied from the memory cards and uploaded to GCP as described [here](https://docs.google.com/document/d/1dW5ZdkOpTz59xy4xs8ypVOvGLWBYZMdlbwGJty4PTV0/edit?pli=1). Specifically, raw images are uploaded to the bucket [amlr-gliders-imagery-raw-dev](https://console.cloud.google.com/storage/browser/amlr-gliders-imagery-raw-dev), along with associated config files from the deployment. Image metadata files generated during the [glider data processing](dataproc-gliders.qmd#other-files) are also written to the deployment folder within this bucket. Project/year/deployment folder structures mirror that of the glider data stored in [amlr-gliders-deployments-dev](https://console.cloud.google.com/storage/browser/amlr-gliders-deployments-dev).
+Once the gliders are recovered, the glidercam or shadowgraph directories and images are copied from the memory cards and uploaded to GCP as described in [Data Management](data-management.qmd). Specifically, raw images and config files are uploaded to the raw imagery bucket. Image metadata files generated during the [base glider data processing](glider-data.qmd) are written to the deployment's 'metadata' folder within this bucket.
 
 ## Viewing Images
 
@@ -19,6 +19,8 @@ There are several ways to view raw or processed images:
 3. You may also use the [gcloud CLI](https://cloud.google.com/sdk/gcloud/reference/storage) to download images to your computer, and then view them locally using your preferred program.
 
 ## Shadowgraph Image Processing
+
+**NOTE: Given personnel changes, this section is out of date. Contact [Jen Walsh](mailto:jen.walsh@noaa.gov) or [Sam Woodman](mailto:sam.woodman@noaa.gov) for latest image processing efforts, in particular through the Optics SI**
 
 Gliders deployed with shadowgraph cameras can easily collect more than 200,000 images during a single deployment. Therefore, it is impractical to have humans review and annotate all these images by hand, and thus operationally these images must be processed using AI/ML methods. This section describes the current status of these methods, as well as anticipated future directions.
 
