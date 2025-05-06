@@ -2,4 +2,4 @@
 title: Google Cloud Platform (GCP)
 ---
 
-GCP links, pointers, etc.
+Placeholder for GCP links, pointers, etc.

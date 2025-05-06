@@ -2,42 +2,74 @@
 title: Glider Data
 ---
 
-There are many steps and flavors to glider data processing, from the base processing (binary glider to NetCDF files for Slocum gliders), to QA/QC, to developing products from additional glider sensors. This page outlines the ESD glider lab's data processing, and in particular base processing workflow and data products.
+There are many steps and flavors to glider data processing, from the base processing (binary glider to NetCDF files for Slocum gliders), to QA/QC, to developing additional data products. This page outlines the ESD glider lab's data processing workflow, and in particular base processing and data products. 
 
-Users interested in understanding and accessing data products created for each deployment should see the [Data Products](#data-products) section.
+Users interested in understanding and accessing data products created for each deployment should see the [Data Products](#data-products) section. For acoustic or image processing workflows, see the [acoustics](active-acoustics.qmd) and [imagery](imagery.qmd) pages, respectively.
 
 ## Background
 
-Historically, the ESD glider team has processed glider data using the Matlab toolbox [SOCIB](https://github.com/socib/glider_toolbox). However, this toolbox is not actively maintained, and the majority of ESD processing efforts have moved to Google Cloud (GCP). Subsequent efforts involved developing [amlr-gliders](https://github.com/us-amlr/amlr-gliders), which contained a Python toolbox and scripts that were primarily wrappers around [gdm](https://github.com/kerfoot/gdm). These efforts never caught full traction.
+Historically, the ESD glider team has processed glider data using the Matlab toolbox [SOCIB](https://github.com/socib/glider_toolbox). However, this toolbox is not actively maintained, and the majority of ESD processing efforts have moved to Google Cloud (GCP) where Matlab is difficult to run. Subsequent efforts involved developing [amlr-gliders](https://github.com/us-amlr/amlr-gliders), which contained a Python toolbox and scripts that were primarily wrappers around [gdm](https://github.com/kerfoot/gdm). These efforts never caught full traction.
 
-Current efforts include both leveraging existing toolboxes ([PyGlider](https://github.com/c-proof/pyglider), [GliderTools](https://github.com/GliderToolsCommunity/GliderTools), [dbdreader](https://github.com/smerckel/dbdreader)) and developing new Python code and wrapper scripts that live in [glider-utils](https://github.com/SWFSC/glider-utils). All of these efforts are geared towards processing ESD glider data in ESD's Google Cloud project, using an [Open Science approach](https://openscapes.org/) .
-
-This page describes these current efforts, and outlines planned areas of future development. For acoustic or image processing workflows, see the [acoustics](dataproc-acoustics.qmd) and and [imagery](imagery.qmd) pages, respectively.
+Currently, the ESD glider lab uses the esdglider Python package, which can be found in the [glider-utils](https://github.com/SWFSC/glider-utils) repo, to do its base glider data processing. esdglider primarily consists of ESD-specific wrappers around existing toolboxes such as [PyGlider](https://github.com/c-proof/pyglider), [GliderTools](https://github.com/GliderToolsCommunity/GliderTools), and [dbdreader](https://github.com/smerckel/dbdreader). All efforts are geared towards processing ESD glider data in ESD's Google Cloud project, using an [Open Science approach](https://openscapes.org/).
 
 <!-- Todo: create and add flow chart, a la [here](https://github.com/SAEL-SWFSC/SAEL-lab-manual/blob/main/content/images/FOSSA.JPG) -->
 
+### Terminology
+
+Common terminology used in glider data processing:
+
+* [Profile, and other sampling terminology](https://ioos.github.io/glider-dac/glider-background-and-sampling-terminology.html#sampling-pattern-terminology)
+
+* [NetCDF](https://docs.unidata.ucar.edu/netcdf-c/current/)
+
+* Inflection: when a glider is transitioning from a dive to a climb, or from a climb to a dive
+
 ## Base Processing
 
-The base glider data processing is primarily done using [PyGlider](https://github.com/c-proof/pyglider), hereafter simply 'pyglider'. pyglider reads in binary data files from Teledyne/Webb Slocum gliders, and creates CF-compliant NetCDF files. These NetCDF files will be both used internally in further workflows, and sent to the [NGDAC](https://ioos.github.io/glider-dac/index.html).
+The base glider data processing, also referred to as "Level 1" processing, is primarily done using [PyGlider](https://github.com/c-proof/pyglider), hereafter simply 'pyglider'. Pyglider creates creates timeseries and gridded CF-compliant NetCDF files, which can be both used internally in further workflows, as well as made publicly available through an ERDDAP (e.g., via the [NGDAC](https://ioos.github.io/glider-dac/index.html)). 
+
+![ESD's base glider data processing](images/base-proc-workflow.jpg)
 
 ### Data Products
 
+The esdglider package uses pyglider to create several different data products as part of the base processing, which are described here. All output files begin with the deployment name ('glider-YYYYmmdd'), and include the data processing 'mode' (i.e., delayed or rt).
+
+#### NetCDF files
+
+The timeseries data products are all NetCDF files with a single coordinate "time". The gridded data products are all NetCDF files with two coordinates: "depth" and "profile" (i.e., profile_index). 
+
+- {glider-YYYYmmdd}-{mode}-sci.nc: The 'science' timeseries. Most users will want this dataset, as it contains the values from all of the various science sensors. Functionally speaking, this timeseries has one ‘row’ of data for each timestamp from the glider’s *science* computer where a CTD temperature value was recorded. All included sensor values are interpolated to all timestamps, as long as there is not a gap of 300 or more seconds. The sensor values included in this dataset depend on the instruments carried by the glider; ... (Todo: add a section that lists the sensor values for each instrument). Users should note that the 'depth' value in this timeseries is the depth calculated from the CTD pressure sensor. 
+
+- {glider-YYYYmmdd}-{mode}-eng.nc: The 'engineering' timeseries. Functionally speaking, this timeseries has one 'row' of data for each timestamp from the glider's *flight* computer where an m_depth value was recorded. All included sensor values are interpolated to all timestamps, as long as there is not a gap of 300 or more seconds. In addition to m_depth, it contains sensor values such as m_roll, m_pitch, and m_gps_lon. See the full list of sensor values [here](https://github.com/SWFSC/glider-utils/blob/main/esdglider/data/deployment-eng-vars.yml). Users should note that the 'depth' value in this timeseries is from m_depth, meaning the measured depth from the glider.
+
+- {glider-YYYYmmdd}-{mode}-raw.nc: The 'raw' timeseries. This timeseries contains a timestamp for every time recorded by the glider's flight or science computer, and no interpolation is done for any sensor values. These two features make this dataset useful for a) calculating profiles and b) troubleshooting any sensor values or processing steps. This dataset contains both the measured depth ("depth") and the depth calculated from the CTD pressure sensor ("depth_ctd"). 
+
+- {glider-YYYYmmdd}_grid-{mode}-1m.nc: The science timeseries, gridded into *one* meter bins. This NetCDF file will include all of the science sensor values that were in the science timeseries.
+
+- {glider-YYYYmmdd}_grid-{mode}-5m.nc: The science timeseries, gridded into *five* meter bins. This NetCDF file will include all of the science sensor values that were in the science timeseries.
+
+#### Other
+
+- {glider-YYYYmmdd}-{mode}-profiles.csv: A CSV file with one row for each profile, containing information such as: profile index, profile start and end time, profile start and end depth, and profile direction. Note that this file contains "#.5" profiles, meaning time between profiles when the glider is at the surface or inflecting at depth.
+
+- {glider-YYYYmmdd}-imagery-metadata.csv: A CSV file with one row for each image, and one column for each desired sensor value. The sensor values are interpolated to each image timestamp
+
+- Acoustic metadata files: Files needed for processing acoustic data with Echoview. These files are described on the [acoustics](active-acoustics.qmd) page.
+
 ### Timeseries
 
-Workflow:
+See [data products](#data-products) for a description of the timeseries output files. Current workflow (also shown above):
 
-1. Binary and cache files from the glider are properly archived in GCS bucket (see here - link todo)
-2. Create deployment YAML file ([example](https://github.com/c-proof/pyglider-example-data/blob/main/example-slocum/deploymentRealtime.yml)). Currently this is done by hand; ideally in the future this is done by code pulling from the Glider&Mooring database
-3. Run pyglider and create output NetCDF files using the script [binary_to_nc.py](https://github.com/SWFSC/glider-utils/blob/main/scripts/binary_to_nc.py), run via [binary_to_nc.sh](https://github.com/SWFSC/glider-utils/blob/main/scripts/binary_to_nc.sh) on a GCP VM
-3. Access processed NetCDF files via GCP for additional internal workflows
-
-#### Output NetCDF File
-
-Todo: Notes about the structure of and variables in the output NetCDF file. This will depend on CR answers to processing questions (link to issue todo). 
+1. Upload binary and cache files into Deployment GCS bucket, as specified [here](data-management.qmd#deployments)
+2. Run [this script](https://github.com/SWFSC/glider-utils/blob/main/scripts/generate-config.py) locally to create a deployment YAML file. This script pulls all instrument information from the Glider Database. A user needs to then check this script by hand, in particular the people, comment, and summary blocks, and then commit to the [glider-lab repo](https://github.com/SWFSC/glider-lab/tree/main/deployment-configs).
+3. Create a [deployment-specific script](https://github.com/SWFSC/glider-lab/tree/main/deployment-scripts), and run it in a GCP Workbench Instance.
+4. Access processed NetCDF files via GCP for additional internal workflows
 
 #### Processing Notes
 
-This section describes the default pyglider/dbdreader behavior when processing binary glider files. This may be useful reference for folks using pyglider/dbdreader for any purpose.
+SMW - to update
+
+This section describes the choices made by the code when processing binary glider files. This may be useful reference for folks using pyglider/dbdreader for any purpose.
 
 The pyglider.slocum.binary_to_timeseries function uses [dbdreader](https://github.com/smerckel/dbdreader) to read slocum glider data from binary files. More discussion can be found [here](https://github.com/c-proof/pyglider/issues/106) around why pyglider switched to using dbdreader, and how pyglider processing worked before. 
 
@@ -56,38 +88,38 @@ Data alterations, or additional features of note:
 
 ### Gridded
 
-pyglider has a function ncprocess.make_gridfiles for making gridded data. This function takes the above timeseries file as input.
+Docs in progress
 
-More docs forthcoming.
+[pyglider.ncprocess.make_gridfiles](https://pyglider.readthedocs.io/en/latest/pyglider/pyglider.ncprocess.html#pyglider.ncprocess.make_gridfiles)
 
-### IOOS NGDAC
+### NGDAC Profiles
 
-pyglider has a function ncprocess.extract_timeseries_profiles for creating profile files for submission to the NGDAC. This function takes the above timeseries file as input.
-
-More docs forthcoming.
+Docs in progress
 
 ### Other Files
 
-ESD's base processing also creates several other files necessary for processing or using data from other sensors on the glider. If the glider is carrying a shadowgraph or glidercam camera system, then a CSV file is created that links each image with the relevant glider measurements at that time (depth, temperature, oxygen concentration, etc.). If the glider is carrying an acoustic instrument, specific files are needed to process these data using Echoview. These files are created during the base processing step as well.
+Docs in progress
+
+<!-- ESD's base processing also creates several other files necessary for processing or using data from other sensors on the glider. If the glider is carrying a shadowgraph or glidercam camera system, then a CSV file is created that links each image with the relevant glider measurements at that time (depth, temperature, oxygen concentration, etc.). If the glider is carrying an acoustic instrument, specific files are needed to process these data using Echoview. These files are created during the base processing step as well. -->
 
 ## Real-Time Data
 
-tbd. Vision is to have GCP infrastructure in place to:
+Currently, all ESD glider data processing is delayed-mode processing. The vision is to have GCP infrastructure in place to:
 
-- Periodically rsync real-time data (sbd/tbd files) from the SFMC to a GCP VM
-- Run the base processing steps on these data
-- Automatically send the processed files to the NGDAC
+- Periodically rsync real-time data (sbd/tbd files) from the SFMC to GCP
+- Run Caleb's slocumRtDataVisTool to create plots and statistics useful for real-time piloting decisions 
+- Run the base processing steps on these data, and automatically send the processed files to the NGDAC
 
 ## Future Directions
 
-qc + data cleaning -> cleaned netcdf files with qc flags. Potential resources:
+1) qc + data cleaning -> cleaned netcdf files with qc flags. Potential resources:
 
 - Implement [IOOS QARTOD](https://ioos.noaa.gov/project/qartod/) tests, eg using [ioos_qc](https://github.com/ioos/ioos_qc) to add qc flags
 - https://github.com/OceanGlidersCommunity/Realtime-QC
     - https://github.com/castelao/CoTeDe
 - other qc/data cleaning? For instance, sanity check ts plots. Likely will involve by-hand inspection for each deployment, including removing bad data if discovered
 
-[GliderTools](https://github.com/GliderToolsCommunity/GliderTools): additional processing functionality
+2) Additional processing functionality, e.g. [GliderTools](https://github.com/GliderToolsCommunity/GliderTools):
 
 - [manuscript](https://doi.org/10.3389/fmars.2019.00738) describing the GliderTools toolbox
 - GliderTools contains tools for processing Seaglider basestation files. However, the rest of the tools simply require that the data be in an xarray dataset.
@@ -98,7 +130,7 @@ qc + data cleaning -> cleaned netcdf files with qc flags. Potential resources:
 
 ## GitHub Repos
 
-See the [home page](../index.qmd#github-repositories) for ESD-developed repos. External GitHub repos that are particularly relevant/useful:
+See the [home page](../index.qmd#github-repositories) for ESD-developed repos. External GitHub repos that are particularly relevant or useful:
 
 | repo link                          | description                        |
 |------------------------------------|------------------------------------|

@@ -6,7 +6,7 @@ page-layout: full
 [![](https://img.shields.io/github/last-commit/SWFSC/glider-lab-manual)](https://github.com/SWFSC/glider-lab-manual/commits/main)
 ![](content/images/ESD_meatball.png){style="float:right;" fig-alt="Ecosystem Science Division logo. Artwork by Jen Walsh." width="401"}
 
-The Ecosystem Science Division (ESD) at the [Southwest Fisheries Science Center](https://www.fisheries.noaa.gov/about/southwest-fisheries-science-center){target="_blank"} deployes gliders in both the California Current Ecosystem and the Antarctic Peninsula regions. The ESD's glider fleet is managed by the Scientific Operations and Support (SOS) Program, and supports several research objectives within the ESD. We provide expertise across multiple autonomous platforms to deliver robust data for ecosystem monitoring and fisheries management. 
+The Ecosystem Science Division (ESD) at the [Southwest Fisheries Science Center](https://www.fisheries.noaa.gov/about/southwest-fisheries-science-center){target="_blank"} deploys gliders in both the California Current Ecosystem and the Antarctic Peninsula regions. The ESD's glider fleet is managed by the Scientific Operations and Support (SOS) Program, and supports several research objectives within the ESD. We provide expertise across multiple autonomous platforms to deliver robust data for ecosystem monitoring and fisheries management. 
 
 This website is an in-development manual for all ESD glider activities. Please contact a member of the glider team with any questions. For information about active or past ESD glider deployments, see [Past Deployments](content/past-deployments.qmd)
 
@@ -14,15 +14,16 @@ This website is an in-development manual for all ESD glider activities. Please c
 
 | Name | Job Title | Glider Team Role |
 |------|-----------|------------------|
-<!-- | [Christian Reiss](mailto:christian.reiss@noaa.gov) | Program Lead, Offshore Wind  | Principle Investigator | -->
 | [Anthony Cossio](mailto:anthony.cossio@noaa.gov)   | Operations Research Analyst  | Lab Manager, Pilot, Tech |
 | [Jen Walsh](mailto:jen.walsh@noaa.gov)             | Fisheries Research Biologist | Pilot, Tech |
-| [Tegan Murray](mailto:tegan.murray@noaa.gov)          | NOAA Corps                   | Pilot, Tech |
+| [Tegan Murray](mailto:tegan.murray@noaa.gov)       | NOAA Corps                   | Pilot, Tech |
+| [Sam Woodman](mailto:sam.woodman@noaa.gov)         | Biologist                    | Data Manager |
+| [Heidi Taylor](mailto:heidi.taylor@noaa.gov)       | Program Lead, SOS; Acting Director, ESD | |
+
+<!-- | [Christian Reiss](mailto:christian.reiss@noaa.gov) | Program Lead, Offshore Wind  | Principle Investigator | -->
 <!-- | [Caleb Flaim](mailto:caleb.flaim@noaa.gov)         | Electronics Technician       | Pilot, Tech |
 | [Jacob Partida](mailto:jacob.partida@noaa.gov)     | Physical Science Technician  | Pilot, Tech |
 | [Hailey Schmidt](mailto:hailey.schmidt@noaa.gov)   | Electronics Technician              | Pilot, Tech | -->
-| [Sam Woodman](mailto:sam.woodman@noaa.gov)         | Biologist                    | Data Manager |
-| [Heidi Taylor](mailto:heidi.taylor@noaa.gov)       | Program Lead, SOS; Acting Director, ESD | |
 <!-- | [George Watters](mailto:george.watters@noaa.gov)   | Director, ESD | | -->
 
 ## Project Management
