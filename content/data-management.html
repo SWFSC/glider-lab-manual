@@ -412,7 +412,7 @@ ul.task-list li input[type="checkbox"] {
 </header>
 
 
-<p>Glider data management is a complex endeavor. Gliders contain many moving parts, and can collect over a terabyte of data in a single deployment. This page outlines the ESD glider data management efforts, including directory strucutres and storage locations for different types of data.</p>
+<p>Glider data management is a complex endeavor. Gliders contain many moving parts, and can collect over a terabyte of data in a single deployment. This page outlines the ESD glider data management efforts, including directory structures and storage locations for different types of data.</p>
 <p>This page provides the in-the-weeds data management details, which will likely only be relevant for ESD glider lab members. Users looking for more general information about glider data products should go to the data type pages (links todo).</p>
 <section id="quick-links" class="level2">
 <h2 class="anchored" data-anchor-id="quick-links">Quick Links</h2>
@@ -457,7 +457,7 @@ ul.task-list li input[type="checkbox"] {
 <section id="files" class="level4">
 <h4 class="anchored" data-anchor-id="files">Files</h4>
 <p>All factory calibration documents are now stored in the <a href="https://github.com/SWFSC/glider-lab/tree/main/calibration-docs">glider-lab repo</a>.</p>
-<p>Other files assocaited with a deployment (e.g., autoexec and proglet files, or config files assocaited with certain instruments) are currently stored in the database, but will likely be moved to a more accessible location in the future.</p>
+<p>Other files associated with a deployment (e.g., autoexec and proglet files, or config files associated with certain instruments) are currently stored in the database, but will likely be moved to a more accessible location in the future.</p>
 </section>
 </section>
 <section id="amlr-gliders-google-drive" class="level3">
@@ -467,7 +467,7 @@ ul.task-list li input[type="checkbox"] {
 </section>
 <section id="glider-lab-repository" class="level3">
 <h3 class="anchored" data-anchor-id="glider-lab-repository">glider-lab repository</h3>
-<p>The <a href="https://github.com/SWFSC/glider-lab">glider-lab</a> repository has evloved into a place to store a) reference documents that need to be accessible to folks outside NOAA and b) files used for processing in GCP. These include:</p>
+<p>The <a href="https://github.com/SWFSC/glider-lab">glider-lab</a> repository has evoloved into a place to store a) reference documents that need to be accessible to folks outside NOAA and b) files used for processing in GCP. These include:</p>
 <ul>
 <li>calibration-docs: factory calibration documents for glider instruments</li>
 <li>deployment-configs: yaml configuration files for glider data processing</li>
@@ -488,7 +488,7 @@ ul.task-list li input[type="checkbox"] {
 <p>GCS buckets are only accessible to individuals with a noaa.gov email address that have been added to the GCP project as a data viewer. To access data in GCS buckets, please contact <a href="mailto:sam.woodman@noaa.gov">Sam Woodman</a>.</p>
 <p>Each section below corresponds to an individual GCS bucket. They begin with a directory outline, followed by text that explains each directory. Principles that are consistent across buckets include:</p>
 <ul>
-<li>Several folders contain “delayed” and “rt” subfolders. Delayed mode data represents data that were collected or generated after the glider was recovered, while rt (i.e., realtime) represents data that were transmitted or generated while the glider was deployed.</li>
+<li>Several folders contain “delayed” and “rt” subfolders. Delayed mode data were collected or generated after the glider was recovered, while rt (i.e., realtime) data were transmitted or generated while the glider was deployed.</li>
 <li>Several folders contain an ‘ngdac’ subfolder. This subfolder contains NetCDF files formatted for submission to the <a href="https://ioos.github.io/ioosngdac/index.html">IOOS Glider DAC</a>. The DAC requires one NetCDF file for each profile, hence the subfolder.</li>
 </ul>
 <section id="deployments" class="level4">
@@ -517,7 +517,7 @@ ul.task-list li input[type="checkbox"] {
         ├── timeSeries-sci
     ├── rt
         ├── ... : same subfolders as 'plots/delayed' folder</code></pre>
-<p><strong>backup</strong>: Backups of the full Flight and Science folders copied from cards (zips are fine). These folders can be zipped. If the cards are not removed, upload the LOGS and SENTLOGS folders. This folder should also include a copy (ziped is fine) of the deployment Google Drive folder (with comms, photos, prep, notes, etc) used during the deployment.</p>
+<p><strong>backup</strong>: Backups of the full Flight and Science folders copied from cards (zips are fine). These folders can be zipped. If the cards are not removed, upload the LOGS and SENTLOGS folders. This folder should also include a copy (zipped is fine) of the deployment Google Drive folder (with comms, photos, prep, notes, etc) used during the deployment.</p>
 <p><strong>data/binary</strong>: Binary data files generated by the glider. This folder should include dbd/ebd/dcd/ecd (for delayed data) or sbd/tbd/scd/tcd (for rt data) files. Note that there is not a different path for compressed files, meaning for instance that dcd/ecd files should go directly in the ‘data/binary/delayed’ folder.</p>
 <p><strong>data/processed-rt</strong>: “Real-time” processed data and data products, created using real-time glider data (i.e., sbd/tbd files) transmitted by the glider during its deployment.</p>
 <p><strong>data/processed-L1</strong>: “Level 1” processed data and data products. “Level 1” means that these data procucts were created by the esdglider/pyglider base processing functions (link TODO) using delayed mode data. In other words, the dbd/ebd files were used as input data, and there was minimal data qa/qc or corrections performed.</p>
