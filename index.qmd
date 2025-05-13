@@ -8,7 +8,7 @@ page-layout: full
 
 The Ecosystem Science Division (ESD) at the [Southwest Fisheries Science Center](https://www.fisheries.noaa.gov/about/southwest-fisheries-science-center){target="_blank"} deploys gliders in both the California Current Ecosystem and the Antarctic Peninsula regions. The ESD's glider fleet is managed by the Scientific Operations and Support (SOS) Program, and supports several research objectives within the ESD. We provide expertise across multiple autonomous platforms to deliver robust data for ecosystem monitoring and fisheries management. 
 
-This website is an in-development manual for all ESD glider activities. Please contact a member of the glider team with any questions. For information about active or past ESD glider deployments, see [Past Deployments](content/past-deployments.qmd)
+This website is an in-development manual for all ESD glider activities. Please contact a member of the glider team with any questions. For information about active or past ESD glider deployments, see [Deployments](content/deployments.qmd)
 
 ## Team Members
 
@@ -30,7 +30,7 @@ This website is an in-development manual for all ESD glider activities. Please c
 
 The ESD glider team is using GitHub Issues and Projects for project management. There efforts are heavily inspired and influenced by the Openscapes [GitHub for project management](https://openscapes.github.io/series/core-lessons/github/github-issues.html){target="_blank"} approach.
 
-The [ESD glider team project](https://github.com/orgs/SWFSC/projects/5/views/1){target="_blank"} pulls from issues from several repositories, but in particular [this repo](https://github.com/SWFSC/glider-lab){target="_blank"}. For more details see the [best practices](content/best-practices.qmd) page.
+The [ESD glider team project](https://github.com/orgs/SWFSC/projects/5/views/1){target="_blank"} pulls from issues from several repositories, but in particular the [SWFSC/glider-lab repo](https://github.com/SWFSC/glider-lab){target="_blank"}. For more details see the [best practices](content/best-practices.qmd) page.
 
 For most current Fleet Status information, see [this Sheet](https://docs.google.com/spreadsheets/d/1tB3QNKYx8qOYYS9QZotekBAx0y-_n2d-EZPjFFdYNuU/edit?usp=sharing){target="_blank"} (NOAA internal only)
 

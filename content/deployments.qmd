@@ -18,15 +18,23 @@ The ESD deploys gliders under several different projects:
 
 The [below spreadsheet](https://docs.google.com/spreadsheets/d/1tSIi44OTEUQXPJwwiy1emhdIyRs9Vt8iT5IlJBMrPLA/edit?usp=sharing) lists all ESD (and formerly AERD) glider deployments, along with basic information about the deployment. Note, you must be logged in with your noaa.gov to see this sheet.
 
-<iframe src="https://docs.google.com/spreadsheets/d/e/2PACX-1vR1QEPFK9em24JT6-9p2MeW6Va6srqITFqsYpiF7x-QBAKdwYw4zeuJFOxjHr-4eeDRGzO-8Z0uE1z4/pubhtml?widget=true&amp;headers=false"style="width:700px; height:500px; border: 2px solid black;"></iframe>
+<iframe src="https://docs.google.com/spreadsheets/d/e/2PACX-1vR1QEPFK9em24JT6-9p2MeW6Va6srqITFqsYpiF7x-QBAKdwYw4zeuJFOxjHr-4eeDRGzO-8Z0uE1z4/pubhtml?widget=true&amp;headers=false"style="width:950px; height:500px; border: 2px solid black;"></iframe>
 
-(In progress: rather than displaying an embedded sheet, use R code to make a pretty table)
+(In progress: rather than displaying an embedded sheet, use code to make a pretty table)
 
 ## Deployment Reports
 
-Internal ESD glider deployment reports. Developing public-facing reports are in progress.
+| Year | Project | Deployment | Sensors | Report | ERDDAP | Internal Data
+|-----|-----|-----|-----|-----|-----|-----|
+| 2025 | SANDIEGO | unit_1024-20250224 | CTD, Ecopuck, BSIPAR, WISPR | [link](https://docs.google.com/document/d/1LQ9ch1gEuHtHEUbC7dymbtm9UlZu6IaePKbmLpKTlyU/edit?usp=sharing) | {in progress} | {in progress} |
+|-----|-----|-----|-----|-----|-----|-----|
+| 2024 | REFOCUS | john-20240312 | CTD, Optode, Nortek, Shadowgraph | [link](https://docs.google.com/document/d/1szQ7tV5stz8fyuNzF05jM1zxUQmkAwQxzZcmHGlDgwg/edit?usp=sharing) | {in progress} | {in progress} |
+| 2024 | ECOSWIM | calanus-20241019 | CTD, Optode, Ecopuck, Nortek | {in progress} | {in progress} | [link](https://console.cloud.google.com/storage/browser/amlr-gliders-deployments-dev/ECOSWIM/2024/calanus-20241019/data/processed-L1) |
+|...|...|...|...|...|...|...|
 
-### 2025
+
+
+<!-- ### 2025
 
 #### San Diego
 
@@ -58,4 +66,4 @@ Internal ESD glider deployment reports. Developing public-facing reports are in 
 | Deployment | Sensors |
 |------------------------------|------------------------------|
 | [AMLR01-20241120](https://docs.google.com/document/d/128D2a0Ud2Kda5JwIYVhN9An4CFT6KxdGoqS1RsHKtQ0/edit?usp=sharing){target="_blank"} |CTD, Optode, Ecopuck, AZFP |
-| [AMLR08-20241120](https://docs.google.com/document/d/1Bk2CQeC6dT7OtOInGbB85aCiE3qmz_S4JvjbNHziKyQ/edit?usp=sharing){target="_blank"} |CTD, Optode, Ecopuck, Nortek |
+| [AMLR08-20241120](https://docs.google.com/document/d/1Bk2CQeC6dT7OtOInGbB85aCiE3qmz_S4JvjbNHziKyQ/edit?usp=sharing){target="_blank"} |CTD, Optode, Ecopuck, Nortek | -->
