@@ -4,7 +4,7 @@
     "href": "index.html",
     "title": "Glider Lab Manual",
     "section": "",
-    "text": "The Ecosystem Science Division (ESD) at the Southwest Fisheries Science Center deploys gliders in both the California Current Ecosystem and the Antarctic Peninsula regions. The ESD’s glider fleet is managed by the Scientific Operations and Support (SOS) Program, and supports several research objectives within the ESD. We provide expertise across multiple autonomous platforms to deliver robust data for ecosystem monitoring and fisheries management.\nThis website is an in-development manual for all ESD glider activities. Please contact a member of the glider team with any questions. For information about active or past ESD glider deployments, see Past Deployments",
+    "text": "The Ecosystem Science Division (ESD) at the Southwest Fisheries Science Center deploys gliders in both the California Current Ecosystem and the Antarctic Peninsula regions. The ESD’s glider fleet is managed by the Scientific Operations and Support (SOS) Program, and supports several research objectives within the ESD. We provide expertise across multiple autonomous platforms to deliver robust data for ecosystem monitoring and fisheries management.\nThis website is an in-development manual for all ESD glider activities. Please contact a member of the glider team with any questions. For information about active or past ESD glider deployments, see Deployments",
     "crumbs": [
       "Home"
     ]
@@ -24,7 +24,7 @@
     "href": "index.html#project-management",
     "title": "Glider Lab Manual",
     "section": "Project Management",
-    "text": "Project Management\nThe ESD glider team is using GitHub Issues and Projects for project management. There efforts are heavily inspired and influenced by the Openscapes GitHub for project management approach.\nThe ESD glider team project pulls from issues from several repositories, but in particular this repo. For more details see the best practices page.\nFor most current Fleet Status information, see this Sheet (NOAA internal only)\n\nGitHub Repositories\nGitHub repos developed by the ESD glider team. Issues for these repos are tracked in the above-linked Project.\n\n\n\nrepo link\ndescription\n\n\n\n\nglider-lab-manual\nESD Glider lab website; docs used to generate this site\n\n\nglider-lab\nAll things glider lab: issues/tasks, calibration docs, config files, deployment reports, …\n\n\nstandard-glider-files\nESD glider cache files, as well as standard files that are put on all gliders before deployment\n\n\nglider-utils\nUtility functions for processing ESD glider data\n\n\nechoview_glider_template\nEchoview glider templates that are used for acoustic data analysis\n\n\nglider_processing_code\nCompilation of code that is used to work with glider acoustic data\n\n\nslocumRtDataVisTool\nCreates plots and generates useful statistics from slocum binary files",
+    "text": "Project Management\nThe ESD glider team is using GitHub Issues and Projects for project management. There efforts are heavily inspired and influenced by the Openscapes GitHub for project management approach.\nThe ESD glider team project pulls from issues from several repositories, but in particular the SWFSC/glider-lab repo. For more details see the best practices page.\nFor most current Fleet Status information, see this Sheet (NOAA internal only)\n\nGitHub Repositories\nGitHub repos developed by the ESD glider team. Issues for these repos are tracked in the above-linked Project.\n\n\n\nrepo link\ndescription\n\n\n\n\nglider-lab-manual\nESD Glider lab website; docs used to generate this site\n\n\nglider-lab\nAll things glider lab: issues/tasks, calibration docs, config files, deployment reports, …\n\n\nstandard-glider-files\nESD glider cache files, as well as standard files that are put on all gliders before deployment\n\n\nglider-utils\nUtility functions for processing ESD glider data\n\n\nechoview_glider_template\nEchoview glider templates that are used for acoustic data analysis\n\n\nglider_processing_code\nCompilation of code that is used to work with glider acoustic data\n\n\nslocumRtDataVisTool\nCreates plots and generates useful statistics from slocum binary files",
     "crumbs": [
       "Home"
     ]
@@ -419,7 +419,7 @@
     "href": "content/deployments.html#deployments",
     "title": "Deployments",
     "section": "Deployments",
-    "text": "Deployments\nThe below spreadsheet lists all ESD (and formerly AERD) glider deployments, along with basic information about the deployment. Note, you must be logged in with your noaa.gov to see this sheet.\n\n\n(In progress: rather than displaying an embedded sheet, use R code to make a pretty table)",
+    "text": "Deployments\nThe below spreadsheet lists all ESD (and formerly AERD) glider deployments, along with basic information about the deployment. Note, you must be logged in with your noaa.gov to see this sheet.\n\n\n(In progress: rather than displaying an embedded sheet, use code to make a pretty table)",
     "crumbs": [
       "Deployments"
     ]
@@ -429,7 +429,7 @@
     "href": "content/deployments.html#deployment-reports",
     "title": "Deployments",
     "section": "Deployment Reports",
-    "text": "Deployment Reports\nInternal ESD glider deployment reports. Developing public-facing reports are in progress.\n\n2025\n\nSan Diego\n\n\n\nDeployment\nSensors\n\n\n\n\nunit_1024-20250224\nCTD, Ecopuck, BSIPAR, WISPR\n\n\n\n\n\n\n2024\n\nSan Diego\n\n\n\nDeployment\nSensors\n\n\n\n\njohn-20240312\nCTD, Optode, Nortek,Shadowgraph\n\n\nringo-20240312\nCTD, Optode, Wide Shadowgraph\n\n\ngeorge-20240530\nCTD, Optode, Narrow Shadowgraph\n\n\n\n\n\nSanta Barbara\n\n\n\nDeployment\nSensors\n\n\n\n\ngeorge-20240907\nCTD, Optode,Ecopuck, Narrow Shadowgraph\n\n\n\n\n\nHumboldt\n\n\n\nDeployment\nSensors\n\n\n\n\ncalanus-20241019\nCTD, Optode, Ecopuck, Nortek\n\n\n\n\n\nAntarctica\n\n\n\nDeployment\nSensors\n\n\n\n\nAMLR01-20241120\nCTD, Optode, Ecopuck, AZFP\n\n\nAMLR08-20241120\nCTD, Optode, Ecopuck, Nortek",
+    "text": "Deployment Reports\n\n\n\nYear\nProject\nDeployment\nSensors\nReport\nERDDAP\nInternal Data\n\n\n\n\n2025\nSANDIEGO\nunit_1024-20250224\nCTD, Ecopuck, BSIPAR, WISPR\nlink\n{in progress}\n{in progress}\n\n\n—–\n—–\n—–\n—–\n—–\n—–\n—–\n\n\n2024\nREFOCUS\njohn-20240312\nCTD, Optode, Nortek, Shadowgraph\nlink\n{in progress}\n{in progress}\n\n\n2024\nECOSWIM\ncalanus-20241019\nCTD, Optode, Ecopuck, Nortek\n{in progress}\n{in progress}\nlink\n\n\n…\n…\n…\n…\n…\n…\n…",
     "crumbs": [
       "Deployments"
     ]
