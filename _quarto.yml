@@ -48,7 +48,7 @@ website:
       - section: "Data"
         contents:
         - content/data-management.qmd
-        - content/glider-data.qmd
+        - content/glider-data-proc.qmd
         - href: content/active-acoustics.qmd
           text: Acoustics
         # - section: "Data Processing"

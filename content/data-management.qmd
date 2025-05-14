@@ -26,7 +26,9 @@ Glider & Mooring Database
 
 ## Data Management Plan
 
-This section replaces the [AMLR Glider Data Management Plan](https://docs.google.com/document/d/1dW5ZdkOpTz59xy4xs8ypVOvGLWBYZMdlbwGJty4PTV0/edit?usp=sharing) Google doc. It describes what files go where, as well as required directory structures.
+This section describes what files go where, as well as required directory structures. It replaces the [AMLR Glider Data Management Plan](https://docs.google.com/document/d/1dW5ZdkOpTz59xy4xs8ypVOvGLWBYZMdlbwGJty4PTV0/edit?usp=sharing) Google doc. 
+
+[These slides](https://docs.google.com/presentation/d/1ccMxCOCY8buNoaoQmLMc1iFEqeswLgAp895v6F202Og/edit?usp=sharing) (NOAA internal only) describe and link to the various homes for different pieces of ESD glider data, for additional references. Several of these data homes are described in more detail below.
 
 ### Glider & Mooring Database
 

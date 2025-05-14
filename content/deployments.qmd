@@ -12,25 +12,32 @@ The ESD deploys gliders under several different projects:
 
 * **ECOSWIM**: Operation ECOSWIM is for glider surveys in the California CCE off of Humboldt and Morro Bay, California, in the Southern California waters of the Pacific Ocean. These surveys may collect krill biomass estimates, among other scientific goals.
 
-* **SANDIEGO**: Test deployments off of San Diego. These deployments may be, for instance, to test a glider before it goes to the Antarctic, or to test new sensors and/or sensor configurations (e.g., for the Enhanced Data Acquisition Passive Acoustics Strategic Initiative or the Uncrewed Systems Strategic Initiative). 
+* **SANDIEGO**: Test deployments off of San Diego. These deployments may be, for instance, to test a glider before it goes to the Antarctic, or to test new sensors and/or sensor configurations for the Enhanced Data Acquisition Passive Acoustics Strategic Initiative or the Uncrewed Systems Strategic Initiative. 
 
 ## Deployments
 
-The [below spreadsheet](https://docs.google.com/spreadsheets/d/1tSIi44OTEUQXPJwwiy1emhdIyRs9Vt8iT5IlJBMrPLA/edit?usp=sharing) lists all ESD (and formerly AERD) glider deployments, along with basic information about the deployment. Note, you must be logged in with your noaa.gov to see this sheet.
+The below table lists all ESD (and formerly AERD) glider deployments, along with basic information about the deployment. 
+See [this spreadsheet](https://docs.google.com/spreadsheets/d/1tSIi44OTEUQXPJwwiy1emhdIyRs9Vt8iT5IlJBMrPLA/edit?usp=sharing) (NOAA internal) for more details.
 
-<iframe src="https://docs.google.com/spreadsheets/d/e/2PACX-1vR1QEPFK9em24JT6-9p2MeW6Va6srqITFqsYpiF7x-QBAKdwYw4zeuJFOxjHr-4eeDRGzO-8Z0uE1z4/pubhtml?widget=true&amp;headers=false"style="width:950px; height:500px; border: 2px solid black;"></iframe>
+<!-- <iframe src="https://docs.google.com/spreadsheets/d/e/2PACX-1vR1QEPFK9em24JT6-9p2MeW6Va6srqITFqsYpiF7x-QBAKdwYw4zeuJFOxjHr-4eeDRGzO-8Z0uE1z4/pubhtml?widget=true&amp;headers=false"style="width:950px; height:500px; border: 2px solid black;"></iframe>
 
 (In progress: rather than displaying an embedded sheet, use code to make a pretty table)
 
-## Deployment Reports
+## Deployment Reports -->
 
-| Year | Project | Deployment | Sensors | Report | ERDDAP | Internal Data
-|-----|-----|-----|-----|-----|-----|-----|
-| 2025 | SANDIEGO | unit_1024-20250224 | CTD, Ecopuck, BSIPAR, WISPR | [link](https://docs.google.com/document/d/1LQ9ch1gEuHtHEUbC7dymbtm9UlZu6IaePKbmLpKTlyU/edit?usp=sharing) | {in progress} | {in progress} |
-|-----|-----|-----|-----|-----|-----|-----|
-| 2024 | REFOCUS | john-20240312 | CTD, Optode, Nortek, Shadowgraph | [link](https://docs.google.com/document/d/1szQ7tV5stz8fyuNzF05jM1zxUQmkAwQxzZcmHGlDgwg/edit?usp=sharing) | {in progress} | {in progress} |
-| 2024 | ECOSWIM | calanus-20241019 | CTD, Optode, Ecopuck, Nortek | {in progress} | {in progress} | [link](https://console.cloud.google.com/storage/browser/amlr-gliders-deployments-dev/ECOSWIM/2024/calanus-20241019/data/processed-L1) |
-|...|...|...|...|...|...|...|
+| Year | Project | Deployment | Location | Sensors | Report | ERDDAP | Internal Data 
+|-----|-----|-----|-----|-----|-----|-----|-----|
+| 2025 | SANDIEGO | unit_1024-20250224 | San Diego | CTD, Ecopuck, BSIPAR, WISPR | [link](https://docs.google.com/document/d/1LQ9ch1gEuHtHEUbC7dymbtm9UlZu6IaePKbmLpKTlyU/edit?usp=sharing) | {in progress} | {in progress} |
+|-----|-----|-----|-----|-----|-----|-----|-----|
+| 2024/25 | FREEBYRD | amlr01-20241120 | Antarctic | CTD, Optode, Ecopuck, AZFP | [link](https://docs.google.com/document/d/128D2a0Ud2Kda5JwIYVhN9An4CFT6KxdGoqS1RsHKtQ0/edit?usp=sharing) | {in progress} | {in progress} |
+| 2024/25 | FREEBYRD | amlr08-20241120 | Antarctic | CTD, Optode, Ecopuck, Nortek | [link](https://docs.google.com/document/d/1Bk2CQeC6dT7OtOInGbB85aCiE3qmz_S4JvjbNHziKyQ/edit?usp=sharing) | {in progress} | {in progress} |
+|-----|-----|-----|-----|-----|-----|-----|-----|
+| 2024 | ECOSWIM | calanus-20241019 | Humboldt | CTD, Optode, Ecopuck, Nortek | {in progress} | {in progress} | [glider](https://console.cloud.google.com/storage/browser/amlr-gliders-deployments-dev/ECOSWIM/2024/calanus-20241019/data/processed-L1); [acoustics](https://console.cloud.google.com/storage/browser/amlr-gliders-acoustics-dev/ECOSWIM/2024/calanus-20241019) |
+| 2024 | REFOCUS | george-20240907 | Santa Barbara | CTD, Optode,Ecopuck, Narrow Shadowgraph | [link](https://docs.google.com/document/d/12hNl6ZtEIISh4vlJcOJgK1RHsloGIa98WKf5xpjIq0U/edit?usp=sharing) | {in progress} | {in progress} | 
+| 2024 | REFOCUS | george-20240530 | San Diego | CTD, Optode, Narrow Shadowgraph | [link](https://docs.google.com/document/d/1MDVbBDjK2UvHjLFQ35nzniC-R7YycM6SZr0ymEFvapw/edit?usp=sharing)| {in progress} | [images](https://console.cloud.google.com/storage/browser/amlr-gliders-imagery-raw-dev/REFOCUS/2024/george-20240530) |
+| 2024 | REFOCUS | john-20240312 | San Diego | CTD, Optode, Nortek, Shadowgraph | [link](https://docs.google.com/document/d/1szQ7tV5stz8fyuNzF05jM1zxUQmkAwQxzZcmHGlDgwg/edit?usp=sharing) | {in progress} | {in progress} |
+| 2024 | REFOCUS | ringo-20240312 | San Diego | CTD, Optode, Nortek, Wide Shadowgraph | [link](https://docs.google.com/document/d/12iSPkBChPjtPFbFQxX2hCopga3hvBr91qH1kJW_w5sw/edit?usp=sharing) | {in progress} | {in progress} |
+|...|...|...|...|...|...|...|...|
 
 
 

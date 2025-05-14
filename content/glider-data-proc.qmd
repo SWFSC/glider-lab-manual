@@ -1,5 +1,5 @@
 ---
-title: Glider Data
+title: Glider Data Processing
 ---
 
 There are many steps and flavors to glider data processing, from the base processing (binary glider to NetCDF files for Slocum gliders), to QA/QC, to developing additional data products. This page outlines the ESD glider lab's data processing workflow, and in particular base processing and data products. 
