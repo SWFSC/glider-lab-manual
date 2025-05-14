@@ -45,10 +45,13 @@ website:
       #   contents:
       #     - content/past-deployments.qmd  
       #     - content/reports.qmd
-      - section: "Data"
+      - content/data-management.qmd
+      - section: "Data Processing"
         contents:
-        - content/data-management.qmd
-        - content/glider-data-proc.qmd
+        - href: content/data-proc-overview.qmd
+          text: Overview
+        - href: content/glider-data.qmd
+          text: Glider Data
         - href: content/active-acoustics.qmd
           text: Acoustics
         # - section: "Data Processing"
@@ -74,4 +77,3 @@ format:
 filters:
   - include-files.lua
   - quarto
-

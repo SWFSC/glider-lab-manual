@@ -1,5 +1,5 @@
 ---
-title: Glider Data Processing
+title: Glider Data
 ---
 
 There are many steps and flavors to glider data processing, from the base processing (binary glider to NetCDF files for Slocum gliders), to QA/QC, to developing additional data products. This page outlines the ESD glider lab's data processing workflow, and in particular base processing and data products. 
@@ -28,7 +28,7 @@ Common terminology used in glider data processing:
 
 The base glider data processing, also referred to as "Level 1" processing, is primarily done using [PyGlider](https://github.com/c-proof/pyglider), hereafter simply 'pyglider'. Pyglider creates creates timeseries and gridded CF-compliant NetCDF files, which can be both used internally in further workflows, as well as made publicly available through an ERDDAP (e.g., via the [NGDAC](https://ioos.github.io/glider-dac/index.html)). 
 
-![ESD's base glider data processing](images/base-proc-workflow.jpg)
+![ESD's base glider data processing](images/base-proc-workflow.jpg){fig-align="left"}
 
 ### Data Products
 

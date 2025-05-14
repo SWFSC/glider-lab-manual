@@ -8,9 +8,10 @@ This page provides the in-the-weeds data management details, which will likely o
 
 ## Quick Links
 
-Google Drive:
+Google Drive (NOAA internal only) :
 
 - [AMLR Gliders](https://drive.google.com/drive/folders/1wv2wGgWco_3heUR7JPVMc3KLGFCzkcBT) 
+- [ESD glider data locations](https://docs.google.com/presentation/d/1ccMxCOCY8buNoaoQmLMc1iFEqeswLgAp895v6F202Og/edit?usp=sharing)
 
 Google Cloud Storage (GCS) buckets:
 
@@ -66,7 +67,7 @@ Todo includes defining a folder structure for 'pre-deployment things' that are c
 
 ###  glider-lab repository
 
-The [glider-lab](https://github.com/SWFSC/glider-lab) repository has evoloved into a place to store a) reference documents that need to be accessible to folks outside NOAA and b) files used for processing in GCP. These include:
+The [glider-lab](https://github.com/SWFSC/glider-lab) repository has evoloved into a place to store a) reference documents that can be accessible to folks outside NOAA and b) files used for processing in GCP. These include:
 
 - calibration-docs: factory calibration documents for glider instruments
 - deployment-configs: yaml configuration files for glider data processing
@@ -75,6 +76,10 @@ The [glider-lab](https://github.com/SWFSC/glider-lab) repository has evoloved in
 - echoview-glider-calib-files: calibration files used for processing acoustic data using [Echoview](https://echoview.com/)
 
 See the [repo readme](https://github.com/SWFSC/glider-lab/blob/main/README.md) for full folder descriptions.
+
+###  standard-glider-files repository
+
+The [standard-glider-files](https://github.com/SWFSC/standard-glider-files) repository contains standard files that are put on ESD gliders before deployment. This repo and these files are also commonly used during ESD lab tests.
 
 ### GCS Buckets
 
@@ -150,17 +155,17 @@ The structure of an individual deployment folder for acoustics, located in the [
 ├── data
     ├── delayed
     ├── rt
-    ├── out
+    ├── processed-echoview
 ├── config
 ├── metadata
     ├── echoview
 ```
 
-**data/delayed**: Raw acoustic (e.g., AZFP or Nortek) delayed data
+**data/delayed**: Raw acoustic delayed data, from either AZFPs or Echosounders
 
 **data/rt**: Raw real-time ad2 files. For Nortek instruments only
 
-**data/out**: to-be-determined folder/structure for Echoview outputs and/or other processed data
+**data/processed-echoview**: Folder for Echoview outputs. For instance, Echoview export files, and the gridded NetCDF file with appended acoustic data
 
 **config**: config file(s) used during the deployment
 

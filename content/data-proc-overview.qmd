@@ -1,0 +1,7 @@
+---
+title: Data Processing Overview
+---
+
+The below workflow provides an overview of ESD glider data inputs, processing, data products, and output locations. For more details about particular steps, see the individual data processing pages.
+
+![Overview of ESD glider data processing](images/glider-data-overview.JPG){fig-align="left"}

@@ -16,7 +16,8 @@ The ESD deploys gliders under several different projects:
 
 ## Deployments
 
-The below table lists all ESD (and formerly AERD) glider deployments, along with basic information about the deployment. 
+The below table lists all (in progress) ESD (and formerly AERD) glider deployments, along with basic information about the deployment. The table also includes links to post-deployment reports, and links to data files where they exist. See [below](#data-links) for details on the data links.
+
 See [this spreadsheet](https://docs.google.com/spreadsheets/d/1tSIi44OTEUQXPJwwiy1emhdIyRs9Vt8iT5IlJBMrPLA/edit?usp=sharing) (NOAA internal) for more details.
 
 <!-- <iframe src="https://docs.google.com/spreadsheets/d/e/2PACX-1vR1QEPFK9em24JT6-9p2MeW6Va6srqITFqsYpiF7x-QBAKdwYw4zeuJFOxjHr-4eeDRGzO-8Z0uE1z4/pubhtml?widget=true&amp;headers=false"style="width:950px; height:500px; border: 2px solid black;"></iframe>
@@ -24,6 +25,8 @@ See [this spreadsheet](https://docs.google.com/spreadsheets/d/1tSIi44OTEUQXPJwwi
 (In progress: rather than displaying an embedded sheet, use code to make a pretty table)
 
 ## Deployment Reports -->
+
+# TODO: add plots
 
 | Year | Project | Deployment | Location | Sensors | Report | ERDDAP | Internal Data 
 |-----|-----|-----|-----|-----|-----|-----|-----|
@@ -39,6 +42,17 @@ See [this spreadsheet](https://docs.google.com/spreadsheets/d/1tSIi44OTEUQXPJwwi
 | 2024 | REFOCUS | ringo-20240312 | San Diego | CTD, Optode, Nortek, Wide Shadowgraph | [link](https://docs.google.com/document/d/12iSPkBChPjtPFbFQxX2hCopga3hvBr91qH1kJW_w5sw/edit?usp=sharing) | {in progress} | {in progress} |
 |...|...|...|...|...|...|...|...|
 
+### Data Links
+
+The above table contains several  links to different data products.
+
+The 'ERDDAP' column will contain the link to the glider dataset when it is published to the [ERDDAP](https://gliders.ioos.us/erddap/index.html) of the [IOOS National Glider Data Assembly Center](https://gliders.ioos.us/).
+
+The 'Internal Data' column contains links to various ESD-internal data products, stored within the ESD Google Cloud Platform (GCP) project. Users will only be able to access these data if they have been granted appropriate permissions within the project. Currently there are three different types of internal data links:
+
+- **glider**: Data products from the ['base' glider processing](glider-data.qmd#base-processing) workflow. The most relevant data products for users will likely be the 'science' timeseries, and the gridded science data. 
+- **acoustics**: Link the 'acoustics' deployment folder. See a description of the structure of this folder [here](data-management.qmd#acoustics). 
+- **imagery**: Link the the 'raw imagery' deployment folder. See a description of the structure of this folder [here](data-management.qmd#raw-imagery)
 
 
 <!-- ### 2025
