@@ -315,10 +315,16 @@ ul.task-list li input[type="checkbox"] {
  <span class="menu-text">Deployments</span></a>
   </div>
 </li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../content/data-management.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Data Management</span></a>
+  </div>
+</li>
         <li class="sidebar-item sidebar-item-section">
       <div class="sidebar-item-container"> 
             <a class="sidebar-item-text sidebar-link text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-2" role="navigation" aria-expanded="false">
- <span class="menu-text">Data</span></a>
+ <span class="menu-text">Data Processing</span></a>
           <a class="sidebar-item-toggle text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-2" role="navigation" aria-expanded="false" aria-label="Toggle section">
             <i class="bi bi-chevron-right ms-2"></i>
           </a> 
@@ -326,8 +332,8 @@ ul.task-list li input[type="checkbox"] {
       <ul id="quarto-sidebar-section-2" class="collapse list-unstyled sidebar-section depth1 ">  
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../content/data-management.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">Data Management</span></a>
+  <a href="../content/data-proc-overview.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Overview</span></a>
   </div>
 </li>
           <li class="sidebar-item">
@@ -368,7 +374,10 @@ ul.task-list li input[type="checkbox"] {
   <ul>
   <li><a href="#projects" id="toc-projects" class="nav-link active" data-scroll-target="#projects">Projects</a></li>
   <li><a href="#deployments" id="toc-deployments" class="nav-link" data-scroll-target="#deployments">Deployments</a></li>
-  <li><a href="#deployment-reports" id="toc-deployment-reports" class="nav-link" data-scroll-target="#deployment-reports">Deployment Reports</a></li>
+  <li><a href="#todo-add-plots" id="toc-todo-add-plots" class="nav-link" data-scroll-target="#todo-add-plots">TODO: add plots</a>
+  <ul>
+  <li><a href="#data-links" id="toc-data-links" class="nav-link" data-scroll-target="#data-links">Data Links</a></li>
+  </ul></li>
   </ul>
 <div class="toc-actions"><ul><li><a href="https://github.com/SWFSC/glider-lab-manual/edit/main/content/deployments.qmd" class="toc-action"><i class="bi bi-github"></i>Edit this page</a></li><li><a href="https://github.com/SWFSC/glider-lab-manual/blob/main/content/deployments.qmd" class="toc-action"><i class="bi empty"></i>View source</a></li><li><a href="https://github.com/SWFSC/glider-lab-manual/issues/new" class="toc-action"><i class="bi empty"></i>Report an issue</a></li></ul></div></nav>
     </div>
@@ -402,24 +411,28 @@ ul.task-list li input[type="checkbox"] {
 <li><p><strong>FREEBYRD</strong>: Operation FREEBYRD is a long-term program to replace ship-based surveys with autonomous vehicles to estimate Antarctic krill biomass in support of the Convention for the Conservation of Antarctic Marine Living Resources (CCAMLR).</p></li>
 <li><p><strong>REFOCUS</strong>: Deployments in support of the REFOCUS project… <todo></todo></p></li>
 <li><p><strong>ECOSWIM</strong>: Operation ECOSWIM is for glider surveys in the California CCE off of Humboldt and Morro Bay, California, in the Southern California waters of the Pacific Ocean. These surveys may collect krill biomass estimates, among other scientific goals.</p></li>
-<li><p><strong>SANDIEGO</strong>: Test deployments off of San Diego. These deployments may be, for instance, to test a glider before it goes to the Antarctic, or to test new sensors and/or sensor configurations (e.g., for the Enhanced Data Acquisition Passive Acoustics Strategic Initiative or the Uncrewed Systems Strategic Initiative).</p></li>
+<li><p><strong>SANDIEGO</strong>: Test deployments off of San Diego. These deployments may be, for instance, to test a glider before it goes to the Antarctic, or to test new sensors and/or sensor configurations for the Enhanced Data Acquisition Passive Acoustics Strategic Initiative or the Uncrewed Systems Strategic Initiative.</p></li>
 </ul>
 </section>
 <section id="deployments" class="level2">
 <h2 class="anchored" data-anchor-id="deployments">Deployments</h2>
-<p>The <a href="https://docs.google.com/spreadsheets/d/1tSIi44OTEUQXPJwwiy1emhdIyRs9Vt8iT5IlJBMrPLA/edit?usp=sharing">below spreadsheet</a> lists all ESD (and formerly AERD) glider deployments, along with basic information about the deployment. Note, you must be logged in with your noaa.gov to see this sheet.</p>
-<iframe src="https://docs.google.com/spreadsheets/d/e/2PACX-1vR1QEPFK9em24JT6-9p2MeW6Va6srqITFqsYpiF7x-QBAKdwYw4zeuJFOxjHr-4eeDRGzO-8Z0uE1z4/pubhtml?widget=true&amp;headers=false" style="width:950px; height:500px; border: 2px solid black;">
-</iframe>
-<p>(In progress: rather than displaying an embedded sheet, use code to make a pretty table)</p>
+<p>The below table lists all (in progress) ESD (and formerly AERD) glider deployments, along with basic information about the deployment. The table also includes links to post-deployment reports, and links to data files where they exist. See <a href="#data-links">below</a> for details on the data links.</p>
+<p>See <a href="https://docs.google.com/spreadsheets/d/1tSIi44OTEUQXPJwwiy1emhdIyRs9Vt8iT5IlJBMrPLA/edit?usp=sharing">this spreadsheet</a> (NOAA internal) for more details.</p>
+<!-- <iframe src="https://docs.google.com/spreadsheets/d/e/2PACX-1vR1QEPFK9em24JT6-9p2MeW6Va6srqITFqsYpiF7x-QBAKdwYw4zeuJFOxjHr-4eeDRGzO-8Z0uE1z4/pubhtml?widget=true&amp;headers=false"style="width:950px; height:500px; border: 2px solid black;"></iframe>
+
+(In progress: rather than displaying an embedded sheet, use code to make a pretty table)
+
+## Deployment Reports -->
 </section>
-<section id="deployment-reports" class="level2">
-<h2 class="anchored" data-anchor-id="deployment-reports">Deployment Reports</h2>
+<section id="todo-add-plots" class="level1">
+<h1>TODO: add plots</h1>
 <table class="caption-top table">
 <thead>
 <tr class="header">
 <th>Year</th>
 <th>Project</th>
 <th>Deployment</th>
+<th>Location</th>
 <th>Sensors</th>
 <th>Report</th>
 <th>ERDDAP</th>
@@ -431,6 +444,7 @@ ul.task-list li input[type="checkbox"] {
 <td>2025</td>
 <td>SANDIEGO</td>
 <td>unit_1024-20250224</td>
+<td>San Diego</td>
 <td>CTD, Ecopuck, BSIPAR, WISPR</td>
 <td><a href="https://docs.google.com/document/d/1LQ9ch1gEuHtHEUbC7dymbtm9UlZu6IaePKbmLpKTlyU/edit?usp=sharing">link</a></td>
 <td>{in progress}</td>
@@ -444,11 +458,73 @@ ul.task-list li input[type="checkbox"] {
 <td>—–</td>
 <td>—–</td>
 <td>—–</td>
+<td>—–</td>
+</tr>
+<tr class="odd">
+<td>2024/25</td>
+<td>FREEBYRD</td>
+<td>amlr01-20241120</td>
+<td>Antarctic</td>
+<td>CTD, Optode, Ecopuck, AZFP</td>
+<td><a href="https://docs.google.com/document/d/128D2a0Ud2Kda5JwIYVhN9An4CFT6KxdGoqS1RsHKtQ0/edit?usp=sharing">link</a></td>
+<td>{in progress}</td>
+<td>{in progress}</td>
+</tr>
+<tr class="even">
+<td>2024/25</td>
+<td>FREEBYRD</td>
+<td>amlr08-20241120</td>
+<td>Antarctic</td>
+<td>CTD, Optode, Ecopuck, Nortek</td>
+<td><a href="https://docs.google.com/document/d/1Bk2CQeC6dT7OtOInGbB85aCiE3qmz_S4JvjbNHziKyQ/edit?usp=sharing">link</a></td>
+<td>{in progress}</td>
+<td>{in progress}</td>
+</tr>
+<tr class="odd">
+<td>—–</td>
+<td>—–</td>
+<td>—–</td>
+<td>—–</td>
+<td>—–</td>
+<td>—–</td>
+<td>—–</td>
+<td>—–</td>
+</tr>
+<tr class="even">
+<td>2024</td>
+<td>ECOSWIM</td>
+<td>calanus-20241019</td>
+<td>Humboldt</td>
+<td>CTD, Optode, Ecopuck, Nortek</td>
+<td>{in progress}</td>
+<td>{in progress}</td>
+<td><a href="https://console.cloud.google.com/storage/browser/amlr-gliders-deployments-dev/ECOSWIM/2024/calanus-20241019/data/processed-L1">glider</a>; <a href="https://console.cloud.google.com/storage/browser/amlr-gliders-acoustics-dev/ECOSWIM/2024/calanus-20241019">acoustics</a></td>
+</tr>
+<tr class="odd">
+<td>2024</td>
+<td>REFOCUS</td>
+<td>george-20240907</td>
+<td>Santa Barbara</td>
+<td>CTD, Optode,Ecopuck, Narrow Shadowgraph</td>
+<td><a href="https://docs.google.com/document/d/12hNl6ZtEIISh4vlJcOJgK1RHsloGIa98WKf5xpjIq0U/edit?usp=sharing">link</a></td>
+<td>{in progress}</td>
+<td>{in progress}</td>
+</tr>
+<tr class="even">
+<td>2024</td>
+<td>REFOCUS</td>
+<td>george-20240530</td>
+<td>San Diego</td>
+<td>CTD, Optode, Narrow Shadowgraph</td>
+<td><a href="https://docs.google.com/document/d/1MDVbBDjK2UvHjLFQ35nzniC-R7YycM6SZr0ymEFvapw/edit?usp=sharing">link</a></td>
+<td>{in progress}</td>
+<td><a href="https://console.cloud.google.com/storage/browser/amlr-gliders-imagery-raw-dev/REFOCUS/2024/george-20240530">images</a></td>
 </tr>
 <tr class="odd">
 <td>2024</td>
 <td>REFOCUS</td>
 <td>john-20240312</td>
+<td>San Diego</td>
 <td>CTD, Optode, Nortek, Shadowgraph</td>
 <td><a href="https://docs.google.com/document/d/1szQ7tV5stz8fyuNzF05jM1zxUQmkAwQxzZcmHGlDgwg/edit?usp=sharing">link</a></td>
 <td>{in progress}</td>
@@ -456,14 +532,16 @@ ul.task-list li input[type="checkbox"] {
 </tr>
 <tr class="even">
 <td>2024</td>
-<td>ECOSWIM</td>
-<td>calanus-20241019</td>
-<td>CTD, Optode, Ecopuck, Nortek</td>
+<td>REFOCUS</td>
+<td>ringo-20240312</td>
+<td>San Diego</td>
+<td>CTD, Optode, Nortek, Wide Shadowgraph</td>
+<td><a href="https://docs.google.com/document/d/12iSPkBChPjtPFbFQxX2hCopga3hvBr91qH1kJW_w5sw/edit?usp=sharing">link</a></td>
 <td>{in progress}</td>
 <td>{in progress}</td>
-<td><a href="https://console.cloud.google.com/storage/browser/amlr-gliders-deployments-dev/ECOSWIM/2024/calanus-20241019/data/processed-L1">link</a></td>
 </tr>
 <tr class="odd">
+<td>…</td>
 <td>…</td>
 <td>…</td>
 <td>…</td>
@@ -474,6 +552,16 @@ ul.task-list li input[type="checkbox"] {
 </tr>
 </tbody>
 </table>
+<section id="data-links" class="level3">
+<h3 class="anchored" data-anchor-id="data-links">Data Links</h3>
+<p>The above table contains several links to different data products.</p>
+<p>The ‘ERDDAP’ column will contain the link to the glider dataset when it is published to the <a href="https://gliders.ioos.us/erddap/index.html">ERDDAP</a> of the <a href="https://gliders.ioos.us/">IOOS National Glider Data Assembly Center</a>.</p>
+<p>The ‘Internal Data’ column contains links to various ESD-internal data products, stored within the ESD Google Cloud Platform (GCP) project. Users will only be able to access these data if they have been granted appropriate permissions within the project. Currently there are three different types of internal data links:</p>
+<ul>
+<li><strong>glider</strong>: Data products from the <a href="../content/glider-data.html#base-processing">‘base’ glider processing</a> workflow. The most relevant data products for users will likely be the ‘science’ timeseries, and the gridded science data.</li>
+<li><strong>acoustics</strong>: Link the ‘acoustics’ deployment folder. See a description of the structure of this folder <a href="../content/data-management.html#acoustics">here</a>.</li>
+<li><strong>imagery</strong>: Link the the ‘raw imagery’ deployment folder. See a description of the structure of this folder <a href="../content/data-management.html#raw-imagery">here</a></li>
+</ul>
 <!-- ### 2025
 
 #### San Diego
@@ -509,6 +597,7 @@ ul.task-list li input[type="checkbox"] {
 | [AMLR08-20241120](https://docs.google.com/document/d/1Bk2CQeC6dT7OtOInGbB85aCiE3qmz_S4JvjbNHziKyQ/edit?usp=sharing){target="_blank"} |CTD, Optode, Ecopuck, Nortek | -->
 
 
+</section>
 </section>
 
 <a onclick="window.scrollTo(0, 0); return false;" role="button" id="quarto-back-to-top"><i class="bi bi-arrow-up"></i> Back to top</a></main> <!-- /main -->

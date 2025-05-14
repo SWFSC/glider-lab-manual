@@ -245,7 +245,7 @@ ul.task-list li input[type="checkbox"] {
       <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" role="button" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
         <i class="bi bi-layout-text-sidebar-reverse"></i>
       </button>
-        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../content/data-management.html">Data</a></li><li class="breadcrumb-item"><a href="../content/data-management.html">Data Management</a></li></ol></nav>
+        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../content/data-management.html">Data Management</a></li></ol></nav>
         <a class="flex-grow-1" role="navigation" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
         </a>
       <button type="button" class="btn quarto-search-button" aria-label="Search" onclick="window.quartoOpenSearch();">
@@ -315,19 +315,25 @@ ul.task-list li input[type="checkbox"] {
  <span class="menu-text">Deployments</span></a>
   </div>
 </li>
-        <li class="sidebar-item sidebar-item-section">
-      <div class="sidebar-item-container"> 
-            <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-2" role="navigation" aria-expanded="true">
- <span class="menu-text">Data</span></a>
-          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-2" role="navigation" aria-expanded="true" aria-label="Toggle section">
-            <i class="bi bi-chevron-right ms-2"></i>
-          </a> 
-      </div>
-      <ul id="quarto-sidebar-section-2" class="collapse list-unstyled sidebar-section depth1 show">  
-          <li class="sidebar-item">
+        <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="../content/data-management.html" class="sidebar-item-text sidebar-link active">
  <span class="menu-text">Data Management</span></a>
+  </div>
+</li>
+        <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a class="sidebar-item-text sidebar-link text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-2" role="navigation" aria-expanded="false">
+ <span class="menu-text">Data Processing</span></a>
+          <a class="sidebar-item-toggle text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-2" role="navigation" aria-expanded="false" aria-label="Toggle section">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-2" class="collapse list-unstyled sidebar-section depth1 ">  
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../content/data-proc-overview.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Overview</span></a>
   </div>
 </li>
           <li class="sidebar-item">
@@ -378,6 +384,7 @@ ul.task-list li input[type="checkbox"] {
   </ul></li>
   <li><a href="#amlr-gliders-google-drive" id="toc-amlr-gliders-google-drive" class="nav-link" data-scroll-target="#amlr-gliders-google-drive">AMLR Gliders Google Drive</a></li>
   <li><a href="#glider-lab-repository" id="toc-glider-lab-repository" class="nav-link" data-scroll-target="#glider-lab-repository">glider-lab repository</a></li>
+  <li><a href="#standard-glider-files-repository" id="toc-standard-glider-files-repository" class="nav-link" data-scroll-target="#standard-glider-files-repository">standard-glider-files repository</a></li>
   <li><a href="#gcs-buckets" id="toc-gcs-buckets" class="nav-link" data-scroll-target="#gcs-buckets">GCS Buckets</a>
   <ul class="collapse">
   <li><a href="#deployments" id="toc-deployments" class="nav-link" data-scroll-target="#deployments">Deployments</a></li>
@@ -393,7 +400,7 @@ ul.task-list li input[type="checkbox"] {
 <main class="content" id="quarto-document-content">
 
 
-<header id="title-block-header" class="quarto-title-block default"><nav class="quarto-page-breadcrumbs quarto-title-breadcrumbs d-none d-lg-block" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../content/data-management.html">Data</a></li><li class="breadcrumb-item"><a href="../content/data-management.html">Data Management</a></li></ol></nav>
+<header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
 <h1 class="title">Data Management</h1>
 </div>
@@ -416,9 +423,10 @@ ul.task-list li input[type="checkbox"] {
 <p>This page provides the in-the-weeds data management details, which will likely only be relevant for ESD glider lab members. Users looking for more general information about glider data products should go to the data type pages (links todo).</p>
 <section id="quick-links" class="level2">
 <h2 class="anchored" data-anchor-id="quick-links">Quick Links</h2>
-<p>Google Drive:</p>
+<p>Google Drive (NOAA internal only) :</p>
 <ul>
 <li><a href="https://drive.google.com/drive/folders/1wv2wGgWco_3heUR7JPVMc3KLGFCzkcBT">AMLR Gliders</a></li>
+<li><a href="https://docs.google.com/presentation/d/1ccMxCOCY8buNoaoQmLMc1iFEqeswLgAp895v6F202Og/edit?usp=sharing">ESD glider data locations</a></li>
 </ul>
 <p>Google Cloud Storage (GCS) buckets:</p>
 <ul>
@@ -435,7 +443,8 @@ ul.task-list li input[type="checkbox"] {
 </section>
 <section id="data-management-plan" class="level2">
 <h2 class="anchored" data-anchor-id="data-management-plan">Data Management Plan</h2>
-<p>This section replaces the <a href="https://docs.google.com/document/d/1dW5ZdkOpTz59xy4xs8ypVOvGLWBYZMdlbwGJty4PTV0/edit?usp=sharing">AMLR Glider Data Management Plan</a> Google doc. It describes what files go where, as well as required directory structures.</p>
+<p>This section describes what files go where, as well as required directory structures. It replaces the <a href="https://docs.google.com/document/d/1dW5ZdkOpTz59xy4xs8ypVOvGLWBYZMdlbwGJty4PTV0/edit?usp=sharing">AMLR Glider Data Management Plan</a> Google doc.</p>
+<p><a href="https://docs.google.com/presentation/d/1ccMxCOCY8buNoaoQmLMc1iFEqeswLgAp895v6F202Og/edit?usp=sharing">These slides</a> (NOAA internal only) describe and link to the various homes for different pieces of ESD glider data, for additional references. Several of these data homes are described in more detail below.</p>
 <section id="glider-mooring-database" class="level3">
 <h3 class="anchored" data-anchor-id="glider-mooring-database">Glider &amp; Mooring Database</h3>
 <p>The glider and mooring database is a SQL Server database, hosted on the internal SWFSC network. This database exists to track all of the glider/instrument (and mooring) parts and builds. Each glider deployment is represented as a build, and each build includes links to all of the different parts that were on that glider for the deployment. The rest of this section provides high-level guidance for how to use the Glider &amp; Mooring Database; see <a href="https://docs.google.com/document/d/1mKMjSfp_QYXo66buBBd0NiJ7NqUk52FV95NxSW766Vc/edit?usp=sharing">this document</a> for more details, including database access instructions for both database users and managers.</p>
@@ -467,7 +476,7 @@ ul.task-list li input[type="checkbox"] {
 </section>
 <section id="glider-lab-repository" class="level3">
 <h3 class="anchored" data-anchor-id="glider-lab-repository">glider-lab repository</h3>
-<p>The <a href="https://github.com/SWFSC/glider-lab">glider-lab</a> repository has evoloved into a place to store a) reference documents that need to be accessible to folks outside NOAA and b) files used for processing in GCP. These include:</p>
+<p>The <a href="https://github.com/SWFSC/glider-lab">glider-lab</a> repository has evoloved into a place to store a) reference documents that can be accessible to folks outside NOAA and b) files used for processing in GCP. These include:</p>
 <ul>
 <li>calibration-docs: factory calibration documents for glider instruments</li>
 <li>deployment-configs: yaml configuration files for glider data processing</li>
@@ -476,6 +485,10 @@ ul.task-list li input[type="checkbox"] {
 <li>echoview-glider-calib-files: calibration files used for processing acoustic data using <a href="https://echoview.com/">Echoview</a></li>
 </ul>
 <p>See the <a href="https://github.com/SWFSC/glider-lab/blob/main/README.md">repo readme</a> for full folder descriptions.</p>
+</section>
+<section id="standard-glider-files-repository" class="level3">
+<h3 class="anchored" data-anchor-id="standard-glider-files-repository">standard-glider-files repository</h3>
+<p>The <a href="https://github.com/SWFSC/standard-glider-files">standard-glider-files</a> repository contains standard files that are put on ESD gliders before deployment. This repo and these files are also commonly used during ESD lab tests.</p>
 </section>
 <section id="gcs-buckets" class="level3">
 <h3 class="anchored" data-anchor-id="gcs-buckets">GCS Buckets</h3>
@@ -530,13 +543,13 @@ ul.task-list li input[type="checkbox"] {
 <pre><code>├── data
     ├── delayed
     ├── rt
-    ├── out
+    ├── processed-echoview
 ├── config
 ├── metadata
     ├── echoview</code></pre>
-<p><strong>data/delayed</strong>: Raw acoustic (e.g., AZFP or Nortek) delayed data</p>
+<p><strong>data/delayed</strong>: Raw acoustic delayed data, from either AZFPs or Echosounders</p>
 <p><strong>data/rt</strong>: Raw real-time ad2 files. For Nortek instruments only</p>
-<p><strong>data/out</strong>: to-be-determined folder/structure for Echoview outputs and/or other processed data</p>
+<p><strong>data/processed-echoview</strong>: Folder for Echoview outputs. For instance, Echoview export files, and the gridded NetCDF file with appended acoustic data</p>
 <p><strong>config</strong>: config file(s) used during the deployment</p>
 <p><strong>metadata/echoview</strong>: metadata files for Echoview, generated by base glider processing code</p>
 </section>
