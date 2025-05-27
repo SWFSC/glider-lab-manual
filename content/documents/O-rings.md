@@ -51,6 +51,16 @@ Part number:\
 Price:\
 Lube:
 
+## OceanScout
+
+### Hull 
+
+O-ring: dash 255, 70A Buna-N\
+Vendor: McMaster-Carr\
+Part number:https://www.mcmaster.com/9452K356/\
+Price:\
+Lube:
+
 ## Moorings
 
 ### Nortek Signature 100
