@@ -373,8 +373,7 @@ ul.task-list li input[type="checkbox"] {
    
   <ul>
   <li><a href="#projects" id="toc-projects" class="nav-link active" data-scroll-target="#projects">Projects</a></li>
-  <li><a href="#deployments" id="toc-deployments" class="nav-link" data-scroll-target="#deployments">Deployments</a></li>
-  <li><a href="#todo-add-plots" id="toc-todo-add-plots" class="nav-link" data-scroll-target="#todo-add-plots">TODO: add plots</a>
+  <li><a href="#deployments" id="toc-deployments" class="nav-link" data-scroll-target="#deployments">Deployments</a>
   <ul>
   <li><a href="#data-links" id="toc-data-links" class="nav-link" data-scroll-target="#data-links">Data Links</a></li>
   </ul></li>
@@ -418,14 +417,58 @@ ul.task-list li input[type="checkbox"] {
 <h2 class="anchored" data-anchor-id="deployments">Deployments</h2>
 <p>The below table lists all (in progress) ESD (and formerly AERD) glider deployments, along with basic information about the deployment. The table also includes links to post-deployment reports, and links to data files where they exist. See <a href="#data-links">below</a> for details on the data links.</p>
 <p>See <a href="https://docs.google.com/spreadsheets/d/1tSIi44OTEUQXPJwwiy1emhdIyRs9Vt8iT5IlJBMrPLA/edit?usp=sharing">this spreadsheet</a> (NOAA internal) for more details.</p>
-<!-- <iframe src="https://docs.google.com/spreadsheets/d/e/2PACX-1vR1QEPFK9em24JT6-9p2MeW6Va6srqITFqsYpiF7x-QBAKdwYw4zeuJFOxjHr-4eeDRGzO-8Z0uE1z4/pubhtml?widget=true&amp;headers=false"style="width:950px; height:500px; border: 2px solid black;"></iframe>
+<!-- <iframe src="https://docs.google.com/spreadsheets/d/e/2PACX-1vR1QEPFK9em24JT6-9p2MeW6Va6srqITFqsYpiF7x-QBAKdwYw4zeuJFOxjHr-4eeDRGzO-8Z0uE1z4/pubhtml?widget=true&amp;headers=false"style="width:950px; height:500px; border: 2px solid black;"></iframe> -->
+<!-- 
+gliders <- tibble::tribble(
+    ~Year, ~Deployment, ~Location, ~Sensors, ~Report, ~ERDDAP, ~`Internal Data`, 
+    "2025", "unit_1024-20250224", "San Diego", 
+    "CTD, Ecopuck, PAR, WISPR", 
+    "https://docs.google.com/document/d/1LQ9ch1gEuHtHEUbC7dymbtm9UlZu6IaePKbmLpKTlyU/edit?usp=sharing", 
+    "{in progress}", 
+    "{in progress}", 
 
-(In progress: rather than displaying an embedded sheet, use code to make a pretty table)
+    "2024/25", "amlr01-20241120", "Antarctic", 
+    "CTD, Optode, Ecopuck, AZFP", 
+    "https://docs.google.com/document/d/128D2a0Ud2Kda5JwIYVhN9An4CFT6KxdGoqS1RsHKtQ0/edit?usp=sharing", 
+    "{in progress}", 
+    "{in progress}", 
 
-## Deployment Reports -->
-</section>
-<section id="todo-add-plots" class="level1">
-<h1>TODO: add plots</h1>
+    "2024/25", "amlr01-20241120", "Antarctic", 
+    "CTD, Optode, Ecopuck, Nortek", 
+    "https://docs.google.com/document/d/1Bk2CQeC6dT7OtOInGbB85aCiE3qmz_S4JvjbNHziKyQ/edit?usp=sharing", 
+    "{in progress}", 
+    "{in progress}", 
+    
+    "2024", "calanus-20241019", "San Diego", 
+    "CTD, Oxygen, Ecopuck, Nortek", 
+    "https://github.com/SWFSC/glider-lab/blob/main/deployment-reports/calanus-20241019.html", 
+    "{in progress}", 
+    '<a href="https://console.cloud.google.com/storage/browser/amlr-gliders-deployments-dev/ECOSWIM/2024/calanus-20241019/data/processed-L1" target="_blank">glider</a> | <a href="https://console.cloud.google.com/storage/browser/amlr-gliders-deployments-dev/ECOSWIM/2024/calanus-20241019/plots/delayed" target="_blank">plots</a> | <a href="https://console.cloud.google.com/storage/browser/amlr-gliders-acoustics-dev/ECOSWIM/2024/calanus-20241019" target="_blank">acoustics</a>', 
+    
+    # 2024, "george-20240530", "San Diego", 
+    # "CTD, Optode, Narrow Shadowgraph", 
+    # "https://docs.google.com/document/d/1MDVbBDjK2UvHjLFQ35nzniC-R7YycM6SZr0ymEFvapw/edit?usp=sharing", 
+    # "{in progress}", 
+    # '<a href="https://console.cloud.google.com/storage/browser/amlr-gliders-deployments-dev/REFOCUS/2024/george-20240530/data/processed-L1" target="_blank">glider</a> | <a href="https://console.cloud.google.com/storage/browser/amlr-gliders-deployments-dev/ECOSWIM/2024/george-20240530/plots/delayed" target="_blank">plots</a> | <a href="https://console.cloud.google.com/storage/browser/amlr-gliders-imagery-raw-dev/REFOCUS/2024/george-20240530" target="_blank">imagery</a>', 
+
+    "2023/24", "amlr03-20231128", "Antarctica", 
+    "CTD, Oxygen, Ecopuck, glidercam, Nortek", 
+    NA, 
+    "{in progress}", 
+    '<a href="https://console.cloud.google.com/storage/browser/amlr-gliders-deployments-dev/FREEBYRD/2024/amlr03-20231128/data/processed-L1" target="_blank">glider</a> | <a href="https://console.cloud.google.com/storage/browser/amlr-gliders-deployments-dev/FREEBYRD/2024/amlr03-20231128/plots/delayed" target="_blank">plots</a> | <a href="https://console.cloud.google.com/storage/browser/amlr-gliders-acoustics-dev/FREEBYRD/2024/amlr03-20231128" target="_blank">acoustics</a>', 
+
+    "2022", "amlr08-20220513", "San Diego", 
+    "CTD, Oxygen, Ecopuck, Narrow Shadowgraph, Nortek", 
+    NA, 
+    "{in progress}", 
+    '<a href="https://console.cloud.google.com/storage/browser/amlr-gliders-deployments-dev/SANDIEGO/2022/amlr08-20220513/data/processed-L1" target="_blank">glider</a> | <a href="https://console.cloud.google.com/storage/browser/amlr-gliders-deployments-dev/SANDIEGO/2022/amlr08-20220513/plots/delayed" target="_blank">plots</a> | <a href="https://console.cloud.google.com/storage/browser/amlr-gliders-acoustics-dev/SANDIEGO/2022/amlr08-20220513" target="_blank">acoustics</a> | <a href="https://console.cloud.google.com/storage/browser/amlr-gliders-imagery-raw-dev/SANDIEGO/2022/amlr08-20220513" target="_blank">imagery</a>', 
+)
+
+gliders$Report <- dplyr::if_else(is.na(gliders$Report), "{in progress}", paste0('<a href="', gliders$Report, '" target="_blank">Report</a>'))
+
+# knitr::kable(gliders, escape = FALSE)
+DT::datatable(gliders, escape = FALSE)
+``` -->
 <table class="caption-top table">
 <thead>
 <tr class="header">
@@ -559,6 +602,7 @@ ul.task-list li input[type="checkbox"] {
 <p>The ‘Internal Data’ column contains links to various ESD-internal data products, stored within the ESD Google Cloud Platform (GCP) project. Users will only be able to access these data if they have been granted appropriate permissions within the project. Currently there are three different types of internal data links:</p>
 <ul>
 <li><strong>glider</strong>: Data products from the <a href="../content/glider-data.html#base-processing">‘base’ glider processing</a> workflow. The most relevant data products for users will likely be the ‘science’ timeseries, and the gridded science data.</li>
+<li><strong>plots</strong>: Link the ‘plots’ folder, within the deployment folder. See a description of the structure of this folder <a href="data-management.html#deployments">here</a>.</li>
 <li><strong>acoustics</strong>: Link the ‘acoustics’ deployment folder. See a description of the structure of this folder <a href="../content/data-management.html#acoustics">here</a>.</li>
 <li><strong>imagery</strong>: Link the the ‘raw imagery’ deployment folder. See a description of the structure of this folder <a href="../content/data-management.html#raw-imagery">here</a></li>
 </ul>
