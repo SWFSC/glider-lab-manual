@@ -24,7 +24,7 @@ The below table lists all (in progress) ESD (and formerly AERD) glider deploymen
 See [this spreadsheet](https://docs.google.com/spreadsheets/d/1tSIi44OTEUQXPJwwiy1emhdIyRs9Vt8iT5IlJBMrPLA/edit?usp=sharing) (NOAA internal) for more details.
 
 <!-- <iframe src="https://docs.google.com/spreadsheets/d/e/2PACX-1vR1QEPFK9em24JT6-9p2MeW6Va6srqITFqsYpiF7x-QBAKdwYw4zeuJFOxjHr-4eeDRGzO-8Z0uE1z4/pubhtml?widget=true&amp;headers=false"style="width:950px; height:500px; border: 2px solid black;"></iframe> -->
-
+<!-- 
 ```{r}
 gliders <- tibble::tribble(
     ~Year, ~Deployment, ~Location, ~Sensors, ~Report, ~ERDDAP, ~`Internal Data`, 
@@ -75,9 +75,9 @@ gliders$Report <- dplyr::if_else(is.na(gliders$Report), "{in progress}", paste0(
 
 # knitr::kable(gliders, escape = FALSE)
 DT::datatable(gliders, escape = FALSE)
-```
+``` -->
 
-<!-- | Year | Project | Deployment | Location | Sensors | Report | ERDDAP | Internal Data 
+| Year | Project | Deployment | Location | Sensors | Report | ERDDAP | Internal Data 
 |-----|-----|-----|-----|-----|-----|-----|-----|
 | 2025 | SANDIEGO | unit_1024-20250224 | San Diego | CTD, Ecopuck, BSIPAR, WISPR | [link](https://docs.google.com/document/d/1LQ9ch1gEuHtHEUbC7dymbtm9UlZu6IaePKbmLpKTlyU/edit?usp=sharing) | {in progress} | {in progress} |
 |-----|-----|-----|-----|-----|-----|-----|-----|
@@ -89,7 +89,7 @@ DT::datatable(gliders, escape = FALSE)
 | 2024 | REFOCUS | george-20240530 | San Diego | CTD, Optode, Narrow Shadowgraph | [link](https://docs.google.com/document/d/1MDVbBDjK2UvHjLFQ35nzniC-R7YycM6SZr0ymEFvapw/edit?usp=sharing)| {in progress} | [images](https://console.cloud.google.com/storage/browser/amlr-gliders-imagery-raw-dev/REFOCUS/2024/george-20240530) |
 | 2024 | REFOCUS | john-20240312 | San Diego | CTD, Optode, Nortek, Shadowgraph | [link](https://docs.google.com/document/d/1szQ7tV5stz8fyuNzF05jM1zxUQmkAwQxzZcmHGlDgwg/edit?usp=sharing) | {in progress} | {in progress} |
 | 2024 | REFOCUS | ringo-20240312 | San Diego | CTD, Optode, Nortek, Wide Shadowgraph | [link](https://docs.google.com/document/d/12iSPkBChPjtPFbFQxX2hCopga3hvBr91qH1kJW_w5sw/edit?usp=sharing) | {in progress} | {in progress} |
-|...|...|...|...|...|...|...|...| -->
+|...|...|...|...|...|...|...|...|
 
 ### Data Links
 
