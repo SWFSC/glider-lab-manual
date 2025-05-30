@@ -17,3 +17,9 @@ Both echosounders are bottom looking so the processing is very similar. Currentl
 - Additional docs todo, describing the various echoview metadata files. The data needed from the glider are date, time, GPS, depth, pitch, and roll. 
 
 Acoustic processing currently takes place using [Echoview software](https://echoview.com/). The processing steps for both types of echosounders are documented in the [echoview_glider_template](https://github.com/us-amlr/echoview_glider_template) as well as the Echoview templates. The templates were developed for analysis of Antarctic krill (*Euphusia superba*) but the general cleaning and output can be used for other zooplankton in any region of the world. 
+
+## Future directions
+
+Cloud-based analysis using [echopype](https://github.com/OSOceanAcoustics/echopype)
+
+Additional processing functionality, e.g. [Echometrics](https://github.com/ElOceanografo/EchoMetrics)

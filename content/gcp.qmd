@@ -3,3 +3,5 @@ title: Google Cloud Platform (GCP)
 ---
 
 Placeholder for GCP links, pointers, etc.
+
+See [this folder](https://drive.google.com/drive/folders/1SO4XCVRqkU-i4iSlKmIGzwUOnv_lYqfx) for current ESD GCP docs. Most useful will probably be the 'NOAA Fisheries Cloud - GCP How-Tos' or 'Presentations' folders. 

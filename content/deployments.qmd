@@ -1,5 +1,8 @@
 ---
 title: Deployments
+format: 
+    html:
+        code-fold: true
 ---
 
 ## Projects
@@ -20,15 +23,61 @@ The below table lists all (in progress) ESD (and formerly AERD) glider deploymen
 
 See [this spreadsheet](https://docs.google.com/spreadsheets/d/1tSIi44OTEUQXPJwwiy1emhdIyRs9Vt8iT5IlJBMrPLA/edit?usp=sharing) (NOAA internal) for more details.
 
-<!-- <iframe src="https://docs.google.com/spreadsheets/d/e/2PACX-1vR1QEPFK9em24JT6-9p2MeW6Va6srqITFqsYpiF7x-QBAKdwYw4zeuJFOxjHr-4eeDRGzO-8Z0uE1z4/pubhtml?widget=true&amp;headers=false"style="width:950px; height:500px; border: 2px solid black;"></iframe>
+<!-- <iframe src="https://docs.google.com/spreadsheets/d/e/2PACX-1vR1QEPFK9em24JT6-9p2MeW6Va6srqITFqsYpiF7x-QBAKdwYw4zeuJFOxjHr-4eeDRGzO-8Z0uE1z4/pubhtml?widget=true&amp;headers=false"style="width:950px; height:500px; border: 2px solid black;"></iframe> -->
 
-(In progress: rather than displaying an embedded sheet, use code to make a pretty table)
+```{r}
+gliders <- tibble::tribble(
+    ~Year, ~Deployment, ~Location, ~Sensors, ~Report, ~ERDDAP, ~`Internal Data`, 
+    "2025", "unit_1024-20250224", "San Diego", 
+    "CTD, Ecopuck, PAR, WISPR", 
+    "https://docs.google.com/document/d/1LQ9ch1gEuHtHEUbC7dymbtm9UlZu6IaePKbmLpKTlyU/edit?usp=sharing", 
+    "{in progress}", 
+    "{in progress}", 
 
-## Deployment Reports -->
+    "2024/25", "amlr01-20241120", "Antarctic", 
+    "CTD, Optode, Ecopuck, AZFP", 
+    "https://docs.google.com/document/d/128D2a0Ud2Kda5JwIYVhN9An4CFT6KxdGoqS1RsHKtQ0/edit?usp=sharing", 
+    "{in progress}", 
+    "{in progress}", 
 
-# TODO: add plots
+    "2024/25", "amlr01-20241120", "Antarctic", 
+    "CTD, Optode, Ecopuck, Nortek", 
+    "https://docs.google.com/document/d/1Bk2CQeC6dT7OtOInGbB85aCiE3qmz_S4JvjbNHziKyQ/edit?usp=sharing", 
+    "{in progress}", 
+    "{in progress}", 
+    
+    "2024", "calanus-20241019", "San Diego", 
+    "CTD, Oxygen, Ecopuck, Nortek", 
+    "https://github.com/SWFSC/glider-lab/blob/main/deployment-reports/calanus-20241019.html", 
+    "{in progress}", 
+    '<a href="https://console.cloud.google.com/storage/browser/amlr-gliders-deployments-dev/ECOSWIM/2024/calanus-20241019/data/processed-L1" target="_blank">glider</a> | <a href="https://console.cloud.google.com/storage/browser/amlr-gliders-deployments-dev/ECOSWIM/2024/calanus-20241019/plots/delayed" target="_blank">plots</a> | <a href="https://console.cloud.google.com/storage/browser/amlr-gliders-acoustics-dev/ECOSWIM/2024/calanus-20241019" target="_blank">acoustics</a>', 
+    
+    # 2024, "george-20240530", "San Diego", 
+    # "CTD, Optode, Narrow Shadowgraph", 
+    # "https://docs.google.com/document/d/1MDVbBDjK2UvHjLFQ35nzniC-R7YycM6SZr0ymEFvapw/edit?usp=sharing", 
+    # "{in progress}", 
+    # '<a href="https://console.cloud.google.com/storage/browser/amlr-gliders-deployments-dev/REFOCUS/2024/george-20240530/data/processed-L1" target="_blank">glider</a> | <a href="https://console.cloud.google.com/storage/browser/amlr-gliders-deployments-dev/ECOSWIM/2024/george-20240530/plots/delayed" target="_blank">plots</a> | <a href="https://console.cloud.google.com/storage/browser/amlr-gliders-imagery-raw-dev/REFOCUS/2024/george-20240530" target="_blank">imagery</a>', 
 
-| Year | Project | Deployment | Location | Sensors | Report | ERDDAP | Internal Data 
+    "2023/24", "amlr03-20231128", "Antarctica", 
+    "CTD, Oxygen, Ecopuck, glidercam, Nortek", 
+    NA, 
+    "{in progress}", 
+    '<a href="https://console.cloud.google.com/storage/browser/amlr-gliders-deployments-dev/FREEBYRD/2024/amlr03-20231128/data/processed-L1" target="_blank">glider</a> | <a href="https://console.cloud.google.com/storage/browser/amlr-gliders-deployments-dev/FREEBYRD/2024/amlr03-20231128/plots/delayed" target="_blank">plots</a> | <a href="https://console.cloud.google.com/storage/browser/amlr-gliders-acoustics-dev/FREEBYRD/2024/amlr03-20231128" target="_blank">acoustics</a>', 
+
+    "2022", "amlr08-20220513", "San Diego", 
+    "CTD, Oxygen, Ecopuck, Narrow Shadowgraph, Nortek", 
+    NA, 
+    "{in progress}", 
+    '<a href="https://console.cloud.google.com/storage/browser/amlr-gliders-deployments-dev/SANDIEGO/2022/amlr08-20220513/data/processed-L1" target="_blank">glider</a> | <a href="https://console.cloud.google.com/storage/browser/amlr-gliders-deployments-dev/SANDIEGO/2022/amlr08-20220513/plots/delayed" target="_blank">plots</a> | <a href="https://console.cloud.google.com/storage/browser/amlr-gliders-acoustics-dev/SANDIEGO/2022/amlr08-20220513" target="_blank">acoustics</a> | <a href="https://console.cloud.google.com/storage/browser/amlr-gliders-imagery-raw-dev/SANDIEGO/2022/amlr08-20220513" target="_blank">imagery</a>', 
+)
+
+gliders$Report <- dplyr::if_else(is.na(gliders$Report), "{in progress}", paste0('<a href="', gliders$Report, '" target="_blank">Report</a>'))
+
+# knitr::kable(gliders, escape = FALSE)
+DT::datatable(gliders, escape = FALSE)
+```
+
+<!-- | Year | Project | Deployment | Location | Sensors | Report | ERDDAP | Internal Data 
 |-----|-----|-----|-----|-----|-----|-----|-----|
 | 2025 | SANDIEGO | unit_1024-20250224 | San Diego | CTD, Ecopuck, BSIPAR, WISPR | [link](https://docs.google.com/document/d/1LQ9ch1gEuHtHEUbC7dymbtm9UlZu6IaePKbmLpKTlyU/edit?usp=sharing) | {in progress} | {in progress} |
 |-----|-----|-----|-----|-----|-----|-----|-----|
@@ -40,7 +89,7 @@ See [this spreadsheet](https://docs.google.com/spreadsheets/d/1tSIi44OTEUQXPJwwi
 | 2024 | REFOCUS | george-20240530 | San Diego | CTD, Optode, Narrow Shadowgraph | [link](https://docs.google.com/document/d/1MDVbBDjK2UvHjLFQ35nzniC-R7YycM6SZr0ymEFvapw/edit?usp=sharing)| {in progress} | [images](https://console.cloud.google.com/storage/browser/amlr-gliders-imagery-raw-dev/REFOCUS/2024/george-20240530) |
 | 2024 | REFOCUS | john-20240312 | San Diego | CTD, Optode, Nortek, Shadowgraph | [link](https://docs.google.com/document/d/1szQ7tV5stz8fyuNzF05jM1zxUQmkAwQxzZcmHGlDgwg/edit?usp=sharing) | {in progress} | {in progress} |
 | 2024 | REFOCUS | ringo-20240312 | San Diego | CTD, Optode, Nortek, Wide Shadowgraph | [link](https://docs.google.com/document/d/12iSPkBChPjtPFbFQxX2hCopga3hvBr91qH1kJW_w5sw/edit?usp=sharing) | {in progress} | {in progress} |
-|...|...|...|...|...|...|...|...|
+|...|...|...|...|...|...|...|...| -->
 
 ### Data Links
 
@@ -51,6 +100,7 @@ The 'ERDDAP' column will contain the link to the glider dataset when it is publi
 The 'Internal Data' column contains links to various ESD-internal data products, stored within the ESD Google Cloud Platform (GCP) project. Users will only be able to access these data if they have been granted appropriate permissions within the project. Currently there are three different types of internal data links:
 
 - **glider**: Data products from the ['base' glider processing](glider-data.qmd#base-processing) workflow. The most relevant data products for users will likely be the 'science' timeseries, and the gridded science data. 
+- **plots**: Link the 'plots' folder, within the deployment folder. See a description of the structure of this folder [here](data-management.html#deployments). 
 - **acoustics**: Link the 'acoustics' deployment folder. See a description of the structure of this folder [here](data-management.qmd#acoustics). 
 - **imagery**: Link the the 'raw imagery' deployment folder. See a description of the structure of this folder [here](data-management.qmd#raw-imagery)
 
