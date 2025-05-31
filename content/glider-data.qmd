@@ -36,6 +36,8 @@ The esdglider package uses `pyglider` to create several different data products 
 
 The timeseries data products are all NetCDF files with a single coordinate "time". The gridded data products are all NetCDF files with two coordinates: "depth" and "profile" (i.e., profile_index). The one exception is a 'profiles' CSV, which contains the start/end times and depths of the different profile segments.
 
+For descriptions of the various standard plots, see [Plots](#plots) below.
+
 #### Primary Products
 
 These are the products that most science end-users will be interested in.
@@ -80,6 +82,11 @@ In ESD, we use `binary_to_timeseries` to create a 'science' timeseries, with the
 
 Data alterations, or additional features of note:
 
+`esdglider`:
+
+- min_dt: esdglider allows users to pass a minimum datetime, which is used to filter all glider data for timestamps after this datetime. The datetime is usually when the glider begins its first 1k_n.mi mission.
+Because pressure is used as the time base for the science dataset, rows in science where pressure is nan are dropped (even if other sensors have non-nan values)
+
 `dbdreader`:
 
 - `dbdreader` throws an warning if a sensor is turned off and thus not present in some sbd/tbd or dbd/ebd files. See [this issue](https://github.com/smerckel/dbdreader/issues/26) for more discussion. 
@@ -99,6 +106,21 @@ Docs in progress. Gridding uses the [`pyglider.ncprocess.make_gridfiles`](https:
 ### NGDAC Profiles
 
 Docs in progress
+
+### Plots
+
+Standard plots are generated from either the 'processed-rt' (subfolder 'rt') or 'processed-L1' data (subfolder 'delayed'). Note that 'sci' is short for plots of science sensor values, while 'eng' is short for plots of engineering variables. Standard plots, whcih are separated by folder, include:
+
+* TS-sci: Temperature/salinity plots of the various science sensor values
+* maps-sci: Maps of surface values (i.e., depth <10m) from various science sensors
+* pointMaps: Scatter plots of the lat/lon points recorded by the glider
+* spatialGrids-sci: Gridded science data plotted by all combinations of latitude, longitude, and depth
+* spatialSections-sci: Gridded science data plotted by either latitude or longitude, and depth
+* thisVsThat-eng: Timeseries plots of various engineering sensor values plotted against each other
+* timeSections-sci: Gridded science data plotted by time and depth
+* timeSections-sci-gt: Gridded science data plotted by profile_index and depth. The plots are made with the [`glidertools`](https://github.com/GliderToolsCommunity/GliderTools) package, and thus use the 0.5 and 99.5 percentile to set color limits.
+* timeSeries-eng: Timeseries plots of various engineering sensor values
+* timeSeries-sci: Timeseries plots of various science sensor values
 
 ### Other Files
 

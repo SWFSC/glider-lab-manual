@@ -120,6 +120,7 @@ The structure of an individual deployment folder, located in the [Deployments](h
         ├── spatialSections-sci
         ├── thisVsThat-eng
         ├── timeSections-sci
+        ├── timeSections-sci-gt
         ├── timeSeries-eng
         ├── timeSeries-sci
     ├── rt
@@ -136,16 +137,7 @@ The structure of an individual deployment folder, located in the [Deployments](h
 
 **data/processed-L2**: "Level 2" processed data and data products. "Level 2" means that the data has undergone additional qa/qc and/or processing, beyond what is performed during base processing. Due to lack of personnel, at this time most ESD glider deployments will not have level 2 processed data.
 
-**plots**: Standard plots generated from either the 'processed-rt' (subfolder 'rt') or 'processed-L1' data (subfolder 'delayed'). Note that 'sci' is short for plots of science sensor values, while 'eng' is short for plots of engineering variables. Standard plots include:
-* TS-sci: Temperature/salinity plots of the various science sensor values
-* maps-sci: Maps of surface values (i.e., depth <10m) from various science sensors
-* pointMaps: Scatter plots of the lat/lon points recorded by the glider
-* spatialGrids-sci: Gridded science data plotted by all combinations of latitude, longitude, and depth
-* spatialSections-sci: Gridded science data plotted by either latitude or longitude, and depth
-* thisVsThat-eng: Timeseries plots of various engineering sensor values plotted against each other
-* timeSections-sci: Gridded science data plotted by time and depth
-* timeSeries-eng: Timeseries plots of various engineering sensor values
-* timeSeries-sci: Timeseries plots of various science sensor values
+**plots**: Standard plots generated from either the 'processed-rt' (subfolder 'rt') or 'processed-L1' data (subfolder 'delayed'). Note that 'sci' is short for plots of science sensor values, while 'eng' is short for plots of engineering variables. See [plots](glider-data.qmd#plots) for descriptions of the various folders.
 
 #### Acoustics
 

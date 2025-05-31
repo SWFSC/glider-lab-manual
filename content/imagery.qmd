@@ -6,7 +6,11 @@ ESD gliders may be equipped with either a 'glidercam' or a 'shadowgraph' [camera
 
 ## Raw Imagery
 
-Once the gliders are recovered, the glidercam or shadowgraph directories and images are copied from the memory cards and uploaded to GCP as described in [Data Management](data-management.qmd). Specifically, raw images and config files are uploaded to the raw imagery bucket. Image metadata files generated during the [base glider data processing](glider-data.qmd) are written to the deployment's 'metadata' folder within this bucket.
+Once the gliders are recovered, the glidercam or shadowgraph directories and images are copied from the memory cards and uploaded to GCP as described in [Data Management](data-management.qmd). Specifically, raw images and config files are uploaded to the raw imagery bucket. Image metadata files generated during the [base glider data processing](glider-data.qmd) are written to the deployment's 'metadata' folder within this bucket (see below for more details). 
+
+### Imagery metadata
+
+
 
 ## Viewing Images
 
