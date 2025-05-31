@@ -372,7 +372,10 @@ ul.task-list li input[type="checkbox"] {
     <h2 id="toc-title">On this page</h2>
    
   <ul>
-  <li><a href="#raw-imagery" id="toc-raw-imagery" class="nav-link active" data-scroll-target="#raw-imagery">Raw Imagery</a></li>
+  <li><a href="#raw-imagery" id="toc-raw-imagery" class="nav-link active" data-scroll-target="#raw-imagery">Raw Imagery</a>
+  <ul>
+  <li><a href="#imagery-metadata" id="toc-imagery-metadata" class="nav-link" data-scroll-target="#imagery-metadata">Imagery metadata</a></li>
+  </ul></li>
   <li><a href="#viewing-images" id="toc-viewing-images" class="nav-link" data-scroll-target="#viewing-images">Viewing Images</a></li>
   <li><a href="#shadowgraph-image-processing" id="toc-shadowgraph-image-processing" class="nav-link" data-scroll-target="#shadowgraph-image-processing">Shadowgraph Image Processing</a>
   <ul>
@@ -413,7 +416,10 @@ ul.task-list li input[type="checkbox"] {
 <p>ESD gliders may be equipped with either a ‘glidercam’ or a ‘shadowgraph’ <a href="https://www.fisheries.noaa.gov/science-blog/fear-unknown-and-how-unknown-becomes-known-you-know">camera</a>. This page describes the management and processing of these images once they come off of the glider.</p>
 <section id="raw-imagery" class="level2">
 <h2 class="anchored" data-anchor-id="raw-imagery">Raw Imagery</h2>
-<p>Once the gliders are recovered, the glidercam or shadowgraph directories and images are copied from the memory cards and uploaded to GCP as described in <a href="../content/data-management.html">Data Management</a>. Specifically, raw images and config files are uploaded to the raw imagery bucket. Image metadata files generated during the <a href="../content/glider-data.html">base glider data processing</a> are written to the deployment’s ‘metadata’ folder within this bucket.</p>
+<p>Once the gliders are recovered, the glidercam or shadowgraph directories and images are copied from the memory cards and uploaded to GCP as described in <a href="../content/data-management.html">Data Management</a>. Specifically, raw images and config files are uploaded to the raw imagery bucket. Image metadata files generated during the <a href="../content/glider-data.html">base glider data processing</a> are written to the deployment’s ‘metadata’ folder within this bucket (see below for more details).</p>
+<section id="imagery-metadata" class="level3">
+<h3 class="anchored" data-anchor-id="imagery-metadata">Imagery metadata</h3>
+</section>
 </section>
 <section id="viewing-images" class="level2">
 <h2 class="anchored" data-anchor-id="viewing-images">Viewing Images</h2>
