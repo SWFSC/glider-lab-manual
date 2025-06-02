@@ -78,7 +78,7 @@ The `pyglider.slocum.binary_to_timeseries` function uses [`dbdreader`](https://g
 
 As constructed, `binary_to_timeseries` uses [`dbdreader.get_sync`](https://dbdreader.readthedocs.io/en/latest/multiple_files.html#dbdreader.MultiDBD.get_sync) to extract values for all of the specified sensors. Thus, the user specifies a particular sensor to server as the ‘time_base’, and then all other desired variables (across science and engineering: pressure, temperature, oxygen, roll, etc.) are interpolated onto the same time base (i.e., the timestamps where this ‘time_base’ variable has a valid (not missing/nan) value). The only exception is that no interpolation is done if the gap between time points is greater than or equal to 300 seconds.
 
-In ESD, we use `binary_to_timeseries` to create a 'science' timeseries, with the pressure from the CTD as the time base, and an 'engineering' timeseries, with the glider's measured depth as the time base. We also have written a `binary_to_raw` function, which uses [`dbdreader.get`](https://dbdreader.readthedocs.io/en/latest/multiple_files.html#dbdreader.MultiDBD.get) to read in uninterpolated data points from both the science and flight computers. Thus 'raw' timeseries contains all glider data points, and is thus used to calculate profiles, and useful for debugging sensor behavior.
+In ESD, we use `binary_to_timeseries` to create a 'science' timeseries, with the pressure from the CTD as the time base, and an 'engineering' timeseries, with the glider's measured depth as the time base. We also have written a `binary_to_raw` function, which uses [`dbdreader.get`](https://dbdreader.readthedocs.io/en/latest/multiple_files.html#dbdreader.MultiDBD.get) to read in raw (i.e., uninterpolated) data points from both the science and flight computers. Thus 'raw' timeseries contains all glider data points, and is thus used to calculate profiles, and useful for debugging sensor behavior.
 
 Data alterations, or additional features of note:
 
@@ -109,7 +109,7 @@ Docs in progress
 
 ### Plots
 
-Standard plots are generated from either the 'processed-rt' (subfolder 'rt') or 'processed-L1' data (subfolder 'delayed'). Note that 'sci' is short for plots of science sensor values, while 'eng' is short for plots of engineering variables. Standard plots, whcih are separated by folder, include:
+Standard plots are generated from either the 'processed-rt' (subfolder 'rt') or 'processed-L1' data (subfolder 'delayed'). Note that 'sci' is short for plots of science sensor values, while 'eng' is short for plots of engineering variables. Standard plots, which are separated by folder, include:
 
 * TS-sci: Temperature/salinity plots of the various science sensor values
 * maps-sci: Maps of surface values (i.e., depth <10m) from various science sensors

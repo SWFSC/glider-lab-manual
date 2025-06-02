@@ -29,10 +29,10 @@ This is a living document which shall always be considered a "draft," as incomin
 
 4.  If lab members have a safety concern, they should bring it up with their supervisor or the other lab members.
 
-5.  If a lab member feels their safety concerns are not being taken seriously, or have any other lab safety questions, they can consult the SWFSC Safety Officer Ravi Shiwmangal ([ravi.shiwmangal@noaa.gov](mailto:ravi.shiwmangal@noaa.gov)).
+5.  If a lab member feels their safety concerns are not being taken seriously, or have any other lab safety questions, they can consult the acting SWFSC Safety Officer Ariane Huddleston ([ariane.huddleston@noaa.gov](mailto:ariane.huddleston@noaa.gov)).
 
 ### **Website Development**
 
-As described above, this website is inteded to be a place for all glider team members to both use as a reference and contribute to. This section contains development notes and best practices
+As described above, this website is intended to be a place for all glider team members to both use as a reference and contribute to. This section contains development notes and best practices
 
-1. If using VSCode, [this page](https://quarto.org/docs/tools/vscode.html) contains helpful references and shortcuts. One of the most common and important is to [render and preview](https://quarto.org/docs/tools/vscode.html#render-and-preview) the current qaurto files, which you can do with the <kbd>Ctrl+Shift+K</kbd> keyboard shortcut.
+1. If using VSCode, [this page](https://quarto.org/docs/tools/vscode.html) contains helpful references and shortcuts. One of the most common and important is to [render and preview](https://quarto.org/docs/tools/vscode.html#render-and-preview) the current qmd files, which you can do with the <kbd>Ctrl+Shift+K</kbd> keyboard shortcut.

@@ -18,7 +18,7 @@ There are several ways to view raw or processed images:
 
 1.  If you click down to an image itself, Google Cloud provides an image preview at the bottom of the 'object' page. However, you cannot view more than one image at a time. It is a goal of the ESD to build a cloud-native image viewer application to easily view multiple images at a time, but this is not a current project.
 
-2. All raw imagery have been mirrored in [VIAME-Web-AMLR](https://docs.google.com/document/d/1DkHcd-qOifNqWKxoRQpj2Gyjx2tSGKbEZNl9pf-gBjQ/edit?usp=sharing). Thus, if you are familiar with VAIME-Web and accessing ESD's deployment, then you can view imagery using the VIAME-Web annotator.
+2. All raw imagery have been mirrored in [VIAME-Web-AMLR](https://docs.google.com/document/d/1DkHcd-qOifNqWKxoRQpj2Gyjx2tSGKbEZNl9pf-gBjQ/edit?usp=sharing). Thus, if you are familiar with VIAME-Web and accessing ESD's deployment, then you can view imagery using the VIAME-Web annotator.
 
 3. You may also use the [gcloud CLI](https://cloud.google.com/sdk/gcloud/reference/storage) to download images to your computer, and then view them locally using your preferred program.
 
@@ -54,7 +54,7 @@ Shadowgraph image processing workflow, v2
 
 ### Preprocessing and Segmentation
 
-All preprocessing and object detection/segmentation steps are currently performed by code in the [shaip repo](https://github.com/us-amlr/shaip) (shadowgraph image processing). This codebase was originally developed as a Jupyter notebook by Randy Cutter based on work done by Ohman/Ellen for processing Zooglider images, e.g. [here](https://doi.org/10.1002/lom3.10301) and [here](https://www.proquest.com/dissertations-theses/improving-biological-object-classification/docview/2161240941/se-2?accountid=28257). It has since been refactored into the Python toolbox [sg](https://github.com/us-amlr/shaip/tree/main/sgimageproc). For details on the algoroithms used and instructions on how to run this code, see the README on the repo homepage.
+All preprocessing and object detection/segmentation steps are currently performed by code in the [shaip repo](https://github.com/us-amlr/shaip) (shadowgraph image processing). This codebase was originally developed as a Jupyter notebook by Randy Cutter based on work done by Ohman/Ellen for processing Zooglider images, e.g. [here](https://doi.org/10.1002/lom3.10301) and [here](https://www.proquest.com/dissertations-theses/improving-biological-object-classification/docview/2161240941/se-2?accountid=28257). It has since been refactored into the Python toolbox [sg](https://github.com/us-amlr/shaip/tree/main/sgimageproc). For details on the algorithms used and instructions on how to run this code, see the README on the repo homepage.
 
 All currently processed imagery can be found in [amlr-gliders-imagery-proc-dev](https://console.cloud.google.com/storage/browser/amlr-gliders-imagery-proc-dev). Like the raw imagery bucket, the amlr-gliders-imagery-proc-dev bucket mirrors the directory structure of the amlr-gliders-deployments-dev bucket. These processed imagery are also viewable as described [above](#viewing-images).
 

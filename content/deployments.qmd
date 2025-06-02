@@ -81,7 +81,7 @@ DT::datatable(gliders, escape = FALSE)
 
 | Year | Project | Deployment | Location | Sensors | Report | ERDDAP | Internal Data 
 |-----|-----|-----|-----|-----|-----|-----|-----|
-| 2025 | SANDIEGO | unit_1024-20250224 | San Diego | CTD, Ecopuck, BSIPAR, WISPR | [link](https://docs.google.com/document/d/1LQ9ch1gEuHtHEUbC7dymbtm9UlZu6IaePKbmLpKTlyU/edit?usp=sharing) | {in progress} | {in progress} |
+| 2025 | SANDIEGO | unit_1024-20250224 | San Diego | CTD, Ecopuck, PAR, WISPR | [link](https://docs.google.com/document/d/1LQ9ch1gEuHtHEUbC7dymbtm9UlZu6IaePKbmLpKTlyU/edit?usp=sharing) | {in progress} | {in progress} |
 |-----|-----|-----|-----|-----|-----|-----|-----|
 | 2024/25 | FREEBYRD | amlr01-20241120 | Antarctic | CTD, Optode, Ecopuck, AZFP | [link](https://docs.google.com/document/d/128D2a0Ud2Kda5JwIYVhN9An4CFT6KxdGoqS1RsHKtQ0/edit?usp=sharing) | {in progress} | {in progress} |
 | 2024/25 | FREEBYRD | amlr08-20241120 | Antarctic | CTD, Optode, Ecopuck, Nortek | [link](https://docs.google.com/document/d/1Bk2CQeC6dT7OtOInGbB85aCiE3qmz_S4JvjbNHziKyQ/edit?usp=sharing) | {in progress} | {in progress} |
