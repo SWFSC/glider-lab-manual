@@ -382,7 +382,10 @@ ul.task-list li input[type="checkbox"] {
   <li><a href="#calibrations" id="toc-calibrations" class="nav-link" data-scroll-target="#calibrations">Calibrations</a></li>
   <li><a href="#files" id="toc-files" class="nav-link" data-scroll-target="#files">Files</a></li>
   </ul></li>
-  <li><a href="#amlr-gliders-google-drive" id="toc-amlr-gliders-google-drive" class="nav-link" data-scroll-target="#amlr-gliders-google-drive">AMLR Gliders Google Drive</a></li>
+  <li><a href="#amlr-gliders-google-drive" id="toc-amlr-gliders-google-drive" class="nav-link" data-scroll-target="#amlr-gliders-google-drive">AMLR Gliders Google Drive</a>
+  <ul class="collapse">
+  <li><a href="#glider-deployments" id="toc-glider-deployments" class="nav-link" data-scroll-target="#glider-deployments">Glider Deployments</a></li>
+  </ul></li>
   <li><a href="#glider-lab-repository" id="toc-glider-lab-repository" class="nav-link" data-scroll-target="#glider-lab-repository">glider-lab repository</a></li>
   <li><a href="#standard-glider-files-repository" id="toc-standard-glider-files-repository" class="nav-link" data-scroll-target="#standard-glider-files-repository">standard-glider-files repository</a></li>
   <li><a href="#gcs-buckets" id="toc-gcs-buckets" class="nav-link" data-scroll-target="#gcs-buckets">GCS Buckets</a>
@@ -471,12 +474,30 @@ ul.task-list li input[type="checkbox"] {
 </section>
 <section id="amlr-gliders-google-drive" class="level3">
 <h3 class="anchored" data-anchor-id="amlr-gliders-google-drive">AMLR Gliders Google Drive</h3>
-<p>This section TODO.</p>
-<p>Todo includes defining a folder structure for ‘pre-deployment things’ that are currently <a href="https://drive.google.com/drive/folders/1qfKMxXH0hUhbmOp8aESidz-YO3IPxWM3?usp=drive_link">here</a></p>
+<p>The <a href="https://drive.google.com/drive/folders/1wv2wGgWco_3heUR7JPVMc3KLGFCzkcBT?usp=drive_link">AMLR Gliders Google Drive</a> … {full description todo}</p>
+<section id="glider-deployments" class="level4">
+<h4 class="anchored" data-anchor-id="glider-deployments">Glider Deployments</h4>
+<p>The <a href="https://drive.google.com/drive/folders/1qfKMxXH0hUhbmOp8aESidz-YO3IPxWM3?usp=drive_link">Glider Deployments</a> folder is for working files during both deployment prep, and the deployment itself. It provides an easy place (i.e., easier than Google Cloud) for ESD glider team members to collaborate on and refer to different files. These files live in ‘GDrive deployment folders’; the Glider Deployments folder contains GDrive folder templates. After the deployment it is downloaded and uploaded to GCP.</p>
+<p>The structure of an individual GDrive deployment folder:</p>
+<pre><code>glider-YYYYmmdd
+├── photos
+├── prep
+    ├── functional-checkout
+    ├── acoustic-prep
+    ├── imagery-prep</code></pre>
+<p><strong>photos</strong>: folder with relevant photos. These could include photos of the glider seal, or photos of the glider deployment and recovery.</p>
+<p><strong>prep</strong> Folders and files from the glider prep. In addition to the folders described below, the ‘prep’ folder may include the ballast sheet, or compass calibration files.</p>
+<ul>
+<li><strong>functional-checkout</strong>: functional checkout sheet, data files from test tank dive, and any other files/notes from the functional checkout</li>
+<li><strong>acoustic-prep</strong>: acoustic prep files from pre-deployment tests. These may include sample data files, relevant tests, etc.</li>
+<li><strong>imagery-prep</strong>: imagery (camera) prep files from pre-deployment tests. These may include sample images, relevant tests, etc.</li>
+</ul>
+<p>Miscellaneous files that should stay associated with the deployment can go directly in the GDrive glider-YYYYmmdd folder.</p>
+</section>
 </section>
 <section id="glider-lab-repository" class="level3">
 <h3 class="anchored" data-anchor-id="glider-lab-repository">glider-lab repository</h3>
-<p>The <a href="https://github.com/SWFSC/glider-lab">glider-lab</a> repository has evoloved into a place to store a) reference documents that can be accessible to folks outside NOAA and b) files used for processing in GCP. These include:</p>
+<p>The <a href="https://github.com/SWFSC/glider-lab">glider-lab</a> repository has evolved into a place to store a) reference documents that can be accessible to folks outside NOAA and b) files used for processing in GCP. These include:</p>
 <ul>
 <li>calibration-docs: factory calibration documents for glider instruments</li>
 <li>deployment-configs: yaml configuration files for glider data processing</li>
@@ -507,7 +528,8 @@ ul.task-list li input[type="checkbox"] {
 <section id="deployments" class="level4">
 <h4 class="anchored" data-anchor-id="deployments">Deployments</h4>
 <p>The structure of an individual deployment folder, located in the <a href="https://console.cloud.google.com/storage/browser/amlr-gliders-deployments-dev">Deployments</a> bucket under a ‘PROJECT/YYYY/glider-YYYYmmdd’ path:</p>
-<pre><code>├── backup
+<pre><code>├── archive-sfmc
+├── backup
 ├── data
     ├── binary
         ├── delayed
@@ -531,11 +553,15 @@ ul.task-list li input[type="checkbox"] {
         ├── timeSeries-sci
     ├── rt
         ├── ... : same subfolders as 'plots/delayed' folder</code></pre>
-<p><strong>backup</strong>: Backups of the full Flight and Science folders copied from cards (zips are fine). These folders can be zipped. If the cards are not removed, upload the LOGS and SENTLOGS folders. This folder should also include a copy (zipped is fine) of the deployment Google Drive folder (with comms, photos, prep, notes, etc) used during the deployment.</p>
-<p><strong>data/binary</strong>: Binary data files generated by the glider. This folder should include dbd/ebd/dcd/ecd (for delayed data) or sbd/tbd/scd/tcd (for rt data) files. Note that there is not a different path for compressed files, meaning for instance that dcd/ecd files should go directly in the ‘data/binary/delayed’ folder.</p>
-<p><strong>data/processed-rt</strong>: “Real-time” processed data and data products, created using real-time glider data (i.e., sbd/tbd files) transmitted by the glider during its deployment.</p>
-<p><strong>data/processed-L1</strong>: “Level 1” processed data and data products. “Level 1” means that these data procucts were created by the esdglider/pyglider base processing functions (link TODO) using delayed mode data. In other words, the dbd/ebd files were used as input data, and there was minimal data qa/qc or corrections performed.</p>
-<p><strong>data/processed-L2</strong>: “Level 2” processed data and data products. “Level 2” means that the data has undergone additional qa/qc and/or processing, beyond what is performed during base processing. Due to lack of personnel, at this time most ESD glider deployments will not have level 2 processed data.</p>
+<p><strong>archive-sfmc</strong>: The ‘archive’ folder, synced or downloaded from the SFMC. This folder contains all files sent to the glider during the deployment, with an associated timestamp as part of the file name. Among other things, this folder is used for generating a sensor config table for the post-deployment report.</p>
+<p><strong>backup</strong>: Backup files/folders from the deployment. These typically include zipped copies of the Flight and Science folders from the glider cards, as well as the Glider Folder Archive Tar Ball from the SFMC.</p>
+<p><strong>data</strong> Raw glider data, and processed glider data products:</p>
+<ul>
+<li><strong>binary</strong>: Binary data files generated by the glider. This folder should include dbd/ebd/dcd/ecd (for delayed data) or sbd/tbd/scd/tcd (for rt data) files. Note that there is not a different path for compressed files, meaning for instance that dcd/ecd files should go directly in the ‘data/binary/delayed’ folder.</li>
+<li><strong>processed-rt</strong>: “Real-time” processed data and data products, created using real-time glider data (i.e., sbd/tbd files) transmitted by the glider during its deployment.</li>
+<li><strong>processed-L1</strong>: “Level 1” processed data and data products. “Level 1” means that these data products were created by the esdglider/pyglider base processing functions (link TODO) using delayed mode data. In other words, the dbd/ebd files were used as input data, and there was minimal data qa/qc or corrections performed.</li>
+<li><strong>processed-L2</strong>: “Level 2” processed data and data products. “Level 2” means that the data has undergone additional qa/qc and/or processing, beyond what is performed during base processing. Due to lack of personnel, at this time most ESD glider deployments will not have level 2 processed data.</li>
+</ul>
 <p><strong>plots</strong>: Standard plots generated from either the ‘processed-rt’ (subfolder ‘rt’) or ‘processed-L1’ data (subfolder ‘delayed’). Note that ‘sci’ is short for plots of science sensor values, while ‘eng’ is short for plots of engineering variables. See <a href="../content/glider-data.html#plots">plots</a> for descriptions of the various folders.</p>
 </section>
 <section id="acoustics" class="level4">
