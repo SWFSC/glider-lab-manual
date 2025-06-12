@@ -44,7 +44,7 @@ These are the products that most science end-users will be interested in.
 
 - {glider-YYYYmmdd}-{mode}-sci.nc: The 'science' timeseries. Most users will want this dataset, as it contains the values from all of the various science sensors. Functionally speaking, this timeseries has one ‘row’ of data for each timestamp from the glider’s *science* computer where a CTD temperature value was recorded. All included sensor values are interpolated to all timestamps, as long as there is not a gap of 300 or more seconds. The sensor values included in this dataset depend on the instruments carried by the glider; ... (Todo: add a section that lists the sensor values for each instrument). Users should note that the 'depth' value in this timeseries is the depth calculated from the CTD pressure sensor. 
 
-- {glider-YYYYmmdd}_grid-{mode}-5m.nc: The science timeseries, gridded into *five* meter bins. This NetCDF file will include all of the science sensor values that were in the science timeseries.
+- {glider-YYYYmmdd}_grid-{mode}-5m.nc: The science timeseries, gridded into *five* meter bins. This NetCDF file will include all of the science sensor values that were in the science timeseries. Users should note that the depth bin name is the bin midpoint. For instance, the bin for data from zero to five meters has the name/label "2.5".
 
 - {glider-YYYYmmdd}-imagery-metadata.csv: A CSV file with one row for each image, and one column for each desired sensor value. The sensor values are interpolated to each image timestamp. This file is only created if the glider is carrying a camera, such as a shadowgraph or glidercam. Note that this file lives in the raw glider imagery bucket (e.g. [here](https://console.cloud.google.com/storage/browser/amlr-gliders-imagery-raw-dev/SANDIEGO/2022/amlr08-20220513/metadata))
 
@@ -54,7 +54,7 @@ These are the products that most science end-users will be interested in.
 
 - {glider-YYYYmmdd}-{mode}-raw.nc: The 'raw' timeseries. This timeseries contains a timestamp for every time recorded by the glider's flight or science computer, and no interpolation is done for any sensor values. These two features make this dataset useful for a) calculating profiles and b) troubleshooting any sensor values or processing steps. This dataset contains both the measured depth ("depth") and the depth calculated from the CTD pressure sensor ("depth_ctd"). 
 
-- {glider-YYYYmmdd}_grid-{mode}-1m.nc: The science timeseries, gridded into *one* meter bins. This NetCDF file will include all of the science sensor values that were in the science timeseries.
+- {glider-YYYYmmdd}_grid-{mode}-1m.nc: The science timeseries, gridded into *one* meter bins. This NetCDF file will include all of the science sensor values that were in the science timeseries. Users should note that the depth bin name is the bin midpoint. For instance, the bin for data from zero to one meters has the name/label "0.5".
 
 - {glider-YYYYmmdd}-{mode}-profiles.csv: A CSV file with one row for each profile, containing information such as: profile index, profile start and end time, profile start and end depth, and profile direction. Note that this file contains "#.5" profiles, meaning time between profiles when the glider is at the surface or inflecting at depth.
 
