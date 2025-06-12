@@ -1,78 +1,87 @@
 [
   {
-    "objectID": "content/glider-data.html",
-    "href": "content/glider-data.html",
-    "title": "Glider Data",
+    "objectID": "index.html",
+    "href": "index.html",
+    "title": "Glider Lab Manual",
     "section": "",
-    "text": "There are many steps and flavors to glider data processing, from the base processing (binary glider to NetCDF files for Slocum gliders), to QA/QC, to developing additional data products. This page outlines the ESD glider lab’s data processing workflow, and in particular base processing and data products.\nUsers interested in understanding and accessing data products created for each deployment should see the Data Products section. For acoustic or image processing workflows, see the acoustics and imagery pages, respectively.",
+    "text": "The Ecosystem Science Division (ESD) at the Southwest Fisheries Science Center deploys gliders in both the California Current Ecosystem and the Antarctic Peninsula regions. The ESD’s glider fleet is managed by the Scientific Operations and Support (SOS) Program, and supports several research objectives within the ESD. We provide expertise across multiple autonomous platforms to deliver robust data for ecosystem monitoring and fisheries management.\nThis website is an in-development manual for all ESD glider activities. Please contact a member of the glider team with any questions. For information about active or past ESD glider deployments, see Deployments",
     "crumbs": [
-      "Data Processing",
-      "Glider Data"
+      "Home"
     ]
   },
   {
-    "objectID": "content/glider-data.html#background",
-    "href": "content/glider-data.html#background",
-    "title": "Glider Data",
+    "objectID": "index.html#team-members",
+    "href": "index.html#team-members",
+    "title": "Glider Lab Manual",
+    "section": "Team Members",
+    "text": "Team Members\n\n\n\nName\nJob Title\nGlider Team Role\n\n\n\n\nAnthony Cossio\nOperations Research Analyst\nLab Manager, Pilot, Tech\n\n\nJen Walsh\nFisheries Research Biologist\nPilot, Tech\n\n\nTegan Murray\nNOAA Corps\nPilot, Tech\n\n\nSam Woodman\nBiologist\nData Manager\n\n\nHeidi Taylor\nProgram Lead, SOS; Acting Director, ESD",
+    "crumbs": [
+      "Home"
+    ]
+  },
+  {
+    "objectID": "index.html#project-management",
+    "href": "index.html#project-management",
+    "title": "Glider Lab Manual",
+    "section": "Project Management",
+    "text": "Project Management\nThe ESD glider team is using GitHub Issues and Projects for project management. There efforts are heavily inspired and influenced by the Openscapes GitHub for project management approach.\nThe ESD glider team project pulls from issues from several repositories, but in particular the SWFSC/glider-lab repo. For more details see the best practices page.\nFor most current Fleet Status information, see this Sheet (NOAA internal only)\n\nGitHub Repositories\nGitHub repos developed by the ESD glider team. Issues for these repos are tracked in the above-linked Project.\n\n\n\nrepo link\ndescription\n\n\n\n\nglider-lab-manual\nESD Glider lab website; docs used to generate this site\n\n\nglider-lab\nAll things glider lab: issues/tasks, calibration docs, config files, deployment reports, …\n\n\nstandard-glider-files\nESD glider cache files, as well as standard files that are put on all gliders before deployment\n\n\nglider-utils\nUtility functions for processing ESD glider data\n\n\nechoview_glider_template\nEchoview glider templates that are used for acoustic data analysis\n\n\nglider_processing_code\nCompilation of code that is used to work with glider acoustic data\n\n\nslocumRtDataVisTool\nCreates plots and generates useful statistics from slocum binary files",
+    "crumbs": [
+      "Home"
+    ]
+  },
+  {
+    "objectID": "content/active-acoustics.html",
+    "href": "content/active-acoustics.html",
+    "title": "Active Acoustics",
+    "section": "",
+    "text": "This page describes processing active acoustic data collected by ESD using underwater gliders. For info about passive acoustic data, see NOAA Fisheries PAM-Equipped Glider Research",
+    "crumbs": [
+      "Data Processing",
+      "Acoustics"
+    ]
+  },
+  {
+    "objectID": "content/active-acoustics.html#background",
+    "href": "content/active-acoustics.html#background",
+    "title": "Active Acoustics",
     "section": "Background",
-    "text": "Background\nHistorically, the ESD glider team has processed glider data using the Matlab toolbox SOCIB. However, this toolbox is not actively maintained, and the majority of ESD processing efforts have moved to Google Cloud (GCP), an environment where Matlab is difficult to run. Subsequent efforts involved developing amlr-gliders, a Python toolbox and scripts that were primarily wrappers around gdm. These efforts never caught full traction.\nCurrently, the ESD glider lab uses the esdglider Python package, which can be found in the glider-utils repo, to do its base glider data processing. esdglider primarily consists of ESD-specific wrappers around existing toolboxes such as PyGlider, GliderTools, and dbdreader. All efforts are geared towards processing ESD glider data in ESD’s Google Cloud project, using an Open Science approach.\n\n\nTerminology\nCommon terminology used in glider data processing:\n\nProfile, and other sampling terminology\nNetCDF\nInflection: when a glider is transitioning from a dive to a climb, or from a climb to a dive",
+    "text": "Background\nActive acoustics has been a long used survey tool for estimating the abundance and distribution of fish, zooplankton, and seabed habitat. Typically, acoustic surveys have been conducted on ships but with new technologies, they have been used on autonomous vehicles as well. ESD has used two different active acoustic single beam echosounders on their Slocum gliders: Acoustic Zooplankton and Fish Profiler (AZFP) and Nortek compact echosounders.\nThe AZFP configuration that ESD has used has been either two or three discrete frequencies (38,67.5 and 125 kHz). The Nortek compact is a wideband sounder that ranges from 70 to 120 kHz.",
     "crumbs": [
       "Data Processing",
-      "Glider Data"
+      "Acoustics"
     ]
   },
   {
-    "objectID": "content/glider-data.html#base-processing",
-    "href": "content/glider-data.html#base-processing",
-    "title": "Glider Data",
-    "section": "Base Processing",
-    "text": "Base Processing\nThe base glider data processing, also referred to as “Level 1” or “L1” processing, is primarily done using PyGlider, hereafter simply pyglider. Pyglider creates creates timeseries and gridded CF-compliant NetCDF files, which can be both used internally in further workflows, as well as made publicly available through an ERDDAP (e.g., via the NGDAC).\n\n\n\nESD’s base glider data processing\n\n\n\nData Products\nThe esdglider package uses pyglider to create several different data products as part of the base processing, which are described here. All output files begin with the deployment name (‘glider-YYYYmmdd’), and include the data processing ‘mode’ (i.e., delayed or rt).\nThe timeseries data products are all NetCDF files with a single coordinate “time”. The gridded data products are all NetCDF files with two coordinates: “depth” and “profile” (i.e., profile_index). The one exception is a ‘profiles’ CSV, which contains the start/end times and depths of the different profile segments.\nFor descriptions of the various standard plots, see Plots below.\n\nPrimary Products\nThese are the products that most science end-users will be interested in.\n\n{glider-YYYYmmdd}-{mode}-sci.nc: The ‘science’ timeseries. Most users will want this dataset, as it contains the values from all of the various science sensors. Functionally speaking, this timeseries has one ‘row’ of data for each timestamp from the glider’s science computer where a CTD temperature value was recorded. All included sensor values are interpolated to all timestamps, as long as there is not a gap of 300 or more seconds. The sensor values included in this dataset depend on the instruments carried by the glider; … (Todo: add a section that lists the sensor values for each instrument). Users should note that the ‘depth’ value in this timeseries is the depth calculated from the CTD pressure sensor.\n{glider-YYYYmmdd}_grid-{mode}-5m.nc: The science timeseries, gridded into five meter bins. This NetCDF file will include all of the science sensor values that were in the science timeseries.\n{glider-YYYYmmdd}-imagery-metadata.csv: A CSV file with one row for each image, and one column for each desired sensor value. The sensor values are interpolated to each image timestamp. This file is only created if the glider is carrying a camera, such as a shadowgraph or glidercam. Note that this file lives in the raw glider imagery bucket (e.g. here)\n\n\n\nOther Products\n\n{glider-YYYYmmdd}-{mode}-eng.nc: The ‘engineering’ timeseries. Functionally speaking, this timeseries has one ‘row’ of data for each timestamp from the glider’s flight computer where an m_depth value was recorded. All included sensor values are interpolated to all timestamps, as long as there is not a gap of 300 or more seconds. In addition to m_depth, it contains sensor values such as m_roll, m_pitch, and m_gps_lon. See the full list of sensor values here. Users should note that the ‘depth’ value in this timeseries is from m_depth, meaning the measured depth from the glider.\n{glider-YYYYmmdd}-{mode}-raw.nc: The ‘raw’ timeseries. This timeseries contains a timestamp for every time recorded by the glider’s flight or science computer, and no interpolation is done for any sensor values. These two features make this dataset useful for a) calculating profiles and b) troubleshooting any sensor values or processing steps. This dataset contains both the measured depth (“depth”) and the depth calculated from the CTD pressure sensor (“depth_ctd”).\n{glider-YYYYmmdd}_grid-{mode}-1m.nc: The science timeseries, gridded into one meter bins. This NetCDF file will include all of the science sensor values that were in the science timeseries.\n{glider-YYYYmmdd}-{mode}-profiles.csv: A CSV file with one row for each profile, containing information such as: profile index, profile start and end time, profile start and end depth, and profile direction. Note that this file contains “#.5” profiles, meaning time between profiles when the glider is at the surface or inflecting at depth.\nAcoustic metadata files: Files needed for processing acoustic data with Echoview. These files are described on the acoustics page. These files are only created if the glider is carrying an acoustic instrument, such as a Nortek or AZFP.\n\n\n\n\nTimeseries\nSee data products for a description of the timeseries output files. Current workflow (also shown above):\n\nUpload binary and cache files into Deployment GCS bucket, as specified on the data management page\nRun this script locally to create a deployment YAML file. This script pulls all instrument information from the Glider Database. A user needs to then check this script by hand, in particular the people, devices, comment, and summary blocks, and then commit to the glider-lab repo.\nCreate a deployment-specific script, and run it in a GCP Workbench Instance.\nAccess processed NetCDF files via GCP for additional internal workflows\n(in development) serve/archive data with IOOS/NCEI. Create acoustic data products. Create imagery data products.\n\n\nProcessing Notes\nThis section describes in-the-weeds choices made by the code when processing binary glider files. This is likely only useful reference for esdglider developers, or folks using pyglider/dbdreader for another purpose.\nThe pyglider.slocum.binary_to_timeseries function uses dbdreader to read slocum glider data from binary files. More discussion can be found here around why pyglider switched to using dbdreader, and how pyglider processing worked before.\nAs constructed, binary_to_timeseries uses dbdreader.get_sync to extract values for all of the specified sensors. Thus, the user specifies a particular sensor to server as the ‘time_base’, and then all other desired variables (across science and engineering: pressure, temperature, oxygen, roll, etc.) are interpolated onto the same time base (i.e., the timestamps where this ‘time_base’ variable has a valid (not missing/nan) value). The only exception is that no interpolation is done if the gap between time points is greater than or equal to 300 seconds.\nIn ESD, we use binary_to_timeseries to create a ‘science’ timeseries, with the pressure from the CTD as the time base, and an ‘engineering’ timeseries, with the glider’s measured depth as the time base. We also have written a binary_to_raw function, which uses dbdreader.get to read in raw (i.e., uninterpolated) data points from both the science and flight computers. Thus ‘raw’ timeseries contains all glider data points, and is thus used to calculate profiles, and useful for debugging sensor behavior.\nData alterations, or additional features of note:\nesdglider:\n\nmin_dt: esdglider allows users to pass a minimum datetime, which is used to filter all glider data for timestamps after this datetime. The datetime is usually when the glider begins its first 1k_n.mi mission. Because pressure is used as the time base for the science dataset, rows in science where pressure is nan are dropped (even if other sensors have non-nan values)\n\ndbdreader:\n\ndbdreader throws an warning if a sensor is turned off and thus not present in some sbd/tbd or dbd/ebd files. See this issue for more discussion.\ndbdreader by default skips the first line of each binary file. The reasoning is that “this line contains either nonsense values, or values that were read a long time ago. This behavior can be changed.” See this issue for more discussion.\ndbdreader only identifies sensors as ‘engineering’ or ‘science’. Thus, when extracting e.g. data for the sensor ‘sci_oxy4_oxygen’, dbdreader uses the ‘sci_m_present_time’ as the timestamp, rather than ‘sci_oxy4_present_time’.\n\npyglider:\n\nLatitude and longitude values are set to nan if their absolute value is greater than 90 and 180, respectively.\nAny values of zero from science sensors are converted to nan.\nNo other data alterations/qc are made (e.g., CTD data is all read and left as-is).\n\n\n\n\nGridded\nDocs in progress. Gridding uses the pyglider.ncprocess.make_gridfiles function.\n\n\nNGDAC Profiles\nDocs in progress\n\n\nPlots\nStandard plots are generated from either the ‘processed-rt’ (subfolder ‘rt’) or ‘processed-L1’ data (subfolder ‘delayed’). Note that ‘sci’ is short for plots of science sensor values, while ‘eng’ is short for plots of engineering variables. Standard plots, which are separated by folder, include:\n\nTS-sci: Temperature/salinity plots of the various science sensor values\nmaps-sci: Maps of surface values (i.e., depth &lt;10m) from various science sensors\npointMaps: Scatter plots of the lat/lon points recorded by the glider\nspatialGrids-sci: Gridded science data plotted by all combinations of latitude, longitude, and depth\nspatialSections-sci: Gridded science data plotted by either latitude or longitude, and depth\nthisVsThat-eng: Timeseries plots of various engineering sensor values plotted against each other\ntimeSections-sci: Gridded science data plotted by time and depth\ntimeSections-sci-gt: Gridded science data plotted by profile_index and depth. The plots are made with the glidertools package, and thus use the 0.5 and 99.5 percentile to set color limits.\ntimeSeries-eng: Timeseries plots of various engineering sensor values\ntimeSeries-sci: Timeseries plots of various science sensor values\n\n\n\nOther Files\nDocs in progress",
+    "objectID": "content/active-acoustics.html#processing",
+    "href": "content/active-acoustics.html#processing",
+    "title": "Active Acoustics",
+    "section": "Processing",
+    "text": "Processing\nBoth echosounders are bottom looking so the processing is very similar. Currently, the base glider data processing must be performed first. During the base processing, the following files relevant to acoustic data processing are created:\n\nAdditional docs todo, describing the various echoview metadata files. The data needed from the glider are date, time, GPS, depth, pitch, and roll.\n\nAcoustic processing currently takes place using Echoview software. The processing steps for both types of echosounders are documented in the echoview_glider_template as well as the Echoview templates. The templates were developed for analysis of Antarctic krill (Euphusia superba) but the general cleaning and output can be used for other zooplankton in any region of the world.",
     "crumbs": [
       "Data Processing",
-      "Glider Data"
+      "Acoustics"
     ]
   },
   {
-    "objectID": "content/glider-data.html#real-time-data",
-    "href": "content/glider-data.html#real-time-data",
-    "title": "Glider Data",
-    "section": "Real-Time Data",
-    "text": "Real-Time Data\nCurrently, all ESD glider data processing is delayed-mode processing. The vision is to have GCP infrastructure in place to:\n\nPeriodically rsync real-time data (sbd/tbd files) from the SFMC to GCP\nRun Caleb’s slocumRtDataVisTool to create plots and statistics useful for real-time piloting decisions\nRun the base processing steps on these data, and automatically send the processed files to the NGDAC",
+    "objectID": "content/active-acoustics.html#future-directions",
+    "href": "content/active-acoustics.html#future-directions",
+    "title": "Active Acoustics",
+    "section": "Future directions",
+    "text": "Future directions\nCloud-based analysis using echopype\nAdditional processing functionality, e.g. Echometrics",
     "crumbs": [
       "Data Processing",
-      "Glider Data"
+      "Acoustics"
     ]
   },
   {
-    "objectID": "content/glider-data.html#future-directions",
-    "href": "content/glider-data.html#future-directions",
-    "title": "Glider Data",
-    "section": "Future Directions",
-    "text": "Future Directions\nQC + data cleaning. Potential resources:\n\nPurpose: to create cleaned netcdf files with qc flags\nImplement IOOS QARTOD tests, eg using ioos_qc to add qc flags\nhttps://github.com/OceanGlidersCommunity/Realtime-QC\n\nhttps://github.com/castelao/CoTeDe\n\nother qc/data cleaning? For instance, sanity check ts plots. Likely will involve by-hand inspection for each deployment, including removing bad data if discovered\n\nGliderTools:\n\nmanuscript describing the GliderTools toolbox\nGliderTools contains tools for processing Seaglider basestation files. However, the rest of the tools simply require that the data be in an xarray dataset.\noptics, pq: quenching correction method described by Thomalla et al. (2018)\nadditional qc tools?\ncalculate cool physics things (mixed layer depth, …)\nleverage gridded plotting routines",
-    "crumbs": [
-      "Data Processing",
-      "Glider Data"
-    ]
-  },
-  {
-    "objectID": "content/glider-data.html#github-repos",
-    "href": "content/glider-data.html#github-repos",
-    "title": "Glider Data",
-    "section": "GitHub Repos",
-    "text": "GitHub Repos\nSee the home page for ESD-developed repos. External GitHub repos that are particularly relevant or useful:\n\n\n\nrepo link\ndescription\n\n\n\n\ndbdreader\nExtract data from slocum binary files\n\n\npyglider\nConvert datafiles from slocum and seaexplorer into netcdf\n\n\nGliderTools\nQuality control and plot generic glider data\n\n\nIOOS qc\nApply IOOS QARTOD and other qc routines\n\n\nSOCIB\nProcess glider data in Matlab (not actively maintained)\n\n\nglider tools list\nOceanGliders community repository to list tools for processing glider data. Includes many of the tools listed above.",
-    "crumbs": [
-      "Data Processing",
-      "Glider Data"
-    ]
-  },
-  {
-    "objectID": "content/gcp.html",
-    "href": "content/gcp.html",
-    "title": "Google Cloud Platform (GCP)",
+    "objectID": "content/data-proc-overview.html",
+    "href": "content/data-proc-overview.html",
+    "title": "Data Processing Overview",
     "section": "",
-    "text": "Placeholder for GCP links, pointers, etc.\nSee this folder for current ESD GCP docs. Most useful will probably be the ‘NOAA Fisheries Cloud - GCP How-Tos’ or ‘Presentations’ folders.\n\n\n\n Back to top",
+    "text": "The below workflow provides an overview of ESD glider data inputs, processing, data products, and output locations. For more details about particular steps, see the individual data processing pages.\n\n\n\nOverview of ESD glider data processing\n\n\n\n\n\n Back to top",
     "crumbs": [
-      "Google Cloud"
+      "Data Processing",
+      "Overview"
     ]
   },
   {
@@ -103,71 +112,6 @@
     "text": "Deployments\nThe below table lists all (in progress) ESD (and formerly AERD) glider deployments, along with basic information about the deployment. The table also includes links to post-deployment reports, and links to data files where they exist. See below for details on the data links.\nNote that deployment names are always ‘glider name’-‘year-month-day’. For instance, deployment amlr08-20220530. Is the deployment of glider amlr08 that began on 30 May 2022.\nSee this spreadsheet (NOAA internal) for more details.\n\n\n\n\n\nYear\nProject\nDeployment\nLocation\nSensors\nReport\nERDDAP\nInternal Data\n\n\n\n\n2025\nSANDIEGO\nunit_1024-20250224\nSan Diego\nCTD, Ecopuck, PAR, WISPR\nlink\n{in progress}\n{in progress}\n\n\n—–\n—–\n—–\n—–\n—–\n—–\n—–\n—–\n\n\n2024/25\nFREEBYRD\namlr01-20241120\nAntarctic\nCTD, Optode, Ecopuck, AZFP\nlink\n{in progress}\n{in progress}\n\n\n2024/25\nFREEBYRD\namlr08-20241120\nAntarctic\nCTD, Optode, Ecopuck, Nortek\nlink\n{in progress}\n{in progress}\n\n\n—–\n—–\n—–\n—–\n—–\n—–\n—–\n—–\n\n\n2024\nECOSWIM\ncalanus-20241019\nHumboldt\nCTD, Optode, Ecopuck, Nortek\n{in progress}\n{in progress}\nglider; acoustics\n\n\n2024\nREFOCUS\ngeorge-20240907\nSanta Barbara\nCTD, Optode,Ecopuck, Narrow Shadowgraph\nlink\n{in progress}\n{in progress}\n\n\n2024\nREFOCUS\ngeorge-20240530\nSan Diego\nCTD, Optode, Narrow Shadowgraph\nlink\n{in progress}\nimages\n\n\n2024\nREFOCUS\njohn-20240312\nSan Diego\nCTD, Optode, Nortek, Shadowgraph\nlink\n{in progress}\n{in progress}\n\n\n2024\nREFOCUS\nringo-20240312\nSan Diego\nCTD, Optode, Nortek, Wide Shadowgraph\nlink\n{in progress}\n{in progress}\n\n\n…\n…\n…\n…\n…\n…\n…\n…\n\n\n\n\nData Links\nThe above table contains several links to different data products.\nThe ‘ERDDAP’ column will contain the link to the glider dataset when it is published to the ERDDAP of the IOOS National Glider Data Assembly Center.\nThe ‘Internal Data’ column contains links to various ESD-internal data products, stored within the ESD Google Cloud Platform (GCP) project. Users will only be able to access these data if they have been granted appropriate permissions within the project. Currently there are three different types of internal data links:\n\nglider: Data products from the ‘base’ glider processing workflow. The most relevant data products for users will likely be the ‘science’ timeseries, and the gridded science data.\nplots: Link the ‘plots’ folder, within the deployment folder. See a description of the structure of this folder here.\nacoustics: Link the ‘acoustics’ deployment folder. See a description of the structure of this folder here.\nimagery: Link the the ‘raw imagery’ deployment folder. See a description of the structure of this folder here",
     "crumbs": [
       "Deployments"
-    ]
-  },
-  {
-    "objectID": "content/documents/O-rings.html",
-    "href": "content/documents/O-rings.html",
-    "title": "O-rings for gliders, associated sensors and for Moorings",
-    "section": "",
-    "text": "O-ring: 07.500-07.750-.139OB-SPEC\nVendor: Packing & Seals, Inc\nPart number: OR0-264NF65\nPrice: $11.90 August 15, 2024\nLube: Parker O-lube\nTWR: Part# 304697, BUNA O-RING, 2-264, 65D BUNA AS3578\n\n\n\nO-ring:\nVendor:\nPart number:\nPrice:\nLube: Parker O-lube\n\n\n\nO-ring: 94mm x 3mm Nitrile N70 round\nVendor: Packing & Seals, Inc\nPart number: ORM-09400-300EA70\nPrice: $3 July 18, 2024\nLube: Molykote 111\n\n\n\nO-ring: 2-037 BUNA-N 70A\nVendor: McMaster-Carr\nPart number: 9452K125\nPrice:\nLube: Molykote 111\n\n\n\nO-ring: 2-037 BUNA-N 70A\nVendor: McMaster-Carr\nPart number: 9452K125\nPrice:\nLube: Molykote 111\n\n\n\nO-ring:\nVendor:\nPart number:\nPrice:\nLube:\n\n\n\n\n\n\nO-ring: dash 255, 70A Buna-N\nVendor: McMaster-Carr\nPart number:https://www.mcmaster.com/9452K356/\nPrice:\nLube:\n\n\n\n\n\n\nO-ring:\nVendor:\nPart number:\nPrice:\nLube:\n\n\n\nO-ring:\nVendor: Edgetech\nPart number:\nPrice:\nLube:\n\n\n\n\nO-ring:\nVendor: Seabird\nPart number:\nPrice:\nLube:\n\n\nO-ring: 568-020 70A Duro Buna\nVendor: Packing & Seals, Inc\nPart number: OR0-020EA70\nPrice: $0.65 July 18, 2024\nLube: Molykote 111\n\n\n\nO-ring:\nVendor:\nPart number:\nPrice:\nLube:"
-  },
-  {
-    "objectID": "content/documents/O-rings.html#slocum-gliders",
-    "href": "content/documents/O-rings.html#slocum-gliders",
-    "title": "O-rings for gliders, associated sensors and for Moorings",
-    "section": "",
-    "text": "O-ring: 07.500-07.750-.139OB-SPEC\nVendor: Packing & Seals, Inc\nPart number: OR0-264NF65\nPrice: $11.90 August 15, 2024\nLube: Parker O-lube\nTWR: Part# 304697, BUNA O-RING, 2-264, 65D BUNA AS3578\n\n\n\nO-ring:\nVendor:\nPart number:\nPrice:\nLube: Parker O-lube\n\n\n\nO-ring: 94mm x 3mm Nitrile N70 round\nVendor: Packing & Seals, Inc\nPart number: ORM-09400-300EA70\nPrice: $3 July 18, 2024\nLube: Molykote 111\n\n\n\nO-ring: 2-037 BUNA-N 70A\nVendor: McMaster-Carr\nPart number: 9452K125\nPrice:\nLube: Molykote 111\n\n\n\nO-ring: 2-037 BUNA-N 70A\nVendor: McMaster-Carr\nPart number: 9452K125\nPrice:\nLube: Molykote 111\n\n\n\nO-ring:\nVendor:\nPart number:\nPrice:\nLube:"
-  },
-  {
-    "objectID": "content/documents/O-rings.html#oceanscout",
-    "href": "content/documents/O-rings.html#oceanscout",
-    "title": "O-rings for gliders, associated sensors and for Moorings",
-    "section": "",
-    "text": "O-ring: dash 255, 70A Buna-N\nVendor: McMaster-Carr\nPart number:https://www.mcmaster.com/9452K356/\nPrice:\nLube:"
-  },
-  {
-    "objectID": "content/documents/O-rings.html#moorings",
-    "href": "content/documents/O-rings.html#moorings",
-    "title": "O-rings for gliders, associated sensors and for Moorings",
-    "section": "",
-    "text": "O-ring:\nVendor:\nPart number:\nPrice:\nLube:\n\n\n\nO-ring:\nVendor: Edgetech\nPart number:\nPrice:\nLube:"
-  },
-  {
-    "objectID": "content/documents/O-rings.html#seabird-37-smp-ctd",
-    "href": "content/documents/O-rings.html#seabird-37-smp-ctd",
-    "title": "O-rings for gliders, associated sensors and for Moorings",
-    "section": "",
-    "text": "O-ring:\nVendor: Seabird\nPart number:\nPrice:\nLube:\n\n\nO-ring: 568-020 70A Duro Buna\nVendor: Packing & Seals, Inc\nPart number: OR0-020EA70\nPrice: $0.65 July 18, 2024\nLube: Molykote 111\n\n\n\nO-ring:\nVendor:\nPart number:\nPrice:\nLube:"
-  },
-  {
-    "objectID": "content/data-management.html",
-    "href": "content/data-management.html",
-    "title": "Data Management",
-    "section": "",
-    "text": "Glider data management is a complex endeavor. Gliders contain many moving parts, and can collect over a terabyte of data in a single deployment. This page outlines the ESD glider data management efforts, including directory structures and storage locations for different types of data.\nThis page provides the in-the-weeds data management details, which will likely only be relevant for ESD glider lab members. Users looking for more general information about glider data products should go to the data type pages (links todo).",
-    "crumbs": [
-      "Data Management"
-    ]
-  },
-  {
-    "objectID": "content/data-management.html#quick-links",
-    "href": "content/data-management.html#quick-links",
-    "title": "Data Management",
-    "section": "Quick Links",
-    "text": "Quick Links\nGoogle Drive (NOAA internal only) :\n\nAMLR Gliders\nESD glider data locations\n\nGoogle Cloud Storage (GCS) buckets:\n\nDeployments\nAcoustics\nRaw imagery\nPre-processed imagery (Images pre-processed by Randy’s code)\nIn progress: a Shiny app or some other tool for users to use to get to GCS bucket URL for a particular piece of data\n\nGlider & Mooring Database\n\nDatabase access and use (NOAA only)",
-    "crumbs": [
-      "Data Management"
-    ]
-  },
-  {
-    "objectID": "content/data-management.html#data-management-plan",
-    "href": "content/data-management.html#data-management-plan",
-    "title": "Data Management",
-    "section": "Data Management Plan",
-    "text": "Data Management Plan\nThis section describes what files go where, as well as required directory structures. It replaces the AMLR Glider Data Management Plan Google doc.\nThese slides (NOAA internal only) describe and link to the various homes for different pieces of ESD glider data, for additional references. Several of these data homes are described in more detail below.\n\nGlider & Mooring Database\nThe glider and mooring database is a SQL Server database, hosted on the internal SWFSC network. This database exists to track all of the glider/instrument (and mooring) parts and builds. Each glider deployment is represented as a build, and each build includes links to all of the different parts that were on that glider for the deployment. The rest of this section provides high-level guidance for how to use the Glider & Mooring Database; see this document for more details, including database access instructions for both database users and managers.\n\nDevices\nFor this database, ‘device’ means any piece of glider, instrument, mooring, etc, that needs to be tracked. Devices can be created by clicking the ‘Devices’ button from the database home page, and then using the form that pops up. Note that any new device types must be added using the ‘Device Types’ form.\nAll new devices should be added to the database as soon as they arrive at the SWFSC. Created devices can then be added to a glider build, to track which devices were part of which deployments.\nNote: Currently there is no way to track software versions of a ‘device’ in the database. Some of this info is tracked via the Fleet Status page (NOAA internal only), but it should be formally added to the database as time permits.\n\n\nGliders\nA glider build functionally allows ESD to create a collection of devices and files, which they can then associate with a deployment. A deployment build tracks the glider software version, deployment start date and end date, and the number of profiles (yos) performed during the deployment. Glider builds should be created 1) when a glider is first acquired, 2) before a glider is deployed, and 3) when a relatively whole glider is sent in for service. Again, see the database Google doc for more details.\n\n\nCalibrations\nAll factory calibration documents are now stored in the glider-lab repo.\nAlthough some records for acoustic calibrations performed in the SWFSC tech tank are in the database, most are currently recorded and tracked by Tony.\n\n\nFiles\nAll factory calibration documents are now stored in the glider-lab repo.\nOther files associated with a deployment (e.g., autoexec and proglet files, or config files associated with certain instruments) are currently stored in the database, but will likely be moved to a more accessible location in the future.\n\n\n\nAMLR Gliders Google Drive\nThe AMLR Gliders Google Drive … {full description todo}\n\nGlider Deployments\nThe Glider Deployments folder is for working files during both deployment prep, and the deployment itself. It provides an easy place (i.e., easier than Google Cloud) for ESD glider team members to collaborate on and refer to different files. These files live in ‘GDrive deployment folders’; the Glider Deployments folder contains GDrive folder templates. After the deployment it is downloaded and uploaded to GCP.\nThe structure of an individual GDrive deployment folder:\nglider-YYYYmmdd\n├── photos\n├── prep\n    ├── functional-checkout\n    ├── acoustic-prep\n    ├── imagery-prep\nphotos: folder with relevant photos. These could include photos of the glider seal, or photos of the glider deployment and recovery.\nprep Folders and files from the glider prep. In addition to the folders described below, the ‘prep’ folder may include the ballast sheet, or compass calibration files.\n\nfunctional-checkout: functional checkout sheet, data files from test tank dive, and any other files/notes from the functional checkout\nacoustic-prep: acoustic prep files from pre-deployment tests. These may include sample data files, relevant tests, etc.\nimagery-prep: imagery (camera) prep files from pre-deployment tests. These may include sample images, relevant tests, etc.\n\nMiscellaneous files that should stay associated with the deployment can go directly in the GDrive glider-YYYYmmdd folder.\n\n\n\nglider-lab repository\nThe glider-lab repository has evolved into a place to store a) reference documents that can be accessible to folks outside NOAA and b) files used for processing in GCP. These include:\n\ncalibration-docs: factory calibration documents for glider instruments\ndeployment-configs: yaml configuration files for glider data processing\ndeployment-reports: post-deployment reports, created as Quarto documents\ndeployment-scripts: Python scripts for processing the glider data.\nechoview-glider-calib-files: calibration files used for processing acoustic data using Echoview\n\nSee the repo readme for full folder descriptions.\n\n\nstandard-glider-files repository\nThe standard-glider-files repository contains standard files that are put on ESD gliders before deployment. This repo and these files are also commonly used during ESD lab tests.\n\n\nGCS Buckets\nData processing code depends on a specific directory structure, and thus it is important that data in GCS buckets follow the format described below. All GCS buckets used for storing glider data follow the same top-level directory structure of ‘PROJECT/YYYY/glider-YYYYmmdd’:\n\nPROJECT: Data are first grouped by project\nYYYY: Within each project folder are year folders, of the format YYYY (e.g., “2025”). For FREEBYRD (i.e., Antarctic) deployments, the January year is used. For instance, a glider deployed deployed in Dec 2022 will be in the ‘FREEBYRD/2023’ directory.\nglider-YYYYmmdd: Within each year folder are deployment folders. The deployment folders all follow the same naming convention: ‘glider-YYYYmmdd’, where ‘glider’ is the name of the glider and ‘YYYYmmdd’ is the deployment date. For example, the folder name for the glider calanus that was deployed on 19 Oct 2024 is “calanus-20241019”.\n\nGCS buckets are only accessible to individuals with a noaa.gov email address that have been added to the GCP project as a data viewer. To access data in GCS buckets, please contact Sam Woodman.\nEach section below corresponds to an individual GCS bucket. They begin with a directory outline, followed by text that explains each directory. Principles that are consistent across buckets include:\n\nSeveral folders contain “delayed” and “rt” subfolders. Delayed mode data were collected or generated after the glider was recovered, while rt (i.e., realtime) data were transmitted or generated while the glider was deployed.\nSeveral folders contain an ‘ngdac’ subfolder. This subfolder contains NetCDF files formatted for submission to the IOOS Glider DAC. The DAC requires one NetCDF file for each profile, hence the subfolder.\n\n\nDeployments\nThe structure of an individual deployment folder, located in the Deployments bucket under a ‘PROJECT/YYYY/glider-YYYYmmdd’ path:\n├── archive-sfmc\n├── backup\n├── data\n    ├── binary\n        ├── delayed\n        ├── rt\n    ├── processed-rt\n        ├── ngdac\n    ├── processed-L1\n        ├── ngdac\n    ├── processed-L2\n├── plots\n    ├── delayed\n        ├── TS-sci\n        ├── maps-sci\n        ├── pointMaps\n        ├── spatialGrids-sci\n        ├── spatialSections-sci\n        ├── thisVsThat-eng\n        ├── timeSections-sci\n        ├── timeSections-sci-gt\n        ├── timeSeries-eng\n        ├── timeSeries-sci\n    ├── rt\n        ├── ... : same subfolders as 'plots/delayed' folder\narchive-sfmc: The ‘archive’ folder, synced or downloaded from the SFMC. This folder contains all files sent to the glider during the deployment, with an associated timestamp as part of the file name. Among other things, this folder is used for generating a sensor config table for the post-deployment report.\nbackup: Backup files/folders from the deployment. These typically include zipped copies of the Flight and Science folders from the glider cards, as well as the Glider Folder Archive Tar Ball from the SFMC.\ndata Raw glider data, and processed glider data products:\n\nbinary: Binary data files generated by the glider. This folder should include dbd/ebd/dcd/ecd (for delayed data) or sbd/tbd/scd/tcd (for rt data) files. Note that there is not a different path for compressed files, meaning for instance that dcd/ecd files should go directly in the ‘data/binary/delayed’ folder.\nprocessed-rt: “Real-time” processed data and data products, created using real-time glider data (i.e., sbd/tbd files) transmitted by the glider during its deployment.\nprocessed-L1: “Level 1” processed data and data products. “Level 1” means that these data products were created by the esdglider/pyglider base processing functions (link TODO) using delayed mode data. In other words, the dbd/ebd files were used as input data, and there was minimal data qa/qc or corrections performed.\nprocessed-L2: “Level 2” processed data and data products. “Level 2” means that the data has undergone additional qa/qc and/or processing, beyond what is performed during base processing. Due to lack of personnel, at this time most ESD glider deployments will not have level 2 processed data.\n\nplots: Standard plots generated from either the ‘processed-rt’ (subfolder ‘rt’) or ‘processed-L1’ data (subfolder ‘delayed’). Note that ‘sci’ is short for plots of science sensor values, while ‘eng’ is short for plots of engineering variables. See plots for descriptions of the various folders.\n\n\nAcoustics\nThe structure of an individual deployment folder for acoustics, located in the Acoustics bucket under a ‘PROJECT/YYYY/glider-YYYYmmdd’ path:\n├── data\n    ├── delayed\n    ├── rt\n    ├── processed-echoview\n├── config\n├── metadata\n    ├── echoview\ndata/delayed: Raw acoustic delayed data, from either AZFPs or Echosounders\ndata/rt: Raw real-time ad2 files. For Nortek instruments only\ndata/processed-echoview: Folder for Echoview outputs. For instance, Echoview export files, and the gridded NetCDF file with appended acoustic data\nconfig: config file(s) used during the deployment\nmetadata/echoview: metadata files for Echoview, generated by base glider processing code\n\n\nRaw Imagery\nThe structure of an individual deployment folder for raw imagery, for shadowgraph or glidercam imagery, located in the Raw imagery bucket under a ‘PROJECT/YYYY/glider-YYYYmmdd’ path:\n├── images\n├── config\n├── metadata\nimages: All imagery collected during the deployment. These images will be in their ‘Dir####’ folders, as they were recorded on the imagery cards.\nconfig: config file(s) used during the deployment\nmetadata: image metadata file, generated by base glider processing code. This file is a CSV with one row for each image, and columns representing the glider data values interpolated to the timestamp of the image.\n\n\nPre-Processed Imagery\nThe directory structure for the pre-processed imagery bucket is described on the Imagery page.",
-    "crumbs": [
-      "Data Management"
     ]
   },
   {
@@ -270,33 +214,215 @@
     ]
   },
   {
-    "objectID": "index.html",
-    "href": "index.html",
-    "title": "Glider Lab Manual",
+    "objectID": "content/documents/O-rings.html",
+    "href": "content/documents/O-rings.html",
+    "title": "O-rings for gliders, associated sensors and for Moorings",
     "section": "",
-    "text": "The Ecosystem Science Division (ESD) at the Southwest Fisheries Science Center deploys gliders in both the California Current Ecosystem and the Antarctic Peninsula regions. The ESD’s glider fleet is managed by the Scientific Operations and Support (SOS) Program, and supports several research objectives within the ESD. We provide expertise across multiple autonomous platforms to deliver robust data for ecosystem monitoring and fisheries management.\nThis website is an in-development manual for all ESD glider activities. Please contact a member of the glider team with any questions. For information about active or past ESD glider deployments, see Deployments",
+    "text": "O-ring: 07.500-07.750-.139OB-SPEC\nVendor: Packing & Seals, Inc\nPart number: OR0-264NF65\nPrice: $11.90 August 15, 2024\nLube: Parker O-lube\nTWR: Part# 304697, BUNA O-RING, 2-264, 65D BUNA AS3578\n\n\n\nO-ring:\nVendor:\nPart number:\nPrice:\nLube: Parker O-lube\n\n\n\nO-ring: 94mm x 3mm Nitrile N70 round\nVendor: Packing & Seals, Inc\nPart number: ORM-09400-300EA70\nPrice: $3 July 18, 2024\nLube: Molykote 111\n\n\n\nO-ring: 2-037 BUNA-N 70A\nVendor: McMaster-Carr\nPart number: 9452K125\nPrice:\nLube: Molykote 111\n\n\n\nO-ring: 2-037 BUNA-N 70A\nVendor: McMaster-Carr\nPart number: 9452K125\nPrice:\nLube: Molykote 111\n\n\n\nO-ring:\nVendor:\nPart number:\nPrice:\nLube:\n\n\n\n\n\n\nO-ring: dash 255, 70A Buna-N\nVendor: McMaster-Carr\nPart number:https://www.mcmaster.com/9452K356/\nPrice:\nLube:\n\n\n\n\n\n\nO-ring:\nVendor:\nPart number:\nPrice:\nLube:\n\n\n\nO-ring:\nVendor: Edgetech\nPart number:\nPrice:\nLube:\n\n\n\n\nO-ring:\nVendor: Seabird\nPart number:\nPrice:\nLube:\n\n\nO-ring: 568-020 70A Duro Buna\nVendor: Packing & Seals, Inc\nPart number: OR0-020EA70\nPrice: $0.65 July 18, 2024\nLube: Molykote 111\n\n\n\nO-ring:\nVendor:\nPart number:\nPrice:\nLube:"
+  },
+  {
+    "objectID": "content/documents/O-rings.html#slocum-gliders",
+    "href": "content/documents/O-rings.html#slocum-gliders",
+    "title": "O-rings for gliders, associated sensors and for Moorings",
+    "section": "",
+    "text": "O-ring: 07.500-07.750-.139OB-SPEC\nVendor: Packing & Seals, Inc\nPart number: OR0-264NF65\nPrice: $11.90 August 15, 2024\nLube: Parker O-lube\nTWR: Part# 304697, BUNA O-RING, 2-264, 65D BUNA AS3578\n\n\n\nO-ring:\nVendor:\nPart number:\nPrice:\nLube: Parker O-lube\n\n\n\nO-ring: 94mm x 3mm Nitrile N70 round\nVendor: Packing & Seals, Inc\nPart number: ORM-09400-300EA70\nPrice: $3 July 18, 2024\nLube: Molykote 111\n\n\n\nO-ring: 2-037 BUNA-N 70A\nVendor: McMaster-Carr\nPart number: 9452K125\nPrice:\nLube: Molykote 111\n\n\n\nO-ring: 2-037 BUNA-N 70A\nVendor: McMaster-Carr\nPart number: 9452K125\nPrice:\nLube: Molykote 111\n\n\n\nO-ring:\nVendor:\nPart number:\nPrice:\nLube:"
+  },
+  {
+    "objectID": "content/documents/O-rings.html#oceanscout",
+    "href": "content/documents/O-rings.html#oceanscout",
+    "title": "O-rings for gliders, associated sensors and for Moorings",
+    "section": "",
+    "text": "O-ring: dash 255, 70A Buna-N\nVendor: McMaster-Carr\nPart number:https://www.mcmaster.com/9452K356/\nPrice:\nLube:"
+  },
+  {
+    "objectID": "content/documents/O-rings.html#moorings",
+    "href": "content/documents/O-rings.html#moorings",
+    "title": "O-rings for gliders, associated sensors and for Moorings",
+    "section": "",
+    "text": "O-ring:\nVendor:\nPart number:\nPrice:\nLube:\n\n\n\nO-ring:\nVendor: Edgetech\nPart number:\nPrice:\nLube:"
+  },
+  {
+    "objectID": "content/documents/O-rings.html#seabird-37-smp-ctd",
+    "href": "content/documents/O-rings.html#seabird-37-smp-ctd",
+    "title": "O-rings for gliders, associated sensors and for Moorings",
+    "section": "",
+    "text": "O-ring:\nVendor: Seabird\nPart number:\nPrice:\nLube:\n\n\nO-ring: 568-020 70A Duro Buna\nVendor: Packing & Seals, Inc\nPart number: OR0-020EA70\nPrice: $0.65 July 18, 2024\nLube: Molykote 111\n\n\n\nO-ring:\nVendor:\nPart number:\nPrice:\nLube:"
+  },
+  {
+    "objectID": "content/glider-data.html",
+    "href": "content/glider-data.html",
+    "title": "Glider Data",
+    "section": "",
+    "text": "There are many steps and flavors to glider data processing, from the base processing (binary glider to NetCDF files for Slocum gliders), to QA/QC, to developing additional data products. This page outlines the ESD glider lab’s data processing workflow, and in particular base processing and data products.\nUsers interested in understanding and accessing data products created for each deployment should see the Data Products section. For acoustic or image processing workflows, see the acoustics and imagery pages, respectively.",
     "crumbs": [
-      "Home"
+      "Data Processing",
+      "Glider Data"
     ]
   },
   {
-    "objectID": "index.html#team-members",
-    "href": "index.html#team-members",
-    "title": "Glider Lab Manual",
-    "section": "Team Members",
-    "text": "Team Members\n\n\n\nName\nJob Title\nGlider Team Role\n\n\n\n\nAnthony Cossio\nOperations Research Analyst\nLab Manager, Pilot, Tech\n\n\nJen Walsh\nFisheries Research Biologist\nPilot, Tech\n\n\nTegan Murray\nNOAA Corps\nPilot, Tech\n\n\nSam Woodman\nBiologist\nData Manager\n\n\nHeidi Taylor\nProgram Lead, SOS; Acting Director, ESD",
+    "objectID": "content/glider-data.html#background",
+    "href": "content/glider-data.html#background",
+    "title": "Glider Data",
+    "section": "Background",
+    "text": "Background\nHistorically, the ESD glider team has processed glider data using the Matlab toolbox SOCIB. However, this toolbox is not actively maintained, and the majority of ESD processing efforts have moved to Google Cloud (GCP), an environment where Matlab is difficult to run. Subsequent efforts involved developing amlr-gliders, a Python toolbox and scripts that were primarily wrappers around gdm. These efforts never caught full traction.\nCurrently, the ESD glider lab uses the esdglider Python package, which can be found in the glider-utils repo, to do its base glider data processing. esdglider primarily consists of ESD-specific wrappers around existing toolboxes such as PyGlider, GliderTools, and dbdreader. All efforts are geared towards processing ESD glider data in ESD’s Google Cloud project, using an Open Science approach.\n\n\nTerminology\nCommon terminology used in glider data processing:\n\nProfile, and other sampling terminology\nNetCDF\nInflection: when a glider is transitioning from a dive to a climb, or from a climb to a dive",
     "crumbs": [
-      "Home"
+      "Data Processing",
+      "Glider Data"
     ]
   },
   {
-    "objectID": "index.html#project-management",
-    "href": "index.html#project-management",
-    "title": "Glider Lab Manual",
-    "section": "Project Management",
-    "text": "Project Management\nThe ESD glider team is using GitHub Issues and Projects for project management. There efforts are heavily inspired and influenced by the Openscapes GitHub for project management approach.\nThe ESD glider team project pulls from issues from several repositories, but in particular the SWFSC/glider-lab repo. For more details see the best practices page.\nFor most current Fleet Status information, see this Sheet (NOAA internal only)\n\nGitHub Repositories\nGitHub repos developed by the ESD glider team. Issues for these repos are tracked in the above-linked Project.\n\n\n\nrepo link\ndescription\n\n\n\n\nglider-lab-manual\nESD Glider lab website; docs used to generate this site\n\n\nglider-lab\nAll things glider lab: issues/tasks, calibration docs, config files, deployment reports, …\n\n\nstandard-glider-files\nESD glider cache files, as well as standard files that are put on all gliders before deployment\n\n\nglider-utils\nUtility functions for processing ESD glider data\n\n\nechoview_glider_template\nEchoview glider templates that are used for acoustic data analysis\n\n\nglider_processing_code\nCompilation of code that is used to work with glider acoustic data\n\n\nslocumRtDataVisTool\nCreates plots and generates useful statistics from slocum binary files",
+    "objectID": "content/glider-data.html#base-processing",
+    "href": "content/glider-data.html#base-processing",
+    "title": "Glider Data",
+    "section": "Base Processing",
+    "text": "Base Processing\nThe base glider data processing, also referred to as “Level 1” or “L1” processing, is primarily done using PyGlider, hereafter simply pyglider. Pyglider creates creates timeseries and gridded CF-compliant NetCDF files, which can be both used internally in further workflows, as well as made publicly available through an ERDDAP (e.g., via the NGDAC).\n\n\n\nESD’s base glider data processing\n\n\n\nData Products\nThe esdglider package uses pyglider to create several different data products as part of the base processing, which are described here. All output files begin with the deployment name (‘glider-YYYYmmdd’), and include the data processing ‘mode’ (i.e., delayed or rt).\nThe timeseries data products are all NetCDF files with a single coordinate “time”. The gridded data products are all NetCDF files with two coordinates: “depth” and “profile” (i.e., profile_index). The one exception is a ‘profiles’ CSV, which contains the start/end times and depths of the different profile segments.\nFor descriptions of the various standard plots, see Plots below.\n\nPrimary Products\nThese are the products that most science end-users will be interested in.\n\n{glider-YYYYmmdd}-{mode}-sci.nc: The ‘science’ timeseries. Most users will want this dataset, as it contains the values from all of the various science sensors. Functionally speaking, this timeseries has one ‘row’ of data for each timestamp from the glider’s science computer where a CTD temperature value was recorded. All included sensor values are interpolated to all timestamps, as long as there is not a gap of 300 or more seconds. The sensor values included in this dataset depend on the instruments carried by the glider; … (Todo: add a section that lists the sensor values for each instrument). Users should note that the ‘depth’ value in this timeseries is the depth calculated from the CTD pressure sensor.\n{glider-YYYYmmdd}_grid-{mode}-5m.nc: The science timeseries, gridded into five meter bins. This NetCDF file will include all of the science sensor values that were in the science timeseries. Users should note that the depth bin name is the bin midpoint. For instance, the bin for data from zero to five meters has the name/label “2.5”.\n{glider-YYYYmmdd}-imagery-metadata.csv: A CSV file with one row for each image, and one column for each desired sensor value. The sensor values are interpolated to each image timestamp. This file is only created if the glider is carrying a camera, such as a shadowgraph or glidercam. Note that this file lives in the raw glider imagery bucket (e.g. here)\n\n\n\nOther Products\n\n{glider-YYYYmmdd}-{mode}-eng.nc: The ‘engineering’ timeseries. Functionally speaking, this timeseries has one ‘row’ of data for each timestamp from the glider’s flight computer where an m_depth value was recorded. All included sensor values are interpolated to all timestamps, as long as there is not a gap of 300 or more seconds. In addition to m_depth, it contains sensor values such as m_roll, m_pitch, and m_gps_lon. See the full list of sensor values here. Users should note that the ‘depth’ value in this timeseries is from m_depth, meaning the measured depth from the glider.\n{glider-YYYYmmdd}-{mode}-raw.nc: The ‘raw’ timeseries. This timeseries contains a timestamp for every time recorded by the glider’s flight or science computer, and no interpolation is done for any sensor values. These two features make this dataset useful for a) calculating profiles and b) troubleshooting any sensor values or processing steps. This dataset contains both the measured depth (“depth”) and the depth calculated from the CTD pressure sensor (“depth_ctd”).\n{glider-YYYYmmdd}_grid-{mode}-1m.nc: The science timeseries, gridded into one meter bins. This NetCDF file will include all of the science sensor values that were in the science timeseries. Users should note that the depth bin name is the bin midpoint. For instance, the bin for data from zero to one meters has the name/label “0.5”.\n{glider-YYYYmmdd}-{mode}-profiles.csv: A CSV file with one row for each profile, containing information such as: profile index, profile start and end time, profile start and end depth, and profile direction. Note that this file contains “#.5” profiles, meaning time between profiles when the glider is at the surface or inflecting at depth.\nAcoustic metadata files: Files needed for processing acoustic data with Echoview. These files are described on the acoustics page. These files are only created if the glider is carrying an acoustic instrument, such as a Nortek or AZFP.\n\n\n\n\nTimeseries\nSee data products for a description of the timeseries output files. Current workflow (also shown above):\n\nUpload binary and cache files into Deployment GCS bucket, as specified on the data management page\nRun this script locally to create a deployment YAML file. This script pulls all instrument information from the Glider Database. A user needs to then check this script by hand, in particular the people, devices, comment, and summary blocks, and then commit to the glider-lab repo.\nCreate a deployment-specific script, and run it in a GCP Workbench Instance.\nAccess processed NetCDF files via GCP for additional internal workflows\n(in development) serve/archive data with IOOS/NCEI. Create acoustic data products. Create imagery data products.\n\n\nProcessing Notes\nThis section describes in-the-weeds choices made by the code when processing binary glider files. This is likely only useful reference for esdglider developers, or folks using pyglider/dbdreader for another purpose.\nThe pyglider.slocum.binary_to_timeseries function uses dbdreader to read slocum glider data from binary files. More discussion can be found here around why pyglider switched to using dbdreader, and how pyglider processing worked before.\nAs constructed, binary_to_timeseries uses dbdreader.get_sync to extract values for all of the specified sensors. Thus, the user specifies a particular sensor to server as the ‘time_base’, and then all other desired variables (across science and engineering: pressure, temperature, oxygen, roll, etc.) are interpolated onto the same time base (i.e., the timestamps where this ‘time_base’ variable has a valid (not missing/nan) value). The only exception is that no interpolation is done if the gap between time points is greater than or equal to 300 seconds.\nIn ESD, we use binary_to_timeseries to create a ‘science’ timeseries, with the pressure from the CTD as the time base, and an ‘engineering’ timeseries, with the glider’s measured depth as the time base. We also have written a binary_to_raw function, which uses dbdreader.get to read in raw (i.e., uninterpolated) data points from both the science and flight computers. Thus ‘raw’ timeseries contains all glider data points, and is thus used to calculate profiles, and useful for debugging sensor behavior.\nData alterations, or additional features of note:\nesdglider:\n\nmin_dt: esdglider allows users to pass a minimum datetime, which is used to filter all glider data for timestamps after this datetime. The datetime is usually when the glider begins its first 1k_n.mi mission. Because pressure is used as the time base for the science dataset, rows in science where pressure is nan are dropped (even if other sensors have non-nan values)\n\ndbdreader:\n\ndbdreader throws an warning if a sensor is turned off and thus not present in some sbd/tbd or dbd/ebd files. See this issue for more discussion.\ndbdreader by default skips the first line of each binary file. The reasoning is that “this line contains either nonsense values, or values that were read a long time ago. This behavior can be changed.” See this issue for more discussion.\ndbdreader only identifies sensors as ‘engineering’ or ‘science’. Thus, when extracting e.g. data for the sensor ‘sci_oxy4_oxygen’, dbdreader uses the ‘sci_m_present_time’ as the timestamp, rather than ‘sci_oxy4_present_time’.\n\npyglider:\n\nLatitude and longitude values are set to nan if their absolute value is greater than 90 and 180, respectively.\nAny values of zero from science sensors are converted to nan.\nNo other data alterations/qc are made (e.g., CTD data is all read and left as-is).\n\n\n\n\nGridded\nDocs in progress. Gridding uses the pyglider.ncprocess.make_gridfiles function.\n\n\nNGDAC Profiles\nDocs in progress\n\n\nPlots\nStandard plots are generated from either the ‘processed-rt’ (subfolder ‘rt’) or ‘processed-L1’ data (subfolder ‘delayed’). Note that ‘sci’ is short for plots of science sensor values, while ‘eng’ is short for plots of engineering variables. Standard plots, which are separated by folder, include:\n\nTS-sci: Temperature/salinity plots of the various science sensor values\nmaps-sci: Maps of surface values (i.e., depth &lt;10m) from various science sensors\npointMaps: Scatter plots of the lat/lon points recorded by the glider\nspatialGrids-sci: Gridded science data plotted by all combinations of latitude, longitude, and depth\nspatialSections-sci: Gridded science data plotted by either latitude or longitude, and depth\nthisVsThat-eng: Timeseries plots of various engineering sensor values plotted against each other\ntimeSections-sci: Gridded science data plotted by time and depth\ntimeSections-sci-gt: Gridded science data plotted by profile_index and depth. The plots are made with the glidertools package, and thus use the 0.5 and 99.5 percentile to set color limits.\ntimeSeries-eng: Timeseries plots of various engineering sensor values\ntimeSeries-sci: Timeseries plots of various science sensor values\n\n\n\nOther Files\nDocs in progress",
     "crumbs": [
-      "Home"
+      "Data Processing",
+      "Glider Data"
+    ]
+  },
+  {
+    "objectID": "content/glider-data.html#real-time-data",
+    "href": "content/glider-data.html#real-time-data",
+    "title": "Glider Data",
+    "section": "Real-Time Data",
+    "text": "Real-Time Data\nCurrently, all ESD glider data processing is delayed-mode processing. The vision is to have GCP infrastructure in place to:\n\nPeriodically rsync real-time data (sbd/tbd files) from the SFMC to GCP\nRun Caleb’s slocumRtDataVisTool to create plots and statistics useful for real-time piloting decisions\nRun the base processing steps on these data, and automatically send the processed files to the NGDAC",
+    "crumbs": [
+      "Data Processing",
+      "Glider Data"
+    ]
+  },
+  {
+    "objectID": "content/glider-data.html#future-directions",
+    "href": "content/glider-data.html#future-directions",
+    "title": "Glider Data",
+    "section": "Future Directions",
+    "text": "Future Directions\nQC + data cleaning. Potential resources:\n\nPurpose: to create cleaned netcdf files with qc flags\nImplement IOOS QARTOD tests, eg using ioos_qc to add qc flags\nhttps://github.com/OceanGlidersCommunity/Realtime-QC\n\nhttps://github.com/castelao/CoTeDe\n\nother qc/data cleaning? For instance, sanity check ts plots. Likely will involve by-hand inspection for each deployment, including removing bad data if discovered\n\nGliderTools:\n\nmanuscript describing the GliderTools toolbox\nGliderTools contains tools for processing Seaglider basestation files. However, the rest of the tools simply require that the data be in an xarray dataset.\noptics, pq: quenching correction method described by Thomalla et al. (2018)\nadditional qc tools?\ncalculate cool physics things (mixed layer depth, …)\nleverage gridded plotting routines",
+    "crumbs": [
+      "Data Processing",
+      "Glider Data"
+    ]
+  },
+  {
+    "objectID": "content/glider-data.html#github-repos",
+    "href": "content/glider-data.html#github-repos",
+    "title": "Glider Data",
+    "section": "GitHub Repos",
+    "text": "GitHub Repos\nSee the home page for ESD-developed repos. External GitHub repos that are particularly relevant or useful:\n\n\n\nrepo link\ndescription\n\n\n\n\ndbdreader\nExtract data from slocum binary files\n\n\npyglider\nConvert datafiles from slocum and seaexplorer into netcdf\n\n\nGliderTools\nQuality control and plot generic glider data\n\n\nIOOS qc\nApply IOOS QARTOD and other qc routines\n\n\nSOCIB\nProcess glider data in Matlab (not actively maintained)\n\n\nglider tools list\nOceanGliders community repository to list tools for processing glider data. Includes many of the tools listed above.",
+    "crumbs": [
+      "Data Processing",
+      "Glider Data"
+    ]
+  },
+  {
+    "objectID": "content/documents/pilot_cheatsheet.html",
+    "href": "content/documents/pilot_cheatsheet.html",
+    "title": "Slocum Glider Pilot Reference",
+    "section": "",
+    "text": "Useful Commands and Variables\n\n\n\n\n\n\nCommands\n\n\n\n\n\n\n\n\n\n\n\n\nhelp or help [command]\nPrint description of command.\n\n\nlab_mode [on|off]\nActivate lab mode.\n\n\nwiggle [on|off]\nMove all mechanical components.\n\n\nget [var]\nPrint variable once (usually m_...).\n\n\nput [var]\nSet variable (usually c_...).\n\n\nreport ++ [m_var]\nContinuously print readings.\n\n\nreport clearall\nStop continuously printing readings.\n\n\nlist\nList all variables.\n\n\nlist [var]\nShow variable and related variables.\n\n\ndir (preferred) or ls\nPrint contents of present directory.\n\n\nconsci\nSwitch to science processor. quit to exit.\n\n\nwhoru\nPrint glider name.\n\n\nwhere\nSurface dialog and various values.\n\n\nwhy?\nPrint reason for most recent mission abort.\n\n\nget m_why_started\nTroubleshoot when glider resets itself.\n\n\nuse\nPrint list of devices and their operational stats.\n\n\nuse -|+ [device] , use none|all\nBring devices in and out of service.\n\n\nzero_ocean_pressure\nSet sea level.\n\n\nexit\nShut down safely and correctly.\n\n\nexit reset\nReboot glider.\n\n\n\n\n\n\n\n\n\n\n\n\nVariables\n\n\n\n\n\n\n\n\n\n\n\n\nc_de_oil_vol , m_de_oil_vol\nSet or get oil pump volume.\n\n\nc_air_pump\nFill or drain air bladder.\n\n\nm_vacuum\nGet internal vacuum reading.\n\n\nc_battpos, m_battpos\nSet or get pitch battery position.\n\n\nm_coulumb_amphr_total\nNeeds to be reset when batteries are replaced.\n\n\n\n\n\n\n\n\n\n\n\n\nVariable Types\n\n\n\n\n\n\n*more information and description about variables in masterdata.dat\n\n\nm_\nmeasured\n\n\nc_\ncommanded\n\n\nu_\nuser-defined (before run time)\n\n\nf_\nfactory set\n\n\nx_\ncomputed at run time (DO NOT SET)\n\n\ns_\nsimulated state variables\n\n\nsci_\nscience sensor\n\n\n\n\n\n\n\n\nFile Types and Transfers\n\n\n\n\n\n\nGlider Data Files\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nFlight\nScience\nCompressed\n\n\nall data (recovered)\n.DBD\n.EBD\n.DCD / .ECD\n\n\ndecimated (telemetry)\n.SBD\n.TBD\n.SCD / .TCD\n\n\nmedium (diagnostic)\n.MBD\n.NBD\n.MCD / NCD\n\n\nlog files\n.MLG\n.NLG\n.MCG / .NCG\n\n\n\n\n\n\n.dbd file naming convention:\n\n\n\n\nmission# + segment#\n\n\nex. 0111 + 0055 -&gt; 01110055.dbd\n\n\n\n\n\n\nFull file naming convention:\n\n\n\n\nglider_name-year-yearday-mission#_that_day-segment#\n\n\nex. calanus-2024-195-1-16\n\n\n\n\n\n\n\n\n\n\n\n\nFile Transfer Commands\n\n\n\n\n\n\n\n\n\n\n\n\nFiles from glider (glider sends)\n\n\n\n\n\nzs  [path/to/file]\nsend files from present processor\n\n\nszs [path/to/file]\nsend files from sci processor (if on flight)\n\n\nsend [log_filenames]\nsend logs and move files to /sentlogs/\n\n\ns [log_filesnames]\nsame as send but during mission\n\n\n\n\n\n\n\n\n\n\nFiles to glider (glider receives)\n\n\n\n\n\nzr\nsend using terminal program over FreeWave\n\n\ndockzr [filename] or dockzr *.*\nsend using SFMC “to-glider” folder\n\n\nszr\nsend files to science processor over FreeWave\n\n\ndockszr [filename] or dockszr *.*\nsend using SFMC “to-science” folder\n\n\n\n\n\n\n\n\n\n\n\n\nGlider Mission Files\n\n\n\n\n\n\n\n\n\n\n\n\n[mission].mi\nMain mission file.\n\n\ngoto_l10.ma\nWay-point plan.\n\n\nsample01.ma\nSampling scheme, one file per sensor.\n\n\nsurfac10.ma\nSurfacing condition (multiple).\n\n\nyo20.ma\nDive behavior.\n\n\nautoexec.mi\nGlider identity file (don’t send over Irdium)\n\n\nproglets.dat\nScience identity file (on science processor!)\n\n\nsbdlist.dat, tbdlist.dat\nConfigures telemetry files .sbd and .tbd\n\n\n\n\n\n\n\n\nMission Commands\n\n\n\n\n\n\nInitializing Missions\n\n\n\n\n\n\n\n\n\n\n\n\nloadmission [mission_name].mi\nsets glider variables from mission file\n\n\nrun [mission_name].mi\nbegin running mission\n\n\ntype [path/to/missionfile]\nprints contents of mission file\n\n\nsequence [mission_0].mi [mission_1].mi ...\nruns listed missions consecutively\n\n\nsequence [mission_name].mi(N)\nruns mission N times consecutively\n\n\n\n\n\n\n\n\n\n\n\n\nIn-mission Commands\n\n\n\n\n\n\n\n\n^R (ctrl-R)\nResume mission (dive) immediately.\n\n\n^C\nEnd mission, prompt GliderDOS .\n\n\n^E\nExtend surface time by 5-minutes.\n\n\n^W\nGet device warning reports, like use\n\n\n^F\nRe-read files.\n\n\ns [...]\nSend log files.\n\n\n![GliderDOS command] , ex. !dockzr *.*\nSend command.\n\n\n^T\nconsci to science computer, prompt SciDOS\n\n\n\n\n\n\n\n\nCommon Procedures\n\n\n\n\n\n\nCatching Glider at start-up in the lab over FreeWave\n\n\n\n\n\nQuit sequence and prompt GliderDOS\n&gt; ctrl-C\nHang up Iridium for 30 minutes\n&gt; callback 30\nEnter lab mode:\n&gt; lab_mode on\n\n\n\n\n\n\n\n\n\nDeflate air bladder to remove tail cowling\n\n\n\n\n\nBallast command, also resets oil pump and pitch battery\n&gt; ballast\nOr, air bladder only\n&gt; put c_air_pump 0\nOr, if testing sensors on battery power in the lab over FreeWave\n&gt; loadmission lowpow.mi\nAfterwards, check internal vacuum (target 7.0-7.5 inHg)\n&gt; get m_vacuum\nor\nreport ++ m_vacuum\n\nNote: clear output from ballast and report ++ using report clearall\n\n\n\n\n\n\n\n\n\n\nPower down glider safely\n\n\n\n\n\nPull in ballast pump oil\n&gt; put c_de_oil_vol -420\nand deflate air bladder\n&gt; put c_air_pump 0\nWait until these actions are complete, use\n&gt; report ++ m_de_oil_vol m_vacuum\nPower down glider\n&gt; exit\nand wait for confirmation before pulling green shorting plug.\n\n\n\n\n\n\n\n\n\nSimulating with a glider\n\n\n\n\n\nInitiate simulation mode\nCheck whether the glider is currently in a simulation\n&gt; simul?\nCreate a simulation file in config directory\n&gt; capture config/simul.sim\non_bench ^C\nVerify that the file exists and contents are correct\n&gt; type config/simul.sim\nReset the glider\n&gt; exit reset\nAnd check to make sure the glider is now in simulation\n&gt; simul?\n\nDeactivate simulation mode\nRemove the simulation file\n&gt; del config/simul.sim\nVerify that the file is now gone\n&gt; dir config\nReset the glider and make sure it is not in simulation mode\n&gt; exit reset\n&gt; simul?\n\n\n\n\n\n\n\n Back to top"
+  },
+  {
+    "objectID": "content/gcp.html",
+    "href": "content/gcp.html",
+    "title": "Google Cloud Platform (GCP)",
+    "section": "",
+    "text": "Placeholder for GCP links, pointers, etc.\nSee this folder for current ESD GCP docs. Most useful will probably be the ‘NOAA Fisheries Cloud - GCP How-Tos’ or ‘Presentations’ folders.\n\n\n\n Back to top",
+    "crumbs": [
+      "Google Cloud"
+    ]
+  },
+  {
+    "objectID": "content/data-management.html",
+    "href": "content/data-management.html",
+    "title": "Data Management",
+    "section": "",
+    "text": "Glider data management is a complex endeavor. Gliders contain many moving parts, and can collect over a terabyte of data in a single deployment. This page outlines the ESD glider data management efforts, including directory structures and storage locations for different types of data.\nThis page provides the in-the-weeds data management details, which will likely only be relevant for ESD glider lab members. Users looking for more general information about glider data products should go to the data type pages (links todo).",
+    "crumbs": [
+      "Data Management"
+    ]
+  },
+  {
+    "objectID": "content/data-management.html#quick-links",
+    "href": "content/data-management.html#quick-links",
+    "title": "Data Management",
+    "section": "Quick Links",
+    "text": "Quick Links\nGoogle Drive (NOAA internal only) :\n\nAMLR Gliders\nESD glider data locations\n\nGoogle Cloud Storage (GCS) buckets:\n\nDeployments\nAcoustics\nRaw imagery\nPre-processed imagery (Images pre-processed by Randy’s code)\nIn progress: a Shiny app or some other tool for users to use to get to GCS bucket URL for a particular piece of data\n\nGlider & Mooring Database\n\nDatabase access and use (NOAA only)",
+    "crumbs": [
+      "Data Management"
+    ]
+  },
+  {
+    "objectID": "content/data-management.html#data-management-plan",
+    "href": "content/data-management.html#data-management-plan",
+    "title": "Data Management",
+    "section": "Data Management Plan",
+    "text": "Data Management Plan\nThis section describes what files go where, as well as required directory structures. It replaces the AMLR Glider Data Management Plan Google doc.\nThese slides (NOAA internal only) describe and link to the various homes for different pieces of ESD glider data, for additional references. Several of these data homes are described in more detail below.\n\nGlider & Mooring Database\nThe glider and mooring database is a SQL Server database, hosted on the internal SWFSC network. This database exists to track all of the glider/instrument (and mooring) parts and builds. Each glider deployment is represented as a build, and each build includes links to all of the different parts that were on that glider for the deployment. The rest of this section provides high-level guidance for how to use the Glider & Mooring Database; see this document for more details, including database access instructions for both database users and managers.\n\nDevices\nFor this database, ‘device’ means any piece of glider, instrument, mooring, etc, that needs to be tracked. Devices can be created by clicking the ‘Devices’ button from the database home page, and then using the form that pops up. Note that any new device types must be added using the ‘Device Types’ form.\nAll new devices should be added to the database as soon as they arrive at the SWFSC. Created devices can then be added to a glider build, to track which devices were part of which deployments.\nNote: Currently there is no way to track software versions of a ‘device’ in the database. Some of this info is tracked via the Fleet Status page (NOAA internal only), but it should be formally added to the database as time permits.\n\n\nGliders\nA glider build functionally allows ESD to create a collection of devices and files, which they can then associate with a deployment. A deployment build tracks the glider software version, deployment start date and end date, and the number of profiles (yos) performed during the deployment. Glider builds should be created 1) when a glider is first acquired, 2) before a glider is deployed, and 3) when a relatively whole glider is sent in for service. Again, see the database Google doc for more details.\n\n\nCalibrations\nAll factory calibration documents are now stored in the glider-lab repo.\nAlthough some records for acoustic calibrations performed in the SWFSC tech tank are in the database, most are currently recorded and tracked by Tony.\n\n\nFiles\nAll factory calibration documents are now stored in the glider-lab repo.\nOther files associated with a deployment (e.g., autoexec and proglet files, or config files associated with certain instruments) are currently stored in the database, but will likely be moved to a more accessible location in the future.\n\n\n\nAMLR Gliders Google Drive\nThe AMLR Gliders Google Drive … {full description todo}\n\nGlider Deployments\nThe Glider Deployments folder is for working files during both deployment prep, and the deployment itself. It provides an easy place (i.e., easier than Google Cloud) for ESD glider team members to collaborate on and refer to different files. These files live in ‘GDrive deployment folders’; the Glider Deployments folder contains GDrive folder templates. After the deployment it is downloaded and uploaded to GCP.\nThe structure of an individual GDrive deployment folder:\nglider-YYYYmmdd\n├── photos\n├── prep\n    ├── functional-checkout\n    ├── acoustic-prep\n    ├── imagery-prep\nphotos: folder with relevant photos. These could include photos of the glider seal, or photos of the glider deployment and recovery.\nprep Folders and files from the glider prep. In addition to the folders described below, the ‘prep’ folder may include the ballast sheet, or compass calibration files.\n\nfunctional-checkout: functional checkout sheet, data files from test tank dive, and any other files/notes from the functional checkout\nacoustic-prep: acoustic prep files from pre-deployment tests. These may include sample data files, relevant tests, etc.\nimagery-prep: imagery (camera) prep files from pre-deployment tests. These may include sample images, relevant tests, etc.\n\nMiscellaneous files that should stay associated with the deployment can go directly in the GDrive glider-YYYYmmdd folder.\n\n\n\nglider-lab repository\nThe glider-lab repository has evolved into a place to store a) reference documents that can be accessible to folks outside NOAA and b) files used for processing in GCP. These include:\n\ncalibration-docs: factory calibration documents for glider instruments\ndeployment-configs: yaml configuration files for glider data processing\ndeployment-reports: post-deployment reports, created as Quarto documents\ndeployment-scripts: Python scripts for processing the glider data.\nechoview-glider-calib-files: calibration files used for processing acoustic data using Echoview\n\nSee the repo readme for full folder descriptions.\n\n\nstandard-glider-files repository\nThe standard-glider-files repository contains standard files that are put on ESD gliders before deployment. This repo and these files are also commonly used during ESD lab tests.\n\n\nGCS Buckets\nData processing code depends on a specific directory structure, and thus it is important that data in GCS buckets follow the format described below. All GCS buckets used for storing glider data follow the same top-level directory structure of ‘PROJECT/YYYY/glider-YYYYmmdd’:\n\nPROJECT: Data are first grouped by project\nYYYY: Within each project folder are year folders, of the format YYYY (e.g., “2025”). For FREEBYRD (i.e., Antarctic) deployments, the January year is used. For instance, a glider deployed deployed in Dec 2022 will be in the ‘FREEBYRD/2023’ directory.\nglider-YYYYmmdd: Within each year folder are deployment folders. The deployment folders all follow the same naming convention: ‘glider-YYYYmmdd’, where ‘glider’ is the name of the glider and ‘YYYYmmdd’ is the deployment date. For example, the folder name for the glider calanus that was deployed on 19 Oct 2024 is “calanus-20241019”.\n\nGCS buckets are only accessible to individuals with a noaa.gov email address that have been added to the GCP project as a data viewer. To access data in GCS buckets, please contact Sam Woodman.\nEach section below corresponds to an individual GCS bucket. They begin with a directory outline, followed by text that explains each directory. Principles that are consistent across buckets include:\n\nSeveral folders contain “delayed” and “rt” subfolders. Delayed mode data were collected or generated after the glider was recovered, while rt (i.e., realtime) data were transmitted or generated while the glider was deployed.\nSeveral folders contain an ‘ngdac’ subfolder. This subfolder contains NetCDF files formatted for submission to the IOOS Glider DAC. The DAC requires one NetCDF file for each profile, hence the subfolder.\n\n\nDeployments\nThe structure of an individual deployment folder, located in the Deployments bucket under a ‘PROJECT/YYYY/glider-YYYYmmdd’ path:\n├── archive-sfmc\n├── backup\n├── data\n    ├── binary\n        ├── delayed\n        ├── rt\n    ├── processed-rt\n        ├── ngdac\n    ├── processed-L1\n        ├── ngdac\n    ├── processed-L2\n├── plots\n    ├── delayed\n        ├── TS-sci\n        ├── maps-sci\n        ├── pointMaps\n        ├── spatialGrids-sci\n        ├── spatialSections-sci\n        ├── thisVsThat-eng\n        ├── timeSections-sci\n        ├── timeSections-sci-gt\n        ├── timeSeries-eng\n        ├── timeSeries-sci\n    ├── rt\n        ├── ... : same subfolders as 'plots/delayed' folder\narchive-sfmc: The ‘archive’ folder, synced or downloaded from the SFMC. This folder contains all files sent to the glider during the deployment, with an associated timestamp as part of the file name. Among other things, this folder is used for generating a sensor config table for the post-deployment report.\nbackup: Backup files/folders from the deployment. These typically include zipped copies of the Flight and Science folders from the glider cards, as well as the Glider Folder Archive Tar Ball from the SFMC.\ndata Raw glider data, and processed glider data products:\n\nbinary: Binary data files generated by the glider. This folder should include dbd/ebd/dcd/ecd (for delayed data) or sbd/tbd/scd/tcd (for rt data) files. Note that there is not a different path for compressed files, meaning for instance that dcd/ecd files should go directly in the ‘data/binary/delayed’ folder.\nprocessed-rt: “Real-time” processed data and data products, created using real-time glider data (i.e., sbd/tbd files) transmitted by the glider during its deployment.\nprocessed-L1: “Level 1” processed data and data products. “Level 1” means that these data products were created by the esdglider/pyglider base processing functions (link TODO) using delayed mode data. In other words, the dbd/ebd files were used as input data, and there was minimal data qa/qc or corrections performed.\nprocessed-L2: “Level 2” processed data and data products. “Level 2” means that the data has undergone additional qa/qc and/or processing, beyond what is performed during base processing. Due to lack of personnel, at this time most ESD glider deployments will not have level 2 processed data.\n\nplots: Standard plots generated from either the ‘processed-rt’ (subfolder ‘rt’) or ‘processed-L1’ data (subfolder ‘delayed’). Note that ‘sci’ is short for plots of science sensor values, while ‘eng’ is short for plots of engineering variables. See plots for descriptions of the various folders.\n\n\nAcoustics\nThe structure of an individual deployment folder for acoustics, located in the Acoustics bucket under a ‘PROJECT/YYYY/glider-YYYYmmdd’ path:\n├── data\n    ├── delayed\n    ├── rt\n    ├── processed-echoview\n├── config\n├── metadata\n    ├── echoview\ndata/delayed: Raw acoustic delayed data, from either AZFPs or Echosounders\ndata/rt: Raw real-time ad2 files. For Nortek instruments only\ndata/processed-echoview: Folder for Echoview outputs. For instance, Echoview export files, and the gridded NetCDF file with appended acoustic data\nconfig: config file(s) used during the deployment\nmetadata/echoview: metadata files for Echoview, generated by base glider processing code\n\n\nRaw Imagery\nThe structure of an individual deployment folder for raw imagery, for shadowgraph or glidercam imagery, located in the Raw imagery bucket under a ‘PROJECT/YYYY/glider-YYYYmmdd’ path:\n├── images\n├── config\n├── metadata\nimages: All imagery collected during the deployment. These images will be in their ‘Dir####’ folders, as they were recorded on the imagery cards.\nconfig: config file(s) used during the deployment\nmetadata: image metadata file, generated by base glider processing code. This file is a CSV with one row for each image, and columns representing the glider data values interpolated to the timestamp of the image.\n\n\nPre-Processed Imagery\nThe directory structure for the pre-processed imagery bucket is described on the Imagery page.",
+    "crumbs": [
+      "Data Management"
+    ]
+  },
+  {
+    "objectID": "content/best-practices.html",
+    "href": "content/best-practices.html",
+    "title": "Best Practices",
+    "section": "",
+    "text": "Note\n\n\n\nThis is a living document which shall always be considered a “draft,” as incoming and veteran members of the lab may want to contribute ideas or revisions. This is a place to begin, a place to return to, a place to ground ongoing conversations. Modeled after https://sael-swfsc.github.io/SAEL-lab-manual/content/SharedValues-BestPractices.html",
+    "crumbs": [
+      "Best Practices"
+    ]
+  },
+  {
+    "objectID": "content/best-practices.html#esd-glider-lab-best-practices",
+    "href": "content/best-practices.html#esd-glider-lab-best-practices",
+    "title": "Best Practices",
+    "section": "ESD Glider Lab Best Practices",
+    "text": "ESD Glider Lab Best Practices\n\nCommunication\n\nWe hold lab meetings regularly in which all members are expected to attend if their schedule allows. During these meetings all members are expected to contribute by sharing progress reports, discussing challenges, and celebrating successes.\nWe use Google Meet for informal discussions between lab members and project teams.\nWe use Github projects to keep track of tasks and projects. All lab members are expected to check & respond to email, chats, and Github Projects regularly.\n\n\n\nSafety\n\nLab members are expected to follow all safety protocols. If they are not sure of the protocol, then they should request this information.\nLab members should never feel obligated to perform a task that they do not feel is safe.\nLab members are encouraged to speak up if they feel they need training to perform a specific task safely.\nIf lab members have a safety concern, they should bring it up with their supervisor or the other lab members.\nIf a lab member feels their safety concerns are not being taken seriously, or have any other lab safety questions, they can consult the acting SWFSC Safety Officer Ariane Huddleston (ariane.huddleston@noaa.gov).\n\n\n\nWebsite Development\nAs described above, this website is intended to be a place for all glider team members to both use as a reference and contribute to. This section contains development notes and best practices\n\nIf using VSCode, this page contains helpful references and shortcuts. One of the most common and important is to render and preview the current qmd files, which you can do with the Ctrl+Shift+K keyboard shortcut.",
+    "crumbs": [
+      "Best Practices"
+    ]
+  },
+  {
+    "objectID": "content/imagery.html",
+    "href": "content/imagery.html",
+    "title": "Imagery",
+    "section": "",
+    "text": "ESD gliders may be equipped with either a ‘glidercam’ or a ‘shadowgraph’ camera. This page describes the management and processing of these images once they come off of the glider.",
+    "crumbs": [
+      "Data Processing",
+      "Imagery"
+    ]
+  },
+  {
+    "objectID": "content/imagery.html#raw-imagery",
+    "href": "content/imagery.html#raw-imagery",
+    "title": "Imagery",
+    "section": "Raw Imagery",
+    "text": "Raw Imagery\nOnce the gliders are recovered, the glidercam or shadowgraph directories and images are copied from the memory cards and uploaded to GCP as described in Data Management. Specifically, raw images and config files are uploaded to the raw imagery bucket. Image metadata files generated during the base glider data processing are written to the deployment’s ‘metadata’ folder within this bucket (see below for more details).\n\nImagery metadata",
+    "crumbs": [
+      "Data Processing",
+      "Imagery"
+    ]
+  },
+  {
+    "objectID": "content/imagery.html#viewing-images",
+    "href": "content/imagery.html#viewing-images",
+    "title": "Imagery",
+    "section": "Viewing Images",
+    "text": "Viewing Images\nThere are several ways to view raw or processed images:\n\nIf you click down to an image itself, Google Cloud provides an image preview at the bottom of the ‘object’ page. However, you cannot view more than one image at a time. It is a goal of the ESD to build a cloud-native image viewer application to easily view multiple images at a time, but this is not a current project.\nAll raw imagery have been mirrored in VIAME-Web-AMLR. Thus, if you are familiar with VIAME-Web and accessing ESD’s deployment, then you can view imagery using the VIAME-Web annotator.\nYou may also use the gcloud CLI to download images to your computer, and then view them locally using your preferred program.",
+    "crumbs": [
+      "Data Processing",
+      "Imagery"
+    ]
+  },
+  {
+    "objectID": "content/imagery.html#shadowgraph-image-processing",
+    "href": "content/imagery.html#shadowgraph-image-processing",
+    "title": "Imagery",
+    "section": "Shadowgraph Image Processing",
+    "text": "Shadowgraph Image Processing\nNOTE: Given personnel changes, this section is out of date. Contact Jen Walsh or Sam Woodman for latest image processing efforts, in particular through the Optics SI\nGliders deployed with shadowgraph cameras can easily collect more than 200,000 images during a single deployment. Therefore, it is impractical to have humans review and annotate all these images by hand, and thus operationally these images must be processed using AI/ML methods. This section describes the current status of these methods, as well as anticipated future directions.\nThere are three main steps to processing shadowgraph images; where and how these steps happen for ESD are further described below.\n\nPreprocessing: flat-fielding, masking, other processing as needed.\nSegmentation: Detect objects, and create regions of interest (ROIs; i.e., blobs or chips). This is done using the preprocessed image.\nClassification: Use a trained ML model to classify the ROIs. Have a trained biologist review and/or correct these predictions.\n\nNote: the below images both show this same workflow, and thus are simply different ways of framing said workflow.\n\nWorkflow v1Workflow v2\n\n\n Shadowgraph image processing workflow, v1\n\n\n Shadowgraph image processing workflow, v2\n\n\n\n\n\nPreprocessing and Segmentation\nAll preprocessing and object detection/segmentation steps are currently performed by code in the shaip repo (shadowgraph image processing). This codebase was originally developed as a Jupyter notebook by Randy Cutter based on work done by Ohman/Ellen for processing Zooglider images, e.g. here and here. It has since been refactored into the Python toolbox sg. For details on the algorithms used and instructions on how to run this code, see the README on the repo homepage.\nAll currently processed imagery can be found in amlr-gliders-imagery-proc-dev. Like the raw imagery bucket, the amlr-gliders-imagery-proc-dev bucket mirrors the directory structure of the amlr-gliders-deployments-dev bucket. These processed imagery are also viewable as described above.\nThe processing output includes the following folders:\n\nregions: Region of interest (ROI) blobs, created using Ohman/Ellen methods. This folder contains Dir#### folders, matching the raw data.\nregions-tmser: Region of interest (ROI) blobs, created using an adapted version of Oregon State’s Threshold MSER In Situ Plankton Segmentation. Most deployments do not have this output, as this method has not been tuned to work well with ESD shadowgraph imagery.\njpgorig-regions: jpg of the original (i.e., raw) image, with ROI boundaries from the Ohman/Ellen segmentation methods outlined in red.\nimages-imgff: Flat-fielded images, used in the segmentation\nimages-ffPCG: Flat-fielded images, which also have had pixel gamma correction factors applied.\n\n\n\nClassification\nAfter creating ROIs through the preprocessing and segmentation steps described above, those ROIs need to be labeled/classified, and these labels/classifications need to be validated by a trained observer.\n\nModel Training\nTo train an ML model to classify the ROIs as different classes, e.g. plankton species requires an image library of already-classified images that can be used as ground-truth data for the model. ESD is currently using the In Situ Ichthyoplankton Imaging System (ISIIS) image library, courtesy of researchers at Oregon State University, for training full frame classifier models. This library consists of 174 classes of objects, and can be found here.\nIn early 2024, Randy used the ISIIS image library to train two models using VIAME-Web-AMLR (VWA): isiis-train02-clas-svm-lab81, and isiis-train02-clas-res01-lab81. Both of these models have 81 classes, and are available in VWA. Per Randy, the resnet (isiis-train02-clas-res01-lab81) theoretically should be better, but has so far been outperformed by the SVM. This is probably because of not enough training data relative to the number of input classes. Randy also was experimenting with training a yolo v7 model, but this model was not really tested. Thus, currently the resnet is the best model that we have for running on segmented ROIs.\n\n\nGenerating and Validating Predictions\nNOTE: these steps of running a model on ROIs and validating subsequent predictions are currently on hold. Specifically, ESD is currently pushing down two paths in parallel: 1) evaluating and improving current preprocessing and segmentation efforts, and 2) performing manual annotations on raw imagery, and extracting user-annotated ROIs to build an ESD image library.\nFor information on how to run these models on a folder of ROIs, see here. For information about how to validate model predictions, see here.\n\n\n\nFuture Directions\n\nESD Image processing resources\nTune and adapt current code/pipelines (in progress). This work is currently being done by ESD staff.\nWork to tune and evaluate alternative segmentation algorithms, e.g. https://github.com/paradom/Threshold-MSER\nTie in with Optics SI efforts, e.g. https://github.com/sullichrosu/Njobvu-AI",
+    "crumbs": [
+      "Data Processing",
+      "Imagery"
     ]
   },
   {
@@ -352,132 +478,6 @@
     "crumbs": [
       "Glider Lab",
       "Glider Pilot Tools"
-    ]
-  },
-  {
-    "objectID": "content/imagery.html",
-    "href": "content/imagery.html",
-    "title": "Imagery",
-    "section": "",
-    "text": "ESD gliders may be equipped with either a ‘glidercam’ or a ‘shadowgraph’ camera. This page describes the management and processing of these images once they come off of the glider.",
-    "crumbs": [
-      "Data Processing",
-      "Imagery"
-    ]
-  },
-  {
-    "objectID": "content/imagery.html#raw-imagery",
-    "href": "content/imagery.html#raw-imagery",
-    "title": "Imagery",
-    "section": "Raw Imagery",
-    "text": "Raw Imagery\nOnce the gliders are recovered, the glidercam or shadowgraph directories and images are copied from the memory cards and uploaded to GCP as described in Data Management. Specifically, raw images and config files are uploaded to the raw imagery bucket. Image metadata files generated during the base glider data processing are written to the deployment’s ‘metadata’ folder within this bucket (see below for more details).\n\nImagery metadata",
-    "crumbs": [
-      "Data Processing",
-      "Imagery"
-    ]
-  },
-  {
-    "objectID": "content/imagery.html#viewing-images",
-    "href": "content/imagery.html#viewing-images",
-    "title": "Imagery",
-    "section": "Viewing Images",
-    "text": "Viewing Images\nThere are several ways to view raw or processed images:\n\nIf you click down to an image itself, Google Cloud provides an image preview at the bottom of the ‘object’ page. However, you cannot view more than one image at a time. It is a goal of the ESD to build a cloud-native image viewer application to easily view multiple images at a time, but this is not a current project.\nAll raw imagery have been mirrored in VIAME-Web-AMLR. Thus, if you are familiar with VIAME-Web and accessing ESD’s deployment, then you can view imagery using the VIAME-Web annotator.\nYou may also use the gcloud CLI to download images to your computer, and then view them locally using your preferred program.",
-    "crumbs": [
-      "Data Processing",
-      "Imagery"
-    ]
-  },
-  {
-    "objectID": "content/imagery.html#shadowgraph-image-processing",
-    "href": "content/imagery.html#shadowgraph-image-processing",
-    "title": "Imagery",
-    "section": "Shadowgraph Image Processing",
-    "text": "Shadowgraph Image Processing\nNOTE: Given personnel changes, this section is out of date. Contact Jen Walsh or Sam Woodman for latest image processing efforts, in particular through the Optics SI\nGliders deployed with shadowgraph cameras can easily collect more than 200,000 images during a single deployment. Therefore, it is impractical to have humans review and annotate all these images by hand, and thus operationally these images must be processed using AI/ML methods. This section describes the current status of these methods, as well as anticipated future directions.\nThere are three main steps to processing shadowgraph images; where and how these steps happen for ESD are further described below.\n\nPreprocessing: flat-fielding, masking, other processing as needed.\nSegmentation: Detect objects, and create regions of interest (ROIs; i.e., blobs or chips). This is done using the preprocessed image.\nClassification: Use a trained ML model to classify the ROIs. Have a trained biologist review and/or correct these predictions.\n\nNote: the below images both show this same workflow, and thus are simply different ways of framing said workflow.\n\nWorkflow v1Workflow v2\n\n\n Shadowgraph image processing workflow, v1\n\n\n Shadowgraph image processing workflow, v2\n\n\n\n\n\nPreprocessing and Segmentation\nAll preprocessing and object detection/segmentation steps are currently performed by code in the shaip repo (shadowgraph image processing). This codebase was originally developed as a Jupyter notebook by Randy Cutter based on work done by Ohman/Ellen for processing Zooglider images, e.g. here and here. It has since been refactored into the Python toolbox sg. For details on the algorithms used and instructions on how to run this code, see the README on the repo homepage.\nAll currently processed imagery can be found in amlr-gliders-imagery-proc-dev. Like the raw imagery bucket, the amlr-gliders-imagery-proc-dev bucket mirrors the directory structure of the amlr-gliders-deployments-dev bucket. These processed imagery are also viewable as described above.\nThe processing output includes the following folders:\n\nregions: Region of interest (ROI) blobs, created using Ohman/Ellen methods. This folder contains Dir#### folders, matching the raw data.\nregions-tmser: Region of interest (ROI) blobs, created using an adapted version of Oregon State’s Threshold MSER In Situ Plankton Segmentation. Most deployments do not have this output, as this method has not been tuned to work well with ESD shadowgraph imagery.\njpgorig-regions: jpg of the original (i.e., raw) image, with ROI boundaries from the Ohman/Ellen segmentation methods outlined in red.\nimages-imgff: Flat-fielded images, used in the segmentation\nimages-ffPCG: Flat-fielded images, which also have had pixel gamma correction factors applied.\n\n\n\nClassification\nAfter creating ROIs through the preprocessing and segmentation steps described above, those ROIs need to be labeled/classified, and these labels/classifications need to be validated by a trained observer.\n\nModel Training\nTo train an ML model to classify the ROIs as different classes, e.g. plankton species requires an image library of already-classified images that can be used as ground-truth data for the model. ESD is currently using the In Situ Ichthyoplankton Imaging System (ISIIS) image library, courtesy of researchers at Oregon State University, for training full frame classifier models. This library consists of 174 classes of objects, and can be found here.\nIn early 2024, Randy used the ISIIS image library to train two models using VIAME-Web-AMLR (VWA): isiis-train02-clas-svm-lab81, and isiis-train02-clas-res01-lab81. Both of these models have 81 classes, and are available in VWA. Per Randy, the resnet (isiis-train02-clas-res01-lab81) theoretically should be better, but has so far been outperformed by the SVM. This is probably because of not enough training data relative to the number of input classes. Randy also was experimenting with training a yolo v7 model, but this model was not really tested. Thus, currently the resnet is the best model that we have for running on segmented ROIs.\n\n\nGenerating and Validating Predictions\nNOTE: these steps of running a model on ROIs and validating subsequent predictions are currently on hold. Specifically, ESD is currently pushing down two paths in parallel: 1) evaluating and improving current preprocessing and segmentation efforts, and 2) performing manual annotations on raw imagery, and extracting user-annotated ROIs to build an ESD image library.\nFor information on how to run these models on a folder of ROIs, see here. For information about how to validate model predictions, see here.\n\n\n\nFuture Directions\n\nESD Image processing resources\nTune and adapt current code/pipelines (in progress). This work is currently being done by ESD staff.\nWork to tune and evaluate alternative segmentation algorithms, e.g. https://github.com/paradom/Threshold-MSER\nTie in with Optics SI efforts, e.g. https://github.com/sullichrosu/Njobvu-AI",
-    "crumbs": [
-      "Data Processing",
-      "Imagery"
-    ]
-  },
-  {
-    "objectID": "content/documents/pilot_cheatsheet.html",
-    "href": "content/documents/pilot_cheatsheet.html",
-    "title": "Slocum Glider Pilot Reference",
-    "section": "",
-    "text": "Useful Commands and Variables\n\n\n\n\n\n\nCommands\n\n\n\n\n\n\n\n\n\n\n\n\nhelp or help [command]\nPrint description of command.\n\n\nlab_mode [on|off]\nActivate lab mode.\n\n\nwiggle [on|off]\nMove all mechanical components.\n\n\nget [var]\nPrint variable once (usually m_...).\n\n\nput [var]\nSet variable (usually c_...).\n\n\nreport ++ [m_var]\nContinuously print readings.\n\n\nreport clearall\nStop continuously printing readings.\n\n\nlist\nList all variables.\n\n\nlist [var]\nShow variable and related variables.\n\n\ndir (preferred) or ls\nPrint contents of present directory.\n\n\nconsci\nSwitch to science processor. quit to exit.\n\n\nwhoru\nPrint glider name.\n\n\nwhere\nSurface dialog and various values.\n\n\nwhy?\nPrint reason for most recent mission abort.\n\n\nget m_why_started\nTroubleshoot when glider resets itself.\n\n\nuse\nPrint list of devices and their operational stats.\n\n\nuse -|+ [device] , use none|all\nBring devices in and out of service.\n\n\nzero_ocean_pressure\nSet sea level.\n\n\nexit\nShut down safely and correctly.\n\n\nexit reset\nReboot glider.\n\n\n\n\n\n\n\n\n\n\n\n\nVariables\n\n\n\n\n\n\n\n\n\n\n\n\nc_de_oil_vol , m_de_oil_vol\nSet or get oil pump volume.\n\n\nc_air_pump\nFill or drain air bladder.\n\n\nm_vacuum\nGet internal vacuum reading.\n\n\nc_battpos, m_battpos\nSet or get pitch battery position.\n\n\nm_coulumb_amphr_total\nNeeds to be reset when batteries are replaced.\n\n\n\n\n\n\n\n\n\n\n\n\nVariable Types\n\n\n\n\n\n\n*more information and description about variables in masterdata.dat\n\n\nm_\nmeasured\n\n\nc_\ncommanded\n\n\nu_\nuser-defined (before run time)\n\n\nf_\nfactory set\n\n\nx_\ncomputed at run time (DO NOT SET)\n\n\ns_\nsimulated state variables\n\n\nsci_\nscience sensor\n\n\n\n\n\n\n\n\nFile Types and Transfers\n\n\n\n\n\n\nGlider Data Files\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nFlight\nScience\nCompressed\n\n\nall data (recovered)\n.DBD\n.EBD\n.DCD / .ECD\n\n\ndecimated (telemetry)\n.SBD\n.TBD\n.SCD / .TCD\n\n\nmedium (diagnostic)\n.MBD\n.NBD\n.MCD / NCD\n\n\nlog files\n.MLG\n.NLG\n.MCG / .NCG\n\n\n\n\n\n\n.dbd file naming convention:\n\n\n\n\nmission# + segment#\n\n\nex. 0111 + 0055 -&gt; 01110055.dbd\n\n\n\n\n\n\nFull file naming convention:\n\n\n\n\nglider_name-year-yearday-mission#_that_day-segment#\n\n\nex. calanus-2024-195-1-16\n\n\n\n\n\n\n\n\n\n\n\n\nFile Transfer Commands\n\n\n\n\n\n\n\n\n\n\n\n\nFiles from glider (glider sends)\n\n\n\n\n\nzs  [path/to/file]\nsend files from present processor\n\n\nszs [path/to/file]\nsend files from sci processor (if on flight)\n\n\nsend [log_filenames]\nsend logs and move files to /sentlogs/\n\n\ns [log_filesnames]\nsame as send but during mission\n\n\n\n\n\n\n\n\n\n\nFiles to glider (glider receives)\n\n\n\n\n\nzr\nsend using terminal program over FreeWave\n\n\ndockzr [filename] or dockzr *.*\nsend using SFMC “to-glider” folder\n\n\nszr\nsend files to science processor over FreeWave\n\n\ndockszr [filename] or dockszr *.*\nsend using SFMC “to-science” folder\n\n\n\n\n\n\n\n\n\n\n\n\nGlider Mission Files\n\n\n\n\n\n\n\n\n\n\n\n\n[mission].mi\nMain mission file.\n\n\ngoto_l10.ma\nWay-point plan.\n\n\nsample01.ma\nSampling scheme, one file per sensor.\n\n\nsurfac10.ma\nSurfacing condition (multiple).\n\n\nyo20.ma\nDive behavior.\n\n\nautoexec.mi\nGlider identity file (don’t send over Irdium)\n\n\nproglets.dat\nScience identity file (on science processor!)\n\n\nsbdlist.dat, tbdlist.dat\nConfigures telemetry files .sbd and .tbd\n\n\n\n\n\n\n\n\nMission Commands\n\n\n\n\n\n\nInitializing Missions\n\n\n\n\n\n\n\n\n\n\n\n\nloadmission [mission_name].mi\nsets glider variables from mission file\n\n\nrun [mission_name].mi\nbegin running mission\n\n\ntype [path/to/missionfile]\nprints contents of mission file\n\n\nsequence [mission_0].mi [mission_1].mi ...\nruns listed missions consecutively\n\n\nsequence [mission_name].mi(N)\nruns mission N times consecutively\n\n\n\n\n\n\n\n\n\n\n\n\nIn-mission Commands\n\n\n\n\n\n\n\n\n^R (ctrl-R)\nResume mission (dive) immediately.\n\n\n^C\nEnd mission, prompt GliderDOS .\n\n\n^E\nExtend surface time by 5-minutes.\n\n\n^W\nGet device warning reports, like use\n\n\n^F\nRe-read files.\n\n\ns [...]\nSend log files.\n\n\n![GliderDOS command] , ex. !dockzr *.*\nSend command.\n\n\n^T\nconsci to science computer, prompt SciDOS\n\n\n\n\n\n\n\n\nCommon Procedures\n\n\n\n\n\n\nCatching Glider at start-up in the lab over FreeWave\n\n\n\n\n\nQuit sequence and prompt GliderDOS\n&gt; ctrl-C\nHang up Iridium for 30 minutes\n&gt; callback 30\nEnter lab mode:\n&gt; lab_mode on\n\n\n\n\n\n\n\n\n\nDeflate air bladder to remove tail cowling\n\n\n\n\n\nBallast command, also resets oil pump and pitch battery\n&gt; ballast\nOr, air bladder only\n&gt; put c_air_pump 0\nOr, if testing sensors on battery power in the lab over FreeWave\n&gt; loadmission lowpow.mi\nAfterwards, check internal vacuum (target 7.0-7.5 inHg)\n&gt; get m_vacuum\nor\nreport ++ m_vacuum\n\nNote: clear output from ballast and report ++ using report clearall\n\n\n\n\n\n\n\n\n\n\nPower down glider safely\n\n\n\n\n\nPull in ballast pump oil\n&gt; put c_de_oil_vol -420\nand deflate air bladder\n&gt; put c_air_pump 0\nWait until these actions are complete, use\n&gt; report ++ m_de_oil_vol m_vacuum\nPower down glider\n&gt; exit\nand wait for confirmation before pulling green shorting plug.\n\n\n\n\n\n\n\n\n\nSimulating with a glider\n\n\n\n\n\nInitiate simulation mode\nCheck whether the glider is currently in a simulation\n&gt; simul?\nCreate a simulation file in config directory\n&gt; capture config/simul.sim\non_bench ^C\nVerify that the file exists and contents are correct\n&gt; type config/simul.sim\nReset the glider\n&gt; exit reset\nAnd check to make sure the glider is now in simulation\n&gt; simul?\n\nDeactivate simulation mode\nRemove the simulation file\n&gt; del config/simul.sim\nVerify that the file is now gone\n&gt; dir config\nReset the glider and make sure it is not in simulation mode\n&gt; exit reset\n&gt; simul?\n\n\n\n\n\n\n\n Back to top"
-  },
-  {
-    "objectID": "content/active-acoustics.html",
-    "href": "content/active-acoustics.html",
-    "title": "Active Acoustics",
-    "section": "",
-    "text": "This page describes processing active acoustic data collected by ESD using underwater gliders. For info about passive acoustic data, see NOAA Fisheries PAM-Equipped Glider Research",
-    "crumbs": [
-      "Data Processing",
-      "Acoustics"
-    ]
-  },
-  {
-    "objectID": "content/active-acoustics.html#background",
-    "href": "content/active-acoustics.html#background",
-    "title": "Active Acoustics",
-    "section": "Background",
-    "text": "Background\nActive acoustics has been a long used survey tool for estimating the abundance and distribution of fish, zooplankton, and seabed habitat. Typically, acoustic surveys have been conducted on ships but with new technologies, they have been used on autonomous vehicles as well. ESD has used two different active acoustic single beam echosounders on their Slocum gliders: Acoustic Zooplankton and Fish Profiler (AZFP) and Nortek compact echosounders.\nThe AZFP configuration that ESD has used has been either two or three discrete frequencies (38,67.5 and 125 kHz). The Nortek compact is a wideband sounder that ranges from 70 to 120 kHz.",
-    "crumbs": [
-      "Data Processing",
-      "Acoustics"
-    ]
-  },
-  {
-    "objectID": "content/active-acoustics.html#processing",
-    "href": "content/active-acoustics.html#processing",
-    "title": "Active Acoustics",
-    "section": "Processing",
-    "text": "Processing\nBoth echosounders are bottom looking so the processing is very similar. Currently, the base glider data processing must be performed first. During the base processing, the following files relevant to acoustic data processing are created:\n\nAdditional docs todo, describing the various echoview metadata files. The data needed from the glider are date, time, GPS, depth, pitch, and roll.\n\nAcoustic processing currently takes place using Echoview software. The processing steps for both types of echosounders are documented in the echoview_glider_template as well as the Echoview templates. The templates were developed for analysis of Antarctic krill (Euphusia superba) but the general cleaning and output can be used for other zooplankton in any region of the world.",
-    "crumbs": [
-      "Data Processing",
-      "Acoustics"
-    ]
-  },
-  {
-    "objectID": "content/active-acoustics.html#future-directions",
-    "href": "content/active-acoustics.html#future-directions",
-    "title": "Active Acoustics",
-    "section": "Future directions",
-    "text": "Future directions\nCloud-based analysis using echopype\nAdditional processing functionality, e.g. Echometrics",
-    "crumbs": [
-      "Data Processing",
-      "Acoustics"
-    ]
-  },
-  {
-    "objectID": "content/data-proc-overview.html",
-    "href": "content/data-proc-overview.html",
-    "title": "Data Processing Overview",
-    "section": "",
-    "text": "The below workflow provides an overview of ESD glider data inputs, processing, data products, and output locations. For more details about particular steps, see the individual data processing pages.\n\n\n\nOverview of ESD glider data processing\n\n\n\n\n\n Back to top",
-    "crumbs": [
-      "Data Processing",
-      "Overview"
-    ]
-  },
-  {
-    "objectID": "content/best-practices.html",
-    "href": "content/best-practices.html",
-    "title": "Best Practices",
-    "section": "",
-    "text": "Note\n\n\n\nThis is a living document which shall always be considered a “draft,” as incoming and veteran members of the lab may want to contribute ideas or revisions. This is a place to begin, a place to return to, a place to ground ongoing conversations. Modeled after https://sael-swfsc.github.io/SAEL-lab-manual/content/SharedValues-BestPractices.html",
-    "crumbs": [
-      "Best Practices"
-    ]
-  },
-  {
-    "objectID": "content/best-practices.html#esd-glider-lab-best-practices",
-    "href": "content/best-practices.html#esd-glider-lab-best-practices",
-    "title": "Best Practices",
-    "section": "ESD Glider Lab Best Practices",
-    "text": "ESD Glider Lab Best Practices\n\nCommunication\n\nWe hold lab meetings regularly in which all members are expected to attend if their schedule allows. During these meetings all members are expected to contribute by sharing progress reports, discussing challenges, and celebrating successes.\nWe use Google Meet for informal discussions between lab members and project teams.\nWe use Github projects to keep track of tasks and projects. All lab members are expected to check & respond to email, chats, and Github Projects regularly.\n\n\n\nSafety\n\nLab members are expected to follow all safety protocols. If they are not sure of the protocol, then they should request this information.\nLab members should never feel obligated to perform a task that they do not feel is safe.\nLab members are encouraged to speak up if they feel they need training to perform a specific task safely.\nIf lab members have a safety concern, they should bring it up with their supervisor or the other lab members.\nIf a lab member feels their safety concerns are not being taken seriously, or have any other lab safety questions, they can consult the acting SWFSC Safety Officer Ariane Huddleston (ariane.huddleston@noaa.gov).\n\n\n\nWebsite Development\nAs described above, this website is intended to be a place for all glider team members to both use as a reference and contribute to. This section contains development notes and best practices\n\nIf using VSCode, this page contains helpful references and shortcuts. One of the most common and important is to render and preview the current qmd files, which you can do with the Ctrl+Shift+K keyboard shortcut.",
-    "crumbs": [
-      "Best Practices"
     ]
   }
 ]
