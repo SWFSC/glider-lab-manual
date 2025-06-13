@@ -65,10 +65,10 @@ Lube:
 
 ### Nortek Signature 100
 
-O-ring:\
-Vendor:\
+O-ring: 94.0 x 3.0 NBR70\
+Vendor: Nortek\
 Part number:\
-Price:\
+Price: $15\
 Lube:
 
 ### Edgetech Port LF
