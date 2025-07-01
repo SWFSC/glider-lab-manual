@@ -30,7 +30,19 @@ See [this spreadsheet](https://docs.google.com/spreadsheets/d/1tSIi44OTEUQXPJwwi
 ```{r}
 gliders <- tibble::tribble(
     ~Year, ~Deployment, ~Location, ~Sensors, ~Report, ~ERDDAP, ~`Internal Data`, 
-    "2025", "unit_1024-20250224", "San Diego", 
+    "2025", "stenella-20250224", "San Diego", 
+    "CTD, Optode, Ecopuck, PAR, WISPR", 
+    "https://docs.google.com/document/d/11aBBLY6xJhdd2vDwuhdBLK3SVcPaqnxbkMR-Fn0rgy0/edit?usp=drive_link", 
+    "{in progress}", 
+    "{in progress}",
+	
+	"2025", "risso-20250414", "San Diego", 
+    "CTD, Optode, Ecopuck, PAR, DMON", 
+    "https://docs.google.com/document/d/1JWkHtAoQar3fr0TLmKJT9VI5O5IqFkpEw4G_07ZFRts/edit?usp=drive_link", 
+    "{in progress}", 
+    "{in progress}",
+	
+	"2025", "unit_1024-20250224", "San Diego", 
     "CTD, Ecopuck, PAR, WISPR", 
     "https://docs.google.com/document/d/1LQ9ch1gEuHtHEUbC7dymbtm9UlZu6IaePKbmLpKTlyU/edit?usp=sharing", 
     "{in progress}", 
