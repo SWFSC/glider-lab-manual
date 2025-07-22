@@ -41,10 +41,6 @@ website:
           - content/lab.qmd
           - content/pilot-tools.qmd
       - content/deployments.qmd
-      # - section: "Deployments"
-      #   contents:
-      #     - content/past-deployments.qmd  
-      #     - content/reports.qmd
       - content/data-management.qmd
       - section: "Data Processing"
         contents:
@@ -54,12 +50,6 @@ website:
           text: Glider Data
         - href: content/active-acoustics.qmd
           text: Acoustics
-        # - section: "Data Processing"
-        #   contents:
-        #     - href: content/dataproc-gliders.qmd
-        #       text: Gliders
-        #     - href: content/dataproc-acoustics.qmd
-        #       text: Acoustics
         - content/imagery.qmd
       - href: content/gcp.qmd
         text: Google Cloud
