@@ -5,19 +5,7 @@ format:
         code-fold: true
 ---
 
-## Projects
-
-The ESD deploys gliders under several different projects:
-
-* **FREEBYRD**: Operation FREEBYRD is a long-term program to replace ship-based surveys with autonomous vehicles to estimate Antarctic krill biomass in support of the Convention for the Conservation of Antarctic Marine Living Resources (CCAMLR).
-
-* **REFOCUS**: Reimagining Ecosystem and Fisheries Observations by Combining two UxS fleets (REFOCUS) aims to augment ship-based ecosystem monitoring using autonomous underwater gliders equipped with sensors for monitoring the physical and biological environment. The three primary objectives are to 1) Conduct regular (approximately every other month) deployments in the California Current in areas where the CalCOFI Program currently samples and is likely to sample in the future; 2) Improve capacity to collect data during event-driven ecosystem perturbations (e.g., marine heatwaves or harmful algal blooms); and 3) To alleviate competition for ship time.
-
-* **ECOSWIM**: Operation ECOSWIM is for glider surveys in the California CCE off of Humboldt and Morro Bay, California, in the Southern California waters of the Pacific Ocean. These surveys may collect krill biomass estimates, among other scientific goals.
-
-* **SANDIEGO**: Test deployments off of San Diego. These deployments may be, for instance, to test a glider before it goes to the Antarctic, or to test new sensors and/or sensor configurations for the Enhanced Data Acquisition Passive Acoustics Strategic Initiative, the Optics Strategic Initiative, or the Uncrewed Systems Strategic Initiative. 
-
-## Deployments
+## Glider Deployments
 
 The below table lists all (in progress) ESD (and formerly AERD) glider deployments, along with basic information about the deployment. The table also includes links to post-deployment reports, and links to data files where they exist. See [below](#data-links) for details on the data links.
 
@@ -65,9 +53,12 @@ deployments_df <- bind_rows(deployments_list) %>%
     left_join(drive_reports_urls, by = join_by(Deployment_Name)) %>% 
     mutate(across(everything(), na_if, ""), 
             Report = if_else(is.na(Report), NA_character_, 
-                            paste0("<a href='", Report, "'>link</a>"))) %>% 
-    unite(`Internal Data`, starts_with("gcp_link_"), sep = " | ", 
-            remove = TRUE, na.rm = TRUE) %>% 
+                            paste0("<a href='", Report, "'>link</a>")), 
+                            ) %>% 
+    unite(`Internal Data`, starts_with("gcp_link"), 
+            sep = " | ", remove = TRUE, na.rm = TRUE) %>%  
+    unite(`Internal Directories`, starts_with("gcp_dir_link"), 
+            sep = " | ", remove = TRUE, na.rm = TRUE) %>% 
     relocate(Report, .after = Sensors) %>%
     select(-c(Deployment_Name, Project, starts_with("gcp_link_"))) %>%
     arrange(desc(Start), Glider)
@@ -95,7 +86,7 @@ The above table contains several  links to different data products.
 
 The 'ERDDAP' column will contain the link to the glider dataset when it is published to the [ERDDAP](https://gliders.ioos.us/erddap/index.html) of the [IOOS National Glider Data Assembly Center](https://gliders.ioos.us/).
 
-The 'Reports' column contains links to various ESD-internal reports, detailing aspects of the glider prep, deployment, and/or repcovery. These reports are in the process of being converted to Quarto documents, after which they will be published externally.
+The 'Reports' column contains links to various ESD-internal reports, detailing aspects of the glider prep, deployment, and/or recovery. These reports are in the process of being converted to Quarto documents, after which they will be published externally.
 
 The 'Internal Data' column contains links to various ESD-internal data products, stored within the ESD Google Cloud Platform (GCP) project. Users will only be able to access these data if they have been granted appropriate permissions within the project. Currently there are three different types of internal data links:
 
@@ -103,3 +94,15 @@ The 'Internal Data' column contains links to various ESD-internal data products,
 - **plots**: Link the 'plots' folder, within the deployment folder. See a description of the structure of this folder [here](data-management.html#deployments). 
 - **acoustics**: Link the 'acoustics' deployment folder. See a description of the structure of this folder [here](data-management.qmd#acoustics). 
 - **imagery**: Link the the 'raw imagery' deployment folder. See a description of the structure of this folder [here](data-management.qmd#raw-imagery)
+
+## Projects
+
+The ESD deploys gliders under several different projects:
+
+* **FREEBYRD**: Operation FREEBYRD is a long-term program to replace ship-based surveys with autonomous vehicles to estimate Antarctic krill biomass in support of the Convention for the Conservation of Antarctic Marine Living Resources (CCAMLR).
+
+* **REFOCUS**: Reimagining Ecosystem and Fisheries Observations by Combining two UxS fleets (REFOCUS) aims to augment ship-based ecosystem monitoring using autonomous underwater gliders equipped with sensors for monitoring the physical and biological environment. The three primary objectives are to 1) Conduct regular (approximately every other month) deployments in the California Current in areas where the CalCOFI Program currently samples and is likely to sample in the future; 2) Improve capacity to collect data during event-driven ecosystem perturbations (e.g., marine heatwaves or harmful algal blooms); and 3) To alleviate competition for ship time.
+
+* **ECOSWIM**: Operation ECOSWIM is for glider surveys in the California CCE off of Humboldt and Morro Bay, California, in the Southern California waters of the Pacific Ocean. These surveys may collect krill biomass estimates, among other scientific goals.
+
+* **SANDIEGO**: Test deployments off of San Diego. These deployments may be, for instance, to test a glider before it goes to the Antarctic, or to test new sensors and/or sensor configurations for the Enhanced Data Acquisition Passive Acoustics Strategic Initiative, the Optics Strategic Initiative, or the Uncrewed Systems Strategic Initiative. 
