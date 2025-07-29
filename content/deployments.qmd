@@ -96,7 +96,7 @@ The 'Internal Data' and 'Internal Directories' columns contains links to various
 - **acoustics**: The 'acoustics' deployment folder. See a description of the structure and contents of this folder [here](data-management.qmd#acoustics). 
 - **imagery**: The 'raw imagery' deployment folder. See a description of the structure and contents of this folder [here](data-management.qmd#raw-imagery)
 
-See [this doc](https://docs.google.com/document/d/1wWxq79JPuD5A92XTeH-FVJYA87qW2UlfEtKU1yxrSb8/edit?usp=sharing) for information about downloading directories from a Google Cloud bucket.
+See [this doc](https://docs.google.com/document/d/1wWxq79JPuD5A92XTeH-FVJYA87qW2UlfEtKU1yxrSb8/edit?usp=sharing) for information about downloading full directories from a Google Cloud bucket.
 
 ## Projects
 
@@ -108,4 +108,4 @@ The ESD deploys gliders under several different projects:
 
 * **ECOSWIM**: Operation ECOSWIM is for glider surveys in the California CCE off of Humboldt and Morro Bay, California, in the Southern California waters of the Pacific Ocean. These surveys may collect krill biomass estimates, among other scientific goals.
 
-* **SANDIEGO**: Test deployments off of San Diego. These deployments may be, for instance, to test a glider before it goes to the Antarctic, or to test new sensors and/or sensor configurations for the Enhanced Data Acquisition Passive Acoustics Strategic Initiative, the Optics Strategic Initiative, or the Uncrewed Systems Strategic Initiative. 
+* **SANDIEGO**: Test deployments off of the greater San Diego area, typically either around Mission Bay, off the Scripps Pier, or off of Oceanside. These deployments may be, for instance, to test a glider before it goes to the Antarctic, or to test new sensors and/or sensor configurations for a NMFS Strategic Initiative (e.g., the Enhanced Data Acquisition Passive Acoustics, Optics, or Uncrewed Systems Strategic Initiatives). 

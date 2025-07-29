@@ -31,11 +31,11 @@
   gcp_dir_link_acoustics: ''
   gcp_dir_link_imagery: ''
 - Glider: AMLR01
-  Start: '2018-05-28'
+  Start: '2018-05-23'
   End: '2018-06-07'
   Location: San Diego
   Sensors: CTD, Ecopuck, Optode, AZFP
-  Deployment_Name: amlr01-20180528
+  Deployment_Name: amlr01-20180523
   Project: SANDIEGO
   report_link: ''
   ERDDAP_link: ''
@@ -335,6 +335,22 @@
   gcp_dir_link_acoustics: <a href='https://console.cloud.google.com/storage/browser/amlr-gliders-acoustics-dev/SANDIEGO/2022/amlr08-20220513'>acoustics</a>
   gcp_dir_link_imagery: <a href='https://console.cloud.google.com/storage/browser/amlr-gliders-imagery-raw-dev/SANDIEGO/2022/amlr08-20220513'>imagery</a>
 - Glider: AMLR07
+  Start: '2022-10-25'
+  End: '2022-10-27'
+  Location: San Diego
+  Sensors: CTD, Ecopuck, Optode, Nortek, Shadowgraph-narrow
+  Deployment_Name: amlr07-20221025
+  Project: SANDIEGO
+  report_link: ''
+  ERDDAP_link: ''
+  gcp_link_tssci: ''
+  gcp_link_gr5: ''
+  gcp_link_imgcsv: ''
+  gcp_dir_link_plots: ''
+  gcp_dir_link_glider: ''
+  gcp_dir_link_acoustics: <a href='https://console.cloud.google.com/storage/browser/amlr-gliders-acoustics-dev/SANDIEGO/2022/amlr07-20221025'>acoustics</a>
+  gcp_dir_link_imagery: <a href='https://console.cloud.google.com/storage/browser/amlr-gliders-imagery-raw-dev/SANDIEGO/2022/amlr07-20221025'>imagery</a>
+- Glider: AMLR07
   Start: '2022-12-04'
   End: '2022-12-28'
   Location: Cape Shirreff
@@ -494,6 +510,38 @@
   gcp_dir_link_glider: <a href='https://console.cloud.google.com/storage/browser/amlr-gliders-deployments-dev/REFOCUS/2024/george-20240530/data/processed-L1'>glider</a>
   gcp_dir_link_acoustics: ''
   gcp_dir_link_imagery: <a href='https://console.cloud.google.com/storage/browser/amlr-gliders-imagery-raw-dev/REFOCUS/2024/george-20240530'>imagery</a>
+- Glider: AMLR01
+  Start: '2024-07-24'
+  End: '2024-07-24'
+  Location: Oceanside
+  Sensors: CTD, Ecopuck, Optode, AZFP
+  Deployment_Name: amlr01-20240724
+  Project: SANDIEGO
+  report_link: ''
+  ERDDAP_link: ''
+  gcp_link_tssci: ''
+  gcp_link_gr5: ''
+  gcp_link_imgcsv: ''
+  gcp_dir_link_plots: ''
+  gcp_dir_link_glider: ''
+  gcp_dir_link_acoustics: ''
+  gcp_dir_link_imagery: ''
+- Glider: AMLR08
+  Start: '2024-07-24'
+  End: '2024-07-24'
+  Location: Oceanside
+  Sensors: CTD, Ecopuck, Optode, Nortek
+  Deployment_Name: amlr08-20240724
+  Project: SANDIEGO
+  report_link: ''
+  ERDDAP_link: ''
+  gcp_link_tssci: ''
+  gcp_link_gr5: ''
+  gcp_link_imgcsv: ''
+  gcp_dir_link_plots: ''
+  gcp_dir_link_glider: ''
+  gcp_dir_link_acoustics: ''
+  gcp_dir_link_imagery: ''
 - Glider: george
   Start: '2024-09-07'
   End: '2024-09-11'
