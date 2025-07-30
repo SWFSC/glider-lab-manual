@@ -82,7 +82,9 @@ datatable(
 
 ### Data Links
 
-The above table contains several  links to different data products.
+NOTE: cdom data in the various deployment files should be treated as unreliable until further notice. See [this issue](https://github.com/SWFSC/glider-lab/issues/70) for more details, and the latest updates.
+
+The above table contains several links to different data products.
 
 The 'Reports' column contains links to various ESD-internal reports, detailing aspects of the glider prep, deployment, and/or recovery. These reports are in the process of being converted to Quarto documents, after which they will be published externally.
 
