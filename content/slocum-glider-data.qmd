@@ -2,7 +2,7 @@
 title: Slocum Glider Data
 ---
 
-There are many steps and flavors to slocum glider data processing, from the base processing (binary files to NetCDF for Slocum gliders), to QA/QC, to developing additional data products. This page outlines the ESD glider lab's data processing workflow, in particular base processing and data products. 
+There are many steps and flavors to slocum glider data processing (hereafter 'glider data processing'), from the base processing (binary files to NetCDF for Slocum gliders), to QA/QC, to developing additional data products. This page outlines the ESD glider lab's data processing workflow, in particular base processing and data products. 
 
 Users interested in understanding and accessing data products created for each deployment should see the [Data Products](#data-products) section. For acoustic or image processing workflows, see the [acoustics](active-acoustics.qmd) and [imagery](imagery.qmd) pages, respectively.
 
@@ -41,7 +41,7 @@ Standard data products:
 
 - **science timeseries:** {glider-YYYYmmdd}-{mode}-sci.nc: The 'science' timeseries. Most users will want this dataset, as it contains the values from all of the various science sensors. Functionally speaking, this timeseries has one ‘row’ of data for each timestamp from the glider’s *science* computer where a CTD temperature value was recorded. All included sensor values are interpolated to all timestamps, as long as there is not a gap of 300 or more seconds. The sensor values included in this dataset depend on the instruments carried by the glider; ... (Todo: add a section that lists the sensor values for each instrument). Users should note that the 'depth' value in this timeseries is the depth calculated from the CTD pressure sensor. 
 
-- **science gridded, 5m:** {glider-YYYYmmdd}_grid-{mode}-5m.nc: The science timeseries, gridded into *five* meter bins. This NetCDF file will include all of the science sensor values that were in the science timeseries. Users should note that the depth bin name is the bin midpoint. For instance, the bin for data from zero to five meters has the name/label "2.5".
+- **science gridded 5m:** {glider-YYYYmmdd}_grid-{mode}-5m.nc: The science timeseries, gridded into *five* meter bins. This NetCDF file will include all of the science sensor values that were in the science timeseries. Users should note that the depth bin name is the bin midpoint. For instance, the bin for data from zero to five meters has the name/label "2.5".
 
 - **images+science timeseries:** {glider-YYYYmmdd}-imagery-metadata.csv: A CSV file with one row for each image, and one column for each desired sensor value. The sensor values are interpolated to each image timestamp. This file is only created if the glider is carrying a camera, such as a shadowgraph or glidercam. Note that this file lives in the raw glider imagery bucket (e.g. [here](https://console.cloud.google.com/storage/browser/amlr-gliders-imagery-raw-dev/SANDIEGO/2022/amlr08-20220513/metadata))
 
@@ -53,7 +53,7 @@ Additional data products:
 
 - **profile summary:** {glider-YYYYmmdd}-{mode}-profiles.csv: A CSV file with one row for each profile, containing information such as: profile index, profile start and end time, profile start and end depth, and profile direction. Note that this file contains "#.5" profiles, which mark the time between profiles (e.g., when the glider is at the surface or inflecting).
 
-- **science gridded, 1m:** {glider-YYYYmmdd}_grid-{mode}-1m.nc: The science timeseries, gridded into *one* meter bins. This NetCDF file will include all of the science sensor values that were in the science timeseries. Users should note that the depth bin name is the bin midpoint. For instance, the bin for data from zero to one meters has the name/label "0.5".
+- **science gridded 1m:** {glider-YYYYmmdd}_grid-{mode}-1m.nc: The science timeseries, gridded into *one* meter bins. This NetCDF file will include all of the science sensor values that were in the science timeseries. Users should note that the depth bin name is the bin midpoint. For instance, the bin for data from zero to one meters has the name/label "0.5".
 
 - **acoustic metadata files**: Files needed for processing acoustic data with Echoview. These files are described on the [acoustics](active-acoustics.qmd) page. These files are only created if the glider is carrying an acoustic instrument, such as a Nortek or AZFP.
 
@@ -71,15 +71,29 @@ The current high-level workflow is shown below. For more in-the-weeds details, s
 
 #### binary_to_nc
 
-The `binary_to_nc` function is the workhorse of the esdglider base processing for Slocum gliders
+The `binary_to_nc` function is the workhorse of the esdglider base processing for Slocum gliders. It is outlined below, and decribed in-depth in the [timeseries](#timeseries) and [gridded](#gridded) sections. 
+
+![esdglider's `binary_to_nc`](images/binary_to_nc.JPG){fig-align="left"}
 
 ### Timeseries
 
-This section describes in-the-weeds choices made by the code when using the binary glider files to generate timeseries files. 
+This section describes in-the-weeds details of and choices choices made by the code when using the binary slocum glider files to generate timeseries files. 
 
-The `pyglider.slocum.binary_to_timeseries` function uses [`dbdreader`](https://dbdreader.readthedocs.io/en/latest/) to read slocum glider data from binary files. More discussion can be found [here](https://github.com/c-proof/pyglider/issues/106) around why pyglider switched to using dbdreader, and how pyglider processing worked before. 
+The `pyglider.slocum.binary_to_timeseries` function uses [`dbdreader`](https://dbdreader.readthedocs.io/en/latest/) to read slocum glider data from binary files. More discussion can be found [here](https://github.com/c-proof/pyglider/issues/106) around why `pyglider` switched to using `dbdreader`, and how `pyglider` processing worked before. Many `pyglider` functions, including `binary_to_timeseries`, rely on a yaml deployment configuration file for e.g. metadata and mapping sensor names to NetCDF variable names. See the [pyglider docs](https://pyglider.readthedocs.io/en/latest/getting-started-slocum.html#make-a-deployment-configuration-file) for more details about the `deployment.yaml` file.
 
-As constructed, `binary_to_timeseries` uses [`dbdreader.get_sync`](https://dbdreader.readthedocs.io/en/latest/multiple_files.html#dbdreader.MultiDBD.get_sync) to extract values for all of the specified sensors. Thus, the user specifies a particular sensor to server as the ‘time_base’, and then all other desired variables (across science and engineering: pressure, temperature, oxygen, roll, etc.) are interpolated onto the same time base (i.e., the timestamps where this ‘time_base’ variable has a valid (not missing/nan) value). The only exception is that no interpolation is done if the gap between time points is greater than or equal to 300 seconds.
+As constructed, `binary_to_timeseries` uses [`dbdreader.get_sync`](https://dbdreader.readthedocs.io/en/latest/multiple_files.html#dbdreader.MultiDBD.get_sync) to extract values for all of the specified sensors. Specifically, the user specifies a particular sensor to server as the 'time_base', and then all other desired variables (across science and engineering, e.g. pressure, temperature, oxygen, roll) are interpolated onto the same timestamps. These timestamps are where this 'time_base' variable has a valid (i.e., not missing or nan) value. However, no interpolation is done for the science variables if the gap between time points is greater than or equal to 'maxgap' seconds. Comprehensive interpolation always happens for the engineering variables. Within ESD, we use a maxgap of 60 seconds.
+
+#### raw 
+
+There is no way with `binary_to_timeseries` to generate the raw timeseries. For this, we use the `esdglider` function `binary_to_raw_timeseries` - this function follows the same general logic as `pyglider`'s `binary_to_timeseries`, except that it uses other `dbdreader` functions to extract all timestamps across all of the specified variables. Thus, there are functionally two 'time bases' for the extracted data: one for engineering variables (from m_present_time), and one for science variables (from sci_m_present_time). These timestamp arrays are merged, and these values are the time index of the raw timeseries NetCDF file. 
+
+No sensor values are interpolated. Invalid timestamps are still dropped, as well as both timestamps with no non-nan sensor values, and timestamps that came before the 'deployment_min_dt' metadata attribute in  the `deployment.yaml` file.
+
+The raw glider measured depth (i.e., sensor m_depth from the glider pressure transducer) is what is used to find profiles in the dataset. Profiles can be difficult to calculate, as sometimes the glider stalls in the water or otherwise has a moment that causes it to e.g. briefly go down again when it is on a climb back to the surface. To robustly calculate profiles, we use the `findProfiles` function from the [PGPT toolbox](https://github.com/OceanGNS/PGPT/blob/main/scripts/gliderfuncs.py#L196). This function is a Pythonic reproduction a [function of the same name](https://github.com/socib/glider_toolbox/blob/master/m/processing_tools/findProfiles.m) from the `SOCIB` toolbox.
+
+#### eng/sci
+
+TODO
 
 In ESD, we use `binary_to_timeseries` to create a 'science' timeseries, with the pressure from the CTD as the time base, and an 'engineering' timeseries, with the glider's measured depth as the time base. We also have written a `binary_to_raw` function, which uses [`dbdreader.get`](https://dbdreader.readthedocs.io/en/latest/multiple_files.html#dbdreader.MultiDBD.get) to read in raw (i.e., uninterpolated) data points from both the science and flight computers. Thus 'raw' timeseries contains all glider data points, and is thus used to calculate profiles, and useful for debugging sensor behavior.
 
