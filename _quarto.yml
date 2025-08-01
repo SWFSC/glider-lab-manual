@@ -46,7 +46,7 @@ website:
         contents:
         - href: content/data-proc-overview.qmd
           text: Overview
-        - href: content/glider-data.qmd
+        - href: content/slocum-glider-data.qmd
           text: Glider Data
         - href: content/active-acoustics.qmd
           text: Acoustics

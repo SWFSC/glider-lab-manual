@@ -92,9 +92,9 @@ The 'ERDDAP' column will contain the link to the glider dataset when it is publi
 
 The 'Internal Data' and 'Internal Directories' columns contains links to various data products and directories that are in the ESD Google Cloud Platform (GCP) project. Links only appear in the table if the data procuct exists. These data can only be accessed by users with appropriate permissions in the ESD GCP project. Current internal product/directory links:
 
-- **timeseries-sci**, **gridded-5m**, **imagery-csv**: Selected products from the ['base' glider processing](glider-data.qmd#base-processing) workflow.
+- **timeseries-sci**, **gridded-5m**, **imagery-csv**: Selected products from the ['base' glider processing](slocum-glider-data.qmd#base-processing) workflow.
 - **plots**: The plots for the corresponding deployment. See a description of the standard post-deployment plots [here](data-management.html#deployments). 
-- **glider**: All glider-related data products from the ['base' glider processing](glider-data.qmd#base-processing) workflow. 
+- **glider**: All glider-related data products from the ['base' glider processing](slocum-glider-data.qmd#base-processing) workflow. 
 - **acoustics**: The 'acoustics' deployment folder. See a description of the structure and contents of this folder [here](data-management.qmd#acoustics). 
 - **imagery**: The 'raw imagery' deployment folder. See a description of the structure and contents of this folder [here](data-management.qmd#raw-imagery)
 

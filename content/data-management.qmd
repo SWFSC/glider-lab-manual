@@ -173,7 +173,7 @@ The structure of an individual deployment folder, located in the [Deployments](h
 - **processed-L1**: "Level 1" processed data and data products. "Level 1" means that these data products were created by the esdglider/pyglider base processing functions (link TODO) using delayed mode data. In other words, the dbd/ebd files were used as input data, and there was minimal data qa/qc or corrections performed.
 - **processed-L2**: "Level 2" processed data and data products. "Level 2" means that the data has undergone additional qa/qc and/or processing, beyond what is performed during base processing. Due to lack of personnel, at this time most ESD glider deployments will not have level 2 processed data.
 
-**plots**: Standard plots generated from either the 'processed-rt' (subfolder 'rt') or 'processed-L1' data (subfolder 'delayed'). Note that 'sci' is short for plots of science sensor values, while 'eng' is short for plots of engineering variables. See [plots](glider-data.qmd#plots) for descriptions of the various folders.
+**plots**: Standard plots generated from either the 'processed-rt' (subfolder 'rt') or 'processed-L1' data (subfolder 'delayed'). Note that 'sci' is short for plots of science sensor values, while 'eng' is short for plots of engineering variables. See [plots](slocum-glider-data.qmd#plots) for descriptions of the various folders.
 
 #### Acoustics
 

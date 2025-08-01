@@ -12,7 +12,7 @@ The AZFP configuration that ESD has used has been either two or three discrete f
 
 ## Processing
 
-Both echosounders are bottom looking so the processing is very similar. Currently, the [base glider data processing](glider-data.qmd) must be performed first. During the base processing, the following files relevant to acoustic data processing are created:
+Both echosounders are bottom looking so the processing is very similar. Currently, the [base glider data processing](slocum-glider-data.qmd) must be performed first. During the base processing, the following files relevant to acoustic data processing are created:
 
 - Additional docs todo, describing the various echoview metadata files. The data needed from the glider are date, time, GPS, depth, pitch, and roll. 
 
