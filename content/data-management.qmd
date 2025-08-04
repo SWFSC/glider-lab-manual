@@ -111,7 +111,7 @@ See the [repo readme](https://github.com/SWFSC/glider-lab/blob/main/README.md) f
 
 ###  standard-glider-files repository
 
-The [standard-glider-files](https://github.com/SWFSC/standard-glider-files) repository contains standard files that are put on ESD gliders before deployment. This repo and these files are also commonly used during ESD lab tests.
+The [standard-glider-files](https://github.com/SWFSC/standard-glider-files) repository is the home for both all ESD glider cache files, and standard files that are put on ESD gliders before deployment. This repo and these files are also commonly used during ESD lab tests.
 
 ### GCS Buckets
 
@@ -131,6 +131,8 @@ Each section below corresponds to an individual GCS bucket. They begin with a di
 - Several folders contain an 'ngdac' subfolder. This subfolder contains NetCDF files formatted for submission to the [IOOS Glider DAC](https://ioos.github.io/ioosngdac/index.html). The DAC requires one NetCDF file for each profile, hence the subfolder.
 
 #### Deployments
+
+NOTE: currently, cache files are stored in both [standard-glider-files](https://github.com/SWFSC/standard-glider-files), and [GCP](https://console.cloud.google.com/storage/browser/amlr-gliders-deployments-dev/cache). In the future, cache files will only be stored in the standard-glider-files repo.
 
 The structure of an individual deployment folder, located in the [Deployments](https://console.cloud.google.com/storage/browser/amlr-gliders-deployments-dev) bucket under a 'PROJECT/YYYY/glider-YYYYmmdd' path:
 
@@ -209,7 +211,9 @@ The structure of an individual deployment folder for raw imagery, for shadowgrap
 ├── metadata
 ```
 
-**images**: All imagery collected during the deployment. These images will be in their 'Dir####' folders, as they were recorded on the imagery cards.
+**images**: All imagery collected during the deployment. These images will be in their 'Dir####' folders, as they were recorded on the imagery cards. 
+
+NOTE: currently, there is a space most/all image names. This feature is hardcoded into the camera software by WASSOC (the camera developer). This space will be removed before upload for all future images, and eventually removed for all currently uploaded images.
 
 **config**: config file(s) used during the deployment
 

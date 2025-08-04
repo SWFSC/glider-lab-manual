@@ -18,22 +18,52 @@ Currently, the ESD glider lab uses the `esdglider` Python toolbox and scripts, w
 
 Common terminology used in glider data processing:
 
-* [Profile, and other sampling terminology](https://ioos.github.io/glider-dac/glider-background-and-sampling-terminology.html#sampling-pattern-terminology)
 * glider-YYYYmmdd: The deployment name, e.g. amlr01-20181201 for glider amlr01, deployed on 1 Dec 2018. 
-* mode: the mode of glider data acquisition, either real-time ('rt', ) or delayed-mode ('delayed'). The rt data is typically a subset of the full-resolution data from the delayed mode.
+* mode: the mode of glider data acquisition, either real-time ('rt', ) or delayed-mode ('delayed'). The delayed data is the full resolution dataset , which can be downloaded from the glider only after the glider has been recovered. The rt data is a subset of the full-resolution data from the delayed mode, that has been transmitted via Iridium while the glider is deployed.
+* [Profile, and other sampling terminology](https://ioos.github.io/glider-dac/glider-background-and-sampling-terminology.html#sampling-pattern-terminology)
 * [NetCDF](https://docs.unidata.ucar.edu/netcdf-c/current/)
 * inflection: when a glider is transitioning from a dive to a climb, or from a climb to a dive
 * [OG1.0 controlled vocabulary](https://oceangliderscommunity.github.io/OG-format-user-manual/vocabularyCollection/tableOfControlledVocab.html) (also see [OG1.0 background](https://oceangliderscommunity.github.io/OG-format-user-manual/OG_Format.html))
 
 ## Base Processing
 
-The base glider data processing, also referred to as "Level 1" or "L1" processing, is primarily done using [`PyGlider`](https://pyglider.readthedocs.io/en/latest/), hereafter simply `pyglider`. `pyglider` creates CF-compliant timeseries and gridded NetCDF files, which can be both used internally in further workflows, as well as made publicly available through an ERDDAP (e.g., via the [IOOS Glider DAC](https://gliders.ioos.us/)).
+The base glider data processing, also referred to as "Level 1" or "L1" processing, is primarily done using [`PyGlider`](https://pyglider.readthedocs.io/en/latest/), hereafter simply `pyglider`. `pyglider` creates CF-compliant timeseries and gridded NetCDF files, which can be both used internally in further workflows, as well as made publicly available through an ERDDAP (e.g., via the [IOOS Glider DAC](https://gliders.ioos.us/)). 
 
-These base processing details apply to both real-time and delayed-mode data. Real-time (i.e., 'rt') data means the subset of data collected while the glider is deployed, while delayed-mode (i.e., 'delayed') data is the full resolution dataset downloaded from the glider after the glider has been recovered. 
+These base processing details apply to both real-time and delayed-mode data. 
+
+### Overview
+
+The current high-level workflow is shown below. For more in-the-weeds details, see the relevant sections below. See [data products](#data-products) for a description of the output files. 
+
+![ESD's base glider data processing](images/base-proc-workflow.jpg){fig-align="left"}
+
+1. Upload all deployment files as specified on the [data management page](data-management.qmd#deployments). 
+2. Create a deployment YAML file, and commit the edited file to the [glider-lab repo](https://github.com/SWFSC/glider-lab/tree/main/deployment-configs).
+3. Create a [deployment-specific processing script](https://github.com/SWFSC/glider-lab/tree/main/deployment-scripts), and run it in a GCP Workbench Instance top create data products.
+4. Access processed NetCDF files via GCP for additional internal workflows. 
+5. (in development) serve/archive data with IOOS/NCEI. 
+
+#### binary_to_nc
+
+The `binary_to_nc` function is the workhorse of the `esdglider` base processing for Slocum gliders. This function is described in-depth in the [Timeseries](#timeseries) and [Gridded](#gridded) sections. 
+
+![esdglider's `binary_to_nc` inputs, outputs, and top-level helper functions](images/binary_to_nc.JPG){fig-align="left"}
+
+#### deployment YAML files
+
+Like `pyglider`, `esdglider` relies on deployment YAML files (i.e., deployment configs) for all metadata related to a glider deployment. These files contain information such as [metadata required by IOOS](https://ioos.github.io/glider-dac/ngdac-netcdf-file-format-version-2.html), what devices were on the glider and when they were last calibrated, and the data (i.e., sensor names) to extract from the binary data. See the [pyglider docs](https://pyglider.readthedocs.io/en/latest/getting-started-slocum.html#make-a-deployment-configuration-file) for more details about the deployment YAML file.
+
+To help generate these files, `esdglider` contains [this script](https://github.com/SWFSC/esdglider/blob/main/scripts/generate-deployment_yaml.py) that can be run locally (i.e., wherever it can access the database) to create a deployment YAML file. This script pulls all instrument information from the Glider Database, and adds standard metadata. A user needs to then edit this file by hand, in particular the people, devices, comment, and summary blocks. Deployment YAMLs for all ESD glider deployments are stored in the [glider-lab repo](https://github.com/SWFSC/glider-lab/tree/main/deployment-configs).
+
+#### deployment processing scripts
+
+All base processing is performed by deployment-specific Python processing scripts, which can also be found in the [glider-lab repo](https://github.com/SWFSC/glider-lab/tree/main/deployment-scripts). These scripts create NetCDF files, acoustic data procucts (if necessary), imagery data products (if necessary), and standard plots. A template script 'glider-YYYYmmdd-template.py' for a new deployment can be found in the same glider-lab repo folder. For a new script, users can update the 'deployment_name' and 'mode' variables, and uncomment base processing sections that are relevant for that deployment.
+
+Deployment scripts are designed to be run in GCP, so that they are able to access data stored in the GCS buckets. Currently, they are all run in the 'glider-proc' GCP Workbench Instance. 
 
 ### Data Products
 
-The esdglider package heavily leverages `dbdreader` and `pyglider` to create several different base processing data products, which are described in this section. For descriptions of the various standard plots, see the [Plots](#plots) section. See the individual base processing sections for specific processing steps, choices, etc.
+The `esdglider` toolbox heavily leverages `dbdreader` and `pyglider` to create several different base processing data products, which are described in this section. For descriptions of the various standard plots, see the [Plots](#plots) section. See the individual base processing sections for specific processing steps, choices, etc.
 
 All output files begin with the deployment name ('glider-YYYYmmdd'), and include the data processing 'mode' (i.e., delayed or rt). The timeseries data products are all NetCDF files with a single coordinate "time". The gridded data products are all NetCDF files with two coordinates: "depth" and "profile" (i.e., profile_index). An exception is a 'profiles' CSV, which contains the start/end times, depths, and other info for each profile.
 
@@ -57,37 +87,11 @@ Additional data products:
 
 - **acoustic metadata files**: Files needed for processing acoustic data with Echoview. These files are described on the [acoustics](active-acoustics.qmd) page. These files are only created if the glider is carrying an acoustic instrument, such as a Nortek or AZFP.
 
-### Overview
-
-The current high-level workflow is shown below. For more in-the-weeds details, see the relevant sections below (e.g., [binary_to_nc](#binary_to_nc)). See [data products](#data-products) for a description of the output files. 
-
-![ESD's base glider data processing](images/base-proc-workflow.jpg){fig-align="left"}
-
-1. Upload binary and cache files into Deployment GCS bucket, as specified on the [data management page](data-management.qmd#deployments)
-2. Run [this script](https://github.com/SWFSC/esdglider/blob/main/scripts/generate-deployment_yaml.py) locally to create a deployment YAML file. This script pulls all instrument information from the Glider Database. A user needs to then edit this file by hand, in particular the people, devices, comment, and summary blocks. Finally, commit the edited file to the [glider-lab repo](https://github.com/SWFSC/glider-lab/tree/main/deployment-configs).
-3. Create a [deployment-specific processing script](https://github.com/SWFSC/glider-lab/tree/main/deployment-scripts), and run it in a GCP Workbench Instance. This script creates NetCDF files, acoustic data procucts (if necessary), imagery data products (if necessary), and standard plots.
-4. Access processed NetCDF files via GCP for additional internal workflows
-5. (in development) serve/archive data with IOOS/NCEI
-
-#### binary_to_nc
-
-The `binary_to_nc` function is the workhorse of the esdglider base processing for Slocum gliders. It is outlined below, and decribed in-depth in the [timeseries](#timeseries) and [gridded](#gridded) sections. 
-
-![esdglider's `binary_to_nc` inputs, outputs, and top-level helper functions](images/binary_to_nc.JPG){fig-align="left"}
-
-#### deployment YAML files
-
-TODO
-
-#### deployment processing script
-
-TODO
-
 ### Timeseries
 
 This section describes in-the-weeds details of and choices choices made by the code when using the binary slocum glider files to generate timeseries files. See [data products](#data-products) for a description of the timeseries output files. 
 
-The `pyglider.slocum.binary_to_timeseries` function uses [`dbdreader`](https://dbdreader.readthedocs.io/en/latest/) to read slocum glider data from binary files. More discussion can be found [here](https://github.com/c-proof/pyglider/issues/106) around why `pyglider` switched to using `dbdreader`, and how `pyglider` processing worked before. Many `pyglider` functions, including `binary_to_timeseries`, rely on a yaml deployment configuration file for e.g. metadata and mapping sensor names to NetCDF variable names. See the [pyglider docs](https://pyglider.readthedocs.io/en/latest/getting-started-slocum.html#make-a-deployment-configuration-file) for more details about the `deployment.yaml` file.
+The `pyglider.slocum.binary_to_timeseries` function uses [`dbdreader`](https://dbdreader.readthedocs.io/en/latest/) to read slocum glider data from binary files. More discussion can be found [here](https://github.com/c-proof/pyglider/issues/106) around why `pyglider` switched to using `dbdreader`, and how `pyglider` processing worked before. Many `pyglider` functions, including `binary_to_timeseries`, rely on a [yaml deployment configuration file](#deployment-yaml-files) for e.g. metadata and mapping sensor names to NetCDF variable names. 
 
 As constructed, `binary_to_timeseries` uses [`dbdreader.get_sync`](https://dbdreader.readthedocs.io/en/latest/multiple_files.html#dbdreader.MultiDBD.get_sync) to extract values for all of the specified sensors. Specifically, the user specifies a particular sensor to server as the 'time_base', and then all other desired variables (across science and engineering, e.g. pressure, temperature, oxygen, roll) are interpolated onto the same timestamps. These timestamps are where this 'time_base' variable has a valid (i.e., not missing or nan) value. However, no interpolation is done for the science variables if the gap between time points is greater than or equal to 'maxgap' seconds. Comprehensive interpolation always happens for the engineering variables. Within ESD, we use a maxgap of 60 seconds.
 
