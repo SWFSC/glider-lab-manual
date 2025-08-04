@@ -121,7 +121,7 @@ Data processing code depends on a specific directory structure, and thus it is i
 - **YYYY**: Within each project folder are year folders, of the format YYYY (e.g., "2025"). For FREEBYRD (i.e., Antarctic) deployments, the January year is used. For instance, a glider deployed deployed in Dec 2022 will be in the 'FREEBYRD/2023' directory.
 - **glider-YYYYmmdd**: Within each year folder are deployment folders. The deployment folders all follow the same naming convention: 'glider-YYYYmmdd', where 'glider' is the name of the glider and 'YYYYmmdd' is the deployment date. For example, the folder name for the glider calanus that was deployed on 19 Oct 2024 is "calanus-20241019".
 
-For new deployments, a template folder strucutre for uploading data to GCP exists in the [Templates](https://drive.google.com/drive/folders/10QGrMjwwr5uZ-AISQtSBo0Hsm2zGnq0i?usp=drive_link) folder. 
+For new deployments, a template folder structure for uploading data to GCP exists in the [Templates](https://drive.google.com/drive/folders/10QGrMjwwr5uZ-AISQtSBo0Hsm2zGnq0i?usp=drive_link) folder. 
 
 GCS buckets are only accessible to individuals with a noaa.gov email address that have been added to the GCP project as a data viewer. To access data in GCS buckets, please contact [Sam Woodman](mailto:sam.woodman@noaa.gov). 
 

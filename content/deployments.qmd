@@ -90,7 +90,7 @@ The 'Reports' column contains links to various ESD-internal reports, detailing a
 
 The 'ERDDAP' column will contain the link to the glider dataset when it is published to the [ERDDAP](https://gliders.ioos.us/erddap/index.html) of the [IOOS National Glider Data Assembly Center](https://gliders.ioos.us/).
 
-The 'Internal Data' and 'Internal Directories' columns contains links to various data products and directories that are in the ESD Google Cloud Platform (GCP) project. Links only appear in the table if the data procuct exists. These data can only be accessed by users with appropriate permissions in the ESD GCP project. Current internal product/directory links:
+The 'Internal Data' and 'Internal Directories' columns contains links to various data products and directories that are in the ESD Google Cloud Platform (GCP) project. Links only appear in the table if the data product exists. These data can only be accessed by users with appropriate permissions in the ESD GCP project. Current internal product/directory links:
 
 - **timeseries-sci**, **gridded-5m**, **imagery-csv**: Selected products from the ['base' glider processing](slocum-glider-data.qmd#base-processing) workflow.
 - **plots**: The plots for the corresponding deployment. See a description of the standard post-deployment plots [here](data-management.html#deployments). 

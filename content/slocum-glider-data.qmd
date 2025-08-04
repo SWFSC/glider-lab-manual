@@ -57,7 +57,7 @@ To help generate these files, `esdglider` contains [this script](https://github.
 
 #### deployment processing scripts
 
-All base processing is performed by deployment-specific Python processing scripts, which can also be found in the [glider-lab repo](https://github.com/SWFSC/glider-lab/tree/main/deployment-scripts). These scripts create NetCDF files, acoustic data procucts (if necessary), imagery data products (if necessary), and standard plots. A template script 'glider-YYYYmmdd-template.py' for a new deployment can be found in the same glider-lab repo folder. For a new script, users can update the 'deployment_name' and 'mode' variables, and uncomment base processing sections that are relevant for that deployment.
+All base processing is performed by deployment-specific Python processing scripts, which can also be found in the [glider-lab repo](https://github.com/SWFSC/glider-lab/tree/main/deployment-scripts). These scripts create NetCDF files, acoustic data products (if necessary), imagery data products (if necessary), and standard plots. A template script 'glider-YYYYmmdd-template.py' for a new deployment can be found in the same glider-lab repo folder. For a new script, users can update the 'deployment_name' and 'mode' variables, and uncomment base processing sections that are relevant for that deployment.
 
 Deployment scripts are designed to be run in GCP, so that they are able to access data stored in the GCS buckets. Currently, they are all run in the 'glider-proc' GCP Workbench Instance. 
 
@@ -77,7 +77,7 @@ Standard data products:
 
 Additional data products:
 
-- **raw timeseries:** {glider-YYYYmmdd}-{mode}-raw.nc: The 'raw' timeseries is the unprocess data, simply read from the binary data files and saved as a NetCDF. Itcontains a timestamp for every time recorded by the glider's flight or science computer, and no interpolation is done for any sensor values. These two features make this dataset useful for a) calculating profiles and b) troubleshooting any sensor values or processing steps. This dataset contains both the measured depth ("depth_measured") and the depth calculated from the CTD pressure sensor ("depth_ctd"). 
+- **raw timeseries:** {glider-YYYYmmdd}-{mode}-raw.nc: The 'raw' timeseries is the raw data, simply read from the binary data files and saved as a NetCDF (no interpolation). It contains a timestamp for every time recorded by the glider's flight or science computer, and no interpolation is done for any sensor values. These two features make this dataset useful for a) calculating profiles and b) troubleshooting any sensor values or processing steps. This dataset contains both the measured depth ("depth_measured") and the depth calculated from the CTD pressure sensor ("depth_ctd"). 
 
 - **engineering timeseries:** {glider-YYYYmmdd}-{mode}-eng.nc: The 'engineering' timeseries. Functionally speaking, this timeseries has one 'row' of data for each timestamp from the glider's *flight* computer where an m_depth value was recorded. All included sensor values are interpolated to all timestamps, as long as there is not a gap of 300 or more seconds. In addition to m_depth, it contains sensor values such as m_roll, m_pitch, and m_gps_lon. See the full list of sensor values [here](https://github.com/SWFSC/esdglider/blob/main/esdglider/data/deployment-eng-vars.yml). Users should note that the 'depth' value in this timeseries is from m_depth, meaning the measured depth from the glider.
 
@@ -97,7 +97,7 @@ As constructed, `binary_to_timeseries` uses [`dbdreader.get_sync`](https://dbdre
 
 #### raw 
 
-There is no way to use `binary_to_timeseries` to generate the raw timeseries. For this, we use the `esdglider` function `binary_to_raw_timeseries` - this function follows the same general logic as `pyglider`'s `binary_to_timeseries`, except that it uses another `dbdreader` function ([`get`](https://dbdreader.readthedocs.io/en/latest/multiple_files.html#dbdreader.MultiDBD.get), with `return_nans=True`) to extract all recorded timestamps across the specified variables. Thus, there are functionally two 'time bases' for the extracted data: one for engineering variables (from the flight computer's 'm_present_time'), and one for science variables (from the science computer's 'sci_m_present_time'). These timestamp arrays are merged, and the m,erged array is the time index of the raw timeseries NetCDF file. 
+There is no way to use `binary_to_timeseries` to generate the raw timeseries. For this, we use the `esdglider` function `binary_to_raw_timeseries` - this function follows the same general logic as `pyglider`'s `binary_to_timeseries`, except that it uses another `dbdreader` function ([`get`](https://dbdreader.readthedocs.io/en/latest/multiple_files.html#dbdreader.MultiDBD.get), with `return_nans=True`) to extract all recorded timestamps across the specified variables. Thus, there are functionally two 'time bases' for the extracted data: one for engineering variables (from the flight computer's 'm_present_time'), and one for science variables (from the science computer's 'sci_m_present_time'). These timestamp arrays are merged, and the merged array is the time index of the raw timeseries NetCDF file. 
 
 No sensor values are interpolated. Invalid timestamps are still dropped, as well as timestamps that either a) have no non-nan sensor values, and b) came before the 'deployment_min_dt' metadata attribute in the `deployment.yaml` file. Values that are calculated and included in the raw dataset include 'depth_ctd' (the glider depth calculated from the pressure sensor reading) and 'distance_over_ground' (the great-circle distance between each measured lat/lon). 
 
@@ -130,7 +130,7 @@ Data alterations, or additional features of note:
 
 ### Gridded
 
-This section describes in-the-weeds details of and choices choices made by the code when using the scieince timeseries to generate gridded datasets. See [data products](#data-products) for a description of the gridded output files. 
+This section describes in-the-weeds details of and choices choices made by the code when using the science timeseries to generate gridded datasets. See [data products](#data-products) for a description of the gridded output files. 
 
 Docs in progress. Gridding uses the [`pyglider.ncprocess.make_gridfiles`](https://pyglider.readthedocs.io/en/latest/pyglider/pyglider.ncprocess.html#pyglider.ncprocess.make_gridfiles) function.
 
