@@ -148,11 +148,13 @@ Additionally, sometimes a data issue is too deployment-specific to handle in the
 
 This section describes in-the-weeds details of and choices choices made by the code when using the science timeseries to generate gridded datasets. See [data products](#data-products) for a description of the gridded output files. 
 
-Docs in progress. Gridding uses the [`pyglider.ncprocess.make_gridfiles`](https://pyglider.readthedocs.io/en/latest/pyglider/pyglider.ncprocess.html#pyglider.ncprocess.make_gridfiles) function.
+Gridding uses the [`pyglider.ncprocess.make_gridfiles`](https://pyglider.readthedocs.io/en/latest/pyglider/pyglider.ncprocess.html#pyglider.ncprocess.make_gridfiles) function. `make_gridfiles` turns the science timeseries netCDF file into a vertically gridded NetCDF, using [`binned_statistic`](https://docs.scipy.org/doc/scipy/reference/generated/scipy.stats.binned_statistic.html) to grid data variables. This NetCDF has dimensions of "depth" and "profile" (i.e., "profile_index"). Some variables (e.g., time, lat, and lon) have one dimension ("profile"), while all of the sensor values have both dimensions.
+
+This NetCDF file will include all of the science sensor values that were in the science timeseries. Users should note that the depth bin name is the bin midpoint. For instance, for a five meter gridded dataset, the bin for data from zero to five meters has the name/label "2.5".
 
 ### Plots
 
-Standard plots are generated from either the 'processed-rt' (subfolder 'rt') or 'processed-L1' data (subfolder 'delayed'). Note that 'sci' is short for plots of science sensor values, while 'eng' is short for plots of engineering variables. Standard plots, which are separated by folder, include:
+Standard plots are generated from either the 'processed-rt' (subfolder 'rt') or 'processed-L1' data (subfolder 'delayed'). Note that 'sci' is short for plots of science sensor values, while 'eng' is short for plots of engineering variables. All plots are are grouped by folder:
 
 * TS-sci: Temperature/salinity plots of the various science sensor values
 * maps-sci: Maps of surface values (i.e., depth <10m) from various science sensors
@@ -167,7 +169,9 @@ Standard plots are generated from either the 'processed-rt' (subfolder 'rt') or 
 
 ### NGDAC Profiles
 
-Docs in progress. The purpose of this section is to describe the process of going from the science timeseries to the NetCDF file format specification ([IOOS_Glider_NetCDF_v2.0.nc](https://ioos.github.io/glider-dac/ngdac-netcdf-file-format-version-2.html)) used by the U.S. IOOS National Glider Data Assembly Center. 
+Docs in progress. 
+
+This section will describe the process of going from the science timeseries to the NetCDF file format specification ([IOOS_Glider_NetCDF_v2.0.nc](https://ioos.github.io/glider-dac/ngdac-netcdf-file-format-version-2.html)) used by the U.S. IOOS National Glider Data Assembly Center. 
 
 ### Other Files
 
