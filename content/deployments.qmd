@@ -7,11 +7,11 @@ format:
 
 ## Glider Deployments
 
-The below table lists all (in progress) ESD (and formerly AERD) glider deployments, along with basic information about the deployment. The table also includes links to post-deployment reports, and links to data files where they exist. See [below](#data-links) for details on the data links.
+The below table lists all ESD (and formerly AERD) glider deployments, both in-progress and past, along with basic information about the deployment. The table also includes links to post-deployment reports and data files, where they exist. See [below](#data-links) for details on the data links.
 
 Note that deployment names are always 'glider name'-'year-month-day'. For instance, deployment "amlr08-20220530" is the deployment of glider amlr08 that began on 30 May 2022.
 
-See the [Fleet Status sheet](https://docs.google.com/spreadsheets/d/1tSIi44OTEUQXPJwwiy1emhdIyRs9Vt8iT5IlJBMrPLA/edit?usp=sharing) (NOAA internal) for more details.
+See the [Fleet Status sheet](https://docs.google.com/spreadsheets/d/1tSIi44OTEUQXPJwwiy1emhdIyRs9Vt8iT5IlJBMrPLA/edit?usp=sharing) (NOAA internal) for more ESD glider fleet details.
 
 <!-- <iframe src="https://docs.google.com/spreadsheets/d/e/2PACX-1vR1QEPFK9em24JT6-9p2MeW6Va6srqITFqsYpiF7x-QBAKdwYw4zeuJFOxjHr-4eeDRGzO-8Z0uE1z4/pubhtml?widget=true&amp;headers=false"style="width:950px; height:500px; border: 2px solid black;"></iframe> -->
 
@@ -84,7 +84,7 @@ datatable(
 
 NOTE: cdom data in the various deployment files should be treated as unreliable until further notice. See [this issue](https://github.com/SWFSC/glider-lab/issues/70) for more details, and the latest updates.
 
-The above table contains several links to different data products.
+The above table contains several links to different data products:
 
 The 'Reports' column contains links to various ESD-internal reports, detailing aspects of the glider prep, deployment, and/or recovery. These reports are in the process of being converted to Quarto documents, after which they will be published externally.
 

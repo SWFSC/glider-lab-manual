@@ -69,7 +69,7 @@ All output files begin with the deployment name ('glider-YYYYmmdd'), and include
 
 Standard data products:
 
-- **science timeseries:** {glider-YYYYmmdd}-{mode}-sci.nc: The 'science' timeseries. Most users will want this dataset, as it contains the values from all of the various science sensors. Functionally speaking, this timeseries has one ‘row’ of data for each timestamp from the glider’s *science* computer where a CTD temperature value was recorded. See [eng/sci](#engsci) for more details, as well [processing notes](#processing-notes) for specific data post-processing steps.
+- **science timeseries:** {glider-YYYYmmdd}-{mode}-sci.nc: The 'science' timeseries. Most users will want this dataset, as it contains the values from all of the various science sensors. Functionally speaking, this timeseries has one ‘row’ of data for each timestamp from the glider’s *science* computer where a CTD temperature value was recorded. See [eng/sci](#eng--sci) for more details, as well [processing notes](#processing-notes) for specific data post-processing steps.
 
 - **science gridded 5m:** {glider-YYYYmmdd}_grid-{mode}-5m.nc: The science timeseries, gridded into *five* meter bins. This NetCDF file will include all of the science sensor values that were in the science timeseries. Users should note that the depth bin name is the bin midpoint. For instance, the bin for data from zero to five meters has the name/label "2.5".
 
@@ -79,7 +79,7 @@ Additional data products:
 
 - **raw timeseries:** {glider-YYYYmmdd}-{mode}-raw.nc: The 'raw' timeseries is the raw data, simply read from the binary data files and saved as a NetCDF (no interpolation). It contains a timestamp for every time recorded by the glider's flight or science computer, and no interpolation is done for any sensor values. These two features make this dataset useful for a) calculating profiles and b) troubleshooting any sensor values or processing steps. 
 
-- **engineering timeseries:** {glider-YYYYmmdd}-{mode}-eng.nc: The 'engineering' timeseries. Functionally speaking, this timeseries has one 'row' of data for each timestamp from the glider's *flight* computer where an m_depth value was recorded. See [eng/sci](#engsci) for more details, as well [processing notes](#processing-notes) for specific data post-processing steps. 
+- **engineering timeseries:** {glider-YYYYmmdd}-{mode}-eng.nc: The 'engineering' timeseries. Functionally speaking, this timeseries has one 'row' of data for each timestamp from the glider's *flight* computer where an m_depth value was recorded. See [eng/sci](#eng--sci) for more details, as well [processing notes](#processing-notes) for specific data post-processing steps. 
 
 - **profile summary:** {glider-YYYYmmdd}-{mode}-profiles.csv: A CSV file with one row for each profile, containing information such as: profile index, profile start and end time, profile start and end depth, and profile direction. Note that this file contains "#.5" profiles, which mark the time between profiles (e.g., when the glider is at the surface or inflecting).
 
@@ -103,7 +103,7 @@ This dataset contains both the measured depth ("depth_measured") and the depth c
 
 The raw timeseries contains all glider data points, except for those dropped as specified above, and is thus particularly useful for debugging code or sensor behavior. It is also used to calculate profiles. Profiles can be difficult to calculate, as sometimes the glider stalls in the water or otherwise has a moment that causes it to for instance briefly go down again when it is on a climb back to the surface. To robustly find profiles in the dataset, `esdglider` uses the raw glider measured depth (from the glider's pressure transducer) and the `findProfiles` function from the [PGPT toolbox](https://github.com/OceanGNS/PGPT/blob/main/scripts/gliderfuncs.py#L196). This is a Pythonic reproduction of a [function of the same name](https://github.com/socib/glider_toolbox/blob/master/m/processing_tools/findProfiles.m) from the `SOCIB` toolbox. Information about the profiles can be found in the profile summary CSV. 
 
-#### Eng+Sci
+#### Eng + Sci
 
 The typical ESD workflow is to use `binary_to_timeseries` to create a 'science' timeseries, with the pressure from the CTD (sensor name "sci_water_pressure") as the time base, and an 'engineering' timeseries, with the glider measured depth (sensor name "m_depth") as the time base. An engineering timeseries is always created this way. However, this system requires that the CTD be on at all times during a deployment. If the CTD is turned off, then there will be no pressure values, and `get_sync` will not return some timestamps that have non-nan values for another instrument. For these deployments, `esdglider` includes the function `timeseries_raw_to_sci`. This function reads in the [raw timeseries](#raw), and performs the maxgap interpolation for timestamps that have a non-nan value for any of the science sensors. `timeseries_raw_to_sci` can be used in cases where different science sensors are on at different times, e.g. PAM deployments, and thus it is not possible to get the full science timeseries using `get_sync`.
 
@@ -111,14 +111,11 @@ Users should note that usually the engineering and science timeseries both typic
 
 Additionally, rather than performing new profile calculations, the profiles calculated from the raw dataset are applied to both the engineering and science timeseries. This is particularly important for the science timeseries, because depending on the glider programming, the science timeseries may not contain a complete record of timestamps when the glider is deployed (e.g., all science sensors are turned off during a dive for the sake of PAM instruments). This system maintains the time ranges for each profile across the different timeseries. 
 
-
 #### Processing Notes
 
 Other timeseries data alterations, or additional features of note:
 
-CDOM:
-
-[Sea-Bird Scientific](https://www.seabird.com/) sent an announcement that states that there may be incorrect CDOM values if an ECOPuck instrument was serviced before Jan 13, 2023. These data are in the process of being fixed in the base processing scripts. See [this issue](https://github.com/SWFSC/glider-lab/issues/70) for more details, and the latest updates.
+CDOM data: [Sea-Bird Scientific](https://www.seabird.com/) sent an announcement that states that there may be incorrect CDOM values if an ECOPuck instrument was serviced before Jan 13, 2023. These data are in the process of being fixed in the base processing scripts. See [this issue](https://github.com/SWFSC/glider-lab/issues/70) for more details, and the latest updates.
 
 `esdglider`:
 
