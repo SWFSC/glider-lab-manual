@@ -7,11 +7,11 @@ format:
 
 ## Glider Deployments
 
-The below table lists all ESD (and formerly AERD) glider deployments, both in-progress and past, along with basic information about the deployment. The table also includes links to post-deployment reports and data files, where they exist. See [below](#data-links) for details on the data links.
+The below table lists all ESD (and formerly AERD) glider deployments, both in-progress and past, along with basic information about the deployment. The table also includes links to post-deployment reports and data files, where they exist. 
+
+See [below](#data-links) for details on the data links, and see the [Fleet Status sheet](https://docs.google.com/spreadsheets/d/1tB3QNKYx8qOYYS9QZotekBAx0y-_n2d-EZPjFFdYNuU/edit?usp=sharing) (NOAA internal) for more detailed ESD glider fleet and deployment details.
 
 Note that deployment names are always 'glider name'-'year-month-day'. For instance, deployment "amlr08-20220530" is the deployment of glider amlr08 that began on 30 May 2022.
-
-See the [Fleet Status sheet](https://docs.google.com/spreadsheets/d/1tSIi44OTEUQXPJwwiy1emhdIyRs9Vt8iT5IlJBMrPLA/edit?usp=sharing) (NOAA internal) for more ESD glider fleet details.
 
 <!-- <iframe src="https://docs.google.com/spreadsheets/d/e/2PACX-1vR1QEPFK9em24JT6-9p2MeW6Va6srqITFqsYpiF7x-QBAKdwYw4zeuJFOxjHr-4eeDRGzO-8Z0uE1z4/pubhtml?widget=true&amp;headers=false"style="width:950px; height:500px; border: 2px solid black;"></iframe> -->
 
@@ -84,21 +84,19 @@ datatable(
 
 NOTE: cdom data in the various deployment files should be treated as unreliable until further notice. See [this issue](https://github.com/SWFSC/glider-lab/issues/70) for more details, and the latest updates.
 
-The above table contains several links to different data products:
+The above table contains several links to different data products. For more details about the data products themselves, see the [Slocum Glider Data Processing](slocum-glider-data.qmd#data-products) page. 
 
 The 'Reports' column contains links to various ESD-internal reports, detailing aspects of the glider prep, deployment, and/or recovery. These reports are in the process of being converted to Quarto documents, after which they will be published externally.
 
 The 'ERDDAP' column will contain the link to the glider dataset when it is published to the [ERDDAP](https://gliders.ioos.us/erddap/index.html) of the [IOOS National Glider Data Assembly Center](https://gliders.ioos.us/).
 
-The 'Internal Data' and 'Internal Directories' columns contains links to various data products and directories that are in the ESD Google Cloud Platform (GCP) project. Links only appear in the table if the data product exists. These data can only be accessed by users with appropriate permissions in the ESD GCP project. Current internal product/directory links:
+The 'Internal Data' and 'Internal Directories' columns contains links to various data products and directories that are in the ESD Google Cloud Platform (GCP) project. Links only appear in the table if the data product exists. These data can only be accessed by users with appropriate permissions in the ESD GCP project. See [this doc](https://docs.google.com/document/d/1wWxq79JPuD5A92XTeH-FVJYA87qW2UlfEtKU1yxrSb8/edit?usp=sharing) for information about downloading full directories from a Google Cloud bucket. Current internal product/directory links:
 
 - **timeseries-sci**, **gridded-5m**, **imagery-csv**: Selected products from the ['base' glider processing](slocum-glider-data.qmd#base-processing) workflow.
 - **plots**: The plots for the corresponding deployment. See a description of the standard post-deployment plots [here](data-management.html#deployments). 
 - **glider**: All glider-related data products from the ['base' glider processing](slocum-glider-data.qmd#base-processing) workflow. 
 - **acoustics**: The 'acoustics' deployment folder. See a description of the structure and contents of this folder [here](data-management.qmd#acoustics). 
 - **imagery**: The 'raw imagery' deployment folder. See a description of the structure and contents of this folder [here](data-management.qmd#raw-imagery)
-
-See [this doc](https://docs.google.com/document/d/1wWxq79JPuD5A92XTeH-FVJYA87qW2UlfEtKU1yxrSb8/edit?usp=sharing) for information about downloading full directories from a Google Cloud bucket.
 
 ## Projects
 
