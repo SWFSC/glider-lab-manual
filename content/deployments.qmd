@@ -23,12 +23,14 @@ library(yaml)
 library(dplyr)
 library(DT)
 library(tidyr)
+library(tibble)
+library(here)
 
 # erddap_urls <- tibble::tribble(
 #     ~Deployment_Name, ~ERDDAP, 
 # )
     
-drive_reports_urls <- tibble::tribble(
+drive_reports_urls <- tribble(
     ~Deployment_Name, ~Report, 
     "stenella-20250414", "https://docs.google.com/document/d/11aBBLY6xJhdd2vDwuhdBLK3SVcPaqnxbkMR-Fn0rgy0/edit?usp=drive_link", 
     "risso-20250414", "https://docs.google.com/document/d/1JWkHtAoQar3fr0TLmKJT9VI5O5IqFkpEw4G_07ZFRts/edit?usp=drive_link", 
@@ -43,7 +45,7 @@ drive_reports_urls <- tibble::tribble(
     "calanus-20250617", "https://docs.google.com/document/d/1crniFu6WVACCfgD_7a6VqYcbG61CWJo3-jYNb1zoH6A/edit?usp=sharing"
 )  
 
-deployments_list <- read_yaml("esd-gliders.yml")
+deployments_list <- read_yaml(here("content", "esd-gliders.yml"))
 deployments_df <- bind_rows(deployments_list) %>% 
     select(-c(report_link)) %>% 
     rename(ERDDAP = ERDDAP_link) %>% 
