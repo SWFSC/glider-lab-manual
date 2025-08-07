@@ -1,0 +1,672 @@
+- Glider: AMLR02
+  Start: '2018-04-18'
+  End: '2018-04-19'
+  Project: SANDIEGO
+  Region: CCE
+  Sensors: CTD, Ecopuck, Optode, AZFP
+  Deployment_Name: amlr02-20180418
+  report_link: ''
+  ERDDAP_link: ''
+  gcp_link_tssci: ''
+  gcp_link_gr5: ''
+  gcp_link_imgcsv: ''
+  gcp_dir_link_plots: ''
+  gcp_dir_link_glider: ''
+  gcp_dir_link_acoustics: ''
+  gcp_dir_link_imagery: ''
+- Glider: AMLR01
+  Start: '2018-04-25'
+  End: '2018-04-27'
+  Project: SANDIEGO
+  Region: CCE
+  Sensors: CTD, Ecopuck, Optode, AZFP
+  Deployment_Name: amlr01-20180425
+  report_link: ''
+  ERDDAP_link: ''
+  gcp_link_tssci: ''
+  gcp_link_gr5: ''
+  gcp_link_imgcsv: ''
+  gcp_dir_link_plots: ''
+  gcp_dir_link_glider: ''
+  gcp_dir_link_acoustics: ''
+  gcp_dir_link_imagery: ''
+- Glider: AMLR01
+  Start: '2018-05-23'
+  End: '2018-06-07'
+  Project: SANDIEGO
+  Region: CCE
+  Sensors: CTD, Ecopuck, Optode, AZFP
+  Deployment_Name: amlr01-20180523
+  report_link: ''
+  ERDDAP_link: ''
+  gcp_link_tssci: ''
+  gcp_link_gr5: ''
+  gcp_link_imgcsv: ''
+  gcp_dir_link_plots: ''
+  gcp_dir_link_glider: ''
+  gcp_dir_link_acoustics: ''
+  gcp_dir_link_imagery: ''
+- Glider: AMLR02
+  Start: '2018-05-30'
+  End: '2018-06-07'
+  Project: SANDIEGO
+  Region: CCE
+  Sensors: CTD, Ecopuck, Optode, AZFP
+  Deployment_Name: amlr02-20180530
+  report_link: ''
+  ERDDAP_link: ''
+  gcp_link_tssci: ''
+  gcp_link_gr5: ''
+  gcp_link_imgcsv: ''
+  gcp_dir_link_plots: ''
+  gcp_dir_link_glider: ''
+  gcp_dir_link_acoustics: ''
+  gcp_dir_link_imagery: ''
+- Glider: AMLR02
+  Start: '2018-07-17'
+  End: '2018-07-24'
+  Project: SANDIEGO
+  Region: CCE
+  Sensors: CTD, Ecopuck, Optode, AZFP
+  Deployment_Name: amlr02-20180717
+  report_link: ''
+  ERDDAP_link: ''
+  gcp_link_tssci: ''
+  gcp_link_gr5: ''
+  gcp_link_imgcsv: ''
+  gcp_dir_link_plots: ''
+  gcp_dir_link_glider: ''
+  gcp_dir_link_acoustics: ''
+  gcp_dir_link_imagery: ''
+- Glider: AMLR02
+  Start: '2018-12-11'
+  End: '2019-03-08'
+  Project: FREEBYRD
+  Region: Antarctic
+  Sensors: CTD, Ecopuck, Optode, AZFP
+  Deployment_Name: amlr02-20181211
+  report_link: ''
+  ERDDAP_link: ''
+  gcp_link_tssci: ''
+  gcp_link_gr5: ''
+  gcp_link_imgcsv: ''
+  gcp_dir_link_plots: ''
+  gcp_dir_link_glider: ''
+  gcp_dir_link_acoustics: <a href='https://console.cloud.google.com/storage/browser/amlr-gliders-acoustics-dev/FREEBYRD/2019/amlr02-20181211'>acoustics</a>
+  gcp_dir_link_imagery: ''
+- Glider: AMLR01
+  Start: '2018-12-16'
+  End: '2019-03-08'
+  Project: FREEBYRD
+  Region: Antarctic
+  Sensors: CTD, Ecopuck, Optode, AZFP
+  Deployment_Name: amlr01-20181216
+  report_link: ''
+  ERDDAP_link: ''
+  gcp_link_tssci: ''
+  gcp_link_gr5: ''
+  gcp_link_imgcsv: ''
+  gcp_dir_link_plots: ''
+  gcp_dir_link_glider: ''
+  gcp_dir_link_acoustics: <a href='https://console.cloud.google.com/storage/browser/amlr-gliders-acoustics-dev/FREEBYRD/2019/amlr01-20181216'>acoustics</a>
+  gcp_dir_link_imagery: ''
+- Glider: AMLR04
+  Start: '2019-07-23'
+  End: '2019-07-31'
+  Project: SANDIEGO
+  Region: CCE
+  Sensors: CTD, Ecopuck, Optode, AZFP
+  Deployment_Name: amlr04-20190723
+  report_link: ''
+  ERDDAP_link: ''
+  gcp_link_tssci: ''
+  gcp_link_gr5: ''
+  gcp_link_imgcsv: ''
+  gcp_dir_link_plots: ''
+  gcp_dir_link_glider: ''
+  gcp_dir_link_acoustics: ''
+  gcp_dir_link_imagery: ''
+- Glider: AMLR01
+  Start: '2019-12-06'
+  End: '2019-12-08'
+  Project: FREEBYRD
+  Region: null
+  Sensors: CTD, Ecopuck, Optode, AZFP
+  Deployment_Name: amlr01-20191206
+  report_link: ''
+  ERDDAP_link: ''
+  gcp_link_tssci: ''
+  gcp_link_gr5: ''
+  gcp_link_imgcsv: ''
+  gcp_dir_link_plots: ''
+  gcp_dir_link_glider: ''
+  gcp_dir_link_acoustics: <a href='https://console.cloud.google.com/storage/browser/amlr-gliders-acoustics-dev/FREEBYRD/2020/amlr01-20191206'>acoustics</a>
+  gcp_dir_link_imagery: ''
+- Glider: AMLR02
+  Start: '2019-12-06'
+  End: '2020-03-12'
+  Project: FREEBYRD
+  Region: Antarctic
+  Sensors: CTD, Ecopuck, Optode, AZFP
+  Deployment_Name: amlr02-20191206
+  report_link: ''
+  ERDDAP_link: ''
+  gcp_link_tssci: ''
+  gcp_link_gr5: ''
+  gcp_link_imgcsv: ''
+  gcp_dir_link_plots: ''
+  gcp_dir_link_glider: ''
+  gcp_dir_link_acoustics: <a href='https://console.cloud.google.com/storage/browser/amlr-gliders-acoustics-dev/FREEBYRD/2020/amlr02-20191206'>acoustics</a>
+  gcp_dir_link_imagery: ''
+- Glider: AMLR03
+  Start: '2019-12-06'
+  End: '2020-03-12'
+  Project: FREEBYRD
+  Region: Antarctic
+  Sensors: CTD, Ecopuck, Optode, AZFP
+  Deployment_Name: amlr03-20191206
+  report_link: ''
+  ERDDAP_link: ''
+  gcp_link_tssci: ''
+  gcp_link_gr5: ''
+  gcp_link_imgcsv: ''
+  gcp_dir_link_plots: ''
+  gcp_dir_link_glider: ''
+  gcp_dir_link_acoustics: <a href='https://console.cloud.google.com/storage/browser/amlr-gliders-acoustics-dev/FREEBYRD/2020/amlr03-20191206'>acoustics</a>
+  gcp_dir_link_imagery: ''
+- Glider: AMLR01
+  Start: '2019-12-16'
+  End: '2020-03-12'
+  Project: FREEBYRD
+  Region: Antarctic
+  Sensors: CTD, Ecopuck, Optode, AZFP
+  Deployment_Name: amlr01-20191216
+  report_link: ''
+  ERDDAP_link: ''
+  gcp_link_tssci: ''
+  gcp_link_gr5: ''
+  gcp_link_imgcsv: ''
+  gcp_dir_link_plots: ''
+  gcp_dir_link_glider: ''
+  gcp_dir_link_acoustics: ''
+  gcp_dir_link_imagery: ''
+- Glider: AMLR05
+  Start: '2021-07-20'
+  End: '2021-07-26'
+  Project: SANDIEGO
+  Region: CCE
+  Sensors: CTD, Ecopuck, Optode, AZFP
+  Deployment_Name: amlr05-20210720
+  report_link: ''
+  ERDDAP_link: ''
+  gcp_link_tssci: ''
+  gcp_link_gr5: ''
+  gcp_link_imgcsv: ''
+  gcp_dir_link_plots: ''
+  gcp_dir_link_glider: ''
+  gcp_dir_link_acoustics: ''
+  gcp_dir_link_imagery: ''
+- Glider: AMLR01
+  Start: '2021-11-21'
+  End: '2021-12-18'
+  Project: FREEBYRD
+  Region: Antarctic
+  Sensors: CTD, Ecopuck, Optode, AZFP
+  Deployment_Name: amlr01-20211121
+  report_link: ''
+  ERDDAP_link: ''
+  gcp_link_tssci: ''
+  gcp_link_gr5: ''
+  gcp_link_imgcsv: ''
+  gcp_dir_link_plots: ''
+  gcp_dir_link_glider: ''
+  gcp_dir_link_acoustics: <a href='https://console.cloud.google.com/storage/browser/amlr-gliders-acoustics-dev/FREEBYRD/2022/amlr01-20211121'>acoustics</a>
+  gcp_dir_link_imagery: ''
+- Glider: AMLR05
+  Start: '2021-11-24'
+  End: '2021-12-15'
+  Project: FREEBYRD
+  Region: Antarctic
+  Sensors: CTD, Ecopuck, Optode, AZFP
+  Deployment_Name: amlr05-20211124
+  report_link: ''
+  ERDDAP_link: ''
+  gcp_link_tssci: ''
+  gcp_link_gr5: ''
+  gcp_link_imgcsv: ''
+  gcp_dir_link_plots: ''
+  gcp_dir_link_glider: ''
+  gcp_dir_link_acoustics: <a href='https://console.cloud.google.com/storage/browser/amlr-gliders-acoustics-dev/FREEBYRD/2022/amlr05-20211124'>acoustics</a>
+  gcp_dir_link_imagery: ''
+- Glider: AMLR03
+  Start: '2022-03-07'
+  End: '2022-03-11'
+  Project: SANDIEGO
+  Region: CCE
+  Sensors: CTD, Ecopuck, Optode, Nortek, Glidercam
+  Deployment_Name: amlr03-20220307
+  report_link: ''
+  ERDDAP_link: ''
+  gcp_link_tssci: ''
+  gcp_link_gr5: ''
+  gcp_link_imgcsv: ''
+  gcp_dir_link_plots: ''
+  gcp_dir_link_glider: ''
+  gcp_dir_link_acoustics: ''
+  gcp_dir_link_imagery: ''
+- Glider: AMLR03
+  Start: '2022-04-25'
+  End: '2022-04-29'
+  Project: SANDIEGO
+  Region: CCE
+  Sensors: CTD, Ecopuck, Optode, Nortek, Glidercam
+  Deployment_Name: amlr03-20220425
+  report_link: ''
+  ERDDAP_link: ''
+  gcp_link_tssci: ''
+  gcp_link_gr5: ''
+  gcp_link_imgcsv: ''
+  gcp_dir_link_plots: ''
+  gcp_dir_link_glider: ''
+  gcp_dir_link_acoustics: <a href='https://console.cloud.google.com/storage/browser/amlr-gliders-acoustics-dev/SANDIEGO/2022/amlr03-20220425'>acoustics</a>
+  gcp_dir_link_imagery: <a href='https://console.cloud.google.com/storage/browser/amlr-gliders-imagery-raw-dev/SANDIEGO/2022/amlr03-20220425'>imagery</a>
+- Glider: AMLR06
+  Start: '2022-04-25'
+  End: '2022-04-29'
+  Project: SANDIEGO
+  Region: CCE
+  Sensors: CTD, Ecopuck, Optode, AZFP, Glidercam
+  Deployment_Name: amlr06-20220425
+  report_link: ''
+  ERDDAP_link: ''
+  gcp_link_tssci: ''
+  gcp_link_gr5: ''
+  gcp_link_imgcsv: ''
+  gcp_dir_link_plots: ''
+  gcp_dir_link_glider: ''
+  gcp_dir_link_acoustics: ''
+  gcp_dir_link_imagery: <a href='https://console.cloud.google.com/storage/browser/amlr-gliders-imagery-raw-dev/SANDIEGO/2022/amlr06-20220425'>imagery</a>
+- Glider: AMLR08
+  Start: '2022-05-04'
+  End: '2022-05-04'
+  Project: SANDIEGO
+  Region: CCE
+  Sensors: CTD, Ecopuck, Optode, Nortek, Shadowgraph-narrow
+  Deployment_Name: amlr08-20220504
+  report_link: ''
+  ERDDAP_link: ''
+  gcp_link_tssci: ''
+  gcp_link_gr5: ''
+  gcp_link_imgcsv: ''
+  gcp_dir_link_plots: ''
+  gcp_dir_link_glider: ''
+  gcp_dir_link_acoustics: <a href='https://console.cloud.google.com/storage/browser/amlr-gliders-acoustics-dev/SANDIEGO/2022/amlr08-20220504'>acoustics</a>
+  gcp_dir_link_imagery: <a href='https://console.cloud.google.com/storage/browser/amlr-gliders-imagery-raw-dev/SANDIEGO/2022/amlr08-20220504'>imagery</a>
+- Glider: AMLR03
+  Start: '2022-05-13'
+  End: '2022-05-16'
+  Project: SANDIEGO
+  Region: CCE
+  Sensors: CTD, Ecopuck, Optode, Nortek, Glidercam
+  Deployment_Name: amlr03-20220513
+  report_link: ''
+  ERDDAP_link: ''
+  gcp_link_tssci: ''
+  gcp_link_gr5: ''
+  gcp_link_imgcsv: ''
+  gcp_dir_link_plots: ''
+  gcp_dir_link_glider: ''
+  gcp_dir_link_acoustics: <a href='https://console.cloud.google.com/storage/browser/amlr-gliders-acoustics-dev/SANDIEGO/2022/amlr03-20220513'>acoustics</a>
+  gcp_dir_link_imagery: <a href='https://console.cloud.google.com/storage/browser/amlr-gliders-imagery-raw-dev/SANDIEGO/2022/amlr03-20220513'>imagery</a>
+- Glider: AMLR08
+  Start: '2022-05-13'
+  End: '2022-05-16'
+  Project: SANDIEGO
+  Region: CCE
+  Sensors: CTD, Ecopuck, Optode, Nortek, Shadowgraph-narrow
+  Deployment_Name: amlr08-20220513
+  report_link: ''
+  ERDDAP_link: ''
+  gcp_link_tssci: <a href='https://storage.cloud.google.com/amlr-gliders-deployments-dev/SANDIEGO/2022/amlr08-20220513/data/processed-L1/amlr08-20220513-delayed-sci.nc'>timeseries-sci</a>
+  gcp_link_gr5: ''
+  gcp_link_imgcsv: <a href='https://storage.cloud.google.com/amlr-gliders-imagery-raw-dev/SANDIEGO/2022/amlr08-20220513/metadata/amlr08-20220513-imagery-metadata.csv'>imagery-csv</a>
+  gcp_dir_link_plots: <a href='https://console.cloud.google.com/storage/browser/amlr-gliders-deployments-dev/SANDIEGO/2022/amlr08-20220513/plots/delayed'>plots</a>
+  gcp_dir_link_glider: <a href='https://console.cloud.google.com/storage/browser/amlr-gliders-deployments-dev/SANDIEGO/2022/amlr08-20220513/data/processed-L1'>glider</a>
+  gcp_dir_link_acoustics: <a href='https://console.cloud.google.com/storage/browser/amlr-gliders-acoustics-dev/SANDIEGO/2022/amlr08-20220513'>acoustics</a>
+  gcp_dir_link_imagery: <a href='https://console.cloud.google.com/storage/browser/amlr-gliders-imagery-raw-dev/SANDIEGO/2022/amlr08-20220513'>imagery</a>
+- Glider: AMLR07
+  Start: '2022-10-25'
+  End: '2022-10-27'
+  Project: SANDIEGO
+  Region: CCE
+  Sensors: CTD, Ecopuck, Optode, Nortek, Shadowgraph-narrow
+  Deployment_Name: amlr07-20221025
+  report_link: ''
+  ERDDAP_link: ''
+  gcp_link_tssci: ''
+  gcp_link_gr5: ''
+  gcp_link_imgcsv: ''
+  gcp_dir_link_plots: ''
+  gcp_dir_link_glider: ''
+  gcp_dir_link_acoustics: <a href='https://console.cloud.google.com/storage/browser/amlr-gliders-acoustics-dev/SANDIEGO/2022/amlr07-20221025'>acoustics</a>
+  gcp_dir_link_imagery: <a href='https://console.cloud.google.com/storage/browser/amlr-gliders-imagery-raw-dev/SANDIEGO/2022/amlr07-20221025'>imagery</a>
+- Glider: AMLR07
+  Start: '2022-12-04'
+  End: '2022-12-28'
+  Project: FREEBYRD
+  Region: Antarctic
+  Sensors: CTD, Ecopuck, Optode, Nortek, Shadowgraph-narrow
+  Deployment_Name: amlr07-20221204
+  report_link: ''
+  ERDDAP_link: ''
+  gcp_link_tssci: ''
+  gcp_link_gr5: ''
+  gcp_link_imgcsv: ''
+  gcp_dir_link_plots: ''
+  gcp_dir_link_glider: ''
+  gcp_dir_link_acoustics: <a href='https://console.cloud.google.com/storage/browser/amlr-gliders-acoustics-dev/FREEBYRD/2023/amlr07-20221204'>acoustics</a>
+  gcp_dir_link_imagery: <a href='https://console.cloud.google.com/storage/browser/amlr-gliders-imagery-raw-dev/FREEBYRD/2023/amlr07-20221204'>imagery</a>
+- Glider: AMLR04
+  Start: '2022-12-05'
+  End: '2023-02-13'
+  Project: FREEBYRD
+  Region: Antarctic
+  Sensors: CTD, Ecopuck, Optode, Nortek, Glidercam
+  Deployment_Name: amlr04-20221205
+  report_link: ''
+  ERDDAP_link: ''
+  gcp_link_tssci: ''
+  gcp_link_gr5: ''
+  gcp_link_imgcsv: ''
+  gcp_dir_link_plots: ''
+  gcp_dir_link_glider: ''
+  gcp_dir_link_acoustics: <a href='https://console.cloud.google.com/storage/browser/amlr-gliders-acoustics-dev/FREEBYRD/2023/amlr04-20221205'>acoustics</a>
+  gcp_dir_link_imagery: ''
+- Glider: AMLR06
+  Start: '2022-12-05'
+  End: '2023-02-13'
+  Project: FREEBYRD
+  Region: Antarctic
+  Sensors: CTD, Ecopuck, Optode, AZFP, Glidercam
+  Deployment_Name: amlr06-20221205
+  report_link: ''
+  ERDDAP_link: ''
+  gcp_link_tssci: ''
+  gcp_link_gr5: ''
+  gcp_link_imgcsv: ''
+  gcp_dir_link_plots: ''
+  gcp_dir_link_glider: ''
+  gcp_dir_link_acoustics: <a href='https://console.cloud.google.com/storage/browser/amlr-gliders-acoustics-dev/FREEBYRD/2023/amlr06-20221205'>acoustics</a>
+  gcp_dir_link_imagery: ''
+- Glider: AMLR03
+  Start: '2023-06-20'
+  End: '2023-06-23'
+  Project: SANDIEGO
+  Region: CCE
+  Sensors: CTD, Ecopuck, Optode, Nortek, Glidercam
+  Deployment_Name: amlr03-20230620
+  report_link: ''
+  ERDDAP_link: ''
+  gcp_link_tssci: ''
+  gcp_link_gr5: ''
+  gcp_link_imgcsv: ''
+  gcp_dir_link_plots: ''
+  gcp_dir_link_glider: ''
+  gcp_dir_link_acoustics: <a href='https://console.cloud.google.com/storage/browser/amlr-gliders-acoustics-dev/SANDIEGO/2023/amlr03-20230620'>acoustics</a>
+  gcp_dir_link_imagery: <a href='https://console.cloud.google.com/storage/browser/amlr-gliders-imagery-raw-dev/SANDIEGO/2023/amlr03-20230620'>imagery</a>
+- Glider: AMLR04
+  Start: '2023-06-20'
+  End: '2023-06-23'
+  Project: SANDIEGO
+  Region: CCE
+  Sensors: CTD, Ecopuck, Optode, Nortek, Glidercam
+  Deployment_Name: amlr04-20230620
+  report_link: ''
+  ERDDAP_link: ''
+  gcp_link_tssci: ''
+  gcp_link_gr5: ''
+  gcp_link_imgcsv: ''
+  gcp_dir_link_plots: ''
+  gcp_dir_link_glider: ''
+  gcp_dir_link_acoustics: <a href='https://console.cloud.google.com/storage/browser/amlr-gliders-acoustics-dev/SANDIEGO/2023/amlr04-20230620'>acoustics</a>
+  gcp_dir_link_imagery: <a href='https://console.cloud.google.com/storage/browser/amlr-gliders-imagery-raw-dev/SANDIEGO/2023/amlr04-20230620'>imagery</a>
+- Glider: AMLR03
+  Start: '2023-11-28'
+  End: '2024-01-27'
+  Project: FREEBYRD
+  Region: Antarctic
+  Sensors: CTD, Ecopuck, Optode, Nortek, Glidercam
+  Deployment_Name: amlr03-20231128
+  report_link: ''
+  ERDDAP_link: ''
+  gcp_link_tssci: <a href='https://storage.cloud.google.com/amlr-gliders-deployments-dev/FREEBYRD/2024/amlr03-20231128/data/processed-L1/amlr03-20231128-delayed-sci.nc'>timeseries-sci</a>
+  gcp_link_gr5: <a href='https://storage.cloud.google.com/amlr-gliders-deployments-dev/FREEBYRD/2024/amlr03-20231128/data/processed-L1/amlr03-20231128_grid-delayed-5m.nc'>gridded-5m</a>
+  gcp_link_imgcsv: <a href='https://storage.cloud.google.com/amlr-gliders-imagery-raw-dev/FREEBYRD/2024/amlr03-20231128/metadata/amlr03-20231128-imagery-metadata.csv'>imagery-csv</a>
+  gcp_dir_link_plots: <a href='https://console.cloud.google.com/storage/browser/amlr-gliders-deployments-dev/FREEBYRD/2024/amlr03-20231128/plots/delayed'>plots</a>
+  gcp_dir_link_glider: <a href='https://console.cloud.google.com/storage/browser/amlr-gliders-deployments-dev/FREEBYRD/2024/amlr03-20231128/data/processed-L1'>glider</a>
+  gcp_dir_link_acoustics: <a href='https://console.cloud.google.com/storage/browser/amlr-gliders-acoustics-dev/FREEBYRD/2024/amlr03-20231128'>acoustics</a>
+  gcp_dir_link_imagery: <a href='https://console.cloud.google.com/storage/browser/amlr-gliders-imagery-raw-dev/FREEBYRD/2024/amlr03-20231128'>imagery</a>
+- Glider: AMLR04
+  Start: '2023-11-28'
+  End: '2024-01-27'
+  Project: FREEBYRD
+  Region: Antarctic
+  Sensors: CTD, Ecopuck, Optode, Nortek, Glidercam
+  Deployment_Name: amlr04-20231128
+  report_link: ''
+  ERDDAP_link: ''
+  gcp_link_tssci: <a href='https://storage.cloud.google.com/amlr-gliders-deployments-dev/FREEBYRD/2024/amlr04-20231128/data/processed-L1/amlr04-20231128-delayed-sci.nc'>timeseries-sci</a>
+  gcp_link_gr5: <a href='https://storage.cloud.google.com/amlr-gliders-deployments-dev/FREEBYRD/2024/amlr04-20231128/data/processed-L1/amlr04-20231128_grid-delayed-5m.nc'>gridded-5m</a>
+  gcp_link_imgcsv: <a href='https://storage.cloud.google.com/amlr-gliders-imagery-raw-dev/FREEBYRD/2024/amlr04-20231128/metadata/amlr04-20231128-imagery-metadata.csv'>imagery-csv</a>
+  gcp_dir_link_plots: <a href='https://console.cloud.google.com/storage/browser/amlr-gliders-deployments-dev/FREEBYRD/2024/amlr04-20231128/plots/delayed'>plots</a>
+  gcp_dir_link_glider: <a href='https://console.cloud.google.com/storage/browser/amlr-gliders-deployments-dev/FREEBYRD/2024/amlr04-20231128/data/processed-L1'>glider</a>
+  gcp_dir_link_acoustics: <a href='https://console.cloud.google.com/storage/browser/amlr-gliders-acoustics-dev/FREEBYRD/2024/amlr04-20231128'>acoustics</a>
+  gcp_dir_link_imagery: <a href='https://console.cloud.google.com/storage/browser/amlr-gliders-imagery-raw-dev/FREEBYRD/2024/amlr04-20231128'>imagery</a>
+- Glider: john
+  Start: '2024-03-12'
+  End: '2024-04-03'
+  Project: REFOCUS
+  Region: CCE
+  Sensors: CTD, Optode, Nortek, Shadowgraph-wide
+  Deployment_Name: john-20240312
+  report_link: ''
+  ERDDAP_link: ''
+  gcp_link_tssci: ''
+  gcp_link_gr5: ''
+  gcp_link_imgcsv: ''
+  gcp_dir_link_plots: ''
+  gcp_dir_link_glider: ''
+  gcp_dir_link_acoustics: <a href='https://console.cloud.google.com/storage/browser/amlr-gliders-acoustics-dev/REFOCUS/2024/john-20240312'>acoustics</a>
+  gcp_dir_link_imagery: <a href='https://console.cloud.google.com/storage/browser/amlr-gliders-imagery-raw-dev/REFOCUS/2024/john-20240312'>imagery</a>
+- Glider: ringo
+  Start: '2024-03-12'
+  End: '2024-03-15'
+  Project: REFOCUS
+  Region: CCE
+  Sensors: CTD, Optode, Nortek, Shadowgraph-wide
+  Deployment_Name: ringo-20240312
+  report_link: ''
+  ERDDAP_link: ''
+  gcp_link_tssci: ''
+  gcp_link_gr5: ''
+  gcp_link_imgcsv: ''
+  gcp_dir_link_plots: ''
+  gcp_dir_link_glider: ''
+  gcp_dir_link_acoustics: ''
+  gcp_dir_link_imagery: <a href='https://console.cloud.google.com/storage/browser/amlr-gliders-imagery-raw-dev/REFOCUS/2024/ringo-20240312'>imagery</a>
+- Glider: george
+  Start: '2024-05-30'
+  End: '2024-06-22'
+  Project: REFOCUS
+  Region: CCE
+  Sensors: CTD, Optode, Shadowgraph-narrow
+  Deployment_Name: george-20240530
+  report_link: ''
+  ERDDAP_link: ''
+  gcp_link_tssci: <a href='https://storage.cloud.google.com/amlr-gliders-deployments-dev/REFOCUS/2024/george-20240530/data/processed-L1/george-20240530-delayed-sci.nc'>timeseries-sci</a>
+  gcp_link_gr5: <a href='https://storage.cloud.google.com/amlr-gliders-deployments-dev/REFOCUS/2024/george-20240530/data/processed-L1/george-20240530_grid-delayed-5m.nc'>gridded-5m</a>
+  gcp_link_imgcsv: <a href='https://storage.cloud.google.com/amlr-gliders-imagery-raw-dev/REFOCUS/2024/george-20240530/metadata/george-20240530-imagery-metadata.csv'>imagery-csv</a>
+  gcp_dir_link_plots: <a href='https://console.cloud.google.com/storage/browser/amlr-gliders-deployments-dev/REFOCUS/2024/george-20240530/plots/delayed'>plots</a>
+  gcp_dir_link_glider: <a href='https://console.cloud.google.com/storage/browser/amlr-gliders-deployments-dev/REFOCUS/2024/george-20240530/data/processed-L1'>glider</a>
+  gcp_dir_link_acoustics: ''
+  gcp_dir_link_imagery: <a href='https://console.cloud.google.com/storage/browser/amlr-gliders-imagery-raw-dev/REFOCUS/2024/george-20240530'>imagery</a>
+- Glider: AMLR01
+  Start: '2024-07-24'
+  End: '2024-07-24'
+  Project: SANDIEGO
+  Region: CCE
+  Sensors: CTD, Ecopuck, Optode, AZFP
+  Deployment_Name: amlr01-20240724
+  report_link: ''
+  ERDDAP_link: ''
+  gcp_link_tssci: ''
+  gcp_link_gr5: ''
+  gcp_link_imgcsv: ''
+  gcp_dir_link_plots: ''
+  gcp_dir_link_glider: ''
+  gcp_dir_link_acoustics: ''
+  gcp_dir_link_imagery: ''
+- Glider: AMLR08
+  Start: '2024-07-24'
+  End: '2024-07-24'
+  Project: SANDIEGO
+  Region: CCE
+  Sensors: CTD, Ecopuck, Optode, Nortek
+  Deployment_Name: amlr08-20240724
+  report_link: ''
+  ERDDAP_link: ''
+  gcp_link_tssci: ''
+  gcp_link_gr5: ''
+  gcp_link_imgcsv: ''
+  gcp_dir_link_plots: ''
+  gcp_dir_link_glider: ''
+  gcp_dir_link_acoustics: ''
+  gcp_dir_link_imagery: ''
+- Glider: george
+  Start: '2024-09-07'
+  End: '2024-09-11'
+  Project: REFOCUS
+  Region: CCE
+  Sensors: CTD, Ecopuck, Optode, Shadowgraph-narrow
+  Deployment_Name: george-20240907
+  report_link: ''
+  ERDDAP_link: ''
+  gcp_link_tssci: <a href='https://storage.cloud.google.com/amlr-gliders-deployments-dev/REFOCUS/2024/george-20240907/data/processed-L1/george-20240907-delayed-sci.nc'>timeseries-sci</a>
+  gcp_link_gr5: <a href='https://storage.cloud.google.com/amlr-gliders-deployments-dev/REFOCUS/2024/george-20240907/data/processed-L1/george-20240907_grid-delayed-5m.nc'>gridded-5m</a>
+  gcp_link_imgcsv: <a href='https://storage.cloud.google.com/amlr-gliders-imagery-raw-dev/REFOCUS/2024/george-20240907/metadata/george-20240907-imagery-metadata.csv'>imagery-csv</a>
+  gcp_dir_link_plots: <a href='https://console.cloud.google.com/storage/browser/amlr-gliders-deployments-dev/REFOCUS/2024/george-20240907/plots/delayed'>plots</a>
+  gcp_dir_link_glider: <a href='https://console.cloud.google.com/storage/browser/amlr-gliders-deployments-dev/REFOCUS/2024/george-20240907/data/processed-L1'>glider</a>
+  gcp_dir_link_acoustics: ''
+  gcp_dir_link_imagery: <a href='https://console.cloud.google.com/storage/browser/amlr-gliders-imagery-raw-dev/REFOCUS/2024/george-20240907'>imagery</a>
+- Glider: calanus
+  Start: '2024-10-19'
+  End: '2024-11-16'
+  Project: ECOSWIM
+  Region: CCE
+  Sensors: CTD, Ecopuck, Optode, Nortek
+  Deployment_Name: calanus-20241019
+  report_link: ''
+  ERDDAP_link: ''
+  gcp_link_tssci: <a href='https://storage.cloud.google.com/amlr-gliders-deployments-dev/ECOSWIM/2024/calanus-20241019/data/processed-L1/calanus-20241019-delayed-sci.nc'>timeseries-sci</a>
+  gcp_link_gr5: <a href='https://storage.cloud.google.com/amlr-gliders-deployments-dev/ECOSWIM/2024/calanus-20241019/data/processed-L1/calanus-20241019_grid-delayed-5m.nc'>gridded-5m</a>
+  gcp_link_imgcsv: ''
+  gcp_dir_link_plots: <a href='https://console.cloud.google.com/storage/browser/amlr-gliders-deployments-dev/ECOSWIM/2024/calanus-20241019/plots/delayed'>plots</a>
+  gcp_dir_link_glider: <a href='https://console.cloud.google.com/storage/browser/amlr-gliders-deployments-dev/ECOSWIM/2024/calanus-20241019/data/processed-L1'>glider</a>
+  gcp_dir_link_acoustics: <a href='https://console.cloud.google.com/storage/browser/amlr-gliders-acoustics-dev/ECOSWIM/2024/calanus-20241019'>acoustics</a>
+  gcp_dir_link_imagery: ''
+- Glider: AMLR01
+  Start: '2024-11-20'
+  End: '2025-01-02'
+  Project: FREEBYRD
+  Region: Antarctic
+  Sensors: CTD, Ecopuck, Optode, AZFP
+  Deployment_Name: amlr01-20241120
+  report_link: ''
+  ERDDAP_link: ''
+  gcp_link_tssci: <a href='https://storage.cloud.google.com/amlr-gliders-deployments-dev/FREEBYRD/2025/amlr01-20241120/data/processed-L1/amlr01-20241120-delayed-sci.nc'>timeseries-sci</a>
+  gcp_link_gr5: <a href='https://storage.cloud.google.com/amlr-gliders-deployments-dev/FREEBYRD/2025/amlr01-20241120/data/processed-L1/amlr01-20241120_grid-delayed-5m.nc'>gridded-5m</a>
+  gcp_link_imgcsv: ''
+  gcp_dir_link_plots: <a href='https://console.cloud.google.com/storage/browser/amlr-gliders-deployments-dev/FREEBYRD/2025/amlr01-20241120/plots/delayed'>plots</a>
+  gcp_dir_link_glider: <a href='https://console.cloud.google.com/storage/browser/amlr-gliders-deployments-dev/FREEBYRD/2025/amlr01-20241120/data/processed-L1'>glider</a>
+  gcp_dir_link_acoustics: <a href='https://console.cloud.google.com/storage/browser/amlr-gliders-acoustics-dev/FREEBYRD/2025/amlr01-20241120'>acoustics</a>
+  gcp_dir_link_imagery: ''
+- Glider: AMLR08
+  Start: '2024-11-20'
+  End: '2024-11-24'
+  Project: FREEBYRD
+  Region: Antarctic
+  Sensors: CTD, Ecopuck, Optode, Nortek
+  Deployment_Name: amlr08-20241120
+  report_link: ''
+  ERDDAP_link: ''
+  gcp_link_tssci: <a href='https://storage.cloud.google.com/amlr-gliders-deployments-dev/FREEBYRD/2025/amlr08-20241120/data/processed-L1/amlr08-20241120-delayed-sci.nc'>timeseries-sci</a>
+  gcp_link_gr5: <a href='https://storage.cloud.google.com/amlr-gliders-deployments-dev/FREEBYRD/2025/amlr08-20241120/data/processed-L1/amlr08-20241120_grid-delayed-5m.nc'>gridded-5m</a>
+  gcp_link_imgcsv: ''
+  gcp_dir_link_plots: <a href='https://console.cloud.google.com/storage/browser/amlr-gliders-deployments-dev/FREEBYRD/2025/amlr08-20241120/plots/delayed'>plots</a>
+  gcp_dir_link_glider: <a href='https://console.cloud.google.com/storage/browser/amlr-gliders-deployments-dev/FREEBYRD/2025/amlr08-20241120/data/processed-L1'>glider</a>
+  gcp_dir_link_acoustics: <a href='https://console.cloud.google.com/storage/browser/amlr-gliders-acoustics-dev/FREEBYRD/2025/amlr08-20241120'>acoustics</a>
+  gcp_dir_link_imagery: ''
+- Glider: unit_1024
+  Start: '2025-02-24'
+  End: '2025-02-26'
+  Project: SANDIEGO
+  Region: CCE
+  Sensors: CTD, Ecopuck, PAR, WISPR
+  Deployment_Name: unit_1024-20250224
+  report_link: ''
+  ERDDAP_link: ''
+  gcp_link_tssci: <a href='https://storage.cloud.google.com/amlr-gliders-deployments-dev/SANDIEGO/2025/unit_1024-20250224/data/processed-L1/unit_1024-20250224-delayed-sci.nc'>timeseries-sci</a>
+  gcp_link_gr5: <a href='https://storage.cloud.google.com/amlr-gliders-deployments-dev/SANDIEGO/2025/unit_1024-20250224/data/processed-L1/unit_1024-20250224_grid-delayed-5m.nc'>gridded-5m</a>
+  gcp_link_imgcsv: ''
+  gcp_dir_link_plots: <a href='https://console.cloud.google.com/storage/browser/amlr-gliders-deployments-dev/SANDIEGO/2025/unit_1024-20250224/plots/delayed'>plots</a>
+  gcp_dir_link_glider: <a href='https://console.cloud.google.com/storage/browser/amlr-gliders-deployments-dev/SANDIEGO/2025/unit_1024-20250224/data/processed-L1'>glider</a>
+  gcp_dir_link_acoustics: ''
+  gcp_dir_link_imagery: ''
+- Glider: risso
+  Start: '2025-04-14'
+  End: '2025-04-28'
+  Project: SANDIEGO
+  Region: CCE
+  Sensors: CTD, Ecopuck, Optode, PAR, DMON
+  Deployment_Name: risso-20250414
+  report_link: ''
+  ERDDAP_link: ''
+  gcp_link_tssci: <a href='https://storage.cloud.google.com/amlr-gliders-deployments-dev/SANDIEGO/2025/risso-20250414/data/processed-L1/risso-20250414-delayed-sci.nc'>timeseries-sci</a>
+  gcp_link_gr5: <a href='https://storage.cloud.google.com/amlr-gliders-deployments-dev/SANDIEGO/2025/risso-20250414/data/processed-L1/risso-20250414_grid-delayed-5m.nc'>gridded-5m</a>
+  gcp_link_imgcsv: ''
+  gcp_dir_link_plots: <a href='https://console.cloud.google.com/storage/browser/amlr-gliders-deployments-dev/SANDIEGO/2025/risso-20250414/plots/delayed'>plots</a>
+  gcp_dir_link_glider: <a href='https://console.cloud.google.com/storage/browser/amlr-gliders-deployments-dev/SANDIEGO/2025/risso-20250414/data/processed-L1'>glider</a>
+  gcp_dir_link_acoustics: ''
+  gcp_dir_link_imagery: ''
+- Glider: stenella
+  Start: '2025-04-14'
+  End: '2025-04-28'
+  Project: SANDIEGO
+  Region: CCE
+  Sensors: CTD, Ecopuck, Optode, PAR, WISPR
+  Deployment_Name: stenella-20250414
+  report_link: ''
+  ERDDAP_link: ''
+  gcp_link_tssci: <a href='https://storage.cloud.google.com/amlr-gliders-deployments-dev/SANDIEGO/2025/stenella-20250414/data/processed-L1/stenella-20250414-delayed-sci.nc'>timeseries-sci</a>
+  gcp_link_gr5: <a href='https://storage.cloud.google.com/amlr-gliders-deployments-dev/SANDIEGO/2025/stenella-20250414/data/processed-L1/stenella-20250414_grid-delayed-5m.nc'>gridded-5m</a>
+  gcp_link_imgcsv: ''
+  gcp_dir_link_plots: <a href='https://console.cloud.google.com/storage/browser/amlr-gliders-deployments-dev/SANDIEGO/2025/stenella-20250414/plots/delayed'>plots</a>
+  gcp_dir_link_glider: <a href='https://console.cloud.google.com/storage/browser/amlr-gliders-deployments-dev/SANDIEGO/2025/stenella-20250414/data/processed-L1'>glider</a>
+  gcp_dir_link_acoustics: ''
+  gcp_dir_link_imagery: ''
+- Glider: calanus
+  Start: '2025-06-17'
+  End: '2025-06-26'
+  Project: ECOSWIM
+  Region: CCE
+  Sensors: CTD, Ecopuck, Optode, Nortek
+  Deployment_Name: calanus-20250617
+  report_link: ''
+  ERDDAP_link: ''
+  gcp_link_tssci: <a href='https://storage.cloud.google.com/amlr-gliders-deployments-dev/ECOSWIM/2025/calanus-20250617/data/processed-L1/calanus-20250617-delayed-sci.nc'>timeseries-sci</a>
+  gcp_link_gr5: <a href='https://storage.cloud.google.com/amlr-gliders-deployments-dev/ECOSWIM/2025/calanus-20250617/data/processed-L1/calanus-20250617_grid-delayed-5m.nc'>gridded-5m</a>
+  gcp_link_imgcsv: ''
+  gcp_dir_link_plots: <a href='https://console.cloud.google.com/storage/browser/amlr-gliders-deployments-dev/ECOSWIM/2025/calanus-20250617/plots/delayed'>plots</a>
+  gcp_dir_link_glider: <a href='https://console.cloud.google.com/storage/browser/amlr-gliders-deployments-dev/ECOSWIM/2025/calanus-20250617/data/processed-L1'>glider</a>
+  gcp_dir_link_acoustics: <a href='https://console.cloud.google.com/storage/browser/amlr-gliders-acoustics-dev/ECOSWIM/2025/calanus-20250617'>acoustics</a>
+  gcp_dir_link_imagery: ''

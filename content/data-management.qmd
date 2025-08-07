@@ -4,14 +4,15 @@ title: Data Management
 
 Glider data management is a complex endeavor. Gliders contain many moving parts, and can collect over a terabyte of data in a single deployment. This page outlines the ESD glider data management efforts, including directory structures and storage locations for different types of data.
 
-This page provides the in-the-weeds data management details, which will likely only be relevant for ESD glider lab members. Users looking for more general information about glider data products should go to the data type pages (links todo). 
+This page provides the in-the-weeds data management details, which will likely only be relevant for ESD glider lab members. Users looking for more general information about glider data products should go to the respective data type pages via the sidebar menu. 
 
 ## Quick Links
 
-Google Drive (NOAA internal only) :
+Google Drive (NOAA internal) :
 
 - [AMLR Gliders](https://drive.google.com/drive/folders/1wv2wGgWco_3heUR7JPVMc3KLGFCzkcBT) 
-- [ESD glider data locations](https://docs.google.com/presentation/d/1ccMxCOCY8buNoaoQmLMc1iFEqeswLgAp895v6F202Og/edit?usp=sharing)
+- [ESD glider data locations slides](https://docs.google.com/presentation/d/1ccMxCOCY8buNoaoQmLMc1iFEqeswLgAp895v6F202Og/edit?usp=sharing)
+- [AMLR Gliders Photos](https://photos.app.goo.gl/aKpRbVCKkJTkfcQ69)
 
 Google Cloud Storage (GCS) buckets:
 
@@ -19,17 +20,18 @@ Google Cloud Storage (GCS) buckets:
 - [Acoustics](https://console.cloud.google.com/storage/browser/amlr-gliders-acoustics-dev)
 - [Raw imagery](https://console.cloud.google.com/storage/browser/amlr-gliders-imagery-raw-dev)
 - [Pre-processed imagery](https://console.cloud.google.com/storage/browser/amlr-gliders-imagery-proc-dev) (Images pre-processed by Randy's code)
-- In progress: a Shiny app or some other tool for users to use to get to GCS bucket URL for a particular piece of data
 
-Glider & Mooring Database
+For direct links to existing ESD glider data stored in GCS buckets, see the [Deployments](deployments.qmd) page.
 
-- [Database access and use](https://docs.google.com/document/d/1mKMjSfp_QYXo66buBBd0NiJ7NqUk52FV95NxSW766Vc/edit?usp=sharing) (NOAA only)
+Glider & Mooring Database:
+
+- [Database access and use](https://docs.google.com/document/d/1mKMjSfp_QYXo66buBBd0NiJ7NqUk52FV95NxSW766Vc/edit?usp=sharing) (NOAA internal)
 
 ## Data Management Plan
 
 This section describes what files go where, as well as required directory structures. It replaces the [AMLR Glider Data Management Plan](https://docs.google.com/document/d/1dW5ZdkOpTz59xy4xs8ypVOvGLWBYZMdlbwGJty4PTV0/edit?usp=sharing) Google doc. 
 
-[These slides](https://docs.google.com/presentation/d/1ccMxCOCY8buNoaoQmLMc1iFEqeswLgAp895v6F202Og/edit?usp=sharing) (NOAA internal only) describe and link to the various homes for different pieces of ESD glider data, for additional references. Several of these data homes are described in more detail below.
+[These slides](https://docs.google.com/presentation/d/1ccMxCOCY8buNoaoQmLMc1iFEqeswLgAp895v6F202Og/edit?usp=sharing) (NOAA internal) describe and link to the various homes for different pieces of ESD glider data, for additional references. Several of these data homes are described in more detail below.
 
 ### Glider & Mooring Database
 
@@ -41,7 +43,7 @@ For this database, 'device' means any piece of glider, instrument, mooring, etc,
 
 All new devices should be added to the database as soon as they arrive at the SWFSC. Created devices can then be added to a glider build, to track which devices were part of which deployments.
 
-Note: Currently there is no way to track software versions of a 'device' in the database. Some of this info is tracked via the [Fleet Status](https://docs.google.com/spreadsheets/d/1tB3QNKYx8qOYYS9QZotekBAx0y-_n2d-EZPjFFdYNuU/edit?usp=sharing) page (NOAA internal only), but it should be formally added to the database as time permits.
+Note: Currently there is no way to track software versions of a 'device' in the database. Some of this info is tracked via the [Fleet Status](https://docs.google.com/spreadsheets/d/1tB3QNKYx8qOYYS9QZotekBAx0y-_n2d-EZPjFFdYNuU/edit?usp=sharing) page (NOAA internal), but it should be formally added to the database as time permits.
 
 #### Gliders
 
@@ -61,32 +63,40 @@ Other files associated with a deployment (e.g., autoexec and proglet files, or c
 
 ### AMLR Gliders Google Drive
 
-The [AMLR Gliders Google Drive](https://drive.google.com/drive/folders/1wv2wGgWco_3heUR7JPVMc3KLGFCzkcBT?usp=drive_link) ... {full description todo}
+The [AMLR Gliders Google Drive](https://drive.google.com/drive/folders/1wv2wGgWco_3heUR7JPVMc3KLGFCzkcBT?usp=drive_link) is the home for 'Glider prep' files that we a) want to be able to access from a glider lab computer or b) want multiple people to be able to edit. Currently these are primarily files from the glider build and testing (e.g., tech tank dive data)
+
 
 #### Glider Deployments
 
-The [Glider Deployments](https://drive.google.com/drive/folders/1qfKMxXH0hUhbmOp8aESidz-YO3IPxWM3?usp=drive_link) folder is for working files during both deployment prep, and the deployment itself. It provides an easy place (i.e., easier than Google Cloud) for ESD glider team members to collaborate on and refer to different files. These files live in 'GDrive deployment folders'; the Glider Deployments folder contains GDrive folder templates. After the deployment it is downloaded and uploaded to GCP. 
+The [Glider Deployments](https://drive.google.com/drive/folders/1qfKMxXH0hUhbmOp8aESidz-YO3IPxWM3?usp=drive_link) folder is for working files during both deployment prep, and the deployment itself. It provides an easy place (i.e., easier than Google Cloud) for ESD glider team members to collaborate on and refer to different files. These files live in 'GDrive deployment prep folders'; the Glider Deployments folder contains GDrive folder templates. 
 
-The structure of an individual GDrive deployment folder:
+For new deployments, a template exists in the [Templates](https://drive.google.com/drive/folders/10QGrMjwwr5uZ-AISQtSBo0Hsm2zGnq0i?usp=drive_link) folder. 
+
+The structure of an individual GDrive deployment prep folder:
 
 ```
-glider-YYYYmmdd
+glider-YYYYmmdd-prep
+├── acoustic-prep
+├── deployment-files
+├── glider-prep
+    ├── final-seal-photos
+    ├── functional-checkout-data
+    ├── tech-tank-data
+├── imagery-prep
 ├── photos
-├── prep
-    ├── functional-checkout
-    ├── acoustic-prep
-    ├── imagery-prep
 ```
 
-**photos**: folder with relevant photos. These could include photos of the glider seal, or photos of the glider deployment and recovery. 
 
-**prep** Folders and files from the glider prep. In addition to the folders described below, the 'prep' folder may include the ballast sheet, or compass calibration files.
+- acoustic-prep: acoustic prep files from pre-deployment tests. These may include sample data files, relevant tests, etc.
+- deployment-files: a catch-all folder for other files from the deployment
+- glider-prep Folders and files from the glider prep. In addition to the folders described below, the 'prep' folder may include the ballast sheet, or compass calibration files.
+    - final-seal-photos: photos of the final seals of the glider
+    - functional-checkout-data: functional checkout sheet, data files from test tank dive, and any other files/notes from the functional checkout
+    - tech-tank-data: data files from the tech tank, if relevant
+- imagery-prep: imagery (camera) prep files from pre-deployment tests. These may include sample images, relevant tests, etc.
+- photos: folder for miscellaneous photos. These could include photos of the glider seal, or photos of the glider deployment and recovery. 
 
-- **functional-checkout**: functional checkout sheet, data files from test tank dive, and any other files/notes from the functional checkout
-- **acoustic-prep**: acoustic prep files from pre-deployment tests. These may include sample data files, relevant tests, etc.
-- **imagery-prep**: imagery (camera) prep files from pre-deployment tests. These may include sample images, relevant tests, etc.
-
-Miscellaneous files that should stay associated with the deployment can go directly in the GDrive glider-YYYYmmdd folder. 
+Miscellaneous files that should stay associated with the deployment, but do not belong in the GCS buckets, can go directly in the GDrive glider-YYYYmmdd-prep folder. 
 
 ###  glider-lab repository
 
@@ -102,7 +112,7 @@ See the [repo readme](https://github.com/SWFSC/glider-lab/blob/main/README.md) f
 
 ###  standard-glider-files repository
 
-The [standard-glider-files](https://github.com/SWFSC/standard-glider-files) repository contains standard files that are put on ESD gliders before deployment. This repo and these files are also commonly used during ESD lab tests.
+The [standard-glider-files](https://github.com/SWFSC/standard-glider-files) repository is the home for both all ESD glider cache files, and standard files that are put on ESD gliders before deployment. This repo and these files are also commonly used during ESD lab tests.
 
 ### GCS Buckets
 
@@ -112,14 +122,18 @@ Data processing code depends on a specific directory structure, and thus it is i
 - **YYYY**: Within each project folder are year folders, of the format YYYY (e.g., "2025"). For FREEBYRD (i.e., Antarctic) deployments, the January year is used. For instance, a glider deployed deployed in Dec 2022 will be in the 'FREEBYRD/2023' directory.
 - **glider-YYYYmmdd**: Within each year folder are deployment folders. The deployment folders all follow the same naming convention: 'glider-YYYYmmdd', where 'glider' is the name of the glider and 'YYYYmmdd' is the deployment date. For example, the folder name for the glider calanus that was deployed on 19 Oct 2024 is "calanus-20241019".
 
+For new deployments, a template folder structure for uploading data to GCP exists in the [Templates](https://drive.google.com/drive/folders/10QGrMjwwr5uZ-AISQtSBo0Hsm2zGnq0i?usp=drive_link) folder. 
+
 GCS buckets are only accessible to individuals with a noaa.gov email address that have been added to the GCP project as a data viewer. To access data in GCS buckets, please contact [Sam Woodman](mailto:sam.woodman@noaa.gov). 
 
 Each section below corresponds to an individual GCS bucket. They begin with a directory outline, followed by text that explains each directory. Principles that are consistent across buckets include:
 
-- Several folders contain "delayed" and "rt" subfolders. Delayed mode data were collected or generated after the glider was recovered, while rt (i.e., realtime) data were transmitted or generated while the glider was deployed.
+- Several folders contain "delayed" and "rt" subfolders. Delayed mode data were collected or generated after the glider was recovered, while rt (i.e., real-time) data were transmitted or generated while the glider was deployed.
 - Several folders contain an 'ngdac' subfolder. This subfolder contains NetCDF files formatted for submission to the [IOOS Glider DAC](https://ioos.github.io/ioosngdac/index.html). The DAC requires one NetCDF file for each profile, hence the subfolder.
 
 #### Deployments
+
+NOTE: currently, cache files are stored in both [standard-glider-files](https://github.com/SWFSC/standard-glider-files), and [GCP](https://console.cloud.google.com/storage/browser/amlr-gliders-deployments-dev/cache). In the future, cache files will only be stored in the standard-glider-files repo.
 
 The structure of an individual deployment folder, located in the [Deployments](https://console.cloud.google.com/storage/browser/amlr-gliders-deployments-dev) bucket under a 'PROJECT/YYYY/glider-YYYYmmdd' path:
 
@@ -162,7 +176,7 @@ The structure of an individual deployment folder, located in the [Deployments](h
 - **processed-L1**: "Level 1" processed data and data products. "Level 1" means that these data products were created by the esdglider/pyglider base processing functions (link TODO) using delayed mode data. In other words, the dbd/ebd files were used as input data, and there was minimal data qa/qc or corrections performed.
 - **processed-L2**: "Level 2" processed data and data products. "Level 2" means that the data has undergone additional qa/qc and/or processing, beyond what is performed during base processing. Due to lack of personnel, at this time most ESD glider deployments will not have level 2 processed data.
 
-**plots**: Standard plots generated from either the 'processed-rt' (subfolder 'rt') or 'processed-L1' data (subfolder 'delayed'). Note that 'sci' is short for plots of science sensor values, while 'eng' is short for plots of engineering variables. See [plots](glider-data.qmd#plots) for descriptions of the various folders.
+**plots**: Standard plots generated from either the 'processed-rt' (subfolder 'rt') or 'processed-L1' data (subfolder 'delayed'). Note that 'sci' is short for plots of science sensor values, while 'eng' is short for plots of engineering variables. See [plots](slocum-glider-data.qmd#plots) for descriptions of the various folders.
 
 #### Acoustics
 
@@ -198,7 +212,9 @@ The structure of an individual deployment folder for raw imagery, for shadowgrap
 ├── metadata
 ```
 
-**images**: All imagery collected during the deployment. These images will be in their 'Dir####' folders, as they were recorded on the imagery cards.
+**images**: All imagery collected during the deployment. These images will be in their 'Dir####' folders, as they were recorded on the imagery cards. 
+
+NOTE: currently, there is a space most/all image names. This feature is hardcoded into the camera software by WASSOC (the camera developer). This space will be removed before upload for all future images, and eventually removed for all currently uploaded images.
 
 **config**: config file(s) used during the deployment
 
