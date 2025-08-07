@@ -8,7 +8,7 @@ This page provides the in-the-weeds data management details, which will likely o
 
 ## Quick Links
 
-Google Drive (NOAA internal only) :
+Google Drive (NOAA internal) :
 
 - [AMLR Gliders](https://drive.google.com/drive/folders/1wv2wGgWco_3heUR7JPVMc3KLGFCzkcBT) 
 - [ESD glider data locations slides](https://docs.google.com/presentation/d/1ccMxCOCY8buNoaoQmLMc1iFEqeswLgAp895v6F202Og/edit?usp=sharing)
@@ -25,13 +25,13 @@ For direct links to existing ESD glider data stored in GCS buckets, see the [Dep
 
 Glider & Mooring Database:
 
-- [Database access and use](https://docs.google.com/document/d/1mKMjSfp_QYXo66buBBd0NiJ7NqUk52FV95NxSW766Vc/edit?usp=sharing) (NOAA only)
+- [Database access and use](https://docs.google.com/document/d/1mKMjSfp_QYXo66buBBd0NiJ7NqUk52FV95NxSW766Vc/edit?usp=sharing) (NOAA internal)
 
 ## Data Management Plan
 
 This section describes what files go where, as well as required directory structures. It replaces the [AMLR Glider Data Management Plan](https://docs.google.com/document/d/1dW5ZdkOpTz59xy4xs8ypVOvGLWBYZMdlbwGJty4PTV0/edit?usp=sharing) Google doc. 
 
-[These slides](https://docs.google.com/presentation/d/1ccMxCOCY8buNoaoQmLMc1iFEqeswLgAp895v6F202Og/edit?usp=sharing) (NOAA internal only) describe and link to the various homes for different pieces of ESD glider data, for additional references. Several of these data homes are described in more detail below.
+[These slides](https://docs.google.com/presentation/d/1ccMxCOCY8buNoaoQmLMc1iFEqeswLgAp895v6F202Og/edit?usp=sharing) (NOAA internal) describe and link to the various homes for different pieces of ESD glider data, for additional references. Several of these data homes are described in more detail below.
 
 ### Glider & Mooring Database
 
@@ -43,7 +43,7 @@ For this database, 'device' means any piece of glider, instrument, mooring, etc,
 
 All new devices should be added to the database as soon as they arrive at the SWFSC. Created devices can then be added to a glider build, to track which devices were part of which deployments.
 
-Note: Currently there is no way to track software versions of a 'device' in the database. Some of this info is tracked via the [Fleet Status](https://docs.google.com/spreadsheets/d/1tB3QNKYx8qOYYS9QZotekBAx0y-_n2d-EZPjFFdYNuU/edit?usp=sharing) page (NOAA internal only), but it should be formally added to the database as time permits.
+Note: Currently there is no way to track software versions of a 'device' in the database. Some of this info is tracked via the [Fleet Status](https://docs.google.com/spreadsheets/d/1tB3QNKYx8qOYYS9QZotekBAx0y-_n2d-EZPjFFdYNuU/edit?usp=sharing) page (NOAA internal), but it should be formally added to the database as time permits.
 
 #### Gliders
 
@@ -63,7 +63,8 @@ Other files associated with a deployment (e.g., autoexec and proglet files, or c
 
 ### AMLR Gliders Google Drive
 
-The [AMLR Gliders Google Drive](https://drive.google.com/drive/folders/1wv2wGgWco_3heUR7JPVMc3KLGFCzkcBT?usp=drive_link) ... {full description todo}
+The [AMLR Gliders Google Drive](https://drive.google.com/drive/folders/1wv2wGgWco_3heUR7JPVMc3KLGFCzkcBT?usp=drive_link) is the home for 'Glider prep' files that we a) want to be able to access from a glider lab computer or b) want multiple people to be able to edit. Currently these are primarily files from the glider build and testing (e.g., tech tank dive data)
+
 
 #### Glider Deployments
 
@@ -127,7 +128,7 @@ GCS buckets are only accessible to individuals with a noaa.gov email address tha
 
 Each section below corresponds to an individual GCS bucket. They begin with a directory outline, followed by text that explains each directory. Principles that are consistent across buckets include:
 
-- Several folders contain "delayed" and "rt" subfolders. Delayed mode data were collected or generated after the glider was recovered, while rt (i.e., realtime) data were transmitted or generated while the glider was deployed.
+- Several folders contain "delayed" and "rt" subfolders. Delayed mode data were collected or generated after the glider was recovered, while rt (i.e., real-time) data were transmitted or generated while the glider was deployed.
 - Several folders contain an 'ngdac' subfolder. This subfolder contains NetCDF files formatted for submission to the [IOOS Glider DAC](https://ioos.github.io/ioosngdac/index.html). The DAC requires one NetCDF file for each profile, hence the subfolder.
 
 #### Deployments

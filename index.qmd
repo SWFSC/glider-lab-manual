@@ -26,7 +26,7 @@ The ESD glider team is using GitHub Issues and Projects for project management. 
 
 The [ESD glider team project](https://github.com/orgs/SWFSC/projects/5/views/1){target="_blank"} pulls from issues from several repositories, but in particular the [SWFSC/glider-lab repo](https://github.com/SWFSC/glider-lab){target="_blank"}. For more details see the [best practices](content/best-practices.qmd) page.
 
-For most current Fleet Status information, see [this Sheet](https://docs.google.com/spreadsheets/d/1tB3QNKYx8qOYYS9QZotekBAx0y-_n2d-EZPjFFdYNuU/edit?usp=sharing){target="_blank"} (NOAA internal only)
+For most current Fleet Status information, see [this Sheet](https://docs.google.com/spreadsheets/d/1tB3QNKYx8qOYYS9QZotekBAx0y-_n2d-EZPjFFdYNuU/edit?usp=sharing){target="_blank"} (NOAA internal)
 
 ### GitHub Repositories
 
