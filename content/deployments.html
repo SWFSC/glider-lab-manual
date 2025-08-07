@@ -2,7 +2,7 @@
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
 
 <meta charset="utf-8">
-<meta name="generator" content="quarto-1.7.32">
+<meta name="generator" content="quarto-1.7.33">
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
@@ -35,14 +35,14 @@ ul.task-list li input[type="checkbox"] {
 <script src="../site_libs/quarto-html/tippy.umd.min.js"></script>
 <script src="../site_libs/quarto-html/anchor.min.js"></script>
 <link href="../site_libs/quarto-html/tippy.css" rel="stylesheet">
-<link href="../site_libs/quarto-html/quarto-syntax-highlighting-37eea08aefeeee20ff55810ff984fec1.css" rel="stylesheet" class="quarto-color-scheme" id="quarto-text-highlighting-styles">
-<link href="../site_libs/quarto-html/quarto-syntax-highlighting-dark-2fef5ea3f8957b3e4ecc936fc74692ca.css" rel="stylesheet" class="quarto-color-scheme quarto-color-alternate" id="quarto-text-highlighting-styles">
-<link href="../site_libs/quarto-html/quarto-syntax-highlighting-37eea08aefeeee20ff55810ff984fec1.css" rel="stylesheet" class="quarto-color-scheme-extra" id="quarto-text-highlighting-styles">
+<link href="../site_libs/quarto-html/quarto-syntax-highlighting-ea385d0e468b0dd5ea5bf0780b1290d9.css" rel="stylesheet" class="quarto-color-scheme" id="quarto-text-highlighting-styles">
+<link href="../site_libs/quarto-html/quarto-syntax-highlighting-dark-bc185b5c5bdbcb35c2eb49d8a876ef70.css" rel="stylesheet" class="quarto-color-scheme quarto-color-alternate" id="quarto-text-highlighting-styles">
+<link href="../site_libs/quarto-html/quarto-syntax-highlighting-ea385d0e468b0dd5ea5bf0780b1290d9.css" rel="stylesheet" class="quarto-color-scheme-extra" id="quarto-text-highlighting-styles">
 <script src="../site_libs/bootstrap/bootstrap.min.js"></script>
 <link href="../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="../site_libs/bootstrap/bootstrap-415af80b9251e762d6fac308c5d7446a.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme" id="quarto-bootstrap" data-mode="light">
-<link href="../site_libs/bootstrap/bootstrap-dark-894000b0ab7b91f01332d20673007561.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme quarto-color-alternate" id="quarto-bootstrap" data-mode="dark">
-<link href="../site_libs/bootstrap/bootstrap-415af80b9251e762d6fac308c5d7446a.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme-extra" id="quarto-bootstrap" data-mode="light">
+<link href="../site_libs/bootstrap/bootstrap-9f8fe30c0596ce76f31474f68382ded0.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme" id="quarto-bootstrap" data-mode="light">
+<link href="../site_libs/bootstrap/bootstrap-dark-5b77044b0eb18db3dd5d031f3c45cf95.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme quarto-color-alternate" id="quarto-bootstrap" data-mode="dark">
+<link href="../site_libs/bootstrap/bootstrap-9f8fe30c0596ce76f31474f68382ded0.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme-extra" id="quarto-bootstrap" data-mode="light">
 <script id="quarto-search-options" type="application/json">{
   "location": "sidebar",
   "copy-button": false,
@@ -70,6 +70,16 @@ ul.task-list li input[type="checkbox"] {
     "search-label": "Search"
   }
 }</script>
+<link href="../site_libs/htmltools-fill-0.5.8.1/fill.css" rel="stylesheet">
+<script src="../site_libs/htmlwidgets-1.6.4/htmlwidgets.js"></script>
+<link href="../site_libs/datatables-css-0.0.0/datatables-crosstalk.css" rel="stylesheet">
+<script src="../site_libs/datatables-binding-0.33/datatables.js"></script>
+<script src="../site_libs/jquery-3.6.0/jquery-3.6.0.min.js"></script>
+<link href="../site_libs/dt-core-1.13.6/css/jquery.dataTables.min.css" rel="stylesheet">
+<link href="../site_libs/dt-core-1.13.6/css/jquery.dataTables.extra.css" rel="stylesheet">
+<script src="../site_libs/dt-core-1.13.6/js/jquery.dataTables.min.js"></script>
+<link href="../site_libs/crosstalk-1.2.1/css/crosstalk.min.css" rel="stylesheet">
+<script src="../site_libs/crosstalk-1.2.1/js/crosstalk.min.js"></script>
 
 
 </head>
@@ -338,14 +348,14 @@ ul.task-list li input[type="checkbox"] {
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../content/glider-data.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">Glider Data</span></a>
+  <a href="../content/slocum-glider-data.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Slocum Glider Data</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="../content/active-acoustics.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">Acoustics</span></a>
+ <span class="menu-text">Active Acoustics</span></a>
   </div>
 </li>
           <li class="sidebar-item">
@@ -372,11 +382,10 @@ ul.task-list li input[type="checkbox"] {
     <h2 id="toc-title">On this page</h2>
    
   <ul>
-  <li><a href="#projects" id="toc-projects" class="nav-link active" data-scroll-target="#projects">Projects</a></li>
-  <li><a href="#deployments" id="toc-deployments" class="nav-link" data-scroll-target="#deployments">Deployments</a>
-  <ul>
+  <li><a href="#table" id="toc-table" class="nav-link active" data-scroll-target="#table">Table</a></li>
+  <li><a href="#table-columns" id="toc-table-columns" class="nav-link" data-scroll-target="#table-columns">Table Columns</a></li>
   <li><a href="#data-links" id="toc-data-links" class="nav-link" data-scroll-target="#data-links">Data Links</a></li>
-  </ul></li>
+  <li><a href="#projects" id="toc-projects" class="nav-link" data-scroll-target="#projects">Projects</a></li>
   </ul>
 <div class="toc-actions"><ul><li><a href="https://github.com/SWFSC/glider-lab-manual/edit/main/content/deployments.qmd" class="toc-action"><i class="bi bi-github"></i>Edit this page</a></li><li><a href="https://github.com/SWFSC/glider-lab-manual/blob/main/content/deployments.qmd" class="toc-action"><i class="bi empty"></i>View source</a></li><li><a href="https://github.com/SWFSC/glider-lab-manual/issues/new" class="toc-action"><i class="bi empty"></i>Report an issue</a></li></ul></div></nav>
     </div>
@@ -403,6 +412,52 @@ ul.task-list li input[type="checkbox"] {
 </header>
 
 
+<section id="table" class="level2">
+<h2 class="anchored" data-anchor-id="table">Table</h2>
+<p>The below table lists all ESD (and formerly AERD) glider deployments, both in-progress and past, along with basic information about the deployment. The table also includes links to post-deployment reports and data files, where they exist.</p>
+<p>Users can use the Search box at the top right of the table (you may have to scroll to the right) to filter the table for rows that contain the entered text. For instance, enter “calanus” to filter for all deployments of the glider calanus.</p>
+<p>See the <a href="https://docs.google.com/spreadsheets/d/1tB3QNKYx8qOYYS9QZotekBAx0y-_n2d-EZPjFFdYNuU/edit?usp=sharing">Fleet Status sheet</a> (NOAA internal) for more detailed ESD glider fleet and deployment details.</p>
+<div class="cell">
+<div class="cell-output-display">
+<div class="datatables html-widget html-fill-item" id="htmlwidget-549de24542052a03cbfc" style="width:100%;height:auto;"></div>
+<script type="application/json" data-for="htmlwidget-549de24542052a03cbfc">{"x":{"filter":"none","vertical":false,"caption":"<caption style=\"caption-side: top; text-align: left;\">Glider deployments performed by the ESD<\/caption>","data":[["calanus","risso","stenella","unit_1024","AMLR01","AMLR08","calanus","george","AMLR01","AMLR08","george","john","ringo","AMLR03","AMLR04","AMLR03","AMLR04","AMLR04","AMLR06","AMLR07","AMLR07","AMLR03","AMLR08","AMLR08","AMLR03","AMLR06","AMLR03","AMLR05","AMLR01","AMLR05","AMLR01","AMLR01","AMLR02","AMLR03","AMLR04","AMLR01","AMLR02","AMLR02","AMLR02","AMLR01","AMLR01","AMLR02"],["2025-06-17","2025-04-14","2025-04-14","2025-02-24","2024-11-20","2024-11-20","2024-10-19","2024-09-07","2024-07-24","2024-07-24","2024-05-30","2024-03-12","2024-03-12","2023-11-28","2023-11-28","2023-06-20","2023-06-20","2022-12-05","2022-12-05","2022-12-04","2022-10-25","2022-05-13","2022-05-13","2022-05-04","2022-04-25","2022-04-25","2022-03-07","2021-11-24","2021-11-21","2021-07-20","2019-12-16","2019-12-06","2019-12-06","2019-12-06","2019-07-23","2018-12-16","2018-12-11","2018-07-17","2018-05-30","2018-05-23","2018-04-25","2018-04-18"],["2025-06-26","2025-04-28","2025-04-28","2025-02-26","2025-01-02","2024-11-24","2024-11-16","2024-09-11","2024-07-24","2024-07-24","2024-06-22","2024-04-03","2024-03-15","2024-01-27","2024-01-27","2023-06-23","2023-06-23","2023-02-13","2023-02-13","2022-12-28","2022-10-27","2022-05-16","2022-05-16","2022-05-04","2022-04-29","2022-04-29","2022-03-11","2021-12-15","2021-12-18","2021-07-26","2020-03-12","2019-12-08","2020-03-12","2020-03-12","2019-07-31","2019-03-08","2019-03-08","2018-07-24","2018-06-07","2018-06-07","2018-04-27","2018-04-19"],["CCE","CCE","CCE","CCE","Antarctic","Antarctic","CCE","CCE","CCE","CCE","CCE","CCE","CCE","Antarctic","Antarctic","CCE","CCE","Antarctic","Antarctic","Antarctic","CCE","CCE","CCE","CCE","CCE","CCE","CCE","Antarctic","Antarctic","CCE","Antarctic",null,"Antarctic","Antarctic","CCE","Antarctic","Antarctic","CCE","CCE","CCE","CCE","CCE"],["CTD, Ecopuck, Optode, Nortek","CTD, Ecopuck, Optode, PAR, DMON","CTD, Ecopuck, Optode, PAR, WISPR","CTD, Ecopuck, PAR, WISPR","CTD, Ecopuck, Optode, AZFP","CTD, Ecopuck, Optode, Nortek","CTD, Ecopuck, Optode, Nortek","CTD, Ecopuck, Optode, Shadowgraph-narrow","CTD, Ecopuck, Optode, AZFP","CTD, Ecopuck, Optode, Nortek","CTD, Optode, Shadowgraph-narrow","CTD, Optode, Nortek, Shadowgraph-wide","CTD, Optode, Nortek, Shadowgraph-wide","CTD, Ecopuck, Optode, Nortek, Glidercam","CTD, Ecopuck, Optode, Nortek, Glidercam","CTD, Ecopuck, Optode, Nortek, Glidercam","CTD, Ecopuck, Optode, Nortek, Glidercam","CTD, Ecopuck, Optode, Nortek, Glidercam","CTD, Ecopuck, Optode, AZFP, Glidercam","CTD, Ecopuck, Optode, Nortek, Shadowgraph-narrow","CTD, Ecopuck, Optode, Nortek, Shadowgraph-narrow","CTD, Ecopuck, Optode, Nortek, Glidercam","CTD, Ecopuck, Optode, Nortek, Shadowgraph-narrow","CTD, Ecopuck, Optode, Nortek, Shadowgraph-narrow","CTD, Ecopuck, Optode, Nortek, Glidercam","CTD, Ecopuck, Optode, AZFP, Glidercam","CTD, Ecopuck, Optode, Nortek, Glidercam","CTD, Ecopuck, Optode, AZFP","CTD, Ecopuck, Optode, AZFP","CTD, Ecopuck, Optode, AZFP","CTD, Ecopuck, Optode, AZFP","CTD, Ecopuck, Optode, AZFP","CTD, Ecopuck, Optode, AZFP","CTD, Ecopuck, Optode, AZFP","CTD, Ecopuck, Optode, AZFP","CTD, Ecopuck, Optode, AZFP","CTD, Ecopuck, Optode, AZFP","CTD, Ecopuck, Optode, AZFP","CTD, Ecopuck, Optode, AZFP","CTD, Ecopuck, Optode, AZFP","CTD, Ecopuck, Optode, AZFP","CTD, Ecopuck, Optode, AZFP"],["<a href='https://docs.google.com/document/d/1crniFu6WVACCfgD_7a6VqYcbG61CWJo3-jYNb1zoH6A/edit?usp=sharing'>link<\/a>","<a href='https://docs.google.com/document/d/1JWkHtAoQar3fr0TLmKJT9VI5O5IqFkpEw4G_07ZFRts/edit?usp=drive_link'>link<\/a>","<a href='https://docs.google.com/document/d/11aBBLY6xJhdd2vDwuhdBLK3SVcPaqnxbkMR-Fn0rgy0/edit?usp=drive_link'>link<\/a>","<a href='https://docs.google.com/document/d/1LQ9ch1gEuHtHEUbC7dymbtm9UlZu6IaePKbmLpKTlyU/edit?usp=sharing'>link<\/a>","<a href='https://docs.google.com/document/d/128D2a0Ud2Kda5JwIYVhN9An4CFT6KxdGoqS1RsHKtQ0/edit?usp=sharing'>link<\/a>","<a href='https://docs.google.com/document/d/1Bk2CQeC6dT7OtOInGbB85aCiE3qmz_S4JvjbNHziKyQ/edit?usp=sharing'>link<\/a>","<a href='https://github.com/SWFSC/glider-lab/blob/main/deployment-reports/calanus-20241019.html'>link<\/a>","<a href='https://docs.google.com/document/d/12hNl6ZtEIISh4vlJcOJgK1RHsloGIa98WKf5xpjIq0U/edit?usp=sharing'>link<\/a>",null,null,"<a href='https://docs.google.com/document/d/1MDVbBDjK2UvHjLFQ35nzniC-R7YycM6SZr0ymEFvapw/edit?usp=sharing'>link<\/a>","<a href='https://docs.google.com/document/d/1szQ7tV5stz8fyuNzF05jM1zxUQmkAwQxzZcmHGlDgwg/edit?usp=sharing'>link<\/a>","<a href='https://docs.google.com/document/d/12iSPkBChPjtPFbFQxX2hCopga3hvBr91qH1kJW_w5sw/edit?usp=sharing'>link<\/a>",null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null],[null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null],["<a href='https://storage.cloud.google.com/amlr-gliders-deployments-dev/ECOSWIM/2025/calanus-20250617/data/processed-L1/calanus-20250617-delayed-sci.nc'>timeseries-sci<\/a> | <a href='https://storage.cloud.google.com/amlr-gliders-deployments-dev/ECOSWIM/2025/calanus-20250617/data/processed-L1/calanus-20250617_grid-delayed-5m.nc'>gridded-5m<\/a>","<a href='https://storage.cloud.google.com/amlr-gliders-deployments-dev/SANDIEGO/2025/risso-20250414/data/processed-L1/risso-20250414-delayed-sci.nc'>timeseries-sci<\/a> | <a href='https://storage.cloud.google.com/amlr-gliders-deployments-dev/SANDIEGO/2025/risso-20250414/data/processed-L1/risso-20250414_grid-delayed-5m.nc'>gridded-5m<\/a>","<a href='https://storage.cloud.google.com/amlr-gliders-deployments-dev/SANDIEGO/2025/stenella-20250414/data/processed-L1/stenella-20250414-delayed-sci.nc'>timeseries-sci<\/a> | <a href='https://storage.cloud.google.com/amlr-gliders-deployments-dev/SANDIEGO/2025/stenella-20250414/data/processed-L1/stenella-20250414_grid-delayed-5m.nc'>gridded-5m<\/a>","<a href='https://storage.cloud.google.com/amlr-gliders-deployments-dev/SANDIEGO/2025/unit_1024-20250224/data/processed-L1/unit_1024-20250224-delayed-sci.nc'>timeseries-sci<\/a> | <a href='https://storage.cloud.google.com/amlr-gliders-deployments-dev/SANDIEGO/2025/unit_1024-20250224/data/processed-L1/unit_1024-20250224_grid-delayed-5m.nc'>gridded-5m<\/a>","<a href='https://storage.cloud.google.com/amlr-gliders-deployments-dev/FREEBYRD/2025/amlr01-20241120/data/processed-L1/amlr01-20241120-delayed-sci.nc'>timeseries-sci<\/a> | <a href='https://storage.cloud.google.com/amlr-gliders-deployments-dev/FREEBYRD/2025/amlr01-20241120/data/processed-L1/amlr01-20241120_grid-delayed-5m.nc'>gridded-5m<\/a>","<a href='https://storage.cloud.google.com/amlr-gliders-deployments-dev/FREEBYRD/2025/amlr08-20241120/data/processed-L1/amlr08-20241120-delayed-sci.nc'>timeseries-sci<\/a> | <a href='https://storage.cloud.google.com/amlr-gliders-deployments-dev/FREEBYRD/2025/amlr08-20241120/data/processed-L1/amlr08-20241120_grid-delayed-5m.nc'>gridded-5m<\/a>","<a href='https://storage.cloud.google.com/amlr-gliders-deployments-dev/ECOSWIM/2024/calanus-20241019/data/processed-L1/calanus-20241019-delayed-sci.nc'>timeseries-sci<\/a> | <a href='https://storage.cloud.google.com/amlr-gliders-deployments-dev/ECOSWIM/2024/calanus-20241019/data/processed-L1/calanus-20241019_grid-delayed-5m.nc'>gridded-5m<\/a>","<a href='https://storage.cloud.google.com/amlr-gliders-deployments-dev/REFOCUS/2024/george-20240907/data/processed-L1/george-20240907-delayed-sci.nc'>timeseries-sci<\/a> | <a href='https://storage.cloud.google.com/amlr-gliders-deployments-dev/REFOCUS/2024/george-20240907/data/processed-L1/george-20240907_grid-delayed-5m.nc'>gridded-5m<\/a> | <a href='https://storage.cloud.google.com/amlr-gliders-imagery-raw-dev/REFOCUS/2024/george-20240907/metadata/george-20240907-imagery-metadata.csv'>imagery-csv<\/a>","","","<a href='https://storage.cloud.google.com/amlr-gliders-deployments-dev/REFOCUS/2024/george-20240530/data/processed-L1/george-20240530-delayed-sci.nc'>timeseries-sci<\/a> | <a href='https://storage.cloud.google.com/amlr-gliders-deployments-dev/REFOCUS/2024/george-20240530/data/processed-L1/george-20240530_grid-delayed-5m.nc'>gridded-5m<\/a> | <a href='https://storage.cloud.google.com/amlr-gliders-imagery-raw-dev/REFOCUS/2024/george-20240530/metadata/george-20240530-imagery-metadata.csv'>imagery-csv<\/a>","","","<a href='https://storage.cloud.google.com/amlr-gliders-deployments-dev/FREEBYRD/2024/amlr03-20231128/data/processed-L1/amlr03-20231128-delayed-sci.nc'>timeseries-sci<\/a> | <a href='https://storage.cloud.google.com/amlr-gliders-deployments-dev/FREEBYRD/2024/amlr03-20231128/data/processed-L1/amlr03-20231128_grid-delayed-5m.nc'>gridded-5m<\/a> | <a href='https://storage.cloud.google.com/amlr-gliders-imagery-raw-dev/FREEBYRD/2024/amlr03-20231128/metadata/amlr03-20231128-imagery-metadata.csv'>imagery-csv<\/a>","<a href='https://storage.cloud.google.com/amlr-gliders-deployments-dev/FREEBYRD/2024/amlr04-20231128/data/processed-L1/amlr04-20231128-delayed-sci.nc'>timeseries-sci<\/a> | <a href='https://storage.cloud.google.com/amlr-gliders-deployments-dev/FREEBYRD/2024/amlr04-20231128/data/processed-L1/amlr04-20231128_grid-delayed-5m.nc'>gridded-5m<\/a> | <a href='https://storage.cloud.google.com/amlr-gliders-imagery-raw-dev/FREEBYRD/2024/amlr04-20231128/metadata/amlr04-20231128-imagery-metadata.csv'>imagery-csv<\/a>","","","","","","","","<a href='https://storage.cloud.google.com/amlr-gliders-deployments-dev/SANDIEGO/2022/amlr08-20220513/data/processed-L1/amlr08-20220513-delayed-sci.nc'>timeseries-sci<\/a> | <a href='https://storage.cloud.google.com/amlr-gliders-imagery-raw-dev/SANDIEGO/2022/amlr08-20220513/metadata/amlr08-20220513-imagery-metadata.csv'>imagery-csv<\/a>","","","","","","","","","","","","","","","","","","",""],["<a href='https://console.cloud.google.com/storage/browser/amlr-gliders-deployments-dev/ECOSWIM/2025/calanus-20250617/plots/delayed'>plots<\/a> | <a href='https://console.cloud.google.com/storage/browser/amlr-gliders-deployments-dev/ECOSWIM/2025/calanus-20250617/data/processed-L1'>glider<\/a> | <a href='https://console.cloud.google.com/storage/browser/amlr-gliders-acoustics-dev/ECOSWIM/2025/calanus-20250617'>acoustics<\/a>","<a href='https://console.cloud.google.com/storage/browser/amlr-gliders-deployments-dev/SANDIEGO/2025/risso-20250414/plots/delayed'>plots<\/a> | <a href='https://console.cloud.google.com/storage/browser/amlr-gliders-deployments-dev/SANDIEGO/2025/risso-20250414/data/processed-L1'>glider<\/a>","<a href='https://console.cloud.google.com/storage/browser/amlr-gliders-deployments-dev/SANDIEGO/2025/stenella-20250414/plots/delayed'>plots<\/a> | <a href='https://console.cloud.google.com/storage/browser/amlr-gliders-deployments-dev/SANDIEGO/2025/stenella-20250414/data/processed-L1'>glider<\/a>","<a href='https://console.cloud.google.com/storage/browser/amlr-gliders-deployments-dev/SANDIEGO/2025/unit_1024-20250224/plots/delayed'>plots<\/a> | <a href='https://console.cloud.google.com/storage/browser/amlr-gliders-deployments-dev/SANDIEGO/2025/unit_1024-20250224/data/processed-L1'>glider<\/a>","<a href='https://console.cloud.google.com/storage/browser/amlr-gliders-deployments-dev/FREEBYRD/2025/amlr01-20241120/plots/delayed'>plots<\/a> | <a href='https://console.cloud.google.com/storage/browser/amlr-gliders-deployments-dev/FREEBYRD/2025/amlr01-20241120/data/processed-L1'>glider<\/a> | <a href='https://console.cloud.google.com/storage/browser/amlr-gliders-acoustics-dev/FREEBYRD/2025/amlr01-20241120'>acoustics<\/a>","<a href='https://console.cloud.google.com/storage/browser/amlr-gliders-deployments-dev/FREEBYRD/2025/amlr08-20241120/plots/delayed'>plots<\/a> | <a href='https://console.cloud.google.com/storage/browser/amlr-gliders-deployments-dev/FREEBYRD/2025/amlr08-20241120/data/processed-L1'>glider<\/a> | <a href='https://console.cloud.google.com/storage/browser/amlr-gliders-acoustics-dev/FREEBYRD/2025/amlr08-20241120'>acoustics<\/a>","<a href='https://console.cloud.google.com/storage/browser/amlr-gliders-deployments-dev/ECOSWIM/2024/calanus-20241019/plots/delayed'>plots<\/a> | <a href='https://console.cloud.google.com/storage/browser/amlr-gliders-deployments-dev/ECOSWIM/2024/calanus-20241019/data/processed-L1'>glider<\/a> | <a href='https://console.cloud.google.com/storage/browser/amlr-gliders-acoustics-dev/ECOSWIM/2024/calanus-20241019'>acoustics<\/a>","<a href='https://console.cloud.google.com/storage/browser/amlr-gliders-deployments-dev/REFOCUS/2024/george-20240907/plots/delayed'>plots<\/a> | <a href='https://console.cloud.google.com/storage/browser/amlr-gliders-deployments-dev/REFOCUS/2024/george-20240907/data/processed-L1'>glider<\/a> | <a href='https://console.cloud.google.com/storage/browser/amlr-gliders-imagery-raw-dev/REFOCUS/2024/george-20240907'>imagery<\/a>","","","<a href='https://console.cloud.google.com/storage/browser/amlr-gliders-deployments-dev/REFOCUS/2024/george-20240530/plots/delayed'>plots<\/a> | <a href='https://console.cloud.google.com/storage/browser/amlr-gliders-deployments-dev/REFOCUS/2024/george-20240530/data/processed-L1'>glider<\/a> | <a href='https://console.cloud.google.com/storage/browser/amlr-gliders-imagery-raw-dev/REFOCUS/2024/george-20240530'>imagery<\/a>","<a href='https://console.cloud.google.com/storage/browser/amlr-gliders-acoustics-dev/REFOCUS/2024/john-20240312'>acoustics<\/a> | <a href='https://console.cloud.google.com/storage/browser/amlr-gliders-imagery-raw-dev/REFOCUS/2024/john-20240312'>imagery<\/a>","<a href='https://console.cloud.google.com/storage/browser/amlr-gliders-imagery-raw-dev/REFOCUS/2024/ringo-20240312'>imagery<\/a>","<a href='https://console.cloud.google.com/storage/browser/amlr-gliders-deployments-dev/FREEBYRD/2024/amlr03-20231128/plots/delayed'>plots<\/a> | <a href='https://console.cloud.google.com/storage/browser/amlr-gliders-deployments-dev/FREEBYRD/2024/amlr03-20231128/data/processed-L1'>glider<\/a> | <a href='https://console.cloud.google.com/storage/browser/amlr-gliders-acoustics-dev/FREEBYRD/2024/amlr03-20231128'>acoustics<\/a> | <a href='https://console.cloud.google.com/storage/browser/amlr-gliders-imagery-raw-dev/FREEBYRD/2024/amlr03-20231128'>imagery<\/a>","<a href='https://console.cloud.google.com/storage/browser/amlr-gliders-deployments-dev/FREEBYRD/2024/amlr04-20231128/plots/delayed'>plots<\/a> | <a href='https://console.cloud.google.com/storage/browser/amlr-gliders-deployments-dev/FREEBYRD/2024/amlr04-20231128/data/processed-L1'>glider<\/a> | <a href='https://console.cloud.google.com/storage/browser/amlr-gliders-acoustics-dev/FREEBYRD/2024/amlr04-20231128'>acoustics<\/a> | <a href='https://console.cloud.google.com/storage/browser/amlr-gliders-imagery-raw-dev/FREEBYRD/2024/amlr04-20231128'>imagery<\/a>","<a href='https://console.cloud.google.com/storage/browser/amlr-gliders-acoustics-dev/SANDIEGO/2023/amlr03-20230620'>acoustics<\/a> | <a href='https://console.cloud.google.com/storage/browser/amlr-gliders-imagery-raw-dev/SANDIEGO/2023/amlr03-20230620'>imagery<\/a>","<a href='https://console.cloud.google.com/storage/browser/amlr-gliders-acoustics-dev/SANDIEGO/2023/amlr04-20230620'>acoustics<\/a> | <a href='https://console.cloud.google.com/storage/browser/amlr-gliders-imagery-raw-dev/SANDIEGO/2023/amlr04-20230620'>imagery<\/a>","<a href='https://console.cloud.google.com/storage/browser/amlr-gliders-acoustics-dev/FREEBYRD/2023/amlr04-20221205'>acoustics<\/a>","<a href='https://console.cloud.google.com/storage/browser/amlr-gliders-acoustics-dev/FREEBYRD/2023/amlr06-20221205'>acoustics<\/a>","<a href='https://console.cloud.google.com/storage/browser/amlr-gliders-acoustics-dev/FREEBYRD/2023/amlr07-20221204'>acoustics<\/a> | <a href='https://console.cloud.google.com/storage/browser/amlr-gliders-imagery-raw-dev/FREEBYRD/2023/amlr07-20221204'>imagery<\/a>","<a href='https://console.cloud.google.com/storage/browser/amlr-gliders-acoustics-dev/SANDIEGO/2022/amlr07-20221025'>acoustics<\/a> | <a href='https://console.cloud.google.com/storage/browser/amlr-gliders-imagery-raw-dev/SANDIEGO/2022/amlr07-20221025'>imagery<\/a>","<a href='https://console.cloud.google.com/storage/browser/amlr-gliders-acoustics-dev/SANDIEGO/2022/amlr03-20220513'>acoustics<\/a> | <a href='https://console.cloud.google.com/storage/browser/amlr-gliders-imagery-raw-dev/SANDIEGO/2022/amlr03-20220513'>imagery<\/a>","<a href='https://console.cloud.google.com/storage/browser/amlr-gliders-deployments-dev/SANDIEGO/2022/amlr08-20220513/plots/delayed'>plots<\/a> | <a href='https://console.cloud.google.com/storage/browser/amlr-gliders-deployments-dev/SANDIEGO/2022/amlr08-20220513/data/processed-L1'>glider<\/a> | <a href='https://console.cloud.google.com/storage/browser/amlr-gliders-acoustics-dev/SANDIEGO/2022/amlr08-20220513'>acoustics<\/a> | <a href='https://console.cloud.google.com/storage/browser/amlr-gliders-imagery-raw-dev/SANDIEGO/2022/amlr08-20220513'>imagery<\/a>","<a href='https://console.cloud.google.com/storage/browser/amlr-gliders-acoustics-dev/SANDIEGO/2022/amlr08-20220504'>acoustics<\/a> | <a href='https://console.cloud.google.com/storage/browser/amlr-gliders-imagery-raw-dev/SANDIEGO/2022/amlr08-20220504'>imagery<\/a>","<a href='https://console.cloud.google.com/storage/browser/amlr-gliders-acoustics-dev/SANDIEGO/2022/amlr03-20220425'>acoustics<\/a> | <a href='https://console.cloud.google.com/storage/browser/amlr-gliders-imagery-raw-dev/SANDIEGO/2022/amlr03-20220425'>imagery<\/a>","<a href='https://console.cloud.google.com/storage/browser/amlr-gliders-imagery-raw-dev/SANDIEGO/2022/amlr06-20220425'>imagery<\/a>","","<a href='https://console.cloud.google.com/storage/browser/amlr-gliders-acoustics-dev/FREEBYRD/2022/amlr05-20211124'>acoustics<\/a>","<a href='https://console.cloud.google.com/storage/browser/amlr-gliders-acoustics-dev/FREEBYRD/2022/amlr01-20211121'>acoustics<\/a>","","","<a href='https://console.cloud.google.com/storage/browser/amlr-gliders-acoustics-dev/FREEBYRD/2020/amlr01-20191206'>acoustics<\/a>","<a href='https://console.cloud.google.com/storage/browser/amlr-gliders-acoustics-dev/FREEBYRD/2020/amlr02-20191206'>acoustics<\/a>","<a href='https://console.cloud.google.com/storage/browser/amlr-gliders-acoustics-dev/FREEBYRD/2020/amlr03-20191206'>acoustics<\/a>","","<a href='https://console.cloud.google.com/storage/browser/amlr-gliders-acoustics-dev/FREEBYRD/2019/amlr01-20181216'>acoustics<\/a>","<a href='https://console.cloud.google.com/storage/browser/amlr-gliders-acoustics-dev/FREEBYRD/2019/amlr02-20181211'>acoustics<\/a>","","","","",""]],"container":"<table class=\"display\">\n  <thead>\n    <tr>\n      <th>Glider<\/th>\n      <th>Start<\/th>\n      <th>End<\/th>\n      <th>Region<\/th>\n      <th>Sensors<\/th>\n      <th>Report<\/th>\n      <th>ERDDAP<\/th>\n      <th>Internal Data<\/th>\n      <th>Internal Directories<\/th>\n    <\/tr>\n  <\/thead>\n<\/table>","options":{"autoWidth":true,"pageLength":10,"columnDefs":[{"name":"Glider","targets":0},{"name":"Start","targets":1},{"name":"End","targets":2},{"name":"Region","targets":3},{"name":"Sensors","targets":4},{"name":"Report","targets":5},{"name":"ERDDAP","targets":6},{"name":"Internal Data","targets":7},{"name":"Internal Directories","targets":8}],"order":[],"orderClasses":false}},"evals":[],"jsHooks":[]}</script>
+</div>
+</div>
+</section>
+<section id="table-columns" class="level2">
+<h2 class="anchored" data-anchor-id="table-columns">Table Columns</h2>
+<p>The ‘Glider’, ‘Start’, and ‘End’ columns represent the glider name, glider deployment date (deployment start), and glider recovery date (deployment end), respectively.</p>
+<p>The ‘Region’ column indicates the general region of the deployment, for instance the Antarctic or the California Current Ecosystem (CCE).</p>
+<p>The ‘Sensors’: column indicates which sensors were on the glider for each deployment. Current sensors that may be deployed on a glider include:</p>
+<ul>
+<li><strong>CTD</strong>: <a href="https://www.seabird.com/glider-payload-ctd-gpctd/product?id=60762467712">Glider Payload Conductivity, Temperature, and Depth</a></li>
+<li><strong>Ecopuck</strong>: <a href="https://www.seabird.com/eco-puck/product?id=60762467723">ECO Puck</a> flbbcd Fluorometer</li>
+<li><strong>Optode</strong>: Oxygen Optode <a href="https://www.aanderaa.com/media/pdfs/oxygen-optode-4330-4835-and-4831.pdf">model 4831</a></li>
+<li><strong>PAR</strong>: Photosynthetically Active Radiation <a href="https://www.biospherical.com/wp-content/uploads/2024/04/qsp2150_2013.pdf">model QSP-2155</a></li>
+<li><strong>AZFP</strong>: Acoustic Zooplankton and Fish Profiler (AZFP) scientific echo-sounder for gliders developed by <a href="https://aslenv.com/glider.html">ASL</a></li>
+<li><strong>Nortek</strong>: Signature 100 compact echo-sounder for gliders developed by <a href="https://www.nortekgroup.com/">Nortek</a></li>
+<li><strong>Shadowgraph</strong>: Shadowgraph camera developed by <a href="https://www.wassoc.com/subsea-imaging">Williamson and Associates</a>. Note that shadowgraphs come in both narrow and wide varieties</li>
+<li><strong>Glidercam</strong>: Camera developed by <a href="https://www.wassoc.com/subsea-imaging">Williamson and Associates</a></li>
+<li><strong>DMON</strong>: Digital acoustic monitoring (DMON) instrument developed by <a href="https://robots4whales.whoi.edu/about/how-it-works/">WHOI</a></li>
+<li><strong>WISPR</strong>: WISPR instrument developed by <a href="https://embeddedocean.com/passive-acoustics-2/">Embedded Ocean Systems</a>. This instrument is paired with a hydrophone by <a href="https://www.hightechincusa.com/products/hydrophones/hti99hf.html">High Tech Inc</a></li>
+</ul>
+<p>The ‘Report’ column contains links to various ESD-internal reports, detailing aspects of the glider prep, deployment, and/or recovery. These reports are in the process of being converted to Quarto documents, after which they will be published externally.</p>
+<p>The ‘ERDDAP’ column will contain the link to the glider dataset when it is published to the <a href="https://gliders.ioos.us/erddap/index.html">ERDDAP</a> of the <a href="https://gliders.ioos.us/">IOOS National Glider Data Assembly Center</a>.</p>
+</section>
+<section id="data-links" class="level2">
+<h2 class="anchored" data-anchor-id="data-links">Data Links</h2>
+<p>For more details about the data products themselves, see the <a href="../content/slocum-glider-data.html#data-products">Slocum Glider Data Processing</a> page.</p>
+<p>The ‘Internal Data’ and ‘Internal Directories’ columns contains links to various data products and directories that are in the ESD Google Cloud Platform (GCP) project. Links only appear in the table if the data product exists. These data can only be accessed by users with appropriate permissions in the ESD GCP project. See <a href="https://docs.google.com/document/d/1wWxq79JPuD5A92XTeH-FVJYA87qW2UlfEtKU1yxrSb8/edit?usp=sharing">this doc</a> for information about downloading full directories from a Google Cloud bucket. Current internal product/directory links:</p>
+<p>Note that in GCP, deployment names are always ‘glider name’-‘year-month-day’. For instance, deployment “amlr08-20220530” is the deployment of glider amlr08 that began on 30 May 2022.</p>
+<p>NOTE: cdom data in the various deployment files should be treated as unreliable until further notice. See <a href="https://github.com/SWFSC/glider-lab/issues/70">this issue</a> for more details, and the latest updates.</p>
+<ul>
+<li><strong>timeseries-sci</strong>, <strong>gridded-5m</strong>, <strong>imagery-csv</strong>: Selected products from the <a href="../content/slocum-glider-data.html#base-processing">‘base’ glider processing</a> workflow.</li>
+<li><strong>plots</strong>: The plots for the corresponding deployment. See a description of the standard post-deployment plots <a href="data-management.html#deployments">here</a>.</li>
+<li><strong>glider</strong>: All glider-related data products from the <a href="../content/slocum-glider-data.html#base-processing">‘base’ glider processing</a> workflow.</li>
+<li><strong>acoustics</strong>: The ‘acoustics’ deployment folder. See a description of the structure and contents of this folder <a href="../content/data-management.html#acoustics">here</a>.</li>
+<li><strong>imagery</strong>: The ‘raw imagery’ deployment folder. See a description of the structure and contents of this folder <a href="../content/data-management.html#raw-imagery">here</a></li>
+</ul>
+</section>
 <section id="projects" class="level2">
 <h2 class="anchored" data-anchor-id="projects">Projects</h2>
 <p>The ESD deploys gliders under several different projects:</p>
@@ -410,251 +465,10 @@ ul.task-list li input[type="checkbox"] {
 <li><p><strong>FREEBYRD</strong>: Operation FREEBYRD is a long-term program to replace ship-based surveys with autonomous vehicles to estimate Antarctic krill biomass in support of the Convention for the Conservation of Antarctic Marine Living Resources (CCAMLR).</p></li>
 <li><p><strong>REFOCUS</strong>: Reimagining Ecosystem and Fisheries Observations by Combining two UxS fleets (REFOCUS) aims to augment ship-based ecosystem monitoring using autonomous underwater gliders equipped with sensors for monitoring the physical and biological environment. The three primary objectives are to 1) Conduct regular (approximately every other month) deployments in the California Current in areas where the CalCOFI Program currently samples and is likely to sample in the future; 2) Improve capacity to collect data during event-driven ecosystem perturbations (e.g., marine heatwaves or harmful algal blooms); and 3) To alleviate competition for ship time.</p></li>
 <li><p><strong>ECOSWIM</strong>: Operation ECOSWIM is for glider surveys in the California CCE off of Humboldt and Morro Bay, California, in the Southern California waters of the Pacific Ocean. These surveys may collect krill biomass estimates, among other scientific goals.</p></li>
-<li><p><strong>SANDIEGO</strong>: Test deployments off of San Diego. These deployments may be, for instance, to test a glider before it goes to the Antarctic, or to test new sensors and/or sensor configurations for the Enhanced Data Acquisition Passive Acoustics Strategic Initiative, the Optics Strategic Initiative, or the Uncrewed Systems Strategic Initiative.</p></li>
+<li><p><strong>SANDIEGO</strong>: Test deployments off of the greater San Diego area, typically either around Mission Bay, off the Scripps Pier, or off of Oceanside. These deployments may be, for instance, to test a glider before it goes to the Antarctic, or to test new sensors and/or sensor configurations for a NMFS Strategic Initiative (e.g., the Enhanced Data Acquisition Passive Acoustics, Optics, or Uncrewed Systems Strategic Initiatives).</p></li>
 </ul>
-</section>
-<section id="deployments" class="level2">
-<h2 class="anchored" data-anchor-id="deployments">Deployments</h2>
-<p>The below table lists all (in progress) ESD (and formerly AERD) glider deployments, along with basic information about the deployment. The table also includes links to post-deployment reports, and links to data files where they exist. See <a href="#data-links">below</a> for details on the data links.</p>
-<p>Note that deployment names are always ‘glider name’-‘year-month-day’. For instance, deployment amlr08-20220530. Is the deployment of glider amlr08 that began on 30 May 2022.</p>
-<p>See <a href="https://docs.google.com/spreadsheets/d/1tSIi44OTEUQXPJwwiy1emhdIyRs9Vt8iT5IlJBMrPLA/edit?usp=sharing">this spreadsheet</a> (NOAA internal) for more details.</p>
-<!-- <iframe src="https://docs.google.com/spreadsheets/d/e/2PACX-1vR1QEPFK9em24JT6-9p2MeW6Va6srqITFqsYpiF7x-QBAKdwYw4zeuJFOxjHr-4eeDRGzO-8Z0uE1z4/pubhtml?widget=true&amp;headers=false"style="width:950px; height:500px; border: 2px solid black;"></iframe> -->
-<!-- 
-gliders <- tibble::tribble(
-    ~Year, ~Deployment, ~Location, ~Sensors, ~Report, ~ERDDAP, ~`Internal Data`, 
-    "2025", "stenella-20250224", "San Diego", 
-    "CTD, Optode, Ecopuck, PAR, WISPR", 
-    "https://docs.google.com/document/d/11aBBLY6xJhdd2vDwuhdBLK3SVcPaqnxbkMR-Fn0rgy0/edit?usp=drive_link", 
-    "{in progress}", 
-    "{in progress}",
-    
-    "2025", "risso-20250414", "San Diego", 
-    "CTD, Optode, Ecopuck, PAR, DMON", 
-    "https://docs.google.com/document/d/1JWkHtAoQar3fr0TLmKJT9VI5O5IqFkpEw4G_07ZFRts/edit?usp=drive_link", 
-    "{in progress}", 
-    "{in progress}",
-    
-    "2025", "unit_1024-20250224", "San Diego", 
-    "CTD, Ecopuck, PAR, WISPR", 
-    "https://docs.google.com/document/d/1LQ9ch1gEuHtHEUbC7dymbtm9UlZu6IaePKbmLpKTlyU/edit?usp=sharing", 
-    "{in progress}", 
-    "{in progress}", 
-
-    "2024/25", "amlr01-20241120", "Antarctic", 
-    "CTD, Optode, Ecopuck, AZFP", 
-    "https://docs.google.com/document/d/128D2a0Ud2Kda5JwIYVhN9An4CFT6KxdGoqS1RsHKtQ0/edit?usp=sharing", 
-    "{in progress}", 
-    "{in progress}", 
-
-    "2024/25", "amlr01-20241120", "Antarctic", 
-    "CTD, Optode, Ecopuck, Nortek", 
-    "https://docs.google.com/document/d/1Bk2CQeC6dT7OtOInGbB85aCiE3qmz_S4JvjbNHziKyQ/edit?usp=sharing", 
-    "{in progress}", 
-    "{in progress}", 
-    
-    "2024", "calanus-20241019", "San Diego", 
-    "CTD, Oxygen, Ecopuck, Nortek", 
-    "https://github.com/SWFSC/glider-lab/blob/main/deployment-reports/calanus-20241019.html", 
-    "{in progress}", 
-    '<a href="https://console.cloud.google.com/storage/browser/amlr-gliders-deployments-dev/ECOSWIM/2024/calanus-20241019/data/processed-L1" target="_blank">glider</a> | <a href="https://console.cloud.google.com/storage/browser/amlr-gliders-deployments-dev/ECOSWIM/2024/calanus-20241019/plots/delayed" target="_blank">plots</a> | <a href="https://console.cloud.google.com/storage/browser/amlr-gliders-acoustics-dev/ECOSWIM/2024/calanus-20241019" target="_blank">acoustics</a>', 
-    
-    # 2024, "george-20240530", "San Diego", 
-    # "CTD, Optode, Narrow Shadowgraph", 
-    # "https://docs.google.com/document/d/1MDVbBDjK2UvHjLFQ35nzniC-R7YycM6SZr0ymEFvapw/edit?usp=sharing", 
-    # "{in progress}", 
-    # '<a href="https://console.cloud.google.com/storage/browser/amlr-gliders-deployments-dev/REFOCUS/2024/george-20240530/data/processed-L1" target="_blank">glider</a> | <a href="https://console.cloud.google.com/storage/browser/amlr-gliders-deployments-dev/ECOSWIM/2024/george-20240530/plots/delayed" target="_blank">plots</a> | <a href="https://console.cloud.google.com/storage/browser/amlr-gliders-imagery-raw-dev/REFOCUS/2024/george-20240530" target="_blank">imagery</a>', 
-
-    "2023/24", "amlr03-20231128", "Antarctica", 
-    "CTD, Oxygen, Ecopuck, glidercam, Nortek", 
-    NA, 
-    "{in progress}", 
-    '<a href="https://console.cloud.google.com/storage/browser/amlr-gliders-deployments-dev/FREEBYRD/2024/amlr03-20231128/data/processed-L1" target="_blank">glider</a> | <a href="https://console.cloud.google.com/storage/browser/amlr-gliders-deployments-dev/FREEBYRD/2024/amlr03-20231128/plots/delayed" target="_blank">plots</a> | <a href="https://console.cloud.google.com/storage/browser/amlr-gliders-acoustics-dev/FREEBYRD/2024/amlr03-20231128" target="_blank">acoustics</a>', 
-
-    "2022", "amlr08-20220513", "San Diego", 
-    "CTD, Oxygen, Ecopuck, Narrow Shadowgraph, Nortek", 
-    NA, 
-    "{in progress}", 
-    '<a href="https://console.cloud.google.com/storage/browser/amlr-gliders-deployments-dev/SANDIEGO/2022/amlr08-20220513/data/processed-L1" target="_blank">glider</a> | <a href="https://console.cloud.google.com/storage/browser/amlr-gliders-deployments-dev/SANDIEGO/2022/amlr08-20220513/plots/delayed" target="_blank">plots</a> | <a href="https://console.cloud.google.com/storage/browser/amlr-gliders-acoustics-dev/SANDIEGO/2022/amlr08-20220513" target="_blank">acoustics</a> | <a href="https://console.cloud.google.com/storage/browser/amlr-gliders-imagery-raw-dev/SANDIEGO/2022/amlr08-20220513" target="_blank">imagery</a>', 
-)
-
-gliders$Report <- dplyr::if_else(is.na(gliders$Report), "{in progress}", paste0('<a href="', gliders$Report, '" target="_blank">Report</a>'))
-
-# knitr::kable(gliders, escape = FALSE)
-DT::datatable(gliders, escape = FALSE)
-``` -->
-<table class="caption-top table">
-<thead>
-<tr class="header">
-<th>Year</th>
-<th>Project</th>
-<th>Deployment</th>
-<th>Location</th>
-<th>Sensors</th>
-<th>Report</th>
-<th>ERDDAP</th>
-<th>Internal Data</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>2025</td>
-<td>SANDIEGO</td>
-<td>unit_1024-20250224</td>
-<td>San Diego</td>
-<td>CTD, Ecopuck, PAR, WISPR</td>
-<td><a href="https://docs.google.com/document/d/1LQ9ch1gEuHtHEUbC7dymbtm9UlZu6IaePKbmLpKTlyU/edit?usp=sharing">link</a></td>
-<td>{in progress}</td>
-<td>{in progress}</td>
-</tr>
-<tr class="even">
-<td>—–</td>
-<td>—–</td>
-<td>—–</td>
-<td>—–</td>
-<td>—–</td>
-<td>—–</td>
-<td>—–</td>
-<td>—–</td>
-</tr>
-<tr class="odd">
-<td>2024/25</td>
-<td>FREEBYRD</td>
-<td>amlr01-20241120</td>
-<td>Antarctic</td>
-<td>CTD, Optode, Ecopuck, AZFP</td>
-<td><a href="https://docs.google.com/document/d/128D2a0Ud2Kda5JwIYVhN9An4CFT6KxdGoqS1RsHKtQ0/edit?usp=sharing">link</a></td>
-<td>{in progress}</td>
-<td>{in progress}</td>
-</tr>
-<tr class="even">
-<td>2024/25</td>
-<td>FREEBYRD</td>
-<td>amlr08-20241120</td>
-<td>Antarctic</td>
-<td>CTD, Optode, Ecopuck, Nortek</td>
-<td><a href="https://docs.google.com/document/d/1Bk2CQeC6dT7OtOInGbB85aCiE3qmz_S4JvjbNHziKyQ/edit?usp=sharing">link</a></td>
-<td>{in progress}</td>
-<td>{in progress}</td>
-</tr>
-<tr class="odd">
-<td>—–</td>
-<td>—–</td>
-<td>—–</td>
-<td>—–</td>
-<td>—–</td>
-<td>—–</td>
-<td>—–</td>
-<td>—–</td>
-</tr>
-<tr class="even">
-<td>2024</td>
-<td>ECOSWIM</td>
-<td>calanus-20241019</td>
-<td>Humboldt</td>
-<td>CTD, Optode, Ecopuck, Nortek</td>
-<td>{in progress}</td>
-<td>{in progress}</td>
-<td><a href="https://console.cloud.google.com/storage/browser/amlr-gliders-deployments-dev/ECOSWIM/2024/calanus-20241019/data/processed-L1">glider</a>; <a href="https://console.cloud.google.com/storage/browser/amlr-gliders-acoustics-dev/ECOSWIM/2024/calanus-20241019">acoustics</a></td>
-</tr>
-<tr class="odd">
-<td>2024</td>
-<td>REFOCUS</td>
-<td>george-20240907</td>
-<td>Santa Barbara</td>
-<td>CTD, Optode,Ecopuck, Narrow Shadowgraph</td>
-<td><a href="https://docs.google.com/document/d/12hNl6ZtEIISh4vlJcOJgK1RHsloGIa98WKf5xpjIq0U/edit?usp=sharing">link</a></td>
-<td>{in progress}</td>
-<td>{in progress}</td>
-</tr>
-<tr class="even">
-<td>2024</td>
-<td>REFOCUS</td>
-<td>george-20240530</td>
-<td>San Diego</td>
-<td>CTD, Optode, Narrow Shadowgraph</td>
-<td><a href="https://docs.google.com/document/d/1MDVbBDjK2UvHjLFQ35nzniC-R7YycM6SZr0ymEFvapw/edit?usp=sharing">link</a></td>
-<td>{in progress}</td>
-<td><a href="https://console.cloud.google.com/storage/browser/amlr-gliders-imagery-raw-dev/REFOCUS/2024/george-20240530">images</a></td>
-</tr>
-<tr class="odd">
-<td>2024</td>
-<td>REFOCUS</td>
-<td>john-20240312</td>
-<td>San Diego</td>
-<td>CTD, Optode, Nortek, Shadowgraph</td>
-<td><a href="https://docs.google.com/document/d/1szQ7tV5stz8fyuNzF05jM1zxUQmkAwQxzZcmHGlDgwg/edit?usp=sharing">link</a></td>
-<td>{in progress}</td>
-<td>{in progress}</td>
-</tr>
-<tr class="even">
-<td>2024</td>
-<td>REFOCUS</td>
-<td>ringo-20240312</td>
-<td>San Diego</td>
-<td>CTD, Optode, Nortek, Wide Shadowgraph</td>
-<td><a href="https://docs.google.com/document/d/12iSPkBChPjtPFbFQxX2hCopga3hvBr91qH1kJW_w5sw/edit?usp=sharing">link</a></td>
-<td>{in progress}</td>
-<td>{in progress}</td>
-</tr>
-<tr class="odd">
-<td>…</td>
-<td>…</td>
-<td>…</td>
-<td>…</td>
-<td>…</td>
-<td>…</td>
-<td>…</td>
-<td>…</td>
-</tr>
-</tbody>
-</table>
-<section id="data-links" class="level3">
-<h3 class="anchored" data-anchor-id="data-links">Data Links</h3>
-<p>The above table contains several links to different data products.</p>
-<p>The ‘ERDDAP’ column will contain the link to the glider dataset when it is published to the <a href="https://gliders.ioos.us/erddap/index.html">ERDDAP</a> of the <a href="https://gliders.ioos.us/">IOOS National Glider Data Assembly Center</a>.</p>
-<p>The ‘Internal Data’ column contains links to various ESD-internal data products, stored within the ESD Google Cloud Platform (GCP) project. Users will only be able to access these data if they have been granted appropriate permissions within the project. Currently there are three different types of internal data links:</p>
-<ul>
-<li><strong>glider</strong>: Data products from the <a href="../content/glider-data.html#base-processing">‘base’ glider processing</a> workflow. The most relevant data products for users will likely be the ‘science’ timeseries, and the gridded science data.</li>
-<li><strong>plots</strong>: Link the ‘plots’ folder, within the deployment folder. See a description of the structure of this folder <a href="data-management.html#deployments">here</a>.</li>
-<li><strong>acoustics</strong>: Link the ‘acoustics’ deployment folder. See a description of the structure of this folder <a href="../content/data-management.html#acoustics">here</a>.</li>
-<li><strong>imagery</strong>: Link the the ‘raw imagery’ deployment folder. See a description of the structure of this folder <a href="../content/data-management.html#raw-imagery">here</a></li>
-</ul>
-<!-- ### 2025
-
-#### San Diego
-
-| Deployment | Sensors |
-|------------------------------|------------------------------|
-| [unit_1024-20250224](https://docs.google.com/document/d/1LQ9ch1gEuHtHEUbC7dymbtm9UlZu6IaePKbmLpKTlyU/edit?usp=sharing){target="_blank"} | CTD, Ecopuck, BSIPAR, WISPR
-
-### 2024
-
-#### San Diego
-
-| Deployment | Sensors |
-|------------------------------|------------------------------|
-| [john-20240312](https://docs.google.com/document/d/1szQ7tV5stz8fyuNzF05jM1zxUQmkAwQxzZcmHGlDgwg/edit?usp=sharing){target="_blank"} | CTD, Optode, Nortek,Shadowgraph |
-| [ringo-20240312](https://docs.google.com/document/d/12iSPkBChPjtPFbFQxX2hCopga3hvBr91qH1kJW_w5sw/edit?usp=sharing){target="_blank"} | CTD, Optode, Wide Shadowgraph |
-| [george-20240530](https://docs.google.com/document/d/1MDVbBDjK2UvHjLFQ35nzniC-R7YycM6SZr0ymEFvapw/edit?usp=sharing){target="_blank"} | CTD, Optode, Narrow Shadowgraph |
-
-#### Santa Barbara
-| Deployment | Sensors |
-|------------------------------|------------------------------|
-|[george-20240907](https://docs.google.com/document/d/12hNl6ZtEIISh4vlJcOJgK1RHsloGIa98WKf5xpjIq0U/edit?usp=sharing){target="_blank"} | CTD, Optode,Ecopuck, Narrow Shadowgraph |
-
-#### Humboldt
-| Deployment | Sensors |
-|------------------------------|------------------------------|
-| calanus-20241019 |CTD, Optode, Ecopuck, Nortek |
-
-#### Antarctica
-| Deployment | Sensors |
-|------------------------------|------------------------------|
-| [AMLR01-20241120](https://docs.google.com/document/d/128D2a0Ud2Kda5JwIYVhN9An4CFT6KxdGoqS1RsHKtQ0/edit?usp=sharing){target="_blank"} |CTD, Optode, Ecopuck, AZFP |
-| [AMLR08-20241120](https://docs.google.com/document/d/1Bk2CQeC6dT7OtOInGbB85aCiE3qmz_S4JvjbNHziKyQ/edit?usp=sharing){target="_blank"} |CTD, Optode, Ecopuck, Nortek | -->
 
 
-</section>
 </section>
 
 <a onclick="window.scrollTo(0, 0); return false;" role="button" id="quarto-back-to-top"><i class="bi bi-arrow-up"></i> Back to top</a></main> <!-- /main -->

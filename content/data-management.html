@@ -2,7 +2,7 @@
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
 
 <meta charset="utf-8">
-<meta name="generator" content="quarto-1.7.32">
+<meta name="generator" content="quarto-1.7.33">
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
@@ -35,14 +35,14 @@ ul.task-list li input[type="checkbox"] {
 <script src="../site_libs/quarto-html/tippy.umd.min.js"></script>
 <script src="../site_libs/quarto-html/anchor.min.js"></script>
 <link href="../site_libs/quarto-html/tippy.css" rel="stylesheet">
-<link href="../site_libs/quarto-html/quarto-syntax-highlighting-37eea08aefeeee20ff55810ff984fec1.css" rel="stylesheet" class="quarto-color-scheme" id="quarto-text-highlighting-styles">
-<link href="../site_libs/quarto-html/quarto-syntax-highlighting-dark-2fef5ea3f8957b3e4ecc936fc74692ca.css" rel="stylesheet" class="quarto-color-scheme quarto-color-alternate" id="quarto-text-highlighting-styles">
-<link href="../site_libs/quarto-html/quarto-syntax-highlighting-37eea08aefeeee20ff55810ff984fec1.css" rel="stylesheet" class="quarto-color-scheme-extra" id="quarto-text-highlighting-styles">
+<link href="../site_libs/quarto-html/quarto-syntax-highlighting-ea385d0e468b0dd5ea5bf0780b1290d9.css" rel="stylesheet" class="quarto-color-scheme" id="quarto-text-highlighting-styles">
+<link href="../site_libs/quarto-html/quarto-syntax-highlighting-dark-bc185b5c5bdbcb35c2eb49d8a876ef70.css" rel="stylesheet" class="quarto-color-scheme quarto-color-alternate" id="quarto-text-highlighting-styles">
+<link href="../site_libs/quarto-html/quarto-syntax-highlighting-ea385d0e468b0dd5ea5bf0780b1290d9.css" rel="stylesheet" class="quarto-color-scheme-extra" id="quarto-text-highlighting-styles">
 <script src="../site_libs/bootstrap/bootstrap.min.js"></script>
 <link href="../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="../site_libs/bootstrap/bootstrap-415af80b9251e762d6fac308c5d7446a.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme" id="quarto-bootstrap" data-mode="light">
-<link href="../site_libs/bootstrap/bootstrap-dark-894000b0ab7b91f01332d20673007561.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme quarto-color-alternate" id="quarto-bootstrap" data-mode="dark">
-<link href="../site_libs/bootstrap/bootstrap-415af80b9251e762d6fac308c5d7446a.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme-extra" id="quarto-bootstrap" data-mode="light">
+<link href="../site_libs/bootstrap/bootstrap-9f8fe30c0596ce76f31474f68382ded0.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme" id="quarto-bootstrap" data-mode="light">
+<link href="../site_libs/bootstrap/bootstrap-dark-5b77044b0eb18db3dd5d031f3c45cf95.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme quarto-color-alternate" id="quarto-bootstrap" data-mode="dark">
+<link href="../site_libs/bootstrap/bootstrap-9f8fe30c0596ce76f31474f68382ded0.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme-extra" id="quarto-bootstrap" data-mode="light">
 <script id="quarto-search-options" type="application/json">{
   "location": "sidebar",
   "copy-button": false,
@@ -338,14 +338,14 @@ ul.task-list li input[type="checkbox"] {
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../content/glider-data.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">Glider Data</span></a>
+  <a href="../content/slocum-glider-data.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Slocum Glider Data</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="../content/active-acoustics.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">Acoustics</span></a>
+ <span class="menu-text">Active Acoustics</span></a>
   </div>
 </li>
           <li class="sidebar-item">
@@ -423,13 +423,14 @@ ul.task-list li input[type="checkbox"] {
 
 
 <p>Glider data management is a complex endeavor. Gliders contain many moving parts, and can collect over a terabyte of data in a single deployment. This page outlines the ESD glider data management efforts, including directory structures and storage locations for different types of data.</p>
-<p>This page provides the in-the-weeds data management details, which will likely only be relevant for ESD glider lab members. Users looking for more general information about glider data products should go to the data type pages (links todo).</p>
+<p>This page provides the in-the-weeds data management details, which will likely only be relevant for ESD glider lab members. Users looking for more general information about glider data products should go to the respective data type pages via the sidebar menu.</p>
 <section id="quick-links" class="level2">
 <h2 class="anchored" data-anchor-id="quick-links">Quick Links</h2>
-<p>Google Drive (NOAA internal only) :</p>
+<p>Google Drive (NOAA internal) :</p>
 <ul>
 <li><a href="https://drive.google.com/drive/folders/1wv2wGgWco_3heUR7JPVMc3KLGFCzkcBT">AMLR Gliders</a></li>
-<li><a href="https://docs.google.com/presentation/d/1ccMxCOCY8buNoaoQmLMc1iFEqeswLgAp895v6F202Og/edit?usp=sharing">ESD glider data locations</a></li>
+<li><a href="https://docs.google.com/presentation/d/1ccMxCOCY8buNoaoQmLMc1iFEqeswLgAp895v6F202Og/edit?usp=sharing">ESD glider data locations slides</a></li>
+<li><a href="https://photos.app.goo.gl/aKpRbVCKkJTkfcQ69">AMLR Gliders Photos</a></li>
 </ul>
 <p>Google Cloud Storage (GCS) buckets:</p>
 <ul>
@@ -437,17 +438,17 @@ ul.task-list li input[type="checkbox"] {
 <li><a href="https://console.cloud.google.com/storage/browser/amlr-gliders-acoustics-dev">Acoustics</a></li>
 <li><a href="https://console.cloud.google.com/storage/browser/amlr-gliders-imagery-raw-dev">Raw imagery</a></li>
 <li><a href="https://console.cloud.google.com/storage/browser/amlr-gliders-imagery-proc-dev">Pre-processed imagery</a> (Images pre-processed by Randy’s code)</li>
-<li>In progress: a Shiny app or some other tool for users to use to get to GCS bucket URL for a particular piece of data</li>
 </ul>
-<p>Glider &amp; Mooring Database</p>
+<p>For direct links to existing ESD glider data stored in GCS buckets, see the <a href="../content/deployments.html">Deployments</a> page.</p>
+<p>Glider &amp; Mooring Database:</p>
 <ul>
-<li><a href="https://docs.google.com/document/d/1mKMjSfp_QYXo66buBBd0NiJ7NqUk52FV95NxSW766Vc/edit?usp=sharing">Database access and use</a> (NOAA only)</li>
+<li><a href="https://docs.google.com/document/d/1mKMjSfp_QYXo66buBBd0NiJ7NqUk52FV95NxSW766Vc/edit?usp=sharing">Database access and use</a> (NOAA internal)</li>
 </ul>
 </section>
 <section id="data-management-plan" class="level2">
 <h2 class="anchored" data-anchor-id="data-management-plan">Data Management Plan</h2>
 <p>This section describes what files go where, as well as required directory structures. It replaces the <a href="https://docs.google.com/document/d/1dW5ZdkOpTz59xy4xs8ypVOvGLWBYZMdlbwGJty4PTV0/edit?usp=sharing">AMLR Glider Data Management Plan</a> Google doc.</p>
-<p><a href="https://docs.google.com/presentation/d/1ccMxCOCY8buNoaoQmLMc1iFEqeswLgAp895v6F202Og/edit?usp=sharing">These slides</a> (NOAA internal only) describe and link to the various homes for different pieces of ESD glider data, for additional references. Several of these data homes are described in more detail below.</p>
+<p><a href="https://docs.google.com/presentation/d/1ccMxCOCY8buNoaoQmLMc1iFEqeswLgAp895v6F202Og/edit?usp=sharing">These slides</a> (NOAA internal) describe and link to the various homes for different pieces of ESD glider data, for additional references. Several of these data homes are described in more detail below.</p>
 <section id="glider-mooring-database" class="level3">
 <h3 class="anchored" data-anchor-id="glider-mooring-database">Glider &amp; Mooring Database</h3>
 <p>The glider and mooring database is a SQL Server database, hosted on the internal SWFSC network. This database exists to track all of the glider/instrument (and mooring) parts and builds. Each glider deployment is represented as a build, and each build includes links to all of the different parts that were on that glider for the deployment. The rest of this section provides high-level guidance for how to use the Glider &amp; Mooring Database; see <a href="https://docs.google.com/document/d/1mKMjSfp_QYXo66buBBd0NiJ7NqUk52FV95NxSW766Vc/edit?usp=sharing">this document</a> for more details, including database access instructions for both database users and managers.</p>
@@ -455,7 +456,7 @@ ul.task-list li input[type="checkbox"] {
 <h4 class="anchored" data-anchor-id="devices">Devices</h4>
 <p>For this database, ‘device’ means any piece of glider, instrument, mooring, etc, that needs to be tracked. Devices can be created by clicking the ‘Devices’ button from the database home page, and then using the form that pops up. Note that any new device types must be added using the ‘Device Types’ form.</p>
 <p>All new devices should be added to the database as soon as they arrive at the SWFSC. Created devices can then be added to a glider build, to track which devices were part of which deployments.</p>
-<p>Note: Currently there is no way to track software versions of a ‘device’ in the database. Some of this info is tracked via the <a href="https://docs.google.com/spreadsheets/d/1tB3QNKYx8qOYYS9QZotekBAx0y-_n2d-EZPjFFdYNuU/edit?usp=sharing">Fleet Status</a> page (NOAA internal only), but it should be formally added to the database as time permits.</p>
+<p>Note: Currently there is no way to track software versions of a ‘device’ in the database. Some of this info is tracked via the <a href="https://docs.google.com/spreadsheets/d/1tB3QNKYx8qOYYS9QZotekBAx0y-_n2d-EZPjFFdYNuU/edit?usp=sharing">Fleet Status</a> page (NOAA internal), but it should be formally added to the database as time permits.</p>
 </section>
 <section id="gliders" class="level4">
 <h4 class="anchored" data-anchor-id="gliders">Gliders</h4>
@@ -474,25 +475,34 @@ ul.task-list li input[type="checkbox"] {
 </section>
 <section id="amlr-gliders-google-drive" class="level3">
 <h3 class="anchored" data-anchor-id="amlr-gliders-google-drive">AMLR Gliders Google Drive</h3>
-<p>The <a href="https://drive.google.com/drive/folders/1wv2wGgWco_3heUR7JPVMc3KLGFCzkcBT?usp=drive_link">AMLR Gliders Google Drive</a> … {full description todo}</p>
+<p>The <a href="https://drive.google.com/drive/folders/1wv2wGgWco_3heUR7JPVMc3KLGFCzkcBT?usp=drive_link">AMLR Gliders Google Drive</a> is the home for ‘Glider prep’ files that we a) want to be able to access from a glider lab computer or b) want multiple people to be able to edit. Currently these are primarily files from the glider build and testing (e.g., tech tank dive data)</p>
 <section id="glider-deployments" class="level4">
 <h4 class="anchored" data-anchor-id="glider-deployments">Glider Deployments</h4>
-<p>The <a href="https://drive.google.com/drive/folders/1qfKMxXH0hUhbmOp8aESidz-YO3IPxWM3?usp=drive_link">Glider Deployments</a> folder is for working files during both deployment prep, and the deployment itself. It provides an easy place (i.e., easier than Google Cloud) for ESD glider team members to collaborate on and refer to different files. These files live in ‘GDrive deployment folders’; the Glider Deployments folder contains GDrive folder templates. After the deployment it is downloaded and uploaded to GCP.</p>
-<p>The structure of an individual GDrive deployment folder:</p>
-<pre><code>glider-YYYYmmdd
-├── photos
-├── prep
-    ├── functional-checkout
-    ├── acoustic-prep
-    ├── imagery-prep</code></pre>
-<p><strong>photos</strong>: folder with relevant photos. These could include photos of the glider seal, or photos of the glider deployment and recovery.</p>
-<p><strong>prep</strong> Folders and files from the glider prep. In addition to the folders described below, the ‘prep’ folder may include the ballast sheet, or compass calibration files.</p>
+<p>The <a href="https://drive.google.com/drive/folders/1qfKMxXH0hUhbmOp8aESidz-YO3IPxWM3?usp=drive_link">Glider Deployments</a> folder is for working files during both deployment prep, and the deployment itself. It provides an easy place (i.e., easier than Google Cloud) for ESD glider team members to collaborate on and refer to different files. These files live in ‘GDrive deployment prep folders’; the Glider Deployments folder contains GDrive folder templates.</p>
+<p>For new deployments, a template exists in the <a href="https://drive.google.com/drive/folders/10QGrMjwwr5uZ-AISQtSBo0Hsm2zGnq0i?usp=drive_link">Templates</a> folder.</p>
+<p>The structure of an individual GDrive deployment prep folder:</p>
+<pre><code>glider-YYYYmmdd-prep
+├── acoustic-prep
+├── deployment-files
+├── glider-prep
+    ├── final-seal-photos
+    ├── functional-checkout-data
+    ├── tech-tank-data
+├── imagery-prep
+├── photos</code></pre>
 <ul>
-<li><strong>functional-checkout</strong>: functional checkout sheet, data files from test tank dive, and any other files/notes from the functional checkout</li>
-<li><strong>acoustic-prep</strong>: acoustic prep files from pre-deployment tests. These may include sample data files, relevant tests, etc.</li>
-<li><strong>imagery-prep</strong>: imagery (camera) prep files from pre-deployment tests. These may include sample images, relevant tests, etc.</li>
+<li>acoustic-prep: acoustic prep files from pre-deployment tests. These may include sample data files, relevant tests, etc.</li>
+<li>deployment-files: a catch-all folder for other files from the deployment</li>
+<li>glider-prep Folders and files from the glider prep. In addition to the folders described below, the ‘prep’ folder may include the ballast sheet, or compass calibration files.
+<ul>
+<li>final-seal-photos: photos of the final seals of the glider</li>
+<li>functional-checkout-data: functional checkout sheet, data files from test tank dive, and any other files/notes from the functional checkout</li>
+<li>tech-tank-data: data files from the tech tank, if relevant</li>
+</ul></li>
+<li>imagery-prep: imagery (camera) prep files from pre-deployment tests. These may include sample images, relevant tests, etc.</li>
+<li>photos: folder for miscellaneous photos. These could include photos of the glider seal, or photos of the glider deployment and recovery.</li>
 </ul>
-<p>Miscellaneous files that should stay associated with the deployment can go directly in the GDrive glider-YYYYmmdd folder.</p>
+<p>Miscellaneous files that should stay associated with the deployment, but do not belong in the GCS buckets, can go directly in the GDrive glider-YYYYmmdd-prep folder.</p>
 </section>
 </section>
 <section id="glider-lab-repository" class="level3">
@@ -509,7 +519,7 @@ ul.task-list li input[type="checkbox"] {
 </section>
 <section id="standard-glider-files-repository" class="level3">
 <h3 class="anchored" data-anchor-id="standard-glider-files-repository">standard-glider-files repository</h3>
-<p>The <a href="https://github.com/SWFSC/standard-glider-files">standard-glider-files</a> repository contains standard files that are put on ESD gliders before deployment. This repo and these files are also commonly used during ESD lab tests.</p>
+<p>The <a href="https://github.com/SWFSC/standard-glider-files">standard-glider-files</a> repository is the home for both all ESD glider cache files, and standard files that are put on ESD gliders before deployment. This repo and these files are also commonly used during ESD lab tests.</p>
 </section>
 <section id="gcs-buckets" class="level3">
 <h3 class="anchored" data-anchor-id="gcs-buckets">GCS Buckets</h3>
@@ -519,14 +529,16 @@ ul.task-list li input[type="checkbox"] {
 <li><strong>YYYY</strong>: Within each project folder are year folders, of the format YYYY (e.g., “2025”). For FREEBYRD (i.e., Antarctic) deployments, the January year is used. For instance, a glider deployed deployed in Dec 2022 will be in the ‘FREEBYRD/2023’ directory.</li>
 <li><strong>glider-YYYYmmdd</strong>: Within each year folder are deployment folders. The deployment folders all follow the same naming convention: ‘glider-YYYYmmdd’, where ‘glider’ is the name of the glider and ‘YYYYmmdd’ is the deployment date. For example, the folder name for the glider calanus that was deployed on 19 Oct 2024 is “calanus-20241019”.</li>
 </ul>
+<p>For new deployments, a template folder structure for uploading data to GCP exists in the <a href="https://drive.google.com/drive/folders/10QGrMjwwr5uZ-AISQtSBo0Hsm2zGnq0i?usp=drive_link">Templates</a> folder.</p>
 <p>GCS buckets are only accessible to individuals with a noaa.gov email address that have been added to the GCP project as a data viewer. To access data in GCS buckets, please contact <a href="mailto:sam.woodman@noaa.gov">Sam Woodman</a>.</p>
 <p>Each section below corresponds to an individual GCS bucket. They begin with a directory outline, followed by text that explains each directory. Principles that are consistent across buckets include:</p>
 <ul>
-<li>Several folders contain “delayed” and “rt” subfolders. Delayed mode data were collected or generated after the glider was recovered, while rt (i.e., realtime) data were transmitted or generated while the glider was deployed.</li>
+<li>Several folders contain “delayed” and “rt” subfolders. Delayed mode data were collected or generated after the glider was recovered, while rt (i.e., real-time) data were transmitted or generated while the glider was deployed.</li>
 <li>Several folders contain an ‘ngdac’ subfolder. This subfolder contains NetCDF files formatted for submission to the <a href="https://ioos.github.io/ioosngdac/index.html">IOOS Glider DAC</a>. The DAC requires one NetCDF file for each profile, hence the subfolder.</li>
 </ul>
 <section id="deployments" class="level4">
 <h4 class="anchored" data-anchor-id="deployments">Deployments</h4>
+<p>NOTE: currently, cache files are stored in both <a href="https://github.com/SWFSC/standard-glider-files">standard-glider-files</a>, and <a href="https://console.cloud.google.com/storage/browser/amlr-gliders-deployments-dev/cache">GCP</a>. In the future, cache files will only be stored in the standard-glider-files repo.</p>
 <p>The structure of an individual deployment folder, located in the <a href="https://console.cloud.google.com/storage/browser/amlr-gliders-deployments-dev">Deployments</a> bucket under a ‘PROJECT/YYYY/glider-YYYYmmdd’ path:</p>
 <pre><code>├── archive-sfmc
 ├── backup
@@ -562,7 +574,7 @@ ul.task-list li input[type="checkbox"] {
 <li><strong>processed-L1</strong>: “Level 1” processed data and data products. “Level 1” means that these data products were created by the esdglider/pyglider base processing functions (link TODO) using delayed mode data. In other words, the dbd/ebd files were used as input data, and there was minimal data qa/qc or corrections performed.</li>
 <li><strong>processed-L2</strong>: “Level 2” processed data and data products. “Level 2” means that the data has undergone additional qa/qc and/or processing, beyond what is performed during base processing. Due to lack of personnel, at this time most ESD glider deployments will not have level 2 processed data.</li>
 </ul>
-<p><strong>plots</strong>: Standard plots generated from either the ‘processed-rt’ (subfolder ‘rt’) or ‘processed-L1’ data (subfolder ‘delayed’). Note that ‘sci’ is short for plots of science sensor values, while ‘eng’ is short for plots of engineering variables. See <a href="../content/glider-data.html#plots">plots</a> for descriptions of the various folders.</p>
+<p><strong>plots</strong>: Standard plots generated from either the ‘processed-rt’ (subfolder ‘rt’) or ‘processed-L1’ data (subfolder ‘delayed’). Note that ‘sci’ is short for plots of science sensor values, while ‘eng’ is short for plots of engineering variables. See <a href="../content/slocum-glider-data.html#plots">plots</a> for descriptions of the various folders.</p>
 </section>
 <section id="acoustics" class="level4">
 <h4 class="anchored" data-anchor-id="acoustics">Acoustics</h4>
@@ -587,6 +599,7 @@ ul.task-list li input[type="checkbox"] {
 ├── config
 ├── metadata</code></pre>
 <p><strong>images</strong>: All imagery collected during the deployment. These images will be in their ‘Dir####’ folders, as they were recorded on the imagery cards.</p>
+<p>NOTE: currently, there is a space most/all image names. This feature is hardcoded into the camera software by WASSOC (the camera developer). This space will be removed before upload for all future images, and eventually removed for all currently uploaded images.</p>
 <p><strong>config</strong>: config file(s) used during the deployment</p>
 <p><strong>metadata</strong>: image metadata file, generated by base glider processing code. This file is a CSV with one row for each image, and columns representing the glider data values interpolated to the timestamp of the image.</p>
 </section>
