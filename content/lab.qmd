@@ -2,9 +2,64 @@
 title: Glider Lab
 ---
 
-This page contains various procedures and resources for glider lab members, including ESD standard operating procedures, manuals, training documents, and contract info. For piloting tools, see [Glider Pilot Tools](pilot-tools.qmd). 
+This page contains various procedures and resources for glider lab members, including ESD standard operating procedures, manuals, training documents, and contract info. For piloting tools, see [Glider Pilot Tools](pilot-tools.qmd).
 
 [Gliders and Mooring Google Calendar](https://calendar.google.com/calendar/embed?src=noaa.gov_v9l4l68ihu9n2svmno3tk1qvec%40group.calendar.google.com&ctz=America%2FLos_Angeles){target="_blank"}
+
+# [Slocum G3 Gliders](https://www.teledynemarine.com/en-us/products/Pages/slocum-glider.aspx){target="_blank"} ![](images/SlocumGlider.jpg){width="97"}
+
+NOAA’s Southwest Fisheries Science Center began deploying Teledyne Webb Research Slocum G3 gliders to study Antarctic krill in 2018. The fleet as well as the sensors on the gliders have expanded through the years.
+
+## Links
+
+[Pilot Cheatsheet](documents/pilot_cheatsheet.qmd){target="_blank"} - Common commands for piloting and testing
+
+[Slocum Fleet Mission Control](https://sfmc.webbresearch.com/sfmc/login){target="_blank"} - SFMC from Teledyne. Where to pilot the gliders using Iridium.
+
+[Argos](https://argos-system.clsamerica.com/argos-cwi2/login.html){target="_blank"} - Check where the gliders are if they miss a call in.
+
+[Datahost](https://datahost.webbresearch.com/){target="_blank"} - The TWR forum. It has the firmware builds for the gliders, Masterdata for the different firmware, TWR glider sheets, such as, Ballast, Functional Checkout, etc. Most forms are in Resources.
+
+[Masterdata](https://gliderfs2.coas.oregonstate.edu/gliderweb/masterdata/){target="_blank"} - A list of masterdata for all the various operating systems of Slocum gliders. 
+
+[Masterdata 8.6](masterdata/masterdata_8_6.txt)  [Masterdata 11.0](masterdata/masterdata_11_0.txt) [Masterdata 11.01](masterdata/masterdata_11_01.txt) [Masterdata 11.04](masterdata/masterdata_11_04.txt) [Masterdata 11.05](masterdata/masterdata_11_05.txt)
+
+[Teledyne Customer Portal](https://tmv-taptone.my.site.com/slocum/s/){target="_blank"} - Where to check the status of service on gliders and glider parts at TWR.
+
+[OceanGNS](https://www.oceangns.com/login){target="_blank"} - A program that can track multiple gliders as well as has different layers. The layers can be depth average currents, sea ice, chlorophyll, etc.
+
+![Battery Capacities](images/battery_capacities.png)
+
+![File Transfer Syntax](images/Glider_File_Transfer_Syntax.jpg)
+
+![Differences between persistor and STM gliders](images/persistor_v_stm.png)
+
+## Problem Solving
+
+[Default SFMC Group Call In](https://sfmc.webbresearch.com/sfmc/iridium-calls){target="_blank"} - Check here to see if the glider is calling into the default group instead of our SFMC.
+
+[Autoballast States](documents/Autoballast.txt)
+
+[Abort codes](documents/AbortCodes.txt)
+
+[Aborts and Errors we've gone through](https://docs.google.com/document/d/1k_1ZmGDh3oLuhqQkKLR6mKK2Y17tg8vHiEYWfJPGT5o/edit?usp=sharing){target="_blank"}
+
+## Files
+
+[AMLR Gliders Folder](https://drive.google.com/drive/u/0/folders/1wv2wGgWco_3heUR7JPVMc3KLGFCzkcBT){target="_blank"} - Where most things are stored on Google Drive with regards to gliders.
+
+[Ballast sheet](documents/Slocum Ballast.xlsx) - Ballast sheet 
+
+[Fleet Status](https://docs.google.com/spreadsheets/d/1tB3QNKYx8qOYYS9QZotekBAx0y-_n2d-EZPjFFdYNuU/edit?gid=0#gid=0){target="_blank"} - A place to see the simplified status of gliders. Also to keep track of RMAs and generalized deployments.
+
+[Functional Checkout Procedure](documents/4095-FCP Functional Checkout Procedure.xlsx) - From the datahost 
+
+[Freewave and Argos numbers](https://docs.google.com/spreadsheets/d/1xg13O3t28g-FXFVjZVICaNePxAGZ7DCoEwMBe_Dx-Dg/edit?usp=sharing){target="_blank"} - Freewave and Argos numbers for each Slocum glider.
+
+[Oil Pump Coefficients](https://docs.google.com/spreadsheets/d/1wbnNuhzYLa_oLlSAkhEpKwbhZCao8b9A3GACJh0_qFU/edit?usp=drive_link) - Coefficients that need to be put in Autoexec.mi for the different oil pumps 
+
+[Sensor Settings and Sampling Sheet](https://docs.google.com/spreadsheets/d/1SNjvXY9RhGC8St3bXdfQx6tWN10sF8evctD0B_RcTKk/edit?gid=0#gid=0){target="_blank"} - Where mission planners input the settings for sensors and how they should sample.
+
 
 ## Standard Operating Procedures
 
@@ -12,17 +67,9 @@ This page contains various procedures and resources for glider lab members, incl
 
 [How to upgrade the glider operating system](https://docs.google.com/document/d/1fospbDFkPfeCtmj6wJtINlZGb13-bkNIAn2fKB5Ek1s/edit){target="_blank"}
 
-[How to calibrate the AZFP](https://docs.google.com/document/d/10sJRgIOPb4awRG6GcpJIfy7RDksZSbjWxIXCW1Xk1Qw/edit){target="_blank"}
+[How to calibrate the compass on the Slocum](https://docs.google.com/document/d/1Ny_K8jxSWA71vFyzvtJ7bK2i5aDPo2gu/edit?usp=sharing&ouid=102683297276185841842&rtpof=true&sd=true){target="_blank"}
 
-[How to calibrate the compass on the glider](https://docs.google.com/document/d/1Ny_K8jxSWA71vFyzvtJ7bK2i5aDPo2gu/edit?usp=sharing&ouid=102683297276185841842&rtpof=true&sd=true){target="_blank"}
-
-[How to calibrate the shadowgraph](https://docs.google.com/document/d/1M9s7rSlgdBHxFnBTdKWelLfpMghZU3p8K5TImlIJ8FI/edit){target="_blank"}
-
-How to talk to the camera (shadowgraph or glidercam)
-
-How to set up the Nortek compact echosounder
-
-[How ESD pilots a glider](https://docs.google.com/document/d/1nPnl30IcK-sAbd-i1x3YUq--M43Z5XNxo1Eev1fYsJM/edit?usp=sharing){target="_blank"} (also  see [How Jen deploys a glider](https://docs.google.com/document/d/1nHKAF2F_UOV8gzQ825N7KCo8QvZ-3XBhDxQDVqCU6Po/edit?usp=sharing){target="_blank"})
+[How ESD pilots a glider](https://docs.google.com/document/d/1nPnl30IcK-sAbd-i1x3YUq--M43Z5XNxo1Eev1fYsJM/edit?usp=sharing){target="_blank"} (also see [How Jen deploys a glider](https://docs.google.com/document/d/1nHKAF2F_UOV8gzQ825N7KCo8QvZ-3XBhDxQDVqCU6Po/edit?usp=sharing){target="_blank"})
 
 [How to use the high speed data cable](https://docs.google.com/document/d/10WD0RvmtD3B5yXnNhMeQiUxuK524cDntec29c57cEyI/edit?usp=sharing){target="_blank"}
 
@@ -30,99 +77,19 @@ How to set up the Nortek compact echosounder
 
 [Tony's SFMC Data Visualizations](https://docs.google.com/document/d/1GgaZyglCF5wDOZruK5Ewc5HsKpwMg3jxkPrCb9s_g4k/edit?usp=sharing){target="_blank"}
 
-[Notes on Nortek mini-echosounder](https://docs.google.com/document/d/11ih0V16ZixwDb9c7f-6vLbt-bbhiwrVagAG_7VGKJaU/edit?usp=sharing){target="_blank"}
-
 [How to work on a glider while it is open](https://docs.google.com/document/d/1a_N0zhSXgMQSYMxEsWwzVrb4hMajXvOHCJinXlJvthc/edit?usp=sharing){target="_blank"}
-
-
-## Online Calculators
-
-[Sea Water Density](https://fermi.jhuapl.edu/denscalc.html){target="_blank"} - Calculate sea water density and sound speed.
-
-### Calculators for Acoustics
-
-[Sound Absorption](http://resource.npl.co.uk/acoustics/techguides/seaabsorption/){target="_blank"} - Calculate Absorption using the Francois and Garrison, 1982 method.
-
-[Standard Sphere Target Strength](https://www.fisheries.noaa.gov/data-tools/standard-sphere-target-strength-calculator){target="_blank"} - Standard sphere target strength calculator created by Advanced Survey Technologies, SWFSC.
 
 ## Manuals
 
-### **Slocum**
+[Slocum Fleet Mission Control July 2025](https://drive.google.com/file/d/1MYaU_SHb_KyUx89ejVqgdSiO2O3jWh6E/view?usp=drive_link){target="_blank"}
 
+[Slocum G3 Glider Operators Manual 2025](https://drive.google.com/file/d/1LrDA0AtZ3vOSTAQ1RR4RKJKJZYwYPdG2/view?usp=drive_link){target="_blank"}
 
-[Slocum Fleet Mission Control 2019](https://drive.google.com/file/d/15n3mQmRP0_HTuUXbMi6hEEYOIGd81sb5/view?usp=drive_link){target="_blank"}
-
-[Slocum G3 Glider Operators Manual 2019](https://drive.google.com/file/d/1qQWFOZMSv8FQZmk8_7XItLFRQ1CCArOd/view?usp=drive_link){target="_blank"}
-
-[Slocum G3 Maintenance Manual 2019](https://drive.google.com/file/d/1NHIC_bQe2xjB3sw42vuT_aK9cup8pQAF/view){target="_blank"}
+[Slocum G3 Maintenance Manual 2025](https://drive.google.com/file/d/1oTtjoARLuoBHl0N-HoHG9IkzyFtHHdQg/view?usp=drive_link){target="_blank"}
 
 [Slocum G3S New Processor Guide 2021 Draft B](https://drive.google.com/file/d/1nfxGecTRVpzeVXK3owIZv7FprvylL2W_/view){target="_blank"}
 
-### **Cameras**
-
-[Shadowgraph r3](https://drive.google.com/file/d/1Ns-b0VmK9DmwB6rKtL0uP9s6vl4i2PLE/view?usp=sharing){target="_blank"}
-
-[Glidercam r2.1](https://drive.google.com/file/d/1TwuEmq_5PADnZ080sjW02Yltb2_E-VOd/view){target="_blank"}
-
-### **Nortek compact echosounder**
-
-[Integrators guide 2024](https://drive.google.com/file/d/1alDzxEH2y8qRiVK84he_lmzSYe_p5PEo/view?usp=drive_link){target="_blank"}
-
-[Signature 100 Operations Manual 2022](https://drive.google.com/file/d/10xkj3nGJSlXBlI_0imdwU-7tYl-BJ4ok/view?usp=drive_link){target="_blank"}
-
-[Principles of Operations Signature 100 2022](https://drive.google.com/file/d/1lU-GrL2S-lRS9ta9jJPRC23KoUZtvVXa/view?usp=drive_link){target="_blank"}
-
-[MIDAS software User Guide 2019](https://drive.google.com/file/d/1rMces9zavoaGUGz_UseJERyQcwnMqI0Q/view?usp=drive_link){target="_blank"}
-
-### **AZFP Acoustic Zooplankton Fish Profiler**
-
-[AZFPLink Software 2019](https://drive.google.com/file/d/1lapjSo5PowFz3hg0titXKRKw43TzE6PQ/view?usp=drive_link){target="_blank"}
-
-[AZFP Glider Operators Manual 2020](https://drive.google.com/file/d/1oUlWwatlenKCCb098wAQ3-PNIiiZ3rDk/view?usp=drive_link){target="_blank"}
-
-[AZFP Operators Manual 2019](https://drive.google.com/file/d/1PCRZJ798CCKfaZSdjb_OOFqtmLCqSmiJ/view?usp=drive_link){target="_blank"}
-
-### **ECOPuck**
-
-[ECOPuck User Manual 2017](https://drive.google.com/file/d/1-qq2GU-LoJZYq1lxHMppllWFkgy4y70d/view?usp=drive_link){target="_blank"}
-
-### **AAnderaa Oxygen Optode**
-
-[Oxygen Optode Manual 2017](https://drive.google.com/file/d/1-etHx8dsXKcp6XoSZG9PtV2HXbDQHTbv/view?usp=drive_link){target="_blank"}
-
-### **Biospherical Par Sensor**
-[QSP-2150 submersible Par Manual](https://drive.google.com/file/d/1iFpBvCYvnX0WQOrN65xoAA9qzebTGjfM/view?usp=sharing){target="_blank"}
-
-### **WISPR Passive Acoustic Monitoring**
-
-[WISPR 3 Github](https://github.com/embeddedocean/wispr3){target="_blank"}
-
-### **DMON**
-[DMON instructions](https://drive.google.com/file/d/1B0qPXvF9vondThmoCeFgc_b4TiKmtLQX/view?usp=drive_link){target="_blank"}
-
-[DMON software and settings](https://drive.google.com/drive/folders/1iRRukFoOWjqd1ezeZGp7gapMBgFmJK73?usp=drive_link){target="_blank"}
-
-
-## Software and settings
-
-Add info on setting up a glider field laptop so they are all set up the same way.
-
-| Software                                                                                       | Settings |  Use                                                                                            |
-|------------------------------|------------------------------|------------------------------|
-| [ZOC](https://www.emtec.com/zoc/index.html){target="_blank"}                                                    | [Settings](https://docs.google.com/document/d/1lDMAtfzKKY7XLKwakii6P_g1HGAFZYtKUMWhLEW4DUU/edit?usp=sharing){target="_blank"} | Talking with the glider over Freewave |
-| [Tera Term](https://teratermproject.github.io/index-en.html){target="_blank"}                                   | Settings | Talking with the camera |                                                                                  |
-| [AZFP](https://drive.google.com/file/d/16eSSKX3DGkA6UUvign7KnQwzPqhUJHil/view?usp=drive_link){target="_blank"}  | Settings |  Calibrating and settings for AZFP|                                                                                          |
-| [MIDAS](https://drive.google.com/file/d/1lGYgthRRTBOQShaTqlrB233jWfp_uRZV/view?usp=drive_link){target="_blank"} | Settings | Setting up Nortek |                                                                                            |
-| [WinSCP](https://winscp.net/eng/index.php){target="_blank"}                                                     | Settings | FTP client for the camera |                                                                                            |
-| [Notepad++](https://notepad-plus-plus.org/){target="_blank"}                                                    | Settings  | Changing and reading glider files |  
-| [OceanContour](https://oceanillumination.com/){target="_blank"}												 | Settings  | For viewing ADCP data |                                                                                       |
-
-## Parts List
-Where we buy specific parts
-
-[O-rings](documents/O-rings.md){target="_blank"}
-
-## Training Documents
+[Slocum Glider Operator Training Guide](https://drive.google.com/file/d/1qvEFuLN6vOw7YrbHv2Y8I4ULQhB44cVT/view?usp=drive_link){target="_blank"}
 
 [Slocum Basic Training Slides May 2024](https://drive.google.com/file/d/15O-BuBtiOovHT-yFzKEvVNwmOnNgvnjW/view?usp=drive_link){target="_blank"}
 
@@ -132,14 +99,120 @@ Where we buy specific parts
 
 [Rutgers Glider Camp 2023](https://drive.google.com/drive/folders/1cx8iuoX5duVvjwIw6RTQChlb1mFERctT?usp=drive_link){target="_blank"}
 
+
+# [Oceanscout](https://www.hefring.com/oceanscout){target="_blank"} ![](images/HefringGlider.jpg){width="149"}
+
+The ESD started using the Hefring OceanScout gliders in 2025. They are a smaller glider than the Slocum G3s.These currently have a CTD and a WISPR 3 PAM sensor.
+
+## Links
+
+[Hefring cloud](https://noaafisheries.hefring.cloud/){target="_blank"}- The NOAA cloud interface for controlling Oceanscouts.
+
+[How to view OceanScout data](https://docs.google.com/document/d/1zVzIeTeJ6fW4Ow5faFSh8xxW-BWR4hRm/edit){target="_blank"}
+
+[Upgrade the Altimeter](https://docs.google.com/document/d/12vyN1u6O4R_JSQA0PjtyxB7tk5wXG2Ok/edit){target="_blank"}
+
+[CLI help](documents/OS_help_1.1.2.txt){target="_blank"}
+
+## User Manual 
+The User Manual is available on Hefring cloud
+
+[Getting Started](documents/Getting%20started.pdf){target="_blank"}
+
+[Cloud](documents/Cloud.pdf){target="_blank"}
+
+[Hardware](documents/Hardware.pdf){target="_blank"}
+
+[Firmware](documents/Firmware.pdf){target="_blank"}
+
+[Safety Guidelines](documents/Safety%20guidelines.pdf){target="_blank"}
+
+[Frequently Asked Questions](documents/Frequently%20Asked%20Questions.pdf){target="_blank"}
+
+[Troubleshooting](documents/Troubleshooting.pdf){target="_blank"}
+
+# Sensors
+
+ESD gliders can be outfitted with multiple sensors depending on the science questions that they are being used to answer.
+
+## **Cameras**
+
+[How to calibrate the shadowgraph](https://docs.google.com/document/d/1M9s7rSlgdBHxFnBTdKWelLfpMghZU3p8K5TImlIJ8FI/edit){target="_blank"}
+
+[Shadowgraph r3](https://drive.google.com/file/d/1Ns-b0VmK9DmwB6rKtL0uP9s6vl4i2PLE/view?usp=sharing){target="_blank"}
+
+[Glidercam r2.1](https://drive.google.com/file/d/1TwuEmq_5PADnZ080sjW02Yltb2_E-VOd/view){target="_blank"}
+
+## **Nortek compact echosounder**
+
+[Notes on Nortek mini-echosounder](https://docs.google.com/document/d/11ih0V16ZixwDb9c7f-6vLbt-bbhiwrVagAG_7VGKJaU/edit?usp=sharing){target="_blank"}
+
+[Integrators guide 2024](https://drive.google.com/file/d/1alDzxEH2y8qRiVK84he_lmzSYe_p5PEo/view?usp=drive_link){target="_blank"}
+
+[Signature 100 Operations Manual 2022](https://drive.google.com/file/d/10xkj3nGJSlXBlI_0imdwU-7tYl-BJ4ok/view?usp=drive_link){target="_blank"}
+
+[Principles of Operations Signature 100 2022](https://drive.google.com/file/d/1lU-GrL2S-lRS9ta9jJPRC23KoUZtvVXa/view?usp=drive_link){target="_blank"}
+
+[MIDAS software User Guide 2019](https://drive.google.com/file/d/1rMces9zavoaGUGz_UseJERyQcwnMqI0Q/view?usp=drive_link){target="_blank"}
+
+## **AZFP Acoustic Zooplankton Fish Profiler**
+
+[How to calibrate the AZFP](https://docs.google.com/document/d/10sJRgIOPb4awRG6GcpJIfy7RDksZSbjWxIXCW1Xk1Qw/edit){target="_blank"}
+
+[AZFPLink Software 2019](https://drive.google.com/file/d/1lapjSo5PowFz3hg0titXKRKw43TzE6PQ/view?usp=drive_link){target="_blank"}
+
+[AZFP Glider Operators Manual 2020](https://drive.google.com/file/d/1oUlWwatlenKCCb098wAQ3-PNIiiZ3rDk/view?usp=drive_link){target="_blank"}
+
+[AZFP Operators Manual 2019](https://drive.google.com/file/d/1PCRZJ798CCKfaZSdjb_OOFqtmLCqSmiJ/view?usp=drive_link){target="_blank"}
+
+## **ECOPuck**
+
+[ECOPuck User Manual 2017](https://drive.google.com/file/d/1-qq2GU-LoJZYq1lxHMppllWFkgy4y70d/view?usp=drive_link){target="_blank"}
+
+## **AAnderaa Oxygen Optode**
+
+[Oxygen Optode Manual 2017](https://drive.google.com/file/d/1-etHx8dsXKcp6XoSZG9PtV2HXbDQHTbv/view?usp=drive_link){target="_blank"}
+
+## **Biospherical Par Sensor**
+
+[QSP-2150 submersible Par Manual](https://drive.google.com/file/d/1iFpBvCYvnX0WQOrN65xoAA9qzebTGjfM/view?usp=sharing){target="_blank"}
+
+## **WISPR Passive Acoustic Monitoring**
+
+[WISPR 3 Github](https://github.com/embeddedocean/wispr3){target="_blank"}
+
+## **DMON**
+
+[DMON instructions](https://drive.google.com/file/d/1B0qPXvF9vondThmoCeFgc_b4TiKmtLQX/view?usp=drive_link){target="_blank"}
+
+[DMON software and settings](https://drive.google.com/drive/folders/1iRRukFoOWjqd1ezeZGp7gapMBgFmJK73?usp=drive_link){target="_blank"}
+
+# Software and settings
+
+Add info on setting up a glider field laptop so they are all set up the same way.
+
+| Software | Settings | Use |
+|------------------------|------------------------|------------------------|
+| [ZOC](https://www.emtec.com/zoc/index.html){target="_blank"} | [Settings](https://docs.google.com/document/d/1lDMAtfzKKY7XLKwakii6P_g1HGAFZYtKUMWhLEW4DUU/edit?usp=sharing){target="_blank"} | Talking with the glider over Freewave |
+| [Tera Term](https://teratermproject.github.io/index-en.html){target="_blank"} | Settings | Talking with the camera |
+| [AZFP](https://drive.google.com/file/d/16eSSKX3DGkA6UUvign7KnQwzPqhUJHil/view?usp=drive_link){target="_blank"} | Settings | Calibrating and settings for AZFP |
+| [MIDAS](https://drive.google.com/file/d/1lGYgthRRTBOQShaTqlrB233jWfp_uRZV/view?usp=drive_link){target="_blank"} | Settings | Setting up Nortek |
+| [WinSCP](https://winscp.net/eng/index.php){target="_blank"} | Settings | FTP client for the camera |
+| [Notepad++](https://notepad-plus-plus.org/){target="_blank"} | Settings | Changing and reading glider files |
+| [OceanContour](https://oceanillumination.com/){target="_blank"} | Settings | For viewing ADCP data |
+
+## Parts List
+
+Where we buy specific parts
+
+[O-rings](documents/O-rings.md){target="_blank"}
+
 ## Contracts
 
 [Outer Limits 2024-28](https://drive.google.com/file/d/10IzLqGHu_7d6_8tS502Z2ny15joWZ_Sh/view?usp=drive_link){target="_blank"} Charter boat out of Mission Bay BPA [site](https://www.outerlimit.net/){target="_blank"}
-
-[Pacific Venture 2024-28](https://drive.google.com/file/d/1RBtK_C4E4CEsA-l35DK0bf7-PqMbhuud/view?usp=drive_link){target="_blank"} Charter boat out of Oceanside BPA [site](https://www.pacific-venture.com/){target="_blank"}
 
 [Teledyne Webb Research 2024-28](https://drive.google.com/file/d/1_8WzrrVxbi9TgE-HvbDqZZI5n8mLUHuH/view?usp=drive_link){target="_blank"} IDIQ for Slocum gliders and parts [site](https://www.teledynemarine.com/brands/webb-research/){target="_blank"}
 
 ## Glider and Mooring Database
 
-You can find the Glider and Mooring Database on the network drive under AMLR_Datasets. The database is a SQL server database with an Access front end, accessible over the SWFSC network (including VPN). It is used to track several facets of gliders, including glider builds, deployments, and the number of deployment days and inflections for various sensors. We are working on scripts to get some standard data out as well as populate yml files for archiving deployment data. For more information see [Data Management](data-management.qmd). 
+You can find the Glider and Mooring Database on the network drive under AMLR_Datasets. The database is a SQL server database with an Access front end, accessible over the SWFSC network (including VPN). It is used to track several facets of gliders, including glider builds, deployments, and the number of deployment days and inflections for various sensors. We are working on scripts to get some standard data out as well as populate yml files for archiving deployment data. For more information see [Data Management](data-management.qmd).
