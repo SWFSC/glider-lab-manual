@@ -106,7 +106,7 @@ The 'Sensors': column indicates which sensors were on the glider for each deploy
 - **DMON**: Digital acoustic monitoring (DMON) instrument developed by [WHOI](https://robots4whales.whoi.edu/about/how-it-works/)
 - **WISPR**: WISPR instrument developed by [Embedded Ocean Systems](https://embeddedocean.com/passive-acoustics-2/). This instrument is paired with a hydrophone by [High Tech Inc](https://www.hightechincusa.com/products/hydrophones/hti99hf.html)
 
-The 'Report' column contains links to various ESD-internal reports, detailing aspects of the glider prep, deployment, and/or recovery. These reports are in the process of being converted to Quarto documents, after which they will be published externally.
+The 'Report' column contains links to various ESD-internal reports, detailing aspects of the glider prep, deployment, and/or recovery. These reports have been converted to Quarto documents, and are in the process of being published on a public-facing NMFS website. Once they have been published, these links will be updated.
 
 The 'ERDDAP' column will contain the link to the glider dataset when it is published to the [ERDDAP](https://gliders.ioos.us/erddap/index.html) of the [IOOS National Glider Data Assembly Center](https://gliders.ioos.us/).
 
