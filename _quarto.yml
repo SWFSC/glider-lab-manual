@@ -13,6 +13,12 @@ website:
   page-navigation: false
   back-to-top-navigation: true
   bread-crumbs: true
+
+  google-analytics: 
+      tracking-id: G-XR503W12Z2
+      anonymize-ip: true
+  cookie-consent:
+      type: implied
   
   page-footer:
     right: "This page is built with [Quarto](https://quarto.org/)."
@@ -63,6 +69,7 @@ format:
     code-overflow: wrap
     toc: true
     toc-depth: 4
+    include-in-header: analytics.html
 
 filters:
   - include-files.lua
