@@ -133,50 +133,56 @@
     "href": "content/documents/pilot_cheatsheet.html",
     "title": "Slocum Glider Pilot Reference",
     "section": "",
-    "text": "Useful Commands and Variables\n\n\n\n\n\n\nCommands\n\n\n\n\n\n\n\n\n\n\n\n\nhelp or help [command]\nPrint description of command.\n\n\nlab_mode [on|off]\nActivate lab mode.\n\n\nwiggle [on|off]\nMove all mechanical components.\n\n\nget [var]\nPrint variable once (usually m_...).\n\n\nput [var]\nSet variable (usually c_...).\n\n\nreport ++ [m_var]\nContinuously print readings.\n\n\nreport clearall\nStop continuously printing readings.\n\n\nlist\nList all variables.\n\n\nlist [var]\nShow variable and related variables.\n\n\ndir (preferred) or ls\nPrint contents of present directory.\n\n\nconsci\nSwitch to science processor. quit to exit.\n\n\nwhoru\nPrint glider name.\n\n\nwhere\nSurface dialog and various values.\n\n\nwhy?\nPrint reason for most recent mission abort.\n\n\nget m_why_started\nTroubleshoot when glider resets itself.\n\n\nuse\nPrint list of devices and their operational stats.\n\n\nuse -|+ [device] , use none|all\nBring devices in and out of service.\n\n\nzero_ocean_pressure\nSet sea level.\n\n\nexit\nShut down safely and correctly.\n\n\nexit reset\nReboot glider.\n\n\n\n\n\n\n\n\n\n\n\n\nVariables\n\n\n\n\n\n\n\n\n\n\n\n\nc_de_oil_vol , m_de_oil_vol\nSet or get oil pump volume.\n\n\nc_air_pump\nFill or drain air bladder.\n\n\nm_vacuum\nGet internal vacuum reading.\n\n\nc_battpos, m_battpos\nSet or get pitch battery position.\n\n\nm_coulumb_amphr_total\nNeeds to be reset when batteries are replaced.\n\n\n\n\n\n\n\n\n\n\n\n\nVariable Types\n\n\n\n\n\n\n*more information and description about variables in masterdata.dat\n\n\nm_\nmeasured\n\n\nc_\ncommanded\n\n\nu_\nuser-defined (before run time)\n\n\nf_\nfactory set\n\n\nx_\ncomputed at run time (DO NOT SET)\n\n\ns_\nsimulated state variables\n\n\nsci_\nscience sensor\n\n\n\n\n\n\n\n\nFile Types and Transfers\n\n\n\n\n\n\nGlider Data Files\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nFlight\nScience\nCompressed\n\n\nall data (recovered)\n.DBD\n.EBD\n.DCD / .ECD\n\n\ndecimated (telemetry)\n.SBD\n.TBD\n.SCD / .TCD\n\n\nmedium (diagnostic)\n.MBD\n.NBD\n.MCD / NCD\n\n\nlog files\n.MLG\n.NLG\n.MCG / .NCG\n\n\n\n\n\n\n.dbd file naming convention:\n\n\n\n\nmission# + segment#\n\n\nex. 0111 + 0055 -&gt; 01110055.dbd\n\n\n\n\n\n\nFull file naming convention:\n\n\n\n\nglider_name-year-yearday-mission#_that_day-segment#\n\n\nex. calanus-2024-195-1-16\n\n\n\n\n\n\n\n\n\n\n\n\nFile Transfer Commands\n\n\n\n\n\n\n\n\n\n\n\n\nFiles from glider (glider sends)\n\n\n\n\n\nzs  [path/to/file]\nsend files from present processor\n\n\nszs [path/to/file]\nsend files from sci processor (if on flight)\n\n\nsend [log_filenames]\nsend logs and move files to /sentlogs/\n\n\ns [log_filesnames]\nsame as send but during mission\n\n\n\n\n\n\n\n\n\n\nFiles to glider (glider receives)\n\n\n\n\n\nzr\nsend using terminal program over FreeWave\n\n\ndockzr [filename] or dockzr *.*\nsend using SFMC “to-glider” folder\n\n\nszr\nsend files to science processor over FreeWave\n\n\ndockszr [filename] or dockszr *.*\nsend using SFMC “to-science” folder\n\n\n\n\n\n\n\n\n\n\n\n\nGlider Mission Files\n\n\n\n\n\n\n\n\n\n\n\n\n[mission].mi\nMain mission file.\n\n\ngoto_l10.ma\nWay-point plan.\n\n\nsample01.ma\nSampling scheme, one file per sensor.\n\n\nsurfac10.ma\nSurfacing condition (multiple).\n\n\nyo20.ma\nDive behavior.\n\n\nautoexec.mi\nGlider identity file (don’t send over Irdium)\n\n\nproglets.dat\nScience identity file (on science processor!)\n\n\nsbdlist.dat, tbdlist.dat\nConfigures telemetry files .sbd and .tbd\n\n\n\n\n\n\n\n\nMission Commands\n\n\n\n\n\n\nInitializing Missions\n\n\n\n\n\n\n\n\n\n\n\n\nloadmission [mission_name].mi\nsets glider variables from mission file\n\n\nrun [mission_name].mi\nbegin running mission\n\n\ntype [path/to/missionfile]\nprints contents of mission file\n\n\nsequence [mission_0].mi [mission_1].mi ...\nruns listed missions consecutively\n\n\nsequence [mission_name].mi(N)\nruns mission N times consecutively\n\n\n\n\n\n\n\n\n\n\n\n\nIn-mission Commands\n\n\n\n\n\n\n\n\n^R (ctrl-R)\nResume mission (dive) immediately.\n\n\n^C\nEnd mission, prompt GliderDOS .\n\n\n^E\nExtend surface time by 5-minutes.\n\n\n^W\nGet device warning reports, like use\n\n\n^F\nRe-read files.\n\n\ns [...]\nSend log files.\n\n\n![GliderDOS command] , ex. !dockzr *.*\nSend command.\n\n\n^T\nconsci to science computer, prompt SciDOS\n\n\n\n\n\n\n\n\nCommon Procedures\n\n\n\n\n\n\nCatching Glider at start-up in the lab over FreeWave\n\n\n\n\n\nQuit sequence and prompt GliderDOS\n&gt; ctrl-C\nHang up Iridium for 30 minutes\n&gt; callback 30\nEnter lab mode:\n&gt; lab_mode on\n\n\n\n\n\n\n\n\n\nDeflate air bladder to remove tail cowling\n\n\n\n\n\nBallast command, also resets oil pump and pitch battery\n&gt; ballast\nOr, air bladder only\n&gt; put c_air_pump 0\nOr, if testing sensors on battery power in the lab over FreeWave\n&gt; loadmission lowpow.mi\nAfterwards, check internal vacuum (target 7.0-7.5 inHg)\n&gt; get m_vacuum\nor\nreport ++ m_vacuum\n\nNote: clear output from ballast and report ++ using report clearall\n\n\n\n\n\n\n\n\n\n\nPower down glider safely\n\n\n\n\n\nPull in ballast pump oil\n&gt; put c_de_oil_vol -420\nand deflate air bladder\n&gt; put c_air_pump 0\nWait until these actions are complete, use\n&gt; report ++ m_de_oil_vol m_vacuum\nPower down glider\n&gt; exit\nand wait for confirmation before pulling green shorting plug.\n\n\n\n\n\n\n\n\n\nSimulating with a glider\n\n\n\n\n\nInitiate simulation mode\nCheck whether the glider is currently in a simulation\n&gt; simul?\nCreate a simulation file in config directory\n&gt; capture config/simul.sim\non_bench ^C\nVerify that the file exists and contents are correct\n&gt; type config/simul.sim\nReset the glider\n&gt; exit reset\nAnd check to make sure the glider is now in simulation\n&gt; simul?\n\nDeactivate simulation mode\nRemove the simulation file\n&gt; del config/simul.sim\nVerify that the file is now gone\n&gt; dir config\nReset the glider and make sure it is not in simulation mode\n&gt; exit reset\n&gt; simul?\n\n\n\n\n\n\n\n Back to top"
+    "text": "Useful Commands and Variables\n\n\n\n\n\n\nWarningCommands\n\n\n\n\n\n\n\n\n\n\n\n\nhelp or help [command]\nPrint description of command.\n\n\nlab_mode [on|off]\nActivate lab mode.\n\n\nwiggle [on|off]\nMove all mechanical components.\n\n\nget [var]\nPrint variable once (usually m_...).\n\n\nput [var]\nSet variable (usually c_...).\n\n\nreport ++ [m_var]\nContinuously print readings.\n\n\nreport clearall\nStop continuously printing readings.\n\n\nlist\nList all variables.\n\n\nlist [var]\nShow variable and related variables.\n\n\ndir (preferred) or ls\nPrint contents of present directory.\n\n\nconsci\nSwitch to science processor. quit to exit.\n\n\nwhoru\nPrint glider name.\n\n\nwhere\nSurface dialog and various values.\n\n\nwhy?\nPrint reason for most recent mission abort.\n\n\nget m_why_started\nTroubleshoot when glider resets itself.\n\n\nuse\nPrint list of devices and their operational stats.\n\n\nuse -|+ [device] , use none|all\nBring devices in and out of service.\n\n\nzero_ocean_pressure\nSet sea level.\n\n\nexit\nShut down safely and correctly.\n\n\nexit reset\nReboot glider.\n\n\n\n\n\n\n\n\n\n\n\n\nNoteVariables\n\n\n\n\n\n\n\n\n\n\n\n\nc_de_oil_vol , m_de_oil_vol\nSet or get oil pump volume.\n\n\nc_air_pump\nFill or drain air bladder.\n\n\nm_vacuum\nGet internal vacuum reading.\n\n\nc_battpos, m_battpos\nSet or get pitch battery position.\n\n\nm_coulumb_amphr_total\nNeeds to be reset when batteries are replaced.\n\n\n\n\n\n\n\n\n\n\n\n\nNoteVariable Types\n\n\n\n\n\n\n*more information and description about variables in masterdata.dat\n\n\nm_\nmeasured\n\n\nc_\ncommanded\n\n\nu_\nuser-defined (before run time)\n\n\nf_\nfactory set\n\n\nx_\ncomputed at run time (DO NOT SET)\n\n\ns_\nsimulated state variables\n\n\nsci_\nscience sensor\n\n\n\n\n\n\n\n\nFile Types and Transfers\n\n\n\n\n\n\nNoteGlider Data Files\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nFlight\nScience\nCompressed\n\n\nall data (recovered)\n.DBD\n.EBD\n.DCD / .ECD\n\n\ndecimated (telemetry)\n.SBD\n.TBD\n.SCD / .TCD\n\n\nmedium (diagnostic)\n.MBD\n.NBD\n.MCD / NCD\n\n\nlog files\n.MLG\n.NLG\n.MCG / .NCG\n\n\n\n\n\n\n.dbd file naming convention:\n\n\n\n\nmission# + segment#\n\n\nex. 0111 + 0055 -&gt; 01110055.dbd\n\n\n\n\n\n\nFull file naming convention:\n\n\n\n\nglider_name-year-yearday-mission#_that_day-segment#\n\n\nex. calanus-2024-195-1-16\n\n\n\n\n\n\n\n\n\n\n\n\nWarningFile Transfer Commands\n\n\n\n\n\n\n\n\n\n\n\n\nFiles from glider (glider sends)\n\n\n\n\n\nzs  [path/to/file]\nsend files from present processor\n\n\nszs [path/to/file]\nsend files from sci processor (if on flight)\n\n\nsend [log_filenames]\nsend logs and move files to /sentlogs/\n\n\ns [log_filesnames]\nsame as send but during mission\n\n\n\n\n\n\n\n\n\n\nFiles to glider (glider receives)\n\n\n\n\n\nzr\nsend using terminal program over FreeWave\n\n\ndockzr [filename] or dockzr *.*\nsend using SFMC “to-glider” folder\n\n\nszr\nsend files to science processor over FreeWave\n\n\ndockszr [filename] or dockszr *.*\nsend using SFMC “to-science” folder\n\n\n\n\n\n\n\n\n\n\n\n\nNoteGlider Mission Files\n\n\n\n\n\n\n\n\n\n\n\n\n[mission].mi\nMain mission file.\n\n\ngoto_l10.ma\nWay-point plan.\n\n\nsample01.ma\nSampling scheme, one file per sensor.\n\n\nsurfac10.ma\nSurfacing condition (multiple).\n\n\nyo20.ma\nDive behavior.\n\n\nautoexec.mi\nGlider identity file (don’t send over Irdium)\n\n\nproglets.dat\nScience identity file (on science processor!)\n\n\nsbdlist.dat, tbdlist.dat\nConfigures telemetry files .sbd and .tbd\n\n\n\n\n\n\n\n\nMission Commands\n\n\n\n\n\n\nNoteInitializing Missions\n\n\n\n\n\n\n\n\n\n\n\n\nloadmission [mission_name].mi\nsets glider variables from mission file\n\n\nrun [mission_name].mi\nbegin running mission\n\n\ntype [path/to/missionfile]\nprints contents of mission file\n\n\nsequence [mission_0].mi [mission_1].mi ...\nruns listed missions consecutively\n\n\nsequence [mission_name].mi(N)\nruns mission N times consecutively\n\n\n\n\n\n\n\n\n\n\n\n\nWarningIn-mission Commands\n\n\n\n\n\n\n\n\n^R (ctrl-R)\nResume mission (dive) immediately.\n\n\n^C\nEnd mission, prompt GliderDOS .\n\n\n^E\nExtend surface time by 5-minutes.\n\n\n^W\nGet device warning reports, like use\n\n\n^F\nRe-read files.\n\n\ns [...]\nSend log files.\n\n\n![GliderDOS command] , ex. !dockzr *.*\nSend command.\n\n\n^T\nconsci to science computer, prompt SciDOS\n\n\n\n\n\n\n\n\nCommon Procedures\n\n\n\n\n\n\nTipCatching Glider at start-up in the lab over FreeWave\n\n\n\n\n\nQuit sequence and prompt GliderDOS\n&gt; ctrl-C\nHang up Iridium for 30 minutes\n&gt; callback 30\nEnter lab mode:\n&gt; lab_mode on\n\n\n\n\n\n\n\n\n\nTipDeflate air bladder to remove tail cowling\n\n\n\n\n\nBallast command, also resets oil pump and pitch battery\n&gt; ballast\nOr, air bladder only\n&gt; put c_air_pump 0\nOr, if testing sensors on battery power in the lab over FreeWave\n&gt; loadmission lowpow.mi\nAfterwards, check internal vacuum (target 7.0-7.5 inHg)\n&gt; get m_vacuum\nor\nreport ++ m_vacuum\n\nNote: clear output from ballast and report ++ using report clearall\n\n\n\n\n\n\n\n\n\n\nTipPower down glider safely\n\n\n\n\n\nPull in ballast pump oil\n&gt; put c_de_oil_vol -420\nand deflate air bladder\n&gt; put c_air_pump 0\nWait until these actions are complete, use\n&gt; report ++ m_de_oil_vol m_vacuum\nPower down glider\n&gt; exit\nand wait for confirmation before pulling green shorting plug.\n\n\n\n\n\n\n\n\n\nTipSimulating with a glider\n\n\n\n\n\nInitiate simulation mode\nCheck whether the glider is currently in a simulation\n&gt; simul?\nCreate a simulation file in config directory\n&gt; capture config/simul.sim\non_bench ^C\nVerify that the file exists and contents are correct\n&gt; type config/simul.sim\nReset the glider\n&gt; exit reset\nAnd check to make sure the glider is now in simulation\n&gt; simul?\n\nDeactivate simulation mode\nRemove the simulation file\n&gt; del config/simul.sim\nVerify that the file is now gone\n&gt; dir config\nReset the glider and make sure it is not in simulation mode\n&gt; exit reset\n&gt; simul?\n\n\n\n\n\n\n\n Back to top"
   },
   {
-    "objectID": "content/active-acoustics.html",
-    "href": "content/active-acoustics.html",
-    "title": "Active Acoustics",
+    "objectID": "content/deployments.html",
+    "href": "content/deployments.html",
+    "title": "Deployments",
     "section": "",
-    "text": "This page describes processing active acoustic data collected by ESD using underwater gliders. For info about passive acoustic data, see NOAA Fisheries PAM-Equipped Glider Research",
+    "text": "The below table lists all ESD (and formerly AERD) glider deployments, both in-progress and past, along with basic information about the deployment. The table also includes links to post-deployment reports and data files, where they exist.\nUsers can use the Search box at the top right of the table (you may have to scroll to the right) to filter the table for rows that contain the entered text. For instance, enter “calanus” to filter for all deployments of the glider calanus.\nSee the Fleet Status sheet (NOAA internal) for more detailed ESD glider fleet and deployment details.",
     "crumbs": [
-      "Data Processing",
-      "Active Acoustics"
+      "Deployments"
     ]
   },
   {
-    "objectID": "content/active-acoustics.html#background",
-    "href": "content/active-acoustics.html#background",
-    "title": "Active Acoustics",
-    "section": "Background",
-    "text": "Background\nActive acoustics has been a long used survey tool for estimating the abundance and distribution of fish, zooplankton, and seabed habitat. Typically, acoustic surveys have been conducted on ships but with new technologies, they have been used on autonomous vehicles as well. ESD has used two different active acoustic single beam echosounders on their Slocum gliders: Acoustic Zooplankton and Fish Profiler (AZFP) and Nortek compact echosounders.\nThe AZFP configuration that ESD has used has been either two or three discrete frequencies (38,67.5 and 125 kHz). The Nortek compact is a wideband sounder that ranges from 70 to 120 kHz.",
+    "objectID": "content/deployments.html#table",
+    "href": "content/deployments.html#table",
+    "title": "Deployments",
+    "section": "",
+    "text": "The below table lists all ESD (and formerly AERD) glider deployments, both in-progress and past, along with basic information about the deployment. The table also includes links to post-deployment reports and data files, where they exist.\nUsers can use the Search box at the top right of the table (you may have to scroll to the right) to filter the table for rows that contain the entered text. For instance, enter “calanus” to filter for all deployments of the glider calanus.\nSee the Fleet Status sheet (NOAA internal) for more detailed ESD glider fleet and deployment details.",
     "crumbs": [
-      "Data Processing",
-      "Active Acoustics"
+      "Deployments"
     ]
   },
   {
-    "objectID": "content/active-acoustics.html#processing",
-    "href": "content/active-acoustics.html#processing",
-    "title": "Active Acoustics",
-    "section": "Processing",
-    "text": "Processing\nBoth echosounders are bottom looking so the processing is very similar. Currently, the base glider data processing must be performed first. During the base processing, the following files relevant to acoustic data processing are created:\n\nAdditional docs todo, describing the various echoview metadata files. The data needed from the glider are date, time, GPS, depth, pitch, and roll.\n\nAcoustic processing currently takes place using Echoview software. The processing steps for both types of echosounders are documented in the echoview_glider_template as well as the Echoview templates. The templates were developed for analysis of Antarctic krill (Euphusia superba) but the general cleaning and output can be used for other zooplankton in any region of the world.",
+    "objectID": "content/deployments.html#table-columns",
+    "href": "content/deployments.html#table-columns",
+    "title": "Deployments",
+    "section": "Table Columns",
+    "text": "Table Columns\nThe ‘Glider’, ‘Start’, and ‘End’ columns represent the glider name, glider deployment date (deployment start), and glider recovery date (deployment end), respectively.\nThe ‘Region’ column indicates the general region of the deployment, for instance the Antarctic or the California Current Ecosystem (CCE).\nThe ‘Sensors’: column indicates which sensors were on the glider for each deployment. Current sensors that may be deployed on a glider include:\n\nCTD: Glider Payload Conductivity, Temperature, and Depth\nEcopuck: ECO Puck flbbcd Fluorometer\nOptode: Oxygen Optode model 4831\nPAR: Photosynthetically Active Radiation model QSP-2155\nAZFP: Acoustic Zooplankton and Fish Profiler (AZFP) scientific echo-sounder for gliders developed by ASL\nNortek: Signature 100 compact echo-sounder for gliders developed by Nortek\nShadowgraph: Shadowgraph camera developed by Williamson and Associates. Note that shadowgraphs come in both narrow and wide varieties\nGlidercam: Camera developed by Williamson and Associates\nDMON: Digital acoustic monitoring (DMON) instrument developed by WHOI\nWISPR: WISPR instrument developed by Embedded Ocean Systems. This instrument is paired with a hydrophone by High Tech Inc\n\nThe ‘Report’ column contains links to various ESD-internal reports, detailing aspects of the glider prep, deployment, and/or recovery. These reports have been converted to Quarto documents, and are in the process of being published on a public-facing NMFS website. Once they have been published, these links will be updated.\nThe ‘ERDDAP’ column will contain the link to the glider dataset when it is published to the ERDDAP of the IOOS National Glider Data Assembly Center.",
     "crumbs": [
-      "Data Processing",
-      "Active Acoustics"
+      "Deployments"
     ]
   },
   {
-    "objectID": "content/active-acoustics.html#future-directions",
-    "href": "content/active-acoustics.html#future-directions",
-    "title": "Active Acoustics",
-    "section": "Future directions",
-    "text": "Future directions\nCloud-based analysis using echopype\nAdditional processing functionality, e.g. Echometrics",
+    "objectID": "content/deployments.html#data-links",
+    "href": "content/deployments.html#data-links",
+    "title": "Deployments",
+    "section": "Data Links",
+    "text": "Data Links\nFor more details about the data products themselves, see the Slocum Glider Data Processing page.\nThe ‘Internal Data’ and ‘Internal Directories’ columns contains links to various data products and directories that are in the ESD Google Cloud Platform (GCP) project. Links only appear in the table if the data product exists. These data can only be accessed by users with appropriate permissions in the ESD GCP project. See this doc for information about downloading full directories from a Google Cloud bucket. Current internal product/directory links:\nNote that in GCP, deployment names are always ‘glider name’-‘year-month-day’. For instance, deployment “amlr08-20220530” is the deployment of glider amlr08 that began on 30 May 2022.\nNOTE: cdom data in the various deployment files should be treated as unreliable until further notice. See this issue for more details, and the latest updates.\n\ntimeseries-sci, gridded-5m, imagery-csv: Selected products from the ‘base’ glider processing workflow.\nplots: The plots for the corresponding deployment. See a description of the standard post-deployment plots here.\nglider: All glider-related data products from the ‘base’ glider processing workflow.\nacoustics: The ‘acoustics’ deployment folder. See a description of the structure and contents of this folder here.\nimagery: The ‘raw imagery’ deployment folder. See a description of the structure and contents of this folder here",
     "crumbs": [
-      "Data Processing",
-      "Active Acoustics"
+      "Deployments"
+    ]
+  },
+  {
+    "objectID": "content/deployments.html#projects",
+    "href": "content/deployments.html#projects",
+    "title": "Deployments",
+    "section": "Projects",
+    "text": "Projects\nThe ESD deploys gliders under several different projects:\n\nFREEBYRD: Operation FREEBYRD is a long-term program to replace ship-based surveys with autonomous vehicles to estimate Antarctic krill biomass in support of the Convention for the Conservation of Antarctic Marine Living Resources (CCAMLR).\nREFOCUS: Reimagining Ecosystem and Fisheries Observations by Combining two UxS fleets (REFOCUS) aims to augment ship-based ecosystem monitoring using autonomous underwater gliders equipped with sensors for monitoring the physical and biological environment. The three primary objectives are to 1) Conduct regular (approximately every other month) deployments in the California Current in areas where the CalCOFI Program currently samples and is likely to sample in the future; 2) Improve capacity to collect data during event-driven ecosystem perturbations (e.g., marine heatwaves or harmful algal blooms); and 3) To alleviate competition for ship time.\nECOSWIM: Operation ECOSWIM is for glider surveys in the California CCE off of Humboldt and Morro Bay, California, in the Southern California waters of the Pacific Ocean. These surveys may collect krill biomass estimates, among other scientific goals.\nSANDIEGO: Test deployments off of the greater San Diego area, typically either around Mission Bay, off the Scripps Pier, or off of Oceanside. These deployments may be, for instance, to test a glider before it goes to the Antarctic, or to test new sensors and/or sensor configurations for a NMFS Strategic Initiative (e.g., the Enhanced Data Acquisition Passive Acoustics, Optics, or Uncrewed Systems Strategic Initiatives).",
+    "crumbs": [
+      "Deployments"
     ]
   },
   {
@@ -246,66 +252,34 @@
     ]
   },
   {
-    "objectID": "content/pilot-tools.html",
-    "href": "content/pilot-tools.html",
-    "title": "Glider Pilot Tools",
+    "objectID": "content/best-practices.html",
+    "href": "content/best-practices.html",
+    "title": "Best Practices",
     "section": "",
-    "text": "NOAA’s Southwest Fisheries Science Center began deploying Teledyne Webb Research Slocum G3 gliders to study Antarctic krill in 2018. The fleet as well as the sensors on the gliders have expanded through the years.\n\n\nPilot Cheatsheet - Common commands for piloting and testing\nSlocum Fleet Mission Control - SFMC from Teledyne. Where to pilot the gliders using Iridium.\nArgos - Check where the gliders are if they miss a call in.\nDatahost - The TWR forum. It has the firmware builds for the gliders, Masterdata for the different firmware, TWR glider sheets, such as, Ballast, Functional Checkout, etc. Most forms are in Resources.\nMasterdata - A list of masterdata for all the various operating systems of Slocum gliders. \nMasterdata 8.6  Masterdata 11.0 Masterdata 11.01 Masterdata 11.04 Masterdata 11.05\nTeledyne Customer Portal - Where to check the status of service on gliders and glider parts at TWR.\nOceanGNS - A program that can track multiple gliders as well as has different layers. The layers can be depth average currents, sea ice, chlorophyll, etc.\n\n\n\nBattery Capacities\n\n\n\n\n\nFile Transfer Syntax\n\n\n\n\n\nDifferences between persistor and STM gliders\n\n\nAutoballast States\nAbort codes\nAborts and Errors we’ve gone through\n\n\n\n\n\nPhone tree and websites\nAMLR Gliders Folder - Where most things are stored on Google Drive with regards to gliders.\nFleet Status - A place to see the simplified status of gliders. Also to keep track of RMAs and generalized deployments.\nSensor Settings and Sampling Sheet - Where mission planners input the settings for sensors and how they should sample.\nBallast sheet from Rutgers - Ballast sheet developed by Rutgers\nTWR Ballast sheet - From the datahost\nFunctional Checkout Procedure - From the datahost\nFreewave and Argos numbers - Freewave and Argos numbers for each Slocum glider.\nECOpuck coefficients - Coefficients for the ECOpuck needed to be put in autoexec.mi\nEmergency boat options - Boats that we can use for emergency recoveries in San Diego and Santa Barbara.",
+    "text": "NoteNote\n\n\n\nThis is a living document which shall always be considered a “draft,” as incoming and veteran members of the lab may want to contribute ideas or revisions. This is a place to begin, a place to return to, a place to ground ongoing conversations. Modeled after https://sael-swfsc.github.io/SAEL-lab-manual/content/SharedValues-BestPractices.html",
     "crumbs": [
-      "Glider Lab",
-      "Glider Pilot Tools"
+      "Best Practices"
     ]
   },
   {
-    "objectID": "content/pilot-tools.html#links",
-    "href": "content/pilot-tools.html#links",
-    "title": "Glider Pilot Tools",
+    "objectID": "content/best-practices.html#esd-glider-lab-best-practices",
+    "href": "content/best-practices.html#esd-glider-lab-best-practices",
+    "title": "Best Practices",
+    "section": "ESD Glider Lab Best Practices",
+    "text": "ESD Glider Lab Best Practices\n\nCommunication\n\nWe hold lab meetings regularly in which all members are expected to attend if their schedule allows. During these meetings all members are expected to contribute by sharing progress reports, discussing challenges, and celebrating successes.\nWe use Google Meet for informal discussions between lab members and project teams.\nWe use Github projects to keep track of tasks and projects. All lab members are expected to check & respond to email, chats, and Github Projects regularly.\n\n\n\nSafety\n\nLab members are expected to follow all safety protocols. If they are not sure of the protocol, then they should request this information.\nLab members should never feel obligated to perform a task that they do not feel is safe.\nLab members are encouraged to speak up if they feel they need training to perform a specific task safely.\nIf lab members have a safety concern, they should bring it up with their supervisor or the other lab members.\nIf a lab member feels their safety concerns are not being taken seriously, or have any other lab safety questions, they can consult the acting SWFSC Safety Officer Ariane Huddleston (ariane.huddleston@noaa.gov).\n\n\n\nWebsite Development\nAs described above, this website is intended to be a place for all glider team members to both use as a reference and contribute to. This section contains development notes and best practices\n\nIf using VSCode, this page contains helpful references and shortcuts. One of the most common and important is to render and preview the current qmd files, which you can do with the Ctrl+Shift+K keyboard shortcut.",
+    "crumbs": [
+      "Best Practices"
+    ]
+  },
+  {
+    "objectID": "content/gcp.html",
+    "href": "content/gcp.html",
+    "title": "Google Cloud Platform (GCP)",
     "section": "",
-    "text": "Pilot Cheatsheet - Common commands for piloting and testing\nSlocum Fleet Mission Control - SFMC from Teledyne. Where to pilot the gliders using Iridium.\nArgos - Check where the gliders are if they miss a call in.\nDatahost - The TWR forum. It has the firmware builds for the gliders, Masterdata for the different firmware, TWR glider sheets, such as, Ballast, Functional Checkout, etc. Most forms are in Resources.\nMasterdata - A list of masterdata for all the various operating systems of Slocum gliders. \nMasterdata 8.6  Masterdata 11.0 Masterdata 11.01 Masterdata 11.04 Masterdata 11.05\nTeledyne Customer Portal - Where to check the status of service on gliders and glider parts at TWR.\nOceanGNS - A program that can track multiple gliders as well as has different layers. The layers can be depth average currents, sea ice, chlorophyll, etc.\n\n\n\nBattery Capacities\n\n\n\n\n\nFile Transfer Syntax\n\n\n\n\n\nDifferences between persistor and STM gliders\n\n\nAutoballast States\nAbort codes\nAborts and Errors we’ve gone through",
+    "text": "Placeholder for GCP links, pointers, etc.\nSee this folder for current ESD GCP docs. Most useful will probably be the ‘NOAA Fisheries Cloud - GCP How-Tos’ or ‘Presentations’ folders.\n\n\n\n Back to top",
     "crumbs": [
-      "Glider Lab",
-      "Glider Pilot Tools"
+      "Google Cloud"
     ]
-  },
-  {
-    "objectID": "content/pilot-tools.html#google-drive",
-    "href": "content/pilot-tools.html#google-drive",
-    "title": "Glider Pilot Tools",
-    "section": "",
-    "text": "Phone tree and websites\nAMLR Gliders Folder - Where most things are stored on Google Drive with regards to gliders.\nFleet Status - A place to see the simplified status of gliders. Also to keep track of RMAs and generalized deployments.\nSensor Settings and Sampling Sheet - Where mission planners input the settings for sensors and how they should sample.\nBallast sheet from Rutgers - Ballast sheet developed by Rutgers\nTWR Ballast sheet - From the datahost\nFunctional Checkout Procedure - From the datahost\nFreewave and Argos numbers - Freewave and Argos numbers for each Slocum glider.\nECOpuck coefficients - Coefficients for the ECOpuck needed to be put in autoexec.mi\nEmergency boat options - Boats that we can use for emergency recoveries in San Diego and Santa Barbara.",
-    "crumbs": [
-      "Glider Lab",
-      "Glider Pilot Tools"
-    ]
-  },
-  {
-    "objectID": "content/pilot-tools.html#information",
-    "href": "content/pilot-tools.html#information",
-    "title": "Glider Pilot Tools",
-    "section": "Information",
-    "text": "Information\nHefring cloud- The NOAA cloud interface for controlling Oceanscouts.\nHow to view OceanScout data\nUpgrade the Altimeter\nCLI help\n\nUser Manual\nGetting Started\nCloud\nHardware\nFirmware\nSafety Guidelines\nFrequently Asked Questions\nTroubleshooting",
-    "crumbs": [
-      "Glider Lab",
-      "Glider Pilot Tools"
-    ]
-  },
-  {
-    "objectID": "content/pilot-tools.html#useful-websites",
-    "href": "content/pilot-tools.html#useful-websites",
-    "title": "Glider Pilot Tools",
-    "section": "Useful websites",
-    "text": "Useful websites\nAntarctic Sea Ice Imagery\nSIO Del Mar Buoy - Water properties used for deployments off of San Diego.\nSCCOOS shore stations\nDefault SFMC Group Call In - Check here to see if the glider is calling into the default group instead of our SFMC.\nUnderwater Glider User Group ‘UG2’\nEveryone’s Gliding Observatories ‘EGO’\nOcean Gliders\nIOOS Underwater Gliders",
-    "crumbs": [
-      "Glider Lab",
-      "Glider Pilot Tools"
-    ]
-  },
-  {
-    "objectID": "content/images/readme.html",
-    "href": "content/images/readme.html",
-    "title": "ESD Glider Lab",
-    "section": "",
-    "text": "Flowchart images are generated by taking snips of the images found here\nOther images are one-offs, generated specifically for the website\n\n\n\n Back to top"
   },
   {
     "objectID": "content/data-management.html",
@@ -338,86 +312,6 @@
     ]
   },
   {
-    "objectID": "content/best-practices.html",
-    "href": "content/best-practices.html",
-    "title": "Best Practices",
-    "section": "",
-    "text": "Note\n\n\n\nThis is a living document which shall always be considered a “draft,” as incoming and veteran members of the lab may want to contribute ideas or revisions. This is a place to begin, a place to return to, a place to ground ongoing conversations. Modeled after https://sael-swfsc.github.io/SAEL-lab-manual/content/SharedValues-BestPractices.html",
-    "crumbs": [
-      "Best Practices"
-    ]
-  },
-  {
-    "objectID": "content/best-practices.html#esd-glider-lab-best-practices",
-    "href": "content/best-practices.html#esd-glider-lab-best-practices",
-    "title": "Best Practices",
-    "section": "ESD Glider Lab Best Practices",
-    "text": "ESD Glider Lab Best Practices\n\nCommunication\n\nWe hold lab meetings regularly in which all members are expected to attend if their schedule allows. During these meetings all members are expected to contribute by sharing progress reports, discussing challenges, and celebrating successes.\nWe use Google Meet for informal discussions between lab members and project teams.\nWe use Github projects to keep track of tasks and projects. All lab members are expected to check & respond to email, chats, and Github Projects regularly.\n\n\n\nSafety\n\nLab members are expected to follow all safety protocols. If they are not sure of the protocol, then they should request this information.\nLab members should never feel obligated to perform a task that they do not feel is safe.\nLab members are encouraged to speak up if they feel they need training to perform a specific task safely.\nIf lab members have a safety concern, they should bring it up with their supervisor or the other lab members.\nIf a lab member feels their safety concerns are not being taken seriously, or have any other lab safety questions, they can consult the acting SWFSC Safety Officer Ariane Huddleston (ariane.huddleston@noaa.gov).\n\n\n\nWebsite Development\nAs described above, this website is intended to be a place for all glider team members to both use as a reference and contribute to. This section contains development notes and best practices\n\nIf using VSCode, this page contains helpful references and shortcuts. One of the most common and important is to render and preview the current qmd files, which you can do with the Ctrl+Shift+K keyboard shortcut.",
-    "crumbs": [
-      "Best Practices"
-    ]
-  },
-  {
-    "objectID": "content/gcp.html",
-    "href": "content/gcp.html",
-    "title": "Google Cloud Platform (GCP)",
-    "section": "",
-    "text": "Placeholder for GCP links, pointers, etc.\nSee this folder for current ESD GCP docs. Most useful will probably be the ‘NOAA Fisheries Cloud - GCP How-Tos’ or ‘Presentations’ folders.\n\n\n\n Back to top",
-    "crumbs": [
-      "Google Cloud"
-    ]
-  },
-  {
-    "objectID": "content/deployments.html",
-    "href": "content/deployments.html",
-    "title": "Deployments",
-    "section": "",
-    "text": "The below table lists all ESD (and formerly AERD) glider deployments, both in-progress and past, along with basic information about the deployment. The table also includes links to post-deployment reports and data files, where they exist.\nUsers can use the Search box at the top right of the table (you may have to scroll to the right) to filter the table for rows that contain the entered text. For instance, enter “calanus” to filter for all deployments of the glider calanus.\nSee the Fleet Status sheet (NOAA internal) for more detailed ESD glider fleet and deployment details.",
-    "crumbs": [
-      "Deployments"
-    ]
-  },
-  {
-    "objectID": "content/deployments.html#table",
-    "href": "content/deployments.html#table",
-    "title": "Deployments",
-    "section": "",
-    "text": "The below table lists all ESD (and formerly AERD) glider deployments, both in-progress and past, along with basic information about the deployment. The table also includes links to post-deployment reports and data files, where they exist.\nUsers can use the Search box at the top right of the table (you may have to scroll to the right) to filter the table for rows that contain the entered text. For instance, enter “calanus” to filter for all deployments of the glider calanus.\nSee the Fleet Status sheet (NOAA internal) for more detailed ESD glider fleet and deployment details.",
-    "crumbs": [
-      "Deployments"
-    ]
-  },
-  {
-    "objectID": "content/deployments.html#table-columns",
-    "href": "content/deployments.html#table-columns",
-    "title": "Deployments",
-    "section": "Table Columns",
-    "text": "Table Columns\nThe ‘Glider’, ‘Start’, and ‘End’ columns represent the glider name, glider deployment date (deployment start), and glider recovery date (deployment end), respectively.\nThe ‘Region’ column indicates the general region of the deployment, for instance the Antarctic or the California Current Ecosystem (CCE).\nThe ‘Sensors’: column indicates which sensors were on the glider for each deployment. Current sensors that may be deployed on a glider include:\n\nCTD: Glider Payload Conductivity, Temperature, and Depth\nEcopuck: ECO Puck flbbcd Fluorometer\nOptode: Oxygen Optode model 4831\nPAR: Photosynthetically Active Radiation model QSP-2155\nAZFP: Acoustic Zooplankton and Fish Profiler (AZFP) scientific echo-sounder for gliders developed by ASL\nNortek: Signature 100 compact echo-sounder for gliders developed by Nortek\nShadowgraph: Shadowgraph camera developed by Williamson and Associates. Note that shadowgraphs come in both narrow and wide varieties\nGlidercam: Camera developed by Williamson and Associates\nDMON: Digital acoustic monitoring (DMON) instrument developed by WHOI\nWISPR: WISPR instrument developed by Embedded Ocean Systems. This instrument is paired with a hydrophone by High Tech Inc\n\nThe ‘Report’ column contains links to various ESD-internal reports, detailing aspects of the glider prep, deployment, and/or recovery. These reports have been converted to Quarto documents, and are in the process of being published on a public-facing NMFS website. Once they have been published, these links will be updated.\nThe ‘ERDDAP’ column will contain the link to the glider dataset when it is published to the ERDDAP of the IOOS National Glider Data Assembly Center.",
-    "crumbs": [
-      "Deployments"
-    ]
-  },
-  {
-    "objectID": "content/deployments.html#data-links",
-    "href": "content/deployments.html#data-links",
-    "title": "Deployments",
-    "section": "Data Links",
-    "text": "Data Links\nFor more details about the data products themselves, see the Slocum Glider Data Processing page.\nThe ‘Internal Data’ and ‘Internal Directories’ columns contains links to various data products and directories that are in the ESD Google Cloud Platform (GCP) project. Links only appear in the table if the data product exists. These data can only be accessed by users with appropriate permissions in the ESD GCP project. See this doc for information about downloading full directories from a Google Cloud bucket. Current internal product/directory links:\nNote that in GCP, deployment names are always ‘glider name’-‘year-month-day’. For instance, deployment “amlr08-20220530” is the deployment of glider amlr08 that began on 30 May 2022.\nNOTE: cdom data in the various deployment files should be treated as unreliable until further notice. See this issue for more details, and the latest updates.\n\ntimeseries-sci, gridded-5m, imagery-csv: Selected products from the ‘base’ glider processing workflow.\nplots: The plots for the corresponding deployment. See a description of the standard post-deployment plots here.\nglider: All glider-related data products from the ‘base’ glider processing workflow.\nacoustics: The ‘acoustics’ deployment folder. See a description of the structure and contents of this folder here.\nimagery: The ‘raw imagery’ deployment folder. See a description of the structure and contents of this folder here",
-    "crumbs": [
-      "Deployments"
-    ]
-  },
-  {
-    "objectID": "content/deployments.html#projects",
-    "href": "content/deployments.html#projects",
-    "title": "Deployments",
-    "section": "Projects",
-    "text": "Projects\nThe ESD deploys gliders under several different projects:\n\nFREEBYRD: Operation FREEBYRD is a long-term program to replace ship-based surveys with autonomous vehicles to estimate Antarctic krill biomass in support of the Convention for the Conservation of Antarctic Marine Living Resources (CCAMLR).\nREFOCUS: Reimagining Ecosystem and Fisheries Observations by Combining two UxS fleets (REFOCUS) aims to augment ship-based ecosystem monitoring using autonomous underwater gliders equipped with sensors for monitoring the physical and biological environment. The three primary objectives are to 1) Conduct regular (approximately every other month) deployments in the California Current in areas where the CalCOFI Program currently samples and is likely to sample in the future; 2) Improve capacity to collect data during event-driven ecosystem perturbations (e.g., marine heatwaves or harmful algal blooms); and 3) To alleviate competition for ship time.\nECOSWIM: Operation ECOSWIM is for glider surveys in the California CCE off of Humboldt and Morro Bay, California, in the Southern California waters of the Pacific Ocean. These surveys may collect krill biomass estimates, among other scientific goals.\nSANDIEGO: Test deployments off of the greater San Diego area, typically either around Mission Bay, off the Scripps Pier, or off of Oceanside. These deployments may be, for instance, to test a glider before it goes to the Antarctic, or to test new sensors and/or sensor configurations for a NMFS Strategic Initiative (e.g., the Enhanced Data Acquisition Passive Acoustics, Optics, or Uncrewed Systems Strategic Initiatives).",
-    "crumbs": [
-      "Deployments"
-    ]
-  },
-  {
     "objectID": "content/data-proc-overview.html",
     "href": "content/data-proc-overview.html",
     "title": "Data Processing Overview",
@@ -427,6 +321,57 @@
       "Data Processing",
       "Overview"
     ]
+  },
+  {
+    "objectID": "content/active-acoustics.html",
+    "href": "content/active-acoustics.html",
+    "title": "Active Acoustics",
+    "section": "",
+    "text": "This page describes processing active acoustic data collected by ESD using underwater gliders. For info about passive acoustic data, see NOAA Fisheries PAM-Equipped Glider Research",
+    "crumbs": [
+      "Data Processing",
+      "Active Acoustics"
+    ]
+  },
+  {
+    "objectID": "content/active-acoustics.html#background",
+    "href": "content/active-acoustics.html#background",
+    "title": "Active Acoustics",
+    "section": "Background",
+    "text": "Background\nActive acoustics has been a long used survey tool for estimating the abundance and distribution of fish, zooplankton, and seabed habitat. Typically, acoustic surveys have been conducted on ships but with new technologies, they have been used on autonomous vehicles as well. ESD has used two different active acoustic single beam echosounders on their Slocum gliders: Acoustic Zooplankton and Fish Profiler (AZFP) and Nortek compact echosounders.\nThe AZFP configuration that ESD has used has been either two or three discrete frequencies (38,67.5 and 125 kHz). The Nortek compact is a wideband sounder that ranges from 70 to 120 kHz.",
+    "crumbs": [
+      "Data Processing",
+      "Active Acoustics"
+    ]
+  },
+  {
+    "objectID": "content/active-acoustics.html#processing",
+    "href": "content/active-acoustics.html#processing",
+    "title": "Active Acoustics",
+    "section": "Processing",
+    "text": "Processing\nBoth echosounders are bottom looking so the processing is very similar. Currently, the base glider data processing must be performed first. During the base processing, the following files relevant to acoustic data processing are created:\n\nAdditional docs todo, describing the various echoview metadata files. The data needed from the glider are date, time, GPS, depth, pitch, and roll.\n\nAcoustic processing currently takes place using Echoview software. The processing steps for both types of echosounders are documented in the echoview_glider_template as well as the Echoview templates. The templates were developed for analysis of Antarctic krill (Euphusia superba) but the general cleaning and output can be used for other zooplankton in any region of the world.",
+    "crumbs": [
+      "Data Processing",
+      "Active Acoustics"
+    ]
+  },
+  {
+    "objectID": "content/active-acoustics.html#future-directions",
+    "href": "content/active-acoustics.html#future-directions",
+    "title": "Active Acoustics",
+    "section": "Future directions",
+    "text": "Future directions\nCloud-based analysis using echopype\nAdditional processing functionality, e.g. Echometrics",
+    "crumbs": [
+      "Data Processing",
+      "Active Acoustics"
+    ]
+  },
+  {
+    "objectID": "content/images/readme.html",
+    "href": "content/images/readme.html",
+    "title": "ESD Glider Lab",
+    "section": "",
+    "text": "Flowchart images are generated by taking snips of the images found here\nOther images are one-offs, generated specifically for the website\n\n\n\n Back to top"
   },
   {
     "objectID": "content/documents/O-rings.html",
@@ -505,6 +450,61 @@
     "crumbs": [
       "Data Processing",
       "Imagery"
+    ]
+  },
+  {
+    "objectID": "content/pilot-tools.html",
+    "href": "content/pilot-tools.html",
+    "title": "Glider Pilot Tools",
+    "section": "",
+    "text": "NOAA’s Southwest Fisheries Science Center began deploying Teledyne Webb Research Slocum G3 gliders to study Antarctic krill in 2018. The fleet as well as the sensors on the gliders have expanded through the years.\n\n\nPilot Cheatsheet - Common commands for piloting and testing\nSlocum Fleet Mission Control - SFMC from Teledyne. Where to pilot the gliders using Iridium.\nArgos - Check where the gliders are if they miss a call in.\nDatahost - The TWR forum. It has the firmware builds for the gliders, Masterdata for the different firmware, TWR glider sheets, such as, Ballast, Functional Checkout, etc. Most forms are in Resources.\nMasterdata - A list of masterdata for all the various operating systems of Slocum gliders. \nMasterdata 8.6  Masterdata 11.0 Masterdata 11.01 Masterdata 11.04 Masterdata 11.05\nTeledyne Customer Portal - Where to check the status of service on gliders and glider parts at TWR.\nOceanGNS - A program that can track multiple gliders as well as has different layers. The layers can be depth average currents, sea ice, chlorophyll, etc.\n\n\n\nBattery Capacities\n\n\n\n\n\nFile Transfer Syntax\n\n\n\n\n\nDifferences between persistor and STM gliders\n\n\nAutoballast States\nAbort codes\nAborts and Errors we’ve gone through\n\n\n\n\n\nPhone tree and websites\nAMLR Gliders Folder - Where most things are stored on Google Drive with regards to gliders.\nFleet Status - A place to see the simplified status of gliders. Also to keep track of RMAs and generalized deployments.\nSensor Settings and Sampling Sheet - Where mission planners input the settings for sensors and how they should sample.\nBallast sheet from Rutgers - Ballast sheet developed by Rutgers\nTWR Ballast sheet - From the datahost\nFunctional Checkout Procedure - From the datahost\nFreewave and Argos numbers - Freewave and Argos numbers for each Slocum glider.\nECOpuck coefficients - Coefficients for the ECOpuck needed to be put in autoexec.mi\nEmergency boat options - Boats that we can use for emergency recoveries in San Diego and Santa Barbara.",
+    "crumbs": [
+      "Glider Lab",
+      "Glider Pilot Tools"
+    ]
+  },
+  {
+    "objectID": "content/pilot-tools.html#links",
+    "href": "content/pilot-tools.html#links",
+    "title": "Glider Pilot Tools",
+    "section": "",
+    "text": "Pilot Cheatsheet - Common commands for piloting and testing\nSlocum Fleet Mission Control - SFMC from Teledyne. Where to pilot the gliders using Iridium.\nArgos - Check where the gliders are if they miss a call in.\nDatahost - The TWR forum. It has the firmware builds for the gliders, Masterdata for the different firmware, TWR glider sheets, such as, Ballast, Functional Checkout, etc. Most forms are in Resources.\nMasterdata - A list of masterdata for all the various operating systems of Slocum gliders. \nMasterdata 8.6  Masterdata 11.0 Masterdata 11.01 Masterdata 11.04 Masterdata 11.05\nTeledyne Customer Portal - Where to check the status of service on gliders and glider parts at TWR.\nOceanGNS - A program that can track multiple gliders as well as has different layers. The layers can be depth average currents, sea ice, chlorophyll, etc.\n\n\n\nBattery Capacities\n\n\n\n\n\nFile Transfer Syntax\n\n\n\n\n\nDifferences between persistor and STM gliders\n\n\nAutoballast States\nAbort codes\nAborts and Errors we’ve gone through",
+    "crumbs": [
+      "Glider Lab",
+      "Glider Pilot Tools"
+    ]
+  },
+  {
+    "objectID": "content/pilot-tools.html#google-drive",
+    "href": "content/pilot-tools.html#google-drive",
+    "title": "Glider Pilot Tools",
+    "section": "",
+    "text": "Phone tree and websites\nAMLR Gliders Folder - Where most things are stored on Google Drive with regards to gliders.\nFleet Status - A place to see the simplified status of gliders. Also to keep track of RMAs and generalized deployments.\nSensor Settings and Sampling Sheet - Where mission planners input the settings for sensors and how they should sample.\nBallast sheet from Rutgers - Ballast sheet developed by Rutgers\nTWR Ballast sheet - From the datahost\nFunctional Checkout Procedure - From the datahost\nFreewave and Argos numbers - Freewave and Argos numbers for each Slocum glider.\nECOpuck coefficients - Coefficients for the ECOpuck needed to be put in autoexec.mi\nEmergency boat options - Boats that we can use for emergency recoveries in San Diego and Santa Barbara.",
+    "crumbs": [
+      "Glider Lab",
+      "Glider Pilot Tools"
+    ]
+  },
+  {
+    "objectID": "content/pilot-tools.html#information",
+    "href": "content/pilot-tools.html#information",
+    "title": "Glider Pilot Tools",
+    "section": "Information",
+    "text": "Information\nHefring cloud- The NOAA cloud interface for controlling Oceanscouts.\nHow to view OceanScout data\nUpgrade the Altimeter\nCLI help\n\nUser Manual\nGetting Started\nCloud\nHardware\nFirmware\nSafety Guidelines\nFrequently Asked Questions\nTroubleshooting",
+    "crumbs": [
+      "Glider Lab",
+      "Glider Pilot Tools"
+    ]
+  },
+  {
+    "objectID": "content/pilot-tools.html#useful-websites",
+    "href": "content/pilot-tools.html#useful-websites",
+    "title": "Glider Pilot Tools",
+    "section": "Useful websites",
+    "text": "Useful websites\nAntarctic Sea Ice Imagery\nSIO Del Mar Buoy - Water properties used for deployments off of San Diego.\nSCCOOS shore stations\nDefault SFMC Group Call In - Check here to see if the glider is calling into the default group instead of our SFMC.\nUnderwater Glider User Group ‘UG2’\nEveryone’s Gliding Observatories ‘EGO’\nOcean Gliders\nIOOS Underwater Gliders",
+    "crumbs": [
+      "Glider Lab",
+      "Glider Pilot Tools"
     ]
   }
 ]
