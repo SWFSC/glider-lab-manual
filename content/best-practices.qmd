@@ -30,7 +30,7 @@ Modeled after [SWFSC Southwest Acoustic Ecology Lab Shared Values Document](http
 
 4.  If lab members have a safety concern, they should bring it up with their supervisor or the other lab members.
 
-5.  If a lab member feels their safety concerns are not being taken seriously, or have any other lab safety questions, they can consult the acting SWFSC Safety Officer Ariane Huddleston ([ariane.huddleston\@noaa.gov](mailto:ariane.huddleston@noaa.gov)).
+5.  If a lab member feels their safety concerns are not being taken seriously, or have any other lab safety questions, they can consult the acting SWFSC Safety Officer Ariane Huddleston ([ariane.huddleston@noaa.gov](mailto:ariane.huddleston@noaa.gov)).
 
 ### **Website Development**
 
