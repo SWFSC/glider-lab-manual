@@ -7,20 +7,6 @@ Include parts lists, inventory, field laptop setup, contracts
 
 All current information is taken from other pages
 
-## Software and settings
-
-Add info on setting up a glider field laptop so they are all set up the same way.
-
-| Software | Settings | Use |
-|------------------------|------------------------|------------------------|
-| [ZOC](https://www.emtec.com/zoc/index.html){target="_blank"} | [Settings](https://docs.google.com/document/d/1lDMAtfzKKY7XLKwakii6P_g1HGAFZYtKUMWhLEW4DUU/edit?usp=sharing){target="_blank"} | Talking with the glider over Freewave |
-| [Tera Term](https://teratermproject.github.io/index-en.html){target="_blank"} | Settings | Talking with the camera |
-| [AZFP](https://drive.google.com/file/d/16eSSKX3DGkA6UUvign7KnQwzPqhUJHil/view?usp=drive_link){target="_blank"} | Settings | Calibrating and settings for AZFP |
-| [MIDAS](https://drive.google.com/file/d/1lGYgthRRTBOQShaTqlrB233jWfp_uRZV/view?usp=drive_link){target="_blank"} | Settings | Setting up Nortek |
-| [WinSCP](https://winscp.net/eng/index.php){target="_blank"} | Settings | FTP client for the camera |
-| [Notepad++](https://notepad-plus-plus.org/){target="_blank"} | Settings | Changing and reading glider files |
-| [OceanContour](https://oceanillumination.com/){target="_blank"} | Settings | For viewing ADCP data |
-
 ## Parts List
 
 Where we buy specific parts
@@ -34,3 +20,27 @@ Where we buy specific parts
 [Pacific Venture 2024-28](https://drive.google.com/file/d/1RBtK_C4E4CEsA-l35DK0bf7-PqMbhuud/view?usp=drive_link){target="_blank"} Charter boat out of Oceanside BPA [site](https://www.pacific-venture.com/){target="_blank"}
 
 [Teledyne Webb Research 2024-28](https://drive.google.com/file/d/1_8WzrrVxbi9TgE-HvbDqZZI5n8mLUHuH/view?usp=drive_link){target="_blank"} IDIQ for Slocum gliders and parts [site](https://www.teledynemarine.com/brands/webb-research/){target="_blank"}
+
+## Emergency Boat
+
+[Emergency boat options](https://docs.google.com/spreadsheets/d/1fZagNnYgBD-0E_5ivPwIWZFyzMgGDQ8hEPG-jktn2TQ/edit?gid=0#gid=0) - Boats that we can use for emergency recoveries in San Diego and Santa Barbara.
+
+## Purchase Requests
+
+Holding place for shopping lists and purchase requests. If purchase card holders are interested, we can work on a streamlined way to request items, check statuses, keep track of past purchases, etc.
+
+## Field Laptops
+
+### Software and Settings
+
+To-do: Add info on setting up a glider field laptop so they are all set up the same way.
+
+| Software | Settings | Use |
+|----|----|----|
+| [ZOC](https://www.emtec.com/zoc/index.html){target="_blank"} | [Settings](https://docs.google.com/document/d/1lDMAtfzKKY7XLKwakii6P_g1HGAFZYtKUMWhLEW4DUU/edit?usp=sharing){target="_blank"} | Talking with the glider over Freewave |
+| [Tera Term](https://teratermproject.github.io/index-en.html){target="_blank"} | Settings | Talking with the camera |
+| [AZFP](https://drive.google.com/file/d/16eSSKX3DGkA6UUvign7KnQwzPqhUJHil/view?usp=drive_link){target="_blank"} | Settings | Calibrating and settings for AZFP |
+| [MIDAS](https://drive.google.com/file/d/1lGYgthRRTBOQShaTqlrB233jWfp_uRZV/view?usp=drive_link){target="_blank"} | Settings | Setting up Nortek |
+| [WinSCP](https://winscp.net/eng/index.php){target="_blank"} | Settings | FTP client for the camera |
+| [Notepad++](https://notepad-plus-plus.org/){target="_blank"} | Settings | Changing and reading glider files |
+| [OceanContour](https://oceanillumination.com/){target="_blank"} | Settings | For viewing ADCP data |

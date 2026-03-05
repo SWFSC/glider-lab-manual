@@ -5,7 +5,9 @@ title: Best Practices
 ::: callout-note
 ## Note
 
-This is a living document which shall always be considered a "draft," as incoming and veteran members of the lab may want to contribute ideas or revisions. This is a place to begin, a place to return to, a place to ground ongoing conversations. Modeled after https://sael-swfsc.github.io/SAEL-lab-manual/content/SharedValues-BestPractices.html
+This is a living document which shall always be considered a "draft," as incoming and veteran members of the lab may want to contribute ideas or revisions. This is a place to begin, a place to return to, a place to ground ongoing conversations.
+
+Modeled after [SWFSC Southwest Acoustic Ecology Lab Shared Values Document](https://sael-swfsc.github.io/SAEL-lab-manual/content/SharedValues-BestPractices.html)
 :::
 
 ## **ESD Glider Lab Best Practices**
@@ -34,8 +36,9 @@ This is a living document which shall always be considered a "draft," as incomin
 
 As described above, this website is intended to be a place for all glider team members to both use as a reference and contribute to. This section contains development notes and best practices
 
-1.  If using VSCode, [this page](https://quarto.org/docs/tools/vscode.html) contains helpful references and shortcuts. One of the most common and important is to [render and preview](https://quarto.org/docs/tools/vscode.html#render-and-preview) the current qmd files, which you can do with the <kbd>Ctrl+Shift+K</kbd> keyboard shortcut.
+1.  If using VSCode, [this page](https://quarto.org/docs/tools/vscode.html) contains helpful references and shortcuts. One of the most common and important is to [render and preview](https://quarto.org/docs/tools/vscode.html#render-and-preview) the current qmd files, which you can do with the <kbd>Ctrl+Shift+K</kbd> keyboard shortcut (shortcuts also work with Positron and RStudio).
+2.  If you have a website suggestion or correction you can submit a new issue to this repository by clicking [this link](https://github.com/SWFSC/glider-lab-manual/issues/new)
 
 ### **New Lab Members**
-[Link to temporary page](https://swfsc.github.io/glider-lab-manual/content/new-lab-members.html)
-include introductory information, links to must read papers, new hire resources, goal setting information, etc.
+
+[Link to temporary page](https://swfsc.github.io/glider-lab-manual/content/new-lab-members.html) include introductory information, links to must read papers, new hire resources, lab information, orientation info, etc.

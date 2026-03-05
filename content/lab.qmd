@@ -10,9 +10,33 @@ This page contains various procedures and resources for glider lab members, incl
 
 ## Standard Operating Procedures
 
+### Glider Prep, Testing, & Checkouts
+
 [Glider Checkout Procedure](https://docs.google.com/document/d/1FdrB_BeSkKoy3XOzIwfmd_sm7aAwoaeT9AQfz0bkh8A/edit){target="_blank"} The steps needed to prepare a glider for deployment.
 
+[Functional Checkout Procedure](documents/4095-FCP%20Functional%20Checkout%20Procedure.xlsx) - From the datahost
+
 [How to upgrade the glider operating system](https://docs.google.com/document/d/1fospbDFkPfeCtmj6wJtINlZGb13-bkNIAn2fKB5Ek1s/edit){target="_blank"}
+
+[How to work on a glider while it is open](https://docs.google.com/document/d/1a_N0zhSXgMQSYMxEsWwzVrb4hMajXvOHCJinXlJvthc/edit?usp=sharing){target="_blank"}
+
+[Sensor Settings and Sampling Sheet](https://docs.google.com/spreadsheets/d/1SNjvXY9RhGC8St3bXdfQx6tWN10sF8evctD0B_RcTKk/edit?gid=0#gid=0){target="_blank"} - Where mission planners input the settings for sensors and how they should sample.
+
+[Ballast sheet from Rutgers](documents/Glider-Ballasting-Template.xls) - Ballast sheet developed by Rutgers
+
+[TWR Ballast sheet](documents/4095-GBPSH.xlsx) - From the datahost
+
+### Deployment, Piloting, & SFMC
+
+[How ESD pilots a glider](https://docs.google.com/document/d/1nPnl30IcK-sAbd-i1x3YUq--M43Z5XNxo1Eev1fYsJM/edit?usp=sharing){target="_blank"}
+
+[How Jen deploys a glider](https://docs.google.com/document/d/1nHKAF2F_UOV8gzQ825N7KCo8QvZ-3XBhDxQDVqCU6Po/edit?usp=sharing){target="_blank"}
+
+[Steps for deploying a glider](https://docs.google.com/document/d/1bxen4GvXxmZZoXP24-Mn_2fjzKx7fJx0l_CkeGul-oI/edit){target="_blank"}
+
+[Tony's SFMC Data Visualizations](https://docs.google.com/document/d/1GgaZyglCF5wDOZruK5Ewc5HsKpwMg3jxkPrCb9s_g4k/edit?usp=sharing){target="_blank"}
+
+### Sensor SOPs
 
 [How to calibrate the AZFP](https://docs.google.com/document/d/10sJRgIOPb4awRG6GcpJIfy7RDksZSbjWxIXCW1Xk1Qw/edit){target="_blank"}
 
@@ -24,29 +48,13 @@ How to talk to the camera (shadowgraph or glidercam)
 
 How to set up the Nortek compact echosounder
 
-[How ESD pilots a glider](https://docs.google.com/document/d/1nPnl30IcK-sAbd-i1x3YUq--M43Z5XNxo1Eev1fYsJM/edit?usp=sharing){target="_blank"}
+[Notes on Nortek mini-echosounder](https://docs.google.com/document/d/11ih0V16ZixwDb9c7f-6vLbt-bbhiwrVagAG_7VGKJaU/edit?usp=sharing){target="_blank"}
 
-[How Jen deploys a glider](https://docs.google.com/document/d/1nHKAF2F_UOV8gzQ825N7KCo8QvZ-3XBhDxQDVqCU6Po/edit?usp=sharing){target="_blank"}
+### Data Offload
 
 [How to use the high speed data cable](https://docs.google.com/document/d/10WD0RvmtD3B5yXnNhMeQiUxuK524cDntec29c57cEyI/edit?usp=sharing){target="_blank"}
 
-[Steps for deploying a glider](https://docs.google.com/document/d/1bxen4GvXxmZZoXP24-Mn_2fjzKx7fJx0l_CkeGul-oI/edit){target="_blank"}
-
-[Tony's SFMC Data Visualizations](https://docs.google.com/document/d/1GgaZyglCF5wDOZruK5Ewc5HsKpwMg3jxkPrCb9s_g4k/edit?usp=sharing){target="_blank"}
-
-[Notes on Nortek mini-echosounder](https://docs.google.com/document/d/11ih0V16ZixwDb9c7f-6vLbt-bbhiwrVagAG_7VGKJaU/edit?usp=sharing){target="_blank"}
-
-[How to work on a glider while it is open](https://docs.google.com/document/d/1a_N0zhSXgMQSYMxEsWwzVrb4hMajXvOHCJinXlJvthc/edit?usp=sharing){target="_blank"}
-
-## Online Calculators
-
-[Sea Water Density](https://fermi.jhuapl.edu/denscalc.html){target="_blank"} - Calculate sea water density and sound speed.
-
-### Calculators for Active Acoustics
-
-[Sound Absorption](http://resource.npl.co.uk/acoustics/techguides/seaabsorption/){target="_blank"} - Calculate Absorption using the Francois and Garrison, 1982 method.
-
-[Standard Sphere Target Strength](https://www.fisheries.noaa.gov/data-tools/standard-sphere-target-strength-calculator){target="_blank"} - Standard sphere target strength calculator created by Advanced Survey Technologies, SWFSC.
+How to offload PAM Data (link to pam webpages?)
 
 ## Manuals
 
@@ -124,7 +132,21 @@ How to set up the Nortek compact echosounder
 [DMON software and settings](https://drive.google.com/drive/folders/1iRRukFoOWjqd1ezeZGp7gapMBgFmJK73?usp=drive_link){target="_blank"}
 :::
 
+## Online Calculators
+
+[Sea Water Density](https://fermi.jhuapl.edu/denscalc.html){target="_blank"} - Calculate sea water density and sound speed
+
+Shadowgraph Power Calculator (something Caleb mentioned was in the works)
+
+### Calculators for Active Acoustics
+
+[Sound Absorption](http://resource.npl.co.uk/acoustics/techguides/seaabsorption/){target="_blank"} - Calculate Absorption using the Francois and Garrison, 1982 method.
+
+[Standard Sphere Target Strength](https://www.fisheries.noaa.gov/data-tools/standard-sphere-target-strength-calculator){target="_blank"} - Standard sphere target strength calculator created by Advanced Survey Technologies, SWFSC.
+
 ## Useful Links
+
+### Slocum Gliders
 
 [Pilot Cheatsheet](documents/pilot_cheatsheet.qmd){target="_blank"} - Common commands for piloting and testing
 
@@ -140,13 +162,13 @@ How to set up the Nortek compact echosounder
 
 [Teledyne Customer Portal](https://tmv-taptone.my.site.com/slocum/s/){target="_blank"} - Where to check the status of service on gliders and glider parts at TWR.
 
-[OceanGNS](https://www.oceangns.com/login){target="_blank"} - A program that can track multiple gliders as well as has different layers. The layers can be depth average currents, sea ice, chlorophyll, etc.
+[Default SFMC Group Call In](https://sfmc.webbresearch.com/sfmc/iridium-calls){target="_blank"} - Check here to see if the glider is calling into the default group instead of our SFMC.
 
-[Autoballast States](documents/Autoballast.txt)
+[Freewave and Argos numbers](https://docs.google.com/spreadsheets/d/1xg13O3t28g-FXFVjZVICaNePxAGZ7DCoEwMBe_Dx-Dg/edit?usp=sharing){target="_blank"} - Freewave and Argos numbers for each Slocum glider.
 
-[Abort codes](documents/AbortCodes.txt)
+[ECOpuck coefficients](https://docs.google.com/document/d/1xlwI2gTfQxBQ-oT7_mLfF2JC7VG-7TMslyJ9Wc5Cryc/edit?usp=sharing){target="_blank"} - Coefficients for the ECOpuck needed to be put in autoexec.mi
 
-[Aborts and Errors we've gone through](https://docs.google.com/document/d/1k_1ZmGDh3oLuhqQkKLR6mKK2Y17tg8vHiEYWfJPGT5o/edit?usp=sharing){target="_blank"}
+### Environmental Data Viewers
 
 [Antarctic Sea Ice Imagery](https://www.polarview.aq/antarctic){target="_blank"}
 
@@ -154,7 +176,9 @@ How to set up the Nortek compact echosounder
 
 [SCCOOS shore stations](https://sccoos.org/autoss/){target="_blank"}
 
-[Default SFMC Group Call In](https://sfmc.webbresearch.com/sfmc/iridium-calls){target="_blank"} - Check here to see if the glider is calling into the default group instead of our SFMC.
+[OceanGNS](https://www.oceangns.com/login){target="_blank"} - A program that can track multiple gliders as well as has different layers. The layers can be depth average currents, sea ice, chlorophyll, etc.
+
+### General Glider Resources
 
 [Underwater Glider User Group 'UG2'](https://underwatergliders.org/){target="_blank"}
 
@@ -164,49 +188,37 @@ How to set up the Nortek compact echosounder
 
 [IOOS Underwater Gliders](https://ioos.noaa.gov/project/underwater-gliders/){target="_blank"}
 
-## Google Drive
+### Lab Resources
 
 [Phone tree and websites](https://docs.google.com/document/d/1gWkfouiqkkxVl20Bk_j-B3CzlxbmOaSHe2BChqrlh20/edit?usp=sharing){target="_blank"}
 
-[AMLR Gliders Folder](https://drive.google.com/drive/u/0/folders/1wv2wGgWco_3heUR7JPVMc3KLGFCzkcBT){target="_blank"} - Where most things are stored on Google Drive with regards to gliders.
+## Glider Specific Information
 
-[Fleet Status](https://docs.google.com/spreadsheets/d/1tB3QNKYx8qOYYS9QZotekBAx0y-_n2d-EZPjFFdYNuU/edit?gid=0#gid=0){target="_blank"} - A place to see the simplified status of gliders. Also to keep track of RMAs and generalized deployments.
+### [Slocum Gliders](https://www.teledynemarine.com/en-us/products/Pages/slocum-glider.aspx){target="_blank"} ![](images/SlocumGlider.jpg){width="97"}
 
-[Sensor Settings and Sampling Sheet](https://docs.google.com/spreadsheets/d/1SNjvXY9RhGC8St3bXdfQx6tWN10sF8evctD0B_RcTKk/edit?gid=0#gid=0){target="_blank"} - Where mission planners input the settings for sensors and how they should sample.
+#### Battery Capacities
 
-[Ballast sheet from Rutgers](documents/Glider-Ballasting-Template.xls) - Ballast sheet developed by Rutgers
+![](images/battery_capacities.png)
 
-[TWR Ballast sheet](documents/4095-GBPSH.xlsx) - From the datahost
+#### File Transfer Syntax
 
-[Functional Checkout Procedure](documents/4095-FCP%20Functional%20Checkout%20Procedure.xlsx) - From the datahost
+![](images/Glider_File_Transfer_Syntax.jpg)
 
-[Freewave and Argos numbers](https://docs.google.com/spreadsheets/d/1xg13O3t28g-FXFVjZVICaNePxAGZ7DCoEwMBe_Dx-Dg/edit?usp=sharing){target="_blank"} - Freewave and Argos numbers for each Slocum glider.
+#### Differences between persistor and STM gliders
 
-[ECOpuck coefficients](https://docs.google.com/document/d/1xlwI2gTfQxBQ-oT7_mLfF2JC7VG-7TMslyJ9Wc5Cryc/edit?usp=sharing){target="_blank"} - Coefficients for the ECOpuck needed to be put in autoexec.mi
-
-[Emergency boat options](https://docs.google.com/spreadsheets/d/1fZagNnYgBD-0E_5ivPwIWZFyzMgGDQ8hEPG-jktn2TQ/edit?gid=0#gid=0){target="_blank"} - Boats that we can use for emergency recoveries in San Diego and Santa Barbara.
-
-## Glider Specific Links
-
-## [Slocum Gliders](https://www.teledynemarine.com/en-us/products/Pages/slocum-glider.aspx){target="_blank"} ![](images/SlocumGlider.jpg){width="97"}
-
-### Links
-
-![Battery Capacities](images/battery_capacities.png)
-
-![File Transfer Syntax](images/Glider_File_Transfer_Syntax.jpg)
-
-![Differences between persistor and STM gliders](images/persistor_v_stm.png)
+![](images/persistor_v_stm.png)
 
 [Autoballast States](documents/Autoballast.txt)
+
+#### Aborts & Errors
 
 [Abort codes](documents/AbortCodes.txt)
 
 [Aborts and Errors we've gone through](https://docs.google.com/document/d/1k_1ZmGDh3oLuhqQkKLR6mKK2Y17tg8vHiEYWfJPGT5o/edit?usp=sharing){target="_blank"}
 
-## [Oceanscout](https://www.hefring.com/oceanscout){target="_blank"} ![](images/HefringGlider.jpg){width="149"}
+### [Oceanscout](https://www.hefring.com/oceanscout){target="_blank"} ![](images/HefringGlider.jpg){width="149"}
 
-### Information
+#### Information
 
 [Hefring cloud](https://noaafisheries.hefring.cloud/){target="_blank"}- The NOAA cloud interface for controlling Oceanscouts.
 
@@ -216,7 +228,7 @@ How to set up the Nortek compact echosounder
 
 [CLI help](documents/OS_help_1.1.2.txt){target="_blank"}
 
-### User Manual
+#### User Manual
 
 [Getting Started](documents/Getting%20started.pdf){target="_blank"}
 

@@ -43,9 +43,7 @@ website:
         text: Home
       - content/best-practices.qmd
       - content/lab-management.qmd
-      - section: "Glider Lab"
-        contents:
-          - content/lab.qmd
+      - content/lab.qmd
       - content/deployments.qmd
       - content/glider-mooring-database.qmd
       - content/data-management.qmd
