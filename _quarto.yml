@@ -42,11 +42,10 @@ website:
       - href: index.qmd
         text: Home
       - content/best-practices.qmd
-      - section: "Glider Lab"
-        contents:
-          - content/lab.qmd
-          - content/pilot-tools.qmd
+      - content/lab-management.qmd
+      - content/lab.qmd
       - content/deployments.qmd
+      - content/glider-mooring-database.qmd
       - content/data-management.qmd
       - section: "Data Processing"
         contents:

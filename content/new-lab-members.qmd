@@ -1,0 +1,29 @@
+---
+title: "New Lab Members"
+format: html
+---
+
+include introductory information, links to must read papers, new hire resources, goal setting information, etc.
+
+## Training Documents
+
+[Slocum Basic Training Slides May 2024](https://drive.google.com/file/d/15O-BuBtiOovHT-yFzKEvVNwmOnNgvnjW/view?usp=drive_link){target="_blank"}
+
+[Slocum Basic Training Slides May 2024 Materials](https://drive.google.com/drive/folders/1TFtmFJRK5apAygQBu0I0FzWULkcj0Wuq?usp=drive_link){target="_blank"}
+
+[Slocum Advanced Training 2019 Materials](https://drive.google.com/drive/folders/1J3KsCSu_GY0ig4K4oV3MvDlINFPDyqim?usp=drive_link){target="_blank"}
+
+[Rutgers Glider Camp 2023](https://drive.google.com/drive/folders/1cx8iuoX5duVvjwIw6RTQChlb1mFERctT?usp=drive_link){target="_blank"}
+
+## Required Software
+Intro to how the team uses GitHub
+
+## Google Groups & Spaces
+### Email Groups
+ESD
+SOS
+
+
+### Spaces
+Glider Training
+ESD Glider Team

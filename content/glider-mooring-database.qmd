@@ -1,0 +1,6 @@
+---
+title: "Glider and Mooring Database"
+format: html
+---
+
+You can find the Glider and Mooring Database on the network drive under AMLR_Datasets. The database is a SQL server database with an Access front end, accessible over the SWFSC network (including VPN). It is used to track several facets of gliders, including glider builds, deployments, and the number of deployment days and inflections for various sensors. We are working on scripts to get some standard data out as well as populate yml files for archiving deployment data. For more information see [Data Management](data-management.qmd).
