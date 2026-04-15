@@ -2,58 +2,70 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
     <loc>https://swfsc.github.io/glider-lab-manual/index.html</loc>
-    <lastmod>2025-09-19T20:57:04.734Z</lastmod>
-  </url>
-  <url>
-    <loc>https://swfsc.github.io/glider-lab-manual/content/lab.html</loc>
-    <lastmod>2025-09-19T20:57:04.725Z</lastmod>
-  </url>
-  <url>
-    <loc>https://swfsc.github.io/glider-lab-manual/content/documents/pilot_cheatsheet.html</loc>
-    <lastmod>2025-09-19T20:57:04.717Z</lastmod>
-  </url>
-  <url>
-    <loc>https://swfsc.github.io/glider-lab-manual/content/deployments.html</loc>
-    <lastmod>2025-09-19T20:57:04.634Z</lastmod>
-  </url>
-  <url>
-    <loc>https://swfsc.github.io/glider-lab-manual/content/slocum-glider-data.html</loc>
-    <lastmod>2025-09-19T20:57:04.734Z</lastmod>
-  </url>
-  <url>
-    <loc>https://swfsc.github.io/glider-lab-manual/content/best-practices.html</loc>
-    <lastmod>2025-09-19T20:57:04.634Z</lastmod>
-  </url>
-  <url>
-    <loc>https://swfsc.github.io/glider-lab-manual/content/gcp.html</loc>
-    <lastmod>2025-09-19T20:57:04.717Z</lastmod>
-  </url>
-  <url>
-    <loc>https://swfsc.github.io/glider-lab-manual/content/data-management.html</loc>
-    <lastmod>2025-09-19T20:57:04.634Z</lastmod>
-  </url>
-  <url>
-    <loc>https://swfsc.github.io/glider-lab-manual/content/data-proc-overview.html</loc>
-    <lastmod>2025-09-19T20:57:04.634Z</lastmod>
-  </url>
-  <url>
-    <loc>https://swfsc.github.io/glider-lab-manual/content/active-acoustics.html</loc>
-    <lastmod>2025-09-19T20:57:04.634Z</lastmod>
-  </url>
-  <url>
-    <loc>https://swfsc.github.io/glider-lab-manual/content/images/readme.html</loc>
-    <lastmod>2025-09-19T20:57:04.724Z</lastmod>
+    <lastmod>2026-04-15T21:14:11.710Z</lastmod>
   </url>
   <url>
     <loc>https://swfsc.github.io/glider-lab-manual/content/documents/O-rings.html</loc>
-    <lastmod>2025-09-19T20:57:04.714Z</lastmod>
+    <lastmod>2026-04-15T21:14:11.691Z</lastmod>
+  </url>
+  <url>
+    <loc>https://swfsc.github.io/glider-lab-manual/content/active-acoustics.html</loc>
+    <lastmod>2026-04-15T21:14:11.614Z</lastmod>
+  </url>
+  <url>
+    <loc>https://swfsc.github.io/glider-lab-manual/content/images/readme.html</loc>
+    <lastmod>2026-04-15T21:14:11.700Z</lastmod>
+  </url>
+  <url>
+    <loc>https://swfsc.github.io/glider-lab-manual/content/glider-mooring-database.html</loc>
+    <lastmod>2026-04-15T21:14:11.694Z</lastmod>
+  </url>
+  <url>
+    <loc>https://swfsc.github.io/glider-lab-manual/content/slocum-glider-data.html</loc>
+    <lastmod>2026-04-15T21:14:11.709Z</lastmod>
+  </url>
+  <url>
+    <loc>https://swfsc.github.io/glider-lab-manual/content/new-lab-members.html</loc>
+    <lastmod>2026-04-15T21:14:11.709Z</lastmod>
+  </url>
+  <url>
+    <loc>https://swfsc.github.io/glider-lab-manual/content/lab.html</loc>
+    <lastmod>2026-04-15T21:14:11.701Z</lastmod>
+  </url>
+  <url>
+    <loc>https://swfsc.github.io/glider-lab-manual/content/data-management.html</loc>
+    <lastmod>2026-04-15T21:14:11.615Z</lastmod>
+  </url>
+  <url>
+    <loc>https://swfsc.github.io/glider-lab-manual/content/deployments.html</loc>
+    <lastmod>2026-04-15T21:14:11.615Z</lastmod>
+  </url>
+  <url>
+    <loc>https://swfsc.github.io/glider-lab-manual/content/lab-management.html</loc>
+    <lastmod>2026-04-15T21:14:11.701Z</lastmod>
   </url>
   <url>
     <loc>https://swfsc.github.io/glider-lab-manual/content/imagery.html</loc>
-    <lastmod>2025-09-19T20:57:04.717Z</lastmod>
+    <lastmod>2026-04-15T21:14:11.694Z</lastmod>
   </url>
   <url>
     <loc>https://swfsc.github.io/glider-lab-manual/content/pilot-tools.html</loc>
-    <lastmod>2025-09-19T20:57:04.733Z</lastmod>
+    <lastmod>2026-04-15T21:14:11.709Z</lastmod>
+  </url>
+  <url>
+    <loc>https://swfsc.github.io/glider-lab-manual/content/gcp.html</loc>
+    <lastmod>2026-04-15T21:14:11.694Z</lastmod>
+  </url>
+  <url>
+    <loc>https://swfsc.github.io/glider-lab-manual/content/best-practices.html</loc>
+    <lastmod>2026-04-15T21:14:11.615Z</lastmod>
+  </url>
+  <url>
+    <loc>https://swfsc.github.io/glider-lab-manual/content/data-proc-overview.html</loc>
+    <lastmod>2026-04-15T21:14:11.615Z</lastmod>
+  </url>
+  <url>
+    <loc>https://swfsc.github.io/glider-lab-manual/content/documents/pilot_cheatsheet.html</loc>
+    <lastmod>2026-04-15T21:14:11.694Z</lastmod>
   </url>
 </urlset>

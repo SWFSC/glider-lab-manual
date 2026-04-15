@@ -2,13 +2,16 @@
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
 
 <meta charset="utf-8">
-<meta name="generator" content="quarto-1.8.24">
+<meta name="generator" content="quarto-1.9.37">
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
 <title>Best Practices – ESD Glider Lab</title>
 <style>
+/* Default styles provided by pandoc.
+** See https://pandoc.org/MANUAL.html#variables-for-html for config info.
+*/
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
 div.columns{display: flex; gap: min(4vw, 1.5em);}
@@ -33,19 +36,18 @@ ul.task-list li input[type="checkbox"] {
 <link href="../site_libs/cookie-consent/cookie-consent.css" rel="stylesheet">
 <script src="../site_libs/quarto-html/quarto.js" type="module"></script>
 <script src="../site_libs/quarto-html/tabsets/tabsets.js" type="module"></script>
-<script src="../site_libs/quarto-html/axe/axe-check.js" type="module"></script>
 <script src="../site_libs/quarto-html/popper.min.js"></script>
 <script src="../site_libs/quarto-html/tippy.umd.min.js"></script>
 <script src="../site_libs/quarto-html/anchor.min.js"></script>
 <link href="../site_libs/quarto-html/tippy.css" rel="stylesheet">
-<link href="../site_libs/quarto-html/quarto-syntax-highlighting-dc55a5b9e770e841cd82e46aadbfb9b0.css" rel="stylesheet" class="quarto-color-scheme" id="quarto-text-highlighting-styles">
-<link href="../site_libs/quarto-html/quarto-syntax-highlighting-dark-b651517ce65839d647a86e2780455cfb.css" rel="stylesheet" class="quarto-color-scheme quarto-color-alternate" id="quarto-text-highlighting-styles">
-<link href="../site_libs/quarto-html/quarto-syntax-highlighting-dc55a5b9e770e841cd82e46aadbfb9b0.css" rel="stylesheet" class="quarto-color-scheme-extra" id="quarto-text-highlighting-styles">
+<link href="../site_libs/quarto-html/quarto-syntax-highlighting-7f8f88aac4f3542376d5c11b86a4c14d.css" rel="stylesheet" class="quarto-color-scheme" id="quarto-text-highlighting-styles">
+<link href="../site_libs/quarto-html/quarto-syntax-highlighting-dark-d0ae9245876894da5ac7e18953ecc5cc.css" rel="stylesheet" class="quarto-color-scheme quarto-color-alternate" id="quarto-text-highlighting-styles">
+<link href="../site_libs/quarto-html/quarto-syntax-highlighting-7f8f88aac4f3542376d5c11b86a4c14d.css" rel="stylesheet" class="quarto-color-scheme-extra" id="quarto-text-highlighting-styles">
 <script src="../site_libs/bootstrap/bootstrap.min.js"></script>
 <link href="../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="../site_libs/bootstrap/bootstrap-b68b14291fce0367c2cd0b7f2d3b5158.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme" id="quarto-bootstrap" data-mode="light">
-<link href="../site_libs/bootstrap/bootstrap-dark-6878c03325e4b83cf38f0baaf9c01681.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme quarto-color-alternate" id="quarto-bootstrap" data-mode="dark">
-<link href="../site_libs/bootstrap/bootstrap-b68b14291fce0367c2cd0b7f2d3b5158.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme-extra" id="quarto-bootstrap" data-mode="light">
+<link href="../site_libs/bootstrap/bootstrap-8d51171ab127489a77a17eca793c6490.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme" id="quarto-bootstrap" data-mode="light">
+<link href="../site_libs/bootstrap/bootstrap-dark-6f148fdfc5ec14e9f951eb17949292fc.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme quarto-color-alternate" id="quarto-bootstrap" data-mode="dark">
+<link href="../site_libs/bootstrap/bootstrap-8d51171ab127489a77a17eca793c6490.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme-extra" id="quarto-bootstrap" data-mode="light">
 <script id="quarto-search-options" type="application/json">{
   "location": "sidebar",
   "copy-button": false,
@@ -341,33 +343,28 @@ cookieconsent.run({
  <span class="menu-text">Best Practices</span></a>
   </div>
 </li>
-        <li class="sidebar-item sidebar-item-section">
-      <div class="sidebar-item-container"> 
-            <a class="sidebar-item-text sidebar-link text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-1" role="navigation" aria-expanded="false">
- <span class="menu-text">Glider Lab</span></a>
-          <a class="sidebar-item-toggle text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-1" role="navigation" aria-expanded="false" aria-label="Toggle section">
-            <i class="bi bi-chevron-right ms-2"></i>
-          </a> 
-      </div>
-      <ul id="quarto-sidebar-section-1" class="collapse list-unstyled sidebar-section depth1 ">  
-          <li class="sidebar-item">
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../content/lab-management.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Lab Management</span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="../content/lab.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text">Glider Lab</span></a>
   </div>
 </li>
-          <li class="sidebar-item">
-  <div class="sidebar-item-container"> 
-  <a href="../content/pilot-tools.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">Glider Pilot Tools</span></a>
-  </div>
-</li>
-      </ul>
-  </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="../content/deployments.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text">Deployments</span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../content/glider-mooring-database.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Glider and Mooring Database</span></a>
   </div>
 </li>
         <li class="sidebar-item">
@@ -378,13 +375,13 @@ cookieconsent.run({
 </li>
         <li class="sidebar-item sidebar-item-section">
       <div class="sidebar-item-container"> 
-            <a class="sidebar-item-text sidebar-link text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-2" role="navigation" aria-expanded="false">
+            <a class="sidebar-item-text sidebar-link text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-1" role="navigation" aria-expanded="false">
  <span class="menu-text">Data Processing</span></a>
-          <a class="sidebar-item-toggle text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-2" role="navigation" aria-expanded="false" aria-label="Toggle section">
+          <a class="sidebar-item-toggle text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-1" role="navigation" aria-expanded="false" aria-label="Toggle section">
             <i class="bi bi-chevron-right ms-2"></i>
           </a> 
       </div>
-      <ul id="quarto-sidebar-section-2" class="collapse list-unstyled sidebar-section depth1 ">  
+      <ul id="quarto-sidebar-section-1" class="collapse list-unstyled sidebar-section depth1 ">  
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="../content/data-proc-overview.html" class="sidebar-item-text sidebar-link">
@@ -432,6 +429,7 @@ cookieconsent.run({
   <li><a href="#communication" id="toc-communication" class="nav-link" data-scroll-target="#communication"><strong>Communication</strong></a></li>
   <li><a href="#safety" id="toc-safety" class="nav-link" data-scroll-target="#safety"><strong>Safety</strong></a></li>
   <li><a href="#website-development" id="toc-website-development" class="nav-link" data-scroll-target="#website-development"><strong>Website Development</strong></a></li>
+  <li><a href="#new-lab-members" id="toc-new-lab-members" class="nav-link" data-scroll-target="#new-lab-members"><strong>New Lab Members</strong></a></li>
   </ul></li>
   </ul>
 <div class="toc-actions"><ul><li><a href="https://github.com/SWFSC/glider-lab-manual/edit/main/content/best-practices.qmd" class="toc-action"><i class="bi bi-github"></i>Edit this page</a></li><li><a href="https://github.com/SWFSC/glider-lab-manual/blob/main/content/best-practices.qmd" class="toc-action"><i class="bi empty"></i>View source</a></li><li><a href="https://github.com/SWFSC/glider-lab-manual/issues/new" class="toc-action"><i class="bi empty"></i>Report an issue</a></li></ul></div></nav>
@@ -469,7 +467,8 @@ cookieconsent.run({
 </div>
 </div>
 <div class="callout-body-container callout-body">
-<p>This is a living document which shall always be considered a “draft,” as incoming and veteran members of the lab may want to contribute ideas or revisions. This is a place to begin, a place to return to, a place to ground ongoing conversations. Modeled after https://sael-swfsc.github.io/SAEL-lab-manual/content/SharedValues-BestPractices.html</p>
+<p>This is a living document which shall always be considered a “draft,” as incoming and veteran members of the lab may want to contribute ideas or revisions. This is a place to begin, a place to return to, a place to ground ongoing conversations.</p>
+<p>Modeled after <a href="https://sael-swfsc.github.io/SAEL-lab-manual/content/SharedValues-BestPractices.html">SWFSC Southwest Acoustic Ecology Lab Shared Values Document</a></p>
 </div>
 </div>
 <section id="esd-glider-lab-best-practices" class="level2">
@@ -496,8 +495,13 @@ cookieconsent.run({
 <h3 class="anchored" data-anchor-id="website-development"><strong>Website Development</strong></h3>
 <p>As described above, this website is intended to be a place for all glider team members to both use as a reference and contribute to. This section contains development notes and best practices</p>
 <ol type="1">
-<li>If using VSCode, <a href="https://quarto.org/docs/tools/vscode.html">this page</a> contains helpful references and shortcuts. One of the most common and important is to <a href="https://quarto.org/docs/tools/vscode.html#render-and-preview">render and preview</a> the current qmd files, which you can do with the <kbd>Ctrl+Shift+K</kbd> keyboard shortcut.</li>
+<li>If using VSCode, <a href="https://quarto.org/docs/tools/vscode.html">this page</a> contains helpful references and shortcuts. One of the most common and important is to <a href="https://quarto.org/docs/tools/vscode.html#render-and-preview">render and preview</a> the current qmd files, which you can do with the <kbd>Ctrl+Shift+K</kbd> keyboard shortcut (shortcuts also work with Positron and RStudio).</li>
+<li>If you have a website suggestion or correction you can submit a new issue to this repository by clicking <a href="https://github.com/SWFSC/glider-lab-manual/issues/new">this link</a></li>
 </ol>
+</section>
+<section id="new-lab-members" class="level3">
+<h3 class="anchored" data-anchor-id="new-lab-members"><strong>New Lab Members</strong></h3>
+<p><a href="https://swfsc.github.io/glider-lab-manual/content/new-lab-members.html">Link to temporary page</a> include introductory information, links to must read papers, new hire resources, lab information, orientation info, etc.</p>
 
 
 </section>
