@@ -2,7 +2,7 @@
 
 ## Slocum gliders
 
-### Slocum hull rings
+### G3 Slocum hull rings
 
 O-ring: 07.500-07.750-.139OB-SPEC\
 Vendor: Packing & Seals, Inc\
@@ -11,13 +11,23 @@ Price: \$11.90 August 15, 2024\
 Lube: Parker O-lube\
 TWR: Part# 304697, BUNA O-RING, 2-264, 65D BUNA AS3578
 
+### G2 Slocum hull rings
+
+O-ring:\
+Vendor:\
+Part number:2-265-N674-70\
+Price:\
+Lube: Parker O-lube\
+TWR: Part# G-024
+
 ### Slocum vacuum plug
 
 O-ring:\
 Vendor:\
-Part number:\
+Part number:3-904-N674-70\
 Price:\
-Lube: Parker O-lube
+Lube: Parker O-lube\
+TWR: Part# G-030
 
 ### Nortek compact echosounder with Delrin cover
 
