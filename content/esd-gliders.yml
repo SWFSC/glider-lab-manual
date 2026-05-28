@@ -551,11 +551,11 @@
   Deployment_Name: george-20240907
   report_link: ''
   ERDDAP_link: ''
-  gcp_link_tssci: <a href='https://storage.cloud.google.com/swfscesd-glider-deployments-data-out/2024/george-20240907/processed-L1/george-20240907-delayed-sci.nc'>timeseries-sci</a>
-  gcp_link_gr5: <a href='https://storage.cloud.google.com/swfscesd-glider-deployments-data-out/2024/george-20240907/processed-L3/george-20240907_grid-delayed-5m.nc'>gridded-5m</a>
+  gcp_link_tssci: ''
+  gcp_link_gr5: ''
   gcp_link_imgcsv: ''
-  gcp_dir_link_plots: <a href='https://console.cloud.google.com/storage/browser/swfscesd-glider-deployments-data-out/2024/george-20240907/plots/delayed'>plots</a>
-  gcp_dir_link_glider: <a href='https://console.cloud.google.com/storage/browser/swfscesd-glider-deployments-data-out/2024/george-20240907'>glider</a>
+  gcp_dir_link_plots: ''
+  gcp_dir_link_glider: ''
   gcp_dir_link_acoustics: ''
   gcp_dir_link_imagery: <a href='https://console.cloud.google.com/storage/browser/swfscesd-glider-imagery-data-in/2024/george-20240907/images'>images</a>
 - Glider: calanus
@@ -567,11 +567,11 @@
   Deployment_Name: calanus-20241019
   report_link: ''
   ERDDAP_link: ''
-  gcp_link_tssci: ''
-  gcp_link_gr5: ''
+  gcp_link_tssci: <a href='https://storage.cloud.google.com/swfscesd-glider-deployments-data-out/2024/calanus-20241019/processed-L1/calanus-20241019-delayed-sci.nc'>timeseries-sci</a>
+  gcp_link_gr5: <a href='https://storage.cloud.google.com/swfscesd-glider-deployments-data-out/2024/calanus-20241019/processed-L3/calanus-20241019_grid-delayed-5m.nc'>gridded-5m</a>
   gcp_link_imgcsv: ''
-  gcp_dir_link_plots: ''
-  gcp_dir_link_glider: ''
+  gcp_dir_link_plots: <a href='https://console.cloud.google.com/storage/browser/swfscesd-glider-deployments-data-out/2024/calanus-20241019/plots/delayed'>plots</a>
+  gcp_dir_link_glider: <a href='https://console.cloud.google.com/storage/browser/swfscesd-glider-deployments-data-out/2024/calanus-20241019'>glider</a>
   gcp_dir_link_acoustics: ''
   gcp_dir_link_imagery: ''
 - Glider: AMLR01
@@ -631,11 +631,11 @@
   Deployment_Name: risso-20250414
   report_link: ''
   ERDDAP_link: ''
-  gcp_link_tssci: ''
-  gcp_link_gr5: ''
+  gcp_link_tssci: <a href='https://storage.cloud.google.com/swfscesd-glider-deployments-data-out/2025/risso-20250414/processed-L1/risso-20250414-delayed-sci.nc'>timeseries-sci</a>
+  gcp_link_gr5: <a href='https://storage.cloud.google.com/swfscesd-glider-deployments-data-out/2025/risso-20250414/processed-L3/risso-20250414_grid-delayed-5m.nc'>gridded-5m</a>
   gcp_link_imgcsv: ''
-  gcp_dir_link_plots: ''
-  gcp_dir_link_glider: ''
+  gcp_dir_link_plots: <a href='https://console.cloud.google.com/storage/browser/swfscesd-glider-deployments-data-out/2025/risso-20250414/plots/delayed'>plots</a>
+  gcp_dir_link_glider: <a href='https://console.cloud.google.com/storage/browser/swfscesd-glider-deployments-data-out/2025/risso-20250414'>glider</a>
   gcp_dir_link_acoustics: ''
   gcp_dir_link_imagery: ''
 - Glider: stenella
@@ -647,11 +647,11 @@
   Deployment_Name: stenella-20250414
   report_link: ''
   ERDDAP_link: ''
-  gcp_link_tssci: ''
-  gcp_link_gr5: ''
+  gcp_link_tssci: <a href='https://storage.cloud.google.com/swfscesd-glider-deployments-data-out/2025/stenella-20250414/processed-L1/stenella-20250414-delayed-sci.nc'>timeseries-sci</a>
+  gcp_link_gr5: <a href='https://storage.cloud.google.com/swfscesd-glider-deployments-data-out/2025/stenella-20250414/processed-L3/stenella-20250414_grid-delayed-5m.nc'>gridded-5m</a>
   gcp_link_imgcsv: ''
-  gcp_dir_link_plots: ''
-  gcp_dir_link_glider: ''
+  gcp_dir_link_plots: <a href='https://console.cloud.google.com/storage/browser/swfscesd-glider-deployments-data-out/2025/stenella-20250414/plots/delayed'>plots</a>
+  gcp_dir_link_glider: <a href='https://console.cloud.google.com/storage/browser/swfscesd-glider-deployments-data-out/2025/stenella-20250414'>glider</a>
   gcp_dir_link_acoustics: ''
   gcp_dir_link_imagery: ''
 - Glider: calanus
@@ -663,11 +663,11 @@
   Deployment_Name: calanus-20250617
   report_link: ''
   ERDDAP_link: ''
-  gcp_link_tssci: ''
-  gcp_link_gr5: ''
+  gcp_link_tssci: <a href='https://storage.cloud.google.com/swfscesd-glider-deployments-data-out/2025/calanus-20250617/processed-L1/calanus-20250617-delayed-sci.nc'>timeseries-sci</a>
+  gcp_link_gr5: <a href='https://storage.cloud.google.com/swfscesd-glider-deployments-data-out/2025/calanus-20250617/processed-L3/calanus-20250617_grid-delayed-5m.nc'>gridded-5m</a>
   gcp_link_imgcsv: ''
-  gcp_dir_link_plots: ''
-  gcp_dir_link_glider: ''
+  gcp_dir_link_plots: <a href='https://console.cloud.google.com/storage/browser/swfscesd-glider-deployments-data-out/2025/calanus-20250617/plots/delayed'>plots</a>
+  gcp_dir_link_glider: <a href='https://console.cloud.google.com/storage/browser/swfscesd-glider-deployments-data-out/2025/calanus-20250617'>glider</a>
   gcp_dir_link_acoustics: ''
   gcp_dir_link_imagery: ''
 - Glider: AMLR02
@@ -699,7 +699,7 @@
   gcp_link_gr5: ''
   gcp_link_imgcsv: ''
   gcp_dir_link_plots: ''
-  gcp_dir_link_glider: <a href='https://console.cloud.google.com/storage/browser/swfscesd-glider-deployments-data-out/2026/amlr30-20260114'>glider</a>
+  gcp_dir_link_glider: ''
   gcp_dir_link_acoustics: ''
   gcp_dir_link_imagery: <a href='https://console.cloud.google.com/storage/browser/swfscesd-glider-imagery-data-in/2026/amlr30-20260114/images'>images</a>
 - Glider: risso
@@ -807,10 +807,10 @@
   Deployment_Name: calanus-20260403
   report_link: ''
   ERDDAP_link: ''
-  gcp_link_tssci: <a href='https://storage.cloud.google.com/swfscesd-glider-deployments-data-out/2026/calanus-20260403/processed-L1/calanus-20260403-delayed-sci.nc'>timeseries-sci</a>
-  gcp_link_gr5: <a href='https://storage.cloud.google.com/swfscesd-glider-deployments-data-out/2026/calanus-20260403/processed-L3/calanus-20260403_grid-delayed-5m.nc'>gridded-5m</a>
+  gcp_link_tssci: ''
+  gcp_link_gr5: ''
   gcp_link_imgcsv: ''
   gcp_dir_link_plots: ''
-  gcp_dir_link_glider: <a href='https://console.cloud.google.com/storage/browser/swfscesd-glider-deployments-data-out/2026/calanus-20260403'>glider</a>
+  gcp_dir_link_glider: ''
   gcp_dir_link_acoustics: ''
   gcp_dir_link_imagery: <a href='https://console.cloud.google.com/storage/browser/swfscesd-glider-imagery-data-in/2026/calanus-20260403/images'>images</a>
