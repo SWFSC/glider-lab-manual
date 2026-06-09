@@ -34,6 +34,8 @@ This page contains various procedures and resources for glider lab members, incl
 
 [Steps for deploying a glider](https://docs.google.com/document/d/1bxen4GvXxmZZoXP24-Mn_2fjzKx7fJx0l_CkeGul-oI/edit){target="_blank"}
 
+[How Pilots recover a glider](https://docs.google.com/document/d/1uKzouLpEYnxL556pkscMwcALZTEX3Y5W0vupmwEt3lE/edit?tab=t.0)
+
 [Tony's SFMC Data Visualizations](https://docs.google.com/document/d/1GgaZyglCF5wDOZruK5Ewc5HsKpwMg3jxkPrCb9s_g4k/edit?usp=sharing){target="_blank"}
 
 ### Sensor SOPs
@@ -214,7 +216,9 @@ Shadowgraph Power Calculator (something Caleb mentioned was in the works)
 
 [Abort codes](documents/AbortCodes.txt)
 
-[Aborts and Errors we've gone through](https://docs.google.com/document/d/1k_1ZmGDh3oLuhqQkKLR6mKK2Y17tg8vHiEYWfJPGT5o/edit?usp=sharing){target="_blank"}
+[Abort procedure](https://docs.google.com/document/d/1uKzouLpEYnxL556pkscMwcALZTEX3Y5W0vupmwEt3lE/edit?tab=t.7cy4tqbrh7y3)
+
+[Aborts and Errors we've gone through](https://docs.google.com/spreadsheets/d/1IAsV8tb0VZcJ5o_eMEBYJtJlou4AEXVuoh1XMoYW1X0/edit?gid=0#gid=0){target="_blank"}
 
 ### [Oceanscout](https://www.hefring.com/oceanscout){target="_blank"} ![](images/HefringGlider.jpg){width="149"}
 
