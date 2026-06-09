@@ -293,7 +293,7 @@
     "href": "content/lab.html#standard-operating-procedures",
     "title": "Glider Lab",
     "section": "Standard Operating Procedures",
-    "text": "Standard Operating Procedures\n\nGlider Prep, Testing, & Checkouts\nGlider Checkout Procedure The steps needed to prepare a glider for deployment.\nFunctional Checkout Procedure - From the datahost\nHow to upgrade the glider operating system\nHow to work on a glider while it is open\nSensor Settings and Sampling Sheet - Where mission planners input the settings for sensors and how they should sample.\nBallast sheet from Rutgers - Ballast sheet developed by Rutgers\nTWR Ballast sheet - From the datahost\n\n\nDeployment, Piloting, & SFMC\nHow ESD pilots a glider\nHow Jen deploys a glider\nSteps for deploying a glider\nTony’s SFMC Data Visualizations\n\n\nSensor SOPs\nHow to calibrate the AZFP\nHow to calibrate the compass on the glider\nHow to calibrate the shadowgraph\nHow to talk to the camera (shadowgraph or glidercam)\nHow to set up the Nortek compact echosounder\nNotes on Nortek mini-echosounder\n\n\nData Offload\nHow to use the high speed data cable\nHow to offload PAM Data (link to pam webpages?)",
+    "text": "Standard Operating Procedures\n\nGlider Prep, Testing, & Checkouts\nGlider Checkout Procedure The steps needed to prepare a glider for deployment.\nFunctional Checkout Procedure - From the datahost\nHow to upgrade the glider operating system\nHow to work on a glider while it is open\nSensor Settings and Sampling Sheet - Where mission planners input the settings for sensors and how they should sample.\nBallast sheet from Rutgers - Ballast sheet developed by Rutgers\nTWR Ballast sheet - From the datahost\n\n\nDeployment, Piloting, & SFMC\nHow ESD pilots a glider\nHow Jen deploys a glider\nSteps for deploying a glider\nHow Pilots recover a glider\nTony’s SFMC Data Visualizations\n\n\nSensor SOPs\nHow to calibrate the AZFP\nHow to calibrate the compass on the glider\nHow to calibrate the shadowgraph\nHow to talk to the camera (shadowgraph or glidercam)\nHow to set up the Nortek compact echosounder\nNotes on Nortek mini-echosounder\n\n\nData Offload\nHow to use the high speed data cable\nHow to offload PAM Data (link to pam webpages?)",
     "crumbs": [
       "Glider Lab"
     ]
@@ -333,7 +333,7 @@
     "href": "content/lab.html#glider-specific-information",
     "title": "Glider Lab",
     "section": "Glider Specific Information",
-    "text": "Glider Specific Information\n\nSlocum Gliders \n\nBattery Capacities\n\n\n\nFile Transfer Syntax\n\n\n\nDifferences between persistor and STM gliders\n\nAutoballast States\n\n\nAborts & Errors\nAbort codes\nAborts and Errors we’ve gone through\n\n\n\nOceanscout \n\nInformation\nHefring cloud- The NOAA cloud interface for controlling Oceanscouts.\nHow to view OceanScout data\nUpgrade the Altimeter\nCLI help\n\n\nUser Manual\nGetting Started\nCloud\nHardware\nFirmware\nSafety Guidelines\nFrequently Asked Questions\nTroubleshooting",
+    "text": "Glider Specific Information\n\nSlocum Gliders \n\nBattery Capacities\n\n\n\nFile Transfer Syntax\n\n\n\nDifferences between persistor and STM gliders\n\nAutoballast States\n\n\nAborts & Errors\nAbort codes\nAbort procedure\nAborts and Errors we’ve gone through\n\n\n\nOceanscout \n\nInformation\nHefring cloud- The NOAA cloud interface for controlling Oceanscouts.\nHow to view OceanScout data\nUpgrade the Altimeter\nCLI help\n\n\nUser Manual\nGetting Started\nCloud\nHardware\nFirmware\nSafety Guidelines\nFrequently Asked Questions\nTroubleshooting",
     "crumbs": [
       "Glider Lab"
     ]
@@ -535,7 +535,7 @@
     "href": "content/new-lab-members.html#google-groups-spaces",
     "title": "New Lab Members",
     "section": "Google Groups & Spaces",
-    "text": "Google Groups & Spaces\n\nEmail Groups\nESD SOS\n\n\nSpaces\nGlider Training ESD Glider Team"
+    "text": "Google Groups & Spaces\n\nEmail Groups\nESD\nSOS\n\n\nSpaces\nGlider Training\nESD Glider Team"
   },
   {
     "objectID": "content/data-proc-overview.html",
