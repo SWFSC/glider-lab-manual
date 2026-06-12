@@ -63,11 +63,11 @@ How to offload PAM Data (link to pam webpages?)
 ::: {.callout-note collapse="true" appearance="minimal"}
 ### Slocum
 
-[Slocum Fleet Mission Control 2019](https://drive.google.com/file/d/15n3mQmRP0_HTuUXbMi6hEEYOIGd81sb5/view?usp=drive_link){target="_blank"}
+[Slocum Fleet Mission Control 2025](https://drive.google.com/file/d/1MYaU_SHb_KyUx89ejVqgdSiO2O3jWh6E/view?usp=drive_link){target="_blank"}
 
-[Slocum G3 Glider Operators Manual 2019](https://drive.google.com/file/d/1qQWFOZMSv8FQZmk8_7XItLFRQ1CCArOd/view?usp=drive_link){target="_blank"}
+[Slocum G3 Glider Operators Manual 2025](https://drive.google.com/file/d/1LrDA0AtZ3vOSTAQ1RR4RKJKJZYwYPdG2/view?usp=drive_link){target="_blank"}
 
-[Slocum G3 Maintenance Manual 2019](https://drive.google.com/file/d/1NHIC_bQe2xjB3sw42vuT_aK9cup8pQAF/view){target="_blank"}
+[Slocum G3 Maintenance Manual 2025](https://drive.google.com/file/d/1oTtjoARLuoBHl0N-HoHG9IkzyFtHHdQg/view?usp=drive_link){target="_blank"}
 
 [Slocum G3S New Processor Guide 2021 Draft B](https://drive.google.com/file/d/1nfxGecTRVpzeVXK3owIZv7FprvylL2W_/view){target="_blank"}
 :::
