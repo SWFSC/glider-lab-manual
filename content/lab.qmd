@@ -76,6 +76,7 @@ How to offload PAM Data (link to pam webpages?)
 ### Cameras
 
 [Shadowgraph Version 3](https://www.wassoc.com/downloads/userManuals/user-manual-shadowgraph-v3.pdf){target="_blank"}
+
 [Shadowgraph r3](https://drive.google.com/file/d/1Ns-b0VmK9DmwB6rKtL0uP9s6vl4i2PLE/view?usp=sharing){target="_blank"}
 
 [Glidercam r2.1](https://drive.google.com/file/d/1TwuEmq_5PADnZ080sjW02Yltb2_E-VOd/view){target="_blank"}
@@ -179,7 +180,7 @@ Shadowgraph Power Calculator (something Caleb mentioned was in the works)
 
 [SCCOOS shore stations](https://sccoos.org/autoss/){target="_blank"}
 
-[OceanGNS](https://www.oceangns.com/login){target="_blank"} - A program that can track multiple gliders as well as has different layers. The layers can be depth average currents, sea ice, chlorophyll, etc.
+<!--[OceanGNS](https://www.oceangns.com/login){target="_blank"} - A program that can track multiple gliders as well as has different layers. The layers can be depth average currents, sea ice, chlorophyll, etc. -->
 
 ### General Glider Resources
 
