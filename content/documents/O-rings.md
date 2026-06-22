@@ -13,18 +13,18 @@ TWR: Part# 304697, BUNA O-RING, 2-264, 65D BUNA AS3578
 
 ### G2 Slocum hull rings
 
-O-ring:\
+O-ring:2-265-N674-70\
 Vendor:\
-Part number:2-265-N674-70\
+Part number:\
 Price:\
 Lube: Parker O-lube\
 TWR: Part# G-024
 
 ### Slocum vacuum plug
 
-O-ring:\
+O-ring:3-904-N674-70\
 Vendor:\
-Part number:3-904-N674-70\
+Part number:\
 Price:\
 Lube: Parker O-lube\
 TWR: Part# G-030
