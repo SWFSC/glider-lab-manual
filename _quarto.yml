@@ -10,7 +10,7 @@ website:
   repo-url: "https://github.com/SWFSC/glider-lab-manual/"
   repo-actions: [edit, source, issue]
   # favicon: images/favicon.ico
-  page-navigation: false
+  page-navigation: true
   back-to-top-navigation: true
   bread-crumbs: true
 

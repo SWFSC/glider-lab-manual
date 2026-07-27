@@ -7,6 +7,8 @@ include introductory information, links to must read papers, new hire resources,
 
 ## Training Documents
 
+[Slocum Basic Training April 2026](https://drive.google.com/drive/folders/1y8UtI3SC0JI8G2GkmPzPMwdTeqGbXJUT?usp=drive_link)
+
 [Slocum Basic Training Slides May 2024](https://drive.google.com/file/d/15O-BuBtiOovHT-yFzKEvVNwmOnNgvnjW/view?usp=drive_link){target="_blank"}
 
 [Slocum Basic Training Slides May 2024 Materials](https://drive.google.com/drive/folders/1TFtmFJRK5apAygQBu0I0FzWULkcj0Wuq?usp=drive_link){target="_blank"}
