@@ -2,7 +2,7 @@
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
 
 <meta charset="utf-8">
-<meta name="generator" content="quarto-1.9.38">
+<meta name="generator" content="quarto-1.10.18">
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
@@ -12,10 +12,13 @@
 /* Default styles provided by pandoc.
 ** See https://pandoc.org/MANUAL.html#variables-for-html for config info.
 */
-code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
-div.columns{display: flex; gap: min(4vw, 1.5em);}
-div.column{flex: auto; overflow-x: auto;}
+div.columns{display: flex; gap: 1.5em;}
+div.column{flex: auto;}
+@media screen {
+div.columns{gap: min(4vw, 1.5em);}
+div.column{overflow-x: auto;}
+}
 div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
 ul.task-list{list-style: none;}
 ul.task-list li input[type="checkbox"] {
@@ -32,6 +35,8 @@ ul.task-list li input[type="checkbox"] {
 <script src="../site_libs/quarto-search/fuse.min.js"></script>
 <script src="../site_libs/quarto-search/quarto-search.js"></script>
 <meta name="quarto:offset" content="../">
+<link href="../content/deployments.html" rel="next">
+<link href="../content/lab-management.html" rel="prev">
 <script src="../site_libs/cookie-consent/cookie-consent.js"></script>
 <link href="../site_libs/cookie-consent/cookie-consent.css" rel="stylesheet">
 <script src="../site_libs/quarto-html/quarto.js" type="module"></script>
@@ -40,14 +45,14 @@ ul.task-list li input[type="checkbox"] {
 <script src="../site_libs/quarto-html/tippy.umd.min.js"></script>
 <script src="../site_libs/quarto-html/anchor.min.js"></script>
 <link href="../site_libs/quarto-html/tippy.css" rel="stylesheet">
-<link href="../site_libs/quarto-html/quarto-syntax-highlighting-15634bcf2e68342d4ad2dfa704d543f6.css" rel="stylesheet" class="quarto-color-scheme" id="quarto-text-highlighting-styles">
-<link href="../site_libs/quarto-html/quarto-syntax-highlighting-dark-0a6b7249c26820e032cb0bd839ff02b1.css" rel="stylesheet" class="quarto-color-scheme quarto-color-alternate" id="quarto-text-highlighting-styles">
-<link href="../site_libs/quarto-html/quarto-syntax-highlighting-15634bcf2e68342d4ad2dfa704d543f6.css" rel="stylesheet" class="quarto-color-scheme-extra" id="quarto-text-highlighting-styles">
+<link href="../site_libs/quarto-html/quarto-syntax-highlighting-64a204ab8560d761af7679ceaba22944.css" rel="stylesheet" class="quarto-color-scheme" id="quarto-text-highlighting-styles">
+<link href="../site_libs/quarto-html/quarto-syntax-highlighting-dark-b85bc7c33db8c58e0ec93c3465666fed.css" rel="stylesheet" class="quarto-color-scheme quarto-color-alternate" id="quarto-text-highlighting-styles">
+<link href="../site_libs/quarto-html/quarto-syntax-highlighting-64a204ab8560d761af7679ceaba22944.css" rel="stylesheet" class="quarto-color-scheme-extra" id="quarto-text-highlighting-styles">
 <script src="../site_libs/bootstrap/bootstrap.min.js"></script>
 <link href="../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="../site_libs/bootstrap/bootstrap-f7637cccd0bf7cb028cd3b878bc0c000.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme" id="quarto-bootstrap" data-mode="light">
-<link href="../site_libs/bootstrap/bootstrap-dark-736686ef5e5f2933876e53b36c4ff32a.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme quarto-color-alternate" id="quarto-bootstrap" data-mode="dark">
-<link href="../site_libs/bootstrap/bootstrap-f7637cccd0bf7cb028cd3b878bc0c000.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme-extra" id="quarto-bootstrap" data-mode="light">
+<link href="../site_libs/bootstrap/bootstrap-bd6cbec3f8f1e47e65ea724175f0138c.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme" id="quarto-bootstrap" data-mode="light">
+<link href="../site_libs/bootstrap/bootstrap-dark-8aaea1cc776fd55558d06debd1d5c78a.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme quarto-color-alternate" id="quarto-bootstrap" data-mode="dark">
+<link href="../site_libs/bootstrap/bootstrap-bd6cbec3f8f1e47e65ea724175f0138c.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme-extra" id="quarto-bootstrap" data-mode="light">
 <script id="quarto-search-options" type="application/json">{
   "location": "sidebar",
   "copy-button": false,
@@ -509,6 +514,7 @@ cookieconsent.run({
 <p><a href="https://docs.google.com/document/d/1bxen4GvXxmZZoXP24-Mn_2fjzKx7fJx0l_CkeGul-oI/edit" target="_blank">Steps for deploying a glider</a></p>
 <p><a href="https://docs.google.com/document/d/1uKzouLpEYnxL556pkscMwcALZTEX3Y5W0vupmwEt3lE/edit?tab=t.0">How Pilots recover a glider</a></p>
 <p><a href="https://docs.google.com/document/d/1GgaZyglCF5wDOZruK5Ewc5HsKpwMg3jxkPrCb9s_g4k/edit?usp=sharing" target="_blank">Tony’s SFMC Data Visualizations</a></p>
+<p><a href="https://docs.google.com/spreadsheets/d/1AduOmnBA_4mpE6GxNrbimoU5U0nZJl_eEmwv2VwZpTE/edit?usp=drive_link">Pilot Daily Check In spreadsheet</a></p>
 </section>
 <section id="sensor-sops" class="level3">
 <h3 class="anchored" data-anchor-id="sensor-sops">Sensor SOPs</h3>
@@ -702,7 +708,7 @@ cookieconsent.run({
 <p><a href="https://argos-system.clsamerica.com/argos-cwi2/login.html" target="_blank">Argos</a> - Check where the gliders are if they miss a call in.</p>
 <p><a href="https://datahost.webbresearch.com/" target="_blank">Datahost</a> - The TWR forum. It has the firmware builds for the gliders, Masterdata for the different firmware, TWR glider sheets, such as, Ballast, Functional Checkout, etc. Most forms are in Resources.</p>
 <p><a href="https://gliderfs2.coas.oregonstate.edu/gliderweb/masterdata/" target="_blank">Masterdata</a> - A list of masterdata for all the various operating systems of Slocum gliders.&nbsp;</p>
-<p><a href="masterdata/masterdata_8_6.txt">Masterdata 8.6</a>&nbsp; <a href="masterdata/masterdata_11_0.txt">Masterdata 11.0</a> <a href="masterdata/masterdata_11_01.txt">Masterdata 11.01</a> <a href="masterdata/masterdata_11_04.txt">Masterdata 11.04</a> <a href="masterdata/masterdata_11_05.txt">Masterdata 11.05</a></p>
+<p><a href="masterdata/masterdata_8_6.txt">Masterdata 8.6</a>&nbsp; <a href="masterdata/masterdata_11_0.txt">Masterdata 11.0</a> <a href="masterdata/masterdata_11_01.txt">Masterdata 11.01</a> <a href="masterdata/masterdata_11_04.txt">Masterdata 11.04</a> <a href="masterdata/masterdata_11_05.txt">Masterdata 11.05</a> <a href="masterdata/masterdata_11_06.txt">Masterdata 11.06</a> <a href="masterdata/masterdata_11_08.txt">Masterdata 11.08</a></p>
 <p><a href="https://tmv-taptone.my.site.com/slocum/s/" target="_blank">Teledyne Customer Portal</a> - Where to check the status of service on gliders and glider parts at TWR.</p>
 <p><a href="https://sfmc.webbresearch.com/sfmc/iridium-calls" target="_blank">Default SFMC Group Call In</a> - Check here to see if the glider is calling into the default group instead of our SFMC.</p>
 <p><a href="https://docs.google.com/spreadsheets/d/1xg13O3t28g-FXFVjZVICaNePxAGZ7DCoEwMBe_Dx-Dg/edit?usp=sharing" target="_blank">Freewave and Argos numbers</a> - Freewave and Argos numbers for each Slocum glider.</p>
@@ -734,6 +740,18 @@ cookieconsent.run({
 <section id="battery-capacities" class="level4">
 <h4 class="anchored" data-anchor-id="battery-capacities">Battery Capacities</h4>
 <p><img src="images/battery_capacities.png" class="img-fluid"></p>
+<section id="rechargeable-voltage-curve" class="level5">
+<h5 class="anchored" data-anchor-id="rechargeable-voltage-curve">Rechargeable Voltage Curve</h5>
+<div class="quarto-figure quarto-figure-left">
+<figure class="figure">
+<p><img src="images/battery_curve_rechargeable.png" class="img-fluid quarto-figure quarto-figure-left figure-img"></p>
+</figure>
+</div>
+</section>
+<section id="primary-voltage-curve" class="level5">
+<h5 class="anchored" data-anchor-id="primary-voltage-curve">Primary Voltage Curve</h5>
+<p><img src="images/battery_curve_primary.png" class="img-fluid"></p>
+</section>
 </section>
 <section id="file-transfer-syntax" class="level4">
 <h4 class="anchored" data-anchor-id="file-transfer-syntax">File Transfer Syntax</h4>
@@ -1189,6 +1207,18 @@ cookieconsent.run({
     }
   });
   </script>
+<nav class="page-navigation">
+  <div class="nav-page nav-page-previous">
+      <a href="../content/lab-management.html" class="pagination-link" aria-label="Lab Management">
+        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text">Lab Management</span>
+      </a>          
+  </div>
+  <div class="nav-page nav-page-next">
+      <a href="../content/deployments.html" class="pagination-link" aria-label="Deployments">
+        <span class="nav-page-text">Deployments</span> <i class="bi bi-arrow-right-short"></i>
+      </a>
+  </div>
+</nav>
 </div> <!-- /content -->
 <footer class="footer">
   <div class="nav-footer">
