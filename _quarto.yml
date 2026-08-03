@@ -26,7 +26,7 @@ website:
   
   sidebar:
     background: "#D9E3E4"
-    logo: "content/images/hanging-glider-circle.png"
+    logo: "content/images/GliderDep.png"
     # favicon: images/favicon.ico
     pinned: true
     align: center
