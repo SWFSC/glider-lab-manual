@@ -48,7 +48,7 @@ This page contains various procedures and resources for glider lab members, incl
 
 [How to calibrate the shadowgraph](https://docs.google.com/document/d/1M9s7rSlgdBHxFnBTdKWelLfpMghZU3p8K5TImlIJ8FI/edit){target="_blank"}
 
-How to talk to the camera (shadowgraph or glidercam)
+[How to talk to the camera (shadowgraph)](https://docs.google.com/document/d/1HnMKQnNRMuGX8NOcTMFo6NoAE_Jf7eGCLu0oLsBlGGg/edit?usp=sharing)
 
 How to set up the Nortek compact echosounder
 
