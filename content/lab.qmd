@@ -174,6 +174,8 @@ Shadowgraph Power Calculator (something Caleb mentioned was in the works)
 
 [ECOpuck coefficients](https://docs.google.com/document/d/1xlwI2gTfQxBQ-oT7_mLfF2JC7VG-7TMslyJ9Wc5Cryc/edit?usp=sharing){target="_blank"} - Coefficients for the ECOpuck needed to be put in autoexec.mi
 
+[SFMC map layers for monitoring lines](https://github.com/SWFSC/glider-lab/tree/main/GIS_layers)
+
 ### Environmental Data Viewers
 
 [Antarctic Sea Ice Imagery](https://www.polarview.aq/antarctic){target="_blank"}
