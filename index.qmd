@@ -55,7 +55,7 @@ GitHub repos developed or used by the ESD glider team. Issues for these repos ar
 | Repo Link | Description |
 |---------------------------------|---------------------------------------|
 | [glider-lab-manual](https://github.com/SWFSC/glider-lab-manual){target="_blank"} | ESD Glider lab website; docs used to generate this site |
-| [glider-lab](https://github.com/SWFSC/glider-lab){target="_blank"} | All things glider lab; issues/tasks, calibration docs, config files, deployment reports, etc. |
+| [glider-lab](https://github.com/SWFSC/glider-lab){target="_blank"} | All things glider lab; issues/tasks, calibration docs, config files, deployment prep folders, deployment reports, etc. |
 | [standard-glider-files](https://github.com/SWFSC/standard-glider-files){target="_blank"} | ESD glider cache files, as well as standard files that are put on all gliders before deployment |
 | [esdglider](https://github.com/SWFSC/esdglider){target="_blank"} | A Python toolbox for processing ESD glider data |
 | [echoview_glider_template](https://github.com/SWFSC/echoview_glider_template){target="_blank"} | Echoview glider templates that are used for active acoustic data analysis |
