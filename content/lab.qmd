@@ -194,6 +194,8 @@ Shadowgraph Power Calculator (something Caleb mentioned was in the works)
 
 [IOOS Underwater Gliders](https://ioos.noaa.gov/project/underwater-gliders/){target="_blank"}
 
+[Glider Dive Depth Planner](https://connect.fisheries.noaa.gov/glider-planner-calcofi/)
+
 ### Lab Resources
 
 [Phone tree and websites](https://docs.google.com/document/d/1gWkfouiqkkxVl20Bk_j-B3CzlxbmOaSHe2BChqrlh20/edit?usp=sharing){target="_blank"}
