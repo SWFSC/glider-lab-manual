@@ -14,11 +14,12 @@ This website is an in-development manual for all ESD glider activities. Please c
 
 | Name | Job Title | Glider Team Role |
 |-----------------|---------------------|-----------------------------------|
-| [Anthony Cossio](mailto:anthony.cossio@noaa.gov) | Operations Research Analyst | Lab Manager, Pilot, Tech |
+| [Greta O'Dea](mailto:greta.odea@noaa.gov) | Glider Specialist | Lab Manager, Pilot, Tech |
+| [Kourtney Burger](mailto:kourtney.burger@noaa.gov) | Glider Specialist | Pilot, Tech |
+| [Anthony Cossio](mailto:anthony.cossio@noaa.gov) | Operations Research Analyst | Pilot, Tech |
 | [Jen Walsh](mailto:jen.walsh@noaa.gov) | Fisheries Research Biologist | Pilot, Tech |
 | [Tegan Murray](mailto:tegan.murray@noaa.gov) | NOAA Corps ESD Operations Officer | Pilot, Tech |
 | [Sam Woodman](mailto:sam.woodman@noaa.gov) | Biologist | Data Manager |
-| [Kourtney Burger](mailto:kourtney.burger@noaa.gov) | Glider Specialist | Pilot, Tech |
 | [Cara Wilson](mailto:cara.wilson@noaa.gov) | Research Oceanographer | Pilot |
 | [Heidi Taylor](mailto:heidi.taylor@noaa.gov) | Program Lead, SOS; Deputy Director, ESD |  |
 
