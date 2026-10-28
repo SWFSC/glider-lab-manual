@@ -227,7 +227,7 @@ Create a simulation file in config directory
 
 `> capture config/simul.sim`
 
-`on_bench ^C`
+`on_bench`
 
 Verify that the file exists and contents are correct
 
@@ -240,6 +240,8 @@ Reset the glider
 And check to make sure the glider is now in simulation
 
 `> simul?`
+
+ctrl-c
 
 ***
 
