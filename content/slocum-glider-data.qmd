@@ -2,7 +2,7 @@
 title: Slocum Glider Data
 ---
 
-There are many steps and flavors to Slocum glider data processing (hereafter 'glider data processing'), from the base processing of binary files to NetCDF for Slocum gliders, to QA/QC, to developing additional data products. This page outlines the ESD glider lab's data processing workflow, in particular around base processing and data products. 
+There are many steps and flavors to Slocum glider data processing (hereafter 'glider data processing'), from the base processing of binary files to NetCDF for Slocum gliders, to QA/QC, to developing additional data products. This page outlines the ESD glider lab's data processing workflow, in particular base processing and data products. 
 
 Users interested in understanding and accessing data products created for each deployment should see the [Data Products](#data-products) section. For active acoustic or image processing workflows, see the [active acoustics](active-acoustics.qmd) and [imagery](imagery.qmd) pages, respectively.
 
@@ -10,7 +10,7 @@ Users interested in understanding and accessing data products created for each d
 
 Historically, the ESD glider team processed glider data using the Matlab toolbox [`SOCIB`](https://github.com/socib/glider_toolbox). However, this toolbox is not actively maintained, and the majority of ESD processing efforts have moved to Google Cloud (GCP), an environment where Matlab is difficult to run. Subsequent efforts involved developing [`amlr-gliders`](https://github.com/us-amlr/amlr-gliders), a Python toolbox and scripts that were primarily wrappers around [`gdm`](https://github.com/kerfoot/gdm). These efforts never caught full traction.
 
-Currently, the ESD glider lab uses the [`esdglider`](https://github.com/SWFSC/esdglider) Python toolbox and scripts to do its base glider data processing. `esdglider` primarily consists of ESD-specific wrappers around existing toolboxes such as [`PyGlider`](https://pyglider.readthedocs.io/en/latest/), [`GliderTools`](https://glidertools.readthedocs.io/en/latest/), and [`dbdreader`](https://dbdreader.readthedocs.io/en/latest/). All efforts are geared towards processing ESD glider data in ESD's Google Cloud project, using an [Open Science approach](https://openscapes.org/).
+Currently, the ESD glider lab uses the [`esdglider`](https://github.com/SWFSC/esdglider) Python toolbox and scripts to do its base glider data processing. `esdglider` primarily consists of ESD-specific wrappers around existing toolboxes such as [`PyGlider`](https://pyglider.readthedocs.io/en/latest/), [`GliderTools`](https://glidertools.readthedocs.io/en/latest/), and [`dbdreader`](https://dbdreader.readthedocs.io/en/latest/). All efforts are geared towards processing ESD glider data in ESD's Google Cloud project, using an [Open Science](https://openscapes.org/) approach.
 
 <!-- Todo: create and add flow chart, a la [here](https://github.com/SAEL-SWFSC/SAEL-lab-manual/blob/main/content/images/FOSSA.JPG) -->
 
@@ -36,7 +36,7 @@ These base processing details apply to both real-time and delayed-mode data.
 
 The current high-level workflow is shown below. For more in-the-weeds details, see the relevant sections below. See [data products](#data-products) for a description of the output files. 
 
-![ESD's base glider data processing](images/base-proc-workflow.jpg){fig-align="left"}
+![ESD's base glider data processing](images/base-proc-workflow.png){fig-align="left" .black-outline}
 
 1. Enter all glider build and deployment info in the database, and upload all deployment files as specified on the [data management page](data-management.qmd#deployments)
 2. Create a [deployment YAML file](#deployment-yaml-files)
@@ -44,51 +44,45 @@ The current high-level workflow is shown below. For more in-the-weeds details, s
 4. Access processed NetCDF files via GCP for additional internal workflows
 5. (in development) serve/archive data with IOOS/NCEI
 
-#### binary_to_nc
-
-The `binary_to_nc` function is the workhorse of the `esdglider` base processing for Slocum gliders. This function is described in-depth in the [Timeseries](#timeseries) and [Gridded](#gridded) sections. 
-
-![esdglider's `binary_to_nc` inputs, outputs, and top-level helper functions](images/binary_to_nc.JPG){fig-align="left"}
-
 #### deployment YAML files
 
 Like `pyglider`, `esdglider` relies on deployment YAML files (i.e., deployment configs) for all metadata related to a glider deployment. These files contain information such as [metadata required by IOOS](https://ioos.github.io/glider-dac/ngdac-netcdf-file-format-version-2.html), what devices were on the glider and when they were last calibrated, and the data (i.e., sensor names) to extract from the binary data. See the [`pyglider` docs](https://pyglider.readthedocs.io/en/latest/getting-started-slocum.html#make-a-deployment-configuration-file) for more details about the deployment YAML file.
 
-To help generate these files, `esdglider` includes the script [generate-deployment_yaml.py](https://github.com/SWFSC/esdglider/blob/main/scripts/generate-deployment_yaml.py), which can be run locally (i.e., wherever it can access the database) to create a first draft deployment YAML file. This script scrapes all instrument information from the Glider Database, and adds standard metadata. A user needs to then edit this file by hand, in particular the people, devices, comment, and summary blocks. The individual metadata blocks are documented [here](https://ioos.github.io/glider-dac/ngdac-netcdf-file-format-version-2.html#description-and-examples-of-required-global-attributes). Deployment YAMLs for all ESD glider deployments are stored in the [glider-lab repo](https://github.com/SWFSC/glider-lab/tree/main/deployment-configs).
+To help generate these files, `esdglider` includes the script [generate-deployment-yaml.py](https://github.com/SWFSC/esdglider/blob/main/scripts/generate-deployment-yaml.py), which can be run (wherever it can access the database) to create a first draft deployment YAML file. This script scrapes all instrument information from the Glider Database, and adds standard metadata. A user needs to then edit this file by hand, as necessary, and as described int he glider deployment checklist. Deployment YAMLs for all ESD glider deployments are stored in the [glider-processing repo](https://github.com/SWFSC/glider-processing/tree/main/deployment-configs).
 
 #### deployment processing scripts
 
-All base processing is performed by deployment-specific Python processing scripts, which can also be found in the [glider-lab repo](https://github.com/SWFSC/glider-lab/tree/main/deployment-scripts). These scripts create NetCDF files, acoustic and/or imagery data products (if necessary), and standard plots. A template script 'glider-YYYYmmdd-template.py' can be found in the same glider-lab repo folder. To start a new script, users should 1) make a copy of the template and rename it for the desired deployment, 2) update the "deployment_name" and "mode" variables at the top of the file, and 3) uncomment base processing sections that are relevant for that deployment.
+All base processing is performed by deployment-specific Python processing scripts, which can also be found in the [glider-processing repo](https://github.com/SWFSC/glider-processing/tree/main/deployment-scripts). These scripts create NetCDF files, acoustic and/or imagery data products (if necessary), and standard plots. A template script 'glider-YYYYmmdd-template.py' can be found in the same repo folder. To start a new script, users should 1) make a copy of the template, 2) rename it for the desired deployment, 3) update the "deployment_name" and "mode" variables at the top of the file, and 4) uncomment base processing sections that are relevant for that deployment.
 
-Deployment scripts are designed to be run in Google Cloud, so that they are able to access data stored in the GCS buckets. Currently, they are all run in the 'glider-proc' GCP Workbench Instance. 
+Deployment scripts are designed to be run in Google Cloud, so that they are able to access data stored in the GCS buckets. Currently, they are typically run in NMFS GCP Workstations
 
 ### Data Products
 
 The `esdglider` toolbox heavily leverages `dbdreader` and `pyglider` to create several base processing data products, which are described in this section. For descriptions of the various standard plots, see the [Plots](#plots) section. See the individual base processing sections for specific processing steps, choices, etc.
 
-All output file names begin with the deployment name ({glider-YYYYmmdd}), and include the data processing 'mode' (i.e., delayed or rt). The timeseries data products are all NetCDF files with a single coordinate "time". The gridded data products are all NetCDF files with two coordinates: "depth" and "profile" (i.e., profile_index). An exception is the 'profiles' CSV, which contains the start/end times, depths, and other info for each profile.
+All output file names begin with the deployment name ({glider-YYYYmmdd}), and typically include the data processing 'mode' (delayed or rt). The timeseries data products are all NetCDF files with a single dimension "time". The gridded data products are all NetCDF files with two dimensions: "depth" and "time" (with "time" being the midpoint of the gridded profile). There is also the 'profiles' CSV, which contains the start/end times, depths, and other info for each profile.
 
 Primary data products:
 
 - **science timeseries:** {glider-YYYYmmdd}-{mode}-sci.nc: The 'science' timeseries; an 'L1' data product. Most users will want this dataset, as it contains the values from all of the various science sensors. Functionally speaking, this timeseries has one 'row' of data for each timestamp from the glider’s *science* computer with valid science sensor data. See [eng/sci](#eng--sci) for more details, as well [processing notes](#processing-notes) for specific data post-processing steps.
 
-- **science gridded 5m:** {glider-YYYYmmdd}_grid-{mode}-5m.nc: The science timeseries gridded into *five* meter bins; an 'L3' data product. This NetCDF file will include all of the science sensor values that were in the science timeseries. Users should note that the depth bin label is the bin midpoint. For instance, the bin for data from zero to five meters has the label "2.5".
+- **science gridded 5m:** {glider-YYYYmmdd}_grid-{mode}-5m.nc: The science timeseries gridded into *five* meter bins; an 'L3' data product. This NetCDF file will include all of the variables that were in the science timeseries. Users should note that the depth bin label is the bin midpoint. For instance, the bin for data from zero to five meters has the label "2.5".
 
 Secondary data products:
 
-- **raw timeseries:** {glider-YYYYmmdd}-{mode}-raw.nc: The 'raw' timeseries; an 'L0' data product. This timeweries is the raw data, simply read from the binary data files and saved as a NetCDF (no interpolation). It contains all timestamp from the glider's flight *or* science computer with at least one valid sensor value. No interpolation is done for any sensor values. These two features make this dataset useful for a) calculating profiles and b) troubleshooting any sensor values or processing steps. 
-
-- **profile summary:** {glider-YYYYmmdd}-{mode}-profiles.csv: The glider profiles; an 'L0' data product. This CSV file contains one row for each profile, containing information such as: profile index, profile start and end time, profile start and end depth, profile phase, and length of profile in seconds.
+- **raw timeseries:** {glider-YYYYmmdd}-{mode}-raw.nc: The 'raw' timeseries; an 'L0' data product. This timeseries is the raw data, simply read from the binary data files and saved as a NetCDF file with no interpolation. It contains all timestamps from the glider's flight *or* science computer that have at least one valid sensor value recorded. No interpolation is done for any sensor values. This dataset is particularly useful for a) calculating profiles and b) troubleshooting any sensor values or processing steps. 
 
 - **engineering timeseries:** {glider-YYYYmmdd}-{mode}-eng.nc: The 'engineering' timeseries; an 'L1' data product. Functionally speaking, this timeseries has one 'row' of data for each timestamp from the glider’s *flight* computer with valid engineering sensor data. See [eng/sci](#eng--sci) for more details, as well [processing notes](#processing-notes) for specific data post-processing steps. 
 
-- **science gridded 1m:** {glider-YYYYmmdd}_grid-{mode}-1m.nc: The science timeseries gridded into *one* meter bins; an 'L0' data product. This NetCDF file will include all of the science sensor values that were in the science timeseries. Like for the 5m gridded dataset, users should note that the depth bin label is the bin midpoint. 
+- **science gridded 1m:** {glider-YYYYmmdd}_grid-{mode}-1m.nc: The science timeseries gridded into *one* meter bins; an 'L3' data product. This NetCDF file will include all of the science sensor values that were in the science timeseries. Like for the 5m gridded dataset, users should note that the depth bin label is the bin midpoint. 
 
 Ancillary data products:
 
 - **active acoustic ancillary files:** Ancillary data files needed for processing acoustic data with Echoview. See the [active acoustics](active-acoustics.qmd) page for more details. These files are only created if the glider is carrying an active acoustic instrument, such as a Nortek or AZFP. 
 
-- **imagery ancillary file:** {glider-YYYYmmdd}-imagery-ancillary.csv: An ancillary CSV data file with one row for each image, and one column for each sensor value. The sensor values from the science timeseries are interpolated to each image timestamp. This file is only created if the glider is carrying a camera, such as a shadowgraph or glidercam, and lives in the raw glider imagery bucket (e.g. [here](https://console.cloud.google.com/storage/browser/amlr-gliders-imagery-raw-dev/SANDIEGO/2022/amlr08-20220513/metadata))
+- **imagery ancillary file:** {glider-YYYYmmdd}-imagery-ancillary.csv: An ancillary CSV data file with one row for each image, and one column for each sensor value. The sensor values from the science timeseries are interpolated to each image timestamp. This file is only created if the glider is carrying a glidercam or shadowgraph camera. 
+
+- **profile summary:** {glider-YYYYmmdd}-{mode}-profiles.csv: The glider profiles. This CSV file contains one row for each profile, containing information such as: profile index, profile start and end time, profile start and end depth, profile phase, and length of profile in seconds.
 
 ### Timeseries
 
@@ -102,17 +96,21 @@ As constructed, `binary_to_timeseries` uses [`dbdreader.get_sync`](https://dbdre
 
 There is no way to use `binary_to_timeseries` to generate the raw timeseries, meaning a timeseries with uninterpolated data. For this, we use the `esdglider` function `binary_to_raw_timeseries`. This function follows the same general logic as `pyglider`'s `binary_to_timeseries`, except that it uses the `dbdreader` function [`get`](https://dbdreader.readthedocs.io/en/latest/multiple_files.html#dbdreader.MultiDBD.get), with `return_nans=True`, to extract all valid timestamps across the specified variables. In practice, this means that all valid timestamps are extracted for both the engineering variables (from the flight computer's "m_present_time") and the science variables (from the science computer's "sci_m_present_time"). These timestamp arrays are merged, and the merged array becomes the time index of the raw timeseries NetCDF file. 
 
-This dataset contains both the measured depth ("depth_measured") and the depth calculated from the CTD pressure sensor ("depth_ctd"). No values are interpolated. Invalid timestamps are still dropped, as well as timestamps that either a) invalid (i.e., they have no non-nan sensor values), and b) came before the "deployment_min_dt" metadata attribute in the `deployment.yaml` file. Values that are calculated and included in the raw dataset include "depth_ctd" and "distance_over_ground": the great-circle distance between each measured lat/lon. 
+This dataset contains both the measured depth ("m_depth") and the depth calculated from the CTD pressure sensor ("depth_ctd"). No values are interpolated. Invalid timestamps are still dropped, as well as timestamps that either a) invalid (i.e., they have no non-nan sensor values), and b) came before the "start_date" metadata attribute in the deployment config file. Values that are calculated and included in the raw dataset include "depth_ctd" and "distance_over_ground": the great-circle distance between each measured lat/lon. 
 
 The raw timeseries contains all glider data points, except for those dropped as specified above, and is thus particularly useful for debugging code or sensor behavior. It is also used to calculate profiles. Profiles can be tricksy to calculate, as sometimes the glider stalls in the water or otherwise has a moment that causes it to deviate from its current dive or climb. To robustly find profiles in the timeseries, `esdglider` uses the raw glider measured depth (from the glider's pressure transducer) and the `findProfiles` function from the [PGPT toolbox](https://github.com/OceanGNS/PGPT/blob/main/scripts/gliderfuncs.py#L196). `findProfiles` is a Pythonic reproduction of a [function of the same name](https://github.com/socib/glider_toolbox/blob/master/m/processing_tools/findProfiles.m) from the `SOCIB` toolbox. Summary information about the profiles can be found in the profile summary CSV. 
 
 #### Eng + Sci
 
-After generating the raw timeseries, the typical ESD workflow is to use `pyglider`'s `binary_to_timeseries` to create an 'engineering' timeseries with the glider measured depth (sensor name "m_depth") as the time base, and a 'science' timeseries with the pressure from the CTD (sensor name "sci_water_pressure") as the time base. The engineering timeseries is always created this way. However, for the science timeseries, this system is predicated on the CTD being turned on and sampling at all times during a deployment. If the CTD is turned off, then there will be no pressure values, and `get_sync` will not return some timestamps that have non-nan values for another instrument. For these deployments, `esdglider` includes the function `raw_to_sci_timeseries`. This function reads in the [raw timeseries](#raw), and performs the maxgap interpolation for timestamps that have a non-nan value for any of the science sensors. `raw_to_sci_timeseries` can be used in cases where different science sensors are on at different times, such as PAM deployments, and thus it is not possible to get the full science timeseries using `get_sync`.
+After generating the raw timeseries, the typical ESD workflow is to use `pyglider`'s `binary_to_timeseries` to create an 'engineering' timeseries with the glider measured depth (sensor name "m_depth") as the time base, and a 'science' timeseries with the pressure from the CTD (sensor name "sci_water_pressure") as the time base. The engineering timeseries is always created this way. However, for the science timeseries, this system relies on the CTD being turned on and sampling at all times during a deployment. If the CTD is turned off, then there will be no pressure values, and `get_sync` will not return some timestamps that have non-nan values for another instrument. For these deployments, `esdglider` includes the function `raw_to_sci_timeseries`. This function reads in the [raw timeseries](#raw), and performs the maxgap interpolation for timestamps that have a non-nan value for any of the science sensors. `raw_to_sci_timeseries` can be used in cases where different science sensors are on at different times, such as PAM deployments, and thus it is not possible to get the full science timeseries using `get_sync`.
 
-Usually, the engineering and science timeseries each contain a single "depth" data variable. For the engineering timeseries, the "depth" value in this timeseries is from m_depth, meaning the measured depth from the glider, while the "depth" value for the science timeseries is the depth calculated from the CTD pressure sensor. The variable source is documented in the "depth" variable attributes. For science timeseries that are created via `raw_to_sci_timeseries`, the glider measured depth is included as the variable "depth_measured", for timestamps where the CTD was off and thus there is no CTD-derived depth.
+The engineering and science timeseries each contain a single "depth" data variable. For the engineering timeseries, the "depth" value in this timeseries is from m_depth, meaning the measured depth from the glider, while the "depth" value for the science timeseries is typically the depth calculated from the CTD pressure sensor. However, for science timeseries that are created via `raw_to_sci_timeseries`, the "depth" values is the glider measured depth, since for some timestamps the CTD was off and thus there would be no CTD-derived depth.The variable source is documented in the "depth" variable attributes. 
 
 Additionally, rather than performing new profile calculations, the profiles calculated from the raw dataset are applied to both the engineering and science timeseries. This is particularly important for the science timeseries, which only contains valid timestamps from the science computer. These timestamps do not necessarily represent the entire deployment. Using the profiles calculated from the raw dataset both uses the best available information for the profile calculations, and keeps the profiles consistent across all of the `esdglider` timeseries.
+
+#### Quality control
+
+`esdglider` uses the [`ioos_qc`](https://github.com/ioos/ioos_qc) package to implement quality control (QC) tests on the timeseries data. This includes standard tests such as range checks, spike detection, and rate of change checks, among others. The QC flags generated by `ioos_qc` are stored alongside the data in the NetCDF files, allowing users to easily identify and filter out potentially problematic data points. These flags are also propagated to the gridded and profile NetCDF outputs. 
 
 #### Processing Notes
 
@@ -122,9 +120,9 @@ CDOM data: [Sea-Bird Scientific](https://www.seabird.com/) sent an announcement 
 
 `esdglider`:
 
-- deployment_min_date: `esdglider` requires users to pass a minimum datetime, which is used to filter all timeseries for data only after this datetime. This value is passed via a "deployment_min_date" key in the deployment YAML file. ESD typically uses the datetime of when the glider begins its first 1k_n.mi mission as the minimum datetime.
+- start_date: `esdglider` requires users to provide a minimum datetime, which is used to filter all timeseries for data only after this datetime. This value is passed via a "start_date" key in the deployment YAML file. ESD typically uses the datetime of when the glider begins its first 1k_n.mi mission as the minimum datetime.
 - `esdglider` post-processing steps drop any bogus values from the engineering and science timeseries, meaning it changes these values to nan. Bogus values are defined as:
-    - times before deployment_min_dt, or after the current datetime
+    - times before start_date, or after the current datetime
     - duplicate timestamps, identified by `ds.get_index("time").duplicated()`
     - longitude/latitude values with an absolute value greater than 180/90, respectively. 
     - sensor values outside of sensor-specific valid ranges. Valid ranges are defined in the `drop_values` variable in the [`esdglider.utils`](https://github.com/SWFSC/esdglider/blob/main/esdglider/utils.py) module. 
@@ -148,7 +146,7 @@ Additionally, sometimes a data issue is too deployment-specific to handle in the
 
 This section describes in-the-weeds details of and choices made by the code when using the science timeseries to generate gridded datasets. See [data products](#data-products) for a description of the gridded output files. 
 
-Gridding uses the [`pyglider.ncprocess.make_gridfiles`](https://pyglider.readthedocs.io/en/latest/pyglider/pyglider.ncprocess.html#pyglider.ncprocess.make_gridfiles) function. `make_gridfiles` makes a vertically gridded NetCDF from the science timeseries netCDF file, primarily using the [`binned_statistic`](https://docs.scipy.org/doc/scipy/reference/generated/scipy.stats.binned_statistic.html) function to grid data variables. This NetCDF has dimensions of "depth" and "profile" (i.e., "profile_index"). Some variables (e.g., time, lat, and lon) have one dimension ("profile"), while all of the sensor values have both dimensions ("profile" and "depth").
+Gridding uses the [`pyglider.ncprocess.make_gridfiles`](https://pyglider.readthedocs.io/en/latest/pyglider/pyglider.ncprocess.html#pyglider.ncprocess.make_gridfiles) function. `make_gridfiles` makes a vertically gridded NetCDF from the science timeseries netCDF file, primarily using the [`binned_statistic`](https://docs.scipy.org/doc/scipy/reference/generated/scipy.stats.binned_statistic.html) function to grid data variables. This NetCDF has dimensions of "depth" and "time" (the midpoint of the given profile). Some variables (e.g., time, lat, and lon) have one dimension ("profile"), while all of the sensor values have both dimensions. "latitude", "longitude", and "profile" (i.e., "profile_index") are all included as coordinates. 
 
 This NetCDF file will include all of the science sensor values that were in the science timeseries, unless any have a flag `grid_exclude: 'true'` in the deployment yaml file. Users should note that the depth bin name is the bin midpoint. For instance, for a five-meter gridded dataset, the bin for data from zero to five meters has the name/label "2.5".
 
@@ -156,6 +154,7 @@ This NetCDF file will include all of the science sensor values that were in the 
 
 Standard plots are generated from various base data products. Note that 'sci' is short for plots of science sensor values, while 'eng' is short for plots of engineering variables. All plots are are grouped by the following folders:
 
+- **QC-sci**: Quality control (QC) plots of the various science sensor values
 - **TS-sci**: Temperature/salinity plots of the various science sensor values
 - **maps-sci**: Maps of surface values (i.e., depth <10m) from various science sensors
 - **pointMaps**: Scatter plots of the lat/lon points recorded by the glider
@@ -169,9 +168,7 @@ Standard plots are generated from various base data products. Note that 'sci' is
 
 ### NGDAC Profiles
 
-Docs in progress. 
-
-This section will describe the process of going from the science timeseries to the NetCDF file format specification ([IOOS_Glider_NetCDF_v2.0.nc](https://ioos.github.io/glider-dac/ngdac-netcdf-file-format-version-2.html)) used by the U.S. IOOS National Glider Data Assembly Center. 
+`esdglider` contains a function `create_ngdac_profiles` that generates DAC-compliant profile NetCDF files from the science timeseries data. These profile files adhere to the IOOS Glider DAC NetCDF format specification ([IOOS_Glider_NetCDF_v2.0.nc](https://ioos.github.io/glider-dac/ngdac-netcdf-file-format-version-2.html)) and are suitable for submission to the U.S. IOOS National Glider Data Assembly Center. `create_ngdac_profiles` is a light wrapper around pyglider's `extract_timeseries_profiles` function, with some ESD-specific metadata adjustments. 
 
 ### Other Files
 
@@ -181,20 +178,9 @@ ESD's base processing also creates several other files necessary for processing 
 
 ## Real-Time Data
 
-Currently, all ESD glider data processing is delayed-mode processing. The vision is to have GCP infrastructure in place to:
-
-- Periodically rsync real-time data (sbd/tbd files) from the SFMC to GCP
-- Run slocumRtDataVisTool to create plots and statistics useful for real-time piloting decisions 
-- Run the base processing steps on these data, and automatically send the processed files to the NGDAC
+With slocum gliders, real-time and delayed mode processing follows all the same patterns and requriements. The only difference is if the input binary files are full resolution (delayed) or delimited (real-time). Thus, all the base processing above also applies to real-time data processing, except for active acoustic and imagery ancillary data file creation. We in ESD have a standard process in place for processing real-time data, and are working to operationalize it using GCP-native tools.
 
 ## Future Directions
-
-QC + data cleaning, to create cleaned netcdf files with qc flags. Potential resources and pathways:
-
-- Implement [IOOS QARTOD](https://ioos.noaa.gov/project/qartod/) tests, eg using [ioos_qc](https://github.com/ioos/ioos_qc) to add qc flags
-- https://github.com/OceanGlidersCommunity/Realtime-QC
-    - https://github.com/castelao/CoTeDe
-- other qc/data cleaning? For instance, sanity check ts plots. Likely will involve by-hand inspection for each deployment, including removing bad data if discovered
 
 [GliderTools](https://github.com/GliderToolsCommunity/GliderTools):
 
