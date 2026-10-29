@@ -1,0 +1,8 @@
+---
+title: "Glider and Mooring Database"
+format: html
+---
+
+The Glider & Mooring database is a SQL Server database with an Access front end, accessible over the NMFS network (including VPN). It is used to track several facets of gliders, including glider builds, deployments, and the number of deployment days and inflections for various sensors. The [esdglider](https://github.com/SWFSC/esdglider) toolbox contains some functions and scripts for reading and summarizing data from the database, such as for standard data outputs and to pre-populate glider config yaml files. 
+
+Users can find a copy of the Glider and Mooring Database front end in the Glider Drive [Database](https://drive.google.com/drive/folders/1Rr94IGkxU8z-eaGiOZmiMomFjRTy_67A?usp=drive_link) folder. For more information, see [Data Management](data-management.qmd), or [this document](https://docs.google.com/document/d/1mKMjSfp_QYXo66buBBd0NiJ7NqUk52FV95NxSW766Vc/edit?usp=sharing) (NOAA internal). 
