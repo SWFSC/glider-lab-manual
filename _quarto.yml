@@ -45,7 +45,7 @@ website:
       - content/lab-management.qmd
       - content/lab.qmd
       - content/deployments.qmd
-      - content/glider-mooring-database.qmd
+      - content/database.qmd
       - content/data-management.qmd
       - section: "Data Processing"
         contents:
