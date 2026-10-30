@@ -176,6 +176,8 @@ Shadowgraph Power Calculator (something Caleb mentioned was in the works)
 
 [SFMC map layers for monitoring lines](https://github.com/SWFSC/glider-lab/tree/main/GIS_layers)
 
+[Polarview for Antarctic Sea Ice Imagery](https://www.polarview.aq/antarctic)
+
 ### Environmental Data Viewers
 
 [Antarctic Sea Ice Imagery](https://www.polarview.aq/antarctic){target="_blank"}
