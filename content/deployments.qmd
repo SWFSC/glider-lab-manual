@@ -46,6 +46,13 @@ drive_reports_urls <- tribble(
 )  
 
 deployments_list <- read_yaml(here("content", "esd-gliders.yml"))
+
+deployments_list <- lapply(deployments_list, function(x) {
+    if (!is.null(x$End)) x$End <- as.character(x$End)
+    if (!is.null(x$Start)) x$Start <- as.character(x$Start)
+    x
+})
+
 deployments_df <- bind_rows(deployments_list) %>% 
     select(-c(report_link)) %>% 
     rename(ERDDAP = ERDDAP_link) %>% 
