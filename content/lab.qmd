@@ -32,7 +32,7 @@ This page contains various procedures and resources for glider lab members, incl
 
 [How Jen deploys a glider](https://docs.google.com/document/d/1nHKAF2F_UOV8gzQ825N7KCo8QvZ-3XBhDxQDVqCU6Po/edit?usp=sharing){target="_blank"}
 
-[Steps for deploying a glider](https://docs.google.com/document/d/1bxen4GvXxmZZoXP24-Mn_2fjzKx7fJx0l_CkeGul-oI/edit){target="_blank"}
+[Steps for deploying a glider]https://docs.google.com/document/d/1uKzouLpEYnxL556pkscMwcALZTEX3Y5W0vupmwEt3lE/edit?usp=sharing){target="_blank"}
 
 [How Pilots recover a glider](https://docs.google.com/document/d/1uKzouLpEYnxL556pkscMwcALZTEX3Y5W0vupmwEt3lE/edit?tab=t.0)
 
