@@ -21,6 +21,7 @@ This website is an in-development manual for all ESD glider activities. Please c
 | [Tegan Murray](mailto:tegan.murray@noaa.gov) | NOAA Corps ESD Operations Officer | Pilot, Tech |
 | [Jacob Partida](mailto:jacob.partida@noaa.gov) | Glider Specialist | Pilot, Tech |
 | [Cara Wilson](mailto:cara.wilson@noaa.gov) | Research Oceanographer | Pilot |
+| [Jack Bassham](mailto:jack.bassham@noaa.gov) | Glider Specialist | Tech |
 | [Sam Woodman](mailto:sam.woodman@noaa.gov) | Biologist | Data Manager |
 | [Heidi Taylor](mailto:heidi.taylor@noaa.gov) | Program Lead, SOS; Deputy Director, ESD |  |
 
