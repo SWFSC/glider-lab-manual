@@ -140,7 +140,7 @@ The 'ERDDAP' column contains the link to the glider dataset when it is published
 The 'Internal Data' column contains links to bucket directories in the ESD Google Cloud Platform (GCP) project. Current links include: 
 
 - **products**: All glider-related [data products](slocum-glider-data.qmd#data-products) from the ['base' glider processing](slocum-glider-data.qmd#base-processing) workflow, including[standard plots](slocum-glider-data.qmd#plots). 
-- **active-acoustics**: The 'active acoustics' data in folder. See a description of the structure and contents of this folder [here](data-management.qmd#active-acoustics). 
+- **aa**: The 'active acoustics' data in folder. See a description of the structure and contents of this folder [here](data-management.qmd#active-acoustics). 
 - **images**: The 'raw imagery' deployment folder. See a description of the structure and contents of this folder [here](data-management.qmd#raw-imagery)
 
 See [this doc](https://docs.google.com/document/d/1wWxq79JPuD5A92XTeH-FVJYA87qW2UlfEtKU1yxrSb8/edit?usp=sharing) (NOAA internal) for information about downloading full directories from a Google Cloud bucket. You can also browse in the directory, find and select the data product file you want, and click the 'Authenticated URL' to download. 

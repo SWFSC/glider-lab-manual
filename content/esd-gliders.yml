@@ -68,7 +68,7 @@
   report_link: ''
   ERDDAP_link: ''
   gcp_link_out_data: <a href='https://console.cloud.google.com/storage/browser/swfscesd-glider-deployments-data-out/2018/amlr02-20181211'>products</a>
-  gcp_link_in_aa: <a href='https://console.cloud.google.com/storage/browser/swfscesd-glider-active-acoustics-data-in/2018/amlr02-20181211/data/delayed'>active-acoustics</a>
+  gcp_link_in_aa: <a href='https://console.cloud.google.com/storage/browser/swfscesd-glider-active-acoustics-data-in/2018/amlr02-20181211'>aa</a>
   gcp_link_in_imagery: ''
 - Glider: AMLR01
   Start: '2018-12-16'
@@ -80,7 +80,7 @@
   report_link: ''
   ERDDAP_link: ''
   gcp_link_out_data: <a href='https://console.cloud.google.com/storage/browser/swfscesd-glider-deployments-data-out/2018/amlr01-20181216'>products</a>
-  gcp_link_in_aa: <a href='https://console.cloud.google.com/storage/browser/swfscesd-glider-active-acoustics-data-in/2018/amlr01-20181216/data/delayed'>active-acoustics</a>
+  gcp_link_in_aa: <a href='https://console.cloud.google.com/storage/browser/swfscesd-glider-active-acoustics-data-in/2018/amlr01-20181216'>aa</a>
   gcp_link_in_imagery: ''
 - Glider: AMLR04
   Start: '2019-07-23'
@@ -116,7 +116,7 @@
   report_link: ''
   ERDDAP_link: ''
   gcp_link_out_data: <a href='https://console.cloud.google.com/storage/browser/swfscesd-glider-deployments-data-out/2019/amlr02-20191206'>products</a>
-  gcp_link_in_aa: <a href='https://console.cloud.google.com/storage/browser/swfscesd-glider-active-acoustics-data-in/2019/amlr02-20191206/data/delayed'>active-acoustics</a>
+  gcp_link_in_aa: <a href='https://console.cloud.google.com/storage/browser/swfscesd-glider-active-acoustics-data-in/2019/amlr02-20191206'>aa</a>
   gcp_link_in_imagery: ''
 - Glider: AMLR03
   Start: '2019-12-06'
@@ -128,7 +128,7 @@
   report_link: ''
   ERDDAP_link: ''
   gcp_link_out_data: <a href='https://console.cloud.google.com/storage/browser/swfscesd-glider-deployments-data-out/2019/amlr03-20191206'>products</a>
-  gcp_link_in_aa: <a href='https://console.cloud.google.com/storage/browser/swfscesd-glider-active-acoustics-data-in/2019/amlr03-20191206/data/delayed'>active-acoustics</a>
+  gcp_link_in_aa: <a href='https://console.cloud.google.com/storage/browser/swfscesd-glider-active-acoustics-data-in/2019/amlr03-20191206'>aa</a>
   gcp_link_in_imagery: ''
 - Glider: AMLR01
   Start: '2019-12-16'
@@ -140,7 +140,7 @@
   report_link: ''
   ERDDAP_link: ''
   gcp_link_out_data: ''
-  gcp_link_in_aa: <a href='https://console.cloud.google.com/storage/browser/swfscesd-glider-active-acoustics-data-in/2019/amlr01-20191216/data/delayed'>active-acoustics</a>
+  gcp_link_in_aa: <a href='https://console.cloud.google.com/storage/browser/swfscesd-glider-active-acoustics-data-in/2019/amlr01-20191216'>aa</a>
   gcp_link_in_imagery: ''
 - Glider: AMLR05
   Start: '2021-07-20'
@@ -164,7 +164,7 @@
   report_link: ''
   ERDDAP_link: ''
   gcp_link_out_data: ''
-  gcp_link_in_aa: <a href='https://console.cloud.google.com/storage/browser/swfscesd-glider-active-acoustics-data-in/2021/amlr01-20211121/data/delayed'>active-acoustics</a>
+  gcp_link_in_aa: <a href='https://console.cloud.google.com/storage/browser/swfscesd-glider-active-acoustics-data-in/2021/amlr01-20211121'>aa</a>
   gcp_link_in_imagery: ''
 - Glider: AMLR05
   Start: '2021-11-24'
@@ -176,7 +176,7 @@
   report_link: ''
   ERDDAP_link: ''
   gcp_link_out_data: ''
-  gcp_link_in_aa: <a href='https://console.cloud.google.com/storage/browser/swfscesd-glider-active-acoustics-data-in/2021/amlr05-20211124/data/delayed'>active-acoustics</a>
+  gcp_link_in_aa: <a href='https://console.cloud.google.com/storage/browser/swfscesd-glider-active-acoustics-data-in/2021/amlr05-20211124'>aa</a>
   gcp_link_in_imagery: ''
 - Glider: AMLR03
   Start: '2022-03-07'
@@ -200,7 +200,7 @@
   report_link: ''
   ERDDAP_link: ''
   gcp_link_out_data: ''
-  gcp_link_in_aa: ''
+  gcp_link_in_aa: <a href='https://console.cloud.google.com/storage/browser/swfscesd-glider-active-acoustics-data-in/2022/amlr03-20220425'>aa</a>
   gcp_link_in_imagery: ''
 - Glider: AMLR06
   Start: '2022-04-25'
@@ -224,8 +224,8 @@
   report_link: ''
   ERDDAP_link: ''
   gcp_link_out_data: ''
-  gcp_link_in_aa: ''
-  gcp_link_in_imagery: <a href='https://console.cloud.google.com/storage/browser/swfscesd-glider-imagery-data-in/2022/amlr08-20220504/images'>images</a>
+  gcp_link_in_aa: <a href='https://console.cloud.google.com/storage/browser/swfscesd-glider-active-acoustics-data-in/2022/amlr08-20220504'>aa</a>
+  gcp_link_in_imagery: <a href='https://console.cloud.google.com/storage/browser/swfscesd-glider-imagery-data-in/2022/amlr08-20220504'>images</a>
 - Glider: AMLR03
   Start: '2022-05-13'
   End: '2022-05-16'
@@ -236,7 +236,7 @@
   report_link: ''
   ERDDAP_link: ''
   gcp_link_out_data: ''
-  gcp_link_in_aa: ''
+  gcp_link_in_aa: <a href='https://console.cloud.google.com/storage/browser/swfscesd-glider-active-acoustics-data-in/2022/amlr03-20220513'>aa</a>
   gcp_link_in_imagery: ''
 - Glider: AMLR08
   Start: '2022-05-13'
@@ -248,8 +248,8 @@
   report_link: ''
   ERDDAP_link: ''
   gcp_link_out_data: <a href='https://console.cloud.google.com/storage/browser/swfscesd-glider-deployments-data-out/2022/amlr08-20220513'>products</a>
-  gcp_link_in_aa: ''
-  gcp_link_in_imagery: <a href='https://console.cloud.google.com/storage/browser/swfscesd-glider-imagery-data-in/2022/amlr08-20220513/images'>images</a>
+  gcp_link_in_aa: <a href='https://console.cloud.google.com/storage/browser/swfscesd-glider-active-acoustics-data-in/2022/amlr08-20220513'>aa</a>
+  gcp_link_in_imagery: <a href='https://console.cloud.google.com/storage/browser/swfscesd-glider-imagery-data-in/2022/amlr08-20220513'>images</a>
 - Glider: AMLR07
   Start: '2022-10-25'
   End: '2022-10-27'
@@ -260,7 +260,7 @@
   report_link: ''
   ERDDAP_link: ''
   gcp_link_out_data: ''
-  gcp_link_in_aa: <a href='https://console.cloud.google.com/storage/browser/swfscesd-glider-active-acoustics-data-in/2022/amlr07-20221025/data/delayed'>active-acoustics</a>
+  gcp_link_in_aa: <a href='https://console.cloud.google.com/storage/browser/swfscesd-glider-active-acoustics-data-in/2022/amlr07-20221025'>aa</a>
   gcp_link_in_imagery: ''
 - Glider: AMLR07
   Start: '2022-12-04'
@@ -272,8 +272,8 @@
   report_link: ''
   ERDDAP_link: ''
   gcp_link_out_data: <a href='https://console.cloud.google.com/storage/browser/swfscesd-glider-deployments-data-out/2022/amlr07-20221204'>products</a>
-  gcp_link_in_aa: ''
-  gcp_link_in_imagery: <a href='https://console.cloud.google.com/storage/browser/swfscesd-glider-imagery-data-in/2022/amlr07-20221204/images'>images</a>
+  gcp_link_in_aa: <a href='https://console.cloud.google.com/storage/browser/swfscesd-glider-active-acoustics-data-in/2022/amlr07-20221204'>aa</a>
+  gcp_link_in_imagery: <a href='https://console.cloud.google.com/storage/browser/swfscesd-glider-imagery-data-in/2022/amlr07-20221204'>images</a>
 - Glider: AMLR04
   Start: '2022-12-05'
   End: '2023-02-13'
@@ -284,7 +284,7 @@
   report_link: ''
   ERDDAP_link: ''
   gcp_link_out_data: ''
-  gcp_link_in_aa: <a href='https://console.cloud.google.com/storage/browser/swfscesd-glider-active-acoustics-data-in/2022/amlr04-20221205/data/delayed'>active-acoustics</a>
+  gcp_link_in_aa: <a href='https://console.cloud.google.com/storage/browser/swfscesd-glider-active-acoustics-data-in/2022/amlr04-20221205'>aa</a>
   gcp_link_in_imagery: ''
 - Glider: AMLR06
   Start: '2022-12-05'
@@ -296,7 +296,7 @@
   report_link: ''
   ERDDAP_link: ''
   gcp_link_out_data: ''
-  gcp_link_in_aa: <a href='https://console.cloud.google.com/storage/browser/swfscesd-glider-active-acoustics-data-in/2022/amlr06-20221205/data/delayed'>active-acoustics</a>
+  gcp_link_in_aa: <a href='https://console.cloud.google.com/storage/browser/swfscesd-glider-active-acoustics-data-in/2022/amlr06-20221205'>aa</a>
   gcp_link_in_imagery: ''
 - Glider: AMLR03
   Start: '2023-06-20'
@@ -308,8 +308,8 @@
   report_link: ''
   ERDDAP_link: ''
   gcp_link_out_data: ''
-  gcp_link_in_aa: <a href='https://console.cloud.google.com/storage/browser/swfscesd-glider-active-acoustics-data-in/2023/amlr03-20230620/data/delayed'>active-acoustics</a>
-  gcp_link_in_imagery: <a href='https://console.cloud.google.com/storage/browser/swfscesd-glider-imagery-data-in/2023/amlr03-20230620/images'>images</a>
+  gcp_link_in_aa: <a href='https://console.cloud.google.com/storage/browser/swfscesd-glider-active-acoustics-data-in/2023/amlr03-20230620'>aa</a>
+  gcp_link_in_imagery: <a href='https://console.cloud.google.com/storage/browser/swfscesd-glider-imagery-data-in/2023/amlr03-20230620'>images</a>
 - Glider: AMLR04
   Start: '2023-06-20'
   End: '2023-06-23'
@@ -320,8 +320,8 @@
   report_link: ''
   ERDDAP_link: ''
   gcp_link_out_data: ''
-  gcp_link_in_aa: <a href='https://console.cloud.google.com/storage/browser/swfscesd-glider-active-acoustics-data-in/2023/amlr04-20230620/data/delayed'>active-acoustics</a>
-  gcp_link_in_imagery: <a href='https://console.cloud.google.com/storage/browser/swfscesd-glider-imagery-data-in/2023/amlr04-20230620/images'>images</a>
+  gcp_link_in_aa: <a href='https://console.cloud.google.com/storage/browser/swfscesd-glider-active-acoustics-data-in/2023/amlr04-20230620'>aa</a>
+  gcp_link_in_imagery: <a href='https://console.cloud.google.com/storage/browser/swfscesd-glider-imagery-data-in/2023/amlr04-20230620'>images</a>
 - Glider: AMLR03
   Start: '2023-11-28'
   End: '2024-01-27'
@@ -332,8 +332,8 @@
   report_link: ''
   ERDDAP_link: ''
   gcp_link_out_data: ''
-  gcp_link_in_aa: <a href='https://console.cloud.google.com/storage/browser/swfscesd-glider-active-acoustics-data-in/2023/amlr03-20231128/data/delayed'>active-acoustics</a>
-  gcp_link_in_imagery: <a href='https://console.cloud.google.com/storage/browser/swfscesd-glider-imagery-data-in/2023/amlr03-20231128/images'>images</a>
+  gcp_link_in_aa: <a href='https://console.cloud.google.com/storage/browser/swfscesd-glider-active-acoustics-data-in/2023/amlr03-20231128'>aa</a>
+  gcp_link_in_imagery: <a href='https://console.cloud.google.com/storage/browser/swfscesd-glider-imagery-data-in/2023/amlr03-20231128'>images</a>
 - Glider: AMLR04
   Start: '2023-11-28'
   End: '2024-01-27'
@@ -344,8 +344,8 @@
   report_link: ''
   ERDDAP_link: ''
   gcp_link_out_data: ''
-  gcp_link_in_aa: <a href='https://console.cloud.google.com/storage/browser/swfscesd-glider-active-acoustics-data-in/2023/amlr04-20231128/data/delayed'>active-acoustics</a>
-  gcp_link_in_imagery: <a href='https://console.cloud.google.com/storage/browser/swfscesd-glider-imagery-data-in/2023/amlr04-20231128/images'>images</a>
+  gcp_link_in_aa: <a href='https://console.cloud.google.com/storage/browser/swfscesd-glider-active-acoustics-data-in/2023/amlr04-20231128'>aa</a>
+  gcp_link_in_imagery: <a href='https://console.cloud.google.com/storage/browser/swfscesd-glider-imagery-data-in/2023/amlr04-20231128'>images</a>
 - Glider: john
   Start: '2024-03-12'
   End: '2024-04-03'
@@ -356,8 +356,8 @@
   report_link: <a href='https://docs.google.com/document/d/1szQ7tV5stz8fyuNzF05jM1zxUQmkAwQxzZcmHGlDgwg/edit?usp=sharing'>report</a>
   ERDDAP_link: ''
   gcp_link_out_data: ''
-  gcp_link_in_aa: <a href='https://console.cloud.google.com/storage/browser/swfscesd-glider-active-acoustics-data-in/2024/john-20240312/data/delayed'>active-acoustics</a>
-  gcp_link_in_imagery: <a href='https://console.cloud.google.com/storage/browser/swfscesd-glider-imagery-data-in/2024/john-20240312/images'>images</a>
+  gcp_link_in_aa: <a href='https://console.cloud.google.com/storage/browser/swfscesd-glider-active-acoustics-data-in/2024/john-20240312'>aa</a>
+  gcp_link_in_imagery: <a href='https://console.cloud.google.com/storage/browser/swfscesd-glider-imagery-data-in/2024/john-20240312'>images</a>
 - Glider: ringo
   Start: '2024-03-12'
   End: '2024-03-15'
@@ -369,7 +369,7 @@
   ERDDAP_link: ''
   gcp_link_out_data: ''
   gcp_link_in_aa: ''
-  gcp_link_in_imagery: <a href='https://console.cloud.google.com/storage/browser/swfscesd-glider-imagery-data-in/2024/ringo-20240312/images'>images</a>
+  gcp_link_in_imagery: <a href='https://console.cloud.google.com/storage/browser/swfscesd-glider-imagery-data-in/2024/ringo-20240312'>images</a>
 - Glider: george
   Start: '2024-05-30'
   End: '2024-06-22'
@@ -381,7 +381,7 @@
   ERDDAP_link: ''
   gcp_link_out_data: ''
   gcp_link_in_aa: ''
-  gcp_link_in_imagery: <a href='https://console.cloud.google.com/storage/browser/swfscesd-glider-imagery-data-in/2024/george-20240530/images'>images</a>
+  gcp_link_in_imagery: <a href='https://console.cloud.google.com/storage/browser/swfscesd-glider-imagery-data-in/2024/george-20240530'>images</a>
 - Glider: AMLR01
   Start: '2024-07-24'
   End: '2024-07-24'
@@ -417,7 +417,7 @@
   ERDDAP_link: ''
   gcp_link_out_data: ''
   gcp_link_in_aa: ''
-  gcp_link_in_imagery: <a href='https://console.cloud.google.com/storage/browser/swfscesd-glider-imagery-data-in/2024/george-20240907/images'>images</a>
+  gcp_link_in_imagery: <a href='https://console.cloud.google.com/storage/browser/swfscesd-glider-imagery-data-in/2024/george-20240907'>images</a>
 - Glider: calanus
   Start: '2024-10-19'
   End: '2024-11-16'
@@ -440,7 +440,7 @@
   report_link: <a href='https://docs.google.com/document/d/128D2a0Ud2Kda5JwIYVhN9An4CFT6KxdGoqS1RsHKtQ0/edit?usp=sharing'>report</a>
   ERDDAP_link: ''
   gcp_link_out_data: ''
-  gcp_link_in_aa: <a href='https://console.cloud.google.com/storage/browser/swfscesd-glider-active-acoustics-data-in/2024/amlr01-20241120/data/delayed'>active-acoustics</a>
+  gcp_link_in_aa: <a href='https://console.cloud.google.com/storage/browser/swfscesd-glider-active-acoustics-data-in/2024/amlr01-20241120'>aa</a>
   gcp_link_in_imagery: ''
 - Glider: AMLR08
   Start: '2024-11-20'
@@ -452,7 +452,7 @@
   report_link: <a href='https://docs.google.com/document/d/1Bk2CQeC6dT7OtOInGbB85aCiE3qmz_S4JvjbNHziKyQ/edit?usp=sharing'>report</a>
   ERDDAP_link: ''
   gcp_link_out_data: ''
-  gcp_link_in_aa: <a href='https://console.cloud.google.com/storage/browser/swfscesd-glider-active-acoustics-data-in/2024/amlr08-20241120/data/delayed'>active-acoustics</a>
+  gcp_link_in_aa: <a href='https://console.cloud.google.com/storage/browser/swfscesd-glider-active-acoustics-data-in/2024/amlr08-20241120'>aa</a>
   gcp_link_in_imagery: ''
 - Glider: unit_1024
   Start: '2025-02-24'
@@ -500,7 +500,7 @@
   report_link: <a href='https://docs.google.com/document/d/1crniFu6WVACCfgD_7a6VqYcbG61CWJo3-jYNb1zoH6A/edit?usp=sharing'>report</a>
   ERDDAP_link: ''
   gcp_link_out_data: <a href='https://console.cloud.google.com/storage/browser/swfscesd-glider-deployments-data-out/2025/calanus-20250617'>products</a>
-  gcp_link_in_aa: <a href='https://console.cloud.google.com/storage/browser/swfscesd-glider-active-acoustics-data-in/2025/calanus-20250617/data/delayed'>active-acoustics</a>
+  gcp_link_in_aa: <a href='https://console.cloud.google.com/storage/browser/swfscesd-glider-active-acoustics-data-in/2025/calanus-20250617'>aa</a>
   gcp_link_in_imagery: ''
 - Glider: AMLR02
   Start: '2025-11-23'
@@ -512,7 +512,7 @@
   report_link: ''
   ERDDAP_link: ''
   gcp_link_out_data: <a href='https://console.cloud.google.com/storage/browser/swfscesd-glider-deployments-data-out/2025/amlr02-20251123'>products</a>
-  gcp_link_in_aa: <a href='https://console.cloud.google.com/storage/browser/swfscesd-glider-active-acoustics-data-in/2025/amlr02-20251123/data/delayed'>active-acoustics</a>
+  gcp_link_in_aa: <a href='https://console.cloud.google.com/storage/browser/swfscesd-glider-active-acoustics-data-in/2025/amlr02-20251123'>aa</a>
   gcp_link_in_imagery: ''
 - Glider: AMLR30
   Start: '2026-01-14'
@@ -525,7 +525,7 @@
   ERDDAP_link: ''
   gcp_link_out_data: <a href='https://console.cloud.google.com/storage/browser/swfscesd-glider-deployments-data-out/2026/amlr30-20260114'>products</a>
   gcp_link_in_aa: ''
-  gcp_link_in_imagery: <a href='https://console.cloud.google.com/storage/browser/swfscesd-glider-imagery-data-in/2026/amlr30-20260114/images'>images</a>
+  gcp_link_in_imagery: <a href='https://console.cloud.google.com/storage/browser/swfscesd-glider-imagery-data-in/2026/amlr30-20260114'>images</a>
 - Glider: risso
   Start: '2026-01-28'
   End: '2026-02-12'
@@ -561,7 +561,7 @@
   ERDDAP_link: ''
   gcp_link_out_data: <a href='https://console.cloud.google.com/storage/browser/swfscesd-glider-deployments-data-out/2026/unit_1024-20260309'>products</a>
   gcp_link_in_aa: ''
-  gcp_link_in_imagery: <a href='https://console.cloud.google.com/storage/browser/swfscesd-glider-imagery-data-in/2026/unit_1024-20260309/images'>images</a>
+  gcp_link_in_imagery: <a href='https://console.cloud.google.com/storage/browser/swfscesd-glider-imagery-data-in/2026/unit_1024-20260309'>images</a>
 - Glider: unit_1024
   Start: '2026-03-16'
   End: '2026-03-21'
@@ -573,7 +573,7 @@
   ERDDAP_link: ''
   gcp_link_out_data: <a href='https://console.cloud.google.com/storage/browser/swfscesd-glider-deployments-data-out/2026/unit_1024-20260316'>products</a>
   gcp_link_in_aa: ''
-  gcp_link_in_imagery: <a href='https://console.cloud.google.com/storage/browser/swfscesd-glider-imagery-data-in/2026/unit_1024-20260316/images'>images</a>
+  gcp_link_in_imagery: <a href='https://console.cloud.google.com/storage/browser/swfscesd-glider-imagery-data-in/2026/unit_1024-20260316'>images</a>
 - Glider: amlr08
   Start: '2026-03-21'
   End: '2026-03-27'
@@ -585,7 +585,7 @@
   ERDDAP_link: ''
   gcp_link_out_data: <a href='https://console.cloud.google.com/storage/browser/swfscesd-glider-deployments-data-out/2026/amlr08-20260321'>products</a>
   gcp_link_in_aa: ''
-  gcp_link_in_imagery: <a href='https://console.cloud.google.com/storage/browser/swfscesd-glider-imagery-data-in/2026/amlr08-20260321/images'>images</a>
+  gcp_link_in_imagery: <a href='https://console.cloud.google.com/storage/browser/swfscesd-glider-imagery-data-in/2026/amlr08-20260321'>images</a>
 - Glider: amlr08
   Start: '2026-03-27'
   End: '2026-04-21'
@@ -597,7 +597,7 @@
   ERDDAP_link: ''
   gcp_link_out_data: <a href='https://console.cloud.google.com/storage/browser/swfscesd-glider-deployments-data-out/2026/amlr08-20260327'>products</a>
   gcp_link_in_aa: ''
-  gcp_link_in_imagery: <a href='https://console.cloud.google.com/storage/browser/swfscesd-glider-imagery-data-in/2026/amlr08-20260327/images'>images</a>
+  gcp_link_in_imagery: <a href='https://console.cloud.google.com/storage/browser/swfscesd-glider-imagery-data-in/2026/amlr08-20260327'>images</a>
 - Glider: calanus
   Start: '2026-04-03'
   End: '2026-04-29'
@@ -609,7 +609,7 @@
   ERDDAP_link: ''
   gcp_link_out_data: <a href='https://console.cloud.google.com/storage/browser/swfscesd-glider-deployments-data-out/2026/calanus-20260403'>products</a>
   gcp_link_in_aa: ''
-  gcp_link_in_imagery: <a href='https://console.cloud.google.com/storage/browser/swfscesd-glider-imagery-data-in/2026/calanus-20260403/images'>images</a>
+  gcp_link_in_imagery: <a href='https://console.cloud.google.com/storage/browser/swfscesd-glider-imagery-data-in/2026/calanus-20260403'>images</a>
 - Glider: calanus
   Start: '2026-08-24'
   End: '2026-09-24'
@@ -621,7 +621,7 @@
   ERDDAP_link: <a href='https://gliders.ioos.us/erddap/tabledap/calanus-20260824T1847-delayed.html'>IOOS</a>
   gcp_link_out_data: <a href='https://console.cloud.google.com/storage/browser/swfscesd-glider-deployments-data-out/2026/calanus-20260824'>products</a>
   gcp_link_in_aa: ''
-  gcp_link_in_imagery: <a href='https://console.cloud.google.com/storage/browser/swfscesd-glider-imagery-data-in/2026/calanus-20260824/images'>images</a>
+  gcp_link_in_imagery: <a href='https://console.cloud.google.com/storage/browser/swfscesd-glider-imagery-data-in/2026/calanus-20260824'>images</a>
 - Glider: chovy
   Start: '2026-10-05'
   End: '2026-10-19'
@@ -633,7 +633,7 @@
   ERDDAP_link: <a href='https://gliders.ioos.us/erddap/tabledap/chovy-20261005T2016.html'>IOOS</a>
   gcp_link_out_data: <a href='https://console.cloud.google.com/storage/browser/swfscesd-glider-deployments-data-out/2026/chovy-20261005'>products</a>
   gcp_link_in_aa: ''
-  gcp_link_in_imagery: <a href='https://console.cloud.google.com/storage/browser/swfscesd-glider-imagery-data-in/2026/chovy-20261005/images'>images</a>
+  gcp_link_in_imagery: <a href='https://console.cloud.google.com/storage/browser/swfscesd-glider-imagery-data-in/2026/chovy-20261005'>images</a>
 - Glider: calanus
   Start: '2026-10-07'
   End: ''
@@ -645,7 +645,7 @@
   ERDDAP_link: <a href='https://gliders.ioos.us/erddap/tabledap/calanus-20261007T1753.html'>IOOS</a>
   gcp_link_out_data: <a href='https://console.cloud.google.com/storage/browser/swfscesd-glider-deployments-data-out/2026/calanus-20261007'>products</a>
   gcp_link_in_aa: ''
-  gcp_link_in_imagery: <a href='https://console.cloud.google.com/storage/browser/swfscesd-glider-imagery-data-in/2026/calanus-20261007/images'>images</a>
+  gcp_link_in_imagery: <a href='https://console.cloud.google.com/storage/browser/swfscesd-glider-imagery-data-in/2026/calanus-20261007'>images</a>
 - Glider: chovy
   Start: '2026-10-25'
   End: ''
