@@ -11,7 +11,7 @@ The below table lists all ESD (and formerly AERD) glider deployments, both in-pr
 
 Users can use the Search box at the top right of the table (you may have to scroll to the right) to filter the table for rows that contain the entered text. For instance, enter "calanus" to filter for all deployments of the glider calanus. 
 
-See the [Fleet Status sheet](https://docs.google.com/spreadsheets/d/1tB3QNKYx8qOYYS9QZotekBAx0y-_n2d-EZPjFFdYNuU/edit?usp=sharing) (NOAA internal) for more detailed ESD glider fleet and deployment details.
+See the [Fleet Status sheet](https://docs.google.com/spreadsheets/d/1tB3QNKYx8qOYYS9QZotekBAx0y-_n2d-EZPjFFdYNuU/edit?usp=sharing) (NOAA internal) for other ESD glider fleet and deployment details.
 
 ```{r}
 #| label: deployments-table
@@ -25,57 +25,77 @@ library(DT)
 library(tidyr)
 library(tibble)
 library(here)
-
-# erddap_urls <- tibble::tribble(
-#     ~Deployment_Name, ~ERDDAP, 
-# )
     
-drive_reports_urls <- tribble(
-    ~Deployment_Name, ~Report, 
-    "stenella-20250414", "https://docs.google.com/document/d/11aBBLY6xJhdd2vDwuhdBLK3SVcPaqnxbkMR-Fn0rgy0/edit?usp=drive_link", 
-    "risso-20250414", "https://docs.google.com/document/d/1JWkHtAoQar3fr0TLmKJT9VI5O5IqFkpEw4G_07ZFRts/edit?usp=drive_link", 
-    "unit_1024-20250224", "https://docs.google.com/document/d/1LQ9ch1gEuHtHEUbC7dymbtm9UlZu6IaePKbmLpKTlyU/edit?usp=sharing", 
-    "amlr01-20241120", "https://docs.google.com/document/d/128D2a0Ud2Kda5JwIYVhN9An4CFT6KxdGoqS1RsHKtQ0/edit?usp=sharing", 
-    "amlr08-20241120", "https://docs.google.com/document/d/1Bk2CQeC6dT7OtOInGbB85aCiE3qmz_S4JvjbNHziKyQ/edit?usp=sharing", 
-    "calanus-20241019", "https://github.com/SWFSC/glider-lab/blob/main/deployment-reports/calanus-20241019.html", 
-    "george-20240530", "https://docs.google.com/document/d/1MDVbBDjK2UvHjLFQ35nzniC-R7YycM6SZr0ymEFvapw/edit?usp=sharing", 
-    "george-20240907", "https://docs.google.com/document/d/12hNl6ZtEIISh4vlJcOJgK1RHsloGIa98WKf5xpjIq0U/edit?usp=sharing", 
-    "john-20240312", "https://docs.google.com/document/d/1szQ7tV5stz8fyuNzF05jM1zxUQmkAwQxzZcmHGlDgwg/edit?usp=sharing", 
-    "ringo-20240312", "https://docs.google.com/document/d/12iSPkBChPjtPFbFQxX2hCopga3hvBr91qH1kJW_w5sw/edit?usp=sharing", 
-    "calanus-20250617", "https://docs.google.com/document/d/1crniFu6WVACCfgD_7a6VqYcbG61CWJo3-jYNb1zoH6A/edit?usp=sharing"
-)  
+# drive_reports_urls <- tribble(
+#     ~Deployment_Name, ~Report, 
+#     "stenella-20250414", "https://docs.google.com/document/d/11aBBLY6xJhdd2vDwuhdBLK3SVcPaqnxbkMR-Fn0rgy0/edit?usp=drive_link", 
+#     "risso-20250414", "https://docs.google.com/document/d/1JWkHtAoQar3fr0TLmKJT9VI5O5IqFkpEw4G_07ZFRts/edit?usp=drive_link", 
+#     "unit_1024-20250224", "https://docs.google.com/document/d/1LQ9ch1gEuHtHEUbC7dymbtm9UlZu6IaePKbmLpKTlyU/edit?usp=sharing", 
+#     "amlr01-20241120", "https://docs.google.com/document/d/128D2a0Ud2Kda5JwIYVhN9An4CFT6KxdGoqS1RsHKtQ0/edit?usp=sharing", 
+#     "amlr08-20241120", "https://docs.google.com/document/d/1Bk2CQeC6dT7OtOInGbB85aCiE3qmz_S4JvjbNHziKyQ/edit?usp=sharing", 
+#     "calanus-20241019", "https://github.com/SWFSC/glider-lab/blob/main/deployment-reports/calanus-20241019.html", 
+#     "george-20240530", "https://docs.google.com/document/d/1MDVbBDjK2UvHjLFQ35nzniC-R7YycM6SZr0ymEFvapw/edit?usp=sharing", 
+#     "george-20240907", "https://docs.google.com/document/d/12hNl6ZtEIISh4vlJcOJgK1RHsloGIa98WKf5xpjIq0U/edit?usp=sharing", 
+#     "john-20240312", "https://docs.google.com/document/d/1szQ7tV5stz8fyuNzF05jM1zxUQmkAwQxzZcmHGlDgwg/edit?usp=sharing", 
+#     "ringo-20240312", "https://docs.google.com/document/d/12iSPkBChPjtPFbFQxX2hCopga3hvBr91qH1kJW_w5sw/edit?usp=sharing", 
+#     "calanus-20250617", "https://docs.google.com/document/d/1crniFu6WVACCfgD_7a6VqYcbG61CWJo3-jYNb1zoH6A/edit?usp=sharing"
+# ) 
+# # NOTE: Report and ERDDAP URLs are in Fleet Status:
+# https://docs.google.com/spreadsheets/d/1tB3QNKYx8qOYYS9QZotekBAx0y-_n2d-EZPjFFdYNuU/edit?gid=1464610964#gid=1464610964 
+
+col_data_internal <- "Internal Data"
+# col_raw_data      <- "Raw Data (Internal)"
 
 deployments_list <- read_yaml(here("content", "esd-gliders.yml"))
 
-deployments_list <- lapply(deployments_list, function(x) {
-    if (!is.null(x$End)) x$End <- as.character(x$End)
-    if (!is.null(x$Start)) x$Start <- as.character(x$Start)
-    x
-})
+# deployments_list <- lapply(deployments_list, function(x) {
+#     if (!is.null(x$End)) x$End <- as.character(x$End)
+#     if (!is.null(x$Start)) x$Start <- as.character(x$Start)
+#     x
+# })
 
-deployments_df <- bind_rows(deployments_list) %>% 
-    select(-c(report_link)) %>% 
-    rename(ERDDAP = ERDDAP_link) %>% 
-    left_join(drive_reports_urls, by = join_by(Deployment_Name)) %>% 
-    mutate(across(everything(), na_if, ""), 
-            Report = if_else(is.na(Report), NA_character_, 
-                            paste0("<a href='", Report, "'>link</a>")), 
-                            ) %>% 
-    unite(`Internal Data`, starts_with("gcp_link"), 
-            sep = " | ", remove = TRUE, na.rm = TRUE) %>%  
-    unite(`Internal Directories`, starts_with("gcp_dir_link"), 
-            sep = " | ", remove = TRUE, na.rm = TRUE) %>% 
-    relocate(Project, .before = Region) %>%
-    relocate(Report, .after = Sensors) %>%
-    select(-c(Deployment_Name, Project, starts_with("gcp_link_"))) %>% #
+deployments_df <- bind_rows(deployments_list) |>
+    rename(ERDDAP = ERDDAP_link, 
+           Report = report_link) |>
+    # left_join(drive_reports_urls, by = join_by(Deployment_Name)) |>
+    mutate(across(everything(), \(x) na_if(x, y=""))) |>
+    # mutate(
+    #   Report = if_else(
+    #     is.na(Report),
+    #     NA_character_,
+    #     as.character(htmltools::tags$a(href = Report, target = "_blank", "link"))
+    #   )
+    # #         Report = if_else(is.na(Report), NA_character_, 
+    # #                         paste0("<a href='", Report, "'>link</a>")), 
+    # ) |> 
+    unite(
+      !!col_data_internal,
+      starts_with("gcp_link"), 
+      sep = " | ", 
+      remove = TRUE, 
+      na.rm = TRUE
+    ) |>
+    # unite(
+    #   !!col_raw_data, 
+    #   starts_with("gcp_link_in"), 
+    #   sep = " | ", 
+    #   remove = TRUE, 
+    #   na.rm = TRUE
+    # ) |>
+    relocate(Project, .before = Region) |>
+    relocate(Report, .after = Sensors) |>
+    select(-c(Deployment_Name, Project, starts_with("gcp_link_"))) |>
     arrange(desc(Start), Glider)
+
+html_col_names <- c("Report", "ERDDAP", col_data_internal)
+unescape_cols <- which(names(deployments_df) %in% html_col_names)
 
 datatable(
     deployments_df,
     class = 'display',
     # class = c('stripe', 'hover', 'row-border', 'order-column', 'compact'),
     rownames = FALSE,
-    escape = FALSE,
+    escape = -unescape_cols,  #FALSE,
     # width = 1050, 
     options = list(
         autoWidth = TRUE, 
@@ -115,25 +135,18 @@ The 'Sensors': column indicates which sensors were on the glider for each deploy
 
 The 'Report' column contains links to various ESD-internal reports, detailing aspects of the glider prep, deployment, and/or recovery. These reports have been converted to Quarto documents, and are in the process of being published on a public-facing NMFS website. Once they have been published, these links will be updated.
 
-The 'ERDDAP' column will contain the link to the glider dataset when it is published to the [ERDDAP](https://gliders.ioos.us/erddap/index.html) of the [IOOS National Glider Data Assembly Center](https://gliders.ioos.us/).
+The 'ERDDAP' column contains the link to the glider dataset when it is published to the [ERDDAP](https://gliders.ioos.us/erddap/index.html) of the [IOOS National Glider Data Assembly Center](https://gliders.ioos.us/). In the future, it will also contain the link to products on an ESD-managed ERDDAP. 
 
-## Data Links
+The 'Internal Data' column contains links to bucket directories in the ESD Google Cloud Platform (GCP) project. Current links include: 
 
-For more details about the data products themselves, see the [Slocum Glider Data Processing](slocum-glider-data.qmd#data-products) page. 
+- **products**: All glider-related [data products](slocum-glider-data.qmd#data-products) from the ['base' glider processing](slocum-glider-data.qmd#base-processing) workflow, including[standard plots](slocum-glider-data.qmd#plots). 
+- **active-acoustics**: The 'active acoustics' data in folder. See a description of the structure and contents of this folder [here](data-management.qmd#active-acoustics). 
+- **images**: The 'raw imagery' deployment folder. See a description of the structure and contents of this folder [here](data-management.qmd#raw-imagery)
 
-The 'Internal Data' and 'Internal Directories' columns contains links to various data products and directories that are in the ESD Google Cloud Platform (GCP) project. Links only appear in the table if the data product exists. These data can only be accessed by users with appropriate permissions in the ESD GCP project. See [this doc](https://docs.google.com/document/d/1wWxq79JPuD5A92XTeH-FVJYA87qW2UlfEtKU1yxrSb8/edit?usp=sharing) for information about downloading full directories from a Google Cloud bucket. Current internal product/directory links:
+See [this doc](https://docs.google.com/document/d/1wWxq79JPuD5A92XTeH-FVJYA87qW2UlfEtKU1yxrSb8/edit?usp=sharing) (NOAA internal) for information about downloading full directories from a Google Cloud bucket. You can also browse in the directory, find and select the data product file you want, and click the 'Authenticated URL' to download. 
 
-Note that in GCP, deployment names are always 'glider name'-'year-month-day'. For instance, deployment "amlr08-20220530" is the deployment of glider amlr08 that began on 30 May 2022.
 
-NOTE: cdom data in the various deployment files should be treated as unreliable until further notice. See [this issue](https://github.com/SWFSC/glider-lab/issues/70) for more details, and the latest updates.
-
-- **timeseries-sci**, **gridded-5m**, **imagery-csv**: Selected products from the ['base' glider processing](slocum-glider-data.qmd#base-processing) workflow.
-- **plots**: The plots for the corresponding deployment. See a description of the standard post-deployment plots [here](data-management.html#deployments). 
-- **glider**: All glider-related data products from the ['base' glider processing](slocum-glider-data.qmd#base-processing) workflow. 
-- **acoustics**: The 'acoustics' deployment folder. See a description of the structure and contents of this folder [here](data-management.qmd#acoustics). 
-- **imagery**: The 'raw imagery' deployment folder. See a description of the structure and contents of this folder [here](data-management.qmd#raw-imagery)
-
-## Projects
+<!-- ## Projects
 
 The ESD deploys gliders under several different projects:
 
@@ -143,4 +156,4 @@ The ESD deploys gliders under several different projects:
 
 * **ECOSWIM**: Operation ECOSWIM is for glider surveys in the California CCE off of Humboldt and Morro Bay, California, in the Southern California waters of the Pacific Ocean. These surveys may collect krill biomass estimates, among other scientific goals.
 
-* **SANDIEGO**: Test deployments off of the greater San Diego area, typically either around Mission Bay, off the Scripps Pier, or off of Oceanside. These deployments may be, for instance, to test a glider before it goes to the Antarctic, or to test new sensors and/or sensor configurations for a NMFS Strategic Initiative (e.g., the Enhanced Data Acquisition Passive Acoustics, Optics, or Uncrewed Systems Strategic Initiatives). 
+* **SANDIEGO**: Test deployments off of the greater San Diego area, typically either around Mission Bay, off the Scripps Pier, or off of Oceanside. These deployments may be, for instance, to test a glider before it goes to the Antarctic, or to test new sensors and/or sensor configurations for a NMFS Strategic Initiative (e.g., the Enhanced Data Acquisition Passive Acoustics, Optics, or Uncrewed Systems Strategic Initiatives).  -->

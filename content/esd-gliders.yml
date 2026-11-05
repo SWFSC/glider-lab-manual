@@ -7,13 +7,9 @@
   Deployment_Name: amlr02-20180418
   report_link: ''
   ERDDAP_link: ''
-  gcp_link_tssci: ''
-  gcp_link_gr5: ''
-  gcp_link_imgcsv: ''
-  gcp_dir_link_plots: ''
-  gcp_dir_link_glider: ''
-  gcp_dir_link_acoustics: ''
-  gcp_dir_link_imagery: ''
+  gcp_link_out_data: ''
+  gcp_link_in_aa: ''
+  gcp_link_in_imagery: ''
 - Glider: AMLR01
   Start: '2018-04-25'
   End: '2018-04-27'
@@ -23,13 +19,9 @@
   Deployment_Name: amlr01-20180425
   report_link: ''
   ERDDAP_link: ''
-  gcp_link_tssci: ''
-  gcp_link_gr5: ''
-  gcp_link_imgcsv: ''
-  gcp_dir_link_plots: ''
-  gcp_dir_link_glider: ''
-  gcp_dir_link_acoustics: ''
-  gcp_dir_link_imagery: ''
+  gcp_link_out_data: ''
+  gcp_link_in_aa: ''
+  gcp_link_in_imagery: ''
 - Glider: AMLR01
   Start: '2018-05-23'
   End: '2018-06-07'
@@ -39,13 +31,9 @@
   Deployment_Name: amlr01-20180523
   report_link: ''
   ERDDAP_link: ''
-  gcp_link_tssci: ''
-  gcp_link_gr5: ''
-  gcp_link_imgcsv: ''
-  gcp_dir_link_plots: ''
-  gcp_dir_link_glider: ''
-  gcp_dir_link_acoustics: ''
-  gcp_dir_link_imagery: ''
+  gcp_link_out_data: ''
+  gcp_link_in_aa: ''
+  gcp_link_in_imagery: ''
 - Glider: AMLR02
   Start: '2018-05-30'
   End: '2018-06-07'
@@ -55,13 +43,9 @@
   Deployment_Name: amlr02-20180530
   report_link: ''
   ERDDAP_link: ''
-  gcp_link_tssci: ''
-  gcp_link_gr5: ''
-  gcp_link_imgcsv: ''
-  gcp_dir_link_plots: ''
-  gcp_dir_link_glider: ''
-  gcp_dir_link_acoustics: ''
-  gcp_dir_link_imagery: ''
+  gcp_link_out_data: ''
+  gcp_link_in_aa: ''
+  gcp_link_in_imagery: ''
 - Glider: AMLR02
   Start: '2018-07-17'
   End: '2018-07-24'
@@ -71,13 +55,9 @@
   Deployment_Name: amlr02-20180717
   report_link: ''
   ERDDAP_link: ''
-  gcp_link_tssci: ''
-  gcp_link_gr5: ''
-  gcp_link_imgcsv: ''
-  gcp_dir_link_plots: ''
-  gcp_dir_link_glider: ''
-  gcp_dir_link_acoustics: ''
-  gcp_dir_link_imagery: ''
+  gcp_link_out_data: ''
+  gcp_link_in_aa: ''
+  gcp_link_in_imagery: ''
 - Glider: AMLR02
   Start: '2018-12-11'
   End: '2019-03-08'
@@ -87,13 +67,9 @@
   Deployment_Name: amlr02-20181211
   report_link: ''
   ERDDAP_link: ''
-  gcp_link_tssci: <a href='https://storage.cloud.google.com/swfscesd-glider-deployments-data-out/2018/amlr02-20181211/processed-L1/amlr02-20181211-delayed-sci.nc'>timeseries-sci</a>
-  gcp_link_gr5: <a href='https://storage.cloud.google.com/swfscesd-glider-deployments-data-out/2018/amlr02-20181211/processed-L3/amlr02-20181211_grid-delayed-5m.nc'>gridded-5m</a>
-  gcp_link_imgcsv: ''
-  gcp_dir_link_plots: <a href='https://console.cloud.google.com/storage/browser/swfscesd-glider-deployments-data-out/2018/amlr02-20181211/plots/delayed'>plots</a>
-  gcp_dir_link_glider: <a href='https://console.cloud.google.com/storage/browser/swfscesd-glider-deployments-data-out/2018/amlr02-20181211'>glider</a>
-  gcp_dir_link_acoustics: ''
-  gcp_dir_link_imagery: ''
+  gcp_link_out_data: <a href='https://console.cloud.google.com/storage/browser/swfscesd-glider-deployments-data-out/2018/amlr02-20181211'>products</a>
+  gcp_link_in_aa: <a href='https://console.cloud.google.com/storage/browser/swfscesd-glider-active-acoustics-data-in/2018/amlr02-20181211/data/delayed'>active-acoustics</a>
+  gcp_link_in_imagery: ''
 - Glider: AMLR01
   Start: '2018-12-16'
   End: '2019-03-08'
@@ -103,13 +79,9 @@
   Deployment_Name: amlr01-20181216
   report_link: ''
   ERDDAP_link: ''
-  gcp_link_tssci: <a href='https://storage.cloud.google.com/swfscesd-glider-deployments-data-out/2018/amlr01-20181216/processed-L1/amlr01-20181216-delayed-sci.nc'>timeseries-sci</a>
-  gcp_link_gr5: <a href='https://storage.cloud.google.com/swfscesd-glider-deployments-data-out/2018/amlr01-20181216/processed-L3/amlr01-20181216_grid-delayed-5m.nc'>gridded-5m</a>
-  gcp_link_imgcsv: ''
-  gcp_dir_link_plots: <a href='https://console.cloud.google.com/storage/browser/swfscesd-glider-deployments-data-out/2018/amlr01-20181216/plots/delayed'>plots</a>
-  gcp_dir_link_glider: <a href='https://console.cloud.google.com/storage/browser/swfscesd-glider-deployments-data-out/2018/amlr01-20181216'>glider</a>
-  gcp_dir_link_acoustics: ''
-  gcp_dir_link_imagery: ''
+  gcp_link_out_data: <a href='https://console.cloud.google.com/storage/browser/swfscesd-glider-deployments-data-out/2018/amlr01-20181216'>products</a>
+  gcp_link_in_aa: <a href='https://console.cloud.google.com/storage/browser/swfscesd-glider-active-acoustics-data-in/2018/amlr01-20181216/data/delayed'>active-acoustics</a>
+  gcp_link_in_imagery: ''
 - Glider: AMLR04
   Start: '2019-07-23'
   End: '2019-07-31'
@@ -119,13 +91,9 @@
   Deployment_Name: amlr04-20190723
   report_link: ''
   ERDDAP_link: ''
-  gcp_link_tssci: ''
-  gcp_link_gr5: ''
-  gcp_link_imgcsv: ''
-  gcp_dir_link_plots: ''
-  gcp_dir_link_glider: ''
-  gcp_dir_link_acoustics: ''
-  gcp_dir_link_imagery: ''
+  gcp_link_out_data: ''
+  gcp_link_in_aa: ''
+  gcp_link_in_imagery: ''
 - Glider: AMLR01
   Start: '2019-12-06'
   End: '2019-12-08'
@@ -135,13 +103,9 @@
   Deployment_Name: amlr01-20191206
   report_link: ''
   ERDDAP_link: ''
-  gcp_link_tssci: <a href='https://storage.cloud.google.com/swfscesd-glider-deployments-data-out/2019/amlr01-20191206/processed-L1/amlr01-20191206-delayed-sci.nc'>timeseries-sci</a>
-  gcp_link_gr5: <a href='https://storage.cloud.google.com/swfscesd-glider-deployments-data-out/2019/amlr01-20191206/processed-L3/amlr01-20191206_grid-delayed-5m.nc'>gridded-5m</a>
-  gcp_link_imgcsv: ''
-  gcp_dir_link_plots: <a href='https://console.cloud.google.com/storage/browser/swfscesd-glider-deployments-data-out/2019/amlr01-20191206/plots/delayed'>plots</a>
-  gcp_dir_link_glider: <a href='https://console.cloud.google.com/storage/browser/swfscesd-glider-deployments-data-out/2019/amlr01-20191206'>glider</a>
-  gcp_dir_link_acoustics: ''
-  gcp_dir_link_imagery: ''
+  gcp_link_out_data: <a href='https://console.cloud.google.com/storage/browser/swfscesd-glider-deployments-data-out/2019/amlr01-20191206'>products</a>
+  gcp_link_in_aa: ''
+  gcp_link_in_imagery: ''
 - Glider: AMLR02
   Start: '2019-12-06'
   End: '2020-03-12'
@@ -151,13 +115,9 @@
   Deployment_Name: amlr02-20191206
   report_link: ''
   ERDDAP_link: ''
-  gcp_link_tssci: <a href='https://storage.cloud.google.com/swfscesd-glider-deployments-data-out/2019/amlr02-20191206/processed-L1/amlr02-20191206-delayed-sci.nc'>timeseries-sci</a>
-  gcp_link_gr5: <a href='https://storage.cloud.google.com/swfscesd-glider-deployments-data-out/2019/amlr02-20191206/processed-L3/amlr02-20191206_grid-delayed-5m.nc'>gridded-5m</a>
-  gcp_link_imgcsv: ''
-  gcp_dir_link_plots: <a href='https://console.cloud.google.com/storage/browser/swfscesd-glider-deployments-data-out/2019/amlr02-20191206/plots/delayed'>plots</a>
-  gcp_dir_link_glider: <a href='https://console.cloud.google.com/storage/browser/swfscesd-glider-deployments-data-out/2019/amlr02-20191206'>glider</a>
-  gcp_dir_link_acoustics: ''
-  gcp_dir_link_imagery: ''
+  gcp_link_out_data: <a href='https://console.cloud.google.com/storage/browser/swfscesd-glider-deployments-data-out/2019/amlr02-20191206'>products</a>
+  gcp_link_in_aa: <a href='https://console.cloud.google.com/storage/browser/swfscesd-glider-active-acoustics-data-in/2019/amlr02-20191206/data/delayed'>active-acoustics</a>
+  gcp_link_in_imagery: ''
 - Glider: AMLR03
   Start: '2019-12-06'
   End: '2020-03-12'
@@ -167,13 +127,9 @@
   Deployment_Name: amlr03-20191206
   report_link: ''
   ERDDAP_link: ''
-  gcp_link_tssci: <a href='https://storage.cloud.google.com/swfscesd-glider-deployments-data-out/2019/amlr03-20191206/processed-L1/amlr03-20191206-delayed-sci.nc'>timeseries-sci</a>
-  gcp_link_gr5: <a href='https://storage.cloud.google.com/swfscesd-glider-deployments-data-out/2019/amlr03-20191206/processed-L3/amlr03-20191206_grid-delayed-5m.nc'>gridded-5m</a>
-  gcp_link_imgcsv: ''
-  gcp_dir_link_plots: <a href='https://console.cloud.google.com/storage/browser/swfscesd-glider-deployments-data-out/2019/amlr03-20191206/plots/delayed'>plots</a>
-  gcp_dir_link_glider: <a href='https://console.cloud.google.com/storage/browser/swfscesd-glider-deployments-data-out/2019/amlr03-20191206'>glider</a>
-  gcp_dir_link_acoustics: ''
-  gcp_dir_link_imagery: ''
+  gcp_link_out_data: <a href='https://console.cloud.google.com/storage/browser/swfscesd-glider-deployments-data-out/2019/amlr03-20191206'>products</a>
+  gcp_link_in_aa: <a href='https://console.cloud.google.com/storage/browser/swfscesd-glider-active-acoustics-data-in/2019/amlr03-20191206/data/delayed'>active-acoustics</a>
+  gcp_link_in_imagery: ''
 - Glider: AMLR01
   Start: '2019-12-16'
   End: '2020-03-12'
@@ -183,13 +139,9 @@
   Deployment_Name: amlr01-20191216
   report_link: ''
   ERDDAP_link: ''
-  gcp_link_tssci: ''
-  gcp_link_gr5: ''
-  gcp_link_imgcsv: ''
-  gcp_dir_link_plots: ''
-  gcp_dir_link_glider: ''
-  gcp_dir_link_acoustics: ''
-  gcp_dir_link_imagery: ''
+  gcp_link_out_data: ''
+  gcp_link_in_aa: <a href='https://console.cloud.google.com/storage/browser/swfscesd-glider-active-acoustics-data-in/2019/amlr01-20191216/data/delayed'>active-acoustics</a>
+  gcp_link_in_imagery: ''
 - Glider: AMLR05
   Start: '2021-07-20'
   End: '2021-07-26'
@@ -199,13 +151,9 @@
   Deployment_Name: amlr05-20210720
   report_link: ''
   ERDDAP_link: ''
-  gcp_link_tssci: ''
-  gcp_link_gr5: ''
-  gcp_link_imgcsv: ''
-  gcp_dir_link_plots: ''
-  gcp_dir_link_glider: ''
-  gcp_dir_link_acoustics: ''
-  gcp_dir_link_imagery: ''
+  gcp_link_out_data: ''
+  gcp_link_in_aa: ''
+  gcp_link_in_imagery: ''
 - Glider: AMLR01
   Start: '2021-11-21'
   End: '2021-12-18'
@@ -215,13 +163,9 @@
   Deployment_Name: amlr01-20211121
   report_link: ''
   ERDDAP_link: ''
-  gcp_link_tssci: ''
-  gcp_link_gr5: ''
-  gcp_link_imgcsv: ''
-  gcp_dir_link_plots: ''
-  gcp_dir_link_glider: ''
-  gcp_dir_link_acoustics: ''
-  gcp_dir_link_imagery: ''
+  gcp_link_out_data: ''
+  gcp_link_in_aa: <a href='https://console.cloud.google.com/storage/browser/swfscesd-glider-active-acoustics-data-in/2021/amlr01-20211121/data/delayed'>active-acoustics</a>
+  gcp_link_in_imagery: ''
 - Glider: AMLR05
   Start: '2021-11-24'
   End: '2021-12-15'
@@ -231,13 +175,9 @@
   Deployment_Name: amlr05-20211124
   report_link: ''
   ERDDAP_link: ''
-  gcp_link_tssci: ''
-  gcp_link_gr5: ''
-  gcp_link_imgcsv: ''
-  gcp_dir_link_plots: ''
-  gcp_dir_link_glider: ''
-  gcp_dir_link_acoustics: ''
-  gcp_dir_link_imagery: ''
+  gcp_link_out_data: ''
+  gcp_link_in_aa: <a href='https://console.cloud.google.com/storage/browser/swfscesd-glider-active-acoustics-data-in/2021/amlr05-20211124/data/delayed'>active-acoustics</a>
+  gcp_link_in_imagery: ''
 - Glider: AMLR03
   Start: '2022-03-07'
   End: '2022-03-11'
@@ -247,13 +187,9 @@
   Deployment_Name: amlr03-20220307
   report_link: ''
   ERDDAP_link: ''
-  gcp_link_tssci: ''
-  gcp_link_gr5: ''
-  gcp_link_imgcsv: ''
-  gcp_dir_link_plots: ''
-  gcp_dir_link_glider: ''
-  gcp_dir_link_acoustics: ''
-  gcp_dir_link_imagery: ''
+  gcp_link_out_data: ''
+  gcp_link_in_aa: ''
+  gcp_link_in_imagery: ''
 - Glider: AMLR03
   Start: '2022-04-25'
   End: '2022-04-29'
@@ -263,13 +199,9 @@
   Deployment_Name: amlr03-20220425
   report_link: ''
   ERDDAP_link: ''
-  gcp_link_tssci: ''
-  gcp_link_gr5: ''
-  gcp_link_imgcsv: ''
-  gcp_dir_link_plots: ''
-  gcp_dir_link_glider: ''
-  gcp_dir_link_acoustics: ''
-  gcp_dir_link_imagery: ''
+  gcp_link_out_data: ''
+  gcp_link_in_aa: ''
+  gcp_link_in_imagery: ''
 - Glider: AMLR06
   Start: '2022-04-25'
   End: '2022-04-29'
@@ -279,13 +211,9 @@
   Deployment_Name: amlr06-20220425
   report_link: ''
   ERDDAP_link: ''
-  gcp_link_tssci: ''
-  gcp_link_gr5: ''
-  gcp_link_imgcsv: ''
-  gcp_dir_link_plots: ''
-  gcp_dir_link_glider: ''
-  gcp_dir_link_acoustics: ''
-  gcp_dir_link_imagery: ''
+  gcp_link_out_data: ''
+  gcp_link_in_aa: ''
+  gcp_link_in_imagery: ''
 - Glider: AMLR08
   Start: '2022-05-04'
   End: '2022-05-04'
@@ -295,13 +223,9 @@
   Deployment_Name: amlr08-20220504
   report_link: ''
   ERDDAP_link: ''
-  gcp_link_tssci: ''
-  gcp_link_gr5: ''
-  gcp_link_imgcsv: ''
-  gcp_dir_link_plots: ''
-  gcp_dir_link_glider: ''
-  gcp_dir_link_acoustics: ''
-  gcp_dir_link_imagery: <a href='https://console.cloud.google.com/storage/browser/swfscesd-glider-imagery-data-in/2022/amlr08-20220504/images'>images</a>
+  gcp_link_out_data: ''
+  gcp_link_in_aa: ''
+  gcp_link_in_imagery: <a href='https://console.cloud.google.com/storage/browser/swfscesd-glider-imagery-data-in/2022/amlr08-20220504/images'>images</a>
 - Glider: AMLR03
   Start: '2022-05-13'
   End: '2022-05-16'
@@ -311,13 +235,9 @@
   Deployment_Name: amlr03-20220513
   report_link: ''
   ERDDAP_link: ''
-  gcp_link_tssci: ''
-  gcp_link_gr5: ''
-  gcp_link_imgcsv: ''
-  gcp_dir_link_plots: ''
-  gcp_dir_link_glider: ''
-  gcp_dir_link_acoustics: ''
-  gcp_dir_link_imagery: ''
+  gcp_link_out_data: ''
+  gcp_link_in_aa: ''
+  gcp_link_in_imagery: ''
 - Glider: AMLR08
   Start: '2022-05-13'
   End: '2022-05-16'
@@ -327,13 +247,9 @@
   Deployment_Name: amlr08-20220513
   report_link: ''
   ERDDAP_link: ''
-  gcp_link_tssci: <a href='https://storage.cloud.google.com/swfscesd-glider-deployments-data-out/2022/amlr08-20220513/processed-L1/amlr08-20220513-delayed-sci.nc'>timeseries-sci</a>
-  gcp_link_gr5: <a href='https://storage.cloud.google.com/swfscesd-glider-deployments-data-out/2022/amlr08-20220513/processed-L3/amlr08-20220513_grid-delayed-5m.nc'>gridded-5m</a>
-  gcp_link_imgcsv: <a href='https://storage.cloud.google.com/swfscesd-glider-deployments-data-out/2022/amlr08-20220513/ancillary-products/amlr08-20220513-imagery-ancillary.csv'>imagery-csv</a>
-  gcp_dir_link_plots: <a href='https://console.cloud.google.com/storage/browser/swfscesd-glider-deployments-data-out/2022/amlr08-20220513/plots/delayed'>plots</a>
-  gcp_dir_link_glider: <a href='https://console.cloud.google.com/storage/browser/swfscesd-glider-deployments-data-out/2022/amlr08-20220513'>glider</a>
-  gcp_dir_link_acoustics: ''
-  gcp_dir_link_imagery: <a href='https://console.cloud.google.com/storage/browser/swfscesd-glider-imagery-data-in/2022/amlr08-20220513/images'>images</a>
+  gcp_link_out_data: <a href='https://console.cloud.google.com/storage/browser/swfscesd-glider-deployments-data-out/2022/amlr08-20220513'>products</a>
+  gcp_link_in_aa: ''
+  gcp_link_in_imagery: <a href='https://console.cloud.google.com/storage/browser/swfscesd-glider-imagery-data-in/2022/amlr08-20220513/images'>images</a>
 - Glider: AMLR07
   Start: '2022-10-25'
   End: '2022-10-27'
@@ -343,13 +259,9 @@
   Deployment_Name: amlr07-20221025
   report_link: ''
   ERDDAP_link: ''
-  gcp_link_tssci: ''
-  gcp_link_gr5: ''
-  gcp_link_imgcsv: ''
-  gcp_dir_link_plots: ''
-  gcp_dir_link_glider: ''
-  gcp_dir_link_acoustics: ''
-  gcp_dir_link_imagery: ''
+  gcp_link_out_data: ''
+  gcp_link_in_aa: <a href='https://console.cloud.google.com/storage/browser/swfscesd-glider-active-acoustics-data-in/2022/amlr07-20221025/data/delayed'>active-acoustics</a>
+  gcp_link_in_imagery: ''
 - Glider: AMLR07
   Start: '2022-12-04'
   End: '2022-12-28'
@@ -359,13 +271,9 @@
   Deployment_Name: amlr07-20221204
   report_link: ''
   ERDDAP_link: ''
-  gcp_link_tssci: ''
-  gcp_link_gr5: ''
-  gcp_link_imgcsv: ''
-  gcp_dir_link_plots: ''
-  gcp_dir_link_glider: <a href='https://console.cloud.google.com/storage/browser/swfscesd-glider-deployments-data-out/2022/amlr07-20221204'>glider</a>
-  gcp_dir_link_acoustics: ''
-  gcp_dir_link_imagery: <a href='https://console.cloud.google.com/storage/browser/swfscesd-glider-imagery-data-in/2022/amlr07-20221204/images'>images</a>
+  gcp_link_out_data: <a href='https://console.cloud.google.com/storage/browser/swfscesd-glider-deployments-data-out/2022/amlr07-20221204'>products</a>
+  gcp_link_in_aa: ''
+  gcp_link_in_imagery: <a href='https://console.cloud.google.com/storage/browser/swfscesd-glider-imagery-data-in/2022/amlr07-20221204/images'>images</a>
 - Glider: AMLR04
   Start: '2022-12-05'
   End: '2023-02-13'
@@ -375,13 +283,9 @@
   Deployment_Name: amlr04-20221205
   report_link: ''
   ERDDAP_link: ''
-  gcp_link_tssci: ''
-  gcp_link_gr5: ''
-  gcp_link_imgcsv: ''
-  gcp_dir_link_plots: ''
-  gcp_dir_link_glider: ''
-  gcp_dir_link_acoustics: ''
-  gcp_dir_link_imagery: ''
+  gcp_link_out_data: ''
+  gcp_link_in_aa: <a href='https://console.cloud.google.com/storage/browser/swfscesd-glider-active-acoustics-data-in/2022/amlr04-20221205/data/delayed'>active-acoustics</a>
+  gcp_link_in_imagery: ''
 - Glider: AMLR06
   Start: '2022-12-05'
   End: '2023-02-13'
@@ -391,13 +295,9 @@
   Deployment_Name: amlr06-20221205
   report_link: ''
   ERDDAP_link: ''
-  gcp_link_tssci: ''
-  gcp_link_gr5: ''
-  gcp_link_imgcsv: ''
-  gcp_dir_link_plots: ''
-  gcp_dir_link_glider: ''
-  gcp_dir_link_acoustics: ''
-  gcp_dir_link_imagery: ''
+  gcp_link_out_data: ''
+  gcp_link_in_aa: <a href='https://console.cloud.google.com/storage/browser/swfscesd-glider-active-acoustics-data-in/2022/amlr06-20221205/data/delayed'>active-acoustics</a>
+  gcp_link_in_imagery: ''
 - Glider: AMLR03
   Start: '2023-06-20'
   End: '2023-06-23'
@@ -407,13 +307,9 @@
   Deployment_Name: amlr03-20230620
   report_link: ''
   ERDDAP_link: ''
-  gcp_link_tssci: ''
-  gcp_link_gr5: ''
-  gcp_link_imgcsv: ''
-  gcp_dir_link_plots: ''
-  gcp_dir_link_glider: ''
-  gcp_dir_link_acoustics: ''
-  gcp_dir_link_imagery: <a href='https://console.cloud.google.com/storage/browser/swfscesd-glider-imagery-data-in/2023/amlr03-20230620/images'>images</a>
+  gcp_link_out_data: ''
+  gcp_link_in_aa: <a href='https://console.cloud.google.com/storage/browser/swfscesd-glider-active-acoustics-data-in/2023/amlr03-20230620/data/delayed'>active-acoustics</a>
+  gcp_link_in_imagery: <a href='https://console.cloud.google.com/storage/browser/swfscesd-glider-imagery-data-in/2023/amlr03-20230620/images'>images</a>
 - Glider: AMLR04
   Start: '2023-06-20'
   End: '2023-06-23'
@@ -423,13 +319,9 @@
   Deployment_Name: amlr04-20230620
   report_link: ''
   ERDDAP_link: ''
-  gcp_link_tssci: ''
-  gcp_link_gr5: ''
-  gcp_link_imgcsv: ''
-  gcp_dir_link_plots: ''
-  gcp_dir_link_glider: ''
-  gcp_dir_link_acoustics: ''
-  gcp_dir_link_imagery: <a href='https://console.cloud.google.com/storage/browser/swfscesd-glider-imagery-data-in/2023/amlr04-20230620/images'>images</a>
+  gcp_link_out_data: ''
+  gcp_link_in_aa: <a href='https://console.cloud.google.com/storage/browser/swfscesd-glider-active-acoustics-data-in/2023/amlr04-20230620/data/delayed'>active-acoustics</a>
+  gcp_link_in_imagery: <a href='https://console.cloud.google.com/storage/browser/swfscesd-glider-imagery-data-in/2023/amlr04-20230620/images'>images</a>
 - Glider: AMLR03
   Start: '2023-11-28'
   End: '2024-01-27'
@@ -439,13 +331,9 @@
   Deployment_Name: amlr03-20231128
   report_link: ''
   ERDDAP_link: ''
-  gcp_link_tssci: ''
-  gcp_link_gr5: ''
-  gcp_link_imgcsv: ''
-  gcp_dir_link_plots: ''
-  gcp_dir_link_glider: ''
-  gcp_dir_link_acoustics: ''
-  gcp_dir_link_imagery: <a href='https://console.cloud.google.com/storage/browser/swfscesd-glider-imagery-data-in/2023/amlr03-20231128/images'>images</a>
+  gcp_link_out_data: ''
+  gcp_link_in_aa: <a href='https://console.cloud.google.com/storage/browser/swfscesd-glider-active-acoustics-data-in/2023/amlr03-20231128/data/delayed'>active-acoustics</a>
+  gcp_link_in_imagery: <a href='https://console.cloud.google.com/storage/browser/swfscesd-glider-imagery-data-in/2023/amlr03-20231128/images'>images</a>
 - Glider: AMLR04
   Start: '2023-11-28'
   End: '2024-01-27'
@@ -455,13 +343,9 @@
   Deployment_Name: amlr04-20231128
   report_link: ''
   ERDDAP_link: ''
-  gcp_link_tssci: ''
-  gcp_link_gr5: ''
-  gcp_link_imgcsv: ''
-  gcp_dir_link_plots: ''
-  gcp_dir_link_glider: ''
-  gcp_dir_link_acoustics: ''
-  gcp_dir_link_imagery: <a href='https://console.cloud.google.com/storage/browser/swfscesd-glider-imagery-data-in/2023/amlr04-20231128/images'>images</a>
+  gcp_link_out_data: ''
+  gcp_link_in_aa: <a href='https://console.cloud.google.com/storage/browser/swfscesd-glider-active-acoustics-data-in/2023/amlr04-20231128/data/delayed'>active-acoustics</a>
+  gcp_link_in_imagery: <a href='https://console.cloud.google.com/storage/browser/swfscesd-glider-imagery-data-in/2023/amlr04-20231128/images'>images</a>
 - Glider: john
   Start: '2024-03-12'
   End: '2024-04-03'
@@ -469,15 +353,11 @@
   Region: CCE
   Sensors: CTD, Optode, Nortek, Shadowgraph-wide
   Deployment_Name: john-20240312
-  report_link: ''
+  report_link: <a href='https://docs.google.com/document/d/1szQ7tV5stz8fyuNzF05jM1zxUQmkAwQxzZcmHGlDgwg/edit?usp=sharing'>report</a>
   ERDDAP_link: ''
-  gcp_link_tssci: ''
-  gcp_link_gr5: ''
-  gcp_link_imgcsv: ''
-  gcp_dir_link_plots: ''
-  gcp_dir_link_glider: ''
-  gcp_dir_link_acoustics: ''
-  gcp_dir_link_imagery: <a href='https://console.cloud.google.com/storage/browser/swfscesd-glider-imagery-data-in/2024/john-20240312/images'>images</a>
+  gcp_link_out_data: ''
+  gcp_link_in_aa: <a href='https://console.cloud.google.com/storage/browser/swfscesd-glider-active-acoustics-data-in/2024/john-20240312/data/delayed'>active-acoustics</a>
+  gcp_link_in_imagery: <a href='https://console.cloud.google.com/storage/browser/swfscesd-glider-imagery-data-in/2024/john-20240312/images'>images</a>
 - Glider: ringo
   Start: '2024-03-12'
   End: '2024-03-15'
@@ -485,15 +365,11 @@
   Region: CCE
   Sensors: CTD, Optode, Nortek, Shadowgraph-wide
   Deployment_Name: ringo-20240312
-  report_link: ''
+  report_link: <a href='https://docs.google.com/document/d/12iSPkBChPjtPFbFQxX2hCopga3hvBr91qH1kJW_w5sw/edit?usp=sharing'>report</a>
   ERDDAP_link: ''
-  gcp_link_tssci: ''
-  gcp_link_gr5: ''
-  gcp_link_imgcsv: ''
-  gcp_dir_link_plots: ''
-  gcp_dir_link_glider: ''
-  gcp_dir_link_acoustics: ''
-  gcp_dir_link_imagery: <a href='https://console.cloud.google.com/storage/browser/swfscesd-glider-imagery-data-in/2024/ringo-20240312/images'>images</a>
+  gcp_link_out_data: ''
+  gcp_link_in_aa: ''
+  gcp_link_in_imagery: <a href='https://console.cloud.google.com/storage/browser/swfscesd-glider-imagery-data-in/2024/ringo-20240312/images'>images</a>
 - Glider: george
   Start: '2024-05-30'
   End: '2024-06-22'
@@ -501,15 +377,11 @@
   Region: CCE
   Sensors: CTD, Optode, Shadowgraph-narrow
   Deployment_Name: george-20240530
-  report_link: ''
+  report_link: <a href='https://docs.google.com/document/d/1MDVbBDjK2UvHjLFQ35nzniC-R7YycM6SZr0ymEFvapw/edit?usp=sharing'>report</a>
   ERDDAP_link: ''
-  gcp_link_tssci: ''
-  gcp_link_gr5: ''
-  gcp_link_imgcsv: ''
-  gcp_dir_link_plots: ''
-  gcp_dir_link_glider: ''
-  gcp_dir_link_acoustics: ''
-  gcp_dir_link_imagery: <a href='https://console.cloud.google.com/storage/browser/swfscesd-glider-imagery-data-in/2024/george-20240530/images'>images</a>
+  gcp_link_out_data: ''
+  gcp_link_in_aa: ''
+  gcp_link_in_imagery: <a href='https://console.cloud.google.com/storage/browser/swfscesd-glider-imagery-data-in/2024/george-20240530/images'>images</a>
 - Glider: AMLR01
   Start: '2024-07-24'
   End: '2024-07-24'
@@ -519,13 +391,9 @@
   Deployment_Name: amlr01-20240724
   report_link: ''
   ERDDAP_link: ''
-  gcp_link_tssci: ''
-  gcp_link_gr5: ''
-  gcp_link_imgcsv: ''
-  gcp_dir_link_plots: ''
-  gcp_dir_link_glider: ''
-  gcp_dir_link_acoustics: ''
-  gcp_dir_link_imagery: ''
+  gcp_link_out_data: ''
+  gcp_link_in_aa: ''
+  gcp_link_in_imagery: ''
 - Glider: AMLR08
   Start: '2024-07-24'
   End: '2024-07-24'
@@ -535,13 +403,9 @@
   Deployment_Name: amlr08-20240724
   report_link: ''
   ERDDAP_link: ''
-  gcp_link_tssci: ''
-  gcp_link_gr5: ''
-  gcp_link_imgcsv: ''
-  gcp_dir_link_plots: ''
-  gcp_dir_link_glider: ''
-  gcp_dir_link_acoustics: ''
-  gcp_dir_link_imagery: ''
+  gcp_link_out_data: ''
+  gcp_link_in_aa: ''
+  gcp_link_in_imagery: ''
 - Glider: george
   Start: '2024-09-07'
   End: '2024-09-11'
@@ -549,15 +413,11 @@
   Region: CCE
   Sensors: CTD, Ecopuck, Optode, Shadowgraph-narrow
   Deployment_Name: george-20240907
-  report_link: ''
+  report_link: <a href='https://docs.google.com/document/d/12hNl6ZtEIISh4vlJcOJgK1RHsloGIa98WKf5xpjIq0U/edit?usp=sharing'>report</a>
   ERDDAP_link: ''
-  gcp_link_tssci: ''
-  gcp_link_gr5: ''
-  gcp_link_imgcsv: ''
-  gcp_dir_link_plots: ''
-  gcp_dir_link_glider: ''
-  gcp_dir_link_acoustics: ''
-  gcp_dir_link_imagery: <a href='https://console.cloud.google.com/storage/browser/swfscesd-glider-imagery-data-in/2024/george-20240907/images'>images</a>
+  gcp_link_out_data: ''
+  gcp_link_in_aa: ''
+  gcp_link_in_imagery: <a href='https://console.cloud.google.com/storage/browser/swfscesd-glider-imagery-data-in/2024/george-20240907/images'>images</a>
 - Glider: calanus
   Start: '2024-10-19'
   End: '2024-11-16'
@@ -565,15 +425,11 @@
   Region: CCE
   Sensors: CTD, Ecopuck, Optode, Nortek
   Deployment_Name: calanus-20241019
-  report_link: ''
+  report_link: <a href='https://github.com/SWFSC/glider-lab/blob/main/deployment-reports/calanus-20241019.html'>report</a>
   ERDDAP_link: ''
-  gcp_link_tssci: <a href='https://storage.cloud.google.com/swfscesd-glider-deployments-data-out/2024/calanus-20241019/processed-L1/calanus-20241019-delayed-sci.nc'>timeseries-sci</a>
-  gcp_link_gr5: <a href='https://storage.cloud.google.com/swfscesd-glider-deployments-data-out/2024/calanus-20241019/processed-L3/calanus-20241019_grid-delayed-5m.nc'>gridded-5m</a>
-  gcp_link_imgcsv: ''
-  gcp_dir_link_plots: <a href='https://console.cloud.google.com/storage/browser/swfscesd-glider-deployments-data-out/2024/calanus-20241019/plots/delayed'>plots</a>
-  gcp_dir_link_glider: <a href='https://console.cloud.google.com/storage/browser/swfscesd-glider-deployments-data-out/2024/calanus-20241019'>glider</a>
-  gcp_dir_link_acoustics: ''
-  gcp_dir_link_imagery: ''
+  gcp_link_out_data: <a href='https://console.cloud.google.com/storage/browser/swfscesd-glider-deployments-data-out/2024/calanus-20241019'>products</a>
+  gcp_link_in_aa: ''
+  gcp_link_in_imagery: ''
 - Glider: AMLR01
   Start: '2024-11-20'
   End: '2025-01-02'
@@ -581,15 +437,11 @@
   Region: Antarctic
   Sensors: CTD, Ecopuck, Optode, AZFP
   Deployment_Name: amlr01-20241120
-  report_link: ''
+  report_link: <a href='https://docs.google.com/document/d/128D2a0Ud2Kda5JwIYVhN9An4CFT6KxdGoqS1RsHKtQ0/edit?usp=sharing'>report</a>
   ERDDAP_link: ''
-  gcp_link_tssci: ''
-  gcp_link_gr5: ''
-  gcp_link_imgcsv: ''
-  gcp_dir_link_plots: ''
-  gcp_dir_link_glider: ''
-  gcp_dir_link_acoustics: ''
-  gcp_dir_link_imagery: ''
+  gcp_link_out_data: ''
+  gcp_link_in_aa: <a href='https://console.cloud.google.com/storage/browser/swfscesd-glider-active-acoustics-data-in/2024/amlr01-20241120/data/delayed'>active-acoustics</a>
+  gcp_link_in_imagery: ''
 - Glider: AMLR08
   Start: '2024-11-20'
   End: '2024-11-24'
@@ -597,15 +449,11 @@
   Region: Antarctic
   Sensors: CTD, Ecopuck, Optode, Nortek
   Deployment_Name: amlr08-20241120
-  report_link: ''
+  report_link: <a href='https://docs.google.com/document/d/1Bk2CQeC6dT7OtOInGbB85aCiE3qmz_S4JvjbNHziKyQ/edit?usp=sharing'>report</a>
   ERDDAP_link: ''
-  gcp_link_tssci: ''
-  gcp_link_gr5: ''
-  gcp_link_imgcsv: ''
-  gcp_dir_link_plots: ''
-  gcp_dir_link_glider: ''
-  gcp_dir_link_acoustics: ''
-  gcp_dir_link_imagery: ''
+  gcp_link_out_data: ''
+  gcp_link_in_aa: <a href='https://console.cloud.google.com/storage/browser/swfscesd-glider-active-acoustics-data-in/2024/amlr08-20241120/data/delayed'>active-acoustics</a>
+  gcp_link_in_imagery: ''
 - Glider: unit_1024
   Start: '2025-02-24'
   End: '2025-02-26'
@@ -613,15 +461,11 @@
   Region: CCE
   Sensors: CTD, Ecopuck, PAR, WISPR
   Deployment_Name: unit_1024-20250224
-  report_link: ''
+  report_link: <a href='https://docs.google.com/document/d/1LQ9ch1gEuHtHEUbC7dymbtm9UlZu6IaePKbmLpKTlyU/edit?usp=sharing'>report</a>
   ERDDAP_link: ''
-  gcp_link_tssci: <a href='https://storage.cloud.google.com/swfscesd-glider-deployments-data-out/2025/unit_1024-20250224/processed-L1/unit_1024-20250224-delayed-sci.nc'>timeseries-sci</a>
-  gcp_link_gr5: <a href='https://storage.cloud.google.com/swfscesd-glider-deployments-data-out/2025/unit_1024-20250224/processed-L3/unit_1024-20250224_grid-delayed-5m.nc'>gridded-5m</a>
-  gcp_link_imgcsv: ''
-  gcp_dir_link_plots: <a href='https://console.cloud.google.com/storage/browser/swfscesd-glider-deployments-data-out/2025/unit_1024-20250224/plots/delayed'>plots</a>
-  gcp_dir_link_glider: <a href='https://console.cloud.google.com/storage/browser/swfscesd-glider-deployments-data-out/2025/unit_1024-20250224'>glider</a>
-  gcp_dir_link_acoustics: ''
-  gcp_dir_link_imagery: ''
+  gcp_link_out_data: <a href='https://console.cloud.google.com/storage/browser/swfscesd-glider-deployments-data-out/2025/unit_1024-20250224'>products</a>
+  gcp_link_in_aa: ''
+  gcp_link_in_imagery: ''
 - Glider: risso
   Start: '2025-04-14'
   End: '2025-04-28'
@@ -629,15 +473,11 @@
   Region: CCE
   Sensors: CTD, Ecopuck, Optode, PAR, DMON
   Deployment_Name: risso-20250414
-  report_link: ''
+  report_link: <a href='https://docs.google.com/document/d/1JWkHtAoQar3fr0TLmKJT9VI5O5IqFkpEw4G_07ZFRts/edit?usp=drive_link'>report</a>
   ERDDAP_link: ''
-  gcp_link_tssci: <a href='https://storage.cloud.google.com/swfscesd-glider-deployments-data-out/2025/risso-20250414/processed-L1/risso-20250414-delayed-sci.nc'>timeseries-sci</a>
-  gcp_link_gr5: <a href='https://storage.cloud.google.com/swfscesd-glider-deployments-data-out/2025/risso-20250414/processed-L3/risso-20250414_grid-delayed-5m.nc'>gridded-5m</a>
-  gcp_link_imgcsv: ''
-  gcp_dir_link_plots: <a href='https://console.cloud.google.com/storage/browser/swfscesd-glider-deployments-data-out/2025/risso-20250414/plots/delayed'>plots</a>
-  gcp_dir_link_glider: <a href='https://console.cloud.google.com/storage/browser/swfscesd-glider-deployments-data-out/2025/risso-20250414'>glider</a>
-  gcp_dir_link_acoustics: ''
-  gcp_dir_link_imagery: ''
+  gcp_link_out_data: <a href='https://console.cloud.google.com/storage/browser/swfscesd-glider-deployments-data-out/2025/risso-20250414'>products</a>
+  gcp_link_in_aa: ''
+  gcp_link_in_imagery: ''
 - Glider: stenella
   Start: '2025-04-14'
   End: '2025-04-28'
@@ -645,15 +485,11 @@
   Region: CCE
   Sensors: CTD, Ecopuck, Optode, PAR, WISPR
   Deployment_Name: stenella-20250414
-  report_link: ''
+  report_link: <a href='https://docs.google.com/document/d/11aBBLY6xJhdd2vDwuhdBLK3SVcPaqnxbkMR-Fn0rgy0/edit?usp=drive_link'>report</a>
   ERDDAP_link: ''
-  gcp_link_tssci: <a href='https://storage.cloud.google.com/swfscesd-glider-deployments-data-out/2025/stenella-20250414/processed-L1/stenella-20250414-delayed-sci.nc'>timeseries-sci</a>
-  gcp_link_gr5: <a href='https://storage.cloud.google.com/swfscesd-glider-deployments-data-out/2025/stenella-20250414/processed-L3/stenella-20250414_grid-delayed-5m.nc'>gridded-5m</a>
-  gcp_link_imgcsv: ''
-  gcp_dir_link_plots: <a href='https://console.cloud.google.com/storage/browser/swfscesd-glider-deployments-data-out/2025/stenella-20250414/plots/delayed'>plots</a>
-  gcp_dir_link_glider: <a href='https://console.cloud.google.com/storage/browser/swfscesd-glider-deployments-data-out/2025/stenella-20250414'>glider</a>
-  gcp_dir_link_acoustics: ''
-  gcp_dir_link_imagery: ''
+  gcp_link_out_data: <a href='https://console.cloud.google.com/storage/browser/swfscesd-glider-deployments-data-out/2025/stenella-20250414'>products</a>
+  gcp_link_in_aa: ''
+  gcp_link_in_imagery: ''
 - Glider: calanus
   Start: '2025-06-17'
   End: '2025-06-26'
@@ -661,15 +497,11 @@
   Region: CCE
   Sensors: CTD, Ecopuck, Optode, Nortek
   Deployment_Name: calanus-20250617
-  report_link: ''
+  report_link: <a href='https://docs.google.com/document/d/1crniFu6WVACCfgD_7a6VqYcbG61CWJo3-jYNb1zoH6A/edit?usp=sharing'>report</a>
   ERDDAP_link: ''
-  gcp_link_tssci: <a href='https://storage.cloud.google.com/swfscesd-glider-deployments-data-out/2025/calanus-20250617/processed-L1/calanus-20250617-delayed-sci.nc'>timeseries-sci</a>
-  gcp_link_gr5: <a href='https://storage.cloud.google.com/swfscesd-glider-deployments-data-out/2025/calanus-20250617/processed-L3/calanus-20250617_grid-delayed-5m.nc'>gridded-5m</a>
-  gcp_link_imgcsv: ''
-  gcp_dir_link_plots: <a href='https://console.cloud.google.com/storage/browser/swfscesd-glider-deployments-data-out/2025/calanus-20250617/plots/delayed'>plots</a>
-  gcp_dir_link_glider: <a href='https://console.cloud.google.com/storage/browser/swfscesd-glider-deployments-data-out/2025/calanus-20250617'>glider</a>
-  gcp_dir_link_acoustics: ''
-  gcp_dir_link_imagery: ''
+  gcp_link_out_data: <a href='https://console.cloud.google.com/storage/browser/swfscesd-glider-deployments-data-out/2025/calanus-20250617'>products</a>
+  gcp_link_in_aa: <a href='https://console.cloud.google.com/storage/browser/swfscesd-glider-active-acoustics-data-in/2025/calanus-20250617/data/delayed'>active-acoustics</a>
+  gcp_link_in_imagery: ''
 - Glider: AMLR02
   Start: '2025-11-23'
   End: '2025-11-29'
@@ -679,13 +511,9 @@
   Deployment_Name: amlr02-20251123
   report_link: ''
   ERDDAP_link: ''
-  gcp_link_tssci: <a href='https://storage.cloud.google.com/swfscesd-glider-deployments-data-out/2025/amlr02-20251123/processed-L1/amlr02-20251123-delayed-sci.nc'>timeseries-sci</a>
-  gcp_link_gr5: <a href='https://storage.cloud.google.com/swfscesd-glider-deployments-data-out/2025/amlr02-20251123/processed-L3/amlr02-20251123_grid-delayed-5m.nc'>gridded-5m</a>
-  gcp_link_imgcsv: ''
-  gcp_dir_link_plots: <a href='https://console.cloud.google.com/storage/browser/swfscesd-glider-deployments-data-out/2025/amlr02-20251123/plots/delayed'>plots</a>
-  gcp_dir_link_glider: <a href='https://console.cloud.google.com/storage/browser/swfscesd-glider-deployments-data-out/2025/amlr02-20251123'>glider</a>
-  gcp_dir_link_acoustics: ''
-  gcp_dir_link_imagery: ''
+  gcp_link_out_data: <a href='https://console.cloud.google.com/storage/browser/swfscesd-glider-deployments-data-out/2025/amlr02-20251123'>products</a>
+  gcp_link_in_aa: <a href='https://console.cloud.google.com/storage/browser/swfscesd-glider-active-acoustics-data-in/2025/amlr02-20251123/data/delayed'>active-acoustics</a>
+  gcp_link_in_imagery: ''
 - Glider: AMLR30
   Start: '2026-01-14'
   End: '2026-02-03'
@@ -695,13 +523,9 @@
   Deployment_Name: amlr30-20260114
   report_link: ''
   ERDDAP_link: ''
-  gcp_link_tssci: <a href='https://storage.cloud.google.com/swfscesd-glider-deployments-data-out/2026/amlr30-20260114/processed-L1/amlr30-20260114-delayed-sci.nc'>timeseries-sci</a>
-  gcp_link_gr5: <a href='https://storage.cloud.google.com/swfscesd-glider-deployments-data-out/2026/amlr30-20260114/processed-L3/amlr30-20260114_grid-delayed-5m.nc'>gridded-5m</a>
-  gcp_link_imgcsv: <a href='https://storage.cloud.google.com/swfscesd-glider-deployments-data-out/2026/amlr30-20260114/ancillary-products/amlr30-20260114-imagery-ancillary.csv'>imagery-csv</a>
-  gcp_dir_link_plots: <a href='https://console.cloud.google.com/storage/browser/swfscesd-glider-deployments-data-out/2026/amlr30-20260114/plots/delayed'>plots</a>
-  gcp_dir_link_glider: <a href='https://console.cloud.google.com/storage/browser/swfscesd-glider-deployments-data-out/2026/amlr30-20260114'>glider</a>
-  gcp_dir_link_acoustics: ''
-  gcp_dir_link_imagery: <a href='https://console.cloud.google.com/storage/browser/swfscesd-glider-imagery-data-in/2026/amlr30-20260114/images'>images</a>
+  gcp_link_out_data: <a href='https://console.cloud.google.com/storage/browser/swfscesd-glider-deployments-data-out/2026/amlr30-20260114'>products</a>
+  gcp_link_in_aa: ''
+  gcp_link_in_imagery: <a href='https://console.cloud.google.com/storage/browser/swfscesd-glider-imagery-data-in/2026/amlr30-20260114/images'>images</a>
 - Glider: risso
   Start: '2026-01-28'
   End: '2026-02-12'
@@ -711,13 +535,9 @@
   Deployment_Name: risso-20260128
   report_link: ''
   ERDDAP_link: ''
-  gcp_link_tssci: <a href='https://storage.cloud.google.com/swfscesd-glider-deployments-data-out/2026/risso-20260128/processed-L1/risso-20260128-delayed-sci.nc'>timeseries-sci</a>
-  gcp_link_gr5: ''
-  gcp_link_imgcsv: ''
-  gcp_dir_link_plots: ''
-  gcp_dir_link_glider: <a href='https://console.cloud.google.com/storage/browser/swfscesd-glider-deployments-data-out/2026/risso-20260128'>glider</a>
-  gcp_dir_link_acoustics: ''
-  gcp_dir_link_imagery: ''
+  gcp_link_out_data: <a href='https://console.cloud.google.com/storage/browser/swfscesd-glider-deployments-data-out/2026/risso-20260128'>products</a>
+  gcp_link_in_aa: ''
+  gcp_link_in_imagery: ''
 - Glider: stenella
   Start: '2026-01-28'
   End: '2026-03-09'
@@ -727,13 +547,9 @@
   Deployment_Name: stenella-20260128
   report_link: ''
   ERDDAP_link: ''
-  gcp_link_tssci: <a href='https://storage.cloud.google.com/swfscesd-glider-deployments-data-out/2026/stenella-20260128/processed-L1/stenella-20260128-delayed-sci.nc'>timeseries-sci</a>
-  gcp_link_gr5: <a href='https://storage.cloud.google.com/swfscesd-glider-deployments-data-out/2026/stenella-20260128/processed-L3/stenella-20260128_grid-delayed-5m.nc'>gridded-5m</a>
-  gcp_link_imgcsv: ''
-  gcp_dir_link_plots: <a href='https://console.cloud.google.com/storage/browser/swfscesd-glider-deployments-data-out/2026/stenella-20260128/plots/delayed'>plots</a>
-  gcp_dir_link_glider: <a href='https://console.cloud.google.com/storage/browser/swfscesd-glider-deployments-data-out/2026/stenella-20260128'>glider</a>
-  gcp_dir_link_acoustics: ''
-  gcp_dir_link_imagery: ''
+  gcp_link_out_data: <a href='https://console.cloud.google.com/storage/browser/swfscesd-glider-deployments-data-out/2026/stenella-20260128'>products</a>
+  gcp_link_in_aa: ''
+  gcp_link_in_imagery: ''
 - Glider: unit_1024
   Start: '2026-03-09'
   End: '2026-03-10'
@@ -743,13 +559,9 @@
   Deployment_Name: unit_1024-20260309
   report_link: ''
   ERDDAP_link: ''
-  gcp_link_tssci: <a href='https://storage.cloud.google.com/swfscesd-glider-deployments-data-out/2026/unit_1024-20260309/processed-L1/unit_1024-20260309-delayed-sci.nc'>timeseries-sci</a>
-  gcp_link_gr5: <a href='https://storage.cloud.google.com/swfscesd-glider-deployments-data-out/2026/unit_1024-20260309/processed-L3/unit_1024-20260309_grid-delayed-5m.nc'>gridded-5m</a>
-  gcp_link_imgcsv: <a href='https://storage.cloud.google.com/swfscesd-glider-deployments-data-out/2026/unit_1024-20260309/ancillary-products/unit_1024-20260309-imagery-ancillary.csv'>imagery-csv</a>
-  gcp_dir_link_plots: <a href='https://console.cloud.google.com/storage/browser/swfscesd-glider-deployments-data-out/2026/unit_1024-20260309/plots/delayed'>plots</a>
-  gcp_dir_link_glider: <a href='https://console.cloud.google.com/storage/browser/swfscesd-glider-deployments-data-out/2026/unit_1024-20260309'>glider</a>
-  gcp_dir_link_acoustics: ''
-  gcp_dir_link_imagery: <a href='https://console.cloud.google.com/storage/browser/swfscesd-glider-imagery-data-in/2026/unit_1024-20260309/images'>images</a>
+  gcp_link_out_data: <a href='https://console.cloud.google.com/storage/browser/swfscesd-glider-deployments-data-out/2026/unit_1024-20260309'>products</a>
+  gcp_link_in_aa: ''
+  gcp_link_in_imagery: <a href='https://console.cloud.google.com/storage/browser/swfscesd-glider-imagery-data-in/2026/unit_1024-20260309/images'>images</a>
 - Glider: unit_1024
   Start: '2026-03-16'
   End: '2026-03-21'
@@ -759,13 +571,9 @@
   Deployment_Name: unit_1024-20260316
   report_link: ''
   ERDDAP_link: ''
-  gcp_link_tssci: <a href='https://storage.cloud.google.com/swfscesd-glider-deployments-data-out/2026/unit_1024-20260316/processed-L1/unit_1024-20260316-delayed-sci.nc'>timeseries-sci</a>
-  gcp_link_gr5: <a href='https://storage.cloud.google.com/swfscesd-glider-deployments-data-out/2026/unit_1024-20260316/processed-L3/unit_1024-20260316_grid-delayed-5m.nc'>gridded-5m</a>
-  gcp_link_imgcsv: <a href='https://storage.cloud.google.com/swfscesd-glider-deployments-data-out/2026/unit_1024-20260316/ancillary-products/unit_1024-20260316-imagery-ancillary.csv'>imagery-csv</a>
-  gcp_dir_link_plots: <a href='https://console.cloud.google.com/storage/browser/swfscesd-glider-deployments-data-out/2026/unit_1024-20260316/plots/delayed'>plots</a>
-  gcp_dir_link_glider: <a href='https://console.cloud.google.com/storage/browser/swfscesd-glider-deployments-data-out/2026/unit_1024-20260316'>glider</a>
-  gcp_dir_link_acoustics: ''
-  gcp_dir_link_imagery: <a href='https://console.cloud.google.com/storage/browser/swfscesd-glider-imagery-data-in/2026/unit_1024-20260316/images'>images</a>
+  gcp_link_out_data: <a href='https://console.cloud.google.com/storage/browser/swfscesd-glider-deployments-data-out/2026/unit_1024-20260316'>products</a>
+  gcp_link_in_aa: ''
+  gcp_link_in_imagery: <a href='https://console.cloud.google.com/storage/browser/swfscesd-glider-imagery-data-in/2026/unit_1024-20260316/images'>images</a>
 - Glider: amlr08
   Start: '2026-03-21'
   End: '2026-03-27'
@@ -775,13 +583,9 @@
   Deployment_Name: amlr08-20260321
   report_link: ''
   ERDDAP_link: ''
-  gcp_link_tssci: <a href='https://storage.cloud.google.com/swfscesd-glider-deployments-data-out/2026/amlr08-20260321/processed-L1/amlr08-20260321-delayed-sci.nc'>timeseries-sci</a>
-  gcp_link_gr5: <a href='https://storage.cloud.google.com/swfscesd-glider-deployments-data-out/2026/amlr08-20260321/processed-L3/amlr08-20260321_grid-delayed-5m.nc'>gridded-5m</a>
-  gcp_link_imgcsv: <a href='https://storage.cloud.google.com/swfscesd-glider-deployments-data-out/2026/amlr08-20260321/ancillary-products/amlr08-20260321-imagery-ancillary.csv'>imagery-csv</a>
-  gcp_dir_link_plots: <a href='https://console.cloud.google.com/storage/browser/swfscesd-glider-deployments-data-out/2026/amlr08-20260321/plots/delayed'>plots</a>
-  gcp_dir_link_glider: <a href='https://console.cloud.google.com/storage/browser/swfscesd-glider-deployments-data-out/2026/amlr08-20260321'>glider</a>
-  gcp_dir_link_acoustics: ''
-  gcp_dir_link_imagery: <a href='https://console.cloud.google.com/storage/browser/swfscesd-glider-imagery-data-in/2026/amlr08-20260321/images'>images</a>
+  gcp_link_out_data: <a href='https://console.cloud.google.com/storage/browser/swfscesd-glider-deployments-data-out/2026/amlr08-20260321'>products</a>
+  gcp_link_in_aa: ''
+  gcp_link_in_imagery: <a href='https://console.cloud.google.com/storage/browser/swfscesd-glider-imagery-data-in/2026/amlr08-20260321/images'>images</a>
 - Glider: amlr08
   Start: '2026-03-27'
   End: '2026-04-21'
@@ -791,13 +595,9 @@
   Deployment_Name: amlr08-20260327
   report_link: ''
   ERDDAP_link: ''
-  gcp_link_tssci: <a href='https://storage.cloud.google.com/swfscesd-glider-deployments-data-out/2026/amlr08-20260327/processed-L1/amlr08-20260327-delayed-sci.nc'>timeseries-sci</a>
-  gcp_link_gr5: <a href='https://storage.cloud.google.com/swfscesd-glider-deployments-data-out/2026/amlr08-20260327/processed-L3/amlr08-20260327_grid-delayed-5m.nc'>gridded-5m</a>
-  gcp_link_imgcsv: <a href='https://storage.cloud.google.com/swfscesd-glider-deployments-data-out/2026/amlr08-20260327/ancillary-products/amlr08-20260327-imagery-ancillary.csv'>imagery-csv</a>
-  gcp_dir_link_plots: <a href='https://console.cloud.google.com/storage/browser/swfscesd-glider-deployments-data-out/2026/amlr08-20260327/plots/delayed'>plots</a>
-  gcp_dir_link_glider: <a href='https://console.cloud.google.com/storage/browser/swfscesd-glider-deployments-data-out/2026/amlr08-20260327'>glider</a>
-  gcp_dir_link_acoustics: ''
-  gcp_dir_link_imagery: <a href='https://console.cloud.google.com/storage/browser/swfscesd-glider-imagery-data-in/2026/amlr08-20260327/images'>images</a>
+  gcp_link_out_data: <a href='https://console.cloud.google.com/storage/browser/swfscesd-glider-deployments-data-out/2026/amlr08-20260327'>products</a>
+  gcp_link_in_aa: ''
+  gcp_link_in_imagery: <a href='https://console.cloud.google.com/storage/browser/swfscesd-glider-imagery-data-in/2026/amlr08-20260327/images'>images</a>
 - Glider: calanus
   Start: '2026-04-03'
   End: '2026-04-29'
@@ -807,13 +607,9 @@
   Deployment_Name: calanus-20260403
   report_link: ''
   ERDDAP_link: ''
-  gcp_link_tssci: <a href='https://storage.cloud.google.com/swfscesd-glider-deployments-data-out/2026/calanus-20260403/processed-L1/calanus-20260403-delayed-sci.nc'>timeseries-sci</a>
-  gcp_link_gr5: <a href='https://storage.cloud.google.com/swfscesd-glider-deployments-data-out/2026/calanus-20260403/processed-L3/calanus-20260403_grid-delayed-5m.nc'>gridded-5m</a>
-  gcp_link_imgcsv: <a href='https://storage.cloud.google.com/swfscesd-glider-deployments-data-out/2026/calanus-20260403/ancillary-products/calanus-20260403-imagery-ancillary.csv'>imagery-csv</a>
-  gcp_dir_link_plots: <a href='https://console.cloud.google.com/storage/browser/swfscesd-glider-deployments-data-out/2026/calanus-20260403/plots/delayed'>plots</a>
-  gcp_dir_link_glider: <a href='https://console.cloud.google.com/storage/browser/swfscesd-glider-deployments-data-out/2026/calanus-20260403'>glider</a>
-  gcp_dir_link_acoustics: ''
-  gcp_dir_link_imagery: <a href='https://console.cloud.google.com/storage/browser/swfscesd-glider-imagery-data-in/2026/calanus-20260403/images'>images</a>
+  gcp_link_out_data: <a href='https://console.cloud.google.com/storage/browser/swfscesd-glider-deployments-data-out/2026/calanus-20260403'>products</a>
+  gcp_link_in_aa: ''
+  gcp_link_in_imagery: <a href='https://console.cloud.google.com/storage/browser/swfscesd-glider-imagery-data-in/2026/calanus-20260403/images'>images</a>
 - Glider: calanus
   Start: '2026-08-24'
   End: '2026-09-24'
@@ -822,43 +618,43 @@
   Sensors: CTD, Ecopuck, Optode, Shadowgraph-v3
   Deployment_Name: calanus-20260824
   report_link: ''
-  ERDDAP_link: ''
-  gcp_link_tssci: <a href='https://storage.cloud.google.com/swfscesd-glider-deployments-data-out/2026/calanus-20260824/processed-L1/calanus-20260824-delayed-sci.nc'>timeseries-sci</a>
-  gcp_link_gr5: <a href='https://storage.cloud.google.com/swfscesd-glider-deployments-data-out/2026/calanus-20260824/processed-L3/calanus-20260824_grid-delayed-5m.nc'>gridded-5m</a>
-  gcp_link_imgcsv: <a href='https://storage.cloud.google.com/swfscesd-glider-deployments-data-out/2026/calanus-20260824/ancillary-products/calanus-20260824-imagery-ancillary.csv'>imagery-csv</a>
-  gcp_dir_link_plots: <a href='https://console.cloud.google.com/storage/browser/swfscesd-glider-deployments-data-out/2026/calanus-20260824/plots/delayed'>plots</a>
-  gcp_dir_link_glider: <a href='https://console.cloud.google.com/storage/browser/swfscesd-glider-deployments-data-out/2026/calanus-20260824'>glider</a>
-  gcp_dir_link_acoustics: ''
-  gcp_dir_link_imagery: <a href='https://console.cloud.google.com/storage/browser/swfscesd-glider-imagery-data-in/2026/calanus-20260824/images'>images</a>
+  ERDDAP_link: <a href='https://gliders.ioos.us/erddap/tabledap/calanus-20260824T1847-delayed.html'>IOOS</a>
+  gcp_link_out_data: <a href='https://console.cloud.google.com/storage/browser/swfscesd-glider-deployments-data-out/2026/calanus-20260824'>products</a>
+  gcp_link_in_aa: ''
+  gcp_link_in_imagery: <a href='https://console.cloud.google.com/storage/browser/swfscesd-glider-imagery-data-in/2026/calanus-20260824/images'>images</a>
 - Glider: chovy
   Start: '2026-10-05'
-  End: .nan
+  End: '2026-10-19'
   Project: ENSO 26/27
   Region: CCE
   Sensors: CTD, Ecopuck, Optode, Shadowgraph-v3
   Deployment_Name: chovy-20261005
   report_link: ''
-  ERDDAP_link: ''
-  gcp_link_tssci: <a href='https://storage.cloud.google.com/swfscesd-glider-deployments-data-out/2026/chovy-20261005/processed-L1/chovy-20261005-delayed-sci.nc'>timeseries-sci</a>
-  gcp_link_gr5: <a href='https://storage.cloud.google.com/swfscesd-glider-deployments-data-out/2026/chovy-20261005/processed-L3/chovy-20261005_grid-delayed-5m.nc'>gridded-5m</a>
-  gcp_link_imgcsv: <a href='https://storage.cloud.google.com/swfscesd-glider-deployments-data-out/2026/chovy-20261005/ancillary-products/chovy-20261005-imagery-ancillary.csv'>imagery-csv</a>
-  gcp_dir_link_plots: <a href='https://console.cloud.google.com/storage/browser/swfscesd-glider-deployments-data-out/2026/chovy-20261005/plots/delayed'>plots</a>
-  gcp_dir_link_glider: <a href='https://console.cloud.google.com/storage/browser/swfscesd-glider-deployments-data-out/2026/chovy-20261005'>glider</a>
-  gcp_dir_link_acoustics: ''
-  gcp_dir_link_imagery: <a href='https://console.cloud.google.com/storage/browser/swfscesd-glider-imagery-data-in/2026/chovy-20261005/images'>images</a>
+  ERDDAP_link: <a href='https://gliders.ioos.us/erddap/tabledap/chovy-20261005T2016.html'>IOOS</a>
+  gcp_link_out_data: <a href='https://console.cloud.google.com/storage/browser/swfscesd-glider-deployments-data-out/2026/chovy-20261005'>products</a>
+  gcp_link_in_aa: ''
+  gcp_link_in_imagery: <a href='https://console.cloud.google.com/storage/browser/swfscesd-glider-imagery-data-in/2026/chovy-20261005/images'>images</a>
 - Glider: calanus
   Start: '2026-10-07'
-  End: .nan
+  End: ''
   Project: ENSO 26/27
   Region: CCE
   Sensors: CTD, Ecopuck, Optode, Shadowgraph-v3
   Deployment_Name: calanus-20261007
   report_link: ''
-  ERDDAP_link: ''
-  gcp_link_tssci: ''
-  gcp_link_gr5: ''
-  gcp_link_imgcsv: ''
-  gcp_dir_link_plots: ''
-  gcp_dir_link_glider: <a href='https://console.cloud.google.com/storage/browser/swfscesd-glider-deployments-data-out/2026/calanus-20261007'>glider</a>
-  gcp_dir_link_acoustics: ''
-  gcp_dir_link_imagery: ''
+  ERDDAP_link: <a href='https://gliders.ioos.us/erddap/tabledap/calanus-20261007T1753.html'>IOOS</a>
+  gcp_link_out_data: <a href='https://console.cloud.google.com/storage/browser/swfscesd-glider-deployments-data-out/2026/calanus-20261007'>products</a>
+  gcp_link_in_aa: ''
+  gcp_link_in_imagery: <a href='https://console.cloud.google.com/storage/browser/swfscesd-glider-imagery-data-in/2026/calanus-20261007/images'>images</a>
+- Glider: chovy
+  Start: '2026-10-25'
+  End: ''
+  Project: ENSO 26/27
+  Region: CCE
+  Sensors: CTD, Ecopuck, Optode, Shadowgraph-v3
+  Deployment_Name: chovy-20261025
+  report_link: ''
+  ERDDAP_link: <a href='https://gliders.ioos.us/erddap/tabledap/chovy-20261025T1721.html'>IOOS</a>
+  gcp_link_out_data: <a href='https://console.cloud.google.com/storage/browser/swfscesd-glider-deployments-data-out/2026/chovy-20261025'>products</a>
+  gcp_link_in_aa: ''
+  gcp_link_in_imagery: ''
