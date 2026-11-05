@@ -203,14 +203,15 @@ Link: [swfscesd-glider-active-acoustics-data-in](https://console.cloud.google.co
 
 Directory structure:
 ```
-├── delayed
-├── rt
+├── data
+    ├── delayed
+    ├── rt
+├── config
 ```
 
-- **delayed**: Raw acoustic delayed data, from either AZFPs or Echosounders
-- **rt**: Raw real-time ad2 files. For Nortek instruments only
-
-TODO: Does config info still need to live here? Or can/should that be derived from archive-sfmc?
+- **data/delayed**: Raw acoustic delayed data, from either AZFPs or Echosounders
+- **data/rt**: Raw real-time ad2 files. For Nortek instruments only
+- **config**: Configuration files for the instruments
 
 ##### Data Out
 
