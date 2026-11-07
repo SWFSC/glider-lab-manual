@@ -94,18 +94,6 @@
   gcp_link_out_data: ''
   gcp_link_in_aa: ''
   gcp_link_in_imagery: ''
-- Glider: AMLR01
-  Start: '2019-12-06'
-  End: '2019-12-08'
-  Project: FREEBYRD
-  Region: Antarctic
-  Sensors: CTD, Ecopuck, Optode, AZFP
-  Deployment_Name: amlr01-20191206
-  report_link: ''
-  ERDDAP_link: ''
-  gcp_link_out_data: <a href='https://console.cloud.google.com/storage/browser/swfscesd-glider-deployments-data-out/2019/amlr01-20191206'>products</a>
-  gcp_link_in_aa: ''
-  gcp_link_in_imagery: ''
 - Glider: AMLR02
   Start: '2019-12-06'
   End: '2020-03-12'
@@ -139,7 +127,7 @@
   Deployment_Name: amlr01-20191216
   report_link: ''
   ERDDAP_link: ''
-  gcp_link_out_data: ''
+  gcp_link_out_data: <a href='https://console.cloud.google.com/storage/browser/swfscesd-glider-deployments-data-out/2019/amlr01-20191216'>products</a>
   gcp_link_in_aa: <a href='https://console.cloud.google.com/storage/browser/swfscesd-glider-active-acoustics-data-in/2019/amlr01-20191216'>aa</a>
   gcp_link_in_imagery: ''
 - Glider: AMLR05
@@ -428,7 +416,7 @@
   report_link: <a href='https://github.com/SWFSC/glider-lab/blob/main/deployment-reports/calanus-20241019.html'>report</a>
   ERDDAP_link: ''
   gcp_link_out_data: <a href='https://console.cloud.google.com/storage/browser/swfscesd-glider-deployments-data-out/2024/calanus-20241019'>products</a>
-  gcp_link_in_aa: ''
+  gcp_link_in_aa: <a href='https://console.cloud.google.com/storage/browser/swfscesd-glider-active-acoustics-data-in/2024/calanus-20241019'>aa</a>
   gcp_link_in_imagery: ''
 - Glider: AMLR01
   Start: '2024-11-20'
@@ -558,7 +546,7 @@
   Sensors: CTD, Ecopuck, Optode, Shadowgraph-v3
   Deployment_Name: unit_1024-20260309
   report_link: ''
-  ERDDAP_link: ''
+  ERDDAP_link: <a href='https://gliders.ioos.us/erddap/tabledap/unit_1024-20260309T1853-delayed.html'>IOOS</a>
   gcp_link_out_data: <a href='https://console.cloud.google.com/storage/browser/swfscesd-glider-deployments-data-out/2026/unit_1024-20260309'>products</a>
   gcp_link_in_aa: ''
   gcp_link_in_imagery: <a href='https://console.cloud.google.com/storage/browser/swfscesd-glider-imagery-data-in/2026/unit_1024-20260309'>images</a>
@@ -570,7 +558,7 @@
   Sensors: CTD, Ecopuck, Optode, Shadowgraph-v3
   Deployment_Name: unit_1024-20260316
   report_link: ''
-  ERDDAP_link: ''
+  ERDDAP_link: <a href='https://gliders.ioos.us/erddap/tabledap/unit_1024-20260316T1759-delayed.html'>IOOS</a>
   gcp_link_out_data: <a href='https://console.cloud.google.com/storage/browser/swfscesd-glider-deployments-data-out/2026/unit_1024-20260316'>products</a>
   gcp_link_in_aa: ''
   gcp_link_in_imagery: <a href='https://console.cloud.google.com/storage/browser/swfscesd-glider-imagery-data-in/2026/unit_1024-20260316'>images</a>
@@ -582,7 +570,7 @@
   Sensors: CTD, Ecopuck, Optode, Shadowgraph-v3
   Deployment_Name: amlr08-20260321
   report_link: ''
-  ERDDAP_link: ''
+  ERDDAP_link: <a href='https://gliders.ioos.us/erddap/tabledap/amlr08-20260321T1702-delayed.html'>IOOS</a>
   gcp_link_out_data: <a href='https://console.cloud.google.com/storage/browser/swfscesd-glider-deployments-data-out/2026/amlr08-20260321'>products</a>
   gcp_link_in_aa: ''
   gcp_link_in_imagery: <a href='https://console.cloud.google.com/storage/browser/swfscesd-glider-imagery-data-in/2026/amlr08-20260321'>images</a>
@@ -594,7 +582,7 @@
   Sensors: CTD, Ecopuck, Optode, Shadowgraph-v3
   Deployment_Name: amlr08-20260327
   report_link: ''
-  ERDDAP_link: ''
+  ERDDAP_link: <a href='https://gliders.ioos.us/erddap/tabledap/amlr08-20260327T2111-delayed.html'>IOOS</a>
   gcp_link_out_data: <a href='https://console.cloud.google.com/storage/browser/swfscesd-glider-deployments-data-out/2026/amlr08-20260327'>products</a>
   gcp_link_in_aa: ''
   gcp_link_in_imagery: <a href='https://console.cloud.google.com/storage/browser/swfscesd-glider-imagery-data-in/2026/amlr08-20260327'>images</a>
@@ -606,7 +594,7 @@
   Sensors: CTD, Ecopuck, Optode, Shadowgraph-v3
   Deployment_Name: calanus-20260403
   report_link: ''
-  ERDDAP_link: ''
+  ERDDAP_link: <a href='https://gliders.ioos.us/erddap/tabledap/calanus-20260403T1736-delayed.html'>IOOS</a>
   gcp_link_out_data: <a href='https://console.cloud.google.com/storage/browser/swfscesd-glider-deployments-data-out/2026/calanus-20260403'>products</a>
   gcp_link_in_aa: ''
   gcp_link_in_imagery: <a href='https://console.cloud.google.com/storage/browser/swfscesd-glider-imagery-data-in/2026/calanus-20260403'>images</a>
@@ -630,13 +618,13 @@
   Sensors: CTD, Ecopuck, Optode, Shadowgraph-v3
   Deployment_Name: chovy-20261005
   report_link: ''
-  ERDDAP_link: <a href='https://gliders.ioos.us/erddap/tabledap/chovy-20261005T2016.html'>IOOS</a>
+  ERDDAP_link: <a href='https://gliders.ioos.us/erddap/tabledap/chovy-20261005T2016-delayed.html'>IOOS</a>
   gcp_link_out_data: <a href='https://console.cloud.google.com/storage/browser/swfscesd-glider-deployments-data-out/2026/chovy-20261005'>products</a>
   gcp_link_in_aa: ''
   gcp_link_in_imagery: <a href='https://console.cloud.google.com/storage/browser/swfscesd-glider-imagery-data-in/2026/chovy-20261005'>images</a>
 - Glider: calanus
   Start: '2026-10-07'
-  End: ''
+  End: '2026-11-03'
   Project: ENSO 26/27
   Region: CCE
   Sensors: CTD, Ecopuck, Optode, Shadowgraph-v3
@@ -656,5 +644,17 @@
   report_link: ''
   ERDDAP_link: <a href='https://gliders.ioos.us/erddap/tabledap/chovy-20261025T1721.html'>IOOS</a>
   gcp_link_out_data: <a href='https://console.cloud.google.com/storage/browser/swfscesd-glider-deployments-data-out/2026/chovy-20261025'>products</a>
+  gcp_link_in_aa: ''
+  gcp_link_in_imagery: ''
+- Glider: stenella
+  Start: '2026-11-03'
+  End: ''
+  Project: ENSO 26/27
+  Region: CCE
+  Sensors: CTD, Ecopuck, Optode, Shadowgraph-v3
+  Deployment_Name: stenella-20261103
+  report_link: ''
+  ERDDAP_link: ''
+  gcp_link_out_data: ''
   gcp_link_in_aa: ''
   gcp_link_in_imagery: ''
