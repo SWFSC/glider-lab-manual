@@ -319,7 +319,7 @@
   Deployment_Name: amlr03-20231128
   report_link: ''
   ERDDAP_link: ''
-  gcp_link_out_data: ''
+  gcp_link_out_data: <a href='https://console.cloud.google.com/storage/browser/swfscesd-glider-deployments-data-out/2023/amlr03-20231128'>products</a>
   gcp_link_in_aa: <a href='https://console.cloud.google.com/storage/browser/swfscesd-glider-active-acoustics-data-in/2023/amlr03-20231128'>aa</a>
   gcp_link_in_imagery: <a href='https://console.cloud.google.com/storage/browser/swfscesd-glider-imagery-data-in/2023/amlr03-20231128'>images</a>
 - Glider: AMLR04
@@ -331,7 +331,7 @@
   Deployment_Name: amlr04-20231128
   report_link: ''
   ERDDAP_link: ''
-  gcp_link_out_data: ''
+  gcp_link_out_data: <a href='https://console.cloud.google.com/storage/browser/swfscesd-glider-deployments-data-out/2023/amlr04-20231128'>products</a>
   gcp_link_in_aa: <a href='https://console.cloud.google.com/storage/browser/swfscesd-glider-active-acoustics-data-in/2023/amlr04-20231128'>aa</a>
   gcp_link_in_imagery: <a href='https://console.cloud.google.com/storage/browser/swfscesd-glider-imagery-data-in/2023/amlr04-20231128'>images</a>
 - Glider: john
@@ -427,7 +427,7 @@
   Deployment_Name: amlr01-20241120
   report_link: <a href='https://docs.google.com/document/d/128D2a0Ud2Kda5JwIYVhN9An4CFT6KxdGoqS1RsHKtQ0/edit?usp=sharing'>report</a>
   ERDDAP_link: ''
-  gcp_link_out_data: ''
+  gcp_link_out_data: <a href='https://console.cloud.google.com/storage/browser/swfscesd-glider-deployments-data-out/2024/amlr01-20241120'>products</a>
   gcp_link_in_aa: <a href='https://console.cloud.google.com/storage/browser/swfscesd-glider-active-acoustics-data-in/2024/amlr01-20241120'>aa</a>
   gcp_link_in_imagery: ''
 - Glider: AMLR08
@@ -439,7 +439,7 @@
   Deployment_Name: amlr08-20241120
   report_link: <a href='https://docs.google.com/document/d/1Bk2CQeC6dT7OtOInGbB85aCiE3qmz_S4JvjbNHziKyQ/edit?usp=sharing'>report</a>
   ERDDAP_link: ''
-  gcp_link_out_data: ''
+  gcp_link_out_data: <a href='https://console.cloud.google.com/storage/browser/swfscesd-glider-deployments-data-out/2024/amlr08-20241120'>products</a>
   gcp_link_in_aa: <a href='https://console.cloud.google.com/storage/browser/swfscesd-glider-active-acoustics-data-in/2024/amlr08-20241120'>aa</a>
   gcp_link_in_imagery: ''
 - Glider: unit_1024
@@ -654,7 +654,7 @@
   Sensors: CTD, Ecopuck, Optode, Shadowgraph-v3
   Deployment_Name: stenella-20261103
   report_link: ''
-  ERDDAP_link: ''
-  gcp_link_out_data: ''
+  ERDDAP_link: <a href='https://gliders.ioos.us/erddap/tabledap/stenella-20261103T1958.html'>IOOS</a>
+  gcp_link_out_data: <a href='https://console.cloud.google.com/storage/browser/swfscesd-glider-deployments-data-out/2026/stenella-20261103'>products</a>
   gcp_link_in_aa: ''
   gcp_link_in_imagery: ''
