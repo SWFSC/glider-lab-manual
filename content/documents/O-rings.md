@@ -61,6 +61,22 @@ Part number:\
 Price:\
 Lube:
 
+### Wetbay Spacers
+
+O-ring: BUNA-N, Square Profile, Dash No. 014, 70 Duro\
+Vendor: McMaster-Carr\
+Part number: 4061T119\
+Price: $6.03/ 100pack November 13, 2026\
+Lube: None
+
+### Wing Rail Weights ASSY 4101-B
+
+O-ring: BUNA-N, Dash No. 010, 70 Duro\
+Vendor: McMaster-Carr\
+Part number: 9452K18\
+Price: $2.61/ 100pack November 13, 2026\
+Lube: N/A
+
 ## OceanScout
 
 ### Hull 
@@ -112,19 +128,3 @@ Vendor:\
 Part number:\
 Price:\
 Lube:
-
-### Wetbay Spacers
-
-O-ring: BUNA-N, Square Profile, Dash No. 014, 70 Duro\
-Vendor: McMaster-Carr\
-Part number: 4061T119\
-Price: $6.03/ 100pack November 13, 2026\
-Lube: None
-
-### Wing Rail Weights ASSY 4101-B
-
-O-ring: BUNA-N, Dash No. 010, 70 Duro\
-Vendor: McMaster-Carr\
-Part number: 9452K18\
-Price: $2.61/ 100pack November 13, 2026\
-Lube: N/A
