@@ -3,6 +3,8 @@ O2 = 0.4 # mg/L
 depth = 1000 # dbars 
 
 # Convert to uM
+# molar mass O2 31.999 g/mol
+# umol/L * ug/umol * ug/mg = mg/L
 O2_uM = O2 * 1000 / 31.999
 
 # Compute depth compensation in micromolar 
