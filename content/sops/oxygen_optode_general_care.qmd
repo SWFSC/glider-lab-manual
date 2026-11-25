@@ -30,9 +30,9 @@ Outlines proper maintenance and storage procedures in accordance with the factor
 
 Pre-deployment, post-recovery, and in-lab storage. 
 
-## Sensor Description and Measurement Principals
-
-### 
+::: {.callout-important}
+Verify the configuration before proceeding.
+:::
 
 <!-- ## Required Equipment
 
@@ -49,15 +49,34 @@ Describe any precautions necessary to prevent
 personnel injury or equipment damage.
 ::: -->
 
+## Measurement Principals and Sensor Description
+
+Oxygen optodes measure the level of oxygen saturation in a seawater sample using a method called dynamic flourescence quenching. A flourescent indicator, or luminophore, absorbs a photon from a higher energy (blue) light source and enters an excited state. After some time, the flourescent indicator will emit a lower energy (red) photon and return to its initial state. The presence of oxygen molecules, however, speeds this process up as oxygen molecuels collide with and quench the flourescent indicator.
+
+A gas permeable sensing foil consisting of a dark optical isolation layer, flourescent indicator layer, and support layer is fixed externally over the optode's optical window. This foil is exposed to the surrounding water and allows for interaction between oxygen molecules in the sample, the indicator, and internal optics. The dark optical isolation layer prevents the influence of external light. 
+
+As the foil is excited by modulated blue light, the optode measures the phase shift of the returned red light recieved by the photodiode. This phase shift will change depending on the presence of oxygen molecules. The optode uses a red light in conjunction with the blue light as a reference in the system. A thermistor on the optode measures the temperature of the sample. 
+
+The optode determines the partial pressure from the measured phase shift using a series of polynomials that include the calibrated phase and temperature. The absolute oxygen concentration in μM (micromolar) is then determined as a function of the oxygen saturation that is dependent on the temperature and salinity of the sample. 
+
+
 ## Sensor Care
 
-### Inspection
+### Post-recovery
+
+- 
 
 ### Storage
 
 Sensors are delivered with a reusable black rubber protection cap and it is recommended to add a wet piece of natural sponge to keep the sensor foil wet at all times during storage.
 
-### Salinity and Depth Compensation
+### Pre-deployment
+
+### 
+
+## Salinity and Depth Compensation
+
+Aanderaa Optodes are measuring the level of oxygen saturation (partial pressure) in the water and not the absolute concentrations. To get the absolute concentrations, the salinity has to be measured in parallel/known and compensated for. This can be done either internally by setting the salinity to a fixed value or externally by applying the formulas suggested by Garcia and Gordon (1992).
 
 ## Procedure
 
