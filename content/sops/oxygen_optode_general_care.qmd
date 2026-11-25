@@ -31,7 +31,15 @@ Outlines proper maintenance and storage procedures in accordance with the factor
 Pre-deployment, post-recovery, and in-lab storage. 
 
 ::: {.callout-important}
-Verify the configuration before proceeding.
+The optode should remain shielded from ambient light when not in use to prevent bleaching of the sensing foil and preserve operational lifetime.
+:::
+
+::: {.callout-important}
+The sensing foil should be wetted at least 48 hours prior to deployment or calibration. Dry sensing foil introduces a 2% sampling bias and may take several hours to equilibriate with the surrounding water.
+:::
+
+::: {.callout-note}
+Swelling of the wet foil in a sample influences the response time of the optode and in turn the oxygen saturation measurement. 
 :::
 
 <!-- ## Required Equipment
@@ -64,52 +72,85 @@ The optode determines the partial pressure from the measured phase shift using a
 
 ### Post-recovery
 
-- 
+- Upon recovery, and when convenient, reapply the black rubber optode protection cap to sheild the sensor from abmbient light and prevent damage during transport. 
+
+::: {.callout-warning}
+Cleaning should be performed with caution in all cases to avoid damaging the protective foil coating and optical isolation layer.
+:::
+
+- Use a nylon brush and clean freshwater to clean the optode housing.
+
+- Use a wet cloth to carefully clean the sensing foil.
+
+- Calcareous fouling may be removed using a week acid (7% vinegar)
+
+<!-- NOTE this is why we got measurements with the tape left on!!! -->
+::: {.callout-note}
+Unlike some traditional oxygen sensors, oxygen optodes do not consume oxygen when making a measurement. Because of this, the ability to diffuse gas has no influence on the measurement accuracy and makes oxygen optodes much more robust against fouling than traditional sensors. Algal fouling that produce or consume oxygen, however, might inmpact measurements. 
+:::
+
+<!-- Link factor user manual -->
+- Inspect the foil for any serious damage, including tears or large scratches. Damaged foil may be replaced in accordance with the procedures outlined in the factory user manual.
+
 
 ### Storage
 
-Sensors are delivered with a reusable black rubber protection cap and it is recommended to add a wet piece of natural sponge to keep the sensor foil wet at all times during storage.
+- Place a wet piece of natural sponge in the black rubber protection cap and reinstall over the optode to keep the sensor foil wet and shielded from ambient light at all times during storage.
 
 ### Pre-deployment
 
-### 
+- Ensure the natural sponge is wet and in place. If not, put in place to keep the sensor wetted at least 48 hours prior to deploymet. 
+
+- Peform a functional test of the optode. Oxygen saturation should be near 100% in air at sea level and decrease when breathing on the foil. Temperature should reflect the ambient room temperature. 
+
+### Annual Recalibration
+
+- It is optimal and recommended that the optode is recalibrated annually.
+
+<!-- TODO create oxygen optode calibration SOP from template and link here -->
+- Steps for recallibration are outlined in SOP Oxygen Optode Calibration.
 
 ## Salinity and Depth Compensation
 
-Aanderaa Optodes are measuring the level of oxygen saturation (partial pressure) in the water and not the absolute concentrations. To get the absolute concentrations, the salinity has to be measured in parallel/known and compensated for. This can be done either internally by setting the salinity to a fixed value or externally by applying the formulas suggested by Garcia and Gordon (1992).
+### Salinity
 
-## Procedure
+<!--NOTE not sure how we are currently handling this? Fluctuation about 1ppt in the California Current? And probably more variable for the AMLR gliders? Salinity correction could be applied post-collection during data processing step?-->
+::: {.callout-important}
 
-### Preparation
+:::
 
-1. First step.
-2. Second step.
-3. Third step.
+From manual - "Aanderaa Optodes are measuring the level of oxygen saturation (partial pressure) in the water and not the absolute concentrations. To get the absolute concentrations, the salinity has to be measured in parallel/known and compensated for. This can be done either internally by setting the salinity to a fixed value or externally by applying the formulas suggested by Garcia and Gordon (1992)."
 
-### Configuration
+### Depth
 
-Describe the configuration process.
+<!--NOTE Also not sure how we are handling this? Not sure if it's significant enough unless caring about 0-1000dbar profile range when we dive deep? Science off < 500m? Depth correction could be applied during data processing step?-->
 
-### Testing and Verification
+<!-- NOTE less than .01 mg/L change for low oxygen measurements at depth-->
 
-Describe how to verify successful completion
-of the procedure.
+The response of the sensing foil decreases with increased ambient water pressure. 
 
-## Acceptance Criteria
+::: {.callout-important}
+Depth compensation is not performed within the Optode and must be handled during data processing.
+:::
 
-- [ ] Criterion 1
-- [ ] Criterion 2
+The depth-compensated O$_2$ concentration, O$_{2c}$, is calculated 
+from the following equation:
 
-## Troubleshooting
+$$
+O_{2c} = O_2 \cdot \left(1 + 0.032 \cdot \frac{d}{1000}\right)
+$$
 
-| Symptom | Possible Cause | Corrective Action |
-|---------|----------------|-------------------|
-|         |                |                   |
+where:
+
+- $d$ is depth in meters or pressure in dbar.
+- $O_2$ is the measured O$_2$ concentration in either $\mu$M or %.
+
+
 
 ## References
 
+<!-- TODO link factory manual -->
 - Manufacturer documentation
-- Related lab SOPs
 
 ## Revision History
 
