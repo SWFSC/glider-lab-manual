@@ -44,12 +44,30 @@ it applies to.
 
 ## Safety and Precautions
 
+<!-- Can add a cool graphic warning callout -->
 ::: {.callout-warning}
 Describe any precautions necessary to prevent
 personnel injury or equipment damage.
 :::
 
+<!-- Or cool graphic Important callout -->
+::: {.callout-important}
+Verify the configuration before proceeding.
+:::
+
 ## Procedure
+
+<!-- More Callouts! Can add notes or tips -->
+::: {.callout-note}
+Note that there are five types of callouts, including:
+`note`, `warning`, `important`, `tip`, and `caution`.
+:::
+
+::: {.callout-tip}
+## Tip with Title
+
+This is an example of a callout with a title.
+:::
 
 ### Preparation
 
@@ -65,6 +83,14 @@ Describe the configuration process.
 
 Describe how to verify successful completion
 of the procedure.
+
+<!-- Can also add a troubleshooting drop down callout -->
+::: {.callout-note collapse="true"}
+## Troubleshooting
+
+Additional troubleshooting instructions.
+:::
+
 
 ## Acceptance Criteria
 
