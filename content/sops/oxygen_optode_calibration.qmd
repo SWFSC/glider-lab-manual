@@ -1,11 +1,8 @@
-<!-- Here is a basic, AI generated Quarto template that could be useful to build stardardized, version controlled Standard Operating Procedures -->
-
-<!-- Feel free to propose some changes! -->
 
 ---
-title: "Standard Operating Procedure Title"
+title: "Oxygen Optode Calibration"
 author: "ESD Glider Lab"
-date: "2026-11-24"
+date: "2026-11-25"
 date-modified: last-modified
 toc: true
 toc-depth: 3
@@ -14,7 +11,8 @@ number-sections: true
 
 **Status:** Draft
 
-**Applicable equipment:** Slocum G3
+<!-- TODO Verify model -->
+**Applicable equipment:** AAnderaa Oxygen Optode <4831>
 
 **Procedure owner:** ESD Glider Lab
 
@@ -22,15 +20,16 @@ number-sections: true
 
 ## Purpose
 
-Describe the purpose of this procedure.
+<!-- TODO link manual -->
+Calibration of the Aaderaa oxygen optode <4831> in accordance with procedures outlined in the factory user manual. 
 
 ## Scope
 
-Describe when this procedure should be performed and
-which gliders, sensors, or hardware configurations
-it applies to.
+Performed annually on regular operational schedule or after replacing . 
 
 ## Required Equipment
+
+- 
 
 - Equipment
 - Tools
@@ -58,7 +57,7 @@ Verify the configuration before proceeding.
 ## Procedure
 
 <!-- More Callouts! Can add notes or tips -->
-::: {.callout-note}
+<!-- ::: {.callout-note}
 Note that there are five types of callouts, including:
 `note`, `warning`, `important`, `tip`, and `caution`.
 :::
@@ -67,7 +66,7 @@ Note that there are five types of callouts, including:
 ## Tip with Title
 
 This is an example of a callout with a title.
-:::
+::: -->
 
 ### Preparation
 
@@ -75,9 +74,9 @@ This is an example of a callout with a title.
 2. Second step.
 3. Third step.
 
-### Configuration
 
-Describe the configuration process.
+### Calibration
+
 
 ### Testing and Verification
 
@@ -97,16 +96,10 @@ Additional troubleshooting instructions.
 - [ ] Criterion 1
 - [ ] Criterion 2
 
-## Troubleshooting
-
-| Symptom | Possible Cause | Corrective Action |
-|---------|----------------|-------------------|
-|         |                |                   |
 
 ## References
 
-- Manufacturer documentation
-- Related lab SOPs
+- Factory user manual
 
 ## Revision History
 
