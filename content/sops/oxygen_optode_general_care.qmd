@@ -1,0 +1,99 @@
+<!-- NOTE a rough SOP to outline the proper mainenance care and storage of the optode some sections could be OVERKILL? -->
+
+<!-- TODO ??? add latest user manual version from Aanderaa to glider-lab-manual ??? -->
+
+---
+title: "Oxygen Optode General Care"
+author: "ESD Glider Lab"
+date: "2026-11-24"
+date-modified: last-modified
+toc: true
+toc-depth: 3
+number-sections: true
+---
+
+**Status:** Draft
+
+<!-- TODO Verify model -->
+**Applicable equipment:** AAnderaa Oxygen Optode <4831>
+
+**Procedure owner:** ESD Glider Lab
+
+**Last reviewed:** Pending
+
+## Purpose
+
+<!-- TODO link manual (latest version?) -->
+Outlines proper maintenance and storage procedures in accordance with the factory user manual.
+
+## Scope
+
+Pre-deployment, post-recovery, and in-lab storage. 
+
+## Sensor Description and Measurement Principals
+
+### 
+
+<!-- ## Required Equipment
+
+- Equipment
+- Tools
+- Software
+- Reference documentation -->
+
+
+<!-- ## Safety and Precautions
+
+::: {.callout-warning}
+Describe any precautions necessary to prevent
+personnel injury or equipment damage.
+::: -->
+
+## Sensor Care
+
+### Inspection
+
+### Storage
+
+Sensors are delivered with a reusable black rubber protection cap and it is recommended to add a wet piece of natural sponge to keep the sensor foil wet at all times during storage.
+
+### Salinity and Depth Compensation
+
+## Procedure
+
+### Preparation
+
+1. First step.
+2. Second step.
+3. Third step.
+
+### Configuration
+
+Describe the configuration process.
+
+### Testing and Verification
+
+Describe how to verify successful completion
+of the procedure.
+
+## Acceptance Criteria
+
+- [ ] Criterion 1
+- [ ] Criterion 2
+
+## Troubleshooting
+
+| Symptom | Possible Cause | Corrective Action |
+|---------|----------------|-------------------|
+|         |                |                   |
+
+## References
+
+- Manufacturer documentation
+- Related lab SOPs
+
+## Revision History
+
+| Revision | Date | Author | Description |
+|----------|------|--------|-------------|
+| 0.1 | 2026-11-24 | | Initial draft |
