@@ -29,7 +29,12 @@ Performed annually on regular operational schedule or after replacing .
 
 ## Required Equipment
 
-- 
+- 2 500 ml beakers
+- Aquarium bubbler with air stone
+- Sodum Sulphite (Na2SO3) (*5 grams in 500ml for soln*)
+- Thermometer (*Can use Fluke Multimeter*)
+
+- Sensor Cable 3855 (RS232)
 
 - Equipment
 - Tools
@@ -38,8 +43,8 @@ Performed annually on regular operational schedule or after replacing .
 
 ## Prerequisites
 
-- [ ] Prerequisite 1
-- [ ] Prerequisite 2
+- [ ] Optode submerged for at least 24-48 hours. 
+
 
 ## Safety and Precautions
 
@@ -51,7 +56,7 @@ personnel injury or equipment damage.
 
 <!-- Or cool graphic Important callout -->
 ::: {.callout-important}
-Verify the configuration before proceeding.
+Optode should be submerged into water at least 24-48 hours prior to calibration to ensure the highest accuracy. Drying of the optode could produce up to 2% measurement bias. 
 :::
 
 ## Procedure
@@ -68,15 +73,62 @@ Note that there are five types of callouts, including:
 This is an example of a callout with a title.
 ::: -->
 
+<!-- TODO consider this with the calibration, methods, would be necessary to submerge? Talk directly to the sensor bipass glider-->
+### *Remove Sensor from the Glider*
+
 ### Preparation
 
-1. First step.
-2. Second step.
-3. Third step.
+1. Fill one 500ml beaker with freshwater and begin aerating with aquarium bubbler. Allow temperature to stabilize (*might take hours*).
 
+2. In the second beaker, prepare a zero oxygen solution by dissolving 5 grams sodium sulphite (Na2SO3) in 500ml of freshwater.
+
+3. Connect the optode to a computer using Sensor Cable 3855 (RS232).
+
+4. Start a new Tera Term session with the following com port configuration: 
+
+| Parameter    | Setting  |
+|--------------|----------|
+| Baud rate    | 9600     |
+| Data bits    | 8        |
+| Stop bits    | 1        |
+| Parity       | None     |
+| Flow control | Xon/Xoff |
+
+::: {.callout-note}
+*If using Tera Term Pro* After setting up the com port according to the settings above please select `Terminal` in the `Set up` menu and click `Local echo`. Also select `CR+LF` for both `Receive` and `Transmit` under `New line`. 
+:::
+
+<!--FIXME ?? Big callout here, consider breaking up -->
+::: {.callout-important}
+## If calibrating after a foil replacement, update the foil coefficients.
+
+Control, and if necessary update, the FoilID, FoilCoefA, FoilCoefB, FoilPolyDegT, FoilPolyDegO properties accordingly to the Calibration Certificate for the sensing foil in use (refer CHAPTER 5 for communication with the sensor).
+
+**Example of changing foil coefficients:**
+
+```text
+Set Passkey(1000)
+Set FoilID(1707)
+Set FoilCoefA(1.71404376E-04,3.04290906E-04,-6.39414910E-02,5.14270106E+00,-2.84638794E-02,3.88090809E-05,-1.92200149E+02,1.66135018E+00,-5.18448297E-03,1.22642972E-05,2.89178945E+03,-3.48247963E+01,2.03067907E-01,-1.72740886E-03)
+Set FoilCoefB(1.23230336E-05,0,0,0,0,0,0,0,0,0,0,0,0,0)
+Set FoilPolyDegT(1,0,0,0,1,2,0,1,2,3,0,1,2,3,4,0,0,0,0,0,0,0,0,0,0,0,0,0)
+Set FoilPolyDegO(3,4,3,2,2,2,1,1,1,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0)
+Save
+```
+
+Type `Get All` to verify the new coefficients.
+Script files for entering the foil coefficients via text terminal programs will be available from the factory.
+:::
 
 ### Calibration
 
+1. Submerge the Optode into the aerated water. Set the `Interval` property to e.g. 30 seconds. Enter the save command and wait until both the temperature and the phase measurements have stabilized:
+
+```text
+Set Passkey(1000)
+Set Interval(30)
+Save
+```
 
 ### Testing and Verification
 
