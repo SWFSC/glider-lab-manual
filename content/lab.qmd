@@ -119,6 +119,14 @@ How to offload PAM Data (link to pam webpages?)
 :::
 
 ::: {.callout-note collapse="true" appearance="minimal"}
+### Deep SUNA
+
+[Deep SUNA Manual 2025](https://drive.google.com/file/d/1wnQ88ue2oQmbgK5vS71CK_zIVFEdkX7y/view?usp=drive_link){target="_blank"}
+
+[Processing Nitrate Data at the DAC Level 2024](https://drive.google.com/file/d/1951nqStLDJJ7L04xZKt0mA3qyZtzIF-5/view?usp=drive_link){target="_blank"}
+:::
+
+::: {.callout-note collapse="true" appearance="minimal"}
 ### Biospherical Par Sensor
 
 [QSP-2150 submersible Par Manual](https://drive.google.com/file/d/1iFpBvCYvnX0WQOrN65xoAA9qzebTGjfM/view?usp=sharing){target="_blank"}
